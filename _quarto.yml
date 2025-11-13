@@ -1,0 +1,20 @@
+project:
+  type: website
+  # post-render:
+  #   - code/webshot_img.R
+  output-dir: docs
+
+website:
+  title: "2025 Presentations"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+

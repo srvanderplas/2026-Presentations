@@ -1,0 +1,22 @@
+title: "Visualizing Uncertainty"
+author: "Susan Vanderplas"
+date: 2025-08-
+from: markdown+emoji
+location: 
+abstract: |
+  Data visualizations are a primary tool for communicating statistical results, leveraging
+  our extremely high visual bandwidth to make working with and thinking about data more efficient.
+  In statistics, we often need to visualize data with its associated uncertainty, 
+  which requires rethinking standard graphical approaches to incorporate this 
+  additional dimension of information (or lack thereof). 
+  In this introductory overview, we will discuss different ways to visualize
+  uncertainty, along with the perceptual challenges that accompany each method, 
+  with the goal of identifying uncertainty visualizations that are both perceptually effective
+  and statistically meaningful. 
+
+talk-type: ['invited']
+# One or more of seminar, web, invited, contributed, other
+
+# image: 
+
+keywords: ['graphics']
