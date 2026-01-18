@@ -2,10 +2,9 @@
 format: 
   revealjs:
     navigation-mode: vertical
-    logo: ../libs/unl/N.svg
-    theme: ../libs/unl/inverse.scss
+    theme: ../libs/job/inverse.scss
     includes:
-      in_header: ../libs/unl/header.html
+      in_header: ../libs/job/header.html
     lib_dir: libs
 width: 1600
 height: 900
