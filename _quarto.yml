@@ -5,7 +5,7 @@ project:
   output-dir: docs
 
 website:
-  title: "2025 Presentations"
+  title: "2026 Presentations"
   navbar:
     left:
       - href: index.qmd

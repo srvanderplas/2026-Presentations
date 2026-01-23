@@ -1,0 +1,23 @@
+title: "Human ~~Computer~~ Data Interaction"
+subtitle: "Stats, Algorithms, and Applications"
+author: "Susan Vanderplas"
+date: 2026-01-01
+date-format: long
+from: markdown+emoji
+location: TBD
+abstract: |
+  Statisticians and data scientists spend a lot of time making things computer-readable -- 
+  cleaning data, ensuring code is efficient, and producing outputs in the "right" format. 
+  The most important steps in a data analysis, though, often involve the transition between
+  human and computer at either end of the data science pipeline. It's important to understand
+  how humans think about problems or make judgments subjectively, and it's important to leverage
+  that information to understand how best to communicate statistical results back to people.
+  In this talk, I'll discuss a series of problems that lie at this interface between humans,
+  computers, data, and statistical algorithms, and emphasize the importance of these problems
+  to society. 
+talk-type: ['seminar']
+# One or more of seminar, web, invited, contributed, other
+
+image: <iframe class="slide-deck" src="./" width="100%" height="200px"></iframe>
+
+keywords: ['statistics', 'forensics', 'graphics', 'data science']

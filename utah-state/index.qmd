@@ -1,0 +1,47 @@
+---
+title: "Human [~~Computer~~]{.emph .red} Data Interaction"
+format: 
+  revealjs:
+    navigation-mode: vertical
+    theme: ../libs/job/inverse.scss
+    includes:
+      in_header: ../libs/job/header.html
+    lib_dir: libs
+    embed-resources: true
+---
+
+## Outline
+
+1. [Introduction](#introduction)
+<!-- Hi, I'm susan and I do an odd assortment of things -->
+2. CSI: Statistics and the Fundamentals of Science 
+<!-- Error Rates and Scientific Foundations in Forensics -->
+3. Perception & Statistical Graphics
+<!-- Career Award project -->
+4. Machine Learning for Forensics
+<!-- Algorithms and Perception -->
+
+## Introduction
+
+::: {style="display:inline-block;max-width:150px;height:75px;"}
+
+![](../images/TAMU.svg){style="display:inline-block;vertical-align:middle;margin-top:20px;margin-left:35px;margin-right:35px;max-width:150px;height:75px;" fig-alt="Texas state outline with ATM logo from Texas A&M university."} 
+
+:::
+::: {style="display:inline-block;"}
+
+BS, Psychology & Applied Math, 2009 
+
+:::
+
+::: {style="display:inline-block;max-width:150px;height:100px;"}
+
+![](../images/ISU.svg){style="display:inline-block;vertical-align:middle;max-width:150px;height:100px;"  fig-alt="A red I overlaid with STATE, the Iowa State university logo."}
+
+:::
+::: {style="display:inline-block;vertical-align:middle;"}
+
+MS, Statistics, 2011    
+Ph.D., Statistics, 2015 
+
+:::
