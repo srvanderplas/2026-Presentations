@@ -31,7 +31,7 @@ bb <- ReadBib("./CV.bib", check = T)
 
 1. [Introduction](#introduction)
 <!-- Hi, I'm susan and I do an odd assortment of things -->
-2. CSI: Statistics and the Fundamentals of Science 
+2. [CSI: Statistics and the Fundamentals of Science](#csi-stats)
 <!-- Error Rates and Scientific Foundations in Forensics -->
 3. Perception & Statistical Graphics
 <!-- Career Award project -->
@@ -61,8 +61,12 @@ bb <- ReadBib("./CV.bib", check = T)
 
 ## Recent Work
 
-::: {.small}
-```{r graphics-pubs, results='asis', echo=FALSE, cache = F}
+```{r}
+#| label: graphics-pubs
+#| results: 'asis'
+#| echo: false
+#| cache: false
+#| include: false
 
 mypubs <- ReadBib("CV.bib") |> sort(sorting = "ydat")
 
@@ -77,4 +81,90 @@ NoCite(newpubs)
 PrintBibliography(newpubs, .opts = list(sorting = "ydnt", no.print.fields = c("note", "file", "issn", "url-date", "url", "doi"), style="markdown"))
 ```
 
+- Can You See The Change? Visual Perception in Change Point Analysis (JCGS)    
+[Fudolig, Robinson, and Vanderplas. 2025]{.small}
+
+- Automated Residual Plot Assessment With the R Package autovi and the Shiny Application autovi.web (Aus & NZ Journal of Stats)    
+[Li, Cook, Tanaka, Vanderplas, and Ackermann. 2025]{.small}
+
+- Perception and Cognitive Implications of Logarithmic Scales for Exponentially Increasing Data: Perceptual Sensitivity Tested with Statistical Lineups (JCGS)    
+[Robinson, Howard, Vanderplas. 2025]{.small}
+
+- A Guide to Designing Experiments to Test Statistical Graphics (WIRE Computational Statistics)     
+[Robinson, Hofmann, Vanderplas. 2025]{.small}
+
+## Recent Work
+
+- Methodological problems in every black-box study of forensic firearm comparisons (Law, Probability, and Risk)     
+[Cuellar, Vanderplas, Luby, Rosenblum. 2024]{.small}
+
+- Incorrect statistical reasoning in *Guyll et al.* leads to biased claims about strength of forensic evidence (PNAS)     
+[Rosenblum, Chin, Ogburn, Nishimura, Westreich, Datta, Vanderplas, Cuellar, Thompson. 2024]{.small}
+
+- Hidden Multiple Comparisons Increase Forensic Error Rates (PNAS)     
+[Vanderplas, Carriquiry, Hofmann. 2024]{.small}
+
+
+## Funded Grants
+
+- 2025, NSF CAREER, What Do You See? Perception, Decisions, and Statistical Graphics ($550,000)
+
+- 2020-2024, NIST, CSAFE Project lead: Footwear Class Characteristics and Human Factors ($20 mil for CSAFE, $456,930 sub-award)
+
+- 2019/2021, NIJ, Automatic Acquisition and Identification of Footwear Class Characteristics ($380,650)
+
+- 2020, USDA-NRCS, Improving the Economic and Ecological Sustainability of US Crop Production through On-Farm Precision Experimentation ($4 mil total, $400,000 for 3 UNL PIs)
+
+- 2019, NSF, Overcoming the Rural Data Deficit to Improve Quality of Life and Community Services in Smart & Connected Small Communities ($1.5 mil total, $123,445 sub-award)
+
+
+
+# CSI: Statistics (and the fundamentals of Science) {#csi-stats}
+
+##  {background-image="../images/dna.jpg" background-opacity="50%" background-size="cover"}
+
+::: {.r-stack}
+
+![](../images/ballistic-headline-adj.png){.fragment fig-alt="Screenshot of an Innocence Project article titled “Three Freed, and FBI Continues to Review Ballistic Cases,” discussing unreliable bullet‑matching forensic methods and related overturned convictions. Article url: https://innocenceproject.org/news/three-freed-and-fbi-continues-to-review-ballistic-cases/"}
+
+![](../images/crimelab-headline.png){.fragment fig-alt="Screenshot of an ABA Journal article titled “Crime labs under the microscope after a string of shoddy, suspect and fraudulent results,” including a photo illustration labeled “Crimes in the Lab” on evidence bags. Article url: https://www.abajournal.com/magazine/article/crime_labs_under_the_microscope_after_a_string_of_shoddy_suspect_and_fraudu"}
+
+![](../images/bitemark-headline.png){.fragment fig-alt="Screenshot of a Washington Post opinion piece titled “Incredibly, prosecutors are still defending bite mark evidence,” displaying a dental X‑ray image beneath the headline. Article url: https://www.washingtonpost.com/news/the-watch/wp/2017/01/30/incredibly-prosecutors-are-still-defending-bite-mark-evidence/"}
+
+![](../images/breathalyzer-headline.png){.fragment fig-alt="Screenshot of an Ars Technica article titled “Buggy breathalyzer code reflects importance of source review,” describing court‑ordered audits that found serious software flaws in breathalyzer machines. Article url: https://arstechnica.com/tech-policy/2009/05/buggy-breathalyzer-code-reflects-importance-of-source-review/"}
+
+![](../images/ear-prints-headline.png){.fragment fig-alt="Screenshot of an article titled “Earprints as evidence?” with a grayscale image grid showing multiple photographed ears marked with numbered annotations used for forensic comparison. Article url: https://phys.org/news/2006-02-earprints-evidence.html"}
+
+![](../images/ear-prints2-headline.png){.fragment fig-alt="Screenshot of an article from The Guardian in 2004 titled 'Earprint landed innocent man in jail for murder'. Article url: https://www.theguardian.com/uk/2004/jan/23/ukcrime1"}
+
 :::
+
+::: {.notes}
+
+In the past 20 years, CSI-style forensic analysis has taken quite a beating. 
+
+DNA is the gold standard for forensic evidence - a specific combination of genes is supposed to be unique to the individual, matches can be objectively determined with error rates that are quantifiable, and it could be used to reexamine evidence from old cases.
+
+As organizations like the Innocence Project used DNA to revisit old cases, it became clear that there were *major* problems with the evidence used in criminal cases -- eyewitness testimony, false confessions, and shoddy forensics. 
+
+There were a number of very embarrassing cases where forensic evidence was shown to be faulty.
+As these cases happened, scientists started asking how this all went so wrong? Wasn't forensics ultimately based in science? Weren't there studies out there showing that forensic techniques had low error rates?
+
+:::
+
+
+## Wire Cuts
+
+::: {layout-ncol=2}
+
+![[Source](https://www.thenation.com/article/archive/the-crisis-of-american-forensics/)](../images/TheNation20180226-Genrich.png){fig-alt="A screenshot of an article by Meehan Crist and Tim Requarth from The Nation (Feb 26, 2018 issue). The title reads 'Forensic Science Put Jimmy Genrich in Prison for 24 Years. What if It Wasn’t Science?'. A mugshot is shown below the article title." height=750 width=auto}
+
+::: fragment
+![[Source](https://www.cpr.org/2023/07/10/judge-orders-new-trial-for-grand-junction-man-convicted-in-90s-pipe-bombings/)](../images/CPR-new-trial.png){fig-alt="A Colorado Public Media story by Tom Hesse from July 10, 2023, titled 'Judge orders new trial for Grand Junction man convicted in '90s pipe bombings'. A picture of the Mesa County Justice Center is shown below the article title." height=750 width=auto}
+:::
+
+:::
+
+<!-- https://www.cpr.org/2023/07/10/judge-orders-new-trial-for-grand-junction-man-convicted-in-90s-pipe-bombings/ -->
+<!-- https://www.thenation.com/article/archive/the-crisis-of-american-forensics/ -->
+
