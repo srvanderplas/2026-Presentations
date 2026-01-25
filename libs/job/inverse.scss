@@ -202,3 +202,6 @@ figure figcaption {
 .black{ color: $black;}
 .grey{ color: $grey;}
 .lightgrey{ color: $lightgrey;}
+
+
+.reveal div.nolines table tr td,.reveal div.nolines table tr th {border-bottom:0!important;}

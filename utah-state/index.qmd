@@ -10,6 +10,23 @@ format:
     embed-resources: true
 ---
 
+```{r}
+#| label: load_refs
+#| echo: false
+#| cache: false
+#| include: false
+
+library(tidyverse)
+library(RefManageR)
+BibOptions(check.entries = FALSE, 
+           bib.style = "numeric", 
+           cite.style = 'authoryear', 
+           style = "html",
+           hyperlink = FALSE, 
+           no.print.fields = c("isbn", "urldate"),
+           dashed = FALSE)
+bb <- ReadBib("./CV.bib", check = T)
+```
 ## Outline
 
 1. [Introduction](#introduction)
@@ -23,25 +40,41 @@ format:
 
 ## Introduction
 
-::: {style="display:inline-block;max-width:150px;height:75px;"}
-
-![](../images/TAMU.svg){style="display:inline-block;vertical-align:middle;margin-top:20px;margin-left:35px;margin-right:35px;max-width:150px;height:75px;" fig-alt="Texas state outline with ATM logo from Texas A&M university."} 
-
-:::
-::: {style="display:inline-block;"}
-
-BS, Psychology & Applied Math, 2009 
-
+::: {.nolines}
+ | 
+:---: | :------------------------------ 
+| 2009 | BS, Psychology & Applied Math ![](../images/TAMU.svg){style="position:absolute;right:10px;margin-top:0;margin-left:50px;margin-right:50px;max-width:150px;height:50px;" fig-alt="Texas state outline with ATM logo from Texas A&M university."}
+2011 | MS, Statistics ![](../images/ISU.svg){style="position:absolute;margin-top:20px;right:10px;max-width:150px;height:100px;" fig-alt="A red I overlaid with STATE, the Iowa State university logo."}
+2015 | Ph.D., Statistics<br/>[Dissertation: [[Perception of Statistical Graphics](https://srvanderplas.github.io/Dissertation/SusanVanderplas-DissertationFinalVersion.pdf)]{.emph}]{.small}
 :::
 
-::: {style="display:inline-block;max-width:150px;height:100px;"}
+## Introduction
 
-![](../images/ISU.svg){style="display:inline-block;vertical-align:middle;max-width:150px;height:100px;"  fig-alt="A red I overlaid with STATE, the Iowa State university logo."}
-
+::: {.nolines}
+ | 
+:------: | :------------------------------ 
+2015-18 | Stat. Analyst, NE Public Power ![](../images/nppd.svg){style="position:absolute;right:10px;margin-top:0;margin-bottom:0;margin-left:45px;margin-right:45px;max-width:150px;height:50px;" fig-alt="Nebraska Public Power District logo."} 
+2018-19 | Research Asst. Professor, CSAFE ![](../images/csafe.png){style="position:absolute;right:10px;margin-left:55px;margin-right:60px;max-width:150px;height:60px;margin-left:50px;margin-right:50px" fig-alt="Center for Statistics and Applications in Forensic Evidence Logo."}
+2020-24 | Asst. Professor, UNL ![](../images/UNL.svg){style="position:absolute;margin-top:20px;right:10px;margin-left:22px;margin-right:22px;height:100px;"}
+2024-26 | Assoc. Professor, UNL 
 :::
-::: {style="display:inline-block;vertical-align:middle;"}
 
-MS, Statistics, 2011    
-Ph.D., Statistics, 2015 
+## Recent Work
+
+::: {.small}
+```{r graphics-pubs, results='asis', echo=FALSE, cache = F}
+
+mypubs <- ReadBib("CV.bib") |> sort(sorting = "ydat")
+
+newpubs <- as.data.frame(mypubs) |> 
+  arrange(desc(date)) |> 
+  filter(row_number() > 2) |>
+  filter(!str_detect(keywords, "npr")) |>
+  head(5) |>
+  as.BibEntry()
+
+NoCite(newpubs)
+PrintBibliography(newpubs, .opts = list(sorting = "ydnt", no.print.fields = c("note", "file", "issn", "url-date", "url", "doi"), style="markdown"))
+```
 
 :::
