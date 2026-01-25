@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg1818"
+   width="640"
+   height="480"
+   viewBox="0 0 640 480"
+   sodipodi:docname="razor_wire_cut_sizes_ann.svg"
+   inkscape:export-filename="razor_wire_cut_sizes_ann.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1822" />
+  <sodipodi:namedview
+     id="namedview1820"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="1.3906433"
+     inkscape:cx="411.67997"
+     inkscape:cy="285.47938"
+     inkscape:window-width="3800"
+     inkscape:window-height="2111"
+     inkscape:window-x="3840"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g1824" />
+  <g
+     inkscape:groupmode="layer"
+     inkscape:label="Image"
+     id="g1824">
+    <image
+       width="640"
+       height="480"
+       preserveAspectRatio="none"
+       xlink:href="razor_wire_cut_sizes.jpg"
+       id="image1826" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:96px;font-family:'Atkinson Hyperlegible';-inkscape-font-specification:'Atkinson Hyperlegible';text-align:center;text-anchor:middle;fill:#000000;fill-rule:evenodd;stroke:#ffffff;stroke-width:2;stroke-linejoin:bevel;paint-order:markers stroke fill"
+       x="137.71448"
+       y="385"
+       id="text1999"><tspan
+         sodipodi:role="line"
+         id="tspan1997"
+         x="137.71448"
+         y="385">1mm</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:96px;font-family:'Atkinson Hyperlegible';-inkscape-font-specification:'Atkinson Hyperlegible';text-align:center;text-anchor:middle;fill:#000000;fill-rule:evenodd;stroke:#ffffff;stroke-width:2;stroke-linejoin:bevel;paint-order:markers stroke fill"
+       x="459.67407"
+       y="385"
+       id="text2055"><tspan
+         sodipodi:role="line"
+         id="tspan2053"
+         x="459.67407"
+         y="385">2mm</tspan></text>
+    <ellipse
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linejoin:bevel;paint-order:markers stroke fill"
+       id="path2161"
+       cx="474.10715"
+       cy="224.31116"
+       rx="104.4298"
+       ry="72.511841" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:48px;font-family:'Atkinson Hyperlegible';-inkscape-font-specification:'Atkinson Hyperlegible';text-align:center;text-anchor:middle;fill:#000000;fill-rule:evenodd;stroke:none;stroke-width:2;stroke-linejoin:bevel;paint-order:markers stroke fill"
+       x="474.36496"
+       y="268.11896"
+       id="text2167"><tspan
+         sodipodi:role="line"
+         id="tspan2165"
+         x="474.36496"
+         y="268.11896"
+         style="font-size:48px;-inkscape-font-specification:'Atkinson Hyperlegible';font-family:'Atkinson Hyperlegible';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">striae</tspan></text>
+  </g>
+</svg>

@@ -2687,6 +2687,7 @@ a             { color: $darkblue; }
 .move-down    { margin-top:   50px !important;}
 .nudge-down   { margin-top:   20px !important;}
 
+.extrabig         { font-size: 500% !important; }
 .large            { font-size: 130% !important; }
 .largish          { font-size: 110% !important; }
 .slightly-small   { font-size:  80% !important; }
@@ -2736,6 +2737,10 @@ figure figcaption {
 .darkorange{ color: $darkorange;}
 .orange{ color: $orange;}
 .lightorange{ color: $lightorange;}
+
+.darkgreen{ color: $darkgreen;}
+.green{ color: $green;}
+.lightgreen{ color: $lightgreen;}
 
 .darkcerulean{ color: $darkcerulean;}
 .cerulean{ color: $cerulean;}

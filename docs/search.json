@@ -31,22 +31,22 @@
     "objectID": "utah-state/index.html#recent-work",
     "href": "utah-state/index.html#recent-work",
     "title": "Human Computer Data Interaction",
-    "section": "Recent Work",
-    "text": "Recent Work\n\nCan You See The Change? Visual Perception in Change Point Analysis (JCGS)\nFudolig, Robinson, and Vanderplas. 2025\nAutomated Residual Plot Assessment With the R Package autovi and the Shiny Application autovi.web (Aus & NZ Journal of Stats)\nLi, Cook, Tanaka, Vanderplas, and Ackermann. 2025\nPerception and Cognitive Implications of Logarithmic Scales for Exponentially Increasing Data: Perceptual Sensitivity Tested with Statistical Lineups (JCGS)\nRobinson, Howard, Vanderplas. 2025\nA Guide to Designing Experiments to Test Statistical Graphics (WIRE Computational Statistics)\nRobinson, Hofmann, Vanderplas. 2025"
+    "section": "📊 Recent Work",
+    "text": "📊 Recent Work\n\n\nCan You See The Change? Visual Perception in Change Point Analysis (JCGS)\nFudolig, Robinson, and Vanderplas. 2025\nAutomated Residual Plot Assessment With the R Package autovi and the Shiny Application autovi.web (Aus & NZ Journal of Stats)\nLi, Cook, Tanaka, Vanderplas, and Ackermann. 2025\nPerception and Cognitive Implications of Logarithmic Scales for Exponentially Increasing Data: Perceptual Sensitivity Tested with Statistical Lineups (JCGS)\nRobinson, Howard, Vanderplas. 2025\nA Guide to Designing Experiments to Test Statistical Graphics (WIRE Computational Statistics)\nRobinson, Hofmann, Vanderplas. 2025"
   },
   {
     "objectID": "utah-state/index.html#funded-grants",
     "href": "utah-state/index.html#funded-grants",
     "title": "Human Computer Data Interaction",
-    "section": "Funded Grants",
-    "text": "Funded Grants\n\n2025, NSF CAREER, What Do You See? Perception, Decisions, and Statistical Graphics ($550,000)\n2020-2024, NIST, CSAFE Project lead: Footwear Class Characteristics and Human Factors ($20 mil for CSAFE, $456,930 sub-award)\n2019/2021, NIJ, Automatic Acquisition and Identification of Footwear Class Characteristics ($380,650)\n2020, USDA-NRCS, Improving the Economic and Ecological Sustainability of US Crop Production through On-Farm Precision Experimentation ($4 mil total, $400,000 for 3 UNL PIs)\n2019, NSF, Overcoming the Rural Data Deficit to Improve Quality of Life and Community Services in Smart & Connected Small Communities ($1.5 mil total, $123,445 sub-award)"
+    "section": "💵 Funded Grants",
+    "text": "💵 Funded Grants\n\n\n2025, NSF CAREER, What Do You See? Perception, Decisions, and Statistical Graphics ($550,000)\n2020-2024, NIST, CSAFE Project lead: Footwear Class Characteristics and Human Factors ($20 mil for CSAFE, $456,930 sub-award)\n2019/2021, NIJ, Automatic Acquisition and Identification of Footwear Class Characteristics ($380,650)\n2020, USDA-NRCS, Improving the Economic and Ecological Sustainability of US Crop Production through On-Farm Precision Experimentation ($4 mil total, $400,000 for 3 UNL PIs)\n2019, NSF, Overcoming the Rural Data Deficit to Improve Quality of Life and Community Services in Smart & Connected Small Communities ($1.5 mil total, $123,445 sub-award)"
   },
   {
     "objectID": "utah-state/index.html#recent-work-1",
     "href": "utah-state/index.html#recent-work-1",
     "title": "Human Computer Data Interaction",
-    "section": "Recent Work",
-    "text": "Recent Work\n\nMethodological problems in every black-box study of forensic firearm comparisons (Law, Probability, and Risk)\nCuellar, Vanderplas, Luby, Rosenblum. 2024\nIncorrect statistical reasoning in Guyll et al. leads to biased claims about strength of forensic evidence (PNAS)\nRosenblum, Chin, Ogburn, Nishimura, Westreich, Datta, Vanderplas, Cuellar, Thompson. 2024\nHidden Multiple Comparisons Increase Forensic Error Rates (PNAS)\nVanderplas, Carriquiry, Hofmann. 2024"
+    "section": "🔬 Recent Work",
+    "text": "🔬 Recent Work\n\n\nMethodological problems in every black-box study of forensic firearm comparisons (Law, Probability, and Risk)\nCuellar, Vanderplas, Luby, Rosenblum. 2024\nIncorrect statistical reasoning in Guyll et al. leads to biased claims about strength of forensic evidence (PNAS)\nRosenblum, Chin, Ogburn, Nishimura, Westreich, Datta, Vanderplas, Cuellar, Thompson. 2024\nHidden Multiple Comparisons Increase Forensic Error Rates (PNAS)\nVanderplas, Carriquiry, Hofmann. 2024"
   },
   {
     "objectID": "utah-state/index.html#its-all-dnas-fault",
@@ -61,5 +61,215 @@
     "title": "Human Computer Data Interaction",
     "section": "next",
     "text": "next\n\n\n\n\n\n\nSource\n\n\n\n\n\n\n\nSource"
+  },
+  {
+    "objectID": "utah-state/index.html#section",
+    "href": "utah-state/index.html#section",
+    "title": "Human Computer Data Interaction",
+    "section": "",
+    "text": "In the past 20 years, CSI-style forensic analysis has taken quite a beating.\nDNA is the gold standard for forensic evidence - a specific combination of genes is supposed to be unique to the individual, matches can be objectively determined with error rates that are quantifiable, and it could be used to reexamine evidence from old cases.\nAs organizations like the Innocence Project used DNA to revisit old cases, it became clear that there were major problems with the evidence used in criminal cases – eyewitness testimony, false confessions, and shoddy forensics.\nThere were a number of very embarrassing cases where forensic evidence was shown to be faulty. As these cases happened, scientists started asking how this all went so wrong? Wasn’t forensics ultimately based in science? Weren’t there studies out there showing that forensic techniques had low error rates?"
+  },
+  {
+    "objectID": "utah-state/index.html#wire-cuts",
+    "href": "utah-state/index.html#wire-cuts",
+    "title": "Human Computer Data Interaction",
+    "section": "Wire Cuts",
+    "text": "Wire Cuts\n\n\n\n\n\n\nCAT5 crimper with wire cutter\n\n\n\n\n\n\n\nCut wires\n\n\n\n\n\n\n\n\n\nDigital scan of blade cut and wire cut"
+  },
+  {
+    "objectID": "utah-state/index.html#a-specific-case-jimmy-genrich",
+    "href": "utah-state/index.html#a-specific-case-jimmy-genrich",
+    "title": "Human Computer Data Interaction",
+    "section": "A Specific Case – Jimmy Genrich",
+    "text": "A Specific Case – Jimmy Genrich"
+  },
+  {
+    "objectID": "utah-state/index.html#motivation",
+    "href": "utah-state/index.html#motivation",
+    "title": "Human Computer Data Interaction",
+    "section": "Motivation",
+    "text": "Motivation\n\n\nAt trial, O’Neil testified that tools like the wire cutters found in Genrich’s residence were the only tools that could have been used to make the pipe bombs. “Agent O’Neil opined that the three of Mr. Genrich’s tools were the only tools in the world that could have made certain marks found on pieces from the four bombs,” Judge Gurley wrote in Monday’s opinion.\n\n\nO’Neil was asked specifically at trial what he meant by the phrase “to the exclusion of any other tool.” “That the individual jaw, the location within that jaw on that particular side, was identified as having cut the wire in question to a degree of certainty to exclude any other tool,” he said, according to court transcripts referenced in Gurley’s decision. O’Neil said this was true of needle-nosed pliers used on the bomb, slip-joint pliers, as well as the wire cutter.\n\n\nSource (emphasis added)"
+  },
+  {
+    "objectID": "utah-state/index.html#scientific-factors",
+    "href": "utah-state/index.html#scientific-factors",
+    "title": "Human Computer Data Interaction",
+    "section": "🧪Scientific Factors",
+    "text": "🧪Scientific Factors\n\nMaterial Surface\n\nMaterial type/characteristics\nHistory (previous damage, etc.)\n\nTool Operational Surface\n\nMaterial type/characteristics\nManufacturing Process\nMark type/frequency distribution\n\n\n\nScientifically, this could be boiled down to a combination of a statistics problem and a materials engineering problem: we need to understand the material surface (in this case, wire, which is likely copper or aluminium, and, if it’s insulated, we can probably get away with assuming the interior core is undamaged).\nWe also need to understand the tool – how many cutting surfaces does the tool have? How do they interact? At what angle? How much force is required, and does additional force produce different results?\nThe manufacturing process for the tool’s operational surface is usually what forensics examiners claim gives each tool a unique set of markings. So, we have to understand how the tool is manufactured, where those markings might come from, and what types of markings are likely to be analyzed – the relative frequency of different types, etc."
+  },
+  {
+    "objectID": "utah-state/index.html#examiner-method",
+    "href": "utah-state/index.html#examiner-method",
+    "title": "Human Computer Data Interaction",
+    "section": "Examiner Method",
+    "text": "Examiner Method\n\n\nBetween 2 and 4 cutting surfaces for each tool, \\(s \\in \\{2, 4\\}\\)\nWires have 1-2 striated surfaces, \\(w \\in \\{1, 2\\}\\)"
+  },
+  {
+    "objectID": "utah-state/index.html#visual-examination",
+    "href": "utah-state/index.html#visual-examination",
+    "title": "Human Computer Data Interaction",
+    "section": "Visual Examination",
+    "text": "Visual Examination\n\n\n\nTest cuts made along the blade(s) of the tool\nAt least \\(N_{ij} = b_i/d_j\\) comparisons for each blade surface \\(i\\) and cut wire surface \\(j\\)\nManual alignment: estimate the minimum comparisons"
+  },
+  {
+    "objectID": "utah-state/index.html#algorithmic-method",
+    "href": "utah-state/index.html#algorithmic-method",
+    "title": "Human Computer Data Interaction",
+    "section": "Algorithmic Method",
+    "text": "Algorithmic Method\nScans -&gt; Cross Section -&gt; “Signature”\n(remove gross topology)\n\nCross-correlation is used to align signature from blade cut surface to signature from wire cut surface. Image credit: Heike Hofmann"
+  },
+  {
+    "objectID": "utah-state/index.html#number-of-comparisons",
+    "href": "utah-state/index.html#number-of-comparisons",
+    "title": "Human Computer Data Interaction",
+    "section": "Number of Comparisons",
+    "text": "Number of Comparisons\n\n\n\n \nMinimum (Manual)\nMaximum (Algorithm)\n\n\n\n\nblade size\n\\(b=15 \\text{mm}\\)\n\\(b=15000 \\mu \\text{m}\\)\n\n\ncutting surfaces\n\\(s=2\\)/blade\n\\(s=2\\)/blade\n\n\nwire size\n\\(d=2 \\text{mm}\\)\n\\(d=2000 \\mu \\text{m}\\)\n\n\nwire surface\n\\(w=1\\)\n\\(w=1\\)\n\n\nresolution\n\n\\(r=0.645 \\mu \\text{m/px}\\)\n\n\n# per side\n7.5\n20,156\n\n\n# total\n15\n40,312\n\n\n\nThis assumes a single wire and a single possible tool."
+  },
+  {
+    "objectID": "utah-state/index.html#science-begins-at-home",
+    "href": "utah-state/index.html#science-begins-at-home",
+    "title": "Human Computer Data Interaction",
+    "section": "Science Begins at Home",
+    "text": "Science Begins at Home\n\nMy house has \\(\\approx\\) 982 cm of (easily accessible) blade surface which might be used to cut wires. My dad has \\(\\approx\\) 2243 cm of blade surface in his shop. No one in either house uses tools professionally."
+  },
+  {
+    "objectID": "utah-state/index.html#scientific-factors-1",
+    "href": "utah-state/index.html#scientific-factors-1",
+    "title": "Human Computer Data Interaction",
+    "section": "🧪Scientific Factors",
+    "text": "🧪Scientific Factors\n\nInteractions\n\nRelative hardness\nAngle\nForce\nContact surface(s)\nDeformation\n\n\n\nThen, we need to understand interaction effects – how do changes in tool and substrate material change the marks that are produced?\nYou can see how the number of factors very quickly gets out of control. Establishing the discipline from first principles is … difficult, to say the least. You could probably do it with a combination of time, stubbornness, and statistical inference, but there is always a chance that a new manufacturing method will be developed that will produce new types/classes of markings.\nUltimately, it seems likely that even with statistical inference, establishing the toolmark discipline from first principles is not possible, and it certainly doesn’t seem to be an effective use of time and funding."
+  },
+  {
+    "objectID": "utah-state/index.html#a-different-angle-on-the-problem",
+    "href": "utah-state/index.html#a-different-angle-on-the-problem",
+    "title": "Human Computer Data Interaction",
+    "section": "📐 A Different Angle on the Problem",
+    "text": "📐 A Different Angle on the Problem\n\n\\(e^{(1)}\\): error rate for a single comparison\n\\(e^{(N)}\\): overall error rate, \\(N\\) comparisons\nCalculate \\(N\\): # comparisons between tool and evidence\nUltimate question:\nWhat does \\(e^{(1)}\\) need to be for \\(e^{(N)}\\) to be low1?\n\nLow enough will be determined by courts⚖️, not statisticians… 🫣"
+  },
+  {
+    "objectID": "utah-state/index.html#structural-constraints",
+    "href": "utah-state/index.html#structural-constraints",
+    "title": "Human Computer Data Interaction",
+    "section": "Structural Constraints",
+    "text": "Structural Constraints\n\n\nBetween 2 and 4 cutting surfaces for each tool, \\(s \\in \\{2, 4\\}\\)\nWires have 1-2 striated surfaces, \\(w \\in \\{1, 2\\}\\)"
+  },
+  {
+    "objectID": "utah-state/index.html#structural-parameters",
+    "href": "utah-state/index.html#structural-parameters",
+    "title": "Human Computer Data Interaction",
+    "section": "Structural Parameters",
+    "text": "Structural Parameters\n\n\nBladed Surfaces: \\(s \\in \\{2, 4\\}, 1 \\leq i \\leq s\\)\nCut Surfaces (on one wire): \\(w \\in \\{1, 2\\}, 1\\leq j\\leq w\\)"
+  },
+  {
+    "objectID": "utah-state/index.html#visual-examination-1",
+    "href": "utah-state/index.html#visual-examination-1",
+    "title": "Human Computer Data Interaction",
+    "section": "Visual Examination",
+    "text": "Visual Examination\n\nAdj. comparisons are non-overlapping \\(\\Rightarrow\\) “independent”1\nThere are peak-valley dependence structures in profile data, but conditioning on tool/material/manufacturing, we would expect statistical independence between adjacent comparisons"
+  },
+  {
+    "objectID": "utah-state/index.html#number-of-comparisons-background-image-..imagesalignment-final.png-background-opacity30",
+    "href": "utah-state/index.html#number-of-comparisons-background-image-..imagesalignment-final.png-background-opacity30",
+    "title": "Human Computer Data Interaction",
+    "section": "Number of Comparisons {background-image: “../images/alignment-final.png” background-opacity:“30%”}",
+    "text": "Number of Comparisons {background-image: “../images/alignment-final.png” background-opacity:“30%”}\n\n\nMinimum\n\nblade size is \\(b=15 mm\\)\n\\(s = 2\\) cutting surfaces/blade\nwire size is \\(d = 2 mm\\)\n\\(w = 1\\) wire surface\n\n7.5 comparisons per side\n15 comparisons total\n\n\n\n\nMaximum\n\nblade size: \\(b = 15000\\) \\(\\mu\\!\\) m\n\\(s = 2\\) cutting surfaces/blade\nwire size: \\(d = 2000\\) \\(\\mu\\!\\) m\n\\(w = 1\\) wire surfaces\nresolution: \\(r=0.645\\) \\(\\mu\\!\\) m/px\n20,156 comparisons per side\n40,312 comparisons total\n\n\nThis assumes there’s a single wire and a single possible tool."
+  },
+  {
+    "objectID": "utah-state/index.html#so-how-bad-is-the-problem",
+    "href": "utah-state/index.html#so-how-bad-is-the-problem",
+    "title": "Human Computer Data Interaction",
+    "section": "So How Bad Is the Problem?",
+    "text": "So How Bad Is the Problem?\nFor error rate \\(e\\) and \\(n\\) comparisons\n\\[P(\\text{no false positive errors}) = 1 - \\left(1 - e\\right)^n\\]\n\nSimple probability 🎲 strikes again!"
+  },
+  {
+    "objectID": "utah-state/index.html#so-how-bad-is-the-problem-1",
+    "href": "utah-state/index.html#so-how-bad-is-the-problem-1",
+    "title": "Human Computer Data Interaction",
+    "section": "So How Bad Is the Problem?",
+    "text": "So How Bad Is the Problem?\n\nEstimated false positive error rate for striated comparisons from bullets and firing pins: 0.45 - 7.24%.\n\nPooled estimate: 2%\nNot enough error rate studies on wires\nBullets have additional structure to facilitate alignment\nWires have additional complexity\n\nshorter sequences\nmore dependence on angle\n\n\n\n\\(\\Rightarrow\\) 2% is a generous estimate…"
+  },
+  {
+    "objectID": "utah-state/index.html#so-how-bad-is-the-problem-2",
+    "href": "utah-state/index.html#so-how-bad-is-the-problem-2",
+    "title": "Human Computer Data Interaction",
+    "section": "So How Bad Is the Problem?",
+    "text": "So How Bad Is the Problem?\nTo keep the overall false positive rate under 10%…\n\n2% Error -&gt; 5 total comparisons.\nMinimum of 15 required to do even a simple wire-cut analysis."
+  },
+  {
+    "objectID": "utah-state/index.html#conclusions",
+    "href": "utah-state/index.html#conclusions",
+    "title": "Human Computer Data Interaction",
+    "section": "Conclusions",
+    "text": "Conclusions\n\nWire cut forensics are not scientifically sound using current analysis methods\n\n\nbut… this problem shows up in database searches, too!\n\nIAFIS (Integrated Automated Fingerprint ID System)\nNIBIN (Ballistics Database)\nNDIS (National DNA ID System) and CODIS (Combined DNA ID System)\nPDQ (Paint Data Query)\nFISH (Forensic ID System for Handwriting)"
+  },
+  {
+    "objectID": "utah-state/index.html#conclusions-1",
+    "href": "utah-state/index.html#conclusions-1",
+    "title": "Human Computer Data Interaction",
+    "section": "Conclusions",
+    "text": "Conclusions\n\nAutomatic intelligence algorithms are not a good substitute for investigative work\nExample: Oregon\n\n3 firearms examiners for the state\nMost firearms evidence run through NIBIN first\nPromising leads forwarded to examiners for manual assessment\n\n\nThis is a setup that could generate false-positives by design!"
+  },
+  {
+    "objectID": "utah-state/index.html#conclusions-2",
+    "href": "utah-state/index.html#conclusions-2",
+    "title": "Human Computer Data Interaction",
+    "section": "Conclusions",
+    "text": "Conclusions\n\nExaminers should report and the defense should require\n\noverall length/area of surfaces generated during the examination \\((b)\\)\ntotal consecutive length/area of recovered evidence \\((d)\\)\n\nStudies relating length/area of comparison surface to error rates are essential!\n\nNo available black-box error rate for wire cuts\nStudies should be difficult, like casework!\n\nAny database search used at any stage of the process should be disclosed along with\n\n\\(N\\) items in the database used for comparison\nNumber of results returned as ‘similar’ (top 20? top 5?)\nProtocols for confirmatory assessment"
+  },
+  {
+    "objectID": "utah-state/index.html#hidden-multiple-comparisons-increase-forensic-error-rates",
+    "href": "utah-state/index.html#hidden-multiple-comparisons-increase-forensic-error-rates",
+    "title": "Human Computer Data Interaction",
+    "section": "Hidden Multiple Comparisons Increase Forensic Error Rates",
+    "text": "Hidden Multiple Comparisons Increase Forensic Error Rates\nProceedings of the National Academy of Sciences, 2024\nJoint work with Heike Hofmann and Alicia Carriquiry\n\n\n\n\n    \nPNAS Paper Link\n\n\n\nThis work was partially funded by the Center for Statistics and Applications in Forensic Evidence (CSAFE) through Cooperative Agreements 70NANB15H176 and 70NANB20H019 between NIST and Iowa State University, which includes activities carried out at Carnegie Mellon University, Duke University, University of California Irvine, University of Virginia, West Virginia University, University of Pennsylvania, Swarthmore College and University of Nebraska, Lincoln."
+  },
+  {
+    "objectID": "utah-state/index.html#coming-soon",
+    "href": "utah-state/index.html#coming-soon",
+    "title": "Human Computer Data Interaction",
+    "section": "🐣 Coming Soon!",
+    "text": "🐣 Coming Soon!\n\nForensics:\n\ncourtR package for legal transcript studies\nhighlightR package for conserved text analysis\nAssessing Algorithm Use and Testimony for Firearms and Toolmark Analysis\nWhat Comes Next: A Constructive Vision for Firearms and Toolmarks Analysis\n\nGraphics:\n\nggdibbler package and paper - uncertainty visualization\nExperiential Learning with Statistical Graphics: Writing, Reflection, and Suspense\nAssessing Computer Vision models for Gestalt Perception"
+  },
+  {
+    "objectID": "utah-state/index.html#some-personal-motivation",
+    "href": "utah-state/index.html#some-personal-motivation",
+    "title": "Human Computer Data Interaction",
+    "section": "Some Personal Motivation",
+    "text": "Some Personal Motivation\n\nMy house has \\(\\approx\\) 982 cm of (easily accessible) blade surface which might be used to cut wires. My dad has \\(\\approx\\) 2243 cm of blade surface in his shop. No one in either house uses tools professionally."
+  },
+  {
+    "objectID": "utah-state/index.html#constructive-scientific-proof-proof-from-first-principles",
+    "href": "utah-state/index.html#constructive-scientific-proof-proof-from-first-principles",
+    "title": "Human Computer Data Interaction",
+    "section": "Constructive Scientific ProofProof from first principles",
+    "text": "Constructive Scientific ProofProof from first principles\n\n\n\nUnderstand\n\nhow tools make marks\ntool wear over time\ntool manufacturing processes\ntool/material interaction\nmark type/frequency distribution\n\nTrack\n\nFrequency of tools in a local population\n\n\n\n😓\n\n\nScientifically, this could be boiled down to a combination of a statistics problem and a materials engineering problem: we need to understand the material surface (in this case, wire, which is likely copper or aluminium, and, if it’s insulated, we can probably get away with assuming the interior core is undamaged).\nWe also need to understand the tool – how many cutting surfaces does the tool have? How do they interact? At what angle? How much force is required, and does additional force produce different results?\nThe manufacturing process for the tool’s operational surface is usually what forensics examiners claim gives each tool a unique set of markings. So, we have to understand how the tool is manufactured, where those markings might come from, and what types of markings are likely to be analyzed – the relative frequency of different types, etc.\nThen, we need to understand interaction effects – how do changes in tool and substrate material change the marks that are produced?\nYou can see how the number of factors very quickly gets out of control, even before we start tracking the number of tools that exist locally.\nEstablishing the discipline from first principles is … difficult, to say the least. You could probably do it with a combination of time, stubbornness, and statistical inference, but there is always a chance that a new manufacturing method will be developed that will produce new types/classes of markings.\nUltimately, it seems likely that even with statistical inference, establishing the toolmark discipline from first principles is not possible, and it certainly doesn’t seem to be an effective use of time and funding."
+  },
+  {
+    "objectID": "utah-state/index.html#algorithmic-comparison",
+    "href": "utah-state/index.html#algorithmic-comparison",
+    "title": "Human Computer Data Interaction",
+    "section": "Algorithmic Comparison",
+    "text": "Algorithmic Comparison\nScans -&gt; Cross Section -&gt; “Signature”\n(remove gross topology)\n\nCross-correlation is used to align signature from blade cut surface to signature from wire cut surface. Image credit: Heike Hofmann"
+  },
+  {
+    "objectID": "utah-state/index.html#education",
+    "href": "utah-state/index.html#education",
+    "title": "Human Computer Data Interaction",
+    "section": "🏫 Education",
+    "text": "🏫 Education\n\n\n\n\n2009\nBS, Psychology & Applied Math \n\n\n2011\nMS, Statistics \n\n\n2015\nPh.D., StatisticsDissertation: Perception of Statistical Graphics"
+  },
+  {
+    "objectID": "utah-state/index.html#career-timeline",
+    "href": "utah-state/index.html#career-timeline",
+    "title": "Human Computer Data Interaction",
+    "section": "💼 Career Timeline",
+    "text": "💼 Career Timeline\n\n\n\n\n\n\n\n\n2015-18\nStat. Analyst, NE Public Power \n\n\n2018-19\nResearch Asst. Professor, CSAFE \n\n\n2020-24\nAsst. Professor, UNL \n\n\n2024-26\nAssoc. Professor, UNL"
+  },
+  {
+    "objectID": "utah-state/index.html#personal-motivation",
+    "href": "utah-state/index.html#personal-motivation",
+    "title": "Human Computer Data Interaction",
+    "section": "Personal Motivation",
+    "text": "Personal Motivation\n\nMy house has \\(\\approx\\) 982 cm of (easily accessible) blade surface which might be used to cut wires. My dad has \\(\\approx\\) 2243 cm of blade surface in his shop. No one in either location is a craftsperson."
   }
 ]
