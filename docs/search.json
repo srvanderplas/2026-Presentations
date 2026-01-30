@@ -11,7 +11,7 @@
     "href": "utah-state/index.html#outline",
     "title": "Human Computer Data Interaction",
     "section": "Outline",
-    "text": "Outline\n\nIntroduction \nCSI: Statistics and the Fundamentals of Science \nPerception & Statistical Graphics \nMachine Learning for Forensics"
+    "text": "Outline\n\nIntroduction \nCSI: Statistics and the Fundamentals of Science \nPerception & Statistical Graphics \nAlgorithms for Forensic Evidence"
   },
   {
     "objectID": "utah-state/index.html#introduction",
@@ -271,5 +271,40 @@
     "title": "Human Computer Data Interaction",
     "section": "Personal Motivation",
     "text": "Personal Motivation\n\nMy house has \\(\\approx\\) 982 cm of (easily accessible) blade surface which might be used to cut wires. My dad has \\(\\approx\\) 2243 cm of blade surface in his shop. No one in either location is a craftsperson."
+  },
+  {
+    "objectID": "utah-state/index.html#constructive-scientific-proof-from-first-principles",
+    "href": "utah-state/index.html#constructive-scientific-proof-from-first-principles",
+    "title": "Human Computer Data Interaction",
+    "section": "Constructive Scientific Prooffrom first principles",
+    "text": "Constructive Scientific Prooffrom first principles\n\n\n\nUnderstand\n\nhow tools make marks\ntool wear over time\ntool manufacturing processes\ntool/material interaction\nmark type/frequency distribution\n\nTrack\n\nFrequency of tools in a local population\n\n\n\n😓\n\n\nScientifically, we might boil this down to a series of engineering and materials science problems - understanding the types of marks which can occur on different types of tool materials through manufacture, wear, etc., and then understanding in turn how those tools transfer marks to other surfaces and how force, angle, and material hardness impact those marks.\nUnfortunately, though, the number of different characteristics gets very quickly out of control and you end up with an exponential number of interactions very quickly.\nEstablishing the discipline from first principles is … difficult, to say the least. You could probably do it with a combination of time, stubbornness, and statistical inference, but there is always a chance that a new manufacturing method will be developed that will produce new types/classes of markings.\nBut, there are other ways to handle this problem."
+  },
+  {
+    "objectID": "utah-state/index.html#toolmark-examination-primer",
+    "href": "utah-state/index.html#toolmark-examination-primer",
+    "title": "Human Computer Data Interaction",
+    "section": "Toolmark Examination Primer",
+    "text": "Toolmark Examination Primer\n\nOur Crime Scene"
+  },
+  {
+    "objectID": "utah-state/index.html#toolmark-examination-primer-1",
+    "href": "utah-state/index.html#toolmark-examination-primer-1",
+    "title": "Human Computer Data Interaction",
+    "section": "Toolmark Examination Primer",
+    "text": "Toolmark Examination Primer\n\nIdentifying Marks"
+  },
+  {
+    "objectID": "utah-state/index.html#toolmark-examination-primer-2",
+    "href": "utah-state/index.html#toolmark-examination-primer-2",
+    "title": "Human Computer Data Interaction",
+    "section": "Toolmark Examination Primer",
+    "text": "Toolmark Examination Primer\n\n\n\n\n\nHow do we know this method is valid?"
+  },
+  {
+    "objectID": "utah-state/index.html#attention",
+    "href": "utah-state/index.html#attention",
+    "title": "Human Computer Data Interaction",
+    "section": "Attention",
+    "text": "Attention\n\n\n\nFocused vs. Divided attention\n\nDivided = multiple input streams must be processed (e.g. driving a car)\nFocused = single input stream\n\nAttention shifts with gaze systematically throughout a visual stimulus\nInformation which is extraneous to the task may not be stored or remembered"
   }
 ]

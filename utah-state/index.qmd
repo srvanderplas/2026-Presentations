@@ -7,7 +7,7 @@ format:
     includes:
       in_header: ../libs/job/header.html
     lib_dir: libs
-    embed-resources: true
+    embed-resources: false
 ---
 
 ```{r}
@@ -27,14 +27,15 @@ BibOptions(check.entries = FALSE,
            dashed = FALSE)
 bb <- ReadBib("./CV.bib", check = T)
 ```
-## Outline
+# Outline
 
 1. [Introduction](#introduction)
 <!-- Hi, I'm susan and I do an odd assortment of things -->
 2. [CSI: Statistics and the Fundamentals of Science](#csi-stats)
 <!-- Error Rates and Scientific Foundations in Forensics -->
-3. Perception & Statistical Graphics
+3. [Perception & Statistical Graphics](#graphics)
 <!-- Career Award project -->
+4. [Algorithms for Forensic Evidence](#csi-algs)
 
 
 # Introduction 😶‍🌫️☁️🌎
@@ -205,6 +206,32 @@ This work was partially funded by the Center for Statistics and Applications in 
 
 
 
+## Toolmark Examination Primer
+
+
+![Our Crime Scene](../images/bread-butter.png){fig-alt="A picture of a loaf of bread and a fresh stick of butter that has just been cut with a butter knife." width="50%"}
+
+## Toolmark Examination Primer
+
+
+![Identifying Marks](../images/bread-butter-zoom.png){fig-alt="A picture of a loaf of bread and a fresh stick of butter that has just been cut with a butter knife. The cut butter has a circle around it, with the enlarged image in the circle shown on the right."}
+
+
+## Toolmark Examination Primer
+
+::: {.r-stack}
+
+![](../images/test-cuts-nolabel.png){fig-alt="A picture of a steak knife (top) and a butter knife (bottom), with several test cuts from each knife arranged in two rows in the middle. The test cuts are labeled, and the 'evidence' is superimposed on top."}
+
+![](../images/test-cuts-full.png){fig-alt="A picture of a steak knife (top) and a butter knife (bottom), with several test cuts from each knife arranged in two rows in the middle. The test cuts are labeled, and the 'evidence' is superimposed on top. The test cuts made with the steak knife have an X overlaid, while the test cuts made with the butter knife have a check overlaid, indicating that they match the evidence from the scene." .fragment}
+
+:::
+
+::: {.fragment}
+[How do we know this method is valid?]{.emph .meddarkblue .large}
+:::
+
+
 ## A Specific Case -- Jimmy Genrich
 
 ::: {layout-ncol=2}
@@ -232,14 +259,11 @@ This work was partially funded by the Center for Statistics and Applications in 
 
 [Source](https://www.cpr.org/2023/07/10/judge-orders-new-trial-for-grand-junction-man-convicted-in-90s-pipe-bombings/) (emphasis added)
 
-
-
 ## Personal Motivation
 
 ![My house has $\approx$ 982 cm of (easily accessible) blade surface which might be used to cut wires. My dad has $\approx$ 2243 cm of blade surface in his shop. No one in either location is a craftsperson.](../images/Shop-annotated.png){fig-alt="An annotated picture of a messy garage, showing all of the tools which could conceivably make striated toolmarks, including visegrips, pliers, bolt cutters, pry bars, electrical tools, razor blades, hammers, tin snips, saws, and more." width="100%"}
 
-
-## Constructive Scientific Proof<br>[Proof from first principles]{.emph .meddarkblue .smaller}
+## Constructive Scientific Proof<br>[from first principles]{.emph .meddarkblue .smaller}
 
 ::: columns
 ::: {.column .r-fit-text width="70%"}
@@ -259,22 +283,25 @@ This work was partially funded by the Center for Statistics and Applications in 
 
 ::: {.notes}
 
+Scientifically, we might boil this down to a series of engineering and materials science problems - understanding the types of marks which can occur on different types of tool materials through manufacture, wear, etc., and then understanding in turn how those tools transfer marks to other surfaces and how force, angle, and material hardness impact those marks. 
 
-Scientifically, this could be boiled down to a combination of a statistics problem and a materials engineering problem: we need to understand the material surface (in this case, wire, which is likely copper or aluminium, and, if it's insulated, we can probably get away with assuming the interior core is undamaged). 
+Unfortunately, though, the number of different characteristics gets very quickly out of control and you end up with an exponential number of interactions very quickly. 
 
-We also need to understand the tool -- how many cutting surfaces does the tool have? How do they interact? At what angle? How much force is required, and does additional force produce different results?
-
-The manufacturing process for the tool's operational surface is usually what forensics examiners claim gives each tool a unique set of markings. So, we have to understand how the tool is manufactured, where those markings might come from, and what types of markings are likely to be analyzed -- the relative frequency of different types, etc.
-
-Then, we need to understand interaction effects -- how do changes in tool and substrate material change the marks that are produced?
-
-You can see how the number of factors very quickly gets out of control, even before we start tracking the number of tools that exist locally.  
 Establishing the discipline from first principles is ... difficult, to say the least. You could probably do it with a combination of time, stubbornness, and statistical inference, but there is always a chance that a new manufacturing method will be developed that will produce new types/classes of markings. 
 
-Ultimately, it seems likely that even with statistical inference, establishing the toolmark discipline from first  principles is not possible, and it certainly doesn't seem to be an effective use of time and funding. 
-
+But, there are other ways to handle this problem. 
 :::
 
+
+## 📐 A Different Angle on the Problem
+
+- $e^{(1)}$: error rate for a single comparison
+- $e^{(N)}$: overall error rate, $N$ comparisons
+
+- Calculate $N$: \# comparisons between tool and evidence
+
+- [Ultimate question]{.emph .darkpurple}:     
+What does $e^{(1)}$ need to be for $e^{(N)}$ to be low^[Low enough will be determined by courts⚖️, not statisticians... 🫣]?
 
 
 ## Wire Cuts
@@ -287,16 +314,6 @@ Ultimately, it seems likely that even with statistical inference, establishing t
 
 ![Digital scan of blade cut and wire cut](../images/Blade-Wire-Cut-Scan-Render.png)
 :::
-
-## 📐 A Different Angle on the Problem
-
-- $e^{(1)}$: error rate for a single comparison
-- $e^{(N)}$: overall error rate, $N$ comparisons
-
-- Calculate $N$: \# comparisons between tool and evidence
-
-- [Ultimate question]{.emph .darkpurple}:     
-What does $e^{(1)}$ need to be for $e^{(N)}$ to be low^[Low enough will be determined by courts⚖️, not statisticians... 🫣]?
 
 ## Structural Parameters
 
@@ -459,3 +476,29 @@ but... this problem shows up in database searches, too!
 
 :::
 
+# Perception & Statistical Graphics
+
+
+# Cognitive Psychology Primer
+
+![](descartes-perception-timeline.svg){width="100%" fig-alt="A sketch from Descartes showing a stimulus, eyes, optic nerve, and higher level brain regions artistically. External information is contained in a box labeled 'Stimulus' on the right side of the image. The eyes and optic nerves are contained in a box labeled 'Perception' in the middle. Finally, the higher-level brain regions are contained in a box labeled 'Cognition'. An arrow at the bottom of the image labeled Time moves from right to left."}
+
+## Attention
+
+::: columns
+::: {.column width="50%"}
+-   Focused vs. Divided attention
+
+    -   Divided = multiple input streams must be processed (e.g. driving a car)
+
+    -   Focused = single input stream
+
+-   Attention shifts with gaze systematically throughout a visual stimulus
+
+-   Information which is extraneous to the task may not be stored or remembered
+:::
+
+::: {.column width="50%"}
+![](SaccadesText.jpg){fig-alt="Written text. An annotation layer on top shows how the eye fixates sequentially on each word/syllable (approximately) and then jumps to the next word in the sequence." width="100%"}
+:::
+:::
