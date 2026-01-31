@@ -478,27 +478,185 @@ but... this problem shows up in database searches, too!
 
 # Perception & Statistical Graphics
 
+---
 
-# Cognitive Psychology Primer
+```{r}
+#| label: HR-diagram
+#| fig-width: 8
+#| fig-height: 5
+#| out-width: "100%"
+#| message: false
+#| warning: false
+#| echo: false
+#| fig-cap: "The Hertzsprung Russell diagram. Discovered independently by Ejnar Hertzsprung (1873–1967) and Henry Norris Russell (1877–1957). The diagram plots the color index of the star against the brightness (absolute magnitude) of the star. As a result, it is possible to discern that these two variables are related and change together over a star's life cycle: a hypothesis that only came to be because of this chart."
+#| fig-alt: "A scatter plot showing the color index of a star on the x-axis and the absolute magnitude (brightness) of the star on the y-axis. Points are colored by spectral class, which varies from blue to white to yellow to red as the color index increases and the star's temperature decreases. Points are primarily located along a downward-sloping line from the top left to the bottom right, which is labeled the 'main sequence'. There is another set of points which diverges from the main sequence and extends out horizontally in the middle of the graph; these are labeled 'giants', and a few outliers that are above the giant cluster are labeled 'supergiants'. Below the main sequence stars, there are outliers which are labeled 'dwarfs'."
+#| fig-dpi: 300
+if (!file.exists("../data/stars.csv")) download.file("https://raw.githubusercontent.com/astronexus/HYG-Database/main/hyg/v3/hyg_v38.csv", destfile = "../data/stars.csv")
+library(magrittr)
+library(dplyr)
+library(stringr)
+library(ggplot2)
+stars <- readr::read_csv("../data/stars.csv")
 
-![](descartes-perception-timeline.svg){width="100%" fig-alt="A sketch from Descartes showing a stimulus, eyes, optic nerve, and higher level brain regions artistically. External information is contained in a box labeled 'Stimulus' on the right side of the image. The eyes and optic nerves are contained in a box labeled 'Perception' in the middle. Finally, the higher-level brain regions are contained in a box labeled 'Cognition'. An arrow at the bottom of the image labeled Time moves from right to left."}
+stars <- stars %>%
+  mutate(Spectral.Class = str_extract(spect, "^.") %>%
+           str_to_upper() %>%
+           factor(levels = c("O", "B", "A", "F", "G", "K", "M"), ordered = T),
+         EarlyLate = str_extract(spect, ".(\\d)") %>%
+           str_replace_all("[^\\d]", "") %>% as.numeric(),
+         Temp = 4600*(1/(.92*ci + 1.7) + 1/(.92*ci) + 0.62)) %>%
+  filter(!is.na(Spectral.Class) & !is.na(EarlyLate) & !is.na(hip)) %>%
+  arrange(Spectral.Class, EarlyLate) %>%
+  mutate(SpectralClass2 = paste0(Spectral.Class, EarlyLate) %>% factor(., levels = unique(.)))
 
-## Attention
+ggplot(data = filter(stars, dist < 500)) + 
+  # annotate(x = -.25, xend = .75, y = -2, yend = -6.5, arrow = arrow(ends = "both", length = unit(.1, "cm")), geom = "segment", color = "grey") + 
+  annotate(x = 0.125, xend = 2, y = 4.25, yend = 4.25, arrow = arrow(ends = "both", length = unit(.1, "cm")), geom = "segment", color = "grey") + 
+  geom_point(aes(x = ci, y = -absmag, color = Spectral.Class), alpha = .3) + 
+  scale_x_continuous("B-V Color Index", breaks = c(0, .5, 1, 1.5, 2), labels = c("Hot  0.0       ", "0.5", "1.0", "1.5", "           2.0  Cool")) + 
+  scale_y_continuous("Absolute Magnitude (Brightness)", breaks = c(-8, -4, 0, 4), labels = c(8, 4, 0, -4)) + 
+  scale_color_manual("Spectral\nClass", values = c("#2E478C", "#426DB9", "#B5D7E3", "white", "#FAF685", "#E79027", "#DA281F")) + 
+  annotate(x = .25, y = -5.5, label = "Dwarfs", geom = "text", angle = -25, color = "white") + 
+  annotate(x = .5, y = -3.75, label = "Main Sequence", geom = "text", angle = -28) + 
+  annotate(x = 1.125, y = 0, label = "Giants", geom = "text") + 
+  annotate(x = 1, y = 4.5, label = "Supergiants", geom = "text", color = "white") +
+  theme(panel.background = element_rect(fill = "#000000"),
+        legend.key = element_blank(), 
+        panel.grid = element_line(colour = "grey40"),
+        axis.text = element_text(color = "white"),
+        text = element_text(size = 18, color = "white"), 
+        legend.background = element_rect(fill = "#000000"),
+        plot.background = element_rect(fill = "#000000")) + 
+  ggtitle("Hertzsprung-Russell Diagram") + 
+  coord_cartesian(xlim = c(-.25, 2.25), ylim = c(-12, 7)) + 
+  guides(color = guide_legend(override.aes = list(alpha = 1)))
+```
+
+Data from the [HYG Database](https://github.com/astronexus/HYG-Database). Shows stars within 500 AU.
+
+
+## Cognitive Psychology for Charts
+
+- Graphics research has historically focused on     
+[accuracy]{.emph .red} and [response time]{.emph .red}
+
+- 
+
+
+## Perception
 
 ::: columns
 ::: {.column width="50%"}
--   Focused vs. Divided attention
-
-    -   Divided = multiple input streams must be processed (e.g. driving a car)
-
-    -   Focused = single input stream
-
--   Attention shifts with gaze systematically throughout a visual stimulus
-
--   Information which is extraneous to the task may not be stored or remembered
+-   Sensory input
+-   Recognition of type of chart
+-   Takes place very quickly - preattentively
 :::
 
 ::: {.column width="50%"}
-![](SaccadesText.jpg){fig-alt="Written text. An annotation layer on top shows how the eye fixates sequentially on each word/syllable (approximately) and then jumps to the next word in the sequence." width="100%"}
+![](01-perception.svg){fig-alt="A scatterplot with points, an x-axis label, a y-axis label, and a title that says 'Title with context'. The word perception is added on top of the scatterplot." width="100%"}
 :::
 :::
+
+## Gestalt Grouping
+
+::: columns
+::: {.column width="50%"}
+-   Gestalt heuristics used to group points into clusters/trends
+
+![](Gestalt.svg)
+:::
+
+::: {.column width="50%"}
+![](02-grouping.svg){fig-alt="A scatterplot with points, an x-axis label, a y-axis label, and a title that says 'Title with context'. There is a main set of points surrounded by a gray region that contains the points, indicating that these points are part of a group. There is a second group of 3 points surrounded by an orange dot that appear to be completely separate from the main group." width="100%"}
+:::
+:::
+
+## Integration with Domain Knowledge
+
+::: columns
+::: {.column width="50%"}
+-   Begin to assign meaning to the relationship between the data and the chart labels/titles
+
+-   Retrieve knowledge from long term memory and make that available in working memory
+:::
+
+::: {.column width="50%"}
+![](03-integration-knowledge.svg){fig-alt="A scatterplot with points, an x-axis label, a y-axis label, and a title that says 'Title with context'. The titles are highlighted and arrows are drawn between them. A text label of 'integration with domain knowledge' is shown between the arrows and titles overtop the data." width="100%"}
+:::
+:::
+
+## Integration with Domain Knowledge
+
+::: columns
+::: {.column width="50%"}
+Domain knowledge includes:
+
+-   How graphs are usually structured (e.g. y-axis increases from bottom to top)
+
+-   Conventions for use of filled vs. empty space
+
+-   Knowledge of relationships, events, etc. that might be impactful
+:::
+
+::: {.column width="50%"}
+![](Padilla-Inverse-y.png)
+
+Figure from Padilla et al. *Cognitive Research: Principles and Implications* (2018) 3:29
+:::
+:::
+
+## Storytelling
+
+::: columns
+::: {.column width="50%"}
+-   Assign meaning to relationships
+
+-   Fit visual statistics
+
+-   Look for things that do and don't fit a rough working hypothesis about the data
+:::
+
+::: {.column width="50%"}
+![](04-storytelling.svg){fig-alt="A scatterplot showing a positive linear association between X and Y. The points are surrounded by a bounding region and a dotted regression line is drawn through the center of the region, with solid lines at the edges of the region, indicating a rough regression fit. A group of 3 points at the bottom right of the plot is colored blue and is labeled 'outlier assessment'." width="100%"}
+:::
+:::
+
+## Inference
+
+::: columns
+::: {.column width="50%"}
+-   Numerical estimation from the chart with uncertainty
+
+-   Visual search, followed by estimation, calculation, and inference.
+:::
+
+::: {.column width="50%"}
+![](05-inference.svg){fig-alt="A scatterplot showing a positive linear association between X and Y. A dotted line indicates a location on the x-axis, 'x'. A red band around the line is labeled visual search, and an arrow points to the dotted line, which is labeled estimation. A yellow line points to the corresponding points around the dotted line, labeled 'calculation', and a purple line labeled 'inference' points to a region on the y-axis that has a corresponding confidence interval." width="100%"}
+:::
+:::
+
+## Prediction and Application
+
+::: columns
+::: {.column width="50%"}
+-   Moving beyond the data shown to interpret and apply meaning
+
+-   Draw conclusions
+
+-   Make predictions about the future
+:::
+
+::: {.column width="50%"}
+![](06-application.svg){fig-alt="A scatterplot showing a positive linear association between X and Y. A regression line shows the approximate mean of the points shown, with a dotted extension of the line which is labeled prediction. An orange arrow points from the prediction segment to an image of the globe, which is labeled application." width="100%"}
+:::
+:::
+
+## Decision Making with Graphics
+
+```{r}
+ggplot(penguins, aes(x = species)) + geom_bar(aes(fill = species)) + scale_fill_manual("Penguin\nSpecies", values = c("#ff7400", "#c05ccb", "#056e76")) + xlab("Species") + ylab("# Penguins Measured") + ggtitle("Frequency of Penguins by Species") + theme_bw()
+```
+
+What is the average number of Adelie and Chinstrap penguins measured?
+
+What steps do you go through to calculate this average?
