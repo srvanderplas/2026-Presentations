@@ -6,9 +6,9 @@
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/quarto-contrib/qrcodejs-v1.0.0/qrcode.js"></script><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.8.26">
+  <meta name="generator" content="quarto-1.8.27">
 
   <meta name="author" content="Susan Vanderplas">
   <meta name="dcterms.date" content="2026-02-05">
@@ -147,9 +147,9 @@ Susan Vanderplas
 <h1>Outline</h1>
 <ol type="1">
 <li><a href="#/introduction">Introduction</a> <!-- Hi, I'm susan and I do an odd assortment of things --></li>
-<li><a href="#/csi-stats">CSI: Statistics and the Fundamentals of Science</a> <!-- Error Rates and Scientific Foundations in Forensics --></li>
 <li><a href="#/graphics">Perception &amp; Statistical Graphics</a> <!-- Career Award project --></li>
 <li><a href="#/csi-algs">Algorithms for Forensic Evidence</a></li>
+<li><a href="#/csi-stats">CSI: Statistics and the Fundamentals of Science</a> <!-- Error Rates and Scientific Foundations in Forensics --></li>
 </ol>
 </section>
 
@@ -265,6 +265,806 @@ Susan Vanderplas
 <li><p>2019, NSF, Overcoming the Rural Data Deficit to Improve Quality of Life and Community Services in Smart &amp; Connected Small Communities ($1.5 mil total, $123,445 sub-award)</p></li>
 </ul>
 </div>
+</section></section>
+<section>
+<section id="graphics" class="title-slide slide level1 center">
+<h1>Perception &amp; Statistical Graphics</h1>
+
+</section>
+<section class="slide level2">
+
+
+<img data-src="index_files/figure-revealjs/HR-diagram-1.png" style="width:100.0%" alt="A scatter plot showing the color index of a star on the x-axis and the absolute magnitude (brightness) of the star on the y-axis. Points are colored by spectral class, which varies from blue to white to yellow to red as the color index increases and the star's temperature decreases. Points are primarily located along a downward-sloping line from the top left to the bottom right, which is labeled the 'main sequence'. There is another set of points which diverges from the main sequence and extends out horizontally in the middle of the graph; these are labeled 'giants', and a few outliers that are above the giant cluster are labeled 'supergiants'. Below the main sequence stars, there are outliers which are labeled 'dwarfs'." class="r-stretch quarto-figure-center"><p class="caption"><span class="small">The Hertzsprung Russell diagram. Discovered independently by Ejnar Hertzsprung (1873–1967) and Henry Norris Russell (1877–1957). The diagram plots the color index of the star against the brightness (absolute magnitude) of the star. As a result, it is possible to discern that these two variables are related and change together over a star’s life cycle: a hypothesis that only came to be because of this chart.</span></p><p><span class="small">Data from the <a href="https://github.com/astronexus/HYG-Database">HYG Database</a>. Shows stars within 500 AU.</span></p>
+<aside class="notes">
+<p>John Tukey, a famous statistician often considered the father of statistical graphics, wrote in Exploratory Data Analysis (1977):</p>
+<blockquote>
+<p>The greatest value of a picture is when it forces us to notice what we never expected to see.</p>
+</blockquote>
+<ul>
+<li><p>What variables are mapped to the following chart dimensions?</p>
+<ul>
+<li>X location</li>
+<li>Y location</li>
+<li>color</li>
+</ul></li>
+<li><p>What other information is present on the chart that is not specifically a data value?</p></li>
+<li><p>What does this chart do well?</p></li>
+<li><p>What design features “work”?</p></li>
+<li><p>What don’t you like?</p></li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="cognitive-psychology-for-charts" class="slide level2">
+<h2>Cognitive Psychology for Charts</h2>
+<ul>
+<li>Graphics research has historically focused on<br>
+<span class="emph red">accuracy</span> and <span class="emph red">response time</span></li>
+</ul>
+<p><span class="fragment emph blue">But, that isn’t how we use graphics!</span></p>
+
+<img data-src="fig/Chart-Perception-Process.svg" class="r-stretch"></section>
+<section id="lineups" class="slide level2">
+<h2>Lineups</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="fig/linear-lineup-example.png"></p>
+<figcaption>Question: Can participants identify different growth rates on a linear scale?</figcaption>
+</figure>
+</div>
+</div><div class="column smaller" style="width:50%;">
+<p><span class="cerulean emph">A “Visual Hypothesis Test”</span></p>
+<ul>
+<li><p>Embed the question in array of charts</p></li>
+<li><p>Can people identify the different plot?</p></li>
+<li><p>Null model can be tricky to create</p></li>
+<li><p>Test statistic is the visual evaluation</p></li>
+</ul>
+<div class="small">
+<p><span class="citation" data-cites="bujaStatisticalInferenceExploratory2009">@bujaStatisticalInferenceExploratory2009</span><br>
+<span class="citation" data-cites="loyDiagnosticToolsHierarchical2013">@loyDiagnosticToolsHierarchical2013</span><br>
+<span class="citation" data-cites="majumderValidationVisualStatistical2013">@majumderValidationVisualStatistical2013</span><br>
+<span class="citation" data-cites="vanderplasClustersBeatTrend2017">@vanderplasClustersBeatTrend2017</span><br>
+<span class="citation" data-cites="vanderplasStatisticalSignificanceCalculations2021">@vanderplasStatisticalSignificanceCalculations2021</span></p>
+</div>
+</div></div>
+</section>
+<section id="numerical-estimation" class="slide level2">
+<h2>Numerical Estimation</h2>
+<div class="columns">
+<div class="column">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="fig/Eells_1926.png" style="width:80.0%"></p>
+<figcaption><span class="citation" data-cites="eellsRelativeMeritsCircles1926">@eellsRelativeMeritsCircles1926</span></figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="fig/vonHuhn_1927.png" style="width:80.0%"></p>
+<figcaption><span class="citation" data-cites="vonhuhnFurtherStudiesGraphic1927">@vonhuhnFurtherStudiesGraphic1927</span></figcaption>
+</figure>
+</div>
+</div><div class="column">
+<div class="smaller">
+<ul>
+<li>Size of region?<br>
+<span class="citation" data-cites="eellsRelativeMeritsCircles1926">@eellsRelativeMeritsCircles1926</span>; <span class="citation" data-cites="croxtonBarChartsCircle1927">@croxtonBarChartsCircle1927</span>; <span class="citation" data-cites="vanderplasFramedReproducingRevisiting2019">@vanderplasFramedReproducingRevisiting2019</span></li>
+<li>With scales?<br>
+<span class="citation" data-cites="vonhuhnFurtherStudiesGraphic1927">@vonhuhnFurtherStudiesGraphic1927</span></li>
+<li>Size of relationship compared to another region<br>
+<span class="citation" data-cites="croxtonGraphicComparisonsBars1932">@croxtonGraphicComparisonsBars1932</span></li>
+<li>Very sensitive to question phrasing</li>
+</ul>
+</div>
+</div></div>
+</section>
+<section id="forced-choice" class="slide level2">
+<h2>Forced Choice</h2>
+<div class="columns">
+<div class="column">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="fig/hughes_2001_larger.png" style="width:30.0%"></p>
+<figcaption>Which bar is larger? <span class="citation" data-cites="hughesJustNoticeableDifferences2001">@hughesJustNoticeableDifferences2001</span></figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="fig/padilla-visual-fit.png" style="width:100.0%"></p>
+<figcaption><span class="citation" data-cites="hegartyChoosingUsingGeospatial2012">@hegartyChoosingUsingGeospatial2012</span></figcaption>
+</figure>
+</div>
+</div><div class="column">
+<div class="smaller">
+<ul>
+<li><p>Force participants to answer a specific question</p></li>
+<li><p>May be a size judgment (which is larger?)</p>
+<ul>
+<li>common in psychophysics experiments</li>
+</ul></li>
+<li><p>May be a more complex decision incorporating other information</p></li>
+</ul>
+<p><span class="citation" data-cites="hughesJustNoticeableDifferences2001">@hughesJustNoticeableDifferences2001</span><br>
+<span class="citation" data-cites="xiongBiasedAveragePosition2020">@xiongBiasedAveragePosition2020</span><br>
+<span class="citation" data-cites="luModelingJustNoticeable2022">@luModelingJustNoticeable2022</span></p>
+</div>
+</div></div>
+</section>
+<section id="eye-tracking" class="slide level2">
+<h2>Eye Tracking</h2>
+<div class="columns">
+<div class="column" style="width:60%;">
+<ul>
+<li><p>Infer cognitive processes from directed (conscious) attention</p></li>
+<li><p>May be accompanied by direct estimation or other protocols</p></li>
+</ul>
+<!-- - Can be combined with other methods -->
+<div class="smaller">
+<p><span class="citation" data-cites="gegenfurtnerExpertiseDifferencesComprehension2011">@gegenfurtnerExpertiseDifferencesComprehension2011</span><br>
+<span class="citation" data-cites="goldbergEyeTrackingVisualization2011">@goldbergEyeTrackingVisualization2011</span><br>
+<span class="citation" data-cites="zhaoMindReadingUsing2013a">@zhaoMindReadingUsing2013a</span><br>
+<span class="citation" data-cites="netzelComparativeEyetrackingEvaluation2017">@netzelComparativeEyetrackingEvaluation2017</span><br>
+<span class="citation" data-cites="liuChoosingOptimalMeans2023">@liuChoosingOptimalMeans2023</span></p>
+</div>
+</div><div class="column" style="width:40%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="fig/Goldberg_2010.png" style="width:90.0%"></p>
+<figcaption><span class="citation" data-cites="goldbergComparingInformationGraphics2010">@goldbergComparingInformationGraphics2010</span></figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="fig/woller_2012.png" style="width:90.0%"></p>
+<figcaption><span class="citation" data-cites="wollercarterCommunicatingDistortingRisks2012">@wollercarterCommunicatingDistortingRisks2012</span></figcaption>
+</figure>
+</div>
+</div></div>
+</section>
+<section id="think-aloud-and-free-response" class="slide level2">
+<h2>Think Aloud and Free Response</h2>
+<ul>
+<li><p>Stream of consciousness narration <span class="citation" data-cites="guanValidityStimulatedRetrospective2006 cookeAssessingConcurrentThinkAloud2010">@guanValidityStimulatedRetrospective2006 [; @cookeAssessingConcurrentThinkAloud2010]</span></p></li>
+<li><p>Reasoning to justify a decision</p></li>
+</ul>
+
+<img data-src="fig/vanderplas_2017.png" class="r-stretch quarto-figure-center"><p class="caption">Why did you choose this panel? <span class="citation" data-cites="vanderplasClustersBeatTrend2017">@vanderplasClustersBeatTrend2017</span></p></section>
+<section id="direct-annotation" class="slide level2">
+<h2>Direct Annotation</h2>
+<div class="columns">
+<div class="column">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="fig/Mosteller_1981.png"></p>
+<figcaption><span class="citation" data-cites="mostellerEyeFittingStraight1981">@mostellerEyeFittingStraight1981</span></figcaption>
+</figure>
+</div>
+</div><div class="column smaller">
+<ul>
+<li><p>Have participants visually fit statistics</p>
+<ul>
+<li>Usually directly annotating the chart with e.g.&nbsp;a regression line</li>
+</ul></li>
+<li><p>Compare visual statistics to numerical calculations</p></li>
+<li><p>Differences tell us about our implicit perception of data<br>
+<span class="smaller">e.g.&nbsp;visual regression is more robust to outliers</span></p></li>
+<li><p>Also useful as a teaching tool</p></li>
+</ul>
+<div class="smaller">
+<p><span class="citation" data-cites="bajgierVisualFitsTeaching1989">@bajgierVisualFitsTeaching1989</span><br>
+<span class="citation" data-cites="robinsonEyeFittingStraight2022">@robinsonEyeFittingStraight2022</span><br>
+<span class="citation" data-cites="robinsonYouDrawIt2023">@robinsonYouDrawIt2023</span></p>
+</div>
+</div></div>
+</section>
+<section id="how-do-we-test-graphics" class="slide level2">
+<h2>How Do We Test Graphics?</h2>
+
+<img data-src="fig/Chart-Perception-Process.svg" class="r-stretch"><ul>
+<li><p>Testing method needs to be matched to level of engagement</p></li>
+<li><p>Need to examine graphical choices across levels of engagement</p></li>
+</ul>
+</section>
+<section id="logscales" class="slide level2 center">
+<h2>Multimodal Graphical Testing <br><span class="emph cerulean center">in Practice</span></h2>
+</section>
+<section id="perception-exp.-growth-log-scales" class="slide level2">
+<h2>Perception: Exp. Growth &amp; Log Scales</h2>
+<div class="large cerulean emph fragment">
+<p>3 different ways of engaging with the data</p>
+</div>
+<p>Can we</p>
+<ul>
+<li>Q1: <strong>perceive</strong> differences in <span class="fragment emph red">&nbsp;&nbsp;&nbsp;&nbsp;… Perceptual</span></li>
+<li>Q2: <strong>forecast</strong> trends from <span class="fragment emph green">&nbsp;&nbsp;&nbsp;&nbsp;… Tactile</span></li>
+<li>Q3: <strong>estimate</strong> and <strong>use</strong> <span class="fragment emph blue">&nbsp;&nbsp;&nbsp;&nbsp;… Numerical</span></li>
+</ul>
+<p>graphs of exponential growth with log and linear scales?</p>
+<p><span class="fragment emph cerulean">300 participants completed all 3 experiments</span></p>
+<aside class="notes">
+<p>I’m a huge fan of lineups, but one of the issues I had with the COVID graphs I was seeing was that I wasn’t convinced people were <em>interpreting</em> the data correctly.</p>
+<p>I started thinking about why lineups wouldn’t test things at the level I was hoping for, and eventually came up with this hierarchy - first, you have to be able to recognize that there is a difference between two things. Then, you have to be able to predict and forecast to map “data from the past” onto the future. Finally, you have to actually be able to read data off of the graph and act on it - doing numerical calculations and the like.</p>
+<p>These are distinct psychological tasks, and they require different ways of interacting with a chart. So I’m going to describe 3 experiments that we’ve conducted relating to log scales.</p>
+<p>These experiments were inspired by COVID, but we worked hard to not go anywhere near COVID data because while we were designing these experiments, it was a bit emotionally loaded. Even now that pandemic measures have ended, it’s still too politically sensitive to touch, so we’ll continue using non-covid data on follow-up studies.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="q1-perception-of-differences" class="slide level2 center">
+<h2>Q1: Perception of Differences</h2>
+</section>
+<section id="q1-perception-of-differences-1" class="slide level2">
+<h2>Q1: Perception of Differences</h2>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="fig/log-lineup-example.png"></p>
+<figcaption>Log Scale</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="fig/linear-lineup-example.png"></p>
+<figcaption>Linear Scale</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<aside class="notes">
+<p>Our first level of engagement is basic perception - can we actually distinguish different growth rates/levels of curvature on a linear and log scale. This is the most basic thing – if we can’t do this, then we probably won’t be able to predict things well or read information off the graph well (though, that last point is arguable).</p>
+<ul>
+<li>Factorial Experiment:
+<ul>
+<li>Log/linear scale (2 levels)</li>
+<li>Lineup composition: (6 levels)
+<ul>
+<li>Target plot - high, medium, low curvature</li>
+<li>Null plots - high, medium, low curvature</li>
+<li>Exclude combinations where target/null are the same</li>
+</ul></li>
+<li>Low/High variability (2 levels)</li>
+</ul></li>
+<li>Included 6 Rorschach plots (3 curvature levels x log or linear scale)</li>
+</ul>
+<p><span class="emph cerulean">12 lineups + 1 Rorshcach plots = 13 evaluations per person</span></p>
+<p>Here are a couple of example lineups from this experiment - the first is on a linear scale, the 2nd is on a log scale. While I generally tried throughout these experiments to make it clear that we were on a log scale, it is a very subtle difference in these lineups, and fixing that wasn’t necessarily relevant to the question at hand – since all sub-panels have the same axis breaks, we’re actually testing whether we can distinguish the data, not the scales.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+<!-- XXX Go create a chart showing experiment layout factors XXX -->
+</section>
+<section id="q1-perception-of-differences-2" class="slide level2">
+<h2>Q1: Perception of Differences</h2>
+
+<img data-src="../images/odds-ratio-plot-full.png" class="r-stretch"><p><span class="emph cerulean">Conclusion:</span> It’s easier to spot a curve among lines than it is to spot a line among curves</p>
+<p><span class="citation" data-cites="robinsonGuideDesigningExperiments2025">@robinsonGuideDesigningExperiments2025 [ ]</span></p>
+<aside class="notes">
+<p>We used a generalized linear mixed effects model to assess the probability of a correct target identification given factors like target and null plot type, participant skill level, and random effects due to the data generating process. The plot shown here is the resulting log odds ratio for log vs.&nbsp;linear scales, and we see that it is easier to detect curvature among a field of null lines than it is to detect linearity among a field of curved lines. In addition, we see that when there is a lot of contrast between the null and the target plot, that is, when the nulls are very curved and the target is very straight, there isn’t much difference between the two graphs. However, if there is less contrast, the log scale allows us to perceive the differences better than the linear scale.</p>
+<ul>
+<li>Log scales make us more sensitive to slight changes in curvature:
+<ul>
+<li>Low Curvature Null vs.&nbsp;Medium Curvature Target on log scale is curve vs.&nbsp;line<br>
+(it’s hard to see the straight-line target vs.&nbsp;the curved nulls)</li>
+<li>With Medium or High curvature Null plots, it’s easier to spot the target on the log scale than on the linear scale</li>
+</ul></li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="q2-forecasting-exponential-trends" class="slide level2 center">
+<h2>Q2: Forecasting Exponential Trends</h2>
+<aside class="notes">
+<p>The next question we had was whether we can accurately predict/forecast exponential trends. This study is quite different from the last one - users were asked to draw lines on graphs interactively.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="q2-inspiration" class="slide level2 smaller">
+<h2>Q2: Inspiration</h2>
+<div class="columns">
+<div class="column">
+<ul>
+<li><p><a href="https://rss.onlinelibrary.wiley.com/doi/abs/10.1111/j.2517-6161.1951.tb00093.x">D. J. Finney (1951) Subjective Judgment in Statistical Analysis: An Experimental Study. <em>Journal of the Royal Statistical Society</em></a></p></li>
+<li><p><a href="https://www.tandfonline.com/doi/abs/10.1080/00031305.1981.10479335">Frederick Mosteller et al.&nbsp;(1981) Eye Fitting Straight Lines. <em>The American Statistician</em></a></p></li>
+<li><p>New York Times’ ‘You Draw It’ features:</p>
+<ul>
+<li><a href="https://www.nytimes.com/interactive/2015/05/28/upshot/you-draw-it-how-family-income-affects-childrens-college-chances.html">Family Income affects college chances</a></li>
+<li><a href="https://www.nytimes.com/interactive/2017/04/14/upshot/drug-overdose-epidemic-you-draw-it.html">Just How Bad Is the Drug Overdose Epidemic?</a></li>
+<li><a href="https://www.nytimes.com/interactive/2017/01/15/us/politics/you-draw-obama-legacy.html?_r=0">What Got Better or Worse During Obama’s Presidency</a></li>
+</ul></li>
+</ul>
+</div><div class="column">
+<p><img data-src="fig/NYT_YDI_ex.gif"></p>
+</div></div>
+<aside class="notes">
+<p>There have been a number of statistical experiments with “eye fitting” regression models. The first was driven by the desire to reduce computation time; the second is much more psychological in nature. That study had students line up a transparency with a straight line on it to fit a regression line to some data. They found that students tended to fit the slope of the first PC rather than the least squares line.</p>
+<p>More recently, The New York Times has used a really cool setup to have people predict data before showing them the actual trend. They use javascript and have people draw directly on the plot. The line can be curved, jagged, etc. - it’s not restricted to a strictly linear set-up. We decided to adopt this approach because we didn’t want to impose a specific functional form, because it’s not totally clear that people are thinking exponentially or are actually good at drawing exponential curves.</p>
+<p>The methods changed a bit, but the basic concept is the same.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="q2-forecasting-you-draw-it-goals" class="slide level2">
+<h2>Q2: Forecasting (You-Draw-It) Goals</h2>
+<ol type="1">
+<li><p>Replicate Eye Fitting Straight Lines using the you-draw-it tool (4 charts) <span class="citation" data-cites="robinsonEyeFittingStraight2022">@robinsonEyeFittingStraight2022</span></p></li>
+<li><p>Explore exponential growth predictions on log and linear scale (8 charts)</p>
+<ul>
+<li>Points end 50% or 75% of the way across x-axis</li>
+<li>Rate of growth of <span class="math inline">\(\beta\)</span> = 0.1, 0.23</li>
+<li>Log or Linear scale</li>
+</ul></li>
+</ol>
+<p><span class="emph cerulean large">12 total graphs to complete</span></p>
+<aside class="notes">
+<p>First, we wanted to validate the “Eye fitting straight lines” method using You Draw it, by using datasets from the 1981 study, on the original linear scale. This would serve as a validation of the method and also help us test out our analysis method on data that was a bit more straightforward.</p>
+<p>Then, the (main) goal is to see how terrible we are at predicting exponential growth when using a log scale and a linear scale.</p>
+<p>We set things up with varying amounts of data – so you have data to base your regression line up to either halfway or 3/4 of the way through the graph, and you have to then extend beyond the data by 25% or 50%.</p>
+<p>We used two different rates of growth, and then either had a graph with a log or linear scale.</p>
+<p>If you’re keeping track, then there are 4 straight lines, and 8 sets of exponential data (generated on the fly from basic parameters). We saved both the data shown on the plot and the drawn smooth lines.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="q2-forecasting-you-draw-it" class="slide level2">
+<h2>Q2: Forecasting (You-Draw-It)</h2>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="../images/linear1-orig.gif"></p>
+<figcaption>Data from Mosteller et al.&nbsp;(1981)</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="../images/exponential-orig.gif"></p>
+<figcaption>Exp data, linear scale, 50% complete</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="q2-forecasting-you-draw-it-1" class="slide level2">
+<h2>Q2: Forecasting (You-Draw-It)</h2>
+
+<img data-src="../images/exp-raw.png" data-fig-width="100%" alt="Drawn predictive curves for the exponential data experiment." class="r-stretch"><aside class="notes">
+<p>Here, I’m showing you the actual drawn lines for each of the exponential conditions, and you can see that there are a few interesting features:</p>
+<ol type="1">
+<li><p>Not everyone drew very smooth lines – we probably need to do some data cleaning based on the number of sharp “jumps” in the data – possibly excluding those cases or smoothing over them.</p></li>
+<li><p>The amount of deviation in the final prediction value is (surprisingly) not much larger when there is less data – this was really shocking for me</p></li>
+<li><p>Linear scale predictions seem to be lower than log scale predictions, in particular when beta is higher – it’s not that noticeable when beta is low. So the under-prediction bias is stronger for linear scales than it is for log scales. That doesn’t necessarily mean that everyone underpredicts, but you do see way more orange lines on top in the lower right panel.</p></li>
+</ol>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="q2-forecasting-you-draw-it-2" class="slide level2">
+<h2>Q2: Forecasting (You-Draw-It)</h2>
+
+<img data-src="../images/exp-resid.png" style="width:100.0%" alt="Residuals of drawn curves, where each participant has different data." class="r-stretch"><aside class="notes">
+<p>If we look at the residuals instead, we see that there is still some under-prediction even with the log scale when beta is high, but our basic conclusions from the original plots still hold.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="q2-forecasting-you-draw-it-3" class="slide level2">
+<h2>Q2: Forecasting (You-Draw-It)</h2>
+
+<img data-src="../images/exp-resid-gamm.png" style="width:100.0%" alt="GAMM models of drawn curve residuals." class="r-stretch"><aside class="notes">
+<p>We can make this even clearer by modeling the residuals using a generalized additive model, which has a flexible form and doesn’t require too many assumptions about model structure.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="q3-numerical-estimation" class="slide level2 center">
+<h2>Q3: Numerical Estimation</h2>
+</section>
+<section id="q3-numerical-estimation-1" class="slide level2">
+<h2>Q3: Numerical Estimation</h2>
+<ul>
+<li><p>Next level of engagement is estimating quantities from a graph</p></li>
+<li><p>This is a much harder experiment to set up</p>
+<ul>
+<li>Phrasing matters a lot!</li>
+<li>Data matters a lot!</li>
+</ul></li>
+</ul>
+<p><span class="center large emph cerulean">How to make it generalizable?</span></p>
+<aside class="notes">
+<p>One of my favorite parts of graphical inference is that it totally sidesteps this question of phrasing by encoding all of what would have been verbal questions into the graph itself.</p>
+<p>This really is a huge improvement over past graphical methods – there were studies showing that pie charts sucked from the early 1900s, but they were hampered by the generalizability of the questions - if you asked for someone to estimate the percentage of a pie slice, you got different conclusions than if you asked someone to make a judgment between two pieces of the pie.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="q3-numerical-estimation-2" class="slide level2">
+<h2>Q3: Numerical Estimation</h2>
+<ul>
+<li>Use Ewoks and Tribbles - creatures that might multiply exponentially</li>
+<li>One set on the linear scale, one set on log scale</li>
+<li>Underlying trend is the same (within transformed x axis)</li>
+<li>Different variability around the line</li>
+</ul>
+
+<img data-src="../images/ewok-tribble.jpg" style="width:50.0%" class="r-stretch quarto-figure-center"><p class="caption">Ewoks and Tribbles (with apologies to Allison Horst)</p></section>
+<section id="q3-numerical-estimation-3" class="slide level2">
+<h2>Q3: Numerical Estimation</h2>
+<p>Free response: Between <span class="math inline">\(t_1\)</span> and <span class="math inline">\(t_2\)</span>, how does the population of <span class="math inline">\(X\)</span> change?</p>
+<div class="quarto-layout-panel" data-layout="[-5, 40, -10, 40, -5]">
+<div class="quarto-layout-row">
+<div class="quarto-figure-spacer quarto-layout-cell" style="flex-basis: 5.0%;justify-content: flex-start;">
+<p>&nbsp;</p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 40.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="../images/03-01-linear.png"></p>
+<figcaption>Linear Scale</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-figure-spacer quarto-layout-cell" style="flex-basis: 10.0%;justify-content: flex-start;">
+<p>&nbsp;</p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 40.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="../images/03-01-log.png"></p>
+<figcaption>Log Scale</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-figure-spacer quarto-layout-cell" style="flex-basis: 5.0%;justify-content: flex-start;">
+<p>&nbsp;</p>
+</div>
+</div>
+</div>
+</section>
+<section id="q3-numerical-estimation-4" class="slide level2">
+<h2>Q3: Numerical Estimation</h2>
+<p>Estimating Population given a year</p>
+<p><span class="emph cerulean">Process Sketch</span></p>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="../images/03-01-linear-sketch.png"></p>
+<figcaption>Linear scale</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="../images/03-01-log-sketch.png"></p>
+<figcaption>Log scale</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="q3-numerical-estimation-5" class="slide level2">
+<h2>Q3: Numerical Estimation</h2>
+<p>Estimating Population given a year</p>
+
+<img data-src="../images/03-01-boxplots.png" style="width:100.0%" class="r-stretch quarto-figure-center"><p class="caption">Deviation from Closest Point</p><aside class="notes">
+<ul>
+<li><p>More variability in estimation on linear scale (which makes sense due to the fact that it’s compressed into a small area of the plot)</p></li>
+<li><p>Participants anchor estimates to specific points, not to an overall fitted trend</p></li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="q3-numerical-estimation-6" class="slide level2">
+<h2>Q3: Numerical Estimation</h2>
+<p>From <code>Year1</code> to <code>Year2</code>, the population increases by ____ individuals</p>
+<p><span class="emph cerulean">Process Sketch</span></p>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="../images/03-04-sketch-linear.png"></p>
+<figcaption>Linear scale</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="../images/03-04-sketch-log.png"></p>
+<figcaption>Log scale</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="q3-numerical-estimation-7" class="slide level2">
+<h2>Q3: Numerical Estimation</h2>
+<p>From <code>Year1</code> to <code>Year2</code>, the population increases by ____ individuals</p>
+
+<img data-src="../images/03-04-density.png" class="r-stretch"><aside class="notes">
+<ul>
+<li><p>in dataset 1, both points were close to the underlying value, and the estimates bear that out.</p></li>
+<li><p>in dataset 2, one point was a bit of an outlier, and so we can see different estimation strategies appear: some participants answered using an overall trend/visual regression, while others answered using actual points.<br>
+</p></li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="q3-numerical-estimation-8" class="slide level2">
+<h2>Q3: Numerical Estimation</h2>
+<p>How many times more creatures are there in <code>Year2</code> than <code>Year1</code>?</p>
+<p><span class="emph cerulean">Process Sketch</span></p>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="../images/03-05-sketch-linear.png"></p>
+<figcaption>Linear scale</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="../images/03-05-sketch-log.png"></p>
+<figcaption>Log scale</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="q3-numerical-estimation-9" class="slide level2">
+<h2>Q3: Numerical Estimation</h2>
+<p>How many times more creatures are there in <code>Year2</code> than <code>Year1</code>?</p>
+
+<img data-src="../images/03-05-answers.png" class="r-stretch"><aside class="notes">
+<ul>
+<li>the results show a fundamental lack of understanding on the part of many participants</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="q3-numerical-estimation-10" class="slide level2">
+<h2>Q3: Numerical Estimation</h2>
+<p>How many times more creatures are there in <code>Year2</code> than <code>Year1</code>?</p>
+
+<img data-src="../images/03-05-density.png" class="r-stretch"><aside class="notes">
+<ul>
+<li>When we look only at people who answered in a reasonable range given the question (e.g.&nbsp;didn’t assume we meant additive estimation), we see a lot of variability and a few more things to look into here - such as why there’s a peak in dataset 1 that is around 15, even though the closest point and the true value are both near 10.</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="q3-numerical-estimation-11" class="slide level2">
+<h2>Q3: Numerical Estimation</h2>
+<p>How many times more creatures are there in <code>Year2</code> than <code>Year1</code>?</p>
+
+<img data-src="../images/03-05-boxplots-true.png" class="r-stretch"><aside class="notes">
+<ul>
+<li><p>As the questions get more mathematically complex, we also see that participants start using model-based strategies for estimation - they don’t have the mental bandwidth to hold all of the estimates for specific points, arithmatic, etc. in their heads, so they take shortcuts like working off of a mental trendline.</p></li>
+<li><p>Here, for the first time, the true deviation (deviation from the underling model) is a better match to participant estimates than the closest point deviation.</p></li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="q3-numerical-estimation-12" class="slide level2">
+<h2>Q3: Numerical Estimation</h2>
+<p>How long does it take for the population in <code>Year 1</code> to double?</p>
+<p><span class="emph cerulean">Process Sketch</span></p>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="../images/03-06-linear-sketch.png"></p>
+<figcaption>Linear scale</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="../images/03-06-log-sketch.png"></p>
+<figcaption>Log scale</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="q3-numerical-estimation-13" class="slide level2">
+<h2>Q3: Numerical Estimation</h2>
+<p>How long does it take for the population in <code>Year 1</code> to double?</p>
+
+<img data-src="../images/03-06-density.png" class="r-stretch"><aside class="notes">
+<ul>
+<li><p>strong anchoring effect at multiples of 5</p></li>
+<li><p>Some conflict between true and closest point value in dataset 1 (mediated by rounding tendencies); dataset 2 was clear enough that participants could estimate 6</p></li>
+<li><p>a lot more variability on the linear scale than the log scale in both cases</p></li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="challenges-benefits" class="slide level2">
+<h2><span class="emph red">Challenges</span> &amp; <span class="emph cerulean">Benefits</span></h2>
+<ol type="1">
+<li class="fragment"><p><span class="red">Conflicting results</span> can be hard to reconcile</p></li>
+<li class="fragment"><p>Conducting multiple studies is <span class="red">multiple times the work</span><br>
+<span class="cerulean emph">(multiple times the payoff?)</span></p></li>
+<li class="fragment"><p><span class="cerulean">Greater insight</span> into the tradeoffs of design decisions</p></li>
+</ol>
+</section>
+<section id="challenges-benefits-1" class="slide level2">
+<h2>Challenges &amp; Benefits</h2>
+
+<img data-src="../images/Chart-Perception-Process.svg" class="r-stretch"><ul>
+<li><p>Testing method needs to be matched to level of engagement</p></li>
+<li><p>Need to examine graphical choices across levels of engagement</p></li>
+</ul>
 </section></section>
 <section>
 <section id="csi-stats" class="title-slide slide level1 center" data-background-image="../images/dna.jpg" data-background-opacity="50%" data-background-size="cover">
@@ -613,120 +1413,6 @@ What does <span class="math inline">\(e^{(1)}\)</span> need to be for <span clas
 <li class="fragment"><span class="small">Protocols for confirmatory assessment</span></li>
 </ul></li>
 </ul>
-</section></section>
-<section>
-<section id="perception-statistical-graphics" class="title-slide slide level1 center">
-<h1>Perception &amp; Statistical Graphics</h1>
-
-</section>
-<section class="slide level2">
-
-
-<img data-src="index_files/figure-revealjs/HR-diagram-1.png" style="width:100.0%" alt="A scatter plot showing the color index of a star on the x-axis and the absolute magnitude (brightness) of the star on the y-axis. Points are colored by spectral class, which varies from blue to white to yellow to red as the color index increases and the star's temperature decreases. Points are primarily located along a downward-sloping line from the top left to the bottom right, which is labeled the 'main sequence'. There is another set of points which diverges from the main sequence and extends out horizontally in the middle of the graph; these are labeled 'giants', and a few outliers that are above the giant cluster are labeled 'supergiants'. Below the main sequence stars, there are outliers which are labeled 'dwarfs'." class="r-stretch quarto-figure-center"><p class="caption"><span class="small">The Hertzsprung Russell diagram. Discovered independently by Ejnar Hertzsprung (1873–1967) and Henry Norris Russell (1877–1957). The diagram plots the color index of the star against the brightness (absolute magnitude) of the star. As a result, it is possible to discern that these two variables are related and change together over a star’s life cycle: a hypothesis that only came to be because of this chart.</span></p><p><span class="small">Data from the <a href="https://github.com/astronexus/HYG-Database">HYG Database</a>. Shows stars within 500 AU.</span></p>
-</section>
-<section id="cognitive-psychology-for-charts" class="slide level2">
-<h2>Cognitive Psychology for Charts</h2>
-<ul>
-<li><p>Graphics research has historically focused on<br>
-<span class="emph red">accuracy</span> and <span class="emph red">response time</span></p></li>
-<li></li>
-</ul>
-</section>
-<section id="perception" class="slide level2">
-<h2>Perception</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<ul>
-<li>Sensory input</li>
-<li>Recognition of type of chart</li>
-<li>Takes place very quickly - preattentively</li>
-</ul>
-</div><div class="column" style="width:50%;">
-<p><img data-src="01-perception.svg" style="width:100.0%" alt="A scatterplot with points, an x-axis label, a y-axis label, and a title that says 'Title with context'. The word perception is added on top of the scatterplot."></p>
-</div></div>
-</section>
-<section id="gestalt-grouping" class="slide level2">
-<h2>Gestalt Grouping</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<ul>
-<li>Gestalt heuristics used to group points into clusters/trends</li>
-</ul>
-<p><img data-src="Gestalt.svg"></p>
-</div><div class="column" style="width:50%;">
-<p><img data-src="02-grouping.svg" style="width:100.0%" alt="A scatterplot with points, an x-axis label, a y-axis label, and a title that says 'Title with context'. There is a main set of points surrounded by a gray region that contains the points, indicating that these points are part of a group. There is a second group of 3 points surrounded by an orange dot that appear to be completely separate from the main group."></p>
-</div></div>
-</section>
-<section id="integration-with-domain-knowledge" class="slide level2">
-<h2>Integration with Domain Knowledge</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<ul>
-<li><p>Begin to assign meaning to the relationship between the data and the chart labels/titles</p></li>
-<li><p>Retrieve knowledge from long term memory and make that available in working memory</p></li>
-</ul>
-</div><div class="column" style="width:50%;">
-<p><img data-src="03-integration-knowledge.svg" style="width:100.0%" alt="A scatterplot with points, an x-axis label, a y-axis label, and a title that says 'Title with context'. The titles are highlighted and arrows are drawn between them. A text label of 'integration with domain knowledge' is shown between the arrows and titles overtop the data."></p>
-</div></div>
-</section>
-<section id="integration-with-domain-knowledge-1" class="slide level2">
-<h2>Integration with Domain Knowledge</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p>Domain knowledge includes:</p>
-<ul>
-<li><p>How graphs are usually structured (e.g.&nbsp;y-axis increases from bottom to top)</p></li>
-<li><p>Conventions for use of filled vs.&nbsp;empty space</p></li>
-<li><p>Knowledge of relationships, events, etc. that might be impactful</p></li>
-</ul>
-</div><div class="column" style="width:50%;">
-<p><img data-src="Padilla-Inverse-y.png"></p>
-<p>Figure from Padilla et al.&nbsp;<em>Cognitive Research: Principles and Implications</em> (2018) 3:29</p>
-</div></div>
-</section>
-<section id="storytelling" class="slide level2">
-<h2>Storytelling</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<ul>
-<li><p>Assign meaning to relationships</p></li>
-<li><p>Fit visual statistics</p></li>
-<li><p>Look for things that do and don’t fit a rough working hypothesis about the data</p></li>
-</ul>
-</div><div class="column" style="width:50%;">
-<p><img data-src="04-storytelling.svg" style="width:100.0%" alt="A scatterplot showing a positive linear association between X and Y. The points are surrounded by a bounding region and a dotted regression line is drawn through the center of the region, with solid lines at the edges of the region, indicating a rough regression fit. A group of 3 points at the bottom right of the plot is colored blue and is labeled 'outlier assessment'."></p>
-</div></div>
-</section>
-<section id="inference" class="slide level2">
-<h2>Inference</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<ul>
-<li><p>Numerical estimation from the chart with uncertainty</p></li>
-<li><p>Visual search, followed by estimation, calculation, and inference.</p></li>
-</ul>
-</div><div class="column" style="width:50%;">
-<p><img data-src="05-inference.svg" style="width:100.0%" alt="A scatterplot showing a positive linear association between X and Y. A dotted line indicates a location on the x-axis, 'x'. A red band around the line is labeled visual search, and an arrow points to the dotted line, which is labeled estimation. A yellow line points to the corresponding points around the dotted line, labeled 'calculation', and a purple line labeled 'inference' points to a region on the y-axis that has a corresponding confidence interval."></p>
-</div></div>
-</section>
-<section id="prediction-and-application" class="slide level2">
-<h2>Prediction and Application</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<ul>
-<li><p>Moving beyond the data shown to interpret and apply meaning</p></li>
-<li><p>Draw conclusions</p></li>
-<li><p>Make predictions about the future</p></li>
-</ul>
-</div><div class="column" style="width:50%;">
-<p><img data-src="06-application.svg" style="width:100.0%" alt="A scatterplot showing a positive linear association between X and Y. A regression line shows the approximate mean of the points shown, with a dotted extension of the line which is labeled prediction. An orange arrow points from the prediction segment to an image of the globe, which is labeled application."></p>
-</div></div>
-</section>
-<section id="decision-making-with-graphics" class="slide level2">
-<h2>Decision Making with Graphics</h2>
-
-<img data-src="index_files/figure-revealjs/unnamed-chunk-2-1.png" width="960" class="r-stretch"><p>What is the average number of Adelie and Chinstrap penguins measured?</p>
-<p>What steps do you go through to calculate this average?</p>
 
 
 </section></section>

@@ -501,7 +501,7 @@
     "href": "02-utah-state/index.html#cognitive-psychology-for-charts",
     "title": "Human Computer Data Interaction",
     "section": "Cognitive Psychology for Charts",
-    "text": "Cognitive Psychology for Charts\n\nGraphics research has historically focused on\naccuracy and response time"
+    "text": "Cognitive Psychology for Charts\n\nGraphics research has historically focused on\naccuracy and response time\n\nBut, that isn’t how we use graphics!"
   },
   {
     "objectID": "02-utah-state/index.html#perception",
@@ -558,5 +558,250 @@
     "title": "Human Computer Data Interaction",
     "section": "Decision Making with Graphics",
     "text": "Decision Making with Graphics\n\nWhat is the average number of Adelie and Chinstrap penguins measured?\nWhat steps do you go through to calculate this average?"
+  },
+  {
+    "objectID": "02-utah-state/index.html#lineups",
+    "href": "02-utah-state/index.html#lineups",
+    "title": "Human Computer Data Interaction",
+    "section": "Lineups",
+    "text": "Lineups\n\n\n\n\n\nQuestion: Can participants identify different growth rates on a linear scale?\n\n\n\nA “Visual Hypothesis Test”\n\nEmbed the question in array of charts\nCan people identify the different plot?\nNull model can be tricky to create\nTest statistic is the visual evaluation\n\n\n@bujaStatisticalInferenceExploratory2009\n@loyDiagnosticToolsHierarchical2013\n@majumderValidationVisualStatistical2013\n@vanderplasClustersBeatTrend2017\n@vanderplasStatisticalSignificanceCalculations2021"
+  },
+  {
+    "objectID": "02-utah-state/index.html#numerical-estimation",
+    "href": "02-utah-state/index.html#numerical-estimation",
+    "title": "Human Computer Data Interaction",
+    "section": "Numerical Estimation",
+    "text": "Numerical Estimation\n\n\n\n\n\n@eellsRelativeMeritsCircles1926\n\n\n\n\n\n@vonhuhnFurtherStudiesGraphic1927\n\n\n\n\n\nSize of region?\n@eellsRelativeMeritsCircles1926; @croxtonBarChartsCircle1927; @vanderplasFramedReproducingRevisiting2019\nWith scales?\n@vonhuhnFurtherStudiesGraphic1927\nSize of relationship compared to another region\n@croxtonGraphicComparisonsBars1932\nVery sensitive to question phrasing"
+  },
+  {
+    "objectID": "02-utah-state/index.html#forced-choice",
+    "href": "02-utah-state/index.html#forced-choice",
+    "title": "Human Computer Data Interaction",
+    "section": "Forced Choice",
+    "text": "Forced Choice\n\n\n\n\n\nWhich bar is larger? @hughesJustNoticeableDifferences2001\n\n\n\n\n\n@hegartyChoosingUsingGeospatial2012\n\n\n\n\n\nForce participants to answer a specific question\nMay be a size judgment (which is larger?)\n\ncommon in psychophysics experiments\n\nMay be a more complex decision incorporating other information\n\n@hughesJustNoticeableDifferences2001\n@xiongBiasedAveragePosition2020\n@luModelingJustNoticeable2022"
+  },
+  {
+    "objectID": "02-utah-state/index.html#eye-tracking",
+    "href": "02-utah-state/index.html#eye-tracking",
+    "title": "Human Computer Data Interaction",
+    "section": "Eye Tracking",
+    "text": "Eye Tracking\n\n\n\nInfer cognitive processes from directed (conscious) attention\nMay be accompanied by direct estimation or other protocols\n\n\n\n@gegenfurtnerExpertiseDifferencesComprehension2011\n@goldbergEyeTrackingVisualization2011\n@zhaoMindReadingUsing2013a\n@netzelComparativeEyetrackingEvaluation2017\n@liuChoosingOptimalMeans2023\n\n\n\n\n\n@goldbergComparingInformationGraphics2010\n\n\n\n\n\n@wollercarterCommunicatingDistortingRisks2012"
+  },
+  {
+    "objectID": "02-utah-state/index.html#think-aloud-and-free-response",
+    "href": "02-utah-state/index.html#think-aloud-and-free-response",
+    "title": "Human Computer Data Interaction",
+    "section": "Think Aloud and Free Response",
+    "text": "Think Aloud and Free Response\n\nStream of consciousness narration @guanValidityStimulatedRetrospective2006 [; @cookeAssessingConcurrentThinkAloud2010]\nReasoning to justify a decision\n\n\nWhy did you choose this panel? @vanderplasClustersBeatTrend2017"
+  },
+  {
+    "objectID": "02-utah-state/index.html#direct-annotation",
+    "href": "02-utah-state/index.html#direct-annotation",
+    "title": "Human Computer Data Interaction",
+    "section": "Direct Annotation",
+    "text": "Direct Annotation\n\n\n\n\n\n@mostellerEyeFittingStraight1981\n\n\n\n\nHave participants visually fit statistics\n\nUsually directly annotating the chart with e.g. a regression line\n\nCompare visual statistics to numerical calculations\nDifferences tell us about our implicit perception of data\ne.g. visual regression is more robust to outliers\nAlso useful as a teaching tool\n\n\n@bajgierVisualFitsTeaching1989\n@robinsonEyeFittingStraight2022\n@robinsonYouDrawIt2023"
+  },
+  {
+    "objectID": "02-utah-state/index.html#how-do-we-test-graphics",
+    "href": "02-utah-state/index.html#how-do-we-test-graphics",
+    "title": "Human Computer Data Interaction",
+    "section": "How Do We Test Graphics?",
+    "text": "How Do We Test Graphics?\n\n\nTesting method needs to be matched to level of engagement\nNeed to examine graphical choices across levels of engagement"
+  },
+  {
+    "objectID": "02-utah-state/index.html#perception-exp.-growth-log-scales",
+    "href": "02-utah-state/index.html#perception-exp.-growth-log-scales",
+    "title": "Human Computer Data Interaction",
+    "section": "Perception: Exp. Growth & Log Scales",
+    "text": "Perception: Exp. Growth & Log Scales\n\n3 different ways of engaging with the data\n\nCan we\n\nQ1: perceive differences in     … Perceptual\nQ2: forecast trends from     … Tactile\nQ3: estimate and use     … Numerical\n\ngraphs of exponential growth with log and linear scales?\n300 participants completed all 3 experiments\n\nI’m a huge fan of lineups, but one of the issues I had with the COVID graphs I was seeing was that I wasn’t convinced people were interpreting the data correctly.\nI started thinking about why lineups wouldn’t test things at the level I was hoping for, and eventually came up with this hierarchy - first, you have to be able to recognize that there is a difference between two things. Then, you have to be able to predict and forecast to map “data from the past” onto the future. Finally, you have to actually be able to read data off of the graph and act on it - doing numerical calculations and the like.\nThese are distinct psychological tasks, and they require different ways of interacting with a chart. So I’m going to describe 3 experiments that we’ve conducted relating to log scales.\nThese experiments were inspired by COVID, but we worked hard to not go anywhere near COVID data because while we were designing these experiments, it was a bit emotionally loaded. Even now that pandemic measures have ended, it’s still too politically sensitive to touch, so we’ll continue using non-covid data on follow-up studies."
+  },
+  {
+    "objectID": "02-utah-state/index.html#q1-perception-of-differences",
+    "href": "02-utah-state/index.html#q1-perception-of-differences",
+    "title": "Human Computer Data Interaction",
+    "section": "Q1: Perception of Differences",
+    "text": "Q1: Perception of Differences"
+  },
+  {
+    "objectID": "02-utah-state/index.html#q1-perception-of-differences-1",
+    "href": "02-utah-state/index.html#q1-perception-of-differences-1",
+    "title": "Human Computer Data Interaction",
+    "section": "Q1: Perception of Differences",
+    "text": "Q1: Perception of Differences\n\n\n\n\n\n\nLog Scale\n\n\n\n\n\n\n\nLinear Scale\n\n\n\n\n\n\nOur first level of engagement is basic perception - can we actually distinguish different growth rates/levels of curvature on a linear and log scale. This is the most basic thing – if we can’t do this, then we probably won’t be able to predict things well or read information off the graph well (though, that last point is arguable).\n\nFactorial Experiment:\n\nLog/linear scale (2 levels)\nLineup composition: (6 levels)\n\nTarget plot - high, medium, low curvature\nNull plots - high, medium, low curvature\nExclude combinations where target/null are the same\n\nLow/High variability (2 levels)\n\nIncluded 6 Rorschach plots (3 curvature levels x log or linear scale)\n\n12 lineups + 1 Rorshcach plots = 13 evaluations per person\nHere are a couple of example lineups from this experiment - the first is on a linear scale, the 2nd is on a log scale. While I generally tried throughout these experiments to make it clear that we were on a log scale, it is a very subtle difference in these lineups, and fixing that wasn’t necessarily relevant to the question at hand – since all sub-panels have the same axis breaks, we’re actually testing whether we can distinguish the data, not the scales."
+  },
+  {
+    "objectID": "02-utah-state/index.html#q1-perception-of-differences-2",
+    "href": "02-utah-state/index.html#q1-perception-of-differences-2",
+    "title": "Human Computer Data Interaction",
+    "section": "Q1: Perception of Differences",
+    "text": "Q1: Perception of Differences\n\nConclusion: It’s easier to spot a curve among lines than it is to spot a line among curves\n@robinsonGuideDesigningExperiments2025 [ ]\n\nWe used a generalized linear mixed effects model to assess the probability of a correct target identification given factors like target and null plot type, participant skill level, and random effects due to the data generating process. The plot shown here is the resulting log odds ratio for log vs. linear scales, and we see that it is easier to detect curvature among a field of null lines than it is to detect linearity among a field of curved lines. In addition, we see that when there is a lot of contrast between the null and the target plot, that is, when the nulls are very curved and the target is very straight, there isn’t much difference between the two graphs. However, if there is less contrast, the log scale allows us to perceive the differences better than the linear scale.\n\nLog scales make us more sensitive to slight changes in curvature:\n\nLow Curvature Null vs. Medium Curvature Target on log scale is curve vs. line\n(it’s hard to see the straight-line target vs. the curved nulls)\nWith Medium or High curvature Null plots, it’s easier to spot the target on the log scale than on the linear scale"
+  },
+  {
+    "objectID": "02-utah-state/index.html#q2-forecasting-exponential-trends",
+    "href": "02-utah-state/index.html#q2-forecasting-exponential-trends",
+    "title": "Human Computer Data Interaction",
+    "section": "Q2: Forecasting Exponential Trends",
+    "text": "Q2: Forecasting Exponential Trends\n\nThe next question we had was whether we can accurately predict/forecast exponential trends. This study is quite different from the last one - users were asked to draw lines on graphs interactively."
+  },
+  {
+    "objectID": "02-utah-state/index.html#q2-inspiration",
+    "href": "02-utah-state/index.html#q2-inspiration",
+    "title": "Human Computer Data Interaction",
+    "section": "Q2: Inspiration",
+    "text": "Q2: Inspiration\n\n\n\nD. J. Finney (1951) Subjective Judgment in Statistical Analysis: An Experimental Study. Journal of the Royal Statistical Society\nFrederick Mosteller et al. (1981) Eye Fitting Straight Lines. The American Statistician\nNew York Times’ ‘You Draw It’ features:\n\nFamily Income affects college chances\nJust How Bad Is the Drug Overdose Epidemic?\nWhat Got Better or Worse During Obama’s Presidency\n\n\n\n\n\n\nThere have been a number of statistical experiments with “eye fitting” regression models. The first was driven by the desire to reduce computation time; the second is much more psychological in nature. That study had students line up a transparency with a straight line on it to fit a regression line to some data. They found that students tended to fit the slope of the first PC rather than the least squares line.\nMore recently, The New York Times has used a really cool setup to have people predict data before showing them the actual trend. They use javascript and have people draw directly on the plot. The line can be curved, jagged, etc. - it’s not restricted to a strictly linear set-up. We decided to adopt this approach because we didn’t want to impose a specific functional form, because it’s not totally clear that people are thinking exponentially or are actually good at drawing exponential curves.\nThe methods changed a bit, but the basic concept is the same."
+  },
+  {
+    "objectID": "02-utah-state/index.html#q2-forecasting-you-draw-it-goals",
+    "href": "02-utah-state/index.html#q2-forecasting-you-draw-it-goals",
+    "title": "Human Computer Data Interaction",
+    "section": "Q2: Forecasting (You-Draw-It) Goals",
+    "text": "Q2: Forecasting (You-Draw-It) Goals\n\nReplicate Eye Fitting Straight Lines using the you-draw-it tool (4 charts) @robinsonEyeFittingStraight2022\nExplore exponential growth predictions on log and linear scale (8 charts)\n\nPoints end 50% or 75% of the way across x-axis\nRate of growth of \\(\\beta\\) = 0.1, 0.23\nLog or Linear scale\n\n\n12 total graphs to complete\n\nFirst, we wanted to validate the “Eye fitting straight lines” method using You Draw it, by using datasets from the 1981 study, on the original linear scale. This would serve as a validation of the method and also help us test out our analysis method on data that was a bit more straightforward.\nThen, the (main) goal is to see how terrible we are at predicting exponential growth when using a log scale and a linear scale.\nWe set things up with varying amounts of data – so you have data to base your regression line up to either halfway or 3/4 of the way through the graph, and you have to then extend beyond the data by 25% or 50%.\nWe used two different rates of growth, and then either had a graph with a log or linear scale.\nIf you’re keeping track, then there are 4 straight lines, and 8 sets of exponential data (generated on the fly from basic parameters). We saved both the data shown on the plot and the drawn smooth lines."
+  },
+  {
+    "objectID": "02-utah-state/index.html#q2-forecasting-you-draw-it",
+    "href": "02-utah-state/index.html#q2-forecasting-you-draw-it",
+    "title": "Human Computer Data Interaction",
+    "section": "Q2: Forecasting (You-Draw-It)",
+    "text": "Q2: Forecasting (You-Draw-It)\n\n\n\n\n\n\nData from Mosteller et al. (1981)\n\n\n\n\n\n\n\nExp data, linear scale, 50% complete"
+  },
+  {
+    "objectID": "02-utah-state/index.html#q2-forecasting-you-draw-it-1",
+    "href": "02-utah-state/index.html#q2-forecasting-you-draw-it-1",
+    "title": "Human Computer Data Interaction",
+    "section": "Q2: Forecasting (You-Draw-It)",
+    "text": "Q2: Forecasting (You-Draw-It)\n\n\nHere, I’m showing you the actual drawn lines for each of the exponential conditions, and you can see that there are a few interesting features:\n\nNot everyone drew very smooth lines – we probably need to do some data cleaning based on the number of sharp “jumps” in the data – possibly excluding those cases or smoothing over them.\nThe amount of deviation in the final prediction value is (surprisingly) not much larger when there is less data – this was really shocking for me\nLinear scale predictions seem to be lower than log scale predictions, in particular when beta is higher – it’s not that noticeable when beta is low. So the under-prediction bias is stronger for linear scales than it is for log scales. That doesn’t necessarily mean that everyone underpredicts, but you do see way more orange lines on top in the lower right panel."
+  },
+  {
+    "objectID": "02-utah-state/index.html#q2-forecasting-you-draw-it-2",
+    "href": "02-utah-state/index.html#q2-forecasting-you-draw-it-2",
+    "title": "Human Computer Data Interaction",
+    "section": "Q2: Forecasting (You-Draw-It)",
+    "text": "Q2: Forecasting (You-Draw-It)\n\n\nIf we look at the residuals instead, we see that there is still some under-prediction even with the log scale when beta is high, but our basic conclusions from the original plots still hold."
+  },
+  {
+    "objectID": "02-utah-state/index.html#q2-forecasting-you-draw-it-3",
+    "href": "02-utah-state/index.html#q2-forecasting-you-draw-it-3",
+    "title": "Human Computer Data Interaction",
+    "section": "Q2: Forecasting (You-Draw-It)",
+    "text": "Q2: Forecasting (You-Draw-It)\n\n\nWe can make this even clearer by modeling the residuals using a generalized additive model, which has a flexible form and doesn’t require too many assumptions about model structure."
+  },
+  {
+    "objectID": "02-utah-state/index.html#q3-numerical-estimation",
+    "href": "02-utah-state/index.html#q3-numerical-estimation",
+    "title": "Human Computer Data Interaction",
+    "section": "Q3: Numerical Estimation",
+    "text": "Q3: Numerical Estimation"
+  },
+  {
+    "objectID": "02-utah-state/index.html#q3-numerical-estimation-1",
+    "href": "02-utah-state/index.html#q3-numerical-estimation-1",
+    "title": "Human Computer Data Interaction",
+    "section": "Q3: Numerical Estimation",
+    "text": "Q3: Numerical Estimation\n\nNext level of engagement is estimating quantities from a graph\nThis is a much harder experiment to set up\n\nPhrasing matters a lot!\nData matters a lot!\n\n\nHow to make it generalizable?\n\nOne of my favorite parts of graphical inference is that it totally sidesteps this question of phrasing by encoding all of what would have been verbal questions into the graph itself.\nThis really is a huge improvement over past graphical methods – there were studies showing that pie charts sucked from the early 1900s, but they were hampered by the generalizability of the questions - if you asked for someone to estimate the percentage of a pie slice, you got different conclusions than if you asked someone to make a judgment between two pieces of the pie."
+  },
+  {
+    "objectID": "02-utah-state/index.html#q3-numerical-estimation-2",
+    "href": "02-utah-state/index.html#q3-numerical-estimation-2",
+    "title": "Human Computer Data Interaction",
+    "section": "Q3: Numerical Estimation",
+    "text": "Q3: Numerical Estimation\n\nUse Ewoks and Tribbles - creatures that might multiply exponentially\nOne set on the linear scale, one set on log scale\nUnderlying trend is the same (within transformed x axis)\nDifferent variability around the line\n\n\nEwoks and Tribbles (with apologies to Allison Horst)"
+  },
+  {
+    "objectID": "02-utah-state/index.html#q3-numerical-estimation-3",
+    "href": "02-utah-state/index.html#q3-numerical-estimation-3",
+    "title": "Human Computer Data Interaction",
+    "section": "Q3: Numerical Estimation",
+    "text": "Q3: Numerical Estimation\nFree response: Between \\(t_1\\) and \\(t_2\\), how does the population of \\(X\\) change?\n\n\n\n \n\n\n\n\n\nLinear Scale\n\n\n\n\n \n\n\n\n\n\nLog Scale"
+  },
+  {
+    "objectID": "02-utah-state/index.html#q3-numerical-estimation-4",
+    "href": "02-utah-state/index.html#q3-numerical-estimation-4",
+    "title": "Human Computer Data Interaction",
+    "section": "Q3: Numerical Estimation",
+    "text": "Q3: Numerical Estimation\nEstimating Population given a year\nProcess Sketch\n\n\n\n\n\n\nLinear scale\n\n\n\n\n\n\n\nLog scale"
+  },
+  {
+    "objectID": "02-utah-state/index.html#q3-numerical-estimation-5",
+    "href": "02-utah-state/index.html#q3-numerical-estimation-5",
+    "title": "Human Computer Data Interaction",
+    "section": "Q3: Numerical Estimation",
+    "text": "Q3: Numerical Estimation\nEstimating Population given a year\n\nDeviation from Closest Point\n\nMore variability in estimation on linear scale (which makes sense due to the fact that it’s compressed into a small area of the plot)\nParticipants anchor estimates to specific points, not to an overall fitted trend"
+  },
+  {
+    "objectID": "02-utah-state/index.html#q3-numerical-estimation-6",
+    "href": "02-utah-state/index.html#q3-numerical-estimation-6",
+    "title": "Human Computer Data Interaction",
+    "section": "Q3: Numerical Estimation",
+    "text": "Q3: Numerical Estimation\nFrom Year1 to Year2, the population increases by ____ individuals\nProcess Sketch\n\n\n\n\n\n\nLinear scale\n\n\n\n\n\n\n\nLog scale"
+  },
+  {
+    "objectID": "02-utah-state/index.html#q3-numerical-estimation-7",
+    "href": "02-utah-state/index.html#q3-numerical-estimation-7",
+    "title": "Human Computer Data Interaction",
+    "section": "Q3: Numerical Estimation",
+    "text": "Q3: Numerical Estimation\nFrom Year1 to Year2, the population increases by ____ individuals\n\n\n\nin dataset 1, both points were close to the underlying value, and the estimates bear that out.\nin dataset 2, one point was a bit of an outlier, and so we can see different estimation strategies appear: some participants answered using an overall trend/visual regression, while others answered using actual points."
+  },
+  {
+    "objectID": "02-utah-state/index.html#q3-numerical-estimation-8",
+    "href": "02-utah-state/index.html#q3-numerical-estimation-8",
+    "title": "Human Computer Data Interaction",
+    "section": "Q3: Numerical Estimation",
+    "text": "Q3: Numerical Estimation\nHow many times more creatures are there in Year2 than Year1?\nProcess Sketch\n\n\n\n\n\n\nLinear scale\n\n\n\n\n\n\n\nLog scale"
+  },
+  {
+    "objectID": "02-utah-state/index.html#q3-numerical-estimation-9",
+    "href": "02-utah-state/index.html#q3-numerical-estimation-9",
+    "title": "Human Computer Data Interaction",
+    "section": "Q3: Numerical Estimation",
+    "text": "Q3: Numerical Estimation\nHow many times more creatures are there in Year2 than Year1?\n\n\n\nthe results show a fundamental lack of understanding on the part of many participants"
+  },
+  {
+    "objectID": "02-utah-state/index.html#q3-numerical-estimation-10",
+    "href": "02-utah-state/index.html#q3-numerical-estimation-10",
+    "title": "Human Computer Data Interaction",
+    "section": "Q3: Numerical Estimation",
+    "text": "Q3: Numerical Estimation\nHow many times more creatures are there in Year2 than Year1?\n\n\n\nWhen we look only at people who answered in a reasonable range given the question (e.g. didn’t assume we meant additive estimation), we see a lot of variability and a few more things to look into here - such as why there’s a peak in dataset 1 that is around 15, even though the closest point and the true value are both near 10."
+  },
+  {
+    "objectID": "02-utah-state/index.html#q3-numerical-estimation-11",
+    "href": "02-utah-state/index.html#q3-numerical-estimation-11",
+    "title": "Human Computer Data Interaction",
+    "section": "Q3: Numerical Estimation",
+    "text": "Q3: Numerical Estimation\nHow many times more creatures are there in Year2 than Year1?\n\n\n\nAs the questions get more mathematically complex, we also see that participants start using model-based strategies for estimation - they don’t have the mental bandwidth to hold all of the estimates for specific points, arithmatic, etc. in their heads, so they take shortcuts like working off of a mental trendline.\nHere, for the first time, the true deviation (deviation from the underling model) is a better match to participant estimates than the closest point deviation."
+  },
+  {
+    "objectID": "02-utah-state/index.html#q3-numerical-estimation-12",
+    "href": "02-utah-state/index.html#q3-numerical-estimation-12",
+    "title": "Human Computer Data Interaction",
+    "section": "Q3: Numerical Estimation",
+    "text": "Q3: Numerical Estimation\nHow long does it take for the population in Year 1 to double?\nProcess Sketch\n\n\n\n\n\n\nLinear scale\n\n\n\n\n\n\n\nLog scale"
+  },
+  {
+    "objectID": "02-utah-state/index.html#q3-numerical-estimation-13",
+    "href": "02-utah-state/index.html#q3-numerical-estimation-13",
+    "title": "Human Computer Data Interaction",
+    "section": "Q3: Numerical Estimation",
+    "text": "Q3: Numerical Estimation\nHow long does it take for the population in Year 1 to double?\n\n\n\nstrong anchoring effect at multiples of 5\nSome conflict between true and closest point value in dataset 1 (mediated by rounding tendencies); dataset 2 was clear enough that participants could estimate 6\na lot more variability on the linear scale than the log scale in both cases"
+  },
+  {
+    "objectID": "02-utah-state/index.html#challenges-benefits",
+    "href": "02-utah-state/index.html#challenges-benefits",
+    "title": "Human Computer Data Interaction",
+    "section": "Challenges & Benefits",
+    "text": "Challenges & Benefits\n\nConflicting results can be hard to reconcile\nConducting multiple studies is multiple times the work\n(multiple times the payoff?)\nGreater insight into the tradeoffs of design decisions"
+  },
+  {
+    "objectID": "02-utah-state/index.html#challenges-benefits-1",
+    "href": "02-utah-state/index.html#challenges-benefits-1",
+    "title": "Human Computer Data Interaction",
+    "section": "Challenges & Benefits",
+    "text": "Challenges & Benefits\n\n\nTesting method needs to be matched to level of engagement\nNeed to examine graphical choices across levels of engagement"
+  },
+  {
+    "objectID": "02-utah-state/index.html#logscales",
+    "href": "02-utah-state/index.html#logscales",
+    "title": "Human Computer Data Interaction",
+    "section": "Multimodal Graphical Testing in Practice",
+    "text": "Multimodal Graphical Testing in Practice"
   }
 ]
