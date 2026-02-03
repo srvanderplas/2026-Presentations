@@ -27,43 +27,45 @@ BibOptions(check.entries = FALSE,
            dashed = FALSE)
 bb <- ReadBib("./CV.bib", check = T)
 ```
+
 # Outline
 
-1. [Introduction](#introduction)
-<!-- Hi, I'm susan and I do an odd assortment of things -->
-2. [Perception & Statistical Graphics](#graphics)
-<!-- Career Award project -->
-3. [Algorithms for Forensic Evidence](#csi-algs)
-4. [CSI: Statistics and the Fundamentals of Science](#csi-stats)
-<!-- Error Rates and Scientific Foundations in Forensics -->
+1.  [Introduction](#introduction) <!-- Hi, I'm susan and I do an odd assortment of things -->
+2.  [Perception & Statistical Graphics](#graphics) <!-- Career Award project -->
+3.  [Algorithms for Forensic Evidence](#csi-algs)
+4.  [CSI: Statistics and the Fundamentals of Science](#csi-stats) <!-- Error Rates and Scientific Foundations in Forensics -->
 
-
-# Introduction 😶‍🌫️☁️🌎
+# Introduction 😶‍🌫️☁️🌎 {#introduction}
 
 ## 🏫 Education
-::: {.nolines}
- | 
-:---: | :------------------------------ 
-| 2009 | BS, Psychology & Applied Math ![](../images/TAMU.svg){style="position:absolute;right:10px;margin-top:0;margin-left:50px;margin-right:50px;max-width:150px;height:50px;" fig-alt="Texas state outline with ATM logo from Texas A&M university."}
-2011 | MS, Statistics ![](../images/ISU.svg){style="position:absolute;margin-top:20px;right:10px;max-width:150px;height:100px;" fig-alt="A red I overlaid with STATE, the Iowa State university logo."}
-2015 | Ph.D., Statistics<br/>[Dissertation: [[Perception of Statistical Graphics](https://srvanderplas.github.io/Dissertation/SusanVanderplas-DissertationFinalVersion.pdf)]{.emph}]{.small}
+
+::: nolines
++:-------:+:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2009    | BS, Psychology & Applied Math ![](../images/TAMU.svg){style="position:absolute;right:10px;margin-top:0;margin-left:50px;margin-right:50px;max-width:150px;height:50px;" fig-alt="Texas state outline with ATM logo from Texas A&M university."} |
++---------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2011    | MS, Statistics ![](../images/ISU.svg){style="position:absolute;margin-top:20px;right:10px;max-width:150px;height:100px;" fig-alt="A red I overlaid with STATE, the Iowa State university logo."}                                                |
++---------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2015    | Ph.D., Statistics<br/>[Dissertation:]{.small}[[Perception of Statistical Graphics](https://srvanderplas.github.io/Dissertation/SusanVanderplas-DissertationFinalVersion.pdf)]{.emph}                                                            |
++---------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 :::
 
 ## 💼 Career Timeline
 
-::: {.nolines}
- | 
-:------: | :------------------------------ 
-2015-18 | Stat. Analyst, NE Public Power ![](../images/nppd.svg){style="position:absolute;right:10px;margin-top:0;margin-bottom:0;margin-left:45px;margin-right:45px;max-width:150px;height:50px;" fig-alt="Nebraska Public Power District logo."} 
-2018-19 | Research Asst. Professor, CSAFE ![](../images/csafe.png){style="position:absolute;right:10px;margin-left:55px;margin-right:60px;max-width:150px;height:60px;margin-left:50px;margin-right:50px" fig-alt="Center for Statistics and Applications in Forensic Evidence Logo."}
-2020-24 | Asst. Professor, UNL ![](../images/UNL.svg){style="position:absolute;margin-top:20px;right:10px;margin-left:22px;margin-right:22px;height:100px;"}
-2024-26 | Assoc. Professor, UNL 
+::: nolines
++:-------:+:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2015-18 | Stat. Analyst, NE Public Power ![](../images/nppd.svg){style="position:absolute;right:10px;margin-top:0;margin-bottom:0;margin-left:45px;margin-right:45px;max-width:150px;height:50px;" fig-alt="Nebraska Public Power District logo."}                                     |
++---------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2018-19 | Research Asst. Professor, CSAFE ![](../images/csafe.png){style="position:absolute;right:10px;margin-left:55px;margin-right:60px;max-width:150px;height:60px;margin-left:50px;margin-right:50px" fig-alt="Center for Statistics and Applications in Forensic Evidence Logo."} |
++---------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2020-24 | Asst. Professor, UNL ![](../images/UNL.svg){style="position:absolute;margin-top:20px;right:10px;margin-left:22px;margin-right:22px;height:100px;"}                                                                                                                           |
++---------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2024-26 | Assoc. Professor, UNL                                                                                                                                                                                                                                                        |
++---------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 :::
 
-## 📊 Recent Work 
+## 📊 Recent Work
 
-::: {.r-fit-text}
-
+::: r-fit-text
 ```{r}
 #| label: graphics-pubs
 #| results: 'asis'
@@ -84,74 +86,67 @@ NoCite(newpubs)
 PrintBibliography(newpubs, .opts = list(sorting = "ydnt", no.print.fields = c("note", "file", "issn", "url-date", "url", "doi"), style="markdown"))
 ```
 
-- Can You See The Change? Visual Perception in Change Point Analysis (JCGS)    
-[Fudolig, Robinson, and Vanderplas. 2025]{.small}
+-   Can You See The Change? Visual Perception in Change Point Analysis (JCGS)\
+    [Fudolig, Robinson, and Vanderplas. 2025]{.small}
 
-- Automated Residual Plot Assessment With the R Package autovi and the Shiny Application autovi.web (Aus & NZ Journal of Stats)    
-[Li, Cook, Tanaka, Vanderplas, and Ackermann. 2025]{.small}
+-   Automated Residual Plot Assessment With the R Package autovi and the Shiny Application autovi.web (Aus & NZ Journal of Stats)\
+    [Li, Cook, Tanaka, Vanderplas, and Ackermann. 2025]{.small}
 
-- Perception and Cognitive Implications of Logarithmic Scales for Exponentially Increasing Data: Perceptual Sensitivity Tested with Statistical Lineups (JCGS)    
-[Robinson, Howard, Vanderplas. 2025]{.small}
+-   Perception and Cognitive Implications of Logarithmic Scales for Exponentially Increasing Data: Perceptual Sensitivity Tested with Statistical Lineups (JCGS)\
+    [Robinson, Howard, Vanderplas. 2025]{.small}
 
-- A Guide to Designing Experiments to Test Statistical Graphics (WIRE Computational Statistics)     
-[Robinson, Hofmann, Vanderplas. 2025]{.small}
-
+-   A Guide to Designing Experiments to Test Statistical Graphics (WIRE Computational Statistics)\
+    [Robinson, Hofmann, Vanderplas. 2025]{.small}
 :::
 
 ## 🔬 Recent Work
 
-::: {.r-fit-text}
-- Methodological problems in every black-box study of forensic firearm comparisons (Law, Probability, and Risk)     
-[Cuellar, Vanderplas, Luby, Rosenblum. 2024]{.small}
+::: r-fit-text
+-   Methodological problems in every black-box study of forensic firearm comparisons (Law, Probability, and Risk)\
+    [Cuellar, Vanderplas, Luby, Rosenblum. 2024]{.small}
 
-- Incorrect statistical reasoning in *Guyll et al.* leads to biased claims about strength of forensic evidence (PNAS)     
-[Rosenblum, Chin, Ogburn, Nishimura, Westreich, Datta, Vanderplas, Cuellar, Thompson. 2024]{.small}
+-   Incorrect statistical reasoning in *Guyll et al.* leads to biased claims about strength of forensic evidence (PNAS)\
+    [Rosenblum, Chin, Ogburn, Nishimura, Westreich, Datta, Vanderplas, Cuellar, Thompson. 2024]{.small}
 
-- Hidden Multiple Comparisons Increase Forensic Error Rates (PNAS)     
-[Vanderplas, Carriquiry, Hofmann. 2024]{.small}
-
+-   Hidden Multiple Comparisons Increase Forensic Error Rates (PNAS)\
+    [Vanderplas, Carriquiry, Hofmann. 2024]{.small}
 :::
-
 
 ## 🐣 Coming Soon!
 
-::: {.r-fit-text}
-
+::: r-fit-text
 Forensics:
 
-- `courtR` package for legal transcript studies
-- `highlightR` package for conserved text analysis
-- Assessing Algorithm Use and Testimony for Firearms and Toolmark Analysis
-- What Comes Next: A Constructive Vision for Firearms and Toolmarks Analysis
+-   `courtR` package for legal transcript studies
+-   `highlightR` package for conserved text analysis
+-   Assessing Algorithm Use and Testimony for Firearms and Toolmark Analysis
+-   What Comes Next: A Constructive Vision for Firearms and Toolmark Analysis
 
-Graphics: 
+Graphics:
 
-- `ggdibbler` package and paper - uncertainty visualization
-- Experiential Learning with Statistical Graphics: Writing, Reflection, and Suspense
-- Assessing Computer Vision models for Gestalt Perception
+-   `ggdibbler` package and paper - uncertainty visualization
+-   Experiential Learning with Statistical Graphics: Writing, Reflection, and Suspense
+-   Assessing Computer Vision models for Gestalt Perception
 
 :::
 
 ## 💵 Funded Grants
 
-::: {.r-fit-text}
+::: r-fit-text
+-   2025, NSF CAREER, What Do You See? Perception, Decisions, and Statistical Graphics (\$550,000)
 
-- 2025, NSF CAREER, What Do You See? Perception, Decisions, and Statistical Graphics ($550,000)
+-   2020-2024, NIST, CSAFE Project lead: Footwear Class Characteristics and Human Factors (\$20 mil for CSAFE, \$456,930 sub-award)
 
-- 2020-2024, NIST, CSAFE Project lead: Footwear Class Characteristics and Human Factors ($20 mil for CSAFE, $456,930 sub-award)
+-   2019/2021, NIJ, Automatic Acquisition and Identification of Footwear Class Characteristics (\$380,650)
 
-- 2019/2021, NIJ, Automatic Acquisition and Identification of Footwear Class Characteristics ($380,650)
+-   2020, USDA-NRCS, Improving the Economic and Ecological Sustainability of US Crop Production through On-Farm Precision Experimentation (\$4 mil total, \$400,000 for 3 UNL PIs)
 
-- 2020, USDA-NRCS, Improving the Economic and Ecological Sustainability of US Crop Production through On-Farm Precision Experimentation ($4 mil total, $400,000 for 3 UNL PIs)
-
-- 2019, NSF, Overcoming the Rural Data Deficit to Improve Quality of Life and Community Services in Smart & Connected Small Communities ($1.5 mil total, $123,445 sub-award)
-
+-   2019, NSF, Overcoming the Rural Data Deficit to Improve Quality of Life and Community Services in Smart & Connected Small Communities (\$1.5 mil total, \$123,445 sub-award)
 :::
-
 
 # Perception & Statistical Graphics {#graphics}
 
----
+------------------------------------------------------------------------
 
 ```{r}
 #| label: HR-diagram
@@ -211,177 +206,16 @@ ggplot(data = filter(stars, dist < 500)) +
 John Tukey, a famous statistician often considered the father of statistical graphics, wrote in Exploratory Data Analysis (1977):
 
 > The greatest value of a picture is when it forces us to notice what we never expected to see.
-
--   What variables are mapped to the following chart dimensions?
-
-    -   X location
-    -   Y location
-    -   color
-
--   What other information is present on the chart that is not specifically a data value?
-
--   What does this chart do well?
-
--   What design features "work"?
-
--   What don't you like?
 :::
 
 ## Cognitive Psychology for Charts
 
-- Graphics research has historically focused on     
-[accuracy]{.emph .red} and [response time]{.emph .red}
+-   Graphics research has historically focused on\
+    [accuracy]{.emph .red} and [response time]{.emph .red}
 
 [But, that isn't how we use graphics!]{.fragment .emph .blue}
 
-
-![](fig/Chart-Perception-Process.svg)
-
-## Lineups
-
-::: columns
-::: {.column width="50%"}
-![Question: Can participants identify different growth rates on a linear scale?](fig/linear-lineup-example.png)
-:::
-
-::: {.column .smaller width="50%"}
-[A "Visual Hypothesis Test"]{.cerulean .emph}
-
--   Embed the question in array of charts
-
--   Can people identify the different plot?
-
--   Null model can be tricky to create
-
--   Test statistic is the visual evaluation
-
-::: small
-@bujaStatisticalInferenceExploratory2009\
-@loyDiagnosticToolsHierarchical2013\
-@majumderValidationVisualStatistical2013\
-@vanderplasClustersBeatTrend2017\
-@vanderplasStatisticalSignificanceCalculations2021
-:::
-:::
-:::
-
-## Numerical Estimation
-
-::: columns
-::: column
-![@eellsRelativeMeritsCircles1926](fig/Eells_1926.png){width="80%" fig-align="center"}
-
-![@vonhuhnFurtherStudiesGraphic1927](fig/vonHuhn_1927.png){width="80%" fig-align="center"}
-:::
-
-::: column
-::: smaller
--   Size of region?\
-    @eellsRelativeMeritsCircles1926; @croxtonBarChartsCircle1927; @vanderplasFramedReproducingRevisiting2019
--   With scales?\
-    @vonhuhnFurtherStudiesGraphic1927
--   Size of relationship compared to another region\
-    @croxtonGraphicComparisonsBars1932
--   Very sensitive to question phrasing
-:::
-:::
-:::
-
-## Forced Choice
-
-::: columns
-::: column
-![Which bar is larger? @hughesJustNoticeableDifferences2001](fig/hughes_2001_larger.png){width="30%" fig-align="center"}
-
-![@hegartyChoosingUsingGeospatial2012](fig/padilla-visual-fit.png){width="100%" fig-align="center"}
-:::
-
-::: column
-::: smaller
--   Force participants to answer a specific question
-
--   May be a size judgment (which is larger?)
-
-    -   common in psychophysics experiments
-
--   May be a more complex decision incorporating other information
-
-@hughesJustNoticeableDifferences2001\
-@xiongBiasedAveragePosition2020\
-@luModelingJustNoticeable2022
-:::
-:::
-:::
-
-## Eye Tracking
-
-::: columns
-::: {.column width="60%"}
--   Infer cognitive processes from directed (conscious) attention
-
--   May be accompanied by direct estimation or other protocols
-
-<!-- - Can be combined with other methods -->
-
-::: smaller
-@gegenfurtnerExpertiseDifferencesComprehension2011\
-@goldbergEyeTrackingVisualization2011\
-@zhaoMindReadingUsing2013a\
-@netzelComparativeEyetrackingEvaluation2017\
-@liuChoosingOptimalMeans2023
-:::
-:::
-
-::: {.column width="40%"}
-![@goldbergComparingInformationGraphics2010](fig/Goldberg_2010.png){width="90%"}
-
-![@wollercarterCommunicatingDistortingRisks2012](fig/woller_2012.png){width="90%"}
-:::
-:::
-
-## Think Aloud and Free Response
-
--   Stream of consciousness narration @guanValidityStimulatedRetrospective2006[; @cookeAssessingConcurrentThinkAloud2010]{.smaller}
-
--   Reasoning to justify a decision
-
-![Why did you choose this panel? @vanderplasClustersBeatTrend2017](fig/vanderplas_2017.png)
-
-## Direct Annotation
-
-::: columns
-::: column
-![@mostellerEyeFittingStraight1981](fig/Mosteller_1981.png)
-:::
-
-::: {.column .smaller}
--   Have participants visually fit statistics
-
-    -   Usually directly annotating the chart with e.g. a regression line
-
--   Compare visual statistics to numerical calculations
-
--   Differences tell us about our implicit perception of data\
-    [e.g. visual regression is more robust to outliers]{.smaller}
-
--   Also useful as a teaching tool
-
-::: smaller
-@bajgierVisualFitsTeaching1989\
-@robinsonEyeFittingStraight2022\
-@robinsonYouDrawIt2023
-:::
-:::
-:::
-
-## How Do We Test Graphics?
-
-![](fig/Chart-Perception-Process.svg)
-
--   Testing method needs to be matched to level of engagement
-
--   Need to examine graphical choices across levels of engagement
-
+![](fig/Chart-Perception-Process.svg){.fragment fig-alt="A timeline showing different levels of graphical engagement, starting with initial perception, then using gestalt grouping, leveraging domain knowledge, fittting visual statistics and storytelling, visually conducted inference,  to grouping"}
 
 ## Multimodal Graphical Testing <br>[in Practice]{.emph .cerulean .center} {#logscales .center}
 
@@ -422,20 +256,9 @@ These experiments were inspired by COVID, but we worked hard to not go anywhere 
 :::
 
 ::: notes
-Our first level of engagement is basic perception - can we actually distinguish different growth rates/levels of curvature on a linear and log scale. This is the most basic thing -- if we can't do this, then we probably won't be able to predict things well or read information off the graph well (though, that last point is arguable).
-
--   Factorial Experiment:
-    -   Log/linear scale (2 levels)
-    -   Lineup composition: (6 levels)
-        -   Target plot - high, medium, low curvature
-        -   Null plots - high, medium, low curvature
-        -   Exclude combinations where target/null are the same
-    -   Low/High variability (2 levels)
--   Included 6 Rorschach plots (3 curvature levels x log or linear scale)
-
-[12 lineups + 1 Rorshcach plots = 13 evaluations per person]{.emph .cerulean}
 
 Here are a couple of example lineups from this experiment - the first is on a linear scale, the 2nd is on a log scale. While I generally tried throughout these experiments to make it clear that we were on a log scale, it is a very subtle difference in these lineups, and fixing that wasn't necessarily relevant to the question at hand -- since all sub-panels have the same axis breaks, we're actually testing whether we can distinguish the data, not the scales.
+
 :::
 
 <!-- XXX Go create a chart showing experiment layout factors XXX -->
@@ -475,7 +298,7 @@ odds_ratio_plot
 
 [Conclusion:]{.emph .cerulean} It's easier to spot a curve among lines than it is to spot a line among curves
 
-@robinsonGuideDesigningExperiments2025[ ]{.smaller}
+@robinsonGuideDesigningExperiments2025
 
 ::: notes
 We used a generalized linear mixed effects model to assess the probability of a correct target identification given factors like target and null plot type, participant skill level, and random effects due to the data generating process. The plot shown here is the resulting log odds ratio for log vs. linear scales, and we see that it is easier to detect curvature among a field of null lines than it is to detect linearity among a field of curved lines. In addition, we see that when there is a lot of contrast between the null and the target plot, that is, when the nulls are very curved and the target is very straight, there isn't much difference between the two graphs. However, if there is less contrast, the log scale allows us to perceive the differences better than the linear scale.
@@ -487,57 +310,6 @@ We used a generalized linear mixed effects model to assess the probability of a 
 :::
 
 ## Q2: Forecasting Exponential Trends {.center}
-
-::: notes
-The next question we had was whether we can accurately predict/forecast exponential trends. This study is quite different from the last one - users were asked to draw lines on graphs interactively.
-:::
-
-## Q2: Inspiration {.smaller}
-
-::: columns
-::: column
--   [D. J. Finney (1951) Subjective Judgment in Statistical Analysis: An Experimental Study. *Journal of the Royal Statistical Society*](https://rss.onlinelibrary.wiley.com/doi/abs/10.1111/j.2517-6161.1951.tb00093.x)
-
--   [Frederick Mosteller et al. (1981) Eye Fitting Straight Lines. *The American Statistician*](https://www.tandfonline.com/doi/abs/10.1080/00031305.1981.10479335)
-
--   New York Times' 'You Draw It' features:
-
-    -   [Family Income affects college chances](https://www.nytimes.com/interactive/2015/05/28/upshot/you-draw-it-how-family-income-affects-childrens-college-chances.html)
-    -   [Just How Bad Is the Drug Overdose Epidemic?](https://www.nytimes.com/interactive/2017/04/14/upshot/drug-overdose-epidemic-you-draw-it.html)
-    -   [What Got Better or Worse During Obama's Presidency](https://www.nytimes.com/interactive/2017/01/15/us/politics/you-draw-obama-legacy.html?_r=0)
-:::
-
-::: column
-![](fig/NYT_YDI_ex.gif)
-:::
-:::
-
-::: notes
-There have been a number of statistical experiments with "eye fitting" regression models. The first was driven by the desire to reduce computation time; the second is much more psychological in nature. That study had students line up a transparency with a straight line on it to fit a regression line to some data. They found that students tended to fit the slope of the first PC rather than the least squares line.
-
-More recently, The New York Times has used a really cool setup to have people predict data before showing them the actual trend. They use javascript and have people draw directly on the plot. The line can be curved, jagged, etc. - it's not restricted to a strictly linear set-up. We decided to adopt this approach because we didn't want to impose a specific functional form, because it's not totally clear that people are thinking exponentially or are actually good at drawing exponential curves.
-
-The methods changed a bit, but the basic concept is the same.
-:::
-
-```{r}
-#| label: setup-log-scales-study
-#| include: false
-library(RSQLite)
-library(DBI)
-library(here)
-library(readr)
-library(digest)
-
-library(openssl)
-library(mgcv)
-library(lme4)
-library(magrittr)
-`%notin%` <- Negate(`%in%`)
-
-
-estimation_data <- read.csv("https://raw.githubusercontent.com/earobinson95/log-perception-prolific/main/analyses/03-estimation/data/estimation-model-data.csv", na = "")
-```
 
 ## Q2: Forecasting (You-Draw-It) Goals
 
@@ -573,33 +345,14 @@ If you're keeping track, then there are 4 straight lines, and 8 sets of exponent
 
 ## Q2: Forecasting (You-Draw-It)
 
-![](../images/exp-raw.png){fig-width="100%" fig-alt="Drawn predictive curves for the exponential data experiment."}
-
-
-::: notes
-Here, I'm showing you the actual drawn lines for each of the exponential conditions, and you can see that there are a few interesting features:
-
-1.  Not everyone drew very smooth lines -- we probably need to do some data cleaning based on the number of sharp "jumps" in the data -- possibly excluding those cases or smoothing over them.
-
-2.  The amount of deviation in the final prediction value is (surprisingly) not much larger when there is less data -- this was really shocking for me
-
-3.  Linear scale predictions seem to be lower than log scale predictions, in particular when beta is higher -- it's not that noticeable when beta is low. So the under-prediction bias is stronger for linear scales than it is for log scales. That doesn't necessarily mean that everyone underpredicts, but you do see way more orange lines on top in the lower right panel.
-:::
-
-## Q2: Forecasting (You-Draw-It)
-
-![](../images/exp-resid.png){fig-alt="Residuals of drawn curves, where each participant has different data." width="100%"}
-
-::: notes
-If we look at the residuals instead, we see that there is still some under-prediction even with the log scale when beta is high, but our basic conclusions from the original plots still hold.
-:::
-
-## Q2: Forecasting (You-Draw-It)
-
 ![](../images/exp-resid-gamm.png){fig-alt="GAMM models of drawn curve residuals." width="100%"}
 
 ::: notes
-We can make this even clearer by modeling the residuals using a generalized additive model, which has a flexible form and doesn't require too many assumptions about model structure.
+
+This shows the residuals from an exponential regression on the data participants were shown. We made it even clearer by modeling the residuals using a generalized additive model, which has a flexible form and doesn't require too many assumptions about model structure.
+
+It's clear that log scales and linear scales have very different outcomes -- we slightly overpredict with log scales, and underpredict with linear scales.
+
 :::
 
 ## Q3: Numerical Estimation {.center}
@@ -644,36 +397,12 @@ Free response: Between $t_1$ and $t_2$, how does the population of $X$ change?
 
 Estimating Population given a year
 
-[Process Sketch]{.emph .cerulean}
-
-::: {layout-ncol="2"}
-![Linear scale](../images/03-01-linear-sketch.png)
-
-![Log scale](../images/03-01-log-sketch.png)
-:::
-
-## Q3: Numerical Estimation
-
-Estimating Population given a year
-
 ![Deviation from Closest Point](../images/03-01-boxplots.png){width="100%"}
 
 ::: notes
 -   More variability in estimation on linear scale (which makes sense due to the fact that it's compressed into a small area of the plot)
 
 -   Participants anchor estimates to specific points, not to an overall fitted trend
-:::
-
-## Q3: Numerical Estimation
-
-From `Year1` to `Year2`, the population increases by \_\_\_\_ individuals
-
-[Process Sketch]{.emph .cerulean}
-
-::: {layout-ncol="2"}
-![Linear scale](../images/03-04-sketch-linear.png)
-
-![Log scale](../images/03-04-sketch-log.png)
 :::
 
 ## Q3: Numerical Estimation
@@ -692,32 +421,10 @@ From `Year1` to `Year2`, the population increases by \_\_\_\_ individuals
 
 How many times more creatures are there in `Year2` than `Year1`?
 
-[Process Sketch]{.emph .cerulean}
-
-::: {layout-ncol="2"}
-![Linear scale](../images/03-05-sketch-linear.png)
-
-![Log scale](../images/03-05-sketch-log.png)
-:::
-
-## Q3: Numerical Estimation
-
-How many times more creatures are there in `Year2` than `Year1`?
-
 ![](../images/03-05-answers.png)
 
 ::: notes
 -   the results show a fundamental lack of understanding on the part of many participants
-:::
-
-## Q3: Numerical Estimation
-
-How many times more creatures are there in `Year2` than `Year1`?
-
-![](../images/03-05-density.png)
-
-::: notes
--   When we look only at people who answered in a reasonable range given the question (e.g. didn't assume we meant additive estimation), we see a lot of variability and a few more things to look into here - such as why there's a peak in dataset 1 that is around 15, even though the closest point and the true value are both near 10.
 :::
 
 ## Q3: Numerical Estimation
@@ -732,17 +439,6 @@ How many times more creatures are there in `Year2` than `Year1`?
 -   Here, for the first time, the true deviation (deviation from the underling model) is a better match to participant estimates than the closest point deviation.
 :::
 
-## Q3: Numerical Estimation
-
-How long does it take for the population in `Year 1` to double?
-
-[Process Sketch]{.emph .cerulean}
-
-::: {layout-ncol="2"}
-![Linear scale](../images/03-06-linear-sketch.png)
-
-![Log scale](../images/03-06-log-sketch.png)
-:::
 
 ## Q3: Numerical Estimation
 
@@ -767,6 +463,7 @@ How long does it take for the population in `Year 1` to double?
     [(multiple times the payoff?)]{.cerulean .emph}
 
 3.  [Greater insight]{.cerulean} into the tradeoffs of design decisions
+
 :::
 
 ## Challenges & Benefits
@@ -777,12 +474,11 @@ How long does it take for the population in `Year 1` to double?
 
 -   Need to examine graphical choices across levels of engagement
 
-# CSI: Statistics<br> [& Scientific Foundations]{.emph .darkblue .slightly-small .fragment} {#csi-stats background-image="../images/dna.jpg" background-opacity="50%" background-size="cover" .center}
+# CSI: Statistics {#csi-stats .center background-image="../images/dna.jpg" background-opacity="50%" background-size="cover"}
 
----
+------------------------------------------------------------------------
 
-::: {.r-stack}
-
+::: r-stack
 ![](../images/ballistic-headline-adj.png){.fragment fig-alt="Screenshot of an Innocence Project article titled “Three Freed, and FBI Continues to Review Ballistic Cases,” discussing unreliable bullet‑matching forensic methods and related overturned convictions. Article url: https://innocenceproject.org/news/three-freed-and-fbi-continues-to-review-ballistic-cases/"}
 
 ![](../images/crimelab-headline.png){.fragment fig-alt="Screenshot of an ABA Journal article titled “Crime labs under the microscope after a string of shoddy, suspect and fraudulent results,” including a photo illustration labeled “Crimes in the Lab” on evidence bags. Article url: https://www.abajournal.com/magazine/article/crime_labs_under_the_microscope_after_a_string_of_shoddy_suspect_and_fraudu"}
@@ -794,95 +490,367 @@ How long does it take for the population in `Year 1` to double?
 ![](../images/ear-prints-headline.png){.fragment fig-alt="Screenshot of an article titled “Earprints as evidence?” with a grayscale image grid showing multiple photographed ears marked with numbered annotations used for forensic comparison. Article url: https://phys.org/news/2006-02-earprints-evidence.html"}
 
 ![](../images/ear-prints2-headline.png){.fragment fig-alt="Screenshot of an article from The Guardian in 2004 titled 'Earprint landed innocent man in jail for murder'. Article url: https://www.theguardian.com/uk/2004/jan/23/ukcrime1"}
-
 :::
 
-::: {.notes}
-
-In the past 20 years, CSI-style forensic analysis has taken quite a beating. 
+::: notes
+In the past 20 years, CSI-style forensic analysis has taken quite a beating.
 
 DNA is the gold standard for forensic evidence - a specific combination of genes is supposed to be unique to the individual, matches can be objectively determined with error rates that are quantifiable, and it could be used to reexamine evidence from old cases.
 
-As organizations like the Innocence Project used DNA to revisit old cases, it became clear that there were *major* problems with the evidence used in criminal cases -- eyewitness testimony, false confessions, and shoddy forensics. 
+As organizations like the Innocence Project used DNA to revisit old cases, it became clear that there were *major* problems with the evidence used in criminal cases -- eyewitness testimony, false confessions, and shoddy forensics.
 
-There were a number of very embarrassing cases where forensic evidence was shown to be faulty.
-As these cases happened, scientists started asking how this all went so wrong? Wasn't forensics ultimately based in science? Weren't there studies out there showing that forensic techniques had low error rates?
+There were a number of very embarrassing cases where forensic evidence was shown to be faulty. As these cases happened, scientists started asking how this all went so wrong? Wasn't forensics ultimately based in science? Weren't there studies out there showing that forensic techniques had low error rates?
+
+I'm going to briefly highlight a couple of contributions aimed at fixing these issues. All of this is very fundamental, not cutting-edge statistics, and that's by design -- courts don't want cutting-edge stuff, they want "general scientific acceptance" -- which means that this is ideal for those of you who are undergraduates, or from other departments -- while there are more sophisticated statistical techniques in here, we're not going to talk about them in detail - we're going to focus on the basics.
 
 :::
 
-## Hidden Multiple Comparisons Increase Forensic Error Rates 
-
-Proceedings of the National Academy of Sciences, 2024
-
-[Joint work with [**Heike Hofmann**]{.darkorange} and [**Alicia Carriquiry**]{.darkpurple}]{.emph}
-
+## NAS Report (2009) {.r-fit-text}
+[(National Academy of Science)]{style="position:absolute;top:60px;" .emph .red}
 
 ::: columns
 ::: {.column width="30%"}
-{{< qrcode https://www.pnas.org/doi/full/10.1073/pnas.2401326121  width=300 height=300 >}}
+![](../images/NAS-screenshot.png){fig-alt="Cover of the 2009 NAS report. PDF at https://www.ojp.gov/pdffiles1/nij/grants/228091.pdf"}
+:::
+::: {.column .incremental width="70%"}
+-   Senate commissioned in 2005
+
+-   Focus areas:
+
+    -   fundamentals of scientific method in forensics
+    -   error rates for collection and analysis of forensic data
+    -   use of forensic evidence in litigation
+
+-   Important questions:
+
+    -   Are disciplines scientifically reliable?
+    -   How subjective/biased are methods?
+    
+:::
+:::
+
+::: notes
+The NAS report focused on the use of science in forensics, how we know (or don't know) what error rates are for forensic methods, and how forensic evidence is used in court.
+
+Primary concerns included whether disciplines are based on reliable scientific foundations, and whether practitioner bias could affect the results of the forensic comparisons.
+:::
+
+
+## NAS Report (2009) {.r-fit-text}
+::: columns
+::: {.column width="30%"}
+![](../images/NAS-screenshot.png){fig-alt="Cover of the 2009 NAS report. PDF at https://www.ojp.gov/pdffiles1/nij/grants/228091.pdf"}
+:::
+
+::: {.column width="70%"}
+### [Recommendations]{.emph .red}
+
+**Create a National Institute of Forensic Science** to manage 
+
+- accreditation, 
+- federal/state/local jurisdiction differences, 
+- standard reporting language.
+
+**Fund research** on forensic methods: 
+
+- reliability, accuracy, validity
+- automation & objective methods
+- uncertainty quantification
+:::
+:::
+
+
+::: notes
+
+The NAS report suggested creating a national institute of forensic science. This institute is supposed to be separate from the department of justice, because the DOJ is pretty biased towards law enforcement, and during the DNA wars, they actually had people testifying that DNA was unreliable followed, audited by the IRS, and so on.
+
+The NAS report also recommended that the NIFS fund research on method validity - again, something that shouldn't come from the DOJ because they generally only fund things that seem likely to be positive about the validity of methods. The NAS report also highlighted the importance of error rates, considering quality of evidence, and understanding the uncertainty of the conclusions of forensic analyses. Finally, the NAS report suggested the importance of research into automated techniques capable of enhancing forensic assessments.
+
+We'll come back to these recommendations in a bit. The NAS report came out in 2009, and the forensic scandals continued, but the recommended national institute of forensic science never came to be.
+:::
+
+## PCAST Report (2016) {.r-fit-text}
+[President's Council of Advisors on Science and Technology]{.emph .red style="position:absolute;top:60px"}
+
+::: columns
+::: {.column width="30%"}
+![](../images/pcast-screenshot.png){fig-alt="Screenshot of cover page of PCAST report; pdf available at https://obamawhitehouse.archives.gov/sites/default/files/microsites/ostp/PCAST/pcast_forensic_science_report_final.pdf"}
+:::
+
+::: {.column .smaller width="70%"}
+> Judges' decisions about the admissibility of scientific evidence rest solely on **legal standards**; they are exclusively the province of the courts and PCAST does not opine on them. But, these decisions require making determinations about scientific validity. It is the proper province of the **scientific community** to provide guidance concerning scientific **standards for scientific validity**.
+:::
+:::
+
+::: aside
+The [Executive Summary](https://obamawhitehouse.archives.gov/sites/default/files/microsites/ostp/PCAST/pcast_forensic_science_report_final.pdf) is an excellent read.
+:::
+
+
+## PCAST Report (2016) {.r-fit-text}
+::: columns
+::: {.column width="30%"}
+![](../images/pcast-screenshot.png){fig-alt="Screenshot of cover page of PCAST report; pdf available at https://obamawhitehouse.archives.gov/sites/default/files/microsites/ostp/PCAST/pcast_forensic_science_report_final.pdf"}
+:::
+
+::: {.column .smaller width="70%"}
+[Requirements for Scientific Validity]{.emph}
+
+-   Empirical testing by
+    -   multiple lab groups
+    -   under casework like conditions,
+    -   demonstrating that the method is **repeatable** and **reproducible** and
+    -   providing estimates of the method's accuracy
+
+-   **subjective** disciplines
+    -   evaluated as a "black box" in the examiner's head.
+    -   Studies: many examiners render decisions about many independent tests.
+
+Without estimates of accuracy, an examiner's decision is [scientifically meaningless]{.emph .cerulean}: it has no probative value, and considerable potential for prejudicial impact.
+
+:::
+:::
+
+## Current Status of Forensic Disciplines
+
+::::: columns
+::: {.column .small width="80%" margin="auto"}
++----------+-------------+-----------+----------+----------+
+|          | Discipline  | Method    | Validity | Evidence |
++==========+=============+===========+==========+==========+
+| 🧬       | DNA         | 🧪        | ✅       | 📚       |
++----------+-------------+-----------+----------+----------+
+| 🧬       | DNA (mix)   | 🧪+🔎     | ❓\      | 📖📖\    |
+|          |             |           | ✅[^1]c  | 📖       |
++----------+-------------+-----------+----------+----------+
+| 🫆       | Fingerprint | 🔎 💻     | ✅[^2]   | 📚       |
++----------+-------------+-----------+----------+----------+
+| 🔫       | Firearms    | 🔎 💻[^3] | ❓       | 📖       |
++----------+-------------+-----------+----------+----------+
+| 👟       | Footwear    | 🔎        | ❓       | ❓       |
++----------+-------------+-----------+----------+----------+
+| 🦱       | Hair        | 🔎        | 🚩🚩     | 📚       |
++----------+-------------+-----------+----------+----------+
+| 😁       | Bitemark    | 🔎        | 🚩🚩     | 📚       |
++----------+-------------+-----------+----------+----------+
+:::
+
+::: {.column .small width="20%"}
++--------------+---------------+
+|              | Meaning       |
++==============+===============+
+| 🧪           | Lab           |
++--------------+---------------+
+| 🔎           | Subjective    |
++--------------+---------------+
+| 💻           | Algorithm     |
++--------------+---------------+
+| ✅           | Valid         |
++--------------+---------------+
+| ❓           | Unknown       |
++--------------+---------------+
+| 🚩           | Invalid       |
++--------------+---------------+
+| 📚           | Many Studies  |
++--------------+---------------+
+| 📖           | Some Studies  |
++--------------+---------------+
+:::
+:::::
+
+[^1]: In some situations
+
+[^2]: high error rate
+
+[^3]: Algorithms not used in lab practice
+
+# Flipping The Script:<br/>[Algorithms to Mimic Perception]{.emph .green}
+
+![](../images/CSAFE%20Logo.svg){fig-alt="Logo for the Center for Statistics and Applications in Forensic Evidence (CSAFE)" width="50%" align="center"}
+
+## Goals
+
+-   Develop algorithms for matching spent ammunition  [Features engineered based on examiners' visual focus 👁️🔬]{.fragment .emph .meddarkblue}
+
+-   Compare these algorithms to examiner performance
+
+-   Algorithms must be explainable
+
+    -   Visual diagnostics [Where did things "go wrong"?]{.emph .fragment .green}
+        -   Process for manual override on critical steps
+    -   Promote examiner (and jury) **conceptual** understanding [(through graphics)]{.emph .purple .fragment}
+
+::: r-stack
+::: {.fragment .fade-in-then-out .center}
+![](../images/Bullets_Aligned_comparison_horiz.png){width="60%" fig-align="center"}
+:::
+
+::: {.fragment .fade-in-then-out}
+![](../images/signature-aligned.png){width="80%"}
+:::
+
+::: {.fragment .fade-in-then-out}
+![](../images/hou-1.png){width="80%"}
+:::
+:::
+
+::: notes
+I'm also involved in developing algorithms for bullet and cartridge case analysis.
+
+This research is much closer to deployment in a lab setting. We have algorithms which take bullet scans and do some automatic feature recognition.
+
+When combined with some feature engineering to match features examiners say they look for, we can fit a random forest that takes two bullet scans and predicts whether or not they came from the same weapon.
+
+We've developed visualizations to summarize this process for test sets that are like those examiners use. These visualizations are paired with shiny apps that allow users to "drill down" and see how the algorithm arrived at the conclusion it did. Many times, this process allows us to diagnose situations where the model didn't behave as expected - so it's useful for debugging, and also for knowing when not to trust the algorithm's results.
+:::
+
+## `bulletxtrctr`
+
+[Joint work with]{.emph}[**Heike Hofmann**]{.darkorange} and [**Will Ju**]{.darkgreen} and [**Ganesh Krishnan**]{.darkblue}, extending work by 
+[**Heike Hofmann**]{.darkorange}, [**Alicia Carriquiry**]{.darkpurple}, and [**Eric Hare**]{.darkcerulean}
+
+:::::: columns
+::: {.column width="30%"}
+{{< qrcode https://www.pnas.org/doi/full/10.1073/pnas.2401326121 width=300 height=300 >}}
 
 PNAS Paper Link
 :::
-::: {.column width="10%" .r-fit-text}
-:::
-::: {.column width="60%" .r-fit-text}
 
+::: {.column .r-fit-text width="10%"}
+:::
+
+::: {.column .r-fit-text width="60%"}
 This work was partially funded by the Center for Statistics and Applications in Forensic Evidence (CSAFE) through Cooperative Agreements 70NANB15H176 and 70NANB20H019 between NIST and Iowa State University, [which includes activities carried out at Carnegie Mellon University, Duke University, University of California Irvine, University of Virginia, West Virginia University, University of Pennsylvania, Swarthmore College and University of Nebraska, Lincoln.]{.small}
+:::
+::::::
+
+
+## Matching Striated Evidence
+
+- Scanned with 3D Confocal Light Microscope
+- Data is a matrix of height values in $\mu$m
+
+::: {.r-stack}
+![](../images/bullet-scan.png){.fragment fig-alt="A 3d scan rendering of a bullet land engraved area."}
+
+![](../images/bullet-crosscut.png){.fragment fig-alt="Pick a crosscut across the bullet surface that isn't too damaged."}
+
+![](../images/bullet-land-profiles.png){.fragment fig-alt="Profiles of each land of two scanned bullets"}
+
+![](../images/bullet-grooves.png){.fragment fig-alt="Locate the grooves (lands are depressed from the groove)."}
+
+![](../images/bullet-signatures.png){.fragment fig-alt="Remove the surface super structure to get a flat signature."}
+
+![](../images/bullet-signatures-align.png){.fragment fig-alt="Align signatures using maximum cross-correlation function."}
 
 :::
+
+## Feature Extraction
+
+- Striation Alignment
+
+  - Identify "striations" - significant departures from the mean
+
+  - Count aligned/matching striations (per mm)    
+  [consecutive matching striae]{.emph .meddarkblue}
+
+  - Mismatches (per mm)
+
+
+## Feature Extraction
+
+- Mathematical measures of alignment
+  - (maximum) Cross-correlation between signatures
+
+  - 
+
+  - Euclidean distance between signatures
+
+  - Lag between signatures at max alignment (per mm)
+
+  - Length of aligned signatures (mm)
+
+
+## Feature Extraction
+
+- Measures of total signal
+  
+  - Combined striae height    
+[measure of how much signal exists]{.emph .meddarkblue .fragment}
+
+  - Variation in height measurement of aligned signature
+
+
+## Machine Learning
+
+- Feed pairwise features into a random forest to predict source -- same or different?
+
+```{r}
+library(bulletxtrctr)
+
+
+```
+
+# Wire Cuts<br/> [& Scientific Foundations]{.emph .orange .slightly-small .fragment} {background-image="../images/bomb-fragments.png" background-opacity="50%" background-size="cover"}
+<!-- https://www.bbc.com/news/uk-63280523 -->
+
+## Hidden Multiple Comparisons Increase Forensic Error Rates
+
+Proceedings of the National Academy of Sciences, 2024
+
+[Joint work with]{.emph}[**Heike Hofmann**]{.darkorange} and [**Alicia Carriquiry**]{.darkpurple}
+
+:::::: columns
+::: {.column width="30%"}
+{{< qrcode https://www.pnas.org/doi/full/10.1073/pnas.2401326121 width=300 height=300 >}}
+
+PNAS Paper Link
 :::
 
+::: {.column .r-fit-text width="10%"}
+:::
 
+::: {.column .r-fit-text width="60%"}
+This work was partially funded by the Center for Statistics and Applications in Forensic Evidence (CSAFE) through Cooperative Agreements 70NANB15H176 and 70NANB20H019 between NIST and Iowa State University, [which includes activities carried out at Carnegie Mellon University, Duke University, University of California Irvine, University of Virginia, West Virginia University, University of Pennsylvania, Swarthmore College and University of Nebraska, Lincoln.]{.small}
+:::
+::::::
 
 ## Toolmark Examination Primer
-
 
 ![Our Crime Scene](../images/bread-butter.png){fig-alt="A picture of a loaf of bread and a fresh stick of butter that has just been cut with a butter knife." width="50%"}
 
 ## Toolmark Examination Primer
 
-
 ![Identifying Marks](../images/bread-butter-zoom.png){fig-alt="A picture of a loaf of bread and a fresh stick of butter that has just been cut with a butter knife. The cut butter has a circle around it, with the enlarged image in the circle shown on the right."}
-
 
 ## Toolmark Examination Primer
 
-::: {.r-stack}
-
+::: r-stack
 ![](../images/test-cuts-nolabel.png){fig-alt="A picture of a steak knife (top) and a butter knife (bottom), with several test cuts from each knife arranged in two rows in the middle. The test cuts are labeled, and the 'evidence' is superimposed on top."}
 
-![](../images/test-cuts-full.png){fig-alt="A picture of a steak knife (top) and a butter knife (bottom), with several test cuts from each knife arranged in two rows in the middle. The test cuts are labeled, and the 'evidence' is superimposed on top. The test cuts made with the steak knife have an X overlaid, while the test cuts made with the butter knife have a check overlaid, indicating that they match the evidence from the scene." .fragment}
-
+![](../images/test-cuts-full.png){.fragment fig-alt="A picture of a steak knife (top) and a butter knife (bottom), with several test cuts from each knife arranged in two rows in the middle. The test cuts are labeled, and the 'evidence' is superimposed on top. The test cuts made with the steak knife have an X overlaid, while the test cuts made with the butter knife have a check overlaid, indicating that they match the evidence from the scene."}
 :::
 
-::: {.fragment}
+::: fragment
 [How do we know this method is valid?]{.emph .meddarkblue .large}
 :::
 
-
 ## A Specific Case -- Jimmy Genrich
 
-::: {layout-ncol=2}
-
-![](../images/TheNation20180226-Genrich.png){fig-alt="A screenshot of an article by Meehan Crist and Tim Requarth from The Nation (Feb 26, 2018 issue). The title reads 'Forensic Science Put Jimmy Genrich in Prison for 24 Years. What if It Wasn’t Science?'. A mugshot is shown below the article title. Article url: https://www.thenation.com/article/archive/the-crisis-of-american-forensics/" height=750}
+:::: {layout-ncol="2"}
+![](../images/TheNation20180226-Genrich.png){fig-alt="A screenshot of an article by Meehan Crist and Tim Requarth from The Nation (Feb 26, 2018 issue). The title reads 'Forensic Science Put Jimmy Genrich in Prison for 24 Years. What if It Wasn’t Science?'. A mugshot is shown below the article title. Article url: https://www.thenation.com/article/archive/the-crisis-of-american-forensics/" height="750"}
 
 ::: fragment
-![](../images/CPR-new-trial.png){fig-alt="A Colorado Public Media story by Tom Hesse from July 10, 2023, titled 'Judge orders new trial for Grand Junction man convicted in '90s pipe bombings'. A picture of the Mesa County Justice Center is shown below the article title. Article url:  https://www.cpr.org/2023/07/10/judge-orders-new-trial-for-grand-junction-man-convicted-in-90s-pipe-bombings/" height=750 width=auto}
+![](../images/CPR-new-trial.png){fig-alt="A Colorado Public Media story by Tom Hesse from July 10, 2023, titled 'Judge orders new trial for Grand Junction man convicted in '90s pipe bombings'. A picture of the Mesa County Justice Center is shown below the article title. Article url:  https://www.cpr.org/2023/07/10/judge-orders-new-trial-for-grand-junction-man-convicted-in-90s-pipe-bombings/" height="750" width="auto"}
 :::
+::::
 
-:::
+## Motivation
 
+::: smaller
+> At trial, O’Neil testified that tools like the wire cutters found in Genrich’s residence were the only tools that could have been used to make the pipe bombs. “Agent O’Neil opined that the three of Mr. Genrich’s tools were the **only tools in the world that could have made certain marks found on pieces from the four bombs**,” Judge Gurley wrote in Monday's opinion.
 
-## Motivation 
-
-::: {.smaller}
-
-> At trial, O’Neil testified that tools like the wire cutters found in Genrich’s residence were the only tools that could have been used to make the pipe bombs.
-> “Agent O’Neil opined that the three of Mr. Genrich’s tools were the **only tools in the world that could have made certain marks found on pieces from the four bombs**,” Judge Gurley wrote in Monday's opinion.
-
-> O’Neil was asked specifically at trial what he meant by the phrase “to the exclusion of any other tool.”
-> “That the individual jaw, the location within that jaw on that particular side, was identified as having cut the wire in question to a degree of certainty to exclude any other tool,” he said, according to court transcripts referenced in Gurley’s decision.
-> O’Neil said this was **true of needle-nosed pliers used on the bomb, slip-joint pliers, as well as the wire cutter**. 
+> O’Neil was asked specifically at trial what he meant by the phrase “to the exclusion of any other tool.” “That the individual jaw, the location within that jaw on that particular side, was identified as having cut the wire in question to a degree of certainty to exclude any other tool,” he said, according to court transcripts referenced in Gurley’s decision. O’Neil said this was **true of needle-nosed pliers used on the bomb, slip-joint pliers, as well as the wire cutter**.
 :::
 
 [Source](https://www.cpr.org/2023/07/10/judge-orders-new-trial-for-grand-junction-man-convicted-in-90s-pipe-bombings/) (emphasis added)
@@ -893,49 +861,49 @@ This work was partially funded by the Center for Statistics and Applications in 
 
 ## Constructive Scientific Proof<br>[from first principles]{.emph .meddarkblue .smaller}
 
-::: columns
+::::: columns
 ::: {.column .r-fit-text width="70%"}
-- Understand 
-    - how tools make marks
-    - tool wear over time
-    - tool manufacturing processes
-    - tool/material interaction
-    - mark type/frequency distribution
-- Track
-    - Frequency of tools in a local population
+-   Understand
+    -   how tools make marks
+    -   tool wear over time
+    -   tool manufacturing processes
+    -   tool/material interaction
+    -   mark type/frequency distribution
+-   Track
+    -   Frequency of tools in a local population
 :::
+
 ::: {.column width="30%"}
 [😓]{.extrabig .fragment}
 :::
+:::::
+
+::: notes
+Scientifically, we might boil this down to a series of engineering and materials science problems - understanding the types of marks which can occur on different types of tool materials through manufacture, wear, etc., and then understanding in turn how those tools transfer marks to other surfaces and how force, angle, and material hardness impact those marks.
+
+Unfortunately, though, the number of different characteristics gets very quickly out of control and you end up with an exponential number of interactions very quickly.
+
+Establishing the discipline from first principles is ... difficult, to say the least. You could probably do it with a combination of time, stubbornness, and statistical inference, but there is always a chance that a new manufacturing method will be developed that will produce new types/classes of markings.
+
+But, there are other ways to handle this problem.
 :::
-
-::: {.notes}
-
-Scientifically, we might boil this down to a series of engineering and materials science problems - understanding the types of marks which can occur on different types of tool materials through manufacture, wear, etc., and then understanding in turn how those tools transfer marks to other surfaces and how force, angle, and material hardness impact those marks. 
-
-Unfortunately, though, the number of different characteristics gets very quickly out of control and you end up with an exponential number of interactions very quickly. 
-
-Establishing the discipline from first principles is ... difficult, to say the least. You could probably do it with a combination of time, stubbornness, and statistical inference, but there is always a chance that a new manufacturing method will be developed that will produce new types/classes of markings. 
-
-But, there are other ways to handle this problem. 
-:::
-
 
 ## 📐 A Different Angle on the Problem
 
-- $e^{(1)}$: error rate for a single comparison
-- $e^{(N)}$: overall error rate, $N$ comparisons
+-   $e^{(1)}$: error rate for a single comparison
 
-- Calculate $N$: \# comparisons between tool and evidence
+-   $e^{(N)}$: overall error rate, $N$ comparisons
 
-- [Ultimate question]{.emph .darkpurple}:     
-What does $e^{(1)}$ need to be for $e^{(N)}$ to be low^[Low enough will be determined by courts⚖️, not statisticians... 🫣]?
+-   Calculate $N$: \# comparisons between tool and evidence
 
+-   [Ultimate question]{.emph .darkpurple}:\
+    What does $e^{(1)}$ need to be for $e^{(N)}$ to be low[^4]?
+
+[^4]: Low enough will be determined by courts⚖️, not statisticians... 🫣
 
 ## Wire Cuts
 
-::: {layout=[[70,30],[100]] layout-valign="bottom"}
-
+::: {layout="[[70,30],[100]]" layout-valign="bottom"}
 ![CAT5 crimper with wire cutter](../images/wire_cutter.png)
 
 ![Cut wires](../images/razor_wire_cut_sizes_ann.png)
@@ -947,51 +915,42 @@ What does $e^{(1)}$ need to be for $e^{(N)}$ to be low^[Low enough will be deter
 
 ![](../images/Surface_Counts.png){fig-alt="A profile image of the blades of each of four types of tools - wedge-type cuts (guillotine/wire cutters), scissors, pliers, and blades. All but pliers have two cutting surfaces, but the angles of each surface differ. Pliers have 4 cutting surfaces." width="80%" style="margin-left:auto;margin-right:auto;"}
 
+-   Bladed Surfaces: $s \in \{2, 4\}, 1 \leq i \leq s$
 
-- Bladed Surfaces: $s \in \{2, 4\}, 1 \leq i \leq s$
-
-- Cut Surfaces (on one wire): $w \in \{1, 2\}, 1\leq j\leq w$
-
-
+-   Cut Surfaces (on one wire): $w \in \{1, 2\}, 1\leq j\leq w$
 
 ## Visual Examination
 
-
-::: {.columns}
+::::: columns
 ::: {.column width="80%"}
-- Test cuts made along the blade(s) of the tool
+-   Test cuts made along the blade(s) of the tool
 
-- At least $N_{ij} = b_i/d_j$ comparisons for each blade surface $i$ and cut wire surface $j$
+-   At least $N_{ij} = b_i/d_j$ comparisons for each blade surface $i$ and cut wire surface $j$
 
-- Manual alignment: estimate the minimum comparisons
-
+-   Manual alignment: estimate the minimum comparisons
 :::
-::: {.column width="20%"}
 
+::: {.column width="20%"}
 ![](../images/comparison-scope-rearrange.png){fig-alt="An image of a comparison microscope, which allows viewing two samples simultaneously in order to align them." width="18%" style="position:absolute;top:0;right:20px;"}
 :::
-:::
+:::::
 
-
-![](../images/number of comparisons.svg){width="100%" fig-alt="A diagram showing a blade cut (long, thin) with striations compared to a wire cut (semi-circle shape, short) aligned with the blade cut. There are multiple non-overlapping positions along the blade cut where the wire cut could fit, and each is shown with an empty hemisphere." style="position:absolute;bottom:0px;left:20px;"}
+![](../images/number%20of%20comparisons.svg){width="100%" fig-alt="A diagram showing a blade cut (long, thin) with striations compared to a wire cut (semi-circle shape, short) aligned with the blade cut. There are multiple non-overlapping positions along the blade cut where the wire cut could fit, and each is shown with an empty hemisphere." style="position:absolute;bottom:0px;left:20px;"}
 
 ## Visual Examination
 
+![](../images/number%20of%20comparisons.svg){width="100%" fig-alt="A diagram showing a blade cut (long, thin) with striations compared to a wire cut (semi-circle shape, short) aligned with the blade cut. There are multiple non-overlapping positions along the blade cut where the wire cut could fit, and each is shown with an empty hemisphere." style="position:absolute;top:40%;left:20px;"}
 
+Adj. comparisons are non-overlapping $\Rightarrow$ "independent"[^5]
 
-![](../images/number of comparisons.svg){width="100%" fig-alt="A diagram showing a blade cut (long, thin) with striations compared to a wire cut (semi-circle shape, short) aligned with the blade cut. There are multiple non-overlapping positions along the blade cut where the wire cut could fit, and each is shown with an empty hemisphere." style="position:absolute;top:40%;left:20px;"}
-
-Adj. comparisons are non-overlapping $\Rightarrow$ "independent"^[There are peak-valley dependence structures in profile data, but conditioning on tool/material/manufacturing, we would **expect** statistical independence between adjacent comparisons]
-
+[^5]: There are peak-valley dependence structures in profile data, but conditioning on tool/material/manufacturing, we would **expect** statistical independence between adjacent comparisons
 
 ## Algorithmic Comparison
 
-Scans -> Cross Section -> "Signature"    
+Scans -\> Cross Section -\> "Signature"\
 (remove gross topology)
 
 ![Cross-correlation is used to align signature from blade cut surface to signature from wire cut surface. Image credit: Heike Hofmann](../images/alignment-crop-sm.gif){fig-alt="An animated gif of a wire cross-section sliding along a composite cross section generated from a blade cut."}
-
-
 
 ## Number of Comparisons
 
@@ -1001,43 +960,42 @@ Ncomp1 <- format(nc, big.mark=",")
 Ncomp2 <- format(nc*2, big.mark=",")
 ```
 
- &nbsp;           | Minimum (Manual) | Maximum (Algorithm)
------------------ | ----------- | ------------------
-blade size        | $b=15 \text{mm}$   | $b=15000 \mu \text{m}$
-cutting surfaces  | $s=2$/blade | $s=2$/blade
-wire size         | $d=2 \text{mm}$    | $d=2000 \mu \text{m}$
-wire surface      | $w=1$       | $w=1$
-resolution        |             | $r=0.645 \mu \text{m/px}$
-\# per side       | 7.5         | `{r} Ncomp1`
-\# total          | 15          | `{r} Ncomp2`
-
+|                  | Minimum (Manual) | Maximum (Algorithm)       |
+|------------------|------------------|---------------------------|
+| blade size       | $b=15 \text{mm}$ | $b=15000 \mu \text{m}$    |
+| cutting surfaces | $s=2$/blade      | $s=2$/blade               |
+| wire size        | $d=2 \text{mm}$  | $d=2000 \mu \text{m}$     |
+| wire surface     | $w=1$            | $w=1$                     |
+| resolution       |                  | $r=0.645 \mu \text{m/px}$ |
+| \# per side      | 7.5              | `{r} Ncomp1`              |
+| \# total         | 15               | `{r} Ncomp2`              |
 
 This assumes a single wire and a single possible tool.
-
 
 ## So How Bad Is the Problem?
 
 For error rate $e$ and $n$ comparisons
 
-$$P(\text{no false positive errors}) = 1 - \left(1 - e\right)^n$$ 
+$$P(\text{no false positive errors}) = 1 - \left(1 - e\right)^n$$
 
 ::: fragment
-
 [Simple probability 🎲 strikes again!]{.emph .darkcerulean}
-
 :::
 
 ## So How Bad Is the Problem?
 
-- Estimated false positive error rate for striated comparisons from bullets and firing pins: 0.45 - 7.24%. 
+-   Estimated false positive error rate for striated comparisons from bullets and firing pins: 0.45 - 7.24%.
 
-  - [**Pooled estimate**: 2%]{.emph .darkgreen}
+    -   [**Pooled estimate**: 2%]{.emph .darkgreen}
 
-  - Not enough error rate studies on wires
-  - Bullets have additional structure to facilitate alignment
-  - Wires have additional complexity 
-      - shorter sequences
-      - more dependence on angle
+    -   Not enough error rate studies on wires
+
+    -   Bullets have additional structure to facilitate alignment
+
+    -   Wires have additional complexity
+
+        -   shorter sequences
+        -   more dependence on angle
 
 [$\Rightarrow$ **2% is a generous estimate...**]{.emph .meddarkblue .fragment}
 
@@ -1047,36 +1005,34 @@ To keep the overall false positive rate under 10%...
 
 ![](../images/table-fpr-family.png){fig-alt="A table showing the family wise false discovery rate for N comparisons using several different estimates of striated comparison error rates. When the FDR is 7%, over 50% of 10-comparison samples would be expected to have a false positive. When the FDR is 2%, over 18% of 10-comparison samples would be expected to have a false positive. Additional columns are provided giving the expected frequency of 100 and 1000 comparisons under different error rates. The final column provides the maximum number of comparisons at the specified error rate which can be performed to keep the family wise false positive error rate under 10%."}
 
-[2% Error -> 5 total comparisons.]{.emph .meddarkblue .fragment}
+[2% Error -\> 5 total comparisons.]{.emph .meddarkblue .fragment}
 
 [Minimum of 15 required to do even a simple wire-cut analysis.]{.emph .meddarkblue .fragment}
 
 ## Conclusions
 
-- Wire cut forensics are not scientifically sound using current analysis methods
+-   Wire cut forensics are not scientifically sound using current analysis methods
 
 ::: fragment
-
 but... this problem shows up in database searches, too!
 
-- IAFIS (Integrated Automated Fingerprint ID System)
-- NIBIN (Ballistics Database)
-- NDIS (National DNA ID System) and CODIS (Combined DNA ID System)
-- PDQ (Paint Data Query)
-- FISH (Forensic ID System for Handwriting)
-
+-   IAFIS (Integrated Automated Fingerprint ID System)
+-   NIBIN (Ballistics Database)
+-   NDIS (National DNA ID System) and CODIS (Combined DNA ID System)
+-   PDQ (Paint Data Query)
+-   FISH (Forensic ID System for Handwriting)
 :::
 
 ## Conclusions
 
 ::: incremental
-- Automatic intelligence algorithms are not a good substitute for investigative work
+-   Automatic intelligence algorithms are not a good substitute for investigative work
 
-- Example: Oregon
-  - 3 firearms examiners for the state
-  - Most firearms evidence run through NIBIN first
-  - Promising leads forwarded to examiners for manual assessment
-  
+-   Example: Oregon
+
+    -   3 firearms examiners for the state
+    -   Most firearms evidence run through NIBIN first
+    -   Promising leads forwarded to examiners for manual assessment
 :::
 
 [This is a setup that could generate false-positives by design!]{.cerulean .emph .fragment}
@@ -1084,22 +1040,19 @@ but... this problem shows up in database searches, too!
 ## Conclusions
 
 ::: incremental
+-   Examiners should report and the defense should require
 
-- Examiners should report and the defense should require
+    -   [overall length/area of surfaces generated during the examination $(b)$]{.small}
+    -   [total consecutive length/area of recovered evidence $(d)$]{.small}
 
-  - [overall length/area of surfaces generated during the examination $(b)$]{.small}
-  - [total consecutive length/area of recovered evidence $(d)$]{.small}
+-   Studies relating length/area of comparison surface to error rates are essential!
 
+    -   [No available black-box error rate for wire cuts]{.small}
+    -   [Studies should be difficult, like casework!]{.small}
 
-- Studies relating length/area of comparison surface to error rates are essential!
+-   Any database search used at any stage of the process should be disclosed along with
 
-  - [No available black-box error rate for wire cuts]{.small}
-  - [Studies should be difficult, like casework!]{.small}
-
-- Any database search used at any stage of the process should be disclosed along with
-
-  - [$N$ items in the database used for comparison]{.small}
-  - [Number of results returned as 'similar' (top 20? top 5?)]{.small}
-  - [Protocols for confirmatory assessment]{.small}
-
+    -   [$N$ items in the database used for comparison]{.small}
+    -   [Number of results returned as 'similar' (top 20? top 5?)]{.small}
+    -   [Protocols for confirmatory assessment]{.small}
 :::
