@@ -838,8 +838,8 @@ Ncomp2 <- format(nc*2, big.mark=",")
 | wire size        | $d=2 \text{mm}$  | $d=2000 \mu \text{m}$     |
 | wire surface     | $w=1$            | $w=1$                     |
 | resolution       |                  | $r=0.645 \mu \text{m/px}$ |
-| \# per side      | 7.5              | `{r} Ncomp1`              |
-| \# total         | 15               | `{r} Ncomp2`              |
+| \# per side      | 7.5              | `r .QuartoInlineRender(Ncomp1)`              |
+| \# total         | 15               | `r .QuartoInlineRender(Ncomp2)`              |
 
 This assumes a single wire and a single possible tool.
 
