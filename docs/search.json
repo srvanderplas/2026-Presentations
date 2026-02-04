@@ -487,7 +487,7 @@
     "href": "02-utah-state/index.html#conclusions-1",
     "title": "Human Computer Data Interaction",
     "section": "Conclusions",
-    "text": "Conclusions\n\nAutomatic intelligence algorithms are not a good substitute for investigative work\nExample: Oregon\n\n3 firearms examiners for the state\nMost firearms evidence run through NIBIN first\nPromising leads forwarded to examiners for manual assessment\n\n\nThis is a setup that could generate false-positives by design!"
+    "text": "Conclusions\n\nAutomatic intelligence algorithms are not a good substitute for investigative work\nExample: Oregon\n\n3 firearms examiners for the state\nMost firearms evidence run through NIBIN first\nPromising leads forwarded to examiners for manual assessment\n\n\nThis is a setup that could generate false-positives by design!\nOregon courts recently ruled that firearms and toolmark evidence are not admissible because the methods are not scientifically valid. (Oct 2025, 340 Or.App. 661, State v. Adams)"
   },
   {
     "objectID": "02-utah-state/index.html#conclusions-2",
@@ -1034,5 +1034,19 @@
     "title": "Human Computer Data Interaction",
     "section": "Wire Cuts",
     "text": "Wire Cuts\n\n\n\n\n\n\nCAT5 crimper with wire cutter\n\n\n\n\n\n\n\nCut wires\n\n\n\n\n\n\n\n\n\nDigital scan of blade cut and wire cut"
+  },
+  {
+    "objectID": "02-utah-state/index.html#conclusions-3",
+    "href": "02-utah-state/index.html#conclusions-3",
+    "title": "Human Computer Data Interaction",
+    "section": "Conclusions",
+    "text": "Conclusions"
+  },
+  {
+    "objectID": "02-utah-state/index.html#my-conclusions",
+    "href": "02-utah-state/index.html#my-conclusions",
+    "title": "Human Computer Data Interaction",
+    "section": "My Conclusions",
+    "text": "My Conclusions\n\nHow we communicate statistics matters! 💬\n\nGraphics are a vital tool 📊\n\nStatisticians have an ethical obligation to challenge faulty statistics\nFundamentals make a difference!\n\nsampling, measurement, experimental design, probability"
   }
 ]

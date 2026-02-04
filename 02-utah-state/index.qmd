@@ -932,6 +932,8 @@ but... this problem shows up in database searches, too!
 
 [This is a setup that could generate false-positives by design!]{.cerulean .emph .fragment}
 
+[Oregon courts recently ruled that firearms and toolmark evidence are not admissible because the methods are not scientifically valid. (Oct 2025, 340 Or.App. 661, State v. Adams)]{.fragment .emph .red}
+
 ## Conclusions
 
 ::: incremental
@@ -952,4 +954,23 @@ but... this problem shows up in database searches, too!
     -   [Protocols for confirmatory assessment]{.small}
 :::
 
+## [My]{.emph .cerulean} Conclusions
+
+::: incremental
+
+- How we communicate statistics matters! 💬
+
+    - Graphics are a vital tool 📊
+
+- Statisticians have an [ethical obligation]{.emph .cerulean} to challenge faulty statistics
+
+- Fundamentals make a difference!
+    - sampling, measurement, experimental design, probability
+
+:::
+
+![](https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExM2NnbzBhaHV3OHN4ZTAyaWYzYXIxbzM1cG9hNW1zM25mZ3RzYmR6ZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/GIQkxve3gvNHG/giphy.gif){.fragment fig-alt="A gif of Mr. Miyagi teaching the karate kid how to paint." width="50%" fig-align="center"}
+
 # Questions? {.center}
+
+![](https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExYzI4MGd5eG41cjc1dG0yMmg3bzAwMHh3aDh3ZDk3amgwc2g4YWgxMCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/6a4udhSXVdp20zVDIz/giphy.gif){fig-alt="A gif of a penguin asking questions" width="50%" fig-align="center"}
