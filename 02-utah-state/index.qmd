@@ -33,7 +33,11 @@ bb <- ReadBib("./CV.bib", check = T)
 
 1.  [Introduction](#introduction) <!-- Hi, I'm susan and I do an odd assortment of things -->
 2.  [Perception & Statistical Graphics](#graphics) <!-- Career Award project -->
-3.  [CSI: Statistics and the Fundamentals of Science](#csi-stats) <!-- Error Rates and Scientific Foundations in Forensics -->
+3.  [CSI: Statistics and Scientific Foundations](#csi-stats) <!-- Error Rates and Scientific Foundations in Forensics -->
+
+Slide Link: 
+{{< qrcode https://srvanderplas.github.io/2026-Presentations/02-utah-state/ width=300 height=300 >}}
+
 
 # Introduction 😶‍🌫️☁️🌎 {#introduction}
 
@@ -491,13 +495,17 @@ How long does it take for the population in `Year 1` to double?
 
 :::
 
-## [Challenges]{.emph .red} & [Benefits]{.emph .cerulean}
+------------------------------------------------------------------------
 
 ![](../images/Chart-Perception-Process.svg)
 
--   Testing method needs to be matched to level of engagement
+-   Testing method(s) matched to level of engagement
 
--   Need to examine graphical choices across levels of engagement
+-   Examine the effect of choices [across]{.emph .red} engagement
+
+-   System-level modeling of data: 
+    - Integrate different measurement methods
+    - Standard methods to process and analyze common qualitative data patterns
 
 # CSI: Statistics <br/> [& Scientific Foundations]{.emph .meddarkblue .fragment}{#csi-stats .center background-image="../images/dna.jpg" background-opacity="50%" background-size="cover"}
 
@@ -954,11 +962,13 @@ but... this problem shows up in database searches, too!
     -   [Protocols for confirmatory assessment]{.small}
 :::
 
+# Wrapping up
+
 ## [My]{.emph .cerulean} Conclusions
 
 ::: incremental
 
-- How we communicate statistics matters! 💬
+- How we communicate statistics (and data) matters! 💬
 
     - Graphics are a vital tool 📊
 
@@ -971,6 +981,6 @@ but... this problem shows up in database searches, too!
 
 ![](https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExM2NnbzBhaHV3OHN4ZTAyaWYzYXIxbzM1cG9hNW1zM25mZ3RzYmR6ZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/GIQkxve3gvNHG/giphy.gif){.fragment fig-alt="A gif of Mr. Miyagi teaching the karate kid how to paint." width="50%" fig-align="center"}
 
-# Questions? {.center}
+## Questions? {.center}
 
 ![](https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExYzI4MGd5eG41cjc1dG0yMmg3bzAwMHh3aDh3ZDk3amgwc2g4YWgxMCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/6a4udhSXVdp20zVDIz/giphy.gif){fig-alt="A gif of a penguin asking questions" width="50%" fig-align="center"}

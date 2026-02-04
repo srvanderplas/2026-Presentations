@@ -795,7 +795,7 @@
     "href": "02-utah-state/index.html#challenges-benefits-1",
     "title": "Human Computer Data Interaction",
     "section": "Challenges & Benefits",
-    "text": "Challenges & Benefits\n\n\nTesting method needs to be matched to level of engagement\nNeed to examine graphical choices across levels of engagement"
+    "text": "Challenges & Benefits\n\n\nTesting method: match to level of engagement\nExamine the effect of choices across engagement\nSystem-level modeling of data: integration of different measurement methods"
   },
   {
     "objectID": "02-utah-state/index.html#logscales",
@@ -1047,6 +1047,13 @@
     "href": "02-utah-state/index.html#my-conclusions",
     "title": "Human Computer Data Interaction",
     "section": "My Conclusions",
-    "text": "My Conclusions\n\nHow we communicate statistics matters! 💬\n\nGraphics are a vital tool 📊\n\nStatisticians have an ethical obligation to challenge faulty statistics\nFundamentals make a difference!\n\nsampling, measurement, experimental design, probability"
+    "text": "My Conclusions\n\nHow we communicate statistics (and data) matters! 💬\n\nGraphics are a vital tool 📊\n\nStatisticians have an ethical obligation to challenge faulty statistics\nFundamentals make a difference!\n\nsampling, measurement, experimental design, probability"
+  },
+  {
+    "objectID": "02-utah-state/index.html#questions",
+    "href": "02-utah-state/index.html#questions",
+    "title": "Human Computer Data Interaction",
+    "section": "Questions?",
+    "text": "Questions?"
   }
 ]
