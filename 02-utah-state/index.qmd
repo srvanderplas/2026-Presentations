@@ -8,6 +8,7 @@ format:
       in_header: ../libs/job/header.html
     lib_dir: libs
     embed-resources: false
+    lightbox: true
 ---
 
 ```{r}
@@ -32,8 +33,7 @@ bb <- ReadBib("./CV.bib", check = T)
 
 1.  [Introduction](#introduction) <!-- Hi, I'm susan and I do an odd assortment of things -->
 2.  [Perception & Statistical Graphics](#graphics) <!-- Career Award project -->
-3.  [Algorithms for Forensic Evidence](#csi-algs)
-4.  [CSI: Statistics and the Fundamentals of Science](#csi-stats) <!-- Error Rates and Scientific Foundations in Forensics -->
+3.  [CSI: Statistics and the Fundamentals of Science](#csi-stats) <!-- Error Rates and Scientific Foundations in Forensics -->
 
 # Introduction 😶‍🌫️☁️🌎 {#introduction}
 
@@ -49,19 +49,9 @@ bb <- ReadBib("./CV.bib", check = T)
 +---------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 :::
 
-## 💼 Career Timeline
+---
 
-::: nolines
-+:-------:+:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| 2015-18 | Stat. Analyst, NE Public Power ![](../images/nppd.svg){style="position:absolute;right:10px;margin-top:0;margin-bottom:0;margin-left:45px;margin-right:45px;max-width:150px;height:50px;" fig-alt="Nebraska Public Power District logo."}                                     |
-+---------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| 2018-19 | Research Asst. Professor, CSAFE ![](../images/csafe.png){style="position:absolute;right:10px;margin-left:55px;margin-right:60px;max-width:150px;height:60px;margin-left:50px;margin-right:50px" fig-alt="Center for Statistics and Applications in Forensic Evidence Logo."} |
-+---------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| 2020-24 | Asst. Professor, UNL ![](../images/UNL.svg){style="position:absolute;margin-top:20px;right:10px;margin-left:22px;margin-right:22px;height:100px;"}                                                                                                                           |
-+---------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| 2024-26 | Assoc. Professor, UNL                                                                                                                                                                                                                                                        |
-+---------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-:::
+![](../images/timeline.svg){fig-alt="A timeline of career moves, locations, and projects." width="95%" height="auto"}
 
 ## 📊 Recent Work
 
@@ -110,6 +100,8 @@ PrintBibliography(newpubs, .opts = list(sorting = "ydnt", no.print.fields = c("n
 
 -   Hidden Multiple Comparisons Increase Forensic Error Rates (PNAS)\
     [Vanderplas, Carriquiry, Hofmann. 2024]{.small}
+
+-   Amicus Briefs or Testimony filed in cases in Oregon, Washington, Michigan, Colorado, California, Maryland, Illinois, Washington D.C., New Jersey, Federal (Northern District of Florida)
 :::
 
 ## 🐣 Coming Soon!
@@ -120,28 +112,35 @@ Forensics:
 -   `courtR` package for legal transcript studies
 -   `highlightR` package for conserved text analysis
 -   Assessing Algorithm Use and Testimony for Firearms and Toolmark Analysis
--   What Comes Next: A Constructive Vision for Firearms and Toolmark Analysis
+-   What Comes Next: A Constructive Vision for Forensic Firearms Analysis
 
 Graphics:
 
 -   `ggdibbler` package and paper - uncertainty visualization
 -   Experiential Learning with Statistical Graphics: Writing, Reflection, and Suspense
 -   Assessing Computer Vision models for Gestalt Perception
+-   Parallel Coordinate Plots with Mixed-Type Variables
+-   Visual Statistical Inference
 
 :::
 
 ## 💵 Funded Grants
 
 ::: r-fit-text
--   2025, NSF CAREER, What Do You See? Perception, Decisions, and Statistical Graphics (\$550,000)
+-   2025-2030, NSF CAREER, What Do You See? Perception, Decisions, and Statistical Graphics     
+(\$550,000)
 
--   2020-2024, NIST, CSAFE Project lead: Footwear Class Characteristics and Human Factors (\$20 mil for CSAFE, \$456,930 sub-award)
+-   2020-2024, NIST, CSAFE Project lead: Footwear Class Characteristics and Human Factors     
+(\$20 mil for CSAFE, \$456,930 sub-award)
 
--   2019/2021, NIJ, Automatic Acquisition and Identification of Footwear Class Characteristics (\$380,650)
+-   2019/2021 - 2023, NIJ, Automatic Acquisition and Identification of Footwear Class Characteristics     
+(\$380,650)
 
--   2020, USDA-NRCS, Improving the Economic and Ecological Sustainability of US Crop Production through On-Farm Precision Experimentation (\$4 mil total, \$400,000 for 3 UNL PIs)
+-   2020-2023, USDA-NRCS, Improving the Economic and Ecological Sustainability of US Crop Production through On-Farm Precision Experimentation     
+(\$4 mil total, \$400,000 for 3 UNL PIs)
 
--   2019, NSF, Overcoming the Rural Data Deficit to Improve Quality of Life and Community Services in Smart & Connected Small Communities (\$1.5 mil total, \$123,445 sub-award)
+-   2019-2022, NSF, Overcoming the Rural Data Deficit to Improve Quality of Life and Community Services in Smart & Connected Small Communities     
+(\$1.5 mil total, \$123,445 sub-award)
 :::
 
 # Perception & Statistical Graphics {#graphics}
@@ -215,9 +214,35 @@ John Tukey, a famous statistician often considered the father of statistical gra
 
 [But, that isn't how we use graphics!]{.fragment .emph .blue}
 
-![](fig/Chart-Perception-Process.svg){.fragment fig-alt="A timeline showing different levels of graphical engagement, starting with initial perception, then using gestalt grouping, leveraging domain knowledge, fittting visual statistics and storytelling, visually conducted inference,  to grouping"}
+![](fig/Chart-Perception-Process.svg){.fragment fig-alt="A timeline showing different levels of graphical engagement, starting with initial perception, then using gestalt grouping, leveraging domain knowledge, fittting visual statistics and storytelling, visually conducted inference,  to grouping" width="100%"}
 
-## Multimodal Graphical Testing <br>[in Practice]{.emph .cerulean .center} {#logscales .center}
+## Multimodal Testing [in Practice]{.emph .cerulean .center} {#logscales .center}
+
+Joint work with [Emily Robinson]{.emph .darkred}
+
+::: columns
+::: {.column width="30%"}
+{{< qrcode https://doi.org/10.1080/10618600.2022.2140668 width=300 height=300 >}}
+
+2022: Eye Fitting Straight Lines in the Modern Era (JCGS)
+:::
+
+::: {.column width="5%"}
+:::
+::: {.column width="30%"}
+{{< qrcode https://jds-online.org/journal/JDS/article/1317 width=300 height=300 >}}
+
+2023: ‘You Draw It’: Implementation of Visually Fitted Trends with `r2d3` (JDS)
+:::
+::: {.column width="5%"}
+:::
+::: {.column width="30%"}
+{{< qrcode https://doi.org/10.1080/10618600.2025.2476097 width=300 height=300 >}}
+
+2025: Perception and Cognitive Implications of Logarithmic Scales for Exponentially Increasing Data (JCGS)
+:::
+:::
+
 
 ## Perception: Exp. Growth & Log Scales {.r-fit-text}
 
@@ -466,7 +491,7 @@ How long does it take for the population in `Year 1` to double?
 
 :::
 
-## Challenges & Benefits
+## [Challenges]{.emph .red} & [Benefits]{.emph .cerulean}
 
 ![](../images/Chart-Perception-Process.svg)
 
@@ -474,7 +499,7 @@ How long does it take for the population in `Year 1` to double?
 
 -   Need to examine graphical choices across levels of engagement
 
-# CSI: Statistics {#csi-stats .center background-image="../images/dna.jpg" background-opacity="50%" background-size="cover"}
+# CSI: Statistics <br/> [& Scientific Foundations]{.emph .meddarkblue .fragment}{#csi-stats .center background-image="../images/dna.jpg" background-opacity="50%" background-size="cover"}
 
 ------------------------------------------------------------------------
 
@@ -664,141 +689,11 @@ Without estimates of accuracy, an examiner's decision is [scientifically meaning
 
 [^3]: Algorithms not used in lab practice
 
-# Flipping The Script:<br/>[Algorithms to Mimic Perception]{.emph .green}
-
-![](../images/CSAFE%20Logo.svg){fig-alt="Logo for the Center for Statistics and Applications in Forensic Evidence (CSAFE)" width="50%" align="center"}
-
-## Goals
-
--   Develop algorithms for matching spent ammunition  [Features engineered based on examiners' visual focus 👁️🔬]{.fragment .emph .meddarkblue}
-
--   Compare these algorithms to examiner performance
-
--   Algorithms must be explainable
-
-    -   Visual diagnostics [Where did things "go wrong"?]{.emph .fragment .green}
-        -   Process for manual override on critical steps
-    -   Promote examiner (and jury) **conceptual** understanding [(through graphics)]{.emph .purple .fragment}
-
-::: r-stack
-::: {.fragment .fade-in-then-out .center}
-![](../images/Bullets_Aligned_comparison_horiz.png){width="60%" fig-align="center"}
-:::
-
-::: {.fragment .fade-in-then-out}
-![](../images/signature-aligned.png){width="80%"}
-:::
-
-::: {.fragment .fade-in-then-out}
-![](../images/hou-1.png){width="80%"}
-:::
-:::
-
-::: notes
-I'm also involved in developing algorithms for bullet and cartridge case analysis.
-
-This research is much closer to deployment in a lab setting. We have algorithms which take bullet scans and do some automatic feature recognition.
-
-When combined with some feature engineering to match features examiners say they look for, we can fit a random forest that takes two bullet scans and predicts whether or not they came from the same weapon.
-
-We've developed visualizations to summarize this process for test sets that are like those examiners use. These visualizations are paired with shiny apps that allow users to "drill down" and see how the algorithm arrived at the conclusion it did. Many times, this process allows us to diagnose situations where the model didn't behave as expected - so it's useful for debugging, and also for knowing when not to trust the algorithm's results.
-:::
-
-## `bulletxtrctr`
-
-[Joint work with]{.emph}[**Heike Hofmann**]{.darkorange} and [**Will Ju**]{.darkgreen} and [**Ganesh Krishnan**]{.darkblue}, extending work by 
-[**Heike Hofmann**]{.darkorange}, [**Alicia Carriquiry**]{.darkpurple}, and [**Eric Hare**]{.darkcerulean}
-
-:::::: columns
-::: {.column width="30%"}
-{{< qrcode https://www.pnas.org/doi/full/10.1073/pnas.2401326121 width=300 height=300 >}}
-
-PNAS Paper Link
-:::
-
-::: {.column .r-fit-text width="10%"}
-:::
-
-::: {.column .r-fit-text width="60%"}
-This work was partially funded by the Center for Statistics and Applications in Forensic Evidence (CSAFE) through Cooperative Agreements 70NANB15H176 and 70NANB20H019 between NIST and Iowa State University, [which includes activities carried out at Carnegie Mellon University, Duke University, University of California Irvine, University of Virginia, West Virginia University, University of Pennsylvania, Swarthmore College and University of Nebraska, Lincoln.]{.small}
-:::
-::::::
-
-
-## Matching Striated Evidence
-
-- Scanned with 3D Confocal Light Microscope
-- Data is a matrix of height values in $\mu$m
-
-::: {.r-stack}
-![](../images/bullet-scan.png){.fragment fig-alt="A 3d scan rendering of a bullet land engraved area."}
-
-![](../images/bullet-crosscut.png){.fragment fig-alt="Pick a crosscut across the bullet surface that isn't too damaged."}
-
-![](../images/bullet-land-profiles.png){.fragment fig-alt="Profiles of each land of two scanned bullets"}
-
-![](../images/bullet-grooves.png){.fragment fig-alt="Locate the grooves (lands are depressed from the groove)."}
-
-![](../images/bullet-signatures.png){.fragment fig-alt="Remove the surface super structure to get a flat signature."}
-
-![](../images/bullet-signatures-align.png){.fragment fig-alt="Align signatures using maximum cross-correlation function."}
-
-:::
-
-## Feature Extraction
-
-- Striation Alignment
-
-  - Identify "striations" - significant departures from the mean
-
-  - Count aligned/matching striations (per mm)    
-  [consecutive matching striae]{.emph .meddarkblue}
-
-  - Mismatches (per mm)
-
-
-## Feature Extraction
-
-- Mathematical measures of alignment
-  - (maximum) Cross-correlation between signatures
-
-  - 
-
-  - Euclidean distance between signatures
-
-  - Lag between signatures at max alignment (per mm)
-
-  - Length of aligned signatures (mm)
-
-
-## Feature Extraction
-
-- Measures of total signal
-  
-  - Combined striae height    
-[measure of how much signal exists]{.emph .meddarkblue .fragment}
-
-  - Variation in height measurement of aligned signature
-
-
-## Machine Learning
-
-- Feed pairwise features into a random forest to predict source -- same or different?
-
-```{r}
-library(bulletxtrctr)
-
-
-```
-
-# Wire Cuts<br/> [& Scientific Foundations]{.emph .orange .slightly-small .fragment} {background-image="../images/bomb-fragments.png" background-opacity="50%" background-size="cover"}
-<!-- https://www.bbc.com/news/uk-63280523 -->
-
 ## Hidden Multiple Comparisons Increase Forensic Error Rates
 
 Proceedings of the National Academy of Sciences, 2024
 
-[Joint work with]{.emph}[**Heike Hofmann**]{.darkorange} and [**Alicia Carriquiry**]{.darkpurple}
+[Joint work with]{.emph} [**Heike Hofmann**]{.darkorange} and [**Alicia Carriquiry**]{.darkpurple}
 
 :::::: columns
 ::: {.column width="30%"}
@@ -810,8 +705,8 @@ PNAS Paper Link
 ::: {.column .r-fit-text width="10%"}
 :::
 
-::: {.column .r-fit-text width="60%"}
-This work was partially funded by the Center for Statistics and Applications in Forensic Evidence (CSAFE) through Cooperative Agreements 70NANB15H176 and 70NANB20H019 between NIST and Iowa State University, [which includes activities carried out at Carnegie Mellon University, Duke University, University of California Irvine, University of Virginia, West Virginia University, University of Pennsylvania, Swarthmore College and University of Nebraska, Lincoln.]{.small}
+::: {.column .smaller width="60%"}
+This work was partially funded by the Center for Statistics and Applications in Forensic Evidence (CSAFE) through Cooperative Agreements 70NANB15H176 and 70NANB20H019 between NIST and Iowa State University, which includes activities carried out at Carnegie Mellon University, Duke University, University of California Irvine, University of Virginia, West Virginia University, University of Pennsylvania, Swarthmore College and University of Nebraska, Lincoln.
 :::
 ::::::
 
@@ -1056,3 +951,5 @@ but... this problem shows up in database searches, too!
     -   [Number of results returned as 'similar' (top 20? top 5?)]{.small}
     -   [Protocols for confirmatory assessment]{.small}
 :::
+
+# Questions? {.center}

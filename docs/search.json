@@ -319,7 +319,7 @@
     "href": "02-utah-state/index.html#career-timeline",
     "title": "Human Computer Data Interaction",
     "section": "💼 Career Timeline",
-    "text": "💼 Career Timeline\n\n\n\n\n\n\n\n\n2015-18\nStat. Analyst, NE Public Power \n\n\n2018-19\nResearch Asst. Professor, CSAFE \n\n\n2020-24\nAsst. Professor, UNL \n\n\n2024-26\nAssoc. Professor, UNL"
+    "text": "💼 Career Timeline"
   },
   {
     "objectID": "02-utah-state/index.html#recent-work",
@@ -333,42 +333,42 @@
     "href": "02-utah-state/index.html#recent-work-1",
     "title": "Human Computer Data Interaction",
     "section": "🔬 Recent Work",
-    "text": "🔬 Recent Work\n\n\nMethodological problems in every black-box study of forensic firearm comparisons (Law, Probability, and Risk)\nCuellar, Vanderplas, Luby, Rosenblum. 2024\nIncorrect statistical reasoning in Guyll et al. leads to biased claims about strength of forensic evidence (PNAS)\nRosenblum, Chin, Ogburn, Nishimura, Westreich, Datta, Vanderplas, Cuellar, Thompson. 2024\nHidden Multiple Comparisons Increase Forensic Error Rates (PNAS)\nVanderplas, Carriquiry, Hofmann. 2024"
+    "text": "🔬 Recent Work\n\n\nMethodological problems in every black-box study of forensic firearm comparisons (Law, Probability, and Risk)\nCuellar, Vanderplas, Luby, Rosenblum. 2024\nIncorrect statistical reasoning in Guyll et al. leads to biased claims about strength of forensic evidence (PNAS)\nRosenblum, Chin, Ogburn, Nishimura, Westreich, Datta, Vanderplas, Cuellar, Thompson. 2024\nHidden Multiple Comparisons Increase Forensic Error Rates (PNAS)\nVanderplas, Carriquiry, Hofmann. 2024\nAmicus Briefs or Testimony filed in cases in Oregon, Washington, Michigan, Colorado, California, Maryland, Illinois, Washington D.C., New Jersey, Federal (Northern District of Florida)"
   },
   {
     "objectID": "02-utah-state/index.html#coming-soon",
     "href": "02-utah-state/index.html#coming-soon",
     "title": "Human Computer Data Interaction",
     "section": "🐣 Coming Soon!",
-    "text": "🐣 Coming Soon!\n\nForensics:\n\ncourtR package for legal transcript studies\nhighlightR package for conserved text analysis\nAssessing Algorithm Use and Testimony for Firearms and Toolmark Analysis\nWhat Comes Next: A Constructive Vision for Firearms and Toolmarks Analysis\n\nGraphics:\n\nggdibbler package and paper - uncertainty visualization\nExperiential Learning with Statistical Graphics: Writing, Reflection, and Suspense\nAssessing Computer Vision models for Gestalt Perception"
+    "text": "🐣 Coming Soon!\n\nForensics:\n\ncourtR package for legal transcript studies\nhighlightR package for conserved text analysis\nAssessing Algorithm Use and Testimony for Firearms and Toolmark Analysis\nWhat Comes Next: A Constructive Vision for Forensic Firearms Analysis\n\nGraphics:\n\nggdibbler package and paper - uncertainty visualization\nExperiential Learning with Statistical Graphics: Writing, Reflection, and Suspense\nAssessing Computer Vision models for Gestalt Perception\nParallel Coordinate Plots with Mixed-Type Variables\nVisual Statistical Inference"
   },
   {
     "objectID": "02-utah-state/index.html#funded-grants",
     "href": "02-utah-state/index.html#funded-grants",
     "title": "Human Computer Data Interaction",
     "section": "💵 Funded Grants",
-    "text": "💵 Funded Grants\n\n\n2025, NSF CAREER, What Do You See? Perception, Decisions, and Statistical Graphics ($550,000)\n2020-2024, NIST, CSAFE Project lead: Footwear Class Characteristics and Human Factors ($20 mil for CSAFE, $456,930 sub-award)\n2019/2021, NIJ, Automatic Acquisition and Identification of Footwear Class Characteristics ($380,650)\n2020, USDA-NRCS, Improving the Economic and Ecological Sustainability of US Crop Production through On-Farm Precision Experimentation ($4 mil total, $400,000 for 3 UNL PIs)\n2019, NSF, Overcoming the Rural Data Deficit to Improve Quality of Life and Community Services in Smart & Connected Small Communities ($1.5 mil total, $123,445 sub-award)"
+    "text": "💵 Funded Grants\n\n\n2025-2030, NSF CAREER, What Do You See? Perception, Decisions, and Statistical Graphics\n($550,000)\n2020-2024, NIST, CSAFE Project lead: Footwear Class Characteristics and Human Factors\n($20 mil for CSAFE, $456,930 sub-award)\n2019/2021 - 2023, NIJ, Automatic Acquisition and Identification of Footwear Class Characteristics\n($380,650)\n2020-2023, USDA-NRCS, Improving the Economic and Ecological Sustainability of US Crop Production through On-Farm Precision Experimentation\n($4 mil total, $400,000 for 3 UNL PIs)\n2019-2022, NSF, Overcoming the Rural Data Deficit to Improve Quality of Life and Community Services in Smart & Connected Small Communities\n($1.5 mil total, $123,445 sub-award)"
   },
   {
     "objectID": "02-utah-state/index.html#hidden-multiple-comparisons-increase-forensic-error-rates",
     "href": "02-utah-state/index.html#hidden-multiple-comparisons-increase-forensic-error-rates",
     "title": "Human Computer Data Interaction",
     "section": "Hidden Multiple Comparisons Increase Forensic Error Rates",
-    "text": "Hidden Multiple Comparisons Increase Forensic Error Rates\nProceedings of the National Academy of Sciences, 2024\nJoint work withHeike Hofmann and Alicia Carriquiry\n\n\n\n\n    \nPNAS Paper Link\n\n\n\nThis work was partially funded by the Center for Statistics and Applications in Forensic Evidence (CSAFE) through Cooperative Agreements 70NANB15H176 and 70NANB20H019 between NIST and Iowa State University, which includes activities carried out at Carnegie Mellon University, Duke University, University of California Irvine, University of Virginia, West Virginia University, University of Pennsylvania, Swarthmore College and University of Nebraska, Lincoln."
+    "text": "Hidden Multiple Comparisons Increase Forensic Error Rates\nProceedings of the National Academy of Sciences, 2024\nJoint work with Heike Hofmann and Alicia Carriquiry\n\n\n\n\n    \nPNAS Paper Link\n\n\n\nThis work was partially funded by the Center for Statistics and Applications in Forensic Evidence (CSAFE) through Cooperative Agreements 70NANB15H176 and 70NANB20H019 between NIST and Iowa State University, which includes activities carried out at Carnegie Mellon University, Duke University, University of California Irvine, University of Virginia, West Virginia University, University of Pennsylvania, Swarthmore College and University of Nebraska, Lincoln."
   },
   {
     "objectID": "02-utah-state/index.html#toolmark-examination-primer",
     "href": "02-utah-state/index.html#toolmark-examination-primer",
     "title": "Human Computer Data Interaction",
     "section": "Toolmark Examination Primer",
-    "text": "Toolmark Examination Primer\n\nOur Crime Scene"
+    "text": "Toolmark Examination Primer\n\n\n\nOur Crime Scene"
   },
   {
     "objectID": "02-utah-state/index.html#toolmark-examination-primer-1",
     "href": "02-utah-state/index.html#toolmark-examination-primer-1",
     "title": "Human Computer Data Interaction",
     "section": "Toolmark Examination Primer",
-    "text": "Toolmark Examination Primer\n\nIdentifying Marks"
+    "text": "Toolmark Examination Primer\n\n\n\nIdentifying Marks"
   },
   {
     "objectID": "02-utah-state/index.html#toolmark-examination-primer-2",
@@ -396,7 +396,7 @@
     "href": "02-utah-state/index.html#personal-motivation",
     "title": "Human Computer Data Interaction",
     "section": "Personal Motivation",
-    "text": "Personal Motivation\n\nMy house has \\(\\approx\\) 982 cm of (easily accessible) blade surface which might be used to cut wires. My dad has \\(\\approx\\) 2243 cm of blade surface in his shop. No one in either location is a craftsperson."
+    "text": "Personal Motivation\n\n\n\nMy house has \\(\\approx\\) 982 cm of (easily accessible) blade surface which might be used to cut wires. My dad has \\(\\approx\\) 2243 cm of blade surface in his shop. No one in either location is a craftsperson."
   },
   {
     "objectID": "02-utah-state/index.html#constructive-scientific-proof-from-first-principles",
@@ -445,7 +445,7 @@
     "href": "02-utah-state/index.html#algorithmic-comparison",
     "title": "Human Computer Data Interaction",
     "section": "Algorithmic Comparison",
-    "text": "Algorithmic Comparison\nScans -&gt; Cross Section -&gt; “Signature”\n(remove gross topology)\n\nCross-correlation is used to align signature from blade cut surface to signature from wire cut surface. Image credit: Heike Hofmann"
+    "text": "Algorithmic Comparison\nScans -&gt; Cross Section -&gt; “Signature”\n(remove gross topology)\n\n\n\nCross-correlation is used to align signature from blade cut surface to signature from wire cut surface. Image credit: Heike Hofmann"
   },
   {
     "objectID": "02-utah-state/index.html#number-of-comparisons",
@@ -627,7 +627,7 @@
     "href": "02-utah-state/index.html#q1-perception-of-differences-1",
     "title": "Human Computer Data Interaction",
     "section": "Q1: Perception of Differences",
-    "text": "Q1: Perception of Differences\n\n\n\n\n\n\nLog Scale\n\n\n\n\n\n\n\nLinear Scale\n\n\n\n\n\n\nOur first level of engagement is basic perception - can we actually distinguish different growth rates/levels of curvature on a linear and log scale. This is the most basic thing – if we can’t do this, then we probably won’t be able to predict things well or read information off the graph well (though, that last point is arguable).\n\nFactorial Experiment:\n\nLog/linear scale (2 levels)\nLineup composition: (6 levels)\n\nTarget plot - high, medium, low curvature\nNull plots - high, medium, low curvature\nExclude combinations where target/null are the same\n\nLow/High variability (2 levels)\n\nIncluded 6 Rorschach plots (3 curvature levels x log or linear scale)\n\n12 lineups + 1 Rorshcach plots = 13 evaluations per person\nHere are a couple of example lineups from this experiment - the first is on a linear scale, the 2nd is on a log scale. While I generally tried throughout these experiments to make it clear that we were on a log scale, it is a very subtle difference in these lineups, and fixing that wasn’t necessarily relevant to the question at hand – since all sub-panels have the same axis breaks, we’re actually testing whether we can distinguish the data, not the scales."
+    "text": "Q1: Perception of Differences\n\n\n\n\n\n\nLog Scale\n\n\n\n\n\n\n\nLinear Scale\n\n\n\n\n\n\nHere are a couple of example lineups from this experiment - the first is on a linear scale, the 2nd is on a log scale. While I generally tried throughout these experiments to make it clear that we were on a log scale, it is a very subtle difference in these lineups, and fixing that wasn’t necessarily relevant to the question at hand – since all sub-panels have the same axis breaks, we’re actually testing whether we can distinguish the data, not the scales."
   },
   {
     "objectID": "02-utah-state/index.html#q1-perception-of-differences-2",
@@ -669,7 +669,7 @@
     "href": "02-utah-state/index.html#q2-forecasting-you-draw-it-1",
     "title": "Human Computer Data Interaction",
     "section": "Q2: Forecasting (You-Draw-It)",
-    "text": "Q2: Forecasting (You-Draw-It)\n\n\nHere, I’m showing you the actual drawn lines for each of the exponential conditions, and you can see that there are a few interesting features:\n\nNot everyone drew very smooth lines – we probably need to do some data cleaning based on the number of sharp “jumps” in the data – possibly excluding those cases or smoothing over them.\nThe amount of deviation in the final prediction value is (surprisingly) not much larger when there is less data – this was really shocking for me\nLinear scale predictions seem to be lower than log scale predictions, in particular when beta is higher – it’s not that noticeable when beta is low. So the under-prediction bias is stronger for linear scales than it is for log scales. That doesn’t necessarily mean that everyone underpredicts, but you do see way more orange lines on top in the lower right panel."
+    "text": "Q2: Forecasting (You-Draw-It)\n\n\nThis shows the residuals from an exponential regression on the data participants were shown. We made it even clearer by modeling the residuals using a generalized additive model, which has a flexible form and doesn’t require too many assumptions about model structure.\nIt’s clear that log scales and linear scales have very different outcomes – we slightly overpredict with log scales, and underpredict with linear scales."
   },
   {
     "objectID": "02-utah-state/index.html#q2-forecasting-you-draw-it-2",
@@ -704,7 +704,7 @@
     "href": "02-utah-state/index.html#q3-numerical-estimation-2",
     "title": "Human Computer Data Interaction",
     "section": "Q3: Numerical Estimation",
-    "text": "Q3: Numerical Estimation\n\nUse Ewoks and Tribbles - creatures that might multiply exponentially\nOne set on the linear scale, one set on log scale\nUnderlying trend is the same (within transformed x axis)\nDifferent variability around the line\n\n\nEwoks and Tribbles (with apologies to Allison Horst)"
+    "text": "Q3: Numerical Estimation\n\nUse Ewoks and Tribbles - creatures that might multiply exponentially\nOne set on the linear scale, one set on log scale\nUnderlying trend is the same (within transformed x axis)\nDifferent variability around the line\n\n\n\n\n\n\n\n\nEwoks and Tribbles (with apologies to Allison Horst)"
   },
   {
     "objectID": "02-utah-state/index.html#q3-numerical-estimation-3",
@@ -718,35 +718,35 @@
     "href": "02-utah-state/index.html#q3-numerical-estimation-4",
     "title": "Human Computer Data Interaction",
     "section": "Q3: Numerical Estimation",
-    "text": "Q3: Numerical Estimation\nEstimating Population given a year\nProcess Sketch\n\n\n\n\n\n\nLinear scale\n\n\n\n\n\n\n\nLog scale"
+    "text": "Q3: Numerical Estimation\nEstimating Population given a year\n\n\n\nDeviation from Closest Point\n\n\n\n\nMore variability in estimation on linear scale (which makes sense due to the fact that it’s compressed into a small area of the plot)\nParticipants anchor estimates to specific points, not to an overall fitted trend"
   },
   {
     "objectID": "02-utah-state/index.html#q3-numerical-estimation-5",
     "href": "02-utah-state/index.html#q3-numerical-estimation-5",
     "title": "Human Computer Data Interaction",
     "section": "Q3: Numerical Estimation",
-    "text": "Q3: Numerical Estimation\nEstimating Population given a year\n\nDeviation from Closest Point\n\nMore variability in estimation on linear scale (which makes sense due to the fact that it’s compressed into a small area of the plot)\nParticipants anchor estimates to specific points, not to an overall fitted trend"
+    "text": "Q3: Numerical Estimation\nFrom Year1 to Year2, the population increases by ____ individuals\n\n\n\nin dataset 1, both points were close to the underlying value, and the estimates bear that out.\nin dataset 2, one point was a bit of an outlier, and so we can see different estimation strategies appear: some participants answered using an overall trend/visual regression, while others answered using actual points."
   },
   {
     "objectID": "02-utah-state/index.html#q3-numerical-estimation-6",
     "href": "02-utah-state/index.html#q3-numerical-estimation-6",
     "title": "Human Computer Data Interaction",
     "section": "Q3: Numerical Estimation",
-    "text": "Q3: Numerical Estimation\nFrom Year1 to Year2, the population increases by ____ individuals\nProcess Sketch\n\n\n\n\n\n\nLinear scale\n\n\n\n\n\n\n\nLog scale"
+    "text": "Q3: Numerical Estimation\nHow many times more creatures are there in Year2 than Year1?\n\n\n\nthe results show a fundamental lack of understanding on the part of many participants"
   },
   {
     "objectID": "02-utah-state/index.html#q3-numerical-estimation-7",
     "href": "02-utah-state/index.html#q3-numerical-estimation-7",
     "title": "Human Computer Data Interaction",
     "section": "Q3: Numerical Estimation",
-    "text": "Q3: Numerical Estimation\nFrom Year1 to Year2, the population increases by ____ individuals\n\n\n\nin dataset 1, both points were close to the underlying value, and the estimates bear that out.\nin dataset 2, one point was a bit of an outlier, and so we can see different estimation strategies appear: some participants answered using an overall trend/visual regression, while others answered using actual points."
+    "text": "Q3: Numerical Estimation\nHow many times more creatures are there in Year2 than Year1?\n\n\n\nAs the questions get more mathematically complex, we also see that participants start using model-based strategies for estimation - they don’t have the mental bandwidth to hold all of the estimates for specific points, arithmatic, etc. in their heads, so they take shortcuts like working off of a mental trendline.\nHere, for the first time, the true deviation (deviation from the underling model) is a better match to participant estimates than the closest point deviation."
   },
   {
     "objectID": "02-utah-state/index.html#q3-numerical-estimation-8",
     "href": "02-utah-state/index.html#q3-numerical-estimation-8",
     "title": "Human Computer Data Interaction",
     "section": "Q3: Numerical Estimation",
-    "text": "Q3: Numerical Estimation\nHow many times more creatures are there in Year2 than Year1?\nProcess Sketch\n\n\n\n\n\n\nLinear scale\n\n\n\n\n\n\n\nLog scale"
+    "text": "Q3: Numerical Estimation\nHow long does it take for the population in Year 1 to double?\n\n\n\nstrong anchoring effect at multiples of 5\nSome conflict between true and closest point value in dataset 1 (mediated by rounding tendencies); dataset 2 was clear enough that participants could estimate 6\na lot more variability on the linear scale than the log scale in both cases"
   },
   {
     "objectID": "02-utah-state/index.html#q3-numerical-estimation-9",
@@ -801,15 +801,15 @@
     "objectID": "02-utah-state/index.html#logscales",
     "href": "02-utah-state/index.html#logscales",
     "title": "Human Computer Data Interaction",
-    "section": "Multimodal Graphical Testing in Practice",
-    "text": "Multimodal Graphical Testing in Practice"
+    "section": "Multimodal Testing in Practice",
+    "text": "Multimodal Testing in Practice\nJoint work with Emily Robinson\n\n\n\n\n    \n2022: Eye Fitting Straight Lines in the Modern Era (JCGS)\n\n\n\n\n\n    \n2023: ‘You Draw It’: Implementation of Visually Fitted Trends with r2d3 (JDS)\n\n\n\n\n\n    \n2025: Perception and Cognitive Implications of Logarithmic Scales for Exponentially Increasing Data (JCGS)"
   },
   {
     "objectID": "02-utah-state/index.html#goals",
     "href": "02-utah-state/index.html#goals",
     "title": "Human Computer Data Interaction",
     "section": "Goals",
-    "text": "Goals\n\nDevelop algorithms for matching spent ammunition  Features engineered based on examiners’ visual focus 👁️🔬\nCompare these algorithms to examiner performance\nInformally, the bullet algorithms are much better 🔥🎯\nAlgorithms must be explainable\n\nVisual diagnostics Where did things “go wrong”?\n\nProcess for manual override on critical steps\n\nPromote examiner (and jury) conceptual understanding (through graphics)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nI’m also involved in developing algorithms for bullet and cartridge case analysis.\nThis research is much closer to deployment in a lab setting. We have algorithms which take bullet scans and do some automatic feature recognition.\nWhen combined with some feature engineering to match features examiners say they look for, we can fit a random forest that takes two bullet scans and predicts whether or not they came from the same weapon.\nWe’ve developed visualizations to summarize this process for test sets that are like those examiners use. These visualizations are paired with shiny apps that allow users to “drill down” and see how the algorithm arrived at the conclusion it did. Many times, this process allows us to diagnose situations where the model didn’t behave as expected - so it’s useful for debugging, and also for knowing when not to trust the algorithm’s results."
+    "text": "Goals\n\nDevelop algorithms for matching spent ammunition  Features engineered based on examiners’ visual focus 👁️🔬\nCompare these algorithms to examiner performance\nAlgorithms must be explainable\n\nVisual diagnostics Where did things “go wrong”?\n\nProcess for manual override on critical steps\n\nPromote examiner (and jury) conceptual understanding (through graphics)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nI’m also involved in developing algorithms for bullet and cartridge case analysis.\nThis research is much closer to deployment in a lab setting. We have algorithms which take bullet scans and do some automatic feature recognition.\nWhen combined with some feature engineering to match features examiners say they look for, we can fit a random forest that takes two bullet scans and predicts whether or not they came from the same weapon.\nWe’ve developed visualizations to summarize this process for test sets that are like those examiners use. These visualizations are paired with shiny apps that allow users to “drill down” and see how the algorithm arrived at the conclusion it did. Many times, this process allows us to diagnose situations where the model didn’t behave as expected - so it’s useful for debugging, and also for knowing when not to trust the algorithm’s results."
   },
   {
     "objectID": "02-utah-state/index.html#evaluation-of-feature-comparison-methods",
@@ -957,5 +957,82 @@
     "title": "Human Computer Data Interaction",
     "section": "PCAST Report",
     "text": "PCAST Report\n\n\n\n\nRequirements for Scientific Validity\n\nEmpirical testing by\n\nmultiple lab groups\nunder casework like conditions,\ndemonstrating that the method is repeatable and reproducible and\nproviding estimates of the method’s accuracy\n\nsubjective disciplines\n\nevaluated as a “black box” in the examiner’s head.\nStudies: many examiners render decisions about many independent tests.\n\n\nWithout estimates of accuracy, an examiner’s decision is scientifically meaningless: it has no probative value, and considerable potential for prejudicial impact."
+  },
+  {
+    "objectID": "02-utah-state/index.html#nas-report-2009",
+    "href": "02-utah-state/index.html#nas-report-2009",
+    "title": "Human Computer Data Interaction",
+    "section": "NAS Report (2009)",
+    "text": "NAS Report (2009)\n(National Academy of Science)\n\n\n\n\n\nSenate commissioned in 2005\nFocus areas:\n\nfundamentals of scientific method in forensics\nerror rates for collection and analysis of forensic data\nuse of forensic evidence in litigation\n\nImportant questions:\n\nAre disciplines scientifically reliable?\nHow subjective/biased are methods?\n\n\n\n\nThe NAS report focused on the use of science in forensics, how we know (or don’t know) what error rates are for forensic methods, and how forensic evidence is used in court.\nPrimary concerns included whether disciplines are based on reliable scientific foundations, and whether practitioner bias could affect the results of the forensic comparisons."
+  },
+  {
+    "objectID": "02-utah-state/index.html#nas-report-2009-1",
+    "href": "02-utah-state/index.html#nas-report-2009-1",
+    "title": "Human Computer Data Interaction",
+    "section": "NAS Report (2009)",
+    "text": "NAS Report (2009)\n\n\n\n\nRecommendations\nCreate a National Institute of Forensic Science to manage\n\naccreditation,\nfederal/state/local jurisdiction differences,\nstandard reporting language.\n\nFund research on forensic methods:\n\nreliability, accuracy, validity\nautomation & objective methods\nuncertainty quantification\n\n\n\nThe NAS report suggested creating a national institute of forensic science. This institute is supposed to be separate from the department of justice, because the DOJ is pretty biased towards law enforcement, and during the DNA wars, they actually had people testifying that DNA was unreliable followed, audited by the IRS, and so on.\nThe NAS report also recommended that the NIFS fund research on method validity - again, something that shouldn’t come from the DOJ because they generally only fund things that seem likely to be positive about the validity of methods. The NAS report also highlighted the importance of error rates, considering quality of evidence, and understanding the uncertainty of the conclusions of forensic analyses. Finally, the NAS report suggested the importance of research into automated techniques capable of enhancing forensic assessments.\nWe’ll come back to these recommendations in a bit. The NAS report came out in 2009, and the forensic scandals continued, but the recommended national institute of forensic science never came to be."
+  },
+  {
+    "objectID": "02-utah-state/index.html#pcast-report-2016",
+    "href": "02-utah-state/index.html#pcast-report-2016",
+    "title": "Human Computer Data Interaction",
+    "section": "PCAST Report (2016)",
+    "text": "PCAST Report (2016)\nPresident’s Council of Advisors on Science and Technology\n\n\n\n\n\nJudges’ decisions about the admissibility of scientific evidence rest solely on legal standards; they are exclusively the province of the courts and PCAST does not opine on them. But, these decisions require making determinations about scientific validity. It is the proper province of the scientific community to provide guidance concerning scientific standards for scientific validity.\n\n\n\n\nThe Executive Summary is an excellent read."
+  },
+  {
+    "objectID": "02-utah-state/index.html#pcast-report-2016-1",
+    "href": "02-utah-state/index.html#pcast-report-2016-1",
+    "title": "Human Computer Data Interaction",
+    "section": "PCAST Report (2016)",
+    "text": "PCAST Report (2016)\n\n\n\n\nRequirements for Scientific Validity\n\nEmpirical testing by\n\nmultiple lab groups\nunder casework like conditions,\ndemonstrating that the method is repeatable and reproducible and\nproviding estimates of the method’s accuracy\n\nsubjective disciplines\n\nevaluated as a “black box” in the examiner’s head.\nStudies: many examiners render decisions about many independent tests.\n\n\nWithout estimates of accuracy, an examiner’s decision is scientifically meaningless: it has no probative value, and considerable potential for prejudicial impact."
+  },
+  {
+    "objectID": "02-utah-state/index.html#bulletxtrctr",
+    "href": "02-utah-state/index.html#bulletxtrctr",
+    "title": "Human Computer Data Interaction",
+    "section": "bulletxtrctr",
+    "text": "bulletxtrctr\nJoint work withHeike Hofmann and Will Ju and Ganesh Krishnan, extending work by Heike Hofmann, Alicia Carriquiry, and Eric Hare\n\n\n\n\n    \nPNAS Paper Link\n\n\n\nThis work was partially funded by the Center for Statistics and Applications in Forensic Evidence (CSAFE) through Cooperative Agreements 70NANB15H176 and 70NANB20H019 between NIST and Iowa State University, which includes activities carried out at Carnegie Mellon University, Duke University, University of California Irvine, University of Virginia, West Virginia University, University of Pennsylvania, Swarthmore College and University of Nebraska, Lincoln."
+  },
+  {
+    "objectID": "02-utah-state/index.html#matching-striated-evidence",
+    "href": "02-utah-state/index.html#matching-striated-evidence",
+    "title": "Human Computer Data Interaction",
+    "section": "Matching Striated Evidence",
+    "text": "Matching Striated Evidence\n\nScanned with 3D Confocal Light Microscope\nData is a matrix of height values in \\(\\mu\\)m"
+  },
+  {
+    "objectID": "02-utah-state/index.html#feature-extraction",
+    "href": "02-utah-state/index.html#feature-extraction",
+    "title": "Human Computer Data Interaction",
+    "section": "Feature Extraction",
+    "text": "Feature Extraction\n\nStriation Alignment\n\nIdentify “striations” - significant departures from the mean\nCount aligned/matching striations (per mm)\nconsecutive matching striae\nMismatches (per mm)"
+  },
+  {
+    "objectID": "02-utah-state/index.html#feature-extraction-1",
+    "href": "02-utah-state/index.html#feature-extraction-1",
+    "title": "Human Computer Data Interaction",
+    "section": "Feature Extraction",
+    "text": "Feature Extraction\n\nMathematical measures of alignment\n\n(maximum) Cross-correlation between signatures\n\nEuclidean distance between signatures\nLag between signatures at max alignment (per mm)\nLength of aligned signatures (mm)"
+  },
+  {
+    "objectID": "02-utah-state/index.html#feature-extraction-2",
+    "href": "02-utah-state/index.html#feature-extraction-2",
+    "title": "Human Computer Data Interaction",
+    "section": "Feature Extraction",
+    "text": "Feature Extraction\n\nMeasures of total signal\n\nCombined striae height\nmeasure of how much signal exists\nVariation in height measurement of aligned signature"
+  },
+  {
+    "objectID": "02-utah-state/index.html#machine-learning",
+    "href": "02-utah-state/index.html#machine-learning",
+    "title": "Human Computer Data Interaction",
+    "section": "Machine Learning",
+    "text": "Machine Learning\n\nFeed pairwise features into a random forest to predict source – same or different?"
+  },
+  {
+    "objectID": "02-utah-state/index.html#wire-cuts-1",
+    "href": "02-utah-state/index.html#wire-cuts-1",
+    "title": "Human Computer Data Interaction",
+    "section": "Wire Cuts",
+    "text": "Wire Cuts\n\n\n\n\n\n\nCAT5 crimper with wire cutter\n\n\n\n\n\n\n\nCut wires\n\n\n\n\n\n\n\n\n\nDigital scan of blade cut and wire cut"
   }
 ]
