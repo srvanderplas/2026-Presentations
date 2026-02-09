@@ -33,7 +33,11 @@ bb <- ReadBib("./CV.bib", check = T)
 
 1.  [Introduction](#introduction) <!-- Hi, I'm susan and I do an odd assortment of things -->
 2.  [Perception & Statistical Graphics](#graphics) <!-- Career Award project -->
-3.  [CSI: Statistics and the Fundamentals of Science](#csi-stats) <!-- Error Rates and Scientific Foundations in Forensics -->
+3.  [CSI: Statistics and Scientific Foundations](#csi-stats) <!-- Error Rates and Scientific Foundations in Forensics -->
+
+Slide Link: 
+{{< qrcode https://srvanderplas.github.io/2026-Presentations/02-utah-state/ width=300 height=300 >}}
+
 
 # Introduction 😶‍🌫️☁️🌎 {#introduction}
 
@@ -222,7 +226,7 @@ Joint work with [Emily Robinson]{.emph .darkred}
 
 ::: columns
 ::: {.column width="30%"}
-{{< qrcode https://doi.org/10.1080/10618600.2022.2140668 width=300 height=300 >}}
+{{< qrcode https://doi.org/10.1080/10618600.2022.2140668 width=200 height=200 >}}
 
 2022: Eye Fitting Straight Lines in the Modern Era (JCGS)
 :::
@@ -230,21 +234,21 @@ Joint work with [Emily Robinson]{.emph .darkred}
 ::: {.column width="5%"}
 :::
 ::: {.column width="30%"}
-{{< qrcode https://jds-online.org/journal/JDS/article/1317 width=300 height=300 >}}
+{{< qrcode https://jds-online.org/journal/JDS/article/1317 width=200 height=200 >}}
 
 2023: ‘You Draw It’: Implementation of Visually Fitted Trends with `r2d3` (JDS)
 :::
 ::: {.column width="5%"}
 :::
 ::: {.column width="30%"}
-{{< qrcode https://doi.org/10.1080/10618600.2025.2476097 width=300 height=300 >}}
+{{< qrcode https://doi.org/10.1080/10618600.2025.2476097 width=200 height=200 >}}
 
 2025: Perception and Cognitive Implications of Logarithmic Scales for Exponentially Increasing Data (JCGS)
 :::
 :::
 
 
-## Perception: Exp. Growth & Log Scales {.r-fit-text}
+## Exp. Growth & Log Scales {.r-fit-text}
 
 ::: {.large .cerulean .emph .fragment}
 3 different ways of engaging with the data
@@ -323,7 +327,6 @@ odds_ratio_plot
 
 [Conclusion:]{.emph .cerulean} It's easier to spot a curve among lines than it is to spot a line among curves
 
-@robinsonGuideDesigningExperiments2025
 
 ::: notes
 We used a generalized linear mixed effects model to assess the probability of a correct target identification given factors like target and null plot type, participant skill level, and random effects due to the data generating process. The plot shown here is the resulting log odds ratio for log vs. linear scales, and we see that it is easier to detect curvature among a field of null lines than it is to detect linearity among a field of curved lines. In addition, we see that when there is a lot of contrast between the null and the target plot, that is, when the nulls are very curved and the target is very straight, there isn't much difference between the two graphs. However, if there is less contrast, the log scale allows us to perceive the differences better than the linear scale.
@@ -338,7 +341,7 @@ We used a generalized linear mixed effects model to assess the probability of a 
 
 ## Q2: Forecasting (You-Draw-It) Goals
 
-1.  Replicate Eye Fitting Straight Lines using the you-draw-it tool (4 charts) @robinsonEyeFittingStraight2022
+1.  Replicate Eye Fitting Straight Lines using the you-draw-it tool (4 charts) 
 
 2.  Explore exponential growth predictions on log and linear scale (8 charts)
 
@@ -491,13 +494,17 @@ How long does it take for the population in `Year 1` to double?
 
 :::
 
-## [Challenges]{.emph .red} & [Benefits]{.emph .cerulean}
+------------------------------------------------------------------------
 
 ![](../images/Chart-Perception-Process.svg)
 
--   Testing method needs to be matched to level of engagement
+-   Testing method(s) matched to level of engagement
 
--   Need to examine graphical choices across levels of engagement
+-   Examine the effect of choices [across]{.emph .red} engagement
+
+-   System-level modeling of data: 
+    - Integrate different measurement methods
+    - Standard methods to process and analyze common qualitative data patterns
 
 # CSI: Statistics <br/> [& Scientific Foundations]{.emph .meddarkblue .fragment}{#csi-stats .center background-image="../images/dna.jpg" background-opacity="50%" background-size="cover"}
 
@@ -560,42 +567,10 @@ The NAS report focused on the use of science in forensics, how we know (or don't
 Primary concerns included whether disciplines are based on reliable scientific foundations, and whether practitioner bias could affect the results of the forensic comparisons.
 :::
 
-
-## NAS Report (2009) {.r-fit-text}
-::: columns
-::: {.column width="30%"}
-![](../images/NAS-screenshot.png){fig-alt="Cover of the 2009 NAS report. PDF at https://www.ojp.gov/pdffiles1/nij/grants/228091.pdf"}
-:::
-
-::: {.column width="70%"}
-### [Recommendations]{.emph .red}
-
-**Create a National Institute of Forensic Science** to manage 
-
-- accreditation, 
-- federal/state/local jurisdiction differences, 
-- standard reporting language.
-
-**Fund research** on forensic methods: 
-
-- reliability, accuracy, validity
-- automation & objective methods
-- uncertainty quantification
-:::
-:::
-
-
-::: notes
-
-The NAS report suggested creating a national institute of forensic science. This institute is supposed to be separate from the department of justice, because the DOJ is pretty biased towards law enforcement, and during the DNA wars, they actually had people testifying that DNA was unreliable followed, audited by the IRS, and so on.
-
-The NAS report also recommended that the NIFS fund research on method validity - again, something that shouldn't come from the DOJ because they generally only fund things that seem likely to be positive about the validity of methods. The NAS report also highlighted the importance of error rates, considering quality of evidence, and understanding the uncertainty of the conclusions of forensic analyses. Finally, the NAS report suggested the importance of research into automated techniques capable of enhancing forensic assessments.
-
-We'll come back to these recommendations in a bit. The NAS report came out in 2009, and the forensic scandals continued, but the recommended national institute of forensic science never came to be.
-:::
-
 ## PCAST Report (2016) {.r-fit-text}
-[President's Council of Advisors on Science and Technology]{.emph .red style="position:absolute;top:60px"}
+[President's Council of Advisors on Science and Technology]{.emph .red style="position:absolute;top:70px"}
+
+<br/>
 
 ::: columns
 ::: {.column width="30%"}
@@ -624,19 +599,19 @@ The [Executive Summary](https://obamawhitehouse.archives.gov/sites/default/files
 -   Empirical testing by
     -   multiple lab groups
     -   under casework like conditions,
-    -   demonstrating that the method is **repeatable** and **reproducible** and
-    -   providing estimates of the method's accuracy
+    -   demonstrating the method is **repeatable** and **reproducible** and
+    -   estimating the method's accuracy
 
 -   **subjective** disciplines
-    -   evaluated as a "black box" in the examiner's head.
-    -   Studies: many examiners render decisions about many independent tests.
+    -   examiner is a "black box"
+    -   Studies designed with $n$ examiners and $k$ independent tests.
 
 Without estimates of accuracy, an examiner's decision is [scientifically meaningless]{.emph .cerulean}: it has no probative value, and considerable potential for prejudicial impact.
 
 :::
 :::
 
-## Current Status of Forensic Disciplines
+## Status of Forensic Disciplines
 
 ::::: columns
 ::: {.column .small width="80%" margin="auto"}
@@ -646,9 +621,9 @@ Without estimates of accuracy, an examiner's decision is [scientifically meaning
 | 🧬       | DNA         | 🧪        | ✅       | 📚       |
 +----------+-------------+-----------+----------+----------+
 | 🧬       | DNA (mix)   | 🧪+🔎     | ❓\      | 📖📖\    |
-|          |             |           | ✅[^1]c  | 📖       |
+|          |             |           | ✅[^1]   | 📖       |
 +----------+-------------+-----------+----------+----------+
-| 🫆       | Fingerprint | 🔎 💻     | ✅[^2]   | 📚       |
+| 🐾       | Fingerprint | 🔎 💻     | ✅[^2]   | 📚       |
 +----------+-------------+-----------+----------+----------+
 | 🔫       | Firearms    | 🔎 💻[^3] | ❓       | 📖       |
 +----------+-------------+-----------+----------+----------+
@@ -689,11 +664,12 @@ Without estimates of accuracy, an examiner's decision is [scientifically meaning
 
 [^3]: Algorithms not used in lab practice
 
+
 ## Hidden Multiple Comparisons Increase Forensic Error Rates
 
 Proceedings of the National Academy of Sciences, 2024
 
-[Joint work with]{.emph} [**Heike Hofmann**]{.darkorange} and [**Alicia Carriquiry**]{.darkpurple}
+[Joint work with]{.emph} [**Heike Hofmann**]{.emph .darkorange} and [**Alicia Carriquiry**]{.emph .darkpurple}
 
 :::::: columns
 ::: {.column width="30%"}
@@ -752,7 +728,7 @@ This work was partially funded by the Center for Statistics and Applications in 
 
 ## Personal Motivation
 
-![My house has $\approx$ 982 cm of (easily accessible) blade surface which might be used to cut wires. My dad has $\approx$ 2243 cm of blade surface in his shop. No one in either location is a craftsperson.](../images/Shop-annotated.png){fig-alt="An annotated picture of a messy garage, showing all of the tools which could conceivably make striated toolmarks, including visegrips, pliers, bolt cutters, pry bars, electrical tools, razor blades, hammers, tin snips, saws, and more." width="100%"}
+![My house has $\approx$ 982 cm of (easily accessible) blade surface which might be used to cut wires. My dad has $\approx$ 2243 cm of blade surface in his shop. No one in either location is a craftsperson.](../images/Shop-annotated.png){fig-alt="An annotated picture of a messy garage, showing all of the tools which could conceivably make striated toolmarks, including visegrips, pliers, bolt cutters, pry bars, electrical tools, razor blades, hammers, tin snips, saws, and more." width="90%"}
 
 ## Constructive Scientific Proof<br>[from first principles]{.emph .meddarkblue .smaller}
 
@@ -932,6 +908,8 @@ but... this problem shows up in database searches, too!
 
 [This is a setup that could generate false-positives by design!]{.cerulean .emph .fragment}
 
+[Oregon courts recently ruled that firearms and toolmark evidence are not admissible because the methods are not scientifically valid. (Oct 2025, 340 Or.App. 661, State v. Adams)]{.fragment .emph .red}
+
 ## Conclusions
 
 ::: incremental
@@ -952,4 +930,25 @@ but... this problem shows up in database searches, too!
     -   [Protocols for confirmatory assessment]{.small}
 :::
 
-# Questions? {.center}
+# Wrapping up
+
+## [My]{.emph .cerulean} Conclusions
+
+::: incremental
+
+- How we communicate statistics (and data) matters! 💬
+
+    - Graphics are a vital tool 📊
+
+- Statisticians have an [ethical obligation]{.emph .cerulean} to challenge faulty statistics
+
+- Fundamentals make a difference!
+    - sampling, measurement, experimental design, probability
+
+:::
+
+![](https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExM2NnbzBhaHV3OHN4ZTAyaWYzYXIxbzM1cG9hNW1zM25mZ3RzYmR6ZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/GIQkxve3gvNHG/giphy.gif){.fragment fig-alt="A gif of Mr. Miyagi teaching the karate kid how to paint." width="50%" fig-align="center"}
+
+## Questions? {.center}
+
+![](https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExYzI4MGd5eG41cjc1dG0yMmg3bzAwMHh3aDh3ZDk3amgwc2g4YWgxMCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/6a4udhSXVdp20zVDIz/giphy.gif){fig-alt="A gif of a penguin asking questions" width="50%" fig-align="center"}
