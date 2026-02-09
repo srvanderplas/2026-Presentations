@@ -1,0 +1,16 @@
+title: Statistical Forensics
+subtitle: Images, Computer Vision, and Scientific Fundamentals
+author: "Susan Vanderplas"
+date: 2026-02-026
+date-format: long
+from: markdown+emoji
+location: TBD
+abstract: |
+
+
+talk-type: ['seminar']
+# One or more of seminar, web, invited, contributed, other
+
+image: <iframe class="slide-deck" src="./" width="100%" height="200px"></iframe>
+
+keywords: ['statistics', 'forensics', 'graphics', 'data science']
