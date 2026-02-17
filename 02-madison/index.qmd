@@ -1,6 +1,7 @@
 ---
 format: 
   revealjs:
+    css: ../libs/job/style.css
     navigation-mode: vertical
     theme: ../libs/job/inverse.scss
     includes:
@@ -130,7 +131,7 @@ Graphics:
 -   Experiential Learning with Statistical Graphics: Writing, Reflection, and Suspense
 -   Assessing Computer Vision models for Gestalt Perception
 -   Parallel Coordinate Plots with Mixed-Type Variables
--   Visual Statistical Inference
+-   Visual Statistical Inference: Design, Experiment, and Analysis 
 
 :::
 
@@ -153,378 +154,22 @@ Graphics:
 (\$1.5 mil total, \$123,445 sub-award)
 :::
 
-# Perception & Statistical Graphics {#graphics}
-
-------------------------------------------------------------------------
-
-```{r}
-#| label: HR-diagram
-#| fig-width: 8
-#| fig-height: 5
-#| out-width: "100%"
-#| message: false
-#| warning: false
-#| echo: false
-#| fig-cap: "[The Hertzsprung Russell diagram. Discovered independently by Ejnar Hertzsprung (1873–1967) and Henry Norris Russell (1877–1957). The diagram plots the color index of the star against the brightness (absolute magnitude) of the star. As a result, it is possible to discern that these two variables are related and change together over a star's life cycle: a hypothesis that only came to be because of this chart.]{.small}"
-#| fig-alt: "A scatter plot showing the color index of a star on the x-axis and the absolute magnitude (brightness) of the star on the y-axis. Points are colored by spectral class, which varies from blue to white to yellow to red as the color index increases and the star's temperature decreases. Points are primarily located along a downward-sloping line from the top left to the bottom right, which is labeled the 'main sequence'. There is another set of points which diverges from the main sequence and extends out horizontally in the middle of the graph; these are labeled 'giants', and a few outliers that are above the giant cluster are labeled 'supergiants'. Below the main sequence stars, there are outliers which are labeled 'dwarfs'."
-#| fig-dpi: 300
-if (!file.exists("../data/stars.csv")) download.file("https://raw.githubusercontent.com/astronexus/HYG-Database/main/hyg/v3/hyg_v38.csv.gz", destfile = "../data/stars.csv.gz")
-library(magrittr)
-library(dplyr)
-library(stringr)
-library(ggplot2)
-stars <- readr::read_csv("../data/stars.csv")
-
-stars <- stars %>%
-  mutate(Spectral.Class = str_extract(spect, "^.") %>%
-           str_to_upper() %>%
-           factor(levels = c("O", "B", "A", "F", "G", "K", "M"), ordered = T),
-         EarlyLate = str_extract(spect, ".(\\d)") %>%
-           str_replace_all("[^\\d]", "") %>% as.numeric(),
-         Temp = 4600*(1/(.92*ci + 1.7) + 1/(.92*ci) + 0.62)) %>%
-  filter(!is.na(Spectral.Class) & !is.na(EarlyLate) & !is.na(hip)) %>%
-  arrange(Spectral.Class, EarlyLate) %>%
-  mutate(SpectralClass2 = paste0(Spectral.Class, EarlyLate) %>% factor(., levels = unique(.)))
-
-ggplot(data = filter(stars, dist < 500)) + 
-  # annotate(x = -.25, xend = .75, y = -2, yend = -6.5, arrow = arrow(ends = "both", length = unit(.1, "cm")), geom = "segment", color = "grey") + 
-  annotate(x = 0.125, xend = 2, y = 4.25, yend = 4.25, arrow = arrow(ends = "both", length = unit(.1, "cm")), geom = "segment", color = "grey") + 
-  geom_point(aes(x = ci, y = -absmag, color = Spectral.Class), alpha = .3) + 
-  scale_x_continuous("B-V Color Index", breaks = c(0, .5, 1, 1.5, 2), labels = c("Hot  0.0       ", "0.5", "1.0", "1.5", "           2.0  Cool")) + 
-  scale_y_continuous("Absolute Magnitude (Brightness)", breaks = c(-8, -4, 0, 4), labels = c(8, 4, 0, -4)) + 
-  scale_color_manual("Spectral\nClass", values = c("#2E478C", "#426DB9", "#B5D7E3", "white", "#FAF685", "#E79027", "#DA281F")) + 
-  annotate(x = .25, y = -5.5, label = "Dwarfs", geom = "text", angle = -25, color = "white") + 
-  annotate(x = .5, y = -3.75, label = "Main Sequence", geom = "text", angle = -28) + 
-  annotate(x = 1.125, y = 0, label = "Giants", geom = "text") + 
-  annotate(x = 1, y = 4.5, label = "Supergiants", geom = "text", color = "white") +
-  theme(panel.background = element_rect(fill = "#000000"),
-        legend.key = element_blank(), 
-        panel.grid = element_line(colour = "grey40"),
-        axis.text = element_text(color = "white"),
-        text = element_text(size = 18, color = "white"), 
-        legend.background = element_rect(fill = "#000000"),
-        plot.background = element_rect(fill = "#000000")) + 
-  ggtitle("Hertzsprung-Russell Diagram") + 
-  coord_cartesian(xlim = c(-.25, 2.25), ylim = c(-12, 7)) + 
-  guides(color = guide_legend(override.aes = list(alpha = 1)))
-```
-
-[Data from the [HYG Database](https://github.com/astronexus/HYG-Database). Shows stars within 500 AU.]{.small}
-
-::: notes
-John Tukey, a famous statistician often considered the father of statistical graphics, wrote in Exploratory Data Analysis (1977):
-
-> The greatest value of a picture is when it forces us to notice what we never expected to see.
-:::
-
-## Cognitive Psychology for Charts
-
--   Graphics research has historically focused on\
-    [accuracy]{.emph .red} and [response time]{.emph .red}
-
-[But, that isn't how we use graphics!]{.fragment .emph .blue}
-
-![](fig/Chart-Perception-Process.svg){.fragment fig-alt="A timeline showing different levels of graphical engagement, starting with initial perception, then using gestalt grouping, leveraging domain knowledge, fittting visual statistics and storytelling, visually conducted inference,  to grouping" width="100%"}
-
-## Multimodal Testing [in Practice]{.emph .cerulean .center} {#logscales .center}
-
-Joint work with [Emily Robinson]{.emph .darkred}
-
-::: columns
-::: {.column width="30%"}
-{{< qrcode https://doi.org/10.1080/10618600.2022.2140668 width=300 height=300 >}}
-
-2022: Eye Fitting Straight Lines in the Modern Era (JCGS)
-:::
-
-::: {.column width="5%"}
-:::
-::: {.column width="30%"}
-{{< qrcode https://jds-online.org/journal/JDS/article/1317 width=300 height=300 >}}
-
-2023: ‘You Draw It’: Implementation of Visually Fitted Trends with `r2d3` (JDS)
-:::
-::: {.column width="5%"}
-:::
-::: {.column width="30%"}
-{{< qrcode https://doi.org/10.1080/10618600.2025.2476097 width=300 height=300 >}}
-
-2025: Perception and Cognitive Implications of Logarithmic Scales for Exponentially Increasing Data (JCGS)
-:::
-:::
-
-
-## Perception: Exp. Growth & Log Scales {.r-fit-text}
-
-::: {.large .cerulean .emph .fragment}
-3 different ways of engaging with the data
-:::
-
-Can we
-
--   Q1: **perceive** differences in [    ... Perceptual]{.fragment .emph .red}
--   Q2: **forecast** trends from [    ... Tactile]{.fragment .emph .green}
--   Q3: **estimate** and **use** [    ... Numerical]{.fragment .emph .blue}
-
-graphs of exponential growth with log and linear scales?
-
-[300 participants completed all 3 experiments]{.fragment .emph .cerulean}
-
-::: notes
-I'm a huge fan of lineups, but one of the issues I had with the COVID graphs I was seeing was that I wasn't convinced people were *interpreting* the data correctly.
-
-I started thinking about why lineups wouldn't test things at the level I was hoping for, and eventually came up with this hierarchy - first, you have to be able to recognize that there is a difference between two things. Then, you have to be able to predict and forecast to map "data from the past" onto the future. Finally, you have to actually be able to read data off of the graph and act on it - doing numerical calculations and the like.
-
-These are distinct psychological tasks, and they require different ways of interacting with a chart. So I'm going to describe 3 experiments that we've conducted relating to log scales.
-
-These experiments were inspired by COVID, but we worked hard to not go anywhere near COVID data because while we were designing these experiments, it was a bit emotionally loaded. Even now that pandemic measures have ended, it's still too politically sensitive to touch, so we'll continue using non-covid data on follow-up studies.
-:::
-
-## Q1: Perception of Differences {.center}
-
-## Q1: Perception of Differences
-
-::: {layout-ncol="2"}
-![Log Scale](fig/log-lineup-example.png)
-
-![Linear Scale](fig/linear-lineup-example.png)
-:::
-
-::: notes
-
-Here are a couple of example lineups from this experiment - the first is on a linear scale, the 2nd is on a log scale. While I generally tried throughout these experiments to make it clear that we were on a log scale, it is a very subtle difference in these lineups, and fixing that wasn't necessarily relevant to the question at hand -- since all sub-panels have the same axis breaks, we're actually testing whether we can distinguish the data, not the scales.
-
-:::
-
-<!-- XXX Go create a chart showing experiment layout factors XXX -->
-
-## Q1: Perception of Differences {.r-fit-text}
-
-```{r odds-ratio-plot, eval = F, fig.width = 5, fig.height = 2, fig.align='center', message = F, warning = F}
-library(tidyverse)
-slice_curvature <- read_csv("results/jsm-student-paper-slicediffs.csv") %>%
-  select(SimpleEffectLevel, test_param,	"_test_param", OddsRatio,	Alpha,	Lower,	Upper,	AdjLower,	AdjUpper,	LowerOR,	UpperOR,	AdjLowerOR,	AdjUpperOR) %>%
-  na.omit() %>%
-  extract(SimpleEffectLevel, into = c("Target", "Null"), "curvature t-([MEH])_n-([EMH])", remove = F) %>%
-  mutate(Target = factor(Target, levels = c("E", "M", "H"), labels = c("High", "Medium", "Low")),
-         Null = factor(Null, levels = c("E", "M", "H"), labels = c("High", "Medium", "Low")))
-
-dodge <- position_dodge(width=0.9)
-odds_ratio_plot <- slice_curvature %>%
-  ggplot(aes(x = OddsRatio, y = Null, color = Target, shape = Target)) + 
-  geom_point(position = dodge, size = 3) + 
-  geom_errorbar(aes(xmin = LowerOR, xmax = UpperOR), position = dodge, width = .1) +
-  geom_vline(xintercept = 1) +
-  theme_bw()  +
-  theme(axis.title = element_text(size = 8),
-        axis.text = element_text(size = 8),
-        legend.title = element_text(size = 8),
-        legend.text  = element_text(size = 8),
-        legend.key.size = unit(0.7, "line")
-        ) +
-  scale_y_discrete("Null Plot Curvature") +
-  scale_x_continuous("Odds ratio (on log scale) \n (Log vs Linear)", trans = "log10") + 
-  scale_color_manual("Target Plot Curvature", values = c("#004400", "#116611", "#55aa55")) + 
-  scale_shape_discrete("Target Plot Curvature")
-odds_ratio_plot
-```
-
-![](../images/odds-ratio-plot-full.png)
-
-[Conclusion:]{.emph .cerulean} It's easier to spot a curve among lines than it is to spot a line among curves
-
-@robinsonGuideDesigningExperiments2025
-
-::: notes
-We used a generalized linear mixed effects model to assess the probability of a correct target identification given factors like target and null plot type, participant skill level, and random effects due to the data generating process. The plot shown here is the resulting log odds ratio for log vs. linear scales, and we see that it is easier to detect curvature among a field of null lines than it is to detect linearity among a field of curved lines. In addition, we see that when there is a lot of contrast between the null and the target plot, that is, when the nulls are very curved and the target is very straight, there isn't much difference between the two graphs. However, if there is less contrast, the log scale allows us to perceive the differences better than the linear scale.
-
--   Log scales make us more sensitive to slight changes in curvature:
-    -   Low Curvature Null vs. Medium Curvature Target on log scale is curve vs. line\
-        (it's hard to see the straight-line target vs. the curved nulls)
-    -   With Medium or High curvature Null plots, it's easier to spot the target on the log scale than on the linear scale
-:::
-
-## Q2: Forecasting Exponential Trends {.center}
-
-## Q2: Forecasting (You-Draw-It) Goals
-
-1.  Replicate Eye Fitting Straight Lines using the you-draw-it tool (4 charts) @robinsonEyeFittingStraight2022
-
-2.  Explore exponential growth predictions on log and linear scale (8 charts)
-
-    -   Points end 50% or 75% of the way across x-axis
-    -   Rate of growth of $\beta$ = 0.1, 0.23
-    -   Log or Linear scale
-
-[12 total graphs to complete]{.emph .cerulean .large}
-
-::: notes
-First, we wanted to validate the "Eye fitting straight lines" method using You Draw it, by using datasets from the 1981 study, on the original linear scale. This would serve as a validation of the method and also help us test out our analysis method on data that was a bit more straightforward.
-
-Then, the (main) goal is to see how terrible we are at predicting exponential growth when using a log scale and a linear scale.
-
-We set things up with varying amounts of data -- so you have data to base your regression line up to either halfway or 3/4 of the way through the graph, and you have to then extend beyond the data by 25% or 50%.
-
-We used two different rates of growth, and then either had a graph with a log or linear scale.
-
-If you're keeping track, then there are 4 straight lines, and 8 sets of exponential data (generated on the fly from basic parameters). We saved both the data shown on the plot and the drawn smooth lines.
-:::
-
-## Q2: Forecasting (You-Draw-It)
-
-::: {layout-ncol="2"}
-![Data from Mosteller et al. (1981)](../images/linear1-orig.gif)
-
-![Exp data, linear scale, 50% complete](../images/exponential-orig.gif)
-:::
-
-## Q2: Forecasting (You-Draw-It)
-
-![](../images/exp-resid-gamm.png){fig-alt="GAMM models of drawn curve residuals." width="100%"}
-
-::: notes
-
-This shows the residuals from an exponential regression on the data participants were shown. We made it even clearer by modeling the residuals using a generalized additive model, which has a flexible form and doesn't require too many assumptions about model structure.
-
-It's clear that log scales and linear scales have very different outcomes -- we slightly overpredict with log scales, and underpredict with linear scales.
-
-:::
-
-## Q3: Numerical Estimation {.center}
-
-## Q3: Numerical Estimation
-
--   Next level of engagement is estimating quantities from a graph
-
--   This is a much harder experiment to set up
-
-    -   Phrasing matters a lot!
-    -   Data matters a lot!
-
-[How to make it generalizable?]{.center .large .emph .cerulean}
-
-::: notes
-One of my favorite parts of graphical inference is that it totally sidesteps this question of phrasing by encoding all of what would have been verbal questions into the graph itself.
-
-This really is a huge improvement over past graphical methods -- there were studies showing that pie charts sucked from the early 1900s, but they were hampered by the generalizability of the questions - if you asked for someone to estimate the percentage of a pie slice, you got different conclusions than if you asked someone to make a judgment between two pieces of the pie.
-:::
-
-## Q3: Numerical Estimation
-
--   Use Ewoks and Tribbles - creatures that might multiply exponentially
--   One set on the linear scale, one set on log scale
--   Underlying trend is the same (within transformed x axis)
--   Different variability around the line
-
-![Ewoks and Tribbles (with apologies to Allison Horst)](../images/ewok-tribble.jpg){width="50%" fig-align="center"}
-
-## Q3: Numerical Estimation
-
-Free response: Between $t_1$ and $t_2$, how does the population of $X$ change?
-
-::: {layout="[-5, 40, -10, 40, -5]"}
-![Linear Scale](../images/03-01-linear.png)
-
-![Log Scale](../images/03-01-log.png)
-:::
-
-## Q3: Numerical Estimation
-
-Estimating Population given a year
-
-![Deviation from Closest Point](../images/03-01-boxplots.png){width="100%"}
-
-::: notes
--   More variability in estimation on linear scale (which makes sense due to the fact that it's compressed into a small area of the plot)
-
--   Participants anchor estimates to specific points, not to an overall fitted trend
-:::
-
-## Q3: Numerical Estimation
-
-From `Year1` to `Year2`, the population increases by \_\_\_\_ individuals
-
-![](../images/03-04-density.png)
-
-::: notes
--   in dataset 1, both points were close to the underlying value, and the estimates bear that out.
-
--   in dataset 2, one point was a bit of an outlier, and so we can see different estimation strategies appear: some participants answered using an overall trend/visual regression, while others answered using actual points.\
-:::
-
-## Q3: Numerical Estimation
-
-How many times more creatures are there in `Year2` than `Year1`?
-
-![](../images/03-05-answers.png)
-
-::: notes
--   the results show a fundamental lack of understanding on the part of many participants
-:::
-
-## Q3: Numerical Estimation
-
-How many times more creatures are there in `Year2` than `Year1`?
-
-![](../images/03-05-boxplots-true.png)
-
-::: notes
--   As the questions get more mathematically complex, we also see that participants start using model-based strategies for estimation - they don't have the mental bandwidth to hold all of the estimates for specific points, arithmatic, etc. in their heads, so they take shortcuts like working off of a mental trendline.
-
--   Here, for the first time, the true deviation (deviation from the underling model) is a better match to participant estimates than the closest point deviation.
-:::
-
-
-## Q3: Numerical Estimation
-
-How long does it take for the population in `Year 1` to double?
-
-![](../images/03-06-density.png)
-
-::: notes
--   strong anchoring effect at multiples of 5
-
--   Some conflict between true and closest point value in dataset 1 (mediated by rounding tendencies); dataset 2 was clear enough that participants could estimate 6
-
--   a lot more variability on the linear scale than the log scale in both cases
-:::
-
-## [Challenges]{.emph .red} & [Benefits]{.emph .cerulean}
-
-::: incremental
-1.  [Conflicting results]{.red} can be hard to reconcile
-
-2.  Conducting multiple studies is [multiple times the work]{.red}\
-    [(multiple times the payoff?)]{.cerulean .emph}
-
-3.  [Greater insight]{.cerulean} into the tradeoffs of design decisions
-
-:::
-
-## [Challenges]{.emph .red} & [Benefits]{.emph .cerulean}
-
-![](../images/Chart-Perception-Process.svg)
-
--   Testing method needs to be matched to level of engagement
-
--   Need to examine graphical choices across levels of engagement
-
-# CSI: Statistics <br/> [& Scientific Foundations]{.emph .meddarkblue .fragment}{#csi-stats .center background-image="../images/dna.jpg" background-opacity="50%" background-size="cover"}
+# Statistical Forensics{#forensics-history .center background-image="../images/dna.jpg" background-opacity="50%" background-size="cover"}
 
 ------------------------------------------------------------------------
 
 ::: r-stack
+
+![](../images/ear-prints2-headline.png){.fragment fig-alt="Screenshot of an article from The Guardian in 2004 titled 'Earprint landed innocent man in jail for murder'. Article url: https://www.theguardian.com/uk/2004/jan/23/ukcrime1"}
+
+![](../images/breathalyzer-headline.png){.fragment fig-alt="Screenshot of an Ars Technica article titled “Buggy breathalyzer code reflects importance of source review,” describing court‑ordered audits that found serious software flaws in breathalyzer machines. Article url: https://arstechnica.com/tech-policy/2009/05/buggy-breathalyzer-code-reflects-importance-of-source-review/"}
+
 ![](../images/ballistic-headline-adj.png){.fragment fig-alt="Screenshot of an Innocence Project article titled “Three Freed, and FBI Continues to Review Ballistic Cases,” discussing unreliable bullet‑matching forensic methods and related overturned convictions. Article url: https://innocenceproject.org/news/three-freed-and-fbi-continues-to-review-ballistic-cases/"}
 
 ![](../images/crimelab-headline.png){.fragment fig-alt="Screenshot of an ABA Journal article titled “Crime labs under the microscope after a string of shoddy, suspect and fraudulent results,” including a photo illustration labeled “Crimes in the Lab” on evidence bags. Article url: https://www.abajournal.com/magazine/article/crime_labs_under_the_microscope_after_a_string_of_shoddy_suspect_and_fraudu"}
 
 ![](../images/bitemark-headline.png){.fragment fig-alt="Screenshot of a Washington Post opinion piece titled “Incredibly, prosecutors are still defending bite mark evidence,” displaying a dental X‑ray image beneath the headline. Article url: https://www.washingtonpost.com/news/the-watch/wp/2017/01/30/incredibly-prosecutors-are-still-defending-bite-mark-evidence/"}
 
-![](../images/breathalyzer-headline.png){.fragment fig-alt="Screenshot of an Ars Technica article titled “Buggy breathalyzer code reflects importance of source review,” describing court‑ordered audits that found serious software flaws in breathalyzer machines. Article url: https://arstechnica.com/tech-policy/2009/05/buggy-breathalyzer-code-reflects-importance-of-source-review/"}
-
-![](../images/ear-prints-headline.png){.fragment fig-alt="Screenshot of an article titled “Earprints as evidence?” with a grayscale image grid showing multiple photographed ears marked with numbered annotations used for forensic comparison. Article url: https://phys.org/news/2006-02-earprints-evidence.html"}
-
-![](../images/ear-prints2-headline.png){.fragment fig-alt="Screenshot of an article from The Guardian in 2004 titled 'Earprint landed innocent man in jail for murder'. Article url: https://www.theguardian.com/uk/2004/jan/23/ukcrime1"}
 :::
 
 ::: notes
@@ -535,8 +180,6 @@ DNA is the gold standard for forensic evidence - a specific combination of genes
 As organizations like the Innocence Project used DNA to revisit old cases, it became clear that there were *major* problems with the evidence used in criminal cases -- eyewitness testimony, false confessions, and shoddy forensics.
 
 There were a number of very embarrassing cases where forensic evidence was shown to be faulty. As these cases happened, scientists started asking how this all went so wrong? Wasn't forensics ultimately based in science? Weren't there studies out there showing that forensic techniques had low error rates?
-
-I'm going to briefly highlight a couple of contributions aimed at fixing these issues. All of this is very fundamental, not cutting-edge statistics, and that's by design -- courts don't want cutting-edge stuff, they want "general scientific acceptance" -- which means that this is ideal for those of you who are undergraduates, or from other departments -- while there are more sophisticated statistical techniques in here, we're not going to talk about them in detail - we're going to focus on the basics.
 
 :::
 
@@ -591,6 +234,7 @@ Primary concerns included whether disciplines are based on reliable scientific f
 - reliability, accuracy, validity
 - automation & objective methods
 - uncertainty quantification
+
 :::
 :::
 
@@ -699,6 +343,35 @@ Without estimates of accuracy, an examiner's decision is [scientifically meaning
 
 [^3]: Algorithms not used in lab practice
 
+
+# Firearms & Toolmarks<br/>[Feature Engineering &]{.emph .darkred}<br/>[Human Perception]{.emph .darkred} {#bullets background-image="../images/bulletxtrctr-cmcr-hex.png" background-position="right" background-size="30%"}
+
+## {.r-fit-text}
+
+[Joint work with [**Heike Hofmann**]{.darkorange} and [**Joe Zemmels**, **Kiegan Rice**, **Ganesh Krishnan**, **Will Ju**, **Nate Garton**, **Eric Hare**]{.darkgreen}]{.emph} 
+
+:::::: {.columns .v-center-container}
+::: {.column .vcenter width="30%"}
+{{< qrcode https://heike.github.io/bulletxtrctr/ width=300 height=300 >}}
+
+`bulletxtrctr` package
+:::
+
+::: {.column .vcenter .r-fit-text width="10%"}
+:::
+
+::: {.column .vcenter .tiny width="60%"}
+This work was partially funded by the Center for Statistics and Applications in Forensic Evidence (CSAFE) through Cooperative Agreements 70NANB15H176 and 70NANB20H019 between NIST and Iowa State University, which includes activities carried out at Carnegie Mellon University, Duke University, University of California Irvine, University of Virginia, West Virginia University, University of Pennsylvania, Swarthmore College and University of Nebraska, Lincoln.
+:::
+::::::
+
+
+## 
+
+# Shoes and Shape Identification<br/>[Computer $\neq$ Human Vision]{.fragment .emph .blue} {#shoes}
+
+# Wire Cuts and Multiple Comparisons {#wire-cuts}
+
 ## Hidden Multiple Comparisons Increase Forensic Error Rates
 
 Proceedings of the National Academy of Sciences, 2024
@@ -706,34 +379,28 @@ Proceedings of the National Academy of Sciences, 2024
 [Joint work with]{.emph} [**Heike Hofmann**]{.darkorange} and [**Alicia Carriquiry**]{.darkpurple}
 
 :::::: columns
-::: {.column width="30%"}
+::: {.column .vcenter width="30%"}
 {{< qrcode https://www.pnas.org/doi/full/10.1073/pnas.2401326121 width=300 height=300 >}}
 
 PNAS Paper Link
 :::
 
-::: {.column .r-fit-text width="10%"}
+::: {.column .vcenter width="10%"}
 :::
 
-::: {.column .smaller width="60%"}
+::: {.column .vcenter .tiny width="60%"}
 This work was partially funded by the Center for Statistics and Applications in Forensic Evidence (CSAFE) through Cooperative Agreements 70NANB15H176 and 70NANB20H019 between NIST and Iowa State University, which includes activities carried out at Carnegie Mellon University, Duke University, University of California Irvine, University of Virginia, West Virginia University, University of Pennsylvania, Swarthmore College and University of Nebraska, Lincoln.
 :::
 ::::::
 
 ## Toolmark Examination Primer
 
-![Our Crime Scene](../images/bread-butter.png){fig-alt="A picture of a loaf of bread and a fresh stick of butter that has just been cut with a butter knife." width="50%"}
+::: {layout="[[70,30],[100]]" layout-valign="bottom"}
+![CAT5 crimper with wire cutter](../images/wire_cutter.png)
 
-## Toolmark Examination Primer
+![Cut wires](../images/razor_wire_cut_sizes_ann.png)
 
-![Identifying Marks](../images/bread-butter-zoom.png){fig-alt="A picture of a loaf of bread and a fresh stick of butter that has just been cut with a butter knife. The cut butter has a circle around it, with the enlarged image in the circle shown on the right."}
-
-## Toolmark Examination Primer
-
-::: r-stack
-![](../images/test-cuts-nolabel.png){fig-alt="A picture of a steak knife (top) and a butter knife (bottom), with several test cuts from each knife arranged in two rows in the middle. The test cuts are labeled, and the 'evidence' is superimposed on top."}
-
-![](../images/test-cuts-full.png){.fragment fig-alt="A picture of a steak knife (top) and a butter knife (bottom), with several test cuts from each knife arranged in two rows in the middle. The test cuts are labeled, and the 'evidence' is superimposed on top. The test cuts made with the steak knife have an X overlaid, while the test cuts made with the butter knife have a check overlaid, indicating that they match the evidence from the scene."}
+![Digital scan of blade cut and wire cut](../images/Blade-Wire-Cut-Scan-Render.png)
 :::
 
 ::: fragment
@@ -745,9 +412,8 @@ This work was partially funded by the Center for Statistics and Applications in 
 :::: {layout-ncol="2"}
 ![](../images/TheNation20180226-Genrich.png){fig-alt="A screenshot of an article by Meehan Crist and Tim Requarth from The Nation (Feb 26, 2018 issue). The title reads 'Forensic Science Put Jimmy Genrich in Prison for 24 Years. What if It Wasn’t Science?'. A mugshot is shown below the article title. Article url: https://www.thenation.com/article/archive/the-crisis-of-american-forensics/" height="750"}
 
-::: fragment
-![](../images/CPR-new-trial.png){fig-alt="A Colorado Public Media story by Tom Hesse from July 10, 2023, titled 'Judge orders new trial for Grand Junction man convicted in '90s pipe bombings'. A picture of the Mesa County Justice Center is shown below the article title. Article url:  https://www.cpr.org/2023/07/10/judge-orders-new-trial-for-grand-junction-man-convicted-in-90s-pipe-bombings/" height="750" width="auto"}
-:::
+![](../images/genrich-tool.png){fig-alt="The picture shows the edge of a pair of wire cutters along with a microscopically enhanced picture of striations on a cut wire. At trial, the prosecution and its expert witnesses claimed that Mr. Genrich’s generic wire cutters were the only wire cutters in the world that could have made a tiny mark – just 1/100th of an inch long – found on a piece of wire from one of the bombs. The wire cutter surface compared was .6 inches long -- more than 60 times the length of the wire fragment. Image from https://www.colorado.edu/outreach/korey-wise-innocence-project/2021/08/09/jimmy-genrichs-conviction-overturned." height="750px"}
+
 ::::
 
 ## Motivation
@@ -762,7 +428,7 @@ This work was partially funded by the Center for Statistics and Applications in 
 
 ## Personal Motivation
 
-![My house has $\approx$ 982 cm of (easily accessible) blade surface which might be used to cut wires. My dad has $\approx$ 2243 cm of blade surface in his shop. No one in either location is a craftsperson.](../images/Shop-annotated.png){fig-alt="An annotated picture of a messy garage, showing all of the tools which could conceivably make striated toolmarks, including visegrips, pliers, bolt cutters, pry bars, electrical tools, razor blades, hammers, tin snips, saws, and more." width="100%"}
+![My house has $\approx$ 982 cm of (easily accessible) blade surface which might be used to cut wires. My dad has $\approx$ 2243 cm of blade surface in his shop. No one in either location is a craftsperson.](../images/shop-tools.png){fig-alt="An annotated picture of a messy garage, showing all of the tools which could conceivably make striated toolmarks, including visegrips, pliers, bolt cutters, pry bars, electrical tools, razor blades, hammers, tin snips, saws, and more." width="100%"}
 
 ## Constructive Scientific Proof<br>[from first principles]{.emph .meddarkblue .smaller}
 
@@ -807,14 +473,6 @@ But, there are other ways to handle this problem.
 [^4]: Low enough will be determined by courts⚖️, not statisticians... 🫣
 
 ## Wire Cuts
-
-::: {layout="[[70,30],[100]]" layout-valign="bottom"}
-![CAT5 crimper with wire cutter](../images/wire_cutter.png)
-
-![Cut wires](../images/razor_wire_cut_sizes_ann.png)
-
-![Digital scan of blade cut and wire cut](../images/Blade-Wire-Cut-Scan-Render.png)
-:::
 
 ## Structural Parameters
 
@@ -961,5 +619,11 @@ but... this problem shows up in database searches, too!
     -   [Number of results returned as 'similar' (top 20? top 5?)]{.small}
     -   [Protocols for confirmatory assessment]{.small}
 :::
+
+
+
+## A Happy Ending
+
+![](../images/CPR-new-trial.png){fig-alt="A Colorado Public Media story by Tom Hesse from July 10, 2023, titled 'Judge orders new trial for Grand Junction man convicted in '90s pipe bombings'. A picture of the Mesa County Justice Center is shown below the article title. Article url:  https://www.cpr.org/2023/07/10/judge-orders-new-trial-for-grand-junction-man-convicted-in-90s-pipe-bombings/" width="auto"}
 
 # Questions? {.center}

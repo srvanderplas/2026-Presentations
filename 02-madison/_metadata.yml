@@ -1,11 +1,17 @@
-title: Statistical Forensics
-subtitle: Images, Computer Vision, and Scientific Fundamentals
+title: Algorithms and Artificial Intelligence for Statistical Forensics
 author: "Susan Vanderplas"
 date: 2026-02-026
 date-format: long
 from: markdown+emoji
 location: TBD
-abstract: |
+abstract: | 
+  The advent of forensic DNA testing identified a number of problems across less-quantitative "pattern" disciplines in forensic science, such as footprints, firearms, and toolmark analysis. 
+  The 2009 National Academies of Science Report and the 2016 President's Council of Advisors on Science & Technology report both raised alarms over the state of scientific evidence supporting 
+  these disciplines and the need to develop automatic algorithms to supplement or replace subjective practitioner judgments. 
+  In this talk, I will describe why and how this situation arose and will discuss several different projects I've worked on that use statistics, machine learning, and computer vision to approach forensic tasks 
+  and build trustworthy models. I will discuss the creation and validation of algorithms for analysis of fired ammunition, an attempt to build a foundation for characterizing footwear within a local population, 
+  and an analysis of hidden multiple comparisons within wire-cut forensics that connects to an ongoing Innocence Project case. 
+  I will specifically highlight the importance of understanding the basic properties of your models and how that can contribute to responsible, trustworthy AI and machine learning use in the justice system. 
 
 
 talk-type: ['seminar']
@@ -14,3 +20,5 @@ talk-type: ['seminar']
 image: <iframe class="slide-deck" src="./" width="100%" height="200px"></iframe>
 
 keywords: ['statistics', 'forensics', 'graphics', 'data science']
+
+
