@@ -112,7 +112,8 @@ PrintBibliography(newpubs, .opts = list(sorting = "ydnt", no.print.fields = c("n
 -   Hidden Multiple Comparisons Increase Forensic Error Rates (PNAS)\
     [Vanderplas, Carriquiry, Hofmann. 2024]{.small}
 
--   Amicus Briefs or Testimony filed in cases in Oregon, Washington, Michigan, Colorado, California, Maryland, Illinois, Washington D.C., New Jersey, Federal (Northern District of Florida)
+-   Amicus Briefs and Written Testimony filed in cases in Oregon, Washington, Michigan, Colorado, California, Maryland, Illinois, Washington D.C., New Jersey, Federal (Northern District of Florida)
+
 :::
 
 ## 🐣 Coming Soon!
@@ -122,7 +123,7 @@ Forensics:
 
 -   `courtR` package for legal transcript studies
 -   `highlightR` package for conserved text analysis
--   Assessing Algorithm Use and Testimony for Firearms and Toolmark Analysis
+-   Juror Evaluation of Algorithms in Firearms and Toolmark Analysis
 -   What Comes Next: A Constructive Vision for Forensic Firearms Analysis
 
 Graphics:
@@ -366,7 +367,118 @@ This work was partially funded by the Center for Statistics and Applications in 
 ::::::
 
 
-## 
+## Firearms & Toolmark Examination 
+
+![](../images/bullet_firing_short.gif){fig-alt="A gif of a bullet being fired from a gun. The firing pin hits the back of the cartridge case primer. The gif pivots to a cross section through the cartridge to see the powder ignition. The copper bullet then separates from the cartridge due to gas expansion and spins through the rifling before being ejected." width="auto"}
+
+## Firearms & Toolmark Examination 
+
+![](../images/Bullet.png){fig-alt="A fired bullet with lands and grooves due to the rifling."}
+
+## Firearms & Toolmark Examination 
+
+![](../images/ComparisonMicroscope.png){fig-alt="A comparison microscope with a close-up of the split viewfinder showing two aligned bullet segments."}
+
+```{r}
+#| label: bullet-setup
+#| include: false
+#| cache: false
+library(tibble)
+library(dplyr)
+library(tidyr)
+library(purrr)
+library(ggplot2)
+library(bulletxtrctr)
+library(x3ptools)
+```
+
+```{r}
+#| cache: true
+#| label: bullet-setup
+
+b1 <- read_bullet("../data/UserStudy/Barrel 6/Bullet 1")
+b2 <- read_bullet("../data/UserStudy/Barrel 6/Bullet 2")
+bullet_demo <- bind_rows(b1, b2) |>
+    mutate(set = 44, barrel=6,bullet = rep(1:2, each=6), land = rep(1:6, times=2)) |>
+    mutate(crosscut = map_dbl(x3p, x3p_crosscut_optimize)) |>
+    mutate(ccdata = map2(x3p, crosscut, x3p_crosscut))
+```
+
+## Building a Data Pipeline
+
+1. Wrangle scans with `x3ptools`
+    - usually 6 land engraved area scans per bullet
+    - orientation - (0,0) top or bottom left?
+    - scale - work in microns, not meters. 
+    - nested `tibble`s to keep data organized
+
+```{r}
+#| eval: false
+#| echo: false
+#| include: false
+x3p_image(b1$x3p[[2]]) 
+x3p_snapshot(file = "../images/h44-br6-bullet1-land2.png")
+
+x3p_image(x3p_add_hline(bullet_demo$x3p[[2]], yintercept=bullet_demo$crosscut[2], size = 10)) 
+x3p_snapshot(file = "../images/h44-br6-bullet1-land2-crosscut.png")
+
+x3p_image(x3p_add_hline(bullet_demo$x3p[[11]], yintercept=bullet_demo$crosscut[11], size = 10))
+x3p_snapshot(file = "../images/h44-br6-bullet2-land5-crosscut.png")
+```
+
+
+![](../images/h44-br6-bullet1-land2.png){fig-alt="A screenshot of a rendered bullet land engraved area." .fragment}
+
+
+## Building a Data Processing Pipeline
+
+1. Wrangle scans with `x3ptools`
+2. Find a good "crosscut" [-> reduce to 1 dimensional data]{.emph .darkgreen .fragment}
+
+![](../images/h44-br6-bullet1-land2-crosscut.png){fig-alt="A screenshot of a rendered bullet land engraved area with the crosscut marked across the bottom in silver." .fragment}
+
+## Building a Data Processing Pipeline
+
+1. Wrangle scans with `x3ptools`
+2. Find a good "crosscut" [-> reduce to 1 dimensional data]{.emph .darkgreen}
+
+```{r}
+#| echo: false
+#| label: crosscut-facet
+#| fig-width: 6.25
+#| fig-height: 2.75
+#| fig-dpi: 600
+
+crosscuts <- bullet_demo |> 
+  dplyr::select(-source, -x3p) |> 
+  tidyr::unnest(ccdata) 
+
+crosscuts <- crosscuts |>
+  dplyr::group_by(set, barrel, bullet, land) |>
+  tidyr::complete(set, nesting(barrel, bullet, land), x = full_seq(x, .645), fill = list(value = NA)) |>
+  tidyr::fill(crosscut, y, .direction = "downup") |>
+  dplyr::arrange(set, barrel, bullet, land, x) |>
+  dplyr::ungroup()
+
+crosscut_na <- filter(crosscuts, is.na(value))
+
+ggplot(crosscuts, aes(x = x, y = value)) + 
+  geom_vline(data = crosscut_na, aes(xintercept=x), alpha = .05, color="red") + 
+  geom_line() + 
+  facet_grid(bullet~land, labeller="label_both") +
+  theme_bw() + 
+  theme(axis.title=element_blank(), axis.text = element_blank())
+```
+
+## Building a Data Processing Pipeline
+
+1. Wrangle scans with `x3ptools`
+2. Find a good "crosscut"
+3. Keep only the land area -- cut off grooves    
+[This turns out to be a pretty tricky problem!]{.emph .blue .fragment}
+
+
+
 
 # Shoes and Shape Identification<br/>[Computer $\neq$ Human Vision]{.fragment .emph .blue} {#shoes}
 
