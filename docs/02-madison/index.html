@@ -6,12 +6,12 @@
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/quarto-contrib/qrcodejs-v1.0.0/qrcode.js"></script>
 <script src="../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
 <link href="../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
 <link href="../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.8.27">
+  <meta name="generator" content="quarto-1.8.26">
 
   <meta name="author" content="Susan Vanderplas">
   <meta name="dcterms.date" content="2026-02-26">
@@ -228,7 +228,7 @@ Susan Vanderplas
 <span class="small">Rosenblum, Chin, Ogburn, Nishimura, Westreich, Datta, Vanderplas, Cuellar, Thompson. 2024</span></p></li>
 <li><p>Hidden Multiple Comparisons Increase Forensic Error Rates (PNAS)<br>
 <span class="small">Vanderplas, Carriquiry, Hofmann. 2024</span></p></li>
-<li><p>Amicus Briefs or Testimony filed in cases in Oregon, Washington, Michigan, Colorado, California, Maryland, Illinois, Washington D.C., New Jersey, Federal (Northern District of Florida)</p></li>
+<li><p>Amicus Briefs and Written Testimony filed in cases in Oregon, Washington, Michigan, Colorado, California, Maryland, Illinois, Washington D.C., New Jersey, Federal (Northern District of Florida)</p></li>
 </ul>
 </div>
 </section>
@@ -239,7 +239,7 @@ Susan Vanderplas
 <ul>
 <li><code>courtR</code> package for legal transcript studies</li>
 <li><code>highlightR</code> package for conserved text analysis</li>
-<li>Assessing Algorithm Use and Testimony for Firearms and Toolmark Analysis</li>
+<li>Juror Evaluation of Algorithms in Firearms and Toolmark Analysis</li>
 <li>What Comes Next: A Constructive Vision for Forensic Firearms Analysis</li>
 </ul>
 <p>Graphics:</p>
@@ -413,7 +413,7 @@ Susan Vanderplas
 </div></div>
 </section>
 <section id="current-status-of-forensic-disciplines" class="slide level2">
-<h2>Current Status of Forensic Disciplines</h2>
+<h2><span class="smaller">Current Status of Forensic Disciplines</span></h2>
 <div class="columns">
 <div class="column small" data-margin="auto" style="width:80%;">
 <table class="caption-top" style="width:82%;">
@@ -446,7 +446,7 @@ Susan Vanderplas
 <td>DNA (mix)</td>
 <td>🧪+🔎</td>
 <td>❓<br>
-✅<sup>1</sup>c</td>
+✅<sup>1</sup></td>
 <td>📖📖<br>
 📖</td>
 </tr>
@@ -563,8 +563,183 @@ Susan Vanderplas
 <p>This work was partially funded by the Center for Statistics and Applications in Forensic Evidence (CSAFE) through Cooperative Agreements 70NANB15H176 and 70NANB20H019 between NIST and Iowa State University, which includes activities carried out at Carnegie Mellon University, Duke University, University of California Irvine, University of Virginia, West Virginia University, University of Pennsylvania, Swarthmore College and University of Nebraska, Lincoln.</p>
 </div></div>
 </section>
-<section id="section-1" class="slide level2">
-<h2></h2>
+<section id="firearms-toolmark-examination" class="slide level2">
+<h2>Firearms &amp; Toolmark Examination</h2>
+<p><a href="../images/bullet_firing_short.gif" class="lightbox" data-gallery="quarto-lightbox-gallery-10"><img data-src="../images/bullet_firing_short.gif" style="width:100.0%" alt="A gif of a bullet being fired from a gun. The firing pin hits the back of the cartridge case primer. The gif pivots to a cross section through the cartridge to see the powder ignition. The copper bullet then separates from the cartridge due to gas expansion and spins through the rifling before being ejected."></a></p>
+</section>
+<section id="firearms-toolmark-examination-1" class="slide level2">
+<h2>Firearms &amp; Toolmark Examination</h2>
+<p><a href="../images/Bullet.png" class="lightbox" data-gallery="quarto-lightbox-gallery-11"><img data-src="../images/Bullet.png" style="width:50.0%" alt="A fired bullet with lands and grooves due to the rifling."></a></p>
+</section>
+<section id="firearms-toolmark-examination-2" class="slide level2">
+<h2>Firearms &amp; Toolmark Examination</h2>
+<p><a href="../images/ComparisonMicroscope.png" class="lightbox" data-gallery="quarto-lightbox-gallery-12"><img data-src="../images/ComparisonMicroscope.png" alt="A comparison microscope with a close-up of the split viewfinder showing two aligned bullet segments."></a></p>
+</section>
+<section id="building-a-data-pipeline" class="slide level2">
+<h2>Building a Data Pipeline</h2>
+<ol type="1">
+<li>Wrangle scans with <code>x3ptools</code>
+<ul>
+<li>usually 6 land engraved area scans per bullet</li>
+<li>orientation - (0,0) top or bottom left?</li>
+<li>scale - work in microns, not meters.</li>
+<li>nested <code>tibble</code>s to keep data organized</li>
+</ul></li>
+</ol>
+<p><a href="../images/houston3AQ-bullet1-land2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-13"><img data-src="../images/houston3AQ-bullet1-land2.png" class="fragment" alt="A screenshot of a rendered bullet land engraved area."></a></p>
+</section>
+<section id="building-a-data-processing-pipeline" class="slide level2">
+<h2>Building a Data Processing Pipeline</h2>
+<ol type="1">
+<li>Wrangle scans with <code>x3ptools</code></li>
+<li>Find a good “crosscut” <span class="emph darkgreen fragment">-&gt; reduce to 1 dimensional data</span></li>
+</ol>
+<p><a href="../images/houston3AQ-bullet1-land2-crosscut.png" class="lightbox" data-gallery="quarto-lightbox-gallery-14"><img data-src="../images/houston3AQ-bullet1-land2-crosscut.png" class="fragment" alt="A screenshot of a rendered bullet land engraved area with the crosscut marked across the bottom in silver."></a></p>
+</section>
+<section id="building-a-data-processing-pipeline-1" class="slide level2">
+<h2>Building a Data Processing Pipeline</h2>
+<ol type="1">
+<li>Wrangle scans with <code>x3ptools</code></li>
+<li>Find a good “crosscut” <span class="emph darkgreen">-&gt; reduce to 1 dimensional data</span></li>
+</ol>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><a href="index_files/figure-revealjs/crosscut-facet-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-15"><img data-src="index_files/figure-revealjs/crosscut-facet-1.png" width="3750"></a></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="building-a-data-processing-pipeline-2" class="slide level2">
+<h2>Building a Data Processing Pipeline</h2>
+<ol type="1">
+<li>Wrangle scans with <code>x3ptools</code></li>
+<li>Find a good “crosscut”</li>
+<li>Keep only the land area – cut off grooves<br>
+<span class="emph blue fragment">This was surprisingly hard!</span></li>
+</ol>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><a href="index_files/figure-revealjs/unnamed-chunk-2-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-16"><img data-src="index_files/figure-revealjs/unnamed-chunk-2-1.png" width="960"></a></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="building-a-data-processing-pipeline-3" class="slide level2">
+<h2>Building a Data Processing Pipeline</h2>
+<ol type="1">
+<li>Wrangle scans with <code>x3ptools</code></li>
+<li>Find a good “crosscut”</li>
+<li>Keep only the land area – cut off grooves</li>
+<li>Remove surface curvature</li>
+</ol>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><a href="index_files/figure-revealjs/unnamed-chunk-3-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-17"><img data-src="index_files/figure-revealjs/unnamed-chunk-3-1.png" width="960"></a></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="building-a-data-processing-pipeline-4" class="slide level2">
+<h2>Building a Data Processing Pipeline</h2>
+<ol type="1">
+<li>Wrangle scans with <code>x3ptools</code></li>
+<li>Find a good “crosscut”</li>
+<li>Keep only the land area – cut off grooves</li>
+<li>Remove surface curvature</li>
+<li>Align signatures</li>
+</ol>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><a href="index_files/figure-revealjs/unnamed-chunk-4-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-18"><img data-src="index_files/figure-revealjs/unnamed-chunk-4-1.png" width="960"></a></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="building-a-data-processing-pipeline-5" class="slide level2">
+<h2>Building a Data Processing Pipeline</h2>
+<ol type="1">
+<li>Wrangle scans with <code>x3ptools</code></li>
+<li>Find a good “crosscut”</li>
+<li>Keep only the land area – cut off grooves</li>
+<li>Remove surface curvature</li>
+<li>Align signatures</li>
+<li>Extract features</li>
+</ol>
+<div class="cell quarto-layout-panel" data-layout-ncol="6">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 16.7%;justify-content: center;">
+<p><a href="index_files/figure-revealjs/bullet-features-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-19"><img data-src="index_files/figure-revealjs/bullet-features-1.png" width="384"></a></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 16.7%;justify-content: center;">
+<p><a href="index_files/figure-revealjs/bullet-features-2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-20"><img data-src="index_files/figure-revealjs/bullet-features-2.png" width="384"></a></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 16.7%;justify-content: center;">
+<p><a href="index_files/figure-revealjs/bullet-features-3.png" class="lightbox" data-gallery="quarto-lightbox-gallery-21"><img data-src="index_files/figure-revealjs/bullet-features-3.png" width="384"></a></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 16.7%;justify-content: center;">
+<p><a href="index_files/figure-revealjs/bullet-features-4.png" class="lightbox" data-gallery="quarto-lightbox-gallery-22"><img data-src="index_files/figure-revealjs/bullet-features-4.png" width="384"></a></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 16.7%;justify-content: center;">
+<p><a href="index_files/figure-revealjs/bullet-features-5.png" class="lightbox" data-gallery="quarto-lightbox-gallery-23"><img data-src="index_files/figure-revealjs/bullet-features-5.png" width="384"></a></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 16.7%;justify-content: center;">
+<p><a href="index_files/figure-revealjs/bullet-features-6.png" class="lightbox" data-gallery="quarto-lightbox-gallery-24"><img data-src="index_files/figure-revealjs/bullet-features-6.png" width="384"></a></p>
+</div>
+</div>
+</div>
+</section>
+<section id="building-a-data-processing-pipeline-6" class="slide level2">
+<h2>Building a Data Processing Pipeline</h2>
+<div class="columns">
+<div class="column" style="width:60%;">
+<ol type="1">
+<li>Wrangle scans with <code>x3ptools</code></li>
+<li>Find a good “crosscut”</li>
+<li>Keep only the land area</li>
+<li>Remove surface curvature</li>
+<li>Align signatures</li>
+<li>Extract features</li>
+<li>Compute similarity score</li>
+</ol>
+</div><div class="column" style="width:40%;">
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><a href="index_files/figure-revealjs/unnamed-chunk-5-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-25"><img data-src="index_files/figure-revealjs/unnamed-chunk-5-1.png" style="width:100.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
+</div></div>
+</section>
+<section id="important-features" class="slide level2">
+<h2>Important Features</h2>
+<ul>
+<li><p>Every part of the processing pipeline has diagnostics</p>
+<ul>
+<li>Design for human-in-the-loop processing</li>
+<li>Explainability matters!</li>
+</ul></li>
+<li><p>Need smart defaults + ability to override</p></li>
+<li><p>Most features engineered to correspond to visual signals used by examiners</p>
+<ul>
+<li>Boosts signal in random forest</li>
+<li>Cross-correlation is usually “good enough”</li>
+</ul></li>
+</ul>
 </section></section>
 <section id="shoes" class="title-slide slide level1 center">
 <h1>Shoes and Shape Identification<br><span class="fragment emph blue">Computer <span class="math inline">\(\neq\)</span> Human Vision</span></h1>
@@ -606,7 +781,7 @@ Susan Vanderplas
 <div class="quarto-layout-cell" style="flex-basis: 70.0%;justify-content: flex-start;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><a href="../images/wire_cutter.png" class="lightbox" data-gallery="quarto-lightbox-gallery-10" title="CAT5 crimper with wire cutter"><img data-src="../images/wire_cutter.png" alt="CAT5 crimper with wire cutter"></a></p>
+<p><a href="../images/wire_cutter.png" class="lightbox" data-gallery="quarto-lightbox-gallery-26" title="CAT5 crimper with wire cutter"><img data-src="../images/wire_cutter.png" alt="CAT5 crimper with wire cutter"></a></p>
 <figcaption>CAT5 crimper with wire cutter</figcaption>
 </figure>
 </div>
@@ -614,7 +789,7 @@ Susan Vanderplas
 <div class="quarto-layout-cell" style="flex-basis: 30.0%;justify-content: flex-start;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><a href="../images/razor_wire_cut_sizes_ann.png" class="lightbox" data-gallery="quarto-lightbox-gallery-11" title="Cut wires"><img data-src="../images/razor_wire_cut_sizes_ann.png" alt="Cut wires"></a></p>
+<p><a href="../images/razor_wire_cut_sizes_ann.png" class="lightbox" data-gallery="quarto-lightbox-gallery-27" title="Cut wires"><img data-src="../images/razor_wire_cut_sizes_ann.png" alt="Cut wires"></a></p>
 <figcaption>Cut wires</figcaption>
 </figure>
 </div>
@@ -624,7 +799,7 @@ Susan Vanderplas
 <div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: flex-start;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><a href="../images/Blade-Wire-Cut-Scan-Render.png" class="lightbox" data-gallery="quarto-lightbox-gallery-12" title="Digital scan of blade cut and wire cut"><img data-src="../images/Blade-Wire-Cut-Scan-Render.png" alt="Digital scan of blade cut and wire cut"></a></p>
+<p><a href="../images/Blade-Wire-Cut-Scan-Render.png" class="lightbox" data-gallery="quarto-lightbox-gallery-28" title="Digital scan of blade cut and wire cut"><img data-src="../images/Blade-Wire-Cut-Scan-Render.png" alt="Digital scan of blade cut and wire cut"></a></p>
 <figcaption>Digital scan of blade cut and wire cut</figcaption>
 </figure>
 </div>
@@ -640,10 +815,10 @@ Susan Vanderplas
 <div class="quarto-layout-panel" data-layout-ncol="2">
 <div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<p><a href="../images/TheNation20180226-Genrich.png" class="lightbox" data-gallery="quarto-lightbox-gallery-13"><img data-src="../images/TheNation20180226-Genrich.png" alt="A screenshot of an article by Meehan Crist and Tim Requarth from The Nation (Feb 26, 2018 issue). The title reads 'Forensic Science Put Jimmy Genrich in Prison for 24 Years. What if It Wasn’t Science?'. A mugshot is shown below the article title. Article url: https://www.thenation.com/article/archive/the-crisis-of-american-forensics/"></a></p>
+<p><a href="../images/TheNation20180226-Genrich.png" class="lightbox" data-gallery="quarto-lightbox-gallery-29"><img data-src="../images/TheNation20180226-Genrich.png" alt="A screenshot of an article by Meehan Crist and Tim Requarth from The Nation (Feb 26, 2018 issue). The title reads 'Forensic Science Put Jimmy Genrich in Prison for 24 Years. What if It Wasn’t Science?'. A mugshot is shown below the article title. Article url: https://www.thenation.com/article/archive/the-crisis-of-american-forensics/"></a></p>
 </div>
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<p><a href="../images/genrich-tool.png" class="lightbox" data-gallery="quarto-lightbox-gallery-14"><img data-src="../images/genrich-tool.png" alt="The picture shows the edge of a pair of wire cutters along with a microscopically enhanced picture of striations on a cut wire. At trial, the prosecution and its expert witnesses claimed that Mr. Genrich’s generic wire cutters were the only wire cutters in the world that could have made a tiny mark – just 1/100th of an inch long – found on a piece of wire from one of the bombs. The wire cutter surface compared was .6 inches long -- more than 60 times the length of the wire fragment. Image from https://www.colorado.edu/outreach/korey-wise-innocence-project/2021/08/09/jimmy-genrichs-conviction-overturned."></a></p>
+<p><a href="../images/genrich-tool.png" class="lightbox" data-gallery="quarto-lightbox-gallery-30"><img data-src="../images/genrich-tool.png" alt="The picture shows the edge of a pair of wire cutters along with a microscopically enhanced picture of striations on a cut wire. At trial, the prosecution and its expert witnesses claimed that Mr. Genrich’s generic wire cutters were the only wire cutters in the world that could have made a tiny mark – just 1/100th of an inch long – found on a piece of wire from one of the bombs. The wire cutter surface compared was .6 inches long -- more than 60 times the length of the wire fragment. Image from https://www.colorado.edu/outreach/korey-wise-innocence-project/2021/08/09/jimmy-genrichs-conviction-overturned."></a></p>
 </div>
 </div>
 </div>
@@ -664,7 +839,7 @@ Susan Vanderplas
 <h2>Personal Motivation</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><a href="../images/shop-tools.png" class="lightbox" data-gallery="quarto-lightbox-gallery-15" title="My house has \approx 982 cm of (easily accessible) blade surface which might be used to cut wires. My dad has \approx 2243 cm of blade surface in his shop. No one in either location is a craftsperson."><img data-src="../images/shop-tools.png" style="width:100.0%" alt="An annotated picture of a messy garage, showing all of the tools which could conceivably make striated toolmarks, including visegrips, pliers, bolt cutters, pry bars, electrical tools, razor blades, hammers, tin snips, saws, and more."></a></p>
+<p><a href="../images/shop-tools.png" class="lightbox" data-gallery="quarto-lightbox-gallery-31" title="My house has \approx 982 cm of (easily accessible) blade surface which might be used to cut wires. My dad has \approx 2243 cm of blade surface in his shop. No one in either location is a craftsperson."><img data-src="../images/shop-tools.png" style="width:100.0%" alt="An annotated picture of a messy garage, showing all of the tools which could conceivably make striated toolmarks, including visegrips, pliers, bolt cutters, pry bars, electrical tools, razor blades, hammers, tin snips, saws, and more."></a></p>
 <figcaption>My house has <span class="math inline">\(\approx\)</span> 982 cm of (easily accessible) blade surface which might be used to cut wires. My dad has <span class="math inline">\(\approx\)</span> 2243 cm of blade surface in his shop. No one in either location is a craftsperson.</figcaption>
 </figure>
 </div>
@@ -722,7 +897,7 @@ What does <span class="math inline">\(e^{(1)}\)</span> need to be for <span clas
 </section>
 <section id="structural-parameters" class="slide level2">
 <h2>Structural Parameters</h2>
-<p><a href="../images/Surface_Counts.png" class="lightbox" data-gallery="quarto-lightbox-gallery-16"><img data-src="../images/Surface_Counts.png" style="margin-left:auto;margin-right:auto;;width:80.0%" alt="A profile image of the blades of each of four types of tools - wedge-type cuts (guillotine/wire cutters), scissors, pliers, and blades. All but pliers have two cutting surfaces, but the angles of each surface differ. Pliers have 4 cutting surfaces."></a></p>
+<p><a href="../images/Surface_Counts.png" class="lightbox" data-gallery="quarto-lightbox-gallery-32"><img data-src="../images/Surface_Counts.png" style="margin-left:auto;margin-right:auto;;width:80.0%" alt="A profile image of the blades of each of four types of tools - wedge-type cuts (guillotine/wire cutters), scissors, pliers, and blades. All but pliers have two cutting surfaces, but the angles of each surface differ. Pliers have 4 cutting surfaces."></a></p>
 <ul>
 <li><p>Bladed Surfaces: <span class="math inline">\(s \in \{2, 4\}, 1 \leq i \leq s\)</span></p></li>
 <li><p>Cut Surfaces (on one wire): <span class="math inline">\(w \in \{1, 2\}, 1\leq j\leq w\)</span></p></li>
@@ -738,13 +913,13 @@ What does <span class="math inline">\(e^{(1)}\)</span> need to be for <span clas
 <li><p>Manual alignment: estimate the minimum comparisons</p></li>
 </ul>
 </div><div class="column" style="width:20%;">
-<p><a href="../images/comparison-scope-rearrange.png" class="lightbox" data-gallery="quarto-lightbox-gallery-17"><img data-src="../images/comparison-scope-rearrange.png" style="position:absolute;top:0;right:20px;;width:18.0%" alt="An image of a comparison microscope, which allows viewing two samples simultaneously in order to align them."></a></p>
+<p><a href="../images/comparison-scope-rearrange.png" class="lightbox" data-gallery="quarto-lightbox-gallery-33"><img data-src="../images/comparison-scope-rearrange.png" style="position:absolute;top:0;right:20px;;width:18.0%" alt="An image of a comparison microscope, which allows viewing two samples simultaneously in order to align them."></a></p>
 </div></div>
-<p><a href="../images/number of comparisons.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-18"><img data-src="../images/number of comparisons.svg" style="position:absolute;bottom:0px;left:20px;;width:100.0%" alt="A diagram showing a blade cut (long, thin) with striations compared to a wire cut (semi-circle shape, short) aligned with the blade cut. There are multiple non-overlapping positions along the blade cut where the wire cut could fit, and each is shown with an empty hemisphere."></a></p>
+<p><a href="../images/number of comparisons.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-34"><img data-src="../images/number of comparisons.svg" style="position:absolute;bottom:0px;left:20px;;width:100.0%" alt="A diagram showing a blade cut (long, thin) with striations compared to a wire cut (semi-circle shape, short) aligned with the blade cut. There are multiple non-overlapping positions along the blade cut where the wire cut could fit, and each is shown with an empty hemisphere."></a></p>
 </section>
 <section id="visual-examination-1" class="slide level2">
 <h2>Visual Examination</h2>
-<p><a href="../images/number of comparisons.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-19"><img data-src="../images/number of comparisons.svg" style="position:absolute;top:40%;left:20px;;width:100.0%" alt="A diagram showing a blade cut (long, thin) with striations compared to a wire cut (semi-circle shape, short) aligned with the blade cut. There are multiple non-overlapping positions along the blade cut where the wire cut could fit, and each is shown with an empty hemisphere."></a></p>
+<p><a href="../images/number of comparisons.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-35"><img data-src="../images/number of comparisons.svg" style="position:absolute;top:40%;left:20px;;width:100.0%" alt="A diagram showing a blade cut (long, thin) with striations compared to a wire cut (semi-circle shape, short) aligned with the blade cut. There are multiple non-overlapping positions along the blade cut where the wire cut could fit, and each is shown with an empty hemisphere."></a></p>
 <p>Adj. comparisons are non-overlapping <span class="math inline">\(\Rightarrow\)</span> “independent”<sup>1</sup></p>
 <aside><ol class="aside-footnotes"><li id="fn5"><p>There are peak-valley dependence structures in profile data, but conditioning on tool/material/manufacturing, we would <strong>expect</strong> statistical independence between adjacent comparisons</p></li></ol></aside></section>
 <section id="algorithmic-comparison" class="slide level2">
@@ -753,7 +928,7 @@ What does <span class="math inline">\(e^{(1)}\)</span> need to be for <span clas
 (remove gross topology)</p>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><a href="../images/alignment-crop-sm.gif" class="lightbox" data-gallery="quarto-lightbox-gallery-20" title="Cross-correlation is used to align signature from blade cut surface to signature from wire cut surface. Image credit: Heike Hofmann"><img data-src="../images/alignment-crop-sm.gif" alt="An animated gif of a wire cross-section sliding along a composite cross section generated from a blade cut."></a></p>
+<p><a href="../images/alignment-crop-sm.gif" class="lightbox" data-gallery="quarto-lightbox-gallery-36" title="Cross-correlation is used to align signature from blade cut surface to signature from wire cut surface. Image credit: Heike Hofmann"><img data-src="../images/alignment-crop-sm.gif" alt="An animated gif of a wire cross-section sliding along a composite cross section generated from a blade cut."></a></p>
 <figcaption>Cross-correlation is used to align signature from blade cut surface to signature from wire cut surface. Image credit: Heike Hofmann</figcaption>
 </figure>
 </div>
@@ -836,7 +1011,7 @@ What does <span class="math inline">\(e^{(1)}\)</span> need to be for <span clas
 <section id="so-how-bad-is-the-problem-2" class="slide level2">
 <h2>So How Bad Is the Problem?</h2>
 <p>To keep the overall false positive rate under 10%…</p>
-<p><a href="../images/table-fpr-family.png" class="lightbox" data-gallery="quarto-lightbox-gallery-21"><img data-src="../images/table-fpr-family.png" alt="A table showing the family wise false discovery rate for N comparisons using several different estimates of striated comparison error rates. When the FDR is 7%, over 50% of 10-comparison samples would be expected to have a false positive. When the FDR is 2%, over 18% of 10-comparison samples would be expected to have a false positive. Additional columns are provided giving the expected frequency of 100 and 1000 comparisons under different error rates. The final column provides the maximum number of comparisons at the specified error rate which can be performed to keep the family wise false positive error rate under 10%."></a></p>
+<p><a href="../images/table-fpr-family.png" class="lightbox" data-gallery="quarto-lightbox-gallery-37"><img data-src="../images/table-fpr-family.png" alt="A table showing the family wise false discovery rate for N comparisons using several different estimates of striated comparison error rates. When the FDR is 7%, over 50% of 10-comparison samples would be expected to have a false positive. When the FDR is 2%, over 18% of 10-comparison samples would be expected to have a false positive. Additional columns are provided giving the expected frequency of 100 and 1000 comparisons under different error rates. The final column provides the maximum number of comparisons at the specified error rate which can be performed to keep the family wise false positive error rate under 10%."></a></p>
 <p><span class="emph meddarkblue fragment">2% Error -&gt; 5 total comparisons.</span></p>
 <p><span class="emph meddarkblue fragment">Minimum of 15 required to do even a simple wire-cut analysis.</span></p>
 </section>
@@ -892,7 +1067,7 @@ What does <span class="math inline">\(e^{(1)}\)</span> need to be for <span clas
 </section>
 <section id="a-happy-ending" class="slide level2">
 <h2>A Happy Ending</h2>
-<p><a href="../images/CPR-new-trial.png" class="lightbox" data-gallery="quarto-lightbox-gallery-22"><img data-src="../images/CPR-new-trial.png" alt="A Colorado Public Media story by Tom Hesse from July 10, 2023, titled 'Judge orders new trial for Grand Junction man convicted in '90s pipe bombings'. A picture of the Mesa County Justice Center is shown below the article title. Article url:  https://www.cpr.org/2023/07/10/judge-orders-new-trial-for-grand-junction-man-convicted-in-90s-pipe-bombings/"></a></p>
+<p><a href="../images/CPR-new-trial.png" class="lightbox" data-gallery="quarto-lightbox-gallery-38"><img data-src="../images/CPR-new-trial.png" alt="A Colorado Public Media story by Tom Hesse from July 10, 2023, titled 'Judge orders new trial for Grand Junction man convicted in '90s pipe bombings'. A picture of the Mesa County Justice Center is shown below the article title. Article url:  https://www.cpr.org/2023/07/10/judge-orders-new-trial-for-grand-junction-man-convicted-in-90s-pipe-bombings/"></a></p>
 </section></section>
 <section id="questions" class="title-slide slide level1 center">
 <h1>Questions?</h1>
