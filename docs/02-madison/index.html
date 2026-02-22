@@ -6,17 +6,17 @@
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/quarto-contrib/qrcodejs-v1.0.0/qrcode.js"></script>
 <script src="../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
 <link href="../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
 <link href="../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.8.26">
+  <meta name="generator" content="quarto-1.8.27">
 
   <meta name="author" content="Susan Vanderplas">
   <meta name="dcterms.date" content="2026-02-26">
   <meta name="keywords" content="statistics, forensics, graphics, data science">
-  <title>2026 Presentations – Algorithms and Artificial Intelligence for Statistical Forensics</title>
+  <title>2026 Presentations – Algorithms and AI for Statistical Forensics</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -134,7 +134,7 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Algorithms and Artificial Intelligence for Statistical Forensics</h1>
+  <h1 class="title">Algorithms and AI for Statistical Forensics</h1>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -151,19 +151,33 @@ Susan Vanderplas
 <ol type="1">
 <li><a href="#/introduction">Introduction</a> <!-- Hi, I'm susan and I do an odd assortment of things --></li>
 <li><a href="#/forensics-history">Statistical Forensics?</a></li>
-<li><a href="#/bullets">Feature Engineering and Human Perception</a></li>
 <li><a href="#/shoes">Computer <span class="math inline">\(\neq\)</span> Human Vision</a></li>
+<li><a href="#/bullets">Feature Engineering and Human Perception</a></li>
 <li><a href="#/wire-cuts">Wire Cuts and Probability</a> <!-- Error Rates and Scientific Foundations in Forensics --></li>
 </ol>
 </section>
 
 <section>
 <section id="introduction" class="title-slide slide level1 center">
-<h1>Introduction 😶‍🌫️☁️🌎</h1>
-
+<h1>Introduction 👋️🌎</h1>
+<aside class="notes">
+<p>Thank you for inviting me to campus to speak today.</p>
+<p>Let me start by introducing myself, so you have a bit of background, and then I’ll talk about statistical forensics, algorithms, artificial intelligence, and the importance of the work that I’m doing to society.</p>
+<p>That’s not at all ambitious for an hour, right?</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section id="education-experience" class="slide level2">
-<h2>🏫 Education &amp; Experience</h2>
+<section id="my-history" class="slide level2">
+<h2>🏫 My History 🕰️</h2>
 <div class="nolines">
 <table class="caption-top">
 <tbody>
@@ -198,6 +212,19 @@ Susan Vanderplas
 </tbody>
 </table>
 </div>
+<aside class="notes">
+<p>I started my academic journey in psychology and applied math, and got my PhD in statistics from Iowa State in 2015. I worked in industry for a couple of years before returning to academia, because there was some cool work going on at the Center for Statistics and Applications in Forensic Evidence (CSAFE). When the CSAFE funding came up for renewal, I transitioned to a tenure-track position at UNL and continued doing work with CSAFE remotely. In 2024, I applied for promotion and tenure early and was successful. And in 2025, UNL decided to eliminate their statistics department, and I started looking for universities that valued applied statistics and places where I could continue the cool research I’ve been doing.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 <!-- 
 ---
 
@@ -217,6 +244,19 @@ Susan Vanderplas
 <span class="small">Robinson, Hofmann, Vanderplas. 2025</span></p></li>
 </ul>
 </div>
+<aside class="notes">
+<p>Last year, I had several graphics papers: changepoint detection, using computer vision to evaluate residual plots, the use of log scales, and a how-to guide on testing graphics.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section id="recent-work-1" class="slide level2">
 <h2>🔬 Recent Work</h2>
@@ -231,9 +271,22 @@ Susan Vanderplas
 <li><p>Amicus Briefs and Written Testimony filed in cases in Oregon, Washington, Michigan, Colorado, California, Maryland, Illinois, Washington D.C., New Jersey, Federal (Northern District of Florida)</p></li>
 </ul>
 </div>
+<aside class="notes">
+<p>I’ve also been active in the forensics space, most recently, critiquing experimental design, examining the probability of false positive errors, and addressing some misconceptions. This year, I’ve submitted a bunch of written briefs in various cases – some collaborative, some single-author.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section id="coming-soon" class="slide level2">
-<h2>🐣 Coming Soon!</h2>
+<h2>Coming Soon! 🐣</h2>
 <div class="r-fit-text">
 <p>Forensics:</p>
 <ul>
@@ -244,13 +297,26 @@ Susan Vanderplas
 </ul>
 <p>Graphics:</p>
 <ul>
-<li><code>ggdibbler</code> package and paper - uncertainty visualization</li>
+<li>Parallel Coordinate Plots with Mixed-Type Variables</li>
+<li><code>ggdibbler</code> - uncertainty visualization</li>
 <li>Experiential Learning with Statistical Graphics: Writing, Reflection, and Suspense</li>
 <li>Assessing Computer Vision models for Gestalt Perception</li>
-<li>Parallel Coordinate Plots with Mixed-Type Variables</li>
 <li>Visual Statistical Inference: Design, Experiment, and Analysis</li>
 </ul>
 </div>
+<aside class="notes">
+<p>And, of course, I have a lot of projects that are in various stages of “not officially published” yet – R packages that are on github but hopefully soon to be on CRAN, papers that are in progress, other papers that have been submitted, in both forensics and graphics.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section id="funded-grants" class="slide level2">
 <h2>💵 Funded Grants</h2>
@@ -268,6 +334,20 @@ Susan Vanderplas
 ($1.5 mil total, $123,445 sub-award)</p></li>
 </ul>
 </div>
+<aside class="notes">
+<p>And, of course, I’ve had some success in getting funding to cover some of these research projects – most recently, I got an NSF CAREER award that started in October, but I’ve also gotten funding from NIJ and worked on a USDA collaborative multistate grant for farmers who want to design field trials to optimize profitability.</p>
+<p>So, with that overview out of the way, I want to talk today about statistical forensics. The graphics research is interesting and fun, but I had to choose, and the forensics work is more AI connected and is also very cool.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section></section>
 <section>
 <section id="forensics-history" class="title-slide slide level1 center" data-background-image="../images/dna.jpg" data-background-opacity="50%" data-background-size="cover">
@@ -300,116 +380,29 @@ Susan Vanderplas
           display:block!important;
       }</style></aside>
 </section>
-<section id="nas-report-2009" class="slide level2">
-<h2>NAS Report (2009)</h2>
-<p><span class="emph red" style="position:absolute;top:60px;">(National Academy of Science)</span></p>
+<section id="forensics-under-fire" class="slide level2 smaller">
+<h2>Forensics under Fire</h2>
 <div class="columns">
-<div class="column" style="width:30%;">
+<div class="column" style="width:20%;">
 <p><a href="../images/NAS-screenshot.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6"><img data-src="../images/NAS-screenshot.png" alt="Cover of the 2009 NAS report. PDF at https://www.ojp.gov/pdffiles1/nij/grants/228091.pdf"></a></p>
-</div><div class="column" style="width:70%;">
-<ul>
-<li class="fragment"><p>Senate commissioned in 2005</p></li>
-<li class="fragment"><p>Focus areas:</p>
-<ul>
-<li class="fragment">fundamentals of scientific method in forensics</li>
-<li class="fragment">error rates for collection and analysis of forensic data</li>
-<li class="fragment">use of forensic evidence in litigation</li>
-</ul></li>
-<li class="fragment"><p>Important questions:</p>
-<ul>
-<li class="fragment">Are disciplines scientifically reliable?</li>
-<li class="fragment">How subjective/biased are methods?</li>
-</ul></li>
-</ul>
-</div></div>
-<aside class="notes">
-<p>The NAS report focused on the use of science in forensics, how we know (or don’t know) what error rates are for forensic methods, and how forensic evidence is used in court.</p>
-<p>Primary concerns included whether disciplines are based on reliable scientific foundations, and whether practitioner bias could affect the results of the forensic comparisons.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="nas-report-2009-1" class="slide level2">
-<h2>NAS Report (2009)</h2>
-<div class="columns">
-<div class="column" style="width:30%;">
-<p><a href="../images/NAS-screenshot.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7"><img data-src="../images/NAS-screenshot.png" alt="Cover of the 2009 NAS report. PDF at https://www.ojp.gov/pdffiles1/nij/grants/228091.pdf"></a></p>
-</div><div class="column" style="width:70%;">
-<h3 id="recommendations"><span class="emph red">Recommendations</span></h3>
-<p><strong>Create a National Institute of Forensic Science</strong> to manage</p>
-<ul>
-<li>accreditation,</li>
-<li>federal/state/local jurisdiction differences,</li>
-<li>standard reporting language.</li>
-</ul>
-<p><strong>Fund research</strong> on forensic methods:</p>
-<ul>
-<li>reliability, accuracy, validity</li>
-<li>automation &amp; objective methods</li>
-<li>uncertainty quantification</li>
-</ul>
-</div></div>
-<aside class="notes">
-<p>The NAS report suggested creating a national institute of forensic science. This institute is supposed to be separate from the department of justice, because the DOJ is pretty biased towards law enforcement, and during the DNA wars, they actually had people testifying that DNA was unreliable followed, audited by the IRS, and so on.</p>
-<p>The NAS report also recommended that the NIFS fund research on method validity - again, something that shouldn’t come from the DOJ because they generally only fund things that seem likely to be positive about the validity of methods. The NAS report also highlighted the importance of error rates, considering quality of evidence, and understanding the uncertainty of the conclusions of forensic analyses. Finally, the NAS report suggested the importance of research into automated techniques capable of enhancing forensic assessments.</p>
-<p>We’ll come back to these recommendations in a bit. The NAS report came out in 2009, and the forensic scandals continued, but the recommended national institute of forensic science never came to be.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="pcast-report-2016" class="slide level2">
-<h2>PCAST Report (2016)</h2>
-<p><span class="emph red" style="position:absolute;top:60px">President’s Council of Advisors on Science and Technology</span></p>
-<div class="columns">
-<div class="column" style="width:30%;">
-<p><a href="../images/pcast-screenshot.png" class="lightbox" data-gallery="quarto-lightbox-gallery-8"><img data-src="../images/pcast-screenshot.png" alt="Screenshot of cover page of PCAST report; pdf available at https://obamawhitehouse.archives.gov/sites/default/files/microsites/ostp/PCAST/pcast_forensic_science_report_final.pdf"></a></p>
-</div><div class="column smaller" style="width:70%;">
-<blockquote>
-<p>Judges’ decisions about the admissibility of scientific evidence rest solely on <strong>legal standards</strong>; they are exclusively the province of the courts and PCAST does not opine on them. But, these decisions require making determinations about scientific validity. It is the proper province of the <strong>scientific community</strong> to provide guidance concerning scientific <strong>standards for scientific validity</strong>.</p>
-</blockquote>
-</div></div>
+<p><a href="../images/pcast-screenshot.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7"><img data-src="../images/pcast-screenshot.png" alt="Screenshot of cover page of PCAST report; pdf available at https://obamawhitehouse.archives.gov/sites/default/files/microsites/ostp/PCAST/pcast_forensic_science_report_final.pdf"></a></p>
+</div><div class="column" style="width:10%;">
 
-<aside><div>
-<p>The <a href="https://obamawhitehouse.archives.gov/sites/default/files/microsites/ostp/PCAST/pcast_forensic_science_report_final.pdf">Executive Summary</a> is an excellent read.</p>
-</div></aside></section>
-<section id="pcast-report-2016-1" class="slide level2">
-<h2>PCAST Report (2016)</h2>
-<div class="columns">
-<div class="column" style="width:30%;">
-<p><a href="../images/pcast-screenshot.png" class="lightbox" data-gallery="quarto-lightbox-gallery-9"><img data-src="../images/pcast-screenshot.png" alt="Screenshot of cover page of PCAST report; pdf available at https://obamawhitehouse.archives.gov/sites/default/files/microsites/ostp/PCAST/pcast_forensic_science_report_final.pdf"></a></p>
-</div><div class="column smaller" style="width:70%;">
-<p><span class="emph">Requirements for Scientific Validity</span></p>
+</div><div class="column" style="width:60%;">
 <ul>
-<li>Empirical testing by
+<li class="fragment"><p>Scientific underpinnings</p></li>
+<li class="fragment"><p>Empirical error rates</p>
 <ul>
-<li>multiple lab groups</li>
-<li>under casework like conditions,</li>
-<li>demonstrating that the method is <strong>repeatable</strong> and <strong>reproducible</strong> and</li>
-<li>providing estimates of the method’s accuracy</li>
+<li class="fragment">Well designed studies</li>
+<li class="fragment">Representative of casework</li>
+<li class="fragment">Accuracy, Repeatability, Reproducibility</li>
 </ul></li>
-<li><strong>subjective</strong> disciplines
+<li class="fragment"><p>Subjective methods – special concerns</p>
 <ul>
-<li>evaluated as a “black box” in the examiner’s head.</li>
-<li>Studies: many examiners render decisions about many independent tests.</li>
+<li class="fragment">Testing issues</li>
+<li class="fragment">Potential for bias</li>
 </ul></li>
 </ul>
-<p>Without estimates of accuracy, an examiner’s decision is <span class="emph cerulean">scientifically meaningless</span>: it has no probative value, and considerable potential for prejudicial impact.</p>
 </div></div>
 </section>
 <section id="current-status-of-forensic-disciplines" class="slide level2">
@@ -443,24 +436,22 @@ Susan Vanderplas
 </tr>
 <tr class="even">
 <td>🧬</td>
-<td>DNA (mix)</td>
+<td>DNA mixture</td>
 <td>🧪+🔎</td>
-<td>❓<br>
-✅<sup>1</sup></td>
-<td>📖📖<br>
-📖</td>
+<td>❓</td>
+<td>📖📖</td>
 </tr>
 <tr class="odd">
 <td>🫆</td>
 <td>Fingerprint</td>
 <td>🔎 💻</td>
-<td>✅<sup>2</sup></td>
+<td>✅<sup>1</sup></td>
 <td>📚</td>
 </tr>
 <tr class="even">
 <td>🔫</td>
 <td>Firearms</td>
-<td>🔎 💻<sup>3</sup></td>
+<td>🔎 💻<sup>2</sup></td>
 <td>❓</td>
 <td>📖</td>
 </tr>
@@ -469,7 +460,7 @@ Susan Vanderplas
 <td>Footwear</td>
 <td>🔎</td>
 <td>❓</td>
-<td>❓</td>
+<td></td>
 </tr>
 <tr class="even">
 <td>🦱</td>
@@ -524,18 +515,344 @@ Susan Vanderplas
 <td>🚩</td>
 <td>Invalid</td>
 </tr>
-<tr class="odd">
-<td>📚</td>
-<td>Many Studies</td>
-</tr>
-<tr class="even">
-<td>📖</td>
-<td>Some Studies</td>
-</tr>
 </tbody>
 </table>
 </div></div>
-<aside><ol class="aside-footnotes"><li id="fn1"><p>In some situations</p></li><li id="fn2"><p>high error rate</p></li><li id="fn3"><p>Algorithms not used in lab practice</p></li></ol></aside></section></section>
+<aside><ol class="aside-footnotes"><li id="fn1"><p>high error rate</p></li><li id="fn2"><p>Algorithms not used in practice</p></li></ol></aside></section></section>
+<section>
+<section id="shoes" class="title-slide slide level1 center">
+<h1>Shoes and Shape Identification<br><span class="fragment emph blue">Computer <span class="math inline">\(\neq\)</span> Human Vision</span></h1>
+<aside class="notes">
+<p>I’m going to start with the first project I worked on in forensics – one I still haven’t completed.</p>
+<p>The reason I’m including this story is to both demonstrate that I’m working in “AI” and also that it’s really important to understand the fundamentals of how these algorithms work so that when they unexpectedly don’t do anything you want them to do, you can at least hopefully figure out why.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="shoe-problems" class="slide level2">
+<h2>Shoe Problems</h2>
+<div class="columns">
+<div class="column" style="width:25%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="../images/snow-boots.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-8" title="Geographical Variation"><img data-src="../images/snow-boots.jpg" alt="A picture of snow boots in the snow"></a></p>
+<figcaption>Geographical Variation</figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:5%;">
+
+</div><div class="column fragment" style="width:30%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="../images/shoe-patterns.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-9" title="Similar patterns, different shoes"><img data-src="../images/shoe-patterns.jpg" alt="The bottom of 3 different brands of shoes, showing that each has a similar shoe sole"></a></p>
+<figcaption>Similar patterns, different shoes</figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:5%;">
+
+</div><div class="column fragment" style="width:30%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="../images/coincidental-match.png" class="lightbox" data-gallery="quarto-lightbox-gallery-10" title="What is the evidentiary value?"><img data-src="../images/coincidental-match.png" alt="A picture of a shoe print and a partial print that is much messier next to it"></a></p>
+<figcaption>What is the evidentiary value?</figcaption>
+</figure>
+</div>
+</div></div>
+<aside class="notes">
+<p>So let me set the stage: shoe prints aren’t used in the US much in part because they are hard to work with and require collection training. They’re more commonly used in the UK and Israel.</p>
+<p>And shoes vary a lot geographically - y’all have boots for winter, Floridians have sneakers.</p>
+<p>In addition, there’s not a database of shoes, and lots of different shoes have similar patterns.</p>
+<p>So when there is something found at a crime scene, even if you can find a “match” for that evidence, you then are faced with “what does it mean?” – if it’s a rare shoe, then it might be important, but if it’s a print from Uggs in the winter in a college town, maybe not.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="local-shoe-features" class="slide level2">
+<h2>Local Shoe Features</h2>
+<div class="columns">
+<div class="column">
+<p><a href="../images/2021-June-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-11"><img data-src="../images/2021-June-1.png" alt="An image of a person walking across a shoe scanner prototype."></a></p>
+</div><div class="column">
+<ol type="1">
+<li><p>Identify relevant features within the scans</p></li>
+<li><p>Define a similarity metric for shoe images based on shapes and locations</p></li>
+<li><p>Assess the frequency of similar shoes in the sampled data</p></li>
+</ol>
+</div></div>
+<aside class="notes">
+<p>So, we decided to attack this problem by collecting data – first, I worked with some engineers to design a shoe scanner that could be embedded in the sidewalk, but Iowa State wasn’t keen on us digging up sidewalks to test it, so we made ramps.</p>
+<p>The goal was to take pictures of people’s shoe soles (just the bit in contact with the surface) and then parse that data using computer vision models.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="computer-vision-is-awesome" class="slide level2">
+<h2>2018: Computer Vision is Awesome!</h2>
+<div class="columns">
+<div class="column" style="width:30%;">
+<p><a href="../images/tasks_2x.png" class="lightbox" data-gallery="quarto-lightbox-gallery-12"><img data-src="../images/tasks_2x.png" alt="[Ponytail sitting at a computer with Cueball standing behind her.] Cueball: When a user takes a photo, the app should check whether they're in a national park... Ponytail: Sure, easy GIS lookup. Gimme a few hours. Cueball: ...and check whether the photo is of a bird. Ponytail: I'll need a research team and five years. [Caption below the panel:] In CS, it can be hard to explain the difference between the easy and the virtually impossible."></a></p>
+</div><div class="column smaller" style="width:60%;">
+<ul>
+<li><p>2010s - Computer Vision models start actually solving problems!</p></li>
+<li><p>~2018 - Birds, plant species are all ID-able using apps!</p></li>
+</ul>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><a href="../images/asian-elephant.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-13"><img data-src="../images/asian-elephant.jpg"></a></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><a href="../images/african-elephant.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-14"><img data-src="../images/african-elephant.jpg"></a></p>
+</div>
+</div>
+</div>
+<p><span class="fragment emph cerulean">Computer vision models can identify shapes, right?</span></p>
+</div></div>
+</section>
+<section id="complication-different-cv-models" class="slide level2">
+<h2>Complication: Different CV Models</h2>
+<p>We can reasonably pose this problem in 3 different ways:</p>
+<div class="quarto-layout-panel" data-layout-ncol="3">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="../images/classification-shoe-example.png" class="lightbox" data-gallery="quarto-lightbox-gallery-15" title="Classification: same-size regions + labels"><img data-src="../images/classification-shoe-example.png" alt="A shoe sole overlaid with a grid, with each square labeled with a relevant category."></a></p>
+<figcaption>Classification: same-size regions + labels</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="../images/obj-detection-shoe-example.png" class="lightbox" data-gallery="quarto-lightbox-gallery-16" title="Object Detection: bounding box + label"><img data-src="../images/obj-detection-shoe-example.png" alt="An object detection labeling system with each shape labeled with its own rectangular bounding box"></a></p>
+<figcaption>Object Detection: bounding box + label</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="../images/segmentation-shoe-example.png" class="lightbox" data-gallery="quarto-lightbox-gallery-17" title="Image segmentation: region + label"><img data-src="../images/segmentation-shoe-example.png" alt="An image segmentation version of a shoe, with each feature painted."></a></p>
+<figcaption>Image segmentation: region + label</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<ul>
+<li class="fragment">Each method requires a different labeling schema, annotation method, and data format.</li>
+<li class="fragment">Switching between them is annoying.</li>
+</ul>
+</section>
+<section id="attempt-1-vgg16" class="slide level2">
+<h2>Attempt #1: VGG16</h2>
+<table class="smaller">
+<thead>
+<tr>
+<th style="width:30%">
+Bowtie
+</th>
+<th style="width:30%">
+Chevron
+</th>
+<th style="width:30%">
+Circle
+</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>
+<img src="../images/class_examples/bowtie_examples.png" alt="Bowtie examples">
+</td>
+<td>
+<img src="../images/class_examples/chevron_examples.png" alt="Chevron examples">
+</td>
+<td>
+<img src="../images/class_examples/circle_examples.png" alt="Circle examples">
+</td>
+</tr>
+<tr>
+<th>
+Line
+</th>
+<th>
+Polygon
+</th>
+<th>
+Quadrilateral
+</th>
+</tr>
+<tr>
+<td>
+<img src="../images/class_examples/line_examples.png" alt="Line examples">
+</td>
+<td>
+<img src="../images/class_examples/polygon_examples.png" alt="Polygon examples">
+</td>
+<td>
+<img src="../images/class_examples/quad_examples.png" alt="Quadrilateral examples">
+</td>
+</tr>
+<tr>
+<th>
+Star
+</th>
+<th>
+Text
+</th>
+<th>
+Triangle
+</th>
+</tr>
+<tr>
+<td>
+<img src="../images/class_examples/star_examples.png" alt="Star examples">
+</td>
+<td>
+<img src="../images/class_examples/text_examples.png" alt="Text examples">
+</td>
+<td>
+<img src="../images/class_examples/triangle_examples.png" alt="Triangle examples">
+</td>
+</tr>
+</tbody></table>
+</section>
+<section id="attempt-1-vgg16-1" class="slide level2">
+<h2>Attempt #1: VGG16</h2>
+<p><a href="../images/ConfMatrix-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-18"><img data-src="../images/ConfMatrix-1.png" style="width:60.0%" alt="A confusion matrix for the Multi-class shape recognition model"></a></p>
+</section>
+<section id="attempt-1-vgg16-2" class="slide level2">
+<h2>Attempt #1: VGG16</h2>
+<p><a href="../images/class-roc-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-19"><img data-src="../images/class-roc-1.png" alt="ROC curves for class models"></a></p>
+</section>
+<section id="attempt-2-synthetic-data" class="slide level2">
+<h2>Attempt #2: Synthetic Data</h2>
+<p>Can CNNs even distinguish between different shapes?</p>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="../images/Synthetic-Images.png" class="lightbox" data-gallery="quarto-lightbox-gallery-20" title="Class Examples"><img data-src="../images/Synthetic-Images.png" class="quarto-figure quarto-figure-center" alt="Synthetically generated class examples of stars and 3- to 9- gons, plus circles"></a></p>
+</figure>
+</div>
+<figcaption>Class Examples</figcaption>
+</figure>
+</div>
+</section>
+<section id="attempt-2-synthetic-data-1" class="slide level2">
+<h2>Attempt #2: Synthetic Data</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="../images/ConfMatrix2-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-21"><img data-src="../images/ConfMatrix2-1.png" class="quarto-figure quarto-figure-center" style="width:50.0%"></a></p>
+</figure>
+</div>
+</section>
+<section id="attempt-2-synthetic-data-2" class="slide level2">
+<h2>Attempt #2: Synthetic Data</h2>
+<table class="caption-top" style="width:100%;">
+<colgroup>
+<col style="width: 10%">
+<col style="width: 10%">
+<col style="width: 10%">
+<col style="width: 10%">
+<col style="width: 10%">
+<col style="width: 10%">
+<col style="width: 10%">
+<col style="width: 10%">
+<col style="width: 10%">
+<col style="width: 10%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Image</th>
+<th>Circle</th>
+<th>3</th>
+<th>4</th>
+<th>5</th>
+<th>6</th>
+<th>7</th>
+<th>8</th>
+<th>9</th>
+<th>Star</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><img data-src="../images/spiral.png" class="quarto-figure quarto-figure-center" style="width:80.0%"></td>
+<td>.9999</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr class="even">
+<td><img data-src="../images/sqircle.png" class="quarto-figure quarto-figure-center" style="width:80.0%"></td>
+<td>.9999</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<div class="fragment">
+<ul>
+<li><p>Shoe data is complicated to label</p></li>
+<li><p>Predictions made on ambiguous data don’t work as well as we’d like</p></li>
+</ul>
+</div>
+</section>
+<section id="why-doesnt-this-work" class="slide level2">
+<h2>Why Doesn’t This Work?</h2>
+<ul>
+<li>Moravec’s Paradox:</li>
+</ul>
+<blockquote>
+<p>It is comparatively easy to make computers exhibit adult level performance on intelligence tests or playing checkers, and difficult or impossible to give them the skills of a one-year-old when it comes to perception and mobility.</p>
+</blockquote>
+</section>
+<section id="why-doesnt-this-work-1" class="slide level2">
+<h2>Why Doesn’t This Work?</h2>
+<ul>
+<li class="fragment"><p>Computer vision models don’t have Gestalt perception</p></li>
+<li class="fragment"><p>Shapes are a great feature set for humans<br>
+<span class="emph fragment darkgreen">maybe not a great feature base for computer vision models?</span></p></li>
+<li class="fragment"><p>It’s important to understand the model’s limitations</p></li>
+</ul>
+</section></section>
 <section>
 <section id="bullets" class="title-slide slide level1 center" data-background-image="../images/bulletxtrctr-cmcr-hex.png" data-background-position="right" data-background-size="30%">
 <h1>Firearms &amp; Toolmarks<br><span class="emph darkred">Feature Engineering &amp;</span><br><span class="emph darkred">Human Perception</span></h1>
@@ -565,15 +882,20 @@ Susan Vanderplas
 </section>
 <section id="firearms-toolmark-examination" class="slide level2">
 <h2>Firearms &amp; Toolmark Examination</h2>
-<p><a href="../images/bullet_firing_short.gif" class="lightbox" data-gallery="quarto-lightbox-gallery-10"><img data-src="../images/bullet_firing_short.gif" style="width:100.0%" alt="A gif of a bullet being fired from a gun. The firing pin hits the back of the cartridge case primer. The gif pivots to a cross section through the cartridge to see the powder ignition. The copper bullet then separates from the cartridge due to gas expansion and spins through the rifling before being ejected."></a></p>
+<p><a href="../images/bullet_firing_short.gif" class="lightbox" data-gallery="quarto-lightbox-gallery-22"><img data-src="../images/bullet_firing_short.gif" style="width:100.0%" alt="A gif of a bullet being fired from a gun. The firing pin hits the back of the cartridge case primer. The gif pivots to a cross section through the cartridge to see the powder ignition. The copper bullet then separates from the cartridge due to gas expansion and spins through the rifling before being ejected."></a></p>
 </section>
 <section id="firearms-toolmark-examination-1" class="slide level2">
 <h2>Firearms &amp; Toolmark Examination</h2>
-<p><a href="../images/Bullet.png" class="lightbox" data-gallery="quarto-lightbox-gallery-11"><img data-src="../images/Bullet.png" style="width:50.0%" alt="A fired bullet with lands and grooves due to the rifling."></a></p>
-</section>
-<section id="firearms-toolmark-examination-2" class="slide level2">
-<h2>Firearms &amp; Toolmark Examination</h2>
-<p><a href="../images/ComparisonMicroscope.png" class="lightbox" data-gallery="quarto-lightbox-gallery-12"><img data-src="../images/ComparisonMicroscope.png" alt="A comparison microscope with a close-up of the split viewfinder showing two aligned bullet segments."></a></p>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><a href="../images/Bullet.png" class="lightbox" data-gallery="quarto-lightbox-gallery-23"><img data-src="../images/Bullet.png" alt="A fired bullet with lands and grooves due to the rifling."></a></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><a href="../images/ComparisonMicroscope.png" class="lightbox" data-gallery="quarto-lightbox-gallery-24"><img data-src="../images/ComparisonMicroscope.png" alt="A comparison microscope with a close-up of the split viewfinder showing two aligned bullet segments."></a></p>
+</div>
+</div>
+</div>
 </section>
 <section id="building-a-data-pipeline" class="slide level2">
 <h2>Building a Data Pipeline</h2>
@@ -586,7 +908,7 @@ Susan Vanderplas
 <li>nested <code>tibble</code>s to keep data organized</li>
 </ul></li>
 </ol>
-<p><a href="../images/houston3AQ-bullet1-land2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-13"><img data-src="../images/houston3AQ-bullet1-land2.png" class="fragment" alt="A screenshot of a rendered bullet land engraved area."></a></p>
+<p><a href="../images/houston3AQ-bullet1-land2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-25"><img data-src="../images/houston3AQ-bullet1-land2.png" class="fragment" alt="A screenshot of a rendered bullet land engraved area."></a></p>
 </section>
 <section id="building-a-data-processing-pipeline" class="slide level2">
 <h2>Building a Data Processing Pipeline</h2>
@@ -594,7 +916,7 @@ Susan Vanderplas
 <li>Wrangle scans with <code>x3ptools</code></li>
 <li>Find a good “crosscut” <span class="emph darkgreen fragment">-&gt; reduce to 1 dimensional data</span></li>
 </ol>
-<p><a href="../images/houston3AQ-bullet1-land2-crosscut.png" class="lightbox" data-gallery="quarto-lightbox-gallery-14"><img data-src="../images/houston3AQ-bullet1-land2-crosscut.png" class="fragment" alt="A screenshot of a rendered bullet land engraved area with the crosscut marked across the bottom in silver."></a></p>
+<p><a href="../images/houston3AQ-bullet1-land2-crosscut.png" class="lightbox" data-gallery="quarto-lightbox-gallery-26"><img data-src="../images/houston3AQ-bullet1-land2-crosscut.png" class="fragment" alt="A screenshot of a rendered bullet land engraved area with the crosscut marked across the bottom in silver."></a></p>
 </section>
 <section id="building-a-data-processing-pipeline-1" class="slide level2">
 <h2>Building a Data Processing Pipeline</h2>
@@ -606,7 +928,7 @@ Susan Vanderplas
 <div class="cell-output-display">
 <div>
 <figure>
-<p><a href="index_files/figure-revealjs/crosscut-facet-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-15"><img data-src="index_files/figure-revealjs/crosscut-facet-1.png" width="3750"></a></p>
+<p><a href="index_files/figure-revealjs/crosscut-facet-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-27"><img data-src="index_files/figure-revealjs/crosscut-facet-1.png" width="3750"></a></p>
 </figure>
 </div>
 </div>
@@ -624,7 +946,7 @@ Susan Vanderplas
 <div class="cell-output-display">
 <div>
 <figure>
-<p><a href="index_files/figure-revealjs/unnamed-chunk-2-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-16"><img data-src="index_files/figure-revealjs/unnamed-chunk-2-1.png" width="960"></a></p>
+<p><a href="index_files/figure-revealjs/crosscut-facet-grooves-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-28"><img data-src="index_files/figure-revealjs/crosscut-facet-grooves-1.png" width="3750"></a></p>
 </figure>
 </div>
 </div>
@@ -642,7 +964,7 @@ Susan Vanderplas
 <div class="cell-output-display">
 <div>
 <figure>
-<p><a href="index_files/figure-revealjs/unnamed-chunk-3-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-17"><img data-src="index_files/figure-revealjs/unnamed-chunk-3-1.png" width="960"></a></p>
+<p><a href="index_files/figure-revealjs/signature-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-29"><img data-src="index_files/figure-revealjs/signature-1.png" width="3750"></a></p>
 </figure>
 </div>
 </div>
@@ -661,7 +983,7 @@ Susan Vanderplas
 <div class="cell-output-display">
 <div>
 <figure>
-<p><a href="index_files/figure-revealjs/unnamed-chunk-4-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-18"><img data-src="index_files/figure-revealjs/unnamed-chunk-4-1.png" width="960"></a></p>
+<p><a href="index_files/figure-revealjs/alignment-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-30"><img data-src="index_files/figure-revealjs/alignment-1.png" width="3750"></a></p>
 </figure>
 </div>
 </div>
@@ -680,22 +1002,22 @@ Susan Vanderplas
 <div class="cell quarto-layout-panel" data-layout-ncol="6">
 <div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 16.7%;justify-content: center;">
-<p><a href="index_files/figure-revealjs/bullet-features-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-19"><img data-src="index_files/figure-revealjs/bullet-features-1.png" width="384"></a></p>
+<p><a href="index_files/figure-revealjs/bullet-features-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-31"><img data-src="index_files/figure-revealjs/bullet-features-1.png" width="384"></a></p>
 </div>
 <div class="quarto-layout-cell" style="flex-basis: 16.7%;justify-content: center;">
-<p><a href="index_files/figure-revealjs/bullet-features-2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-20"><img data-src="index_files/figure-revealjs/bullet-features-2.png" width="384"></a></p>
+<p><a href="index_files/figure-revealjs/bullet-features-2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-32"><img data-src="index_files/figure-revealjs/bullet-features-2.png" width="384"></a></p>
 </div>
 <div class="quarto-layout-cell" style="flex-basis: 16.7%;justify-content: center;">
-<p><a href="index_files/figure-revealjs/bullet-features-3.png" class="lightbox" data-gallery="quarto-lightbox-gallery-21"><img data-src="index_files/figure-revealjs/bullet-features-3.png" width="384"></a></p>
+<p><a href="index_files/figure-revealjs/bullet-features-3.png" class="lightbox" data-gallery="quarto-lightbox-gallery-33"><img data-src="index_files/figure-revealjs/bullet-features-3.png" width="384"></a></p>
 </div>
 <div class="quarto-layout-cell" style="flex-basis: 16.7%;justify-content: center;">
-<p><a href="index_files/figure-revealjs/bullet-features-4.png" class="lightbox" data-gallery="quarto-lightbox-gallery-22"><img data-src="index_files/figure-revealjs/bullet-features-4.png" width="384"></a></p>
+<p><a href="index_files/figure-revealjs/bullet-features-4.png" class="lightbox" data-gallery="quarto-lightbox-gallery-34"><img data-src="index_files/figure-revealjs/bullet-features-4.png" width="384"></a></p>
 </div>
 <div class="quarto-layout-cell" style="flex-basis: 16.7%;justify-content: center;">
-<p><a href="index_files/figure-revealjs/bullet-features-5.png" class="lightbox" data-gallery="quarto-lightbox-gallery-23"><img data-src="index_files/figure-revealjs/bullet-features-5.png" width="384"></a></p>
+<p><a href="index_files/figure-revealjs/bullet-features-5.png" class="lightbox" data-gallery="quarto-lightbox-gallery-35"><img data-src="index_files/figure-revealjs/bullet-features-5.png" width="384"></a></p>
 </div>
 <div class="quarto-layout-cell" style="flex-basis: 16.7%;justify-content: center;">
-<p><a href="index_files/figure-revealjs/bullet-features-6.png" class="lightbox" data-gallery="quarto-lightbox-gallery-24"><img data-src="index_files/figure-revealjs/bullet-features-6.png" width="384"></a></p>
+<p><a href="index_files/figure-revealjs/bullet-features-6.png" class="lightbox" data-gallery="quarto-lightbox-gallery-36"><img data-src="index_files/figure-revealjs/bullet-features-6.png" width="384"></a></p>
 </div>
 </div>
 </div>
@@ -718,7 +1040,7 @@ Susan Vanderplas
 <div class="cell-output-display">
 <div>
 <figure>
-<p><a href="index_files/figure-revealjs/unnamed-chunk-5-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-25"><img data-src="index_files/figure-revealjs/unnamed-chunk-5-1.png" style="width:100.0%"></a></p>
+<p><a href="index_files/figure-revealjs/unnamed-chunk-2-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-37"><img data-src="index_files/figure-revealjs/unnamed-chunk-2-1.png" style="width:100.0%"></a></p>
 </figure>
 </div>
 </div>
@@ -728,33 +1050,28 @@ Susan Vanderplas
 <section id="important-features" class="slide level2">
 <h2>Important Features</h2>
 <ul>
-<li><p>Every part of the processing pipeline has diagnostics</p>
+<li class="fragment"><p>Every part of the processing pipeline has diagnostics</p>
 <ul>
-<li>Design for human-in-the-loop processing</li>
-<li>Explainability matters!</li>
+<li class="fragment">Design for human-in-the-loop processing</li>
+<li class="fragment">Explainability matters!</li>
 </ul></li>
-<li><p>Need smart defaults + ability to override</p></li>
-<li><p>Most features engineered to correspond to visual signals used by examiners</p>
+<li class="fragment"><p>Need smart defaults + ability to override</p></li>
+<li class="fragment"><p>Most features engineered to correspond to visual signals used by examiners</p>
 <ul>
-<li>Boosts signal in random forest</li>
-<li>Cross-correlation is usually “good enough”</li>
+<li class="fragment">Boosts signal in random forest</li>
+<li class="fragment">Cross-correlation is usually “good enough”</li>
 </ul></li>
 </ul>
 </section></section>
-<section id="shoes" class="title-slide slide level1 center">
-<h1>Shoes and Shape Identification<br><span class="fragment emph blue">Computer <span class="math inline">\(\neq\)</span> Human Vision</span></h1>
-
-</section>
-
 <section>
 <section id="wire-cuts" class="title-slide slide level1 center">
 <h1>Wire Cuts and Multiple Comparisons</h1>
 
 </section>
-<section id="hidden-multiple-comparisons-increase-forensic-error-rates" class="slide level2">
+<section id="hidden-multiple-comparisons-increase-forensic-error-rates" class="slide level2 smaller">
 <h2>Hidden Multiple Comparisons Increase Forensic Error Rates</h2>
 <p>Proceedings of the National Academy of Sciences, 2024</p>
-<p><span class="emph">Joint work with</span> <span class="darkorange"><strong>Heike Hofmann</strong></span> and <span class="darkpurple"><strong>Alicia Carriquiry</strong></span></p>
+<p><span class="emph">Joint work with <span class="darkorange"><strong>Heike Hofmann</strong></span> and <span class="darkpurple"><strong>Alicia Carriquiry</strong></span></span></p>
 <div class="columns">
 <div class="column vcenter" style="width:30%;">
 <div id="" class="qrcode"></div>
@@ -770,26 +1087,29 @@ Susan Vanderplas
 <p>PNAS Paper Link</p>
 </div><div class="column vcenter" style="width:10%;">
 
-</div><div class="column vcenter tiny" style="width:60%;">
+</div><div class="column vcenter smaller" style="width:60%;">
 <p>This work was partially funded by the Center for Statistics and Applications in Forensic Evidence (CSAFE) through Cooperative Agreements 70NANB15H176 and 70NANB20H019 between NIST and Iowa State University, which includes activities carried out at Carnegie Mellon University, Duke University, University of California Irvine, University of Virginia, West Virginia University, University of Pennsylvania, Swarthmore College and University of Nebraska, Lincoln.</p>
 </div></div>
 </section>
 <section id="toolmark-examination-primer" class="slide level2">
 <h2>Toolmark Examination Primer</h2>
-<div class="quarto-layout-panel" data-layout="[[70,30],[100]]">
+<div class="quarto-layout-panel" data-layout="[[60,-10, 30],[100]]">
 <div class="quarto-layout-row quarto-layout-valign-bottom">
-<div class="quarto-layout-cell" style="flex-basis: 70.0%;justify-content: flex-start;">
+<div class="quarto-layout-cell" style="flex-basis: 60.0%;justify-content: flex-start;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><a href="../images/wire_cutter.png" class="lightbox" data-gallery="quarto-lightbox-gallery-26" title="CAT5 crimper with wire cutter"><img data-src="../images/wire_cutter.png" alt="CAT5 crimper with wire cutter"></a></p>
+<p><a href="../images/wire_cutter.png" class="lightbox" data-gallery="quarto-lightbox-gallery-38" title="CAT5 crimper with wire cutter"><img data-src="../images/wire_cutter.png" alt="CAT5 crimper with wire cutter"></a></p>
 <figcaption>CAT5 crimper with wire cutter</figcaption>
 </figure>
 </div>
 </div>
+<div class="quarto-figure-spacer quarto-layout-cell" style="flex-basis: 10.0%;justify-content: flex-start;">
+<p>&nbsp;</p>
+</div>
 <div class="quarto-layout-cell" style="flex-basis: 30.0%;justify-content: flex-start;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><a href="../images/razor_wire_cut_sizes_ann.png" class="lightbox" data-gallery="quarto-lightbox-gallery-27" title="Cut wires"><img data-src="../images/razor_wire_cut_sizes_ann.png" alt="Cut wires"></a></p>
+<p><a href="../images/razor_wire_cut_sizes_ann.png" class="lightbox" data-gallery="quarto-lightbox-gallery-39" title="Cut wires"><img data-src="../images/razor_wire_cut_sizes_ann.png" alt="Cut wires"></a></p>
 <figcaption>Cut wires</figcaption>
 </figure>
 </div>
@@ -799,7 +1119,7 @@ Susan Vanderplas
 <div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: flex-start;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><a href="../images/Blade-Wire-Cut-Scan-Render.png" class="lightbox" data-gallery="quarto-lightbox-gallery-28" title="Digital scan of blade cut and wire cut"><img data-src="../images/Blade-Wire-Cut-Scan-Render.png" alt="Digital scan of blade cut and wire cut"></a></p>
+<p><a href="../images/Blade-Wire-Cut-Scan-Render.png" class="lightbox" data-gallery="quarto-lightbox-gallery-40" title="Digital scan of blade cut and wire cut"><img data-src="../images/Blade-Wire-Cut-Scan-Render.png" alt="Digital scan of blade cut and wire cut"></a></p>
 <figcaption>Digital scan of blade cut and wire cut</figcaption>
 </figure>
 </div>
@@ -807,7 +1127,7 @@ Susan Vanderplas
 </div>
 </div>
 <div class="fragment">
-<p><span class="emph meddarkblue large">How do we know this method is valid?</span></p>
+<p><span class="emph meddarkblue large">How do we know wire comparison is valid?</span></p>
 </div>
 </section>
 <section id="a-specific-case-jimmy-genrich" class="slide level2">
@@ -815,10 +1135,10 @@ Susan Vanderplas
 <div class="quarto-layout-panel" data-layout-ncol="2">
 <div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<p><a href="../images/TheNation20180226-Genrich.png" class="lightbox" data-gallery="quarto-lightbox-gallery-29"><img data-src="../images/TheNation20180226-Genrich.png" alt="A screenshot of an article by Meehan Crist and Tim Requarth from The Nation (Feb 26, 2018 issue). The title reads 'Forensic Science Put Jimmy Genrich in Prison for 24 Years. What if It Wasn’t Science?'. A mugshot is shown below the article title. Article url: https://www.thenation.com/article/archive/the-crisis-of-american-forensics/"></a></p>
+<p><a href="../images/TheNation20180226-Genrich.png" class="lightbox" data-gallery="quarto-lightbox-gallery-41"><img data-src="../images/TheNation20180226-Genrich.png" alt="A screenshot of an article by Meehan Crist and Tim Requarth from The Nation (Feb 26, 2018 issue). The title reads 'Forensic Science Put Jimmy Genrich in Prison for 24 Years. What if It Wasn’t Science?'. A mugshot is shown below the article title. Article url: https://www.thenation.com/article/archive/the-crisis-of-american-forensics/"></a></p>
 </div>
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<p><a href="../images/genrich-tool.png" class="lightbox" data-gallery="quarto-lightbox-gallery-30"><img data-src="../images/genrich-tool.png" alt="The picture shows the edge of a pair of wire cutters along with a microscopically enhanced picture of striations on a cut wire. At trial, the prosecution and its expert witnesses claimed that Mr. Genrich’s generic wire cutters were the only wire cutters in the world that could have made a tiny mark – just 1/100th of an inch long – found on a piece of wire from one of the bombs. The wire cutter surface compared was .6 inches long -- more than 60 times the length of the wire fragment. Image from https://www.colorado.edu/outreach/korey-wise-innocence-project/2021/08/09/jimmy-genrichs-conviction-overturned."></a></p>
+<p><a href="../images/genrich-tool.png" class="lightbox" data-gallery="quarto-lightbox-gallery-42"><img data-src="../images/genrich-tool.png" alt="The picture shows the edge of a pair of wire cutters along with a microscopically enhanced picture of striations on a cut wire. At trial, the prosecution and its expert witnesses claimed that Mr. Genrich’s generic wire cutters were the only wire cutters in the world that could have made a tiny mark – just 1/100th of an inch long – found on a piece of wire from one of the bombs. The wire cutter surface compared was .6 inches long -- more than 60 times the length of the wire fragment. Image from https://www.colorado.edu/outreach/korey-wise-innocence-project/2021/08/09/jimmy-genrichs-conviction-overturned."></a></p>
 </div>
 </div>
 </div>
@@ -839,7 +1159,7 @@ Susan Vanderplas
 <h2>Personal Motivation</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><a href="../images/shop-tools.png" class="lightbox" data-gallery="quarto-lightbox-gallery-31" title="My house has \approx 982 cm of (easily accessible) blade surface which might be used to cut wires. My dad has \approx 2243 cm of blade surface in his shop. No one in either location is a craftsperson."><img data-src="../images/shop-tools.png" style="width:100.0%" alt="An annotated picture of a messy garage, showing all of the tools which could conceivably make striated toolmarks, including visegrips, pliers, bolt cutters, pry bars, electrical tools, razor blades, hammers, tin snips, saws, and more."></a></p>
+<p><a href="../images/shop-tools.png" class="lightbox" data-gallery="quarto-lightbox-gallery-43" title="My house has \approx 982 cm of (easily accessible) blade surface which might be used to cut wires. My dad has \approx 2243 cm of blade surface in his shop. No one in either location is a craftsperson."><img data-src="../images/shop-tools.png" style="width:60.0%" alt="An annotated picture of a messy garage, showing all of the tools which could conceivably make striated toolmarks, including visegrips, pliers, bolt cutters, pry bars, electrical tools, razor blades, hammers, tin snips, saws, and more."></a></p>
 <figcaption>My house has <span class="math inline">\(\approx\)</span> 982 cm of (easily accessible) blade surface which might be used to cut wires. My dad has <span class="math inline">\(\approx\)</span> 2243 cm of blade surface in his shop. No one in either location is a craftsperson.</figcaption>
 </figure>
 </div>
@@ -891,13 +1211,10 @@ Susan Vanderplas
 <li><p><span class="emph darkpurple">Ultimate question</span>:<br>
 What does <span class="math inline">\(e^{(1)}\)</span> need to be for <span class="math inline">\(e^{(N)}\)</span> to be low<sup>1</sup>?</p></li>
 </ul>
-<aside><ol class="aside-footnotes"><li id="fn4"><p>Low enough will be determined by courts⚖️, not statisticians… 🫣</p></li></ol></aside></section>
-<section id="wire-cuts-1" class="slide level2">
-<h2>Wire Cuts</h2>
-</section>
+<aside><ol class="aside-footnotes"><li id="fn3"><p>Low enough will be determined by courts⚖️, not statisticians… 🫣</p></li></ol></aside></section>
 <section id="structural-parameters" class="slide level2">
 <h2>Structural Parameters</h2>
-<p><a href="../images/Surface_Counts.png" class="lightbox" data-gallery="quarto-lightbox-gallery-32"><img data-src="../images/Surface_Counts.png" style="margin-left:auto;margin-right:auto;;width:80.0%" alt="A profile image of the blades of each of four types of tools - wedge-type cuts (guillotine/wire cutters), scissors, pliers, and blades. All but pliers have two cutting surfaces, but the angles of each surface differ. Pliers have 4 cutting surfaces."></a></p>
+<p><a href="../images/Surface_Counts.png" class="lightbox" data-gallery="quarto-lightbox-gallery-44"><img data-src="../images/Surface_Counts.png" style="margin-left:auto;margin-right:auto;;width:80.0%" alt="A profile image of the blades of each of four types of tools - wedge-type cuts (guillotine/wire cutters), scissors, pliers, and blades. All but pliers have two cutting surfaces, but the angles of each surface differ. Pliers have 4 cutting surfaces."></a></p>
 <ul>
 <li><p>Bladed Surfaces: <span class="math inline">\(s \in \{2, 4\}, 1 \leq i \leq s\)</span></p></li>
 <li><p>Cut Surfaces (on one wire): <span class="math inline">\(w \in \{1, 2\}, 1\leq j\leq w\)</span></p></li>
@@ -913,27 +1230,27 @@ What does <span class="math inline">\(e^{(1)}\)</span> need to be for <span clas
 <li><p>Manual alignment: estimate the minimum comparisons</p></li>
 </ul>
 </div><div class="column" style="width:20%;">
-<p><a href="../images/comparison-scope-rearrange.png" class="lightbox" data-gallery="quarto-lightbox-gallery-33"><img data-src="../images/comparison-scope-rearrange.png" style="position:absolute;top:0;right:20px;;width:18.0%" alt="An image of a comparison microscope, which allows viewing two samples simultaneously in order to align them."></a></p>
+<p><a href="../images/comparison-scope-rearrange.png" class="lightbox" data-gallery="quarto-lightbox-gallery-45"><img data-src="../images/comparison-scope-rearrange.png" style="position:absolute;top:0;right:20px;;width:18.0%" alt="An image of a comparison microscope, which allows viewing two samples simultaneously in order to align them."></a></p>
 </div></div>
-<p><a href="../images/number of comparisons.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-34"><img data-src="../images/number of comparisons.svg" style="position:absolute;bottom:0px;left:20px;;width:100.0%" alt="A diagram showing a blade cut (long, thin) with striations compared to a wire cut (semi-circle shape, short) aligned with the blade cut. There are multiple non-overlapping positions along the blade cut where the wire cut could fit, and each is shown with an empty hemisphere."></a></p>
+<p><a href="../images/number of comparisons.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-46"><img data-src="../images/number of comparisons.svg" style="position:absolute;bottom:0px;left:20px;;width:100.0%" alt="A diagram showing a blade cut (long, thin) with striations compared to a wire cut (semi-circle shape, short) aligned with the blade cut. There are multiple non-overlapping positions along the blade cut where the wire cut could fit, and each is shown with an empty hemisphere."></a></p>
 </section>
 <section id="visual-examination-1" class="slide level2">
 <h2>Visual Examination</h2>
-<p><a href="../images/number of comparisons.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-35"><img data-src="../images/number of comparisons.svg" style="position:absolute;top:40%;left:20px;;width:100.0%" alt="A diagram showing a blade cut (long, thin) with striations compared to a wire cut (semi-circle shape, short) aligned with the blade cut. There are multiple non-overlapping positions along the blade cut where the wire cut could fit, and each is shown with an empty hemisphere."></a></p>
+<p><a href="../images/number of comparisons.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-47"><img data-src="../images/number of comparisons.svg" style="position:absolute;top:40%;left:20px;;width:100.0%" alt="A diagram showing a blade cut (long, thin) with striations compared to a wire cut (semi-circle shape, short) aligned with the blade cut. There are multiple non-overlapping positions along the blade cut where the wire cut could fit, and each is shown with an empty hemisphere."></a></p>
 <p>Adj. comparisons are non-overlapping <span class="math inline">\(\Rightarrow\)</span> “independent”<sup>1</sup></p>
-<aside><ol class="aside-footnotes"><li id="fn5"><p>There are peak-valley dependence structures in profile data, but conditioning on tool/material/manufacturing, we would <strong>expect</strong> statistical independence between adjacent comparisons</p></li></ol></aside></section>
+<aside><ol class="aside-footnotes"><li id="fn4"><p>There are peak-valley dependence structures in profile data, but conditioning on tool/material/manufacturing, we would <strong>expect</strong> statistical independence between adjacent comparisons</p></li></ol></aside></section>
 <section id="algorithmic-comparison" class="slide level2">
 <h2>Algorithmic Comparison</h2>
 <p>Scans -&gt; Cross Section -&gt; “Signature”<br>
 (remove gross topology)</p>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><a href="../images/alignment-crop-sm.gif" class="lightbox" data-gallery="quarto-lightbox-gallery-36" title="Cross-correlation is used to align signature from blade cut surface to signature from wire cut surface. Image credit: Heike Hofmann"><img data-src="../images/alignment-crop-sm.gif" alt="An animated gif of a wire cross-section sliding along a composite cross section generated from a blade cut."></a></p>
+<p><a href="../images/alignment-crop-sm.gif" class="lightbox" data-gallery="quarto-lightbox-gallery-48" title="Cross-correlation is used to align signature from blade cut surface to signature from wire cut surface. Image credit: Heike Hofmann"><img data-src="../images/alignment-crop-sm.gif" alt="An animated gif of a wire cross-section sliding along a composite cross section generated from a blade cut."></a></p>
 <figcaption>Cross-correlation is used to align signature from blade cut surface to signature from wire cut surface. Image credit: Heike Hofmann</figcaption>
 </figure>
 </div>
 </section>
-<section id="number-of-comparisons" class="slide level2">
+<section id="number-of-comparisons" class="slide level2 smaller">
 <h2>Number of Comparisons</h2>
 <table class="caption-top">
 <thead>
@@ -1011,7 +1328,7 @@ What does <span class="math inline">\(e^{(1)}\)</span> need to be for <span clas
 <section id="so-how-bad-is-the-problem-2" class="slide level2">
 <h2>So How Bad Is the Problem?</h2>
 <p>To keep the overall false positive rate under 10%…</p>
-<p><a href="../images/table-fpr-family.png" class="lightbox" data-gallery="quarto-lightbox-gallery-37"><img data-src="../images/table-fpr-family.png" alt="A table showing the family wise false discovery rate for N comparisons using several different estimates of striated comparison error rates. When the FDR is 7%, over 50% of 10-comparison samples would be expected to have a false positive. When the FDR is 2%, over 18% of 10-comparison samples would be expected to have a false positive. Additional columns are provided giving the expected frequency of 100 and 1000 comparisons under different error rates. The final column provides the maximum number of comparisons at the specified error rate which can be performed to keep the family wise false positive error rate under 10%."></a></p>
+<p><a href="../images/table-fpr-family.png" class="lightbox" data-gallery="quarto-lightbox-gallery-49"><img data-src="../images/table-fpr-family.png" alt="A table showing the family wise false discovery rate for N comparisons using several different estimates of striated comparison error rates. When the FDR is 7%, over 50% of 10-comparison samples would be expected to have a false positive. When the FDR is 2%, over 18% of 10-comparison samples would be expected to have a false positive. Additional columns are provided giving the expected frequency of 100 and 1000 comparisons under different error rates. The final column provides the maximum number of comparisons at the specified error rate which can be performed to keep the family wise false positive error rate under 10%."></a></p>
 <p><span class="emph meddarkblue fragment">2% Error -&gt; 5 total comparisons.</span></p>
 <p><span class="emph meddarkblue fragment">Minimum of 15 required to do even a simple wire-cut analysis.</span></p>
 </section>
@@ -1020,7 +1337,7 @@ What does <span class="math inline">\(e^{(1)}\)</span> need to be for <span clas
 <ul>
 <li>Wire cut forensics are not scientifically sound using current analysis methods</li>
 </ul>
-<div class="fragment">
+<div class="fragment smaller">
 <p>but… this problem shows up in database searches, too!</p>
 <ul>
 <li>IAFIS (Integrated Automated Fingerprint ID System)</li>
@@ -1044,31 +1361,45 @@ What does <span class="math inline">\(e^{(1)}\)</span> need to be for <span clas
 </ul>
 <p><span class="cerulean emph fragment">This is a setup that could generate false-positives by design!</span></p>
 </section>
-<section id="conclusions-2" class="slide level2">
+<section id="conclusions-2" class="slide level2 smaller">
 <h2>Conclusions</h2>
 <ul>
 <li class="fragment"><p>Examiners should report and the defense should require</p>
 <ul>
-<li class="fragment"><span class="small">overall length/area of surfaces generated during the examination <span class="math inline">\((b)\)</span></span></li>
-<li class="fragment"><span class="small">total consecutive length/area of recovered evidence <span class="math inline">\((d)\)</span></span></li>
+<li class="fragment">overall length/area of surfaces generated during the examination <span class="math inline">\((b)\)</span></li>
+<li class="fragment">total consecutive length/area of recovered evidence <span class="math inline">\((d)\)</span></li>
 </ul></li>
 <li class="fragment"><p>Studies relating length/area of comparison surface to error rates are essential!</p>
 <ul>
-<li class="fragment"><span class="small">No available black-box error rate for wire cuts</span></li>
-<li class="fragment"><span class="small">Studies should be difficult, like casework!</span></li>
+<li class="fragment">No available black-box error rate for wire cuts</li>
+<li class="fragment">Studies should be difficult, like casework!</li>
 </ul></li>
 <li class="fragment"><p>Any database search used at any stage of the process should be disclosed along with</p>
 <ul>
-<li class="fragment"><span class="small"><span class="math inline">\(N\)</span> items in the database used for comparison</span></li>
-<li class="fragment"><span class="small">Number of results returned as ‘similar’ (top 20? top 5?)</span></li>
-<li class="fragment"><span class="small">Protocols for confirmatory assessment</span></li>
+<li class="fragment"><span class="math inline">\(N\)</span> items in the database used for comparison</li>
+<li class="fragment">Number of results returned as ‘similar’ (top 20? top 5?)</li>
+<li class="fragment">Protocols for confirmatory assessment</li>
 </ul></li>
 </ul>
 </section>
 <section id="a-happy-ending" class="slide level2">
 <h2>A Happy Ending</h2>
-<p><a href="../images/CPR-new-trial.png" class="lightbox" data-gallery="quarto-lightbox-gallery-38"><img data-src="../images/CPR-new-trial.png" alt="A Colorado Public Media story by Tom Hesse from July 10, 2023, titled 'Judge orders new trial for Grand Junction man convicted in '90s pipe bombings'. A picture of the Mesa County Justice Center is shown below the article title. Article url:  https://www.cpr.org/2023/07/10/judge-orders-new-trial-for-grand-junction-man-convicted-in-90s-pipe-bombings/"></a></p>
+<p><a href="../images/CPR-new-trial.png" class="lightbox" data-gallery="quarto-lightbox-gallery-50"><img data-src="../images/CPR-new-trial.png" style="width:60.0%" alt="A Colorado Public Media story by Tom Hesse from July 10, 2023, titled 'Judge orders new trial for Grand Junction man convicted in '90s pipe bombings'. A picture of the Mesa County Justice Center is shown below the article title. Article url:  https://www.cpr.org/2023/07/10/judge-orders-new-trial-for-grand-junction-man-convicted-in-90s-pipe-bombings/"></a></p>
 </section></section>
+<section id="socially-responsible-ai" class="title-slide slide level1 center">
+<h1>Socially Responsible AI?</h1>
+<ul>
+<li class="fragment"><p>Lots of interesting interactions between perception, algorithms, and statistics</p></li>
+<li class="fragment"><p>Assumptions are critical … <span class="fragment emph red">and can be a problem</span></p></li>
+<li class="fragment"><p>Design algorithms to</p>
+<ul>
+<li class="fragment">be explainable by design</li>
+<li class="fragment">have a human in the loop</li>
+</ul></li>
+<li class="fragment"><p>Get (and stay) involved in an applied domain</p></li>
+</ul>
+</section>
+
 <section id="questions" class="title-slide slide level1 center">
 <h1>Questions?</h1>
 
