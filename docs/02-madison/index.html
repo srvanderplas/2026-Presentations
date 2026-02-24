@@ -151,9 +151,10 @@ Susan Vanderplas
 <ol type="1">
 <li><a href="#/introduction">Introduction</a> <!-- Hi, I'm susan and I do an odd assortment of things --></li>
 <li><a href="#/forensics-history">Statistical Forensics?</a></li>
-<li><a href="#/shoes">Computer <span class="math inline">\(\neq\)</span> Human Vision</a></li>
+<li><a href="#/shoes">Shoes: Computer <span class="math inline">\(\neq\)</span> Human Vision</a></li>
 <li><a href="#/bullets">Feature Engineering and Human Perception</a></li>
 <li><a href="#/wire-cuts">Wire Cuts and Probability</a> <!-- Error Rates and Scientific Foundations in Forensics --></li>
+<li><a href="#/conclusions">Conclusions</a></li>
 </ol>
 </section>
 
@@ -1220,7 +1221,7 @@ What does <span class="math inline">\(e^{(1)}\)</span> need to be for <span clas
 <li><p>Cut Surfaces (on one wire): <span class="math inline">\(w \in \{1, 2\}, 1\leq j\leq w\)</span></p></li>
 </ul>
 </section>
-<section id="visual-examination" class="slide level2">
+<section id="visual-examination" class="slide level2 smaller">
 <h2>Visual Examination</h2>
 <div class="columns">
 <div class="column" style="width:80%;">
@@ -1229,14 +1230,14 @@ What does <span class="math inline">\(e^{(1)}\)</span> need to be for <span clas
 <li><p>At least <span class="math inline">\(N_{ij} = b_i/d_j\)</span> comparisons for each blade surface <span class="math inline">\(i\)</span> and cut wire surface <span class="math inline">\(j\)</span></p></li>
 <li><p>Manual alignment: estimate the minimum comparisons</p></li>
 </ul>
+<p><a href="../images/number-of-comparisons.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-45"><img data-src="../images/number-of-comparisons.svg" style="width:100.0%" alt="A diagram showing a blade cut (long, thin) with striations compared to a wire cut (semi-circle shape, short) aligned with the blade cut. There are multiple non-overlapping positions along the blade cut where the wire cut could fit, and each is shown with an empty hemisphere."></a></p>
 </div><div class="column" style="width:20%;">
-<p><a href="../images/comparison-scope-rearrange.png" class="lightbox" data-gallery="quarto-lightbox-gallery-45"><img data-src="../images/comparison-scope-rearrange.png" style="position:absolute;top:0;right:20px;;width:18.0%" alt="An image of a comparison microscope, which allows viewing two samples simultaneously in order to align them."></a></p>
+<p><a href="../images/comparison-scope-rearrange.png" class="lightbox" data-gallery="quarto-lightbox-gallery-46"><img data-src="../images/comparison-scope-rearrange.png" alt="An image of a comparison microscope, which allows viewing two samples simultaneously in order to align them."></a></p>
 </div></div>
-<p><a href="../images/number of comparisons.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-46"><img data-src="../images/number of comparisons.svg" style="position:absolute;bottom:0px;left:20px;;width:100.0%" alt="A diagram showing a blade cut (long, thin) with striations compared to a wire cut (semi-circle shape, short) aligned with the blade cut. There are multiple non-overlapping positions along the blade cut where the wire cut could fit, and each is shown with an empty hemisphere."></a></p>
 </section>
 <section id="visual-examination-1" class="slide level2">
 <h2>Visual Examination</h2>
-<p><a href="../images/number of comparisons.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-47"><img data-src="../images/number of comparisons.svg" style="position:absolute;top:40%;left:20px;;width:100.0%" alt="A diagram showing a blade cut (long, thin) with striations compared to a wire cut (semi-circle shape, short) aligned with the blade cut. There are multiple non-overlapping positions along the blade cut where the wire cut could fit, and each is shown with an empty hemisphere."></a></p>
+<p><a href="../images/number-of-comparisons.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-47"><img data-src="../images/number-of-comparisons.svg" style="width:100.0%" alt="A diagram showing a blade cut (long, thin) with striations compared to a wire cut (semi-circle shape, short) aligned with the blade cut. There are multiple non-overlapping positions along the blade cut where the wire cut could fit, and each is shown with an empty hemisphere."></a></p>
 <p>Adj. comparisons are non-overlapping <span class="math inline">\(\Rightarrow\)</span> “independent”<sup>1</sup></p>
 <aside><ol class="aside-footnotes"><li id="fn4"><p>There are peak-valley dependence structures in profile data, but conditioning on tool/material/manufacturing, we would <strong>expect</strong> statistical independence between adjacent comparisons</p></li></ol></aside></section>
 <section id="algorithmic-comparison" class="slide level2">
@@ -1332,8 +1333,8 @@ What does <span class="math inline">\(e^{(1)}\)</span> need to be for <span clas
 <p><span class="emph meddarkblue fragment">2% Error -&gt; 5 total comparisons.</span></p>
 <p><span class="emph meddarkblue fragment">Minimum of 15 required to do even a simple wire-cut analysis.</span></p>
 </section>
-<section id="conclusions" class="slide level2">
-<h2>Conclusions</h2>
+<section id="wire-cuts-conclusions" class="slide level2">
+<h2>Wire Cuts Conclusions</h2>
 <ul>
 <li>Wire cut forensics are not scientifically sound using current analysis methods</li>
 </ul>
@@ -1348,8 +1349,8 @@ What does <span class="math inline">\(e^{(1)}\)</span> need to be for <span clas
 </ul>
 </div>
 </section>
-<section id="conclusions-1" class="slide level2">
-<h2>Conclusions</h2>
+<section id="wire-cuts-conclusions-1" class="slide level2">
+<h2>Wire Cuts Conclusions</h2>
 <ul>
 <li class="fragment"><p>Automatic intelligence algorithms are not a good substitute for investigative work</p></li>
 <li class="fragment"><p>Example: Oregon</p>
@@ -1361,8 +1362,8 @@ What does <span class="math inline">\(e^{(1)}\)</span> need to be for <span clas
 </ul>
 <p><span class="cerulean emph fragment">This is a setup that could generate false-positives by design!</span></p>
 </section>
-<section id="conclusions-2" class="slide level2 smaller">
-<h2>Conclusions</h2>
+<section id="wire-cuts-conclusions-2" class="slide level2 smaller">
+<h2>Wire Cuts Conclusions</h2>
 <ul>
 <li class="fragment"><p>Examiners should report and the defense should require</p>
 <ul>
@@ -1386,11 +1387,20 @@ What does <span class="math inline">\(e^{(1)}\)</span> need to be for <span clas
 <h2>A Happy Ending</h2>
 <p><a href="../images/CPR-new-trial.png" class="lightbox" data-gallery="quarto-lightbox-gallery-50"><img data-src="../images/CPR-new-trial.png" style="width:60.0%" alt="A Colorado Public Media story by Tom Hesse from July 10, 2023, titled 'Judge orders new trial for Grand Junction man convicted in '90s pipe bombings'. A picture of the Mesa County Justice Center is shown below the article title. Article url:  https://www.cpr.org/2023/07/10/judge-orders-new-trial-for-grand-junction-man-convicted-in-90s-pipe-bombings/"></a></p>
 </section></section>
-<section id="socially-responsible-ai" class="title-slide slide level1 center">
-<h1>Socially Responsible AI?</h1>
+<section>
+<section id="conclusions" class="title-slide slide level1 smaller center">
+<h1>Conclusions</h1>
+
+</section>
+<section id="socially-responsible-ai" class="slide level2">
+<h2><span class="emph blue">Socially Responsible AI</span></h2>
 <ul>
-<li class="fragment"><p>Lots of interesting interactions between perception, algorithms, and statistics</p></li>
-<li class="fragment"><p>Assumptions are critical … <span class="fragment emph red">and can be a problem</span></p></li>
+<li class="fragment"><p>There are lots of interesting interactions between perception, algorithms, and statistics</p></li>
+<li class="fragment"><p>Model assumptions and capabilities are critical … <span class="fragment emph red">and can be a problem</span></p>
+<ul>
+<li class="fragment">It’s important to understand the capabilities you’re depending on</li>
+<li class="fragment">Then, assess whether the AI model(s) have those capabilities</li>
+</ul></li>
 <li class="fragment"><p>Design algorithms to</p>
 <ul>
 <li class="fragment">be explainable by design</li>
@@ -1398,8 +1408,7 @@ What does <span class="math inline">\(e^{(1)}\)</span> need to be for <span clas
 </ul></li>
 <li class="fragment"><p>Get (and stay) involved in an applied domain</p></li>
 </ul>
-</section>
-
+</section></section>
 <section id="questions" class="title-slide slide level1 center">
 <h1>Questions?</h1>
 

@@ -34,9 +34,10 @@ bb <- ReadBib("./CV.bib", check = T)
 
 1.  [Introduction](#introduction) <!-- Hi, I'm susan and I do an odd assortment of things -->
 2.  [Statistical Forensics?](#forensics-history) 
-3.  [Computer $\neq$ Human Vision](#shoes)
+3.  [Shoes: Computer $\neq$ Human Vision](#shoes)
 4.  [Feature Engineering and Human Perception](#bullets)
 5.  [Wire Cuts and Probability](#wire-cuts) <!-- Error Rates and Scientific Foundations in Forensics -->
+6.  [Conclusions](#conclusions)
 
 # Introduction 👋️🌎 {#introduction}
 
@@ -839,7 +840,7 @@ featuredf$rfscore <- predict(rtrees, newdata = featuredf, type = "prob")[,2]
 featuredf |>
   ggplot(aes(x = b1_land, y = b2_land, fill = rfscore)) + 
   geom_tile() + 
-  facet_grid(b2_id ~ b1_id) + scale_fill_gradient2(low = "grey80", high = "#d7570e", midpoint = 0.4) + 
+  facet_grid(b1_id ~ b2_id) + scale_fill_gradient2(low = "grey80", high = "#d7570e", midpoint = 0.4) + 
   theme_bw() + 
   coord_fixed() + 
   ggtitle("Random Forest Score") + 
@@ -976,27 +977,31 @@ But, there are other ways to handle this problem.
 
 -   Cut Surfaces (on one wire): $w \in \{1, 2\}, 1\leq j\leq w$
 
-## Visual Examination
+## Visual Examination {.smaller}
 
-::::: columns
+::: columns
 ::: {.column width="80%"}
 -   Test cuts made along the blade(s) of the tool
 
 -   At least $N_{ij} = b_i/d_j$ comparisons for each blade surface $i$ and cut wire surface $j$
 
 -   Manual alignment: estimate the minimum comparisons
+
+
+![](../images/number-of-comparisons.svg){width="100%" fig-alt="A diagram showing a blade cut (long, thin) with striations compared to a wire cut (semi-circle shape, short) aligned with the blade cut. There are multiple non-overlapping positions along the blade cut where the wire cut could fit, and each is shown with an empty hemisphere."}
+
 :::
 
 ::: {.column width="20%"}
-![](../images/comparison-scope-rearrange.png){fig-alt="An image of a comparison microscope, which allows viewing two samples simultaneously in order to align them." width="18%" style="position:absolute;top:0;right:20px;"}
-:::
-:::::
 
-![](../images/number of comparisons.svg){width="100%" fig-alt="A diagram showing a blade cut (long, thin) with striations compared to a wire cut (semi-circle shape, short) aligned with the blade cut. There are multiple non-overlapping positions along the blade cut where the wire cut could fit, and each is shown with an empty hemisphere." style="position:absolute;bottom:0px;left:20px;"}
+![](../images/comparison-scope-rearrange.png){fig-alt="An image of a comparison microscope, which allows viewing two samples simultaneously in order to align them."}
+:::
+:::
+
 
 ## Visual Examination
 
-![](../images/number of comparisons.svg){width="100%" fig-alt="A diagram showing a blade cut (long, thin) with striations compared to a wire cut (semi-circle shape, short) aligned with the blade cut. There are multiple non-overlapping positions along the blade cut where the wire cut could fit, and each is shown with an empty hemisphere." style="position:absolute;top:40%;left:20px;"}
+![](../images/number-of-comparisons.svg){width="100%" fig-alt="A diagram showing a blade cut (long, thin) with striations compared to a wire cut (semi-circle shape, short) aligned with the blade cut. There are multiple non-overlapping positions along the blade cut where the wire cut could fit, and each is shown with an empty hemisphere."}
 
 Adj. comparisons are non-overlapping $\Rightarrow$ "independent"[^5]
 
@@ -1066,7 +1071,7 @@ To keep the overall false positive rate under 10%...
 
 [Minimum of 15 required to do even a simple wire-cut analysis.]{.emph .meddarkblue .fragment}
 
-## Conclusions
+## Wire Cuts Conclusions
 
 -   Wire cut forensics are not scientifically sound using current analysis methods
 
@@ -1080,7 +1085,7 @@ but... this problem shows up in database searches, too!
 -   FISH (Forensic ID System for Handwriting)
 :::
 
-## Conclusions
+## Wire Cuts Conclusions
 
 ::: incremental
 -   Automatic intelligence algorithms are not a good substitute for investigative work
@@ -1094,7 +1099,7 @@ but... this problem shows up in database searches, too!
 
 [This is a setup that could generate false-positives by design!]{.cerulean .emph .fragment}
 
-## Conclusions {.smaller}
+## Wire Cuts Conclusions {.smaller}
 
 ::: incremental
 -   Examiners should report and the defense should require
@@ -1120,13 +1125,18 @@ but... this problem shows up in database searches, too!
 
 ![](../images/CPR-new-trial.png){fig-alt="A Colorado Public Media story by Tom Hesse from July 10, 2023, titled 'Judge orders new trial for Grand Junction man convicted in '90s pipe bombings'. A picture of the Mesa County Justice Center is shown below the article title. Article url:  https://www.cpr.org/2023/07/10/judge-orders-new-trial-for-grand-junction-man-convicted-in-90s-pipe-bombings/" width="60%"}
 
-# Socially Responsible AI?
+# Conclusions {#conclusions .smaller}
+
+## [Socially Responsible AI]{.emph .blue}
 
 ::: incremental
 
-- Lots of interesting interactions between perception, algorithms, and statistics
+- There are lots of interesting interactions between perception, algorithms, and statistics
 
-- Assumptions are critical ... [and can be a problem]{.fragment .emph .red}
+- Model assumptions and capabilities are critical ... [and can be a problem]{.fragment .emph .red}
+
+  - It's important to understand the capabilities you're depending on
+  - Then, assess whether the AI model(s) have those capabilities
 
 - Design algorithms to 
 
