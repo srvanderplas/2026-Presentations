@@ -308,6 +308,31 @@ There were a number of very embarrassing cases where forensic evidence was shown
 [^2]: Algorithms not used in practice
 
 
+## Hard Problems
+
+::: smaller
+
+> Far better an approximate answer to the right question, which is often vague, than an exact answer to the wrong question, which can always be made precise.
+> ― John Tukey
+
+:::
+
+::: incremental
+
+- The math is (usually) not the hard part
+    
+    - Approaching the problem in a way that is tractable
+
+    - Getting the (right) data
+    
+    - Encouraging adoption of statistical solutions
+
+- Practical data science and useful/ethical AI:    
+[focus on the human element]{.emph .cerulean .fragment}
+
+:::
+
+
 # Shoes and Shape Identification<br/>[Computer $\neq$ Human Vision]{.fragment .emph .blue} {#shoes}
 
 ::: notes
@@ -1131,14 +1156,13 @@ but... this problem shows up in database searches, too!
 
 ::: incremental
 
-- There are lots of interesting interactions between perception, algorithms, and statistics
+- Model assumptions and capabilities are critical ...     
+[and can be a problem]{.fragment .emph .red}
 
-- Model assumptions and capabilities are critical ... [and can be a problem]{.fragment .emph .red}
+  - Identify critical model capabilities
+  - Assess whether the model(s) are fit for purpose
 
-  - It's important to understand the capabilities you're depending on
-  - Then, assess whether the AI model(s) have those capabilities
-
-- Design algorithms to 
+- Design critical algorithms to 
 
     - be explainable by design
     - have a human in the loop
