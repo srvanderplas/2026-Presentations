@@ -1,0 +1,19 @@
+abbreviation,institution,colors_hex,primary_color,secondary_color,logo_url,bigten,nudge_x,nudge_y
+UIUC,University of Illinois at Urbana-Champaign,#E84A27 / #13294B,#E84A27,#13294B,https://commons.wikimedia.org/wiki/File:Illinois_Fighting_Illini_logo.svg,Big Ten,0,-0.35
+IU,Indiana University - Bloomington,#990000 / #F0E68C,#990000,#EEEDEB,https://commons.wikimedia.org/wiki/File:Indiana_Hoosiers_logo.svg,Big Ten,0,-0.3
+IOWA,"University of Iowa, The",#000000 / #FFCD00,#000000,#FFCD00,https://commons.wikimedia.org/wiki/File:Iowa_Hawkeyes_logo.svg,Big Ten,-0.1,0
+UMD,"University of Maryland, College Park",#CE1126 / #FFD200 / #000000 / #FFFFFF,#E03a3e,#ffd520,https://commons.wikimedia.org/wiki/File:Maryland_Terrapins_logo.svg,Big Ten,-0.025,-0.3
+UMICH,University of Michigan,#FFCB05 / #00274C,#FFCB05,#00274C,https://commons.wikimedia.org/wiki/File:University_of_Michigan_logo.svg,Big Ten,0,-0.225
+MSU,Michigan State University,#1C4532 / #FFFFFF,#18453B,#FFFFFF,https://commons.wikimedia.org/wiki/File:Michigan_State_University_logo.svg,Big Ten,0,0.3
+UMN,"University of Minnesota, Twin Cities",#7A0019 / #FEC82E,#7A0019,#FFCC33,https://commons.wikimedia.org/wiki/File:University_of_Minnesota_logo.svg,Big Ten,0.1,-0.5
+NEB,University of Nebraska - Lincoln,#CC0000 / #E3D6C7,#e41c38,#fdf2d9,https://commons.wikimedia.org/wiki/File:Nebraska_Cornhuskers_logo.svg,Big Ten,0,-0.3
+NU,Northwestern University,#4E2A84 / #FFFFFF,#4E2A84,#FFFFFF,https://commons.wikimedia.org/wiki/File:Northwestern_University_logo.svg,Big Ten,0,0.3
+OSU,"Ohio State University, The",#BB0000 / #666666,#BB0000,#666666,https://commons.wikimedia.org/wiki/File:Ohio_State_University_logo.svg,Big Ten,0.075,-0.125
+PSU,Pennsylvania State University - University Park,#002E5F / #FFFFFF,#041E42,#FFFFFF,https://commons.wikimedia.org/wiki/File:Penn_State_Nittany_Lions_logo.svg,Big Ten,0,0.4
+PURDUE,Purdue University,#CEB888 / #000000,#CEB888,#000000,https://commons.wikimedia.org/wiki/File:Purdue_University_logo.svg,Big Ten,0,-0.3
+RUTGERS,Rutgers - New Brunswick,#CC0033 / #000000,#CC0033,#5F6A72,https://commons.wikimedia.org/wiki/File:Rutgers_University_logo.svg,Big Ten,-0.1,-0.5
+UCLA,"University of California, Los Angeles",#2774AE / #FFD100,#2d68c4,#f2a900,https://commons.wikimedia.org/wiki/File:UCLA_Bruins_logo.svg,Big Ten,0,0.3
+USC,University of Southern California,#990000 / #FFCC00,#990000,#FFC72C,https://commons.wikimedia.org/wiki/File:USC_Trojans_logo.svg,Big Ten,0,0
+OREGON,University of Oregon,#154733 / #FEE123,#154733,#FEE123,https://commons.wikimedia.org/wiki/File:University_of_Oregon_logo.svg,Big Ten,0,0
+UW,University of Washington,#4E2A84 / #FFD700,#4B2E83,#b7a57a,https://commons.wikimedia.org/wiki/File:Washington_Huskies_logo.svg,Big Ten,0,-0.3
+WISC,University of Wisconsin - Madison,#C5050C / #FFFFFF,#C5050C,#FFFFFF,https://commons.wikimedia.org/wiki/File:Wisconsin_Badgers_logo.svg,Big Ten,0.1,-0.35

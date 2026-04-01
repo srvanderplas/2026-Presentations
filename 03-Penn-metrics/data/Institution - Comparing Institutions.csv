@@ -1,0 +1,425 @@
+Release,Institution,Institution_id,SRI,Carnegie,Sector,State,AAU Member,IPEDS,Land Grant
+AAD2023.09.02768,Adelphi University,1,-0.6,Doctoral/Professional Universities,Private,NY,,188429,Not Designated
+AAD2023.09.02768,Air Force Institute of Technology,2,-0.7,Doctoral Universities: High Research Activity,Public,OH,,200697,Not Designated
+AAD2023.09.02768,Alabama A&M University,3,-1.0,Master's Colleges & Universities: Larger Programs,Public,AL,,100654,Land Grant
+AAD2023.09.02768,Albany Medical College,4,-0.5,Special Focus Four-Year: Medical Schools & Centers,Private,NY,,188580,Not Designated
+AAD2023.09.02768,Albert Einstein College of Medicine of Yeshiva University,5,0.0,Special Focus Four-Year: Research Institution,Private,NY,,,Not Designated
+AAD2023.09.02768,Alfred University,6,-0.7,Master's Colleges & Universities: Larger Programs,Private,NY,,188641,Not Designated
+AAD2023.09.02768,Alliant International University,7,-1.1,Doctoral/Professional Universities,Private,CA,,110468,Not Designated
+AAD2023.09.02768,American University,8,0.0,Doctoral Universities: High Research Activity,Private,DC,,131159,Not Designated
+AAD2023.09.02768,Andrews University,9,-0.9,Doctoral/Professional Universities,Private,MI,,168740,Not Designated
+AAD2023.09.02768,Antioch University New England,10,-1.2,Master's Colleges & Universities: Larger Programs,Private,NH,,245865,Not Designated
+AAD2023.09.02768,Arizona State University,12,0.5,Doctoral Universities: Very High Research Activity,Public,AZ,AAU Member,104151,APLU
+AAD2023.09.02768,Arkansas State University,13,-0.8,Doctoral Universities: High Research Activity,Public,AR,,106458,APLU
+AAD2023.09.02768,Auburn University,15,0.0,Doctoral Universities: Very High Research Activity,Public,AL,,100858,Land Grant
+AAD2023.09.02768,Azusa Pacific University,16,-0.9,Doctoral Universities: High Research Activity,Private,CA,,109785,Not Designated
+AAD2023.09.02768,Ball State University,17,-0.3,Doctoral Universities: High Research Activity,Public,IN,,150136,APLU
+AAD2023.09.02768,Barry University,18,-0.8,Doctoral/Professional Universities,Private,FL,,132471,Not Designated
+AAD2023.09.02768,Baylor College of Medicine,19,0.2,Special Focus Four-Year: Research Institution,Private,TX,,223223,Not Designated
+AAD2023.09.02768,Baylor University,20,0.0,Doctoral Universities: Very High Research Activity,Private,TX,,223232,Not Designated
+AAD2023.09.02768,Biola University,22,-0.7,Doctoral/Professional Universities,Private,CA,,110097,Not Designated
+AAD2023.09.02768,Boston College,23,0.4,Doctoral Universities: Very High Research Activity,Private,MA,,164924,Not Designated
+AAD2023.09.02768,Boston University,24,0.3,Doctoral Universities: Very High Research Activity,Private,MA,AAU Member,164988,Not Designated
+AAD2023.09.02768,Bowling Green State University,25,-0.2,Doctoral Universities: High Research Activity,Public,OH,,201441,APLU
+AAD2023.09.02768,Brandeis University,26,0.2,Doctoral Universities: Very High Research Activity,Private,MA,AAU Member,165015,Not Designated
+AAD2023.09.02768,Brigham Young University,27,-0.1,Doctoral Universities: High Research Activity,Private,UT,,230038,Not Designated
+AAD2023.09.02768,Brown University,28,0.5,Doctoral Universities: Very High Research Activity,Private,RI,AAU Member,217156,Not Designated
+AAD2023.09.02768,Bryn Mawr College,29,-0.3,Baccalaureate Colleges: Arts & Sciences Focus,Private,PA,,211273,Not Designated
+AAD2023.09.02768,California Institute of Integral Studies,30,-1.0,Doctoral/Professional Universities,Private,CA,,110316,Not Designated
+AAD2023.09.02768,California Institute of Technology,31,1.0,Doctoral Universities: Very High Research Activity,Private,CA,AAU Member,110404,Not Designated
+AAD2023.09.02768,Calvin Theological Seminary,32,-0.5,Special Focus Four-Year: Faith-Related Institutions,Private,MI,,169099,Not Designated
+AAD2023.09.02768,Carnegie Mellon University,34,0.4,Doctoral Universities: Very High Research Activity,Private,PA,AAU Member,211440,Not Designated
+AAD2023.09.02768,Case Western Reserve University,35,0.1,Doctoral Universities: Very High Research Activity,Private,OH,AAU Member,201645,Not Designated
+AAD2023.09.02768,"Catholic University of America, The",36,-0.2,Doctoral Universities: High Research Activity,Private,DC,,131283,Not Designated
+AAD2023.09.02768,Central Michigan University,37,-0.5,Doctoral Universities: High Research Activity,Public,MI,,169248,Not Designated
+AAD2023.09.02768,Chicago Theological Seminary,38,-0.2,Special Focus Four-Year: Faith-Related Institutions,Private,IL,,144014,Not Designated
+AAD2023.09.02768,Claremont Graduate University,39,0.1,Doctoral Universities: High Research Activity,Private,CA,,112251,Not Designated
+AAD2023.09.02768,Claremont School of Theology,40,0.0,Special Focus Four-Year: Faith-Related Institutions,Private,CA,,124283,Not Designated
+AAD2023.09.02768,Clark Atlanta University,41,-1.1,Doctoral Universities: High Research Activity,Private,GA,,138947,Not Designated
+AAD2023.09.02768,Clark University,42,-0.1,Doctoral Universities: High Research Activity,Private,MA,,165334,Not Designated
+AAD2023.09.02768,Clarkson University,43,-0.4,Doctoral Universities: High Research Activity,Private,NY,,190044,Not Designated
+AAD2023.09.02768,Clemson University,44,0.0,Doctoral Universities: Very High Research Activity,Public,SC,,217882,Land Grant
+AAD2023.09.02768,Cleveland State University,45,-0.4,Doctoral Universities: High Research Activity,Public,OH,,202134,APLU
+AAD2023.09.02768,"College of William & Mary, The",46,0.0,Doctoral Universities: High Research Activity,Public,VA,,231624,APLU
+AAD2023.09.02768,Colorado School of Mines,47,0.3,Doctoral Universities: Very High Research Activity,Public,CO,,126775,APLU
+AAD2023.09.02768,Colorado State University,48,0.2,Doctoral Universities: Very High Research Activity,Public,CO,,126818,Land Grant
+AAD2023.09.02768,Columbia University,49,0.6,Doctoral Universities: Very High Research Activity,Private,NY,AAU Member,190150,Not Designated
+AAD2023.09.02768,Concordia Seminary,50,-1.1,Special Focus Four-Year: Faith-Related Institutions,Private,MO,,177092,Not Designated
+AAD2023.09.02768,Cornell University,51,0.5,Doctoral Universities: Very High Research Activity,Private,NY,AAU Member,190415,Land Grant
+AAD2023.09.02768,Creighton University,52,-0.6,Doctoral Universities: High Research Activity,Private,NE,,181002,Not Designated
+AAD2023.09.02768,Dallas Theological Seminary,54,-0.8,Special Focus Four-Year: Faith-Related Institutions,Private,TX,,224305,Not Designated
+AAD2023.09.02768,Dartmouth College,55,0.4,Doctoral Universities: Very High Research Activity,Private,NH,AAU Member,182670,Not Designated
+AAD2023.09.02768,DePaul University,57,-0.4,Doctoral Universities: High Research Activity,Private,IL,,144740,Not Designated
+AAD2023.09.02768,Drew University,58,-0.1,Baccalaureate Colleges: Arts & Sciences Focus,Private,NJ,,184348,Not Designated
+AAD2023.09.02768,Drexel University,59,-0.1,Doctoral Universities: Very High Research Activity,Private,PA,,212054,Not Designated
+AAD2023.09.02768,Duke University,60,0.6,Doctoral Universities: Very High Research Activity,Private,NC,AAU Member,198419,Not Designated
+AAD2023.09.02768,Duquesne University,61,-0.3,Doctoral Universities: High Research Activity,Private,PA,,212106,Not Designated
+AAD2023.09.02768,East Tennessee State University,63,-0.7,Doctoral Universities: High Research Activity,Public,TN,,220075,Not Designated
+AAD2023.09.02768,East Texas A&M University,64,-0.6,Doctoral/Professional Universities,Public,TX,,224554,Not Designated
+AAD2023.09.02768,Eastern Michigan University,65,-0.7,Doctoral Universities: High Research Activity,Public,MI,,169798,Not Designated
+AAD2023.09.02768,Emory University,66,0.4,Doctoral Universities: Very High Research Activity,Private,GA,AAU Member,139658,Not Designated
+AAD2023.09.02768,Fairleigh Dickinson University,67,-0.9,Master's Colleges & Universities: Larger Programs,Private,NJ,,184694,Not Designated
+AAD2023.09.02768,Fielding Graduate University,68,-1.1,Doctoral/Professional Universities,Private,CA,,114549,Not Designated
+AAD2023.09.02768,Florida A&M University,69,-0.8,Doctoral Universities: High Research Activity,Public,FL,,133650,Land Grant
+AAD2023.09.02768,Florida Atlantic University,70,-0.1,Doctoral Universities: High Research Activity,Public,FL,,133669,APLU
+AAD2023.09.02768,Florida Institute of Technology,71,-0.6,Doctoral Universities: High Research Activity,Private,FL,,133881,Not Designated
+AAD2023.09.02768,Florida International University,72,0.1,Doctoral Universities: Very High Research Activity,Public,FL,,133951,APLU
+AAD2023.09.02768,Florida State University,73,0.4,Doctoral Universities: Very High Research Activity,Public,FL,,134097,APLU
+AAD2023.09.02768,Fordham University,74,-0.1,Doctoral Universities: High Research Activity,Private,NY,,191241,Not Designated
+AAD2023.09.02768,Fuller Theological Seminary,75,-0.1,Special Focus Four-Year: Faith-Related Institutions,Private,CA,,114840,Not Designated
+AAD2023.09.02768,Gallaudet University,76,-0.8,Doctoral/Professional Universities,Private,DC,,131450,Not Designated
+AAD2023.09.02768,Garrett Evangelical Theological Seminary,78,-0.1,Special Focus Four-Year: Faith-Related Institutions,Private,IL,,145275,Not Designated
+AAD2023.09.02768,George Mason University,79,-0.2,Doctoral Universities: Very High Research Activity,Public,VA,,232186,APLU
+AAD2023.09.02768,George Washington University,80,0.0,Doctoral Universities: Very High Research Activity,Private,DC,AAU Member,131469,Not Designated
+AAD2023.09.02768,Georgetown University,81,0.1,Doctoral Universities: Very High Research Activity,Private,DC,,131496,Not Designated
+AAD2023.09.02768,Georgia Institute of Technology,82,0.5,Doctoral Universities: Very High Research Activity,Public,GA,AAU Member,139755,APLU
+AAD2023.09.02768,Georgia State University,83,0.3,Doctoral Universities: Very High Research Activity,Public,GA,,139940,APLU
+AAD2023.09.02768,Graduate Theological Union,85,0.0,Special Focus Four-Year: Faith-Related Institutions,Private,CA,,115214,Not Designated
+AAD2023.09.02768,Hampton University,86,-1.0,Doctoral/Professional Universities,Private,VA,,232265,Not Designated
+AAD2023.09.02768,Harvard University,87,0.9,Doctoral Universities: Very High Research Activity,Private,MA,AAU Member,166027,Not Designated
+AAD2023.09.02768,Howard University,90,-0.6,Doctoral Universities: High Research Activity,Private,DC,,131520,Not Designated
+AAD2023.09.02768,Idaho State University,91,-0.5,Doctoral Universities: High Research Activity,Public,ID,,142276,APLU
+AAD2023.09.02768,Illinois Institute of Technology,92,-0.2,Doctoral Universities: High Research Activity,Private,IL,,145725,Not Designated
+AAD2023.09.02768,Illinois State University,93,-0.3,Doctoral Universities: High Research Activity,Public,IL,,145813,APLU
+AAD2023.09.02768,Indiana State University,94,-0.9,Doctoral/Professional Universities,Public,IN,,151324,Not Designated
+AAD2023.09.02768,Indiana University of Pennsylvania,95,-0.9,Doctoral Universities: High Research Activity,Public,PA,,213020,Not Designated
+AAD2023.09.02768,Indiana University - Bloomington,96,0.3,Doctoral Universities: Very High Research Activity,Public,IN,AAU Member,151351,APLU
+AAD2023.09.02768,Indiana University - Indianapolis,97,0.1,Doctoral Universities: High Research Activity,Public,IN,,151111,APLU
+AAD2023.09.02768,Iowa State University,99,0.1,Doctoral Universities: Very High Research Activity,Public,IA,,153603,Land Grant
+AAD2023.09.02768,Jackson State University,100,-0.8,Doctoral Universities: High Research Activity,Public,MS,,175856,APLU
+AAD2023.09.02768,"Jewish Theological Seminary, The",101,-0.3,Special Focus Four-Year: Faith-Related Institutions,Private,NY,,192040,Not Designated
+AAD2023.09.02768,Johns Hopkins University,102,0.7,Doctoral Universities: Very High Research Activity,Private,MD,AAU Member,162928,Not Designated
+AAD2023.09.02768,Kansas State University,103,-0.1,Doctoral Universities: Very High Research Activity,Public,KS,,155399,Land Grant
+AAD2023.09.02768,Kent State University,104,-0.4,Doctoral Universities: Very High Research Activity,Public,OH,,203517,APLU
+AAD2023.09.02768,Lehigh University,105,-0.2,Doctoral Universities: High Research Activity,Private,PA,,213543,Not Designated
+AAD2023.09.02768,Loma Linda University,106,-0.8,Doctoral Universities: High Research Activity,Private,CA,,117636,Not Designated
+AAD2023.09.02768,Long Island University Brooklyn Campus,107,-0.8,Master's Colleges & Universities: Larger Programs,Private,NY,,192439,Not Designated
+AAD2023.09.02768,Louisiana State University,109,-0.1,Doctoral Universities: Very High Research Activity,Public,LA,,159391,Land Grant
+AAD2023.09.02768,"Louisiana State University Health Sciences Center, New Orleans",110,-0.6,Special Focus Four-Year: Medical Schools & Centers,Public,LA,,159373,Not Designated
+AAD2023.09.02768,"Louisiana State University Health Sciences Center, Shreveport",111,-0.3,Special Focus Four-Year: Medical Schools & Centers,Public,LA,,435000,Not Designated
+AAD2023.09.02768,Louisiana Tech University,112,-0.8,Doctoral Universities: High Research Activity,Public,LA,,159647,APLU
+AAD2023.09.02768,Loyola University Chicago,114,-0.2,Doctoral Universities: High Research Activity,Private,IL,,146719,Not Designated
+AAD2023.09.02768,Luther Seminary,115,-0.6,Special Focus Four-Year: Faith-Related Institutions,Private,MN,,173896,Not Designated
+AAD2023.09.02768,Lutheran School of Theology at Chicago,116,0.1,Special Focus Four-Year: Faith-Related Institutions,Private,IL,,146728,Not Designated
+AAD2023.09.02768,Maharishi University of Management,118,-1.3,Master's Colleges & Universities: Larger Programs,Private,IA,,153861,Not Designated
+AAD2023.09.02768,Marquette University,119,-0.1,Doctoral Universities: High Research Activity,Private,WI,,239105,Not Designated
+AAD2023.09.02768,Marshall University,120,-0.8,Doctoral Universities: High Research Activity,Public,WV,,237525,Not Designated
+AAD2023.09.02768,Marywood University,121,-1.0,Master's Colleges & Universities: Larger Programs,Private,PA,,213826,Not Designated
+AAD2023.09.02768,Massachusetts College of Pharmacy and Health Sciences,122,-1.1,Special Focus Four-Year: Other Health Professions Schools,Private,MA,,166656,Not Designated
+AAD2023.09.02768,Massachusetts Institute of Technology,123,0.8,Doctoral Universities: Very High Research Activity,Private,MA,AAU Member,166683,APLU
+AAD2023.09.02768,Augusta University (Medical College of Georgia),125,-0.5,Doctoral Universities: High Research Activity,Public,GA,,482149,APLU
+AAD2023.09.02768,Medical College of Wisconsin,127,0.0,Special Focus Four-Year: Research Institution,Private,WI,,239169,Not Designated
+AAD2023.09.02768,Medical University of South Carolina,128,0.0,Special Focus Four-Year: Research Institution,Public,SC,,218335,Not Designated
+AAD2023.09.02768,Meharry Medical College,129,-0.8,Special Focus Four-Year: Medical Schools & Centers,Private,TN,,220792,Not Designated
+AAD2023.09.02768,Mercer University,130,-0.8,Doctoral Universities: High Research Activity,Private,GA,,140447,Not Designated
+AAD2023.09.02768,Miami University,131,-0.3,Doctoral Universities: High Research Activity,Public,OH,,204024,APLU
+AAD2023.09.02768,Michigan State University,132,0.4,Doctoral Universities: Very High Research Activity,Public,MI,AAU Member,171100,Land Grant
+AAD2023.09.02768,Michigan Technological University,133,-0.3,Doctoral Universities: High Research Activity,Public,MI,,171128,APLU
+AAD2023.09.02768,Mid-America Baptist Theological Seminary,134,-1.1,Not Designated,Private,TN,,481216,Not Designated
+AAD2023.09.02768,Middle Tennessee State University,135,-0.6,Doctoral Universities: High Research Activity,Public,TN,,220978,APLU
+AAD2023.09.02768,Mississippi State University,136,-0.2,Doctoral Universities: Very High Research Activity,Public,MS,,176080,Land Grant
+AAD2023.09.02768,Montana State University,137,-0.2,Doctoral Universities: Very High Research Activity,Public,MT,,180461,Land Grant
+AAD2023.09.02768,Morehouse School of Medicine,138,-0.7,Special Focus Four-Year: Medical Schools & Centers,Private,GA,,140562,Not Designated
+AAD2023.09.02768,Morgan State University,139,-0.6,Doctoral Universities: High Research Activity,Public,MD,,163453,APLU
+AAD2023.09.02768,Icahn School of Medicine at Mount Sinai,140,0.1,Special Focus Four-Year: Research Institution,Private,NY,,193405,Not Designated
+AAD2023.09.02768,New Jersey Institute of Technology,141,0.0,Doctoral Universities: Very High Research Activity,Public,NJ,,185828,APLU
+AAD2023.09.02768,New Mexico Institute of Mining and Technology,142,-0.6,Master's Colleges & Universities: Small Programs,Public,NM,,187967,APLU
+AAD2023.09.02768,New Mexico State University,143,-0.5,Doctoral Universities: High Research Activity,Public,NM,,188030,Land Grant
+AAD2023.09.02768,New Orleans Baptist Theological Seminary,144,-0.9,Special Focus Four-Year: Faith-Related Institutions,Private,LA,,159948,Not Designated
+AAD2023.09.02768,New York Medical College,145,-0.7,Special Focus Four-Year: Medical Schools & Centers,Private,NY,,193830,Not Designated
+AAD2023.09.02768,New York University,146,0.6,Doctoral Universities: Very High Research Activity,Private,NY,AAU Member,193900,Not Designated
+AAD2023.09.02768,North Carolina Agricultural and Technical State University,147,-0.5,Doctoral Universities: High Research Activity,Public,NC,,199102,Land Grant
+AAD2023.09.02768,North Carolina State University,148,0.2,Doctoral Universities: Very High Research Activity,Public,NC,,199193,Land Grant
+AAD2023.09.02768,North Dakota State University,149,-0.2,Doctoral Universities: Very High Research Activity,Public,ND,,200332,Land Grant
+AAD2023.09.02768,Northeastern University,150,0.5,Doctoral Universities: Very High Research Activity,Private,MA,,167358,Not Designated
+AAD2023.09.02768,Northern Arizona University,151,0.0,Doctoral Universities: High Research Activity,Public,AZ,,105330,APLU
+AAD2023.09.02768,Northern Illinois University,152,-0.3,Doctoral Universities: High Research Activity,Public,IL,,147703,APLU
+AAD2023.09.02768,Northwestern University,153,0.5,Doctoral Universities: Very High Research Activity,Private,IL,AAU Member,147767,Not Designated
+AAD2023.09.02768,Nova Southeastern University,154,-0.7,Doctoral Universities: High Research Activity,Private,FL,,136215,Not Designated
+AAD2023.09.02768,Oakland University,155,-0.5,Doctoral Universities: High Research Activity,Public,MI,,171571,APLU
+AAD2023.09.02768,"Ohio State University, The",156,0.3,Doctoral Universities: Very High Research Activity,Public,OH,AAU Member,204796,Land Grant
+AAD2023.09.02768,Ohio University,157,-0.3,Doctoral Universities: Very High Research Activity,Public,OH,,204857,APLU
+AAD2023.09.02768,Oklahoma State University,158,-0.2,Doctoral Universities: Very High Research Activity,Public,OK,,207388,Land Grant
+AAD2023.09.02768,Old Dominion University,159,0.0,Doctoral Universities: Very High Research Activity,Public,VA,,232982,Not Designated
+AAD2023.09.02768,Oregon Health & Science University,160,0.0,Special Focus Four-Year: Research Institution,Public,OR,,209490,Not Designated
+AAD2023.09.02768,Oregon State University,161,0.1,Doctoral Universities: Very High Research Activity,Public,OR,,209542,Land Grant
+AAD2023.09.02768,Palo Alto University,162,-0.4,Special Focus Four-Year: Other Health Professions Schools,Private,CA,,120698,Not Designated
+AAD2023.09.02768,Pennsylvania State University - University Park,163,0.4,Doctoral Universities: Very High Research Activity,Public,PA,AAU Member,214777,Land Grant
+AAD2023.09.02768,Portland State University,165,-0.3,Doctoral Universities: High Research Activity,Public,OR,,209807,APLU
+AAD2023.09.02768,Princeton Theological Seminary,166,0.6,Special Focus Four-Year: Faith-Related Institutions,Private,NJ,,186122,Not Designated
+AAD2023.09.02768,Princeton University,167,1.0,Doctoral Universities: Very High Research Activity,Private,NJ,AAU Member,186131,Not Designated
+AAD2023.09.02768,Purdue University,168,0.3,Doctoral Universities: Very High Research Activity,Public,IN,AAU Member,243780,Land Grant
+AAD2023.09.02768,Rensselaer Polytechnic Institute,171,0.1,Doctoral Universities: Very High Research Activity,Private,NY,,194824,Not Designated
+AAD2023.09.02768,Rice University,172,0.5,Doctoral Universities: Very High Research Activity,Private,TX,AAU Member,227757,Not Designated
+AAD2023.09.02768,Rosalind Franklin University,175,-0.8,Special Focus Four-Year: Medical Schools & Centers,Private,IL,,145558,Not Designated
+AAD2023.09.02768,Rush University,176,-0.4,Special Focus Four-Year: Medical Schools & Centers,Private,IL,,148511,Not Designated
+AAD2023.09.02768,Rutgers - New Brunswick,177,0.2,Doctoral Universities: Very High Research Activity,Public,NJ,AAU Member,186380,Land Grant
+AAD2023.09.02768,Saint Louis University,178,-0.2,Doctoral Universities: High Research Activity,Private,MO,,179159,Not Designated
+AAD2023.09.02768,Sam Houston State University,180,-0.5,Doctoral Universities: High Research Activity,Public,TX,,227881,Not Designated
+AAD2023.09.02768,San Diego State University,181,-0.1,Doctoral Universities: High Research Activity,Public,CA,,122409,APLU
+AAD2023.09.02768,Santa Clara University,182,-0.6,Doctoral/Professional Universities,Private,CA,,122931,Not Designated
+AAD2023.09.02768,"Scripps Research Institute (California), The",184,0.7,Not Designated,Private,CA,,,Not Designated
+AAD2023.09.02768,Seattle Pacific University,185,-0.8,Doctoral/Professional Universities,Private,WA,,236577,Not Designated
+AAD2023.09.02768,Seton Hall University,187,-0.5,Doctoral Universities: High Research Activity,Private,NJ,,186584,Not Designated
+AAD2023.09.02768,Smith College,188,-0.2,Baccalaureate Colleges: Arts & Sciences Focus,Private,MA,,167835,Not Designated
+AAD2023.09.02768,South Dakota School of Mines & Technology,189,-0.7,Master's Colleges & Universities: Medium Programs,Public,SD,,219347,Not Designated
+AAD2023.09.02768,South Dakota State University,190,-0.5,Doctoral Universities: High Research Activity,Public,SD,,219356,Land Grant
+AAD2023.09.02768,Southeastern Baptist Theological Seminary,191,-0.6,Doctoral/Professional Universities,Private,NC,,199759,Not Designated
+AAD2023.09.02768,Southern Illinois University Carbondale,192,-0.4,Doctoral Universities: High Research Activity,Public,IL,,149222,APLU
+AAD2023.09.02768,Southern Methodist University,193,0.0,Doctoral Universities: High Research Activity,Private,TX,,228246,Not Designated
+AAD2023.09.02768,Southern University and A&M College,195,-1.1,Doctoral Universities: High Research Activity,Public,LA,,160621,Not Designated
+AAD2023.09.02768,Southwestern Baptist Theological Seminary,196,-0.8,Not Designated,Private,TX,,228477,Not Designated
+AAD2023.09.02768,St. John's University,197,-0.6,Doctoral/Professional Universities,Private,NY,,195809,Not Designated
+AAD2023.09.02768,Stanford University,198,1.0,Doctoral Universities: Very High Research Activity,Private,CA,AAU Member,243744,Not Designated
+AAD2023.09.02768,Stephen F. Austin State University,199,-1.0,Master's Colleges & Universities: Larger Programs,Public,TX,,228431,Not Designated
+AAD2023.09.02768,Stevens Institute of Technology,200,-0.1,Doctoral Universities: High Research Activity,Private,NJ,,186867,Not Designated
+AAD2023.09.02768,Suffolk University,201,-0.8,Doctoral/Professional Universities,Private,MA,,168005,Not Designated
+AAD2023.09.02768,"University at Albany, State University of New York",202,0.0,Doctoral Universities: Very High Research Activity,Public,NY,,196060,APLU
+AAD2023.09.02768,"Binghamton University, State University of New York",203,-0.1,Doctoral Universities: Very High Research Activity,Public,NY,,196079,APLU
+AAD2023.09.02768,"University at Buffalo, State University of New York",204,0.1,Doctoral Universities: Very High Research Activity,Public,NY,AAU Member,196088,APLU
+AAD2023.09.02768,"Stony Brook University, State University of New York",205,0.2,Doctoral Universities: Very High Research Activity,Public,NY,AAU Member,196097,APLU
+AAD2023.09.02768,SUNY College of Environmental Science and Forestry,206,-0.3,Doctoral Universities: High Research Activity,Public,NY,,196103,Not Designated
+AAD2023.09.02768,SUNY Downstate Health Science University,208,-0.6,Special Focus Four-Year: Medical Schools & Centers,Public,NY,,196255,Not Designated
+AAD2023.09.02768,SUNY Upstate Medical University,209,-0.6,Special Focus Four-Year: Medical Schools & Centers,Public,NY,,196307,Not Designated
+AAD2023.09.02768,Syracuse University,210,0.0,Doctoral Universities: Very High Research Activity,Private,NY,,196413,Not Designated
+AAD2023.09.02768,Teachers College Columbia University,211,0.4,Doctoral Universities: High Research Activity,Private,NY,,196468,Not Designated
+AAD2023.09.02768,Temple University,212,0.1,Doctoral Universities: Very High Research Activity,Public,PA,,216339,APLU
+AAD2023.09.02768,Tennessee State University,213,-0.8,Doctoral Universities: High Research Activity,Public,TN,,221838,APLU
+AAD2023.09.02768,Tennessee Technological University,214,-0.8,Doctoral Universities: High Research Activity,Public,TN,,221847,Not Designated
+AAD2023.09.02768,Texas A&M University,215,0.3,Doctoral Universities: Very High Research Activity,Public,TX,AAU Member,228723,Land Grant
+AAD2023.09.02768,Texas A&M Corpus Christi,217,-0.4,Doctoral Universities: High Research Activity,Public,TX,,224147,Not Designated
+AAD2023.09.02768,Texas A&M Kingsville,218,-0.6,Doctoral Universities: High Research Activity,Public,TX,,228705,Not Designated
+AAD2023.09.02768,Texas Christian University,219,-0.1,Doctoral Universities: High Research Activity,Private,TX,,228875,Not Designated
+AAD2023.09.02768,Texas State University,221,-0.2,Doctoral Universities: High Research Activity,Public,TX,,228459,APLU
+AAD2023.09.02768,Texas Tech University,222,0.0,Doctoral Universities: Very High Research Activity,Public,TX,,229115,APLU
+AAD2023.09.02768,Texas Tech University Health Sciences Center,223,-0.5,Special Focus Four-Year: Research Institution,Public,TX,,229337,Not Designated
+AAD2023.09.02768,Texas Woman's University,224,-0.5,Doctoral/Professional Universities,Public,TX,,229179,Not Designated
+AAD2023.09.02768,"University of Montana, Missoula",225,-0.2,Doctoral Universities: Very High Research Activity,Public,MT,,180489,APLU
+AAD2023.09.02768,"University of Tennessee, The",226,0.2,Doctoral Universities: Very High Research Activity,Public,TN,,221759,APLU
+AAD2023.09.02768,"University of Tennessee Health Science Center, The",227,-0.3,Special Focus Four-Year: Research Institution,Public,TN,,487010,Not Designated
+AAD2023.09.02768,University of Texas Arlington,228,0.1,Doctoral Universities: Very High Research Activity,Public,TX,,228769,APLU
+AAD2023.09.02768,"University of Texas at Austin, The",229,0.6,Doctoral Universities: Very High Research Activity,Public,TX,AAU Member,228778,APLU
+AAD2023.09.02768,"University of Texas at Dallas, The",230,0.2,Doctoral Universities: Very High Research Activity,Public,TX,,228787,APLU
+AAD2023.09.02768,"University of Texas at El Paso, The",231,-0.2,Doctoral Universities: Very High Research Activity,Public,TX,,228796,APLU
+AAD2023.09.02768,"University of Texas at San Antonio, The",232,0.0,Doctoral Universities: Very High Research Activity,Public,TX,,229027,APLU
+AAD2023.09.02768,"University of Texas Health Science Center at San Antonio, The",233,-0.2,Special Focus Four-Year: Research Institution,Public,TX,,228644,Not Designated
+AAD2023.09.02768,"University of Texas Medical Branch, The",234,-0.2,Special Focus Four-Year: Research Institution,Public,TX,,228653,Not Designated
+AAD2023.09.02768,Thomas Jefferson University,236,-0.4,Doctoral Universities: High Research Activity,Private,PA,,216366,Not Designated
+AAD2023.09.02768,Tufts University,237,0.1,Doctoral Universities: Very High Research Activity,Private,MA,AAU Member,168148,Not Designated
+AAD2023.09.02768,Tulane University,238,0.2,Doctoral Universities: Very High Research Activity,Private,LA,AAU Member,160755,Not Designated
+AAD2023.09.02768,Uniformed Services University of the Health Sciences,239,-0.5,Special Focus Four-Year: Research Institution,Private,MD,,164137,Not Designated
+AAD2023.09.02768,Union Theological Seminary in the City of New York,240,0.3,Special Focus Four-Year: Faith-Related Institutions,Private,NY,,196884,Not Designated
+AAD2023.09.02768,"University of Akron, The",242,-0.5,Doctoral Universities: High Research Activity,Public,OH,,200800,APLU
+AAD2023.09.02768,"University of Alabama, The",243,0.1,Doctoral Universities: Very High Research Activity,Public,AL,,100751,APLU
+AAD2023.09.02768,"University of Alabama at Birmingham, The",244,-0.1,Doctoral Universities: Very High Research Activity,Public,AL,,100663,APLU
+AAD2023.09.02768,"University of Alabama in Huntsville, The",245,-0.3,Doctoral Universities: Very High Research Activity,Public,AL,,100706,APLU
+AAD2023.09.02768,University of Alaska Fairbanks,246,-0.5,Doctoral Universities: High Research Activity,Public,AK,,102614,Land Grant
+AAD2023.09.02768,"University of Arizona, The",247,0.3,Doctoral Universities: Very High Research Activity,Public,AZ,AAU Member,104179,Land Grant
+AAD2023.09.02768,University of Arkansas for Medical Sciences,249,-0.4,Special Focus Four-Year: Research Institution,Public,AR,,106263,Not Designated
+AAD2023.09.02768,University of Arkansas,250,0.0,Doctoral Universities: Very High Research Activity,Public,AR,,106397,Land Grant
+AAD2023.09.02768,"University of California, Berkeley",251,0.7,Doctoral Universities: Very High Research Activity,Public,CA,AAU Member,110635,Land Grant
+AAD2023.09.02768,"University of California, Davis",252,0.4,Doctoral Universities: Very High Research Activity,Public,CA,AAU Member,110644,Land Grant
+AAD2023.09.02768,"University of California, Irvine",253,0.5,Doctoral Universities: Very High Research Activity,Public,CA,AAU Member,110653,Land Grant
+AAD2023.09.02768,"University of California, Los Angeles",254,0.6,Doctoral Universities: Very High Research Activity,Public,CA,AAU Member,110662,Land Grant
+AAD2023.09.02768,"University of California, Riverside",255,0.4,Doctoral Universities: Very High Research Activity,Public,CA,AAU Member,110671,Land Grant
+AAD2023.09.02768,"University of California, San Diego",256,0.6,Doctoral Universities: Very High Research Activity,Public,CA,AAU Member,110680,Land Grant
+AAD2023.09.02768,"University of California, San Francisco",257,0.4,Special Focus Four-Year: Research Institution,Public,CA,,110699,Not Designated
+AAD2023.09.02768,"University of California, Santa Barbara",258,0.6,Doctoral Universities: Very High Research Activity,Public,CA,AAU Member,110705,Land Grant
+AAD2023.09.02768,"University of California, Santa Cruz",259,0.3,Doctoral Universities: Very High Research Activity,Public,CA,AAU Member,110714,Land Grant
+AAD2023.09.02768,University of Central Florida,260,0.1,Doctoral Universities: Very High Research Activity,Public,FL,,132903,APLU
+AAD2023.09.02768,"University of Chicago, The",261,0.7,Doctoral Universities: Very High Research Activity,Private,IL,AAU Member,144050,Not Designated
+AAD2023.09.02768,"University of Cincinnati, The",262,-0.2,Doctoral Universities: Very High Research Activity,Public,OH,,201885,APLU
+AAD2023.09.02768,University of Colorado Boulder,263,0.6,Doctoral Universities: Very High Research Activity,Public,CO,AAU Member,126614,APLU
+AAD2023.09.02768,University of Colorado at Colorado Springs,264,-0.3,Doctoral Universities: High Research Activity,Public,CO,,126580,Not Designated
+AAD2023.09.02768,University of Colorado Denver,266,0.1,Doctoral Universities: Very High Research Activity,Public,CO,,126562,APLU
+AAD2023.09.02768,University of Connecticut,267,0.2,Doctoral Universities: Very High Research Activity,Public,CT,,129020,Land Grant
+AAD2023.09.02768,University of Dallas,268,-0.8,Master's Colleges & Universities: Larger Programs,Private,TX,,224323,Not Designated
+AAD2023.09.02768,University of Dayton,269,-0.4,Doctoral Universities: High Research Activity,Private,OH,,202480,Not Designated
+AAD2023.09.02768,University of Delaware,270,0.3,Doctoral Universities: Very High Research Activity,Public,DE,,130943,Land Grant
+AAD2023.09.02768,University of Denver,271,0.0,Doctoral Universities: Very High Research Activity,Private,CO,,127060,Not Designated
+AAD2023.09.02768,University of Detroit Mercy,272,-1.0,Doctoral/Professional Universities,Private,MI,,169716,Not Designated
+AAD2023.09.02768,University of Florida,273,0.4,Doctoral Universities: Very High Research Activity,Public,FL,AAU Member,134130,Land Grant
+AAD2023.09.02768,University of Georgia,274,0.2,Doctoral Universities: Very High Research Activity,Public,GA,,139959,Land Grant
+AAD2023.09.02768,University of Hawai'i - Manoa,276,-0.1,Doctoral Universities: Very High Research Activity,Public,HI,,141574,Land Grant
+AAD2023.09.02768,University of Houston,277,0.1,Doctoral Universities: Very High Research Activity,Public,TX,,225511,APLU
+AAD2023.09.02768,University of Idaho,278,-0.1,Doctoral Universities: High Research Activity,Public,ID,,142285,Land Grant
+AAD2023.09.02768,University of Illinois Chicago,279,0.2,Doctoral Universities: Very High Research Activity,Public,IL,,145600,APLU
+AAD2023.09.02768,University of Illinois at Urbana-Champaign,280,0.4,Doctoral Universities: Very High Research Activity,Public,IL,AAU Member,145637,Land Grant
+AAD2023.09.02768,"University of Iowa, The",281,0.2,Doctoral Universities: Very High Research Activity,Public,IA,AAU Member,153658,APLU
+AAD2023.09.02768,"University of Kansas, The",282,0.1,Doctoral Universities: Very High Research Activity,Public,KS,AAU Member,155317,APLU
+AAD2023.09.02768,University of Kentucky,283,0.1,Doctoral Universities: Very High Research Activity,Public,KY,,157085,Land Grant
+AAD2023.09.02768,University of Louisiana at Lafayette,284,-0.3,Doctoral Universities: Very High Research Activity,Public,LA,,160658,APLU
+AAD2023.09.02768,"University of Louisiana at Monroe, The",285,-1.0,Doctoral/Professional Universities,Public,LA,,159993,Not Designated
+AAD2023.09.02768,University of Louisville,286,-0.3,Doctoral Universities: Very High Research Activity,Public,KY,,157289,APLU
+AAD2023.09.02768,"University of Maine, The",287,-0.3,Doctoral Universities: Very High Research Activity,Public,ME,,161253,Land Grant
+AAD2023.09.02768,"University of Maryland, Baltimore County",288,-0.1,Doctoral Universities: Very High Research Activity,Public,MD,,163268,APLU
+AAD2023.09.02768,"University of Maryland, College Park",289,0.4,Doctoral Universities: Very High Research Activity,Public,MD,AAU Member,163286,Land Grant
+AAD2023.09.02768,University of Maryland Eastern Shore,290,-0.9,Doctoral Universities: High Research Activity,Public,MD,,163338,Land Grant
+AAD2023.09.02768,University of Massachusetts Medical School,292,0.0,Special Focus Four-Year: Research Institution,Public,MA,,166708,Not Designated
+AAD2023.09.02768,University of Massachusetts Amherst,293,0.2,Doctoral Universities: Very High Research Activity,Public,MA,,166629,Land Grant
+AAD2023.09.02768,University of Massachusetts Boston,294,0.0,Doctoral Universities: High Research Activity,Public,MA,,166638,APLU
+AAD2023.09.02768,University of Massachusetts Dartmouth,295,-0.3,Doctoral Universities: High Research Activity,Public,MA,,167987,Not Designated
+AAD2023.09.02768,University of Massachusetts Lowell,296,-0.1,Doctoral Universities: High Research Activity,Public,MA,,166513,APLU
+AAD2023.09.02768,University of Memphis,298,-0.2,Doctoral Universities: Very High Research Activity,Public,TN,,220862,APLU
+AAD2023.09.02768,University of Miami,299,0.2,Doctoral Universities: Very High Research Activity,Private,FL,AAU Member,135726,Not Designated
+AAD2023.09.02768,University of Michigan,300,0.6,Doctoral Universities: Very High Research Activity,Public,MI,AAU Member,170976,APLU
+AAD2023.09.02768,"University of Minnesota, Twin Cities",301,0.4,Doctoral Universities: Very High Research Activity,Public,MN,AAU Member,174066,Land Grant
+AAD2023.09.02768,"University of Mississippi, The",302,-0.2,Doctoral Universities: Very High Research Activity,Public,MS,,176017,APLU
+AAD2023.09.02768,"University of Mississippi Medical Center, The",303,-0.5,Not Designated,Public,MS,,17601701,Not Designated
+AAD2023.09.02768,University of Missouri,304,0.1,Doctoral Universities: Very High Research Activity,Public,MO,AAU Member,178396,Land Grant
+AAD2023.09.02768,"University of Missouri - Kansas City, The",305,-0.3,Doctoral Universities: High Research Activity,Public,MO,,178402,APLU
+AAD2023.09.02768,Missouri University of Science and Technology,306,0.0,Doctoral Universities: High Research Activity,Public,MO,,178411,APLU
+AAD2023.09.02768,University of Missouri - St. Louis,307,0.0,Doctoral Universities: High Research Activity,Public,MO,,178420,APLU
+AAD2023.09.02768,University of Nebraska - Lincoln,308,0.1,Doctoral Universities: Very High Research Activity,Public,NE,,181464,Land Grant
+AAD2023.09.02768,University of Nebraska at Omaha,309,-0.3,Doctoral Universities: High Research Activity,Public,NE,,181394,Not Designated
+AAD2023.09.02768,University of Nebraska Medical Center,310,0.0,Special Focus Four-Year: Research Institution,Public,NE,,181428,Not Designated
+AAD2023.09.02768,"University of Nevada, Las Vegas",311,-0.1,Doctoral Universities: Very High Research Activity,Public,NV,,182281,APLU
+AAD2023.09.02768,"University of Nevada, Reno",312,0.0,Doctoral Universities: Very High Research Activity,Public,NV,,182290,Land Grant
+AAD2023.09.02768,University of New Hampshire,313,-0.2,Doctoral Universities: Very High Research Activity,Public,NH,,183044,Land Grant
+AAD2023.09.02768,"University of New Mexico, The",314,0.0,Doctoral Universities: Very High Research Activity,Public,NM,,187985,APLU
+AAD2023.09.02768,"University of New Orleans, The",315,-0.5,Doctoral Universities: High Research Activity,Public,LA,,159939,APLU
+AAD2023.09.02768,University of North Carolina at Chapel Hill,316,0.3,Doctoral Universities: Very High Research Activity,Public,NC,AAU Member,199120,APLU
+AAD2023.09.02768,University of North Carolina Charlotte,317,0.1,Doctoral Universities: High Research Activity,Public,NC,,199139,APLU
+AAD2023.09.02768,"University of North Carolina at Greensboro, The",318,-0.1,Doctoral Universities: High Research Activity,Public,NC,,199148,APLU
+AAD2023.09.02768,"University of North Dakota, The",319,-0.6,Doctoral Universities: High Research Activity,Public,ND,,200280,APLU
+AAD2023.09.02768,University of North Texas,320,0.1,Doctoral Universities: Very High Research Activity,Public,TX,,227216,APLU
+AAD2023.09.02768,University of North Texas Health Science Center at Fort Worth,321,-0.5,Special Focus Four-Year: Medical Schools & Centers,Public,TX,,228909,Not Designated
+AAD2023.09.02768,University of Northern Colorado,322,-0.6,Doctoral/Professional Universities,Public,CO,,127741,APLU
+AAD2023.09.02768,University of Notre Dame,323,0.5,Doctoral Universities: Very High Research Activity,Private,IN,AAU Member,152080,Not Designated
+AAD2023.09.02768,University of Oklahoma,324,-0.1,Doctoral Universities: Very High Research Activity,Public,OK,,207500,APLU
+AAD2023.09.02768,University of Oregon,325,0.4,Doctoral Universities: Very High Research Activity,Public,OR,AAU Member,209551,APLU
+AAD2023.09.02768,University of Pennsylvania,326,0.8,Doctoral Universities: Very High Research Activity,Private,PA,AAU Member,215062,Not Designated
+AAD2023.09.02768,University of Pittsburgh,327,0.2,Doctoral Universities: Very High Research Activity,Public,PA,AAU Member,215293,APLU
+AAD2023.09.02768,University of Rhode Island,328,-0.2,Doctoral Universities: High Research Activity,Public,RI,,217484,Land Grant
+AAD2023.09.02768,University of Rochester,329,0.2,Doctoral Universities: Very High Research Activity,Private,NY,AAU Member,195030,Not Designated
+AAD2023.09.02768,University of San Diego,330,-0.5,Doctoral Universities: High Research Activity,Private,CA,,122436,Not Designated
+AAD2023.09.02768,University of South Alabama,331,-0.5,Doctoral Universities: High Research Activity,Public,AL,,102094,APLU
+AAD2023.09.02768,University of South Carolina,332,0.3,Doctoral Universities: Very High Research Activity,Public,SC,,218663,APLU
+AAD2023.09.02768,"University of South Dakota, The",333,-0.5,Doctoral Universities: High Research Activity,Public,SD,,219471,APLU
+AAD2023.09.02768,University of South Florida,334,0.1,Doctoral Universities: Very High Research Activity,Public,FL,AAU Member,137351,APLU
+AAD2023.09.02768,University of Southern California,335,0.3,Doctoral Universities: Very High Research Activity,Private,CA,AAU Member,123961,Not Designated
+AAD2023.09.02768,"University of Southern Mississippi, The",336,-0.5,Doctoral Universities: Very High Research Activity,Public,MS,,176372,APLU
+AAD2023.09.02768,"University of Texas Southwestern Medical Center at Dallas, The",337,0.1,Special Focus Four-Year: Research Institution,Public,TX,,228635,Not Designated
+AAD2023.09.02768,University of the Incarnate Word,338,-0.9,Doctoral/Professional Universities,Private,TX,,225627,Not Designated
+AAD2023.09.02768,University of the Pacific,339,-1.0,Doctoral/Professional Universities,Private,CA,,120883,Not Designated
+AAD2023.09.02768,"University of Toledo, The",341,-0.4,Doctoral Universities: High Research Activity,Public,OH,,206084,APLU
+AAD2023.09.02768,"University of Tulsa, The",342,-0.4,Doctoral Universities: High Research Activity,Private,OK,,207971,Not Designated
+AAD2023.09.02768,"University of Utah, The",343,0.4,Doctoral Universities: Very High Research Activity,Public,UT,AAU Member,230764,APLU
+AAD2023.09.02768,"University of Vermont, The",344,0.0,Doctoral Universities: High Research Activity,Public,VT,,231174,Land Grant
+AAD2023.09.02768,University of Virginia,345,0.4,Doctoral Universities: Very High Research Activity,Public,VA,AAU Member,234076,APLU
+AAD2023.09.02768,University of Washington,346,0.4,Doctoral Universities: Very High Research Activity,Public,WA,AAU Member,236948,APLU
+AAD2023.09.02768,University of Wisconsin - Madison,347,0.5,Doctoral Universities: Very High Research Activity,Public,WI,AAU Member,240444,Land Grant
+AAD2023.09.02768,University of Wisconsin - Milwaukee,348,-0.2,Doctoral Universities: Very High Research Activity,Public,WI,,240453,APLU
+AAD2023.09.02768,University of Wyoming,349,0.0,Doctoral Universities: High Research Activity,Public,WY,,240727,Land Grant
+AAD2023.09.02768,Utah State University,350,0.0,Doctoral Universities: Very High Research Activity,Public,UT,,230728,Land Grant
+AAD2023.09.02768,Vanderbilt University,351,0.3,Doctoral Universities: Very High Research Activity,Private,TN,AAU Member,221999,Not Designated
+AAD2023.09.02768,Villanova University,352,-0.1,Doctoral Universities: High Research Activity,Private,PA,,216597,Not Designated
+AAD2023.09.02768,Virginia Commonwealth University,353,0.1,Doctoral Universities: Very High Research Activity,Public,VA,,234030,APLU
+AAD2023.09.02768,Virginia Polytechnic Institute and State University,354,0.2,Doctoral Universities: Very High Research Activity,Public,VA,,233921,Land Grant
+AAD2023.09.02768,Wake Forest University,355,0.0,Doctoral Universities: High Research Activity,Private,NC,,199847,Not Designated
+AAD2023.09.02768,Washington State University,357,0.1,Doctoral Universities: Very High Research Activity,Public,WA,,236939,Land Grant
+AAD2023.09.02768,Washington University in St. Louis,358,0.6,Doctoral Universities: Very High Research Activity,Private,MO,AAU Member,179867,Not Designated
+AAD2023.09.02768,Wayne State University,359,-0.1,Doctoral Universities: Very High Research Activity,Public,MI,,172644,APLU
+AAD2023.09.02768,Weill Medical College of Cornell University,360,0.6,Special Focus Four-Year: Research Institution,Private,NY,,190424,Not Designated
+AAD2023.09.02768,Wesleyan University,361,0.0,Baccalaureate Colleges: Arts & Sciences Focus,Private,CT,,130697,Not Designated
+AAD2023.09.02768,West Virginia University,362,-0.1,Doctoral Universities: Very High Research Activity,Public,WV,,238032,Land Grant
+AAD2023.09.02768,Western Michigan University,363,-0.5,Doctoral Universities: High Research Activity,Public,MI,,172699,APLU
+AAD2023.09.02768,Westminster Theological Seminary,364,-0.3,Special Focus Four-Year: Faith-Related Institutions,Private,PA,,216816,Not Designated
+AAD2023.09.02768,Wichita State University,365,-0.6,Doctoral Universities: High Research Activity,Public,KS,,156125,APLU
+AAD2023.09.02768,Worcester Polytechnic Institute,366,0.1,Doctoral Universities: High Research Activity,Private,MA,,168421,Not Designated
+AAD2023.09.02768,Wright State University,367,-0.6,Doctoral Universities: High Research Activity,Public,OH,,206604,Not Designated
+AAD2023.09.02768,Yale University,368,0.8,Doctoral Universities: Very High Research Activity,Private,CT,AAU Member,130794,Not Designated
+AAD2023.09.02768,Rutgers - Newark,369,0.2,Doctoral Universities: High Research Activity,Public,NJ,,186399,APLU
+AAD2023.09.02768,Cold Spring Harbor,370,0.8,Not Designated,Private,NY,,,Not Designated
+AAD2023.09.02768,Prairie View A&M University,371,-0.8,Doctoral Universities: High Research Activity,Public,TX,,227526,Land Grant
+AAD2023.09.02768,Asbury Theological Seminary,372,-0.3,Special Focus Four-Year: Faith-Related Institutions,Private,KY,,156222,Not Designated
+AAD2023.09.02768,Benedictine University,376,-1.2,Master's Colleges & Universities: Larger Programs,Private,IL,,145619,Not Designated
+AAD2023.09.02768,Boise State University,377,-0.3,Doctoral Universities: High Research Activity,Public,ID,,142115,APLU
+AAD2023.09.02768,Gannon University,381,-1.2,Doctoral/Professional Universities,Private,PA,,212601,Not Designated
+AAD2023.09.02768,Gonzaga University,382,-1.0,Doctoral/Professional Universities,Private,WA,,235316,Not Designated
+AAD2023.09.02768,Hofstra University,383,-0.8,Doctoral/Professional Universities,Private,NY,,191649,Not Designated
+AAD2023.09.02768,Naval Postgraduate School,386,-0.7,Master's Colleges & Universities: Larger Programs,Public,CA,,119678,Not Designated
+AAD2023.09.02768,Norfolk State University,387,-1.1,Master's Colleges & Universities: Medium Programs,Public,VA,,232937,Not Designated
+AAD2023.09.02768,Rochester Institute of Technology,388,-0.4,Doctoral Universities: High Research Activity,Private,NY,,195003,Not Designated
+AAD2023.09.02768,Salve Regina University,389,-1.1,Master's Colleges & Universities: Larger Programs,Private,RI,,217536,Not Designated
+AAD2023.09.02768,Simmons University,390,-0.6,Doctoral/Professional Universities,Private,MA,,167783,Not Designated
+AAD2023.09.02768,Southern New Hampshire University,392,-1.2,Master's Colleges & Universities: Larger Programs,Private,NH,,183026,Not Designated
+AAD2023.09.02768,Springfield College,393,-0.9,Doctoral/Professional Universities,Private,MA,,167899,Not Designated
+AAD2023.09.02768,"College of Optometry, State University of New York",394,-0.6,Special Focus Four-Year: Other Health Professions Schools,Public,NY,,196228,Not Designated
+AAD2023.09.02768,Texas Southern University,395,-0.9,Doctoral Universities: High Research Activity,Public,TX,,229063,Not Designated
+AAD2023.09.02768,"New School, The",396,0.2,Doctoral Universities: High Research Activity,Private,NY,,193654,Not Designated
+AAD2023.09.02768,University of Arkansas at Little Rock,397,-0.8,Doctoral Universities: High Research Activity,Public,AR,,106245,Not Designated
+AAD2023.09.02768,University of Hartford,398,-1.1,Doctoral/Professional Universities,Private,CT,,129525,Not Designated
+AAD2023.09.02768,University of North Carolina Wilmington,399,-0.5,Doctoral Universities: High Research Activity,Public,NC,,199218,APLU
+AAD2023.09.02768,"University of Tennessee at Chattanooga, The",401,-0.7,Doctoral/Professional Universities,Public,TN,,221740,Not Designated
+AAD2023.09.02768,Yeshiva University,404,0.0,Doctoral/Professional Universities,Private,NY,,197708,Not Designated
+AAD2023.09.02768,University of Southern Maine,406,-0.9,Master's Colleges & Universities: Larger Programs,Public,ME,,161554,Not Designated
+AAD2023.09.02768,East Carolina University,407,-0.3,Doctoral Universities: High Research Activity,Public,NC,,198464,APLU
+AAD2023.09.02768,"University of Maryland Baltimore, The",408,-0.1,Special Focus Four-Year: Research Institution,Public,MD,,163259,Not Designated
+AAD2023.09.02768,LIU Post (Long Island University Post),409,-0.6,Doctoral Universities: High Research Activity,Private,NY,,192448,Not Designated
+AAD2023.09.02768,"University of Texas Health Science Center at Houston, The",411,0.1,Special Focus Four-Year: Research Institution,Public,TX,,229300,Not Designated
+AAD2023.09.02768,Brite Divinity School,412,0.0,Special Focus Four-Year: Faith-Related Institutions,Private,TX,,450304,Not Designated
+AAD2023.09.02768,Gerstner Sloan-Kettering Graduate School of Biomedical Sciences,415,1.4,Not Designated,Private,NY,,458511,Not Designated
+AAD2023.09.02768,Bentley University,505,0.0,Master's Colleges & Universities: Larger Programs,Private,MA,,164739,Not Designated
+AAD2023.09.02768,St Mary's University,507,-1.0,Master's Colleges & Universities: Larger Programs,Private,TX,,228149,Not Designated
+AAD2023.09.02768,"Southern Baptist Theological Seminary, The",510,-0.5,Special Focus Four-Year: Faith-Related Institutions,Private,KY,,157748,Not Designated
+AAD2023.09.02768,Trinity International University,512,-0.7,Doctoral/Professional Universities,Private,IL,,149514,Not Designated
+AAD2023.09.02768,West Texas A&M University,513,-0.7,Master's Colleges & Universities: Larger Programs,Public,TX,,229814,Not Designated
+AAD2023.09.02768,"University of California, Merced",517,0.2,Doctoral Universities: High Research Activity,Public,CA,,445188,Land Grant
+AAD2023.09.02768,City of Hope Graduate School of Biological Sciences,519,1.0,Special Focus Four-Year: Other Health Professions Schools,Private,CA,,441238,Not Designated
+AAD2023.09.02768,Delaware State University,521,-0.9,Master's Colleges & Universities: Medium Programs,Public,DE,,130934,Land Grant
+AAD2023.09.02768,Eastern University,522,-1.3,Master's Colleges & Universities: Larger Programs,Private,PA,,212133,Not Designated
+AAD2023.09.02768,Emporia State University,523,-0.8,Master's Colleges & Universities: Larger Programs,Public,KS,,155025,Not Designated
+AAD2023.09.02768,James Madison University,525,-0.6,Doctoral Universities: High Research Activity,Public,VA,,232423,Not Designated
+AAD2023.09.02768,Robert Morris University,532,-0.8,Doctoral/Professional Universities,Private,PA,,215655,Not Designated
+AAD2023.09.02768,"California State University, Sacramento",534,-1.0,Master's Colleges & Universities: Larger Programs,Public,CA,,110617,Land Grant
+AAD2023.09.02768,Alabama State University,600,-0.7,Doctoral/Professional Universities,Public,AL,,100724,Not Designated
+AAD2023.09.02768,University of Central Arkansas,3191,-1.1,Doctoral/Professional Universities,Public,AR,,106704,Not Designated
+AAD2023.09.02768,Chapman University,536253,-0.3,Doctoral Universities: High Research Activity,Private,CA,,111948,Not Designated
+AAD2023.09.02768,Youngstown State University,537129,-1.0,Master's Colleges & Universities: Larger Programs,Public,OH,,206695,Not Designated
+AAD2023.09.02768,Rhode Island College,537169,-1.3,Master's Colleges & Universities: Larger Programs,Public,RI,,217420,Not Designated
+AAD2023.09.02768,Rowan University,537171,-0.4,Doctoral Universities: High Research Activity,Public,NJ,,184782,Not Designated
+AAD2023.09.02768,Montclair State University,537172,-0.4,Doctoral Universities: High Research Activity,Public,NJ,,185590,APLU
+AAD2023.09.02768,Northeast Ohio Medical University,537174,-1.1,Special Focus Four-Year: Medical Schools & Centers,Public,OH,,204477,Not Designated
+AAD2023.09.02768,Lamar University,537187,-0.8,Doctoral/Professional Universities,Public,TX,,226091,Not Designated
+AAD2023.09.02768,Drake University,537205,-0.9,Doctoral/Professional Universities,Private,IA,,153269,Not Designated
+AAD2023.09.02768,"California State University, Long Beach",537217,-0.6,Doctoral Universities: High Research Activity,Public,CA,,110583,Not Designated
+AAD2023.09.02768,Rutgers - Camden,537408,-0.1,Doctoral Universities: High Research Activity,Public,NJ,,186371,Not Designated
+AAD2023.09.02768,Kennesaw State University,537881,-0.5,Doctoral Universities: High Research Activity,Public,GA,,486840,Not Designated
+AAD2023.09.02768,Texas A&M International University,537882,-0.6,Master's Colleges & Universities: Larger Programs,Public,TX,,226152,Not Designated
+AAD2023.09.02768,University of West Georgia,537883,-0.9,Doctoral/Professional Universities,Public,GA,,141334,Not Designated
+AAD2023.09.02768,University of Minnesota - Duluth,537919,-0.5,Master's Colleges & Universities: Larger Programs,Public,MN,,174233,Land Grant
+AAD2023.09.02768,"University of Texas at Tyler, The",539123,-0.6,Doctoral Universities: High Research Activity,Public,TX,,228802,Not Designated
+AAD2023.09.02768,Virginia State University,539790,-1.1,Master's Colleges & Universities: Medium Programs,Public,VA,,234155,Land Grant
+AAD2023.09.02768,Tuskegee University,541707,-1.1,Master's Colleges & Universities: Medium Programs,Private,AL,,102377,Land Grant
+AAD2023.09.02768,Eastern Virginia Medical School,541796,-0.6,Special Focus Four-Year: Research Institution,Public,VA,,231970,Not Designated
+AAD2023.09.02768,Embry-Riddle Aeronautical University,554564,-0.9,Master's Colleges & Universities: Larger Programs,Private,FL,,133553,Not Designated
+AAD2023.09.02768,Georgia Southern University,554573,-0.6,Doctoral Universities: High Research Activity,Public,GA,,139931,APLU
+AAD2023.09.02768,Trevecca Nazarene University,554728,-1.6,Doctoral/Professional Universities,Private,TN,,221892,Not Designated
+AAD2023.09.02768,Western New England University,554783,-1.0,Doctoral/Professional Universities,Private,MA,,168254,Not Designated
+AAD2023.09.02768,Molloy University,555387,-1.2,Master's Colleges & Universities: Larger Programs,Private,NY,,193292,Not Designated
+AAD2023.09.02768,Bellarmine University,555813,-1.2,Doctoral/Professional Universities,Private,KY,,156286,Not Designated
+AAD2023.09.02768,"National Louis University, Chicago",556546,-1.2,Doctoral/Professional Universities,Private,IL,,147536,Not Designated
+AAD2023.09.02768,Our Lady of the Lake University,556638,-1.1,Doctoral/Professional Universities,Private,TX,,227331,Not Designated
+AAD2023.09.02768,Pacific University,556642,-1.2,Doctoral/Professional Universities,Private,OR,,209612,Not Designated
+AAD2023.09.02768,Ponce Health Sciences University,556678,-1.2,Special Focus Four-Year: Medical Schools & Centers,Private,,,243081,Not Designated
+AAD2023.09.02768,"Southern Illinois University, Edwardsville",556862,-0.9,Doctoral/Professional Universities,Public,IL,,149231,Not Designated
+AAD2023.09.02768,Texas Wesleyan University,556978,-1.4,Doctoral/Professional Universities,Private,TX,,229160,Not Designated
+AAD2023.09.02768,William Carey University,557310,-1.4,Doctoral/Professional Universities,Private,MS,,176479,Not Designated
+AAD2023.09.02768,Oklahoma City University,557558,-1.4,Doctoral/Professional Universities,Private,OK,,207458,Not Designated
+AAD2023.09.02768,"University of New Haven, Connecticut",557664,-0.8,Master's Colleges & Universities: Larger Programs,Private,CT,,129941,Not Designated
+AAD2023.09.02768,University of West Florida,557699,-0.7,Master's Colleges & Universities: Larger Programs,Public,FL,,138354,Not Designated
+AAD2023.09.02768,Widener University,557710,-0.7,Doctoral/Professional Universities,Private,PA,,216852,Not Designated
+AAD2023.09.02768,Endicott College,557766,-1.0,Master's Colleges & Universities: Larger Programs,Private,MA,,165699,Not Designated
+AAD2023.09.02768,"University of Michigan, Dearborn",557968,-0.5,Master's Colleges & Universities: Larger Programs,Public,MI,,171137,Not Designated
+AAD2023.09.02768,University of Texas Rio Grande Valley,557985,-0.5,Doctoral Universities: High Research Activity,Public,TX,,227368,Not Designated
+AAD2023.09.02768,Touro University,558027,-1.1,Doctoral/Professional Universities,Private,NY,,196592,Not Designated
+AAD2023.09.02768,University of Bridgeport,558166,-0.4,Doctoral/Professional Universities,Private,CT,,128744,Not Designated
+AAD2023.09.02768,Tarleton State University,558642,-0.9,Doctoral Universities: High Research Activity,Public,TX,,228529,Not Designated
+AAD2023.09.02768,Coastal Carolina University,558793,-1.1,Master's Colleges & Universities: Larger Programs,Public,SC,,218724,Not Designated
+AAD2023.09.02768,University of Arkansas at Pine Bluff,558830,-1.1,Baccalaureate Colleges: Diverse Fields,Public,AR,,106412,Land Grant
+AAD2023.09.02768,Washington State University - Vancouver,558968,-0.1,Doctoral Universities: Very High Research Activity,Public,WA,,,Not Designated
+AAD2023.09.02768,Notre Dame of Maryland University,559047,-0.4,Master's Colleges & Universities: Larger Programs,Private,MD,,163578,Not Designated
+AAD2023.09.02768,University of Hawai'i at Hilo,559052,-0.8,Doctoral/Professional Universities,Public,HI,,141565,Not Designated
+AAD2023.09.02768,Pace University-New York,614784,-0.9,Doctoral/Professional Universities,Private,NY,,194310,Not Designated
+AAD2023.09.02768,Saint Joseph's University,729173,-0.8,Master's Colleges & Universities: Larger Programs,Private,PA,,,Not Designated

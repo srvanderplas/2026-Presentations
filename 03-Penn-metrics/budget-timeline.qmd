@@ -1,0 +1,137 @@
+---
+title: "Budget Reduction Timeline"
+format: html
+lightbox: true
+---
+
+
+## Faculty Senate Executive Committee
+
+### March
+
+> Interim EVC Button reported that the rubric for informing budget reductions comes from
+the Coordinating Commission of Postsecondary Education which was an entity created
+by the Nebraska Legislature. The CCPE has guidelines to assess minimum performance
+standards for all academic programs across the state and this is done on a seven-year
+cycle. 
+-- [March 11, 2025 Faculty Senate Exec Cmte Minutes](https://facultysenate.unl.edu/sites/unl.edu.academic-affairs.faculty-senate/files/media/file/25March11mins_0.pdf)
+
+### April
+
+> [What data is being collected that helps preserve academic programs?](https://facultysenate.unl.edu/sites/unl.edu.academic-affairs.faculty-senate/files/media/file/25Apr22mins.pdf) -- April 22, 2025 FS Exec Minutes
+
+Interim EVC Button: 
+
+- Teaching
+    - total number of majors and degrees are awarded over a certain period of time, 
+    - what the student credit hour production is, and 
+    - how many degrees are awarded over a five-year period.
+    - first-year retention rates, 
+    - student credit hours generated per unit FTE
+    - growth over time as well
+    - total demand
+
+- AAU phase one indicators
+    - external grants
+    - books
+    - citation counts
+    - awards
+    - scholarly research index score
+        - composite measurement
+        - compares units to peer units
+        - Units compared to AAU public universities
+
+- broader story about engagement and extension
+
+- [APC standards for reviewing academic programs in the case of significant budget
+reductions](https://apc.unl.edu/procedures-be-invoked-significant-budget-reallocations-and-reductions/criteria/) 
+    - program is unique and the only one of its kind in Nebraska, 
+    - program is the only PhD program in the state
+    - program meets an important unique workforce demand
+
+### May
+
+[May 13, 2025 FS Exec Minutes:](https://facultysenate.unl.edu/sites/unl.edu.academic-affairs.faculty-senate/files/media/file/25May13mins.pdf)
+
+- Timeline: Proposal from ELT by June 30, but not planning to start reduction until fall
+
+### June
+
+[June 10, 2025 FS Exec Minutes:](https://facultysenate.unl.edu/sites/unl.edu.academic-affairs.faculty-senate/files/media/file/25June10mins.pdf)
+
+> Are there any updates on the budget situation?
+
+- Deficit around $20 million
+- Cuts to take place over < 1 year
+- **System** wants to see us take the full cut this year and not use other funding sources to cover it.
+
+> "We will be able to survive the 20 million reduction but there will be a reduction in force and it is likely that we will not offer all the degrees we offer today."
+
+
+[June 24, 2025 FS Exec Minutes](https://facultysenate.unl.edu/sites/unl.edu.academic-affairs.faculty-senate/files/media/file/25June24mins.pdf)
+
+- Interim VC Heng-Moss: 
+    - "holistic approach" using multiple factors -- metrics, strengths, needs of the state, workforce alignment
+
+- Interim EVC Button: 
+    - Committed to being transparent and inclusive with the reduction process.
+    - Draft metrics presented to APC, Deans, ELT, and Department exec officers
+    - Still no formalized budget reduction plan, nothing has been approved yet
+    - Preliminary plan to Chancellor June 30th
+    - Plan will need to be ready for the December Board of Regents meeting
+
+> Faculty members want to help with trying to resolve the problem but there appears to be some gatekeeping on the part of chairs and deans to allow faculty participation.
+
+### July
+
+[July 22, 2025 FS Exec Minutes](https://facultysenate.unl.edu/sites/unl.edu.academic-affairs.faculty-senate/files/media/file/25July22mins.pdf)
+
+When do you expect to consult with the Senate Exec Committee and APC about budget reductions?
+
+- Interim EVC Button: Consultation begins with APC officers this week, full APC in early August, public hearings in Sept/Oct
+
+- Chancellor:  
+> Interim EVC Button has done an excellent job working with the deans to analyze data on metrics which will help us to make strategic budget reduction decisions. Interim EVC Button reported that priorities will look at academic excellence and student success, hands on experience for students, research excellence and engagement with Nebraska Extension.
+
+### August
+
+[August 5, 2025 FS Exec Minutes](https://facultysenate.unl.edu/sites/unl.edu.academic-affairs.faculty-senate/files/media/file/25Aug5mins.pdf)
+
+Timeline:
+
+- Aug 4 - Chancellor invokes Procedures for Sig. Budget Reallocation and Reduction
+- APC considers and approves the framework
+- APC considers the budget reduction plan
+- Oct 24 - APC process concludes
+- Nov - Chancellor's plan given to Acad Affairs and Business/Finance Cmtes of BoR
+- Dec - BOR considers plan
+
+Interim EVC Button: Actual reduction process will take a year after approval
+
+[August 26, 2025 FS Exec Minutes](https://facultysenate.unl.edu/sites/unl.edu.academic-affairs.faculty-senate/files/media/file/25Aug26mins%20version%202.pdf)
+
+Chancellor: He asked Interim EVC Button and the Executive Leadership Team (ELT) to develop the framework and metrics for the proposed budget reductions.
+
+VC Davis: Plan and information on metrics will be made available, but data is proprietary.
+
+Chancellor: Metrics based on both where we are and where we want to be
+
+
+## Department POV
+
+<!-- - May 16 - Measure Definitions/FAQ Document Date -->
+
+- August 15 - Metrics provided to Stat Chair
+    - [Stat department current research metrics](data/Stat%20department%20-%20Current%20research%20metrics.docx)
+    - [Metrics spreadsheet](data/tabled_department_metrics_2025-05-27%20College%20Rankings%20CASNR%20-%20Stats.xlsx)
+
+![Statistics metrics spreadsheet](images/stats-metrics.png){#fig-stat-metrics}
+
+- August 18 - Metric definitions provided to Stat Department Faculty 
+
+- Sept 11 - Affected units notified by EVC Button or Interim VC Heng-Moss
+
+- Sept 26 - Full metrics spreadsheet begins circulating unofficially
+
+- Oct 1-10 - APC hearings
+

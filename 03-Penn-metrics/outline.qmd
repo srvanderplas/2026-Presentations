@@ -1,0 +1,178 @@
+---
+title: "Outline"
+format: html
+---
+
+Outline for “The Metrics” seminar
+
+This outline assumes the data analytics team does not participate. We also need to be cognizant of the statistical background of the audience. 
+
+1) Introduction
+    a) Speaker names, degrees, … 
+    b) Disclaimer about AA data, see Jackson letter on October 14
+    c) Background about the metrics
+        i) First introduced to faculty on <Date> (Susan: It was presented to Faculty Senate Executive Committee on May 14, 2024, but it was not suggested as a way for evaluating departments. Instead, it was meant to provide information to help UNL get back into the AAU. Concerns about the metrics were raised at that time.)
+        ii) August 2025: Administration discussions with department leaders prior to September 12th announcement
+            (1) Spreadsheet with a single row of metric values were provided
+            (2) No context with these z-scores
+            (3) This is not data, but rather statistics
+        iii) APC guidelines: Required to provide access to data
+        iv) Department of Statistics involvement (timeline, requests for data, alerting ELT about problems, requests for external evaluation, …)
+        v) Faulty data, faulty analyses, faulty conclusions
+    d) Purpose: Provide a forum for discussion on
+        i) The data used in the metrics
+        ii) The formulation of the metrics
+        iii) The analyses performed with the metrics
+    e) Why is this important? 
+        i) Faculty and staff jobs and student degree programs depend on getting the metrics and corresponding analyses correct
+        ii) The administration has indicated an intent to use these metrics for future evaluations of individuals and departments
+
+2) Data flaws
+    a) Question to ask audience: How many of you have actually seen your own data from AA? We may need to ask those who are unaffected departments only. 
+    b) Examples of research counts
+        i) Chris Bilder – list out, we may need to state the formal definitions; could use someone else from the department as an example. @tbl-chris-metrics
+        ii) Provide a similar table summarizing this information for the entire Department of Statistics – Do we have this data? I think Heike got this from everyone. 
+        iii) Provide an example of a faculty member from another department? Beth Niehaus has talked about some of her specific metrics in the past, so perhaps this is someone we can start with.  
+    c) ELT only includes data from faculty who are with a department in 2024.
+        i) Faculty omitted 
+            (1) Those no longer in a department
+            (2) Walt Stroup example – Retired, books, still active in the department, … 
+
+
+            (3) A department may replace a Full Professor with an Assistant Professor but it will take time for them to build up a comparable research record
+            (4) VSIPs – Effect on metrics; how will this affect departments during the next round of budget cuts if these metrics are used?  
+            (5) FMLA not counted for properly – Susan example 
+            (6) Faculty who have partial administrative appointments are not counted for properly – Erin example
+    d) Professors of Practice not counted – Kathy Hanford example
+
+
+
+    e) New faculty not counted for properly – Heike Hofmann example
+        i) Data for prior to arrival at UNL does not count, BUT faculty who depart are completely excluded 
+    f) Faculty with appointments in department are not included – Jennifer Clarke example
+    g) Teaching data? Raw data is not easily available? Some data is available through Tableau 
+    h) Qualitative assessments – This is still data, and it has not been released
+    i) Other comments
+        i) Two UNL faculty who are joint authors of a paper are only given half credit. One UNL faculty and one non-UNL faculty who are joint authors of a paper are given full credit. 
+        ii) Discuss the difference between providing “data” and “statistics”? Data was required to be shared 
+        iii) See Appendix B of report for more ideas
+        iv) To get back into the AAU, the reputation of the department is IMPORTANT. Therefore, we should include all people that were in it! 
+        v) Why do departments need to assemble their own data? The ELT should provide a database for each department. 
+        vi) Not all federal grant agencies are included, like NIJ 
+        vii) Many awards not included in AA list, like COPSS Presidents’ Award
+
+
+Variable | AA | Correct |  
+--- | --- | ---
+Publications, 2020-2023 | 10 | 14
+Awards, no time limit | 3 | 7
+Books, 2014-2023 | 0 | 1
+Chapters, 2020-2023 | 0 | 0
+Citations, 2019-2023 (2014-2023) | 353 | 1264 (google scholar, I need to correct for new time frame)
+| (Correct: 461) | 
+Conference proceedings, 2020-2023 | 0 | 1
+Grants PI, 2019-2023 | 1, $1.6M | 1, <$1.6M
+Grants Co-I, 2019-2023 | ? | 1
+Software, 2014-2023 | ? | 3
+Apps, 2014-2023 | ? | 1
+
+: Academic Analytics vs. Correct metrics for Dr. Chris Bilder. The last three rows are important because they are important contributions not recognized by the metrics. Also, software and apps are more “modern” forms of contributions. Other examples like this are Susan’s online books. We need to be careful about the citations definition. This appears to be the number of times papers authored in 2014-23 have been cited in 2014-23.    {#tbl-chris-metrics}
+
+
+
+
+
+3) Ill-conceived metrics
+    a) Where does the data vs. the analysis start?
+    b) What is a metric? Link its definition to a statistic, which helps give us credibility
+    c) Should we give alternative metrics to the bad metrics here or wait until the conclusion? 
+    d) Top 3-5 examples! 
+        i) Ratio metrics that can be 0/0
+        ii) “Completion majors” for statistics (additional information about it is currently in the incorrect analyses section); Button thinks SCH increase should cover the inaccuracies, but this will not be true for us because we did not get more faculty 
+        iii)  
+        iv)  
+        v) 
+    e) SRI focus and how other metrics used contain the same information; this represents a fundamental poor understanding of the metrics
+    f) Effect on graduate-only departments 
+    g) Effect on small departments
+
+4) Incorrect analyses
+    a) Where does the data vs. the analysis start? (same comment as in the ill-conceived metric section)
+    b) Faulty data immediately invalidates any analysis based upon them. But, if we continue to do the analysis, here’s our discussion 
+    c) Z-scores
+        i) What are z-scores? STAT 218 or lower definition
+        ii) How to interpret z-scores? STAT 218 or lower definition
+
+
+
+        iii) What does it mean for a z-score to be less than 0? Is it unusual to be less than 0? 
+                (1) Lake Wobegon effect 
+                (2) “A sign is not everything”
+                (3) Normal distribution, STAT 218 (or less background) example
+
+                    (a) We would expect 50% to be less than 0!
+                    (b) Examine this from a binomial perspective. If we had 100 departments, how many would we expect to have 7 of 9 metrics less than 0? 8 of 9 metrics less than 0? … 
+                    (c) Heike: too few depts are less than 0??? 
+                    (d) Depends on null hypothesis – should we assume everyone is 0
+
+                (4) Skewed distribution; relate to probability less than 0
+                (5) The effect of changing the mean in z-score equation (AAU mean was used in the z-score?)
+        iv) We need to provide a definition of a population 
+        v) If z-scores are used, everyone needs to be presented with mean and standard deviation used in its construction.
+        vi) Information distributed by ELT – This is what was given to the UNL Graduate Council:   
+
+
+
+            (1) Completion Majors metric for Statistics
+                (a) The reason for it being “low”
+                (b) NO CONTEXT GIVEN to committees who are voting whether to eliminate programs! Ethical violation? 
+            (2) Last note about “may not align with a statistical definition”; go back to z-score definition of unusual; relate this to a “non-scientific poll”—Is this what we should base decisions on?
+    d) Apples vs. oranges comparison
+        i) AA statement about how to use SRI and other metrics
+        ii) Would this type of plot be helpful? We could create another version of the plot with the apples and grapefruits all together. 
+
+                                  🍊    
+                                🍊🍊    
+                            🍊🍊🍊🍊🍊    
+                        🍊🍊🍊🍊🍊🍊🍊🍊    
+                    🍊🍊🍊🍊🍊🍊🍊🍊🍊🍊    
+                    
+                                            🍑    
+                                          🍑🍑🍑    
+                                        🍑🍑🍑🍑    
+                                      🍑🍑🍑🍑🍑🍑    
+
+
+    e) Need to show the departments ranked by percentile, but also give context that the correctness of the interpretation is dependent on the data being correct 
+
+
+
+    f) Many other examples…   
+
+5) Conclusion
+    a) We could include better metrics here (also could be included in the metrics section)
+    b) A good metric should only do one thing 
+
+
+Who presents? 
+
+1) Chris is the moderator and may present section 1
+2) Susan and Heike are the main presenters 
+
+Seminar
+
+1) Swanson Auditorium in City Campus Union has been reserved for 12-2PM
+    a) 12:30 is the start time for the seminar 
+    b) Chris plans to go to the room the day before to make sure all of the technical aspects work
+2) Chris will record it and post to his YouTube channel
+    a) We could use his Surface Pro so that the screen can be recorded via Camtasia Studio; external webcam set up on a tripod for video of speakers
+    b) We may be able to use the computer and camera already in room instead. 
+
+Other comments 
+
+1) The use of regression may have been better to use rather than normalizing.  
+2) Include quotes from the ELT data analytics team e-mail reply from October 7, 2025?
+3) SRI calculations looked at the wrong AAU group?
+4) “Every department is affected the same way” was used by ELT to justify various issues that we found
+5) We need to include the AAUP in our advertisements of the seminar
+6) Markdown will be used for the slides 
