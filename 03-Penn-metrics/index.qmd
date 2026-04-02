@@ -1,4 +1,7 @@
 ---
+title: "[How [NOT]{.emph .red} to Measure Academic Performance]{.smaller}"
+subtitle: "[University of Nebraska -- Lincoln's]{.red} \"Metrics\""
+date: April 2, 2026
 format: 
   revealjs:
     navigation-mode: vertical
@@ -10,7 +13,40 @@ format:
     layout: vertical
 lightbox: true
 auto-play-media: true
+editor: 
+  markdown: 
+    wrap: 72
 ---
+
+<!-- i1.pickpik.com/photos/267/86/417/puzzle-match-fit-missing-fa33f58f5f5e6b5da980d9c4b83ec8b8.jpg -->
+
+```{=html}
+<!-- 
+# Introduction {background-image="images/puzzle.jpg" background-opacity=.1}
+
+- Understand how performance was evaluated
+  - What can be fixed
+  - What can't be fixed
+  - Missing pieces
+- Identify possible improvements
+- Prepare for future evaluations -->
+```
+
+# Outline
+
+1.  Timeline
+
+2.  Administration's Claims
+
+3.  Data and Analysis (& Flaws)
+
+    -   Distributions
+    -   Inference
+    -   Observational Units
+    -   Ratios
+    -   Comparisons
+
+4.  Conclusion
 
 ```{r}
 #| label: setup
@@ -212,97 +248,107 @@ ggres <- research |>
   xlab("Research FTE in AY 23/24")
 ```
 
-<!-- i1.pickpik.com/photos/267/86/417/puzzle-match-fit-missing-fa33f58f5f5e6b5da980d9c4b83ec8b8.jpg -->
-<!-- 
-# Introduction {background-image="images/puzzle.jpg" background-opacity=.1}
-
-- Understand how performance was evaluated
-  - What can be fixed
-  - What can't be fixed
-  - Missing pieces
-- Identify possible improvements
-- Prepare for future evaluations -->
-
-## Outline
-
-1. Timeline
-2. Examining the Claims
-3. Data and Analysis (& Flaws)
-
-    1. Distributions
-    2. Inference
-    3. Observational Units
-    4. Ratios
-    5. Comparisons
-
-4. Conclusion
-
-
 # Timeline
 
 ## Setting the Stage
 
 ::: incremental
-
-- Structural budget deficit since at least 2020 
-  - Cuts every year from 2020-2024
-- In 2024, prepare for 2025 cuts 
-    - Eliminate the structural deficit: 20.5 million estimated cuts
-    - Additional 6.5 million to handle share of UN system cuts
-    - Executive Leadership Team (ELT) built metrics and budget cut proposal
-        - Josh Davis, 
-        - Exec Vice Chancellor Mark Button (Interim), 
-        - VC of Institute of Ag & Natural Resources Tiffany Heng-Moss (Interim), 
-        - VC of Research & Innovation Jennifer Nelson (Interim)
-
+-   Structural budget deficit since at least 2020
+    -   Cuts every year from 2020-2024[:]{.fragment} [\$75
+        million]{.emph .red}
+-   2025 cuts:
+    -   Eliminate the structural deficit: [\$21 million
+        (estimated)]{.emph .red .fragment}
+    -   Extra [\$6.5 million]{.emph .red} [for "our share of UN system
+        cuts"]{.fragment}
 :::
 
+## The Chancellor's Executive Leadership Team (ELT)
+
+Responsible for assembling data, building metrics, and developing the
+budget cut proposal
+
+::: {.smaller layout-ncol="4"}
+![Josh Davis</br>Senior Vice Provost & Chief of
+Staff](images/j-davis.jpg){fig-alt="Picture of Josh Davis"}
+
+![Mark Button</br>(Interim) Exec Vice
+Chancellor](images/m-button.jpg){fig-alt="Picture of Mark Button a.k.a. Bark Mutton"}
+
+![Tiffany Heng-Moss</br>(Interim) Vice Chancellor of Ag & Nat.
+Resources](images/t-hengmoss.jpg){fig-alt="Picture of Tiffany Heng-Moss."}
+
+![Jennifer Nelson</br>(Interim) Vice Chancellor of Research &
+Innovation](images/j-nelson-2.jpg){fig-alt="Picture of Jennifer Nelson."}
+:::
+
+::: notes
+The Chancellor was actually only the figurehead: the FS Exec committee
+was told by a reliable source that the Chancellor didn't even have
+access to the shared drive for assembling the cuts.
+
+Data was assembled by
+
+-   the Institutional Effectiveneess and Analytics group (for tuition,
+    enrollment, etc) under EVC Button
+
+-   the Office of Research and Innovation (for research -- grants, pubs,
+    books, etc) under VC Nelson
+:::
 
 ## Fac Senate & FS Exec Cmte
 
 ::: {.incremental style="ul, li { margin: 0; padding: 2px;"}
-
-- March - Prog Eval Rubric will be from Coordinating Commission on Postsecondary Education (CCPE)
-  <!-- - Budget reduction rubric will be from [Coordinating Commission on Postsecondary Education (CCPE) guidelines](https://ccpe.nebraska.gov/sites/default/files/AP_Guidelines_Review%20of%20Existing%20Instructional%20Programs.pdf) -->
-![CCPE minimum performance standards](images/ccpe-min-standards.png){fig-alt="CCPE minimum performance standards, taken from https://ccpe.nebraska.gov/sites/default/files/AP_Guidelines_Review%20of%20Existing%20Instructional%20Programs.pdf"}
-
+-   March - Prog Eval Rubric will be from Coordinating Commission on
+    Postsecondary Education (CCPE)
+    <!-- - Budget reduction rubric will be from [Coordinating Commission on Postsecondary Education (CCPE) guidelines](https://ccpe.nebraska.gov/sites/default/files/AP_Guidelines_Review%20of%20Existing%20Instructional%20Programs.pdf) -->
+    ![CCPE minimum performance
+    standards](images/ccpe-min-standards.png){fig-alt="CCPE minimum performance standards, taken from https://ccpe.nebraska.gov/sites/default/files/AP_Guidelines_Review%20of%20Existing%20Instructional%20Programs.pdf"}
 :::
 
 ::: {.incremental style="ul, li { margin: 0; padding: 2px;"}
-- April - Broad outline of metrics [(the devil is in the details!)]{.emph .red .fragment}
+-   April - Broad outline of metrics [(the devil is in the
+    details!)]{.emph .red .fragment}
 
-- May - Timeline, draft metrics presented to DEOs/Deans
+-   May - Timeline, draft metrics presented to DEOs/Deans
 
-- June - Degree cuts likely, ELT plan due June 30    
-    - [Interim EVC: Commitment to transparency, treating all depts equally]{.smaller}
-    - [FS Exec: "Why the gatekeeping? Get faculty input!!" - [DEOs not able to share info w/ faculty]{.emph .purple}]{.smaller}
+-   June - Degree cuts likely, ELT plan due June 30
 
-- July - APC officers notified that APC will handle cuts
+    -   [Interim EVC: Commitment to transparency, treating all depts
+        equally]{.smaller}
+    -   [FS Exec: "Why the gatekeeping? Get faculty input!!"
+        -]{.smaller}[DEOs not able to share info w/ faculty]{.emph
+        .purple}
 
-- August - APC meets
-    - [VC Davis - metric data is proprietary/confidential]{.smaller}
-  
+-   July - APC officers notified that APC will handle cuts
+
+-   August - APC meets
+
+    -   [VC Davis - metric data is proprietary/confidential]{.smaller}
 :::
-
 
 ## Department POV {.smaller}
 
 <!-- - May 16 - Measure Definitions/FAQ Document Date -->
 
-- May 15 - Academic Program Metrics discussion 
-    - Dept Exec Officers (DEOs), Deans, ELT
-    - Marked confidential -- cannot be shared with faculty
+-   May 15 - Academic Program Metrics discussion
 
-- August 15 - Metric values provided to Stat DEO
-![Statistics metrics spreadsheet](./images/stats-metrics.png){#fig-stat-metrics .lightbox}
+    -   Dept Exec Officers (DEOs), Deans, ELT
+    -   Marked confidential -- cannot be shared with faculty
 
-- August 18 - Metric definitions provided to Stat Department Faculty 
+-   August 15 - Metric values provided to Stat DEO ![Statistics metrics
+    spreadsheet](./images/stats-metrics.png){#fig-stat-metrics
+    .lightbox}
 
-- Sept 11 - Affected units notified by EVC Button or Interim VC Heng-Moss
+-   August 18 - Metric definitions provided to Stat Department Faculty
 
-- shortly afterward - Full metrics spreadsheet begins circulating unofficially
+-   Sept 11 - Affected units notified by EVC Button or Interim VC
+    Heng-Moss
 
-- Oct 1-10 - APC hearings
+-   shortly afterward - Full metrics spreadsheet begins circulating
+    unofficially
+
+-   Oct 1-10 - APC hearings
 
 ```{r}
 #| echo: false
@@ -316,16 +362,20 @@ dt2 <- difftime(ymd("2025-10-10"), ymd("2025-09-11"), units = "days")
 
 ![](images/Calendar2025.png){width="100%" fig-align="center"}
 
-- $\approx `r dt`$ days where ELT **could have** talked to a Statistician
-- Within `r dt2` days, we found a *huge* number of problems 
-- ELT wanted us to have 0 days to examine the "full" metrics data^[Technically, full data would be individual-level, not department-level]
+-   $\approx `r dt`$ days where ELT **could have** talked to a
+    Statistician
+-   Within `r dt2` days, we found a *huge* number of problems
+-   ELT wanted us to have 0 days to examine the "full" metrics data[^1]
 
+[^1]: Technically, full data would be individual-level, not
+    department-level
 
 # Examining the Claims
 
 ## Budget Cuts with Quantitative Data
 
-Reasonable strategy [... so where did things go wrong?]{.fragment .emph .green}
+Reasonable strategy [... so where did things go wrong?]{.fragment .emph
+.green}
 
 . . .
 
@@ -339,15 +389,12 @@ ggteach + ggres & theme_bw()
 
 ## 
 
-::: columns
+::::: columns
 ::: {.column width="40%"}
-
-Highly ranked departments are slated for elimination!
-
+Highly ranked departments eliminated!!
 :::
 
 ::: {.column width="60%"}
-
 ```{r}
 #| fig-width: 6
 #| fig-height: 8
@@ -435,111 +482,114 @@ unl_depts_sum |>
   scale_alpha_manual(guide = "none",values = c(.4, 1))
 
 ```
-
 :::
-:::
+:::::
 
 ## Choice of Metrics
 
-- Evaluate Teaching performance
+-   Teaching performance
 
-- Evaluate Research performance
+-   Research performance
 
-::: {.incremental}
-Rolled into metrics: 
+    -   Only for tenure-track faculty
 
-  - AAU membership criteria
+::: incremental
+Rolled into metrics:
 
-  - Teaching Expenses -- but not income!!!
-
-  - ~~Revenue~~
-  - ~~Service~~
-
+-   AAU membership criteria
+-   Salaries
+-   ~~Extension~~
+-   ~~Revenue~~
+-   ~~Service~~
 :::
-
-
-
 
 ## Claims
 
-::: columns
+::::: columns
 ::: column
+-   ~~Transparent Process~~
 
-- ~~Transparent Process~~    
-    
-- Departments were *consulted* before plan was announced    
-    
-- All departments were treated equally
+-   Departments were *consulted* before plan was announced
+
+-   All departments were treated equally
 :::
+
 ::: column
 [Can't see/fix the data $\Rightarrow$ not transparent]{.emph .red}
 :::
-:::
-
+:::::
 
 ## Claims
-::: columns
+
+::::: columns
 ::: column
+-   ~~Transparent Process~~
 
-- ~~Transparent Process~~     
-    
-- ~~Departments were *consulted* before plan was announced~~    
-    
-- All departments were treated equally
+-   ~~Departments were *consulted* before plan was announced~~
 
+-   All departments were treated equally
 :::
-::: column
 
+::: column
 [Can't see/fix the data $\Rightarrow$ not transparent]{.emph .red}
-    
+
 [...Informed, not consulted, one day before]{.emph .red}
 :::
-:::
+:::::
 
-# Data and Analysis [Flaws]{#data-flaws .emph .fragment .red} 
+# Data and Analysis [Flaws]{#data-flaws .emph .fragment .red}
 
-::: {.small90}
-                                      🍓                  
-                                      🍊        🍑        
-        🫐              🍓  🍓  🍓🍓🍊🍊  🍓    🍑🍑                          🍉
-        🫐🫐🍇🍇        🍓🍓🍓🍓🍊🍊🍊🍊🍊🍊  🍑🍑🍑🍑🍏                    🍉🍉🍉
-      🫐🫐🍇🍇🍇  🍓🍓🍓🍓🍓🍊🍊🍊🍊🍊🍊🍊🍊🍑🍑🍑🍑🍏🍏🍏🍏  🍍🍍      🍉🍉🍉🍉🍉🍉
-    🫐🫐🍇🍇🍇🍓🍇🍓🍓🍊🍊🍊🍊🍊🍊🍊🍊🍊🍊🍑🍑🍑🍏🍏🍏🍏🍏🍆🍉🍉🍍🍍🍉🍉🍉🍉🍉🍉🍉🍉
+::: small90
+```         
+                                  🍓                  
+                                  🍊        🍑        
+    🫐              🍓  🍓  🍓🍓🍊🍊  🍓    🍑🍑                          🍉
+    🫐🫐🍇🍇        🍓🍓🍓🍓🍊🍊🍊🍊🍊🍊  🍑🍑🍑🍑🍏                    🍉🍉🍉
+  🫐🫐🍇🍇🍇  🍓🍓🍓🍓🍓🍊🍊🍊🍊🍊🍊🍊🍊🍑🍑🍑🍑🍏🍏🍏🍏  🍍🍍      🍉🍉🍉🍉🍉🍉
+🫐🫐🍇🍇🍇🍓🍇🍓🍓🍊🍊🍊🍊🍊🍊🍊🍊🍊🍊🍑🍑🍑🍏🍏🍏🍏🍏🍆🍉🍉🍍🍍🍉🍉🍉🍉🍉🍉🍉🍉
+```
 :::
 
 # Observational Units
 
 ## Units
 
-**Observational unit**:     
-[the entity from which data is collected in a study]{style="position:absolute;right:10px;"}
-<br/>
-<br/>
-**Analysis unit**:    
-[the entity from which data is analyzed in a study]{style="position:absolute;right:10px;"}
-<br/>
-<br/>
-Mapping between these can be tricky    
-[but it is critical to get it right!!]{.emph .red .fragment style="position:absolute;right:10px;"}
+**Observational unit**:\
+[the entity from which data is collected in a
+study]{style="position:absolute;right:10px;"} <br/> <br/> **Analysis
+unit**:\
+[the entity from which data is analyzed in a
+study]{style="position:absolute;right:10px;"} <br/> <br/> Mapping
+between these can be tricky\
+[but it is critical to get it right!!]{.emph .red .fragment
+style="position:absolute;right:10px;"}
 
 ## Observation vs. Analysis
 
-- Instructional metrics: typically observed at the class or instructor level, analyzed by department
+-   Instructional metrics: typically observed at the class or instructor
+    level, analyzed by department
 
-- Research metrics: observed at the faculty level, analyzed by department
+-   Research metrics: observed at the faculty level, analyzed by
+    department
 
-Complicated process for how to map individuals to departments by apportionment
+Complicated process for how to map individuals to departments by
+apportionment
 
 But, individuals in a department change over time!
 
 ::: notes
+In addition, even "over time" is a bit tricky here - some of the data
+uses academic year but reports the start year, some uses academic year
+but reports the end year, and some uses fiscal year, which is close but
+not quite the academic year.
 
-In addition, even "over time" is a bit tricky here - some of the data uses academic year but reports the start year, some uses academic year but reports the end year, and some uses fiscal year, which is close but not quite the academic year.
+There may even be a few calendar-year variables that snuck in, but it's
+very hard to tell by the metric descriptions, which are not always
+precise.
 
-There may even be a few calendar-year variables that snuck in, but it's very hard to tell by the metric descriptions, which are not always precise.
-
-To be conservative, we've included all of 2013-2024 here, but the basic idea holds regardless -- you have to take into account the unit of observation and account for how that is measured.
-
+To be conservative, we've included all of 2013-2024 here, but the basic
+idea holds regardless -- you have to take into account the unit of
+observation and account for how that is measured.
 :::
 
 ## Department Composition
@@ -547,13 +597,14 @@ To be conservative, we've included all of 2013-2024 here, but the basic idea hol
 ![](images/stat-department-composition-actual.png)
 
 ::: notes
+Fundamental flaw in the way metrics are calculated -- only current
+faculty are included! -- this is a mistake by the research office that
+they refused to correct because it seems they didn't understand either
+the problem or the solution(s) available.
 
-Fundamental flaw in the way metrics are calculated -- only current faculty are included! -- this is a mistake by the research office that they refused to correct because it seems they didn't understand either the problem or the solution(s) available. 
-
-One solution would be to consider the full department composition during the 11-year interval. 
-
+One solution would be to consider the full department composition during
+the 11-year interval.
 :::
-
 
 ## Department Composition
 
@@ -564,14 +615,21 @@ One solution would be to consider the full department composition during the 11-
 ![](images/stat-department-composition-retro.png)
 
 ::: notes
+If we include the productivity of all faculty in the departments within
+this period, we get 118/132 faculty-years -- pretty close, particularly
+given that if we include the 16 hours of administrators, we're at just
+over 132 faculty-years. This corresponds to an observational unit of the
+department during the time period in question.
 
-If we include the productivity of all faculty in the departments within this period, we get 118/132 faculty-years -- pretty close, particularly given that if we include the 16 hours of administrators, we're at just over 132 faculty-years. 
-This corresponds to an observational unit of the department during the time period in question. 
+This would actually yield a reasonably close estimate of the
+department's productivity over the interval. It just requires that we
+consider both retired faculty and faculty who have left for industry or
+academic positions at non-Academic Analytics universities. The data
+doesn't necessarily support this, but it's not terrible.
 
-This would actually yield a reasonably close estimate of the department's productivity over the interval. It just requires that we consider both retired faculty and faculty who have left for industry or academic positions at non-Academic Analytics universities. The data doesn't necessarily support this, but it's not terrible. 
-
-However, it's a retrospective look at the department's productivity and reputation. The composition of the department has changed over the last 10 years. 
-
+However, it's a retrospective look at the department's productivity and
+reputation. The composition of the department has changed over the last
+10 years.
 :::
 
 ## Department Composition
@@ -582,50 +640,62 @@ However, it's a retrospective look at the department's productivity and reputati
 
 ![](images/stat-department-composition-prospective.png)
 
-
-- Still need to adjust for time since degree
+-   Still need to adjust for time since degree
 
 ::: notes
+If we instead account for the productivity of current members of the
+department over the interval in question, then we get 89/132
+person-years, or about 2/3 of the time. This forward-looking view
+corresponds to an observational unit of the current department, and an
+analytical unit of the faculty within the department.
 
-If we instead account for the productivity of current members of the department over the interval in question, then we get 89/132 person-years, or about 2/3 of the time. This forward-looking view corresponds to an observational unit of the current department, and an analytical unit of the faculty within the department. 
+We'd still want to correct for the missing years that faculty didn't
+have degrees and were likely not publishing. Of course, there is a
+nonlinear effect in productivity - new professors take some time to get
+a research program going, but it's still important to exclude the years
+before current faculty had doctorates, so as to not disadvantage younger
+departments.
 
-We'd still want to correct for the missing years that faculty didn't have degrees and were likely not publishing. Of course, there is a nonlinear effect in productivity - new professors take some time to get a research program going, but it's still important to exclude the years before current faculty had doctorates, so as to not disadvantage younger departments. 
-
-After all, metrics that don't treat young departments well will waste the investment the university made when new faculty were hired and actions taken using those metrics may hurt departments that need such investments. 
-
+After all, metrics that don't treat young departments well will waste
+the investment the university made when new faculty were hired and
+actions taken using those metrics may hurt departments that need such
+investments.
 :::
 
-
-
 # Distributions
+
 ## What's in a Distribution?
 
-![Distribution of heights in an all-female class. [[Image Source](https://hammychang.medium.com/normal-distributions-2e395d596c42)]{.small}](images/normal-dist-height.png)
+![Distribution of heights in an all-female class. [[Image
+Source](https://hammychang.medium.com/normal-distributions-2e395d596c42)]{.small}](images/normal-dist-height.png)
 
-- Statistical definition: A function that gives probabilities of occurrence for possible events
+-   Statistical definition: A function that gives probabilities of
+    occurrence for possible events
 
-::: {.notes}
-
-Distributions make a lot of sense when we e.g. measure a group of similar things with the goal of learning something about the whole group of things - like the average, or the variability.
-
+::: notes
+Distributions make a lot of sense when we e.g. measure a group of
+similar things with the goal of learning something about the whole group
+of things - like the average, or the variability.
 :::
 
 ## What's in a Distribution?
 
 Operationally, to create distributions, we need:
 
-- Comparable observational units (individuals) 
-- Consistent measurement method 
-- Reason to think evaluating the group of individuals makes sense
+-   Comparable observational units (individuals)
+-   Consistent measurement method
+-   Reason to think evaluating the group of individuals makes sense
 
-::: {.notes}
+::: notes
+But, for a grouping of things to make sense, they have to be comparable,
+and measured consistently, and there needs to be a reason to treat all
+of these things the same.
 
-But, for a grouping of things to make sense, they have to be comparable, and measured consistently, and there needs to be a reason to treat all of these things the same. 
-
-For instance, a distribution of heights of a class makes sense. Creating a distribution of heights of objects in a house... makes less sense. You need a reason to group all of the objects in a house and treat them as similar. 
-
+For instance, a distribution of heights of a class makes sense. Creating
+a distribution of heights of objects in a house... makes less sense. You
+need a reason to group all of the objects in a house and treat them as
+similar.
 :::
-
 
 ## What's in a Distribution?
 
@@ -663,14 +733,19 @@ ggplot(data, aes(x = size, shape = fruit, y = fruit3)) +
   ggtitle("Apples, Oranges, and Eggplant?")
 ```
 
-::: {.notes}
+::: notes
+We used the metaphor of comparing apples and pumpkins in our APC
+hearing, because the biggest apple in the world is never going to be
+able to compete on size with pumpkins -- they're entirely different. But
+the apple might be tastier as a snack.
 
-We used the metaphor of comparing apples and pumpkins in our APC hearing, because the biggest apple in the world is never going to be able to compete on size with pumpkins -- they're entirely different. But the apple might be tastier as a snack.
+There are very large differences between our departments -- how many
+students can reasonably take a single class, whether graduate students
+or faculty teach undergraduate classes, whether research is done in a
+lab, an archive, a field, or at a computer, ... I can keep going.
 
-There are very large differences between our departments -- how many students can reasonably take a single class, whether graduate students or faculty teach undergraduate classes, whether research is done in a lab, an archive, a field, or at a computer, ... I can keep going.
-
-In reality, any respectable R1 land-grant university has a whole fruit salad and then some. 
-
+In reality, any respectable R1 land-grant university has a whole fruit
+salad and then some.
 :::
 
 ## What's in a Distribution?
@@ -699,28 +774,34 @@ ggplot(aes(x = size, y = 0, label = fruit)) +
   ggtitle("Apples, Oranges, and Eggplant?")
 ```
 
-::: {.incremental}
-- Mixture distributions can be useful in some situations... 
-IF the goal is to understand the whole system
+::: incremental
+-   Mixture distributions can be useful in some situations... IF the
+    goal is to understand the whole system
 
-- They're less helpful if the goal is ranking groups    
-`r data2str`
+-   They're less helpful if the goal is ranking groups\
+    `r data2str`
 :::
 
-::: {.notes}
+::: notes
+And while a good university will have a lot of variation on any metric
+across departments, grouping them into a single distribution for the
+purposes of identifying poorly-performing departments misses the
+structural differences between departments.
 
-And while a good university will have a lot of variation on any metric across departments, grouping them into a single distribution for the purposes of identifying poorly-performing departments misses the structural differences between departments.
+Ultimately, this is a misuse of statistics. We teach our intro stats
+students to start by identifying a question that makes sense to answer,
+and then determining whether the data is available to answer that
+question.
 
-Ultimately, this is a misuse of statistics. 
-We teach our intro stats students to start by identifying a question that makes sense to answer, and then determining whether the data is available to answer that question.
-
-Without correcting for structural differences between departments, it is not possible to actually answer the question of interest -- which departments are performing poorly?
-
+Without correcting for structural differences between departments, it is
+not possible to actually answer the question of interest -- which
+departments are performing poorly?
 :::
 
 ## What's in a Distribution?
 
 Our *actual* mixture distribution is more like this:
+
 ```{r}
 #| fig-width: 8
 #| fig-height: 3
@@ -739,18 +820,27 @@ theme_void()
 ```
 
 ::: notes
+When the administration puts all of the departments across the
+university into a single distribution, to assess e.g. teaching
+efficiency, they ignore the fact that English, with its service courses
+and programs at the grad and undergrad level, is simply not comparable
+to Educational Administration, with a graduate program and courses that
+are only taken by majors.
 
-When the administration puts all of the departments across the university into a single distribution, to assess e.g. teaching efficiency, they ignore the fact that English, with its service courses and programs at the grad and undergrad level, is simply not comparable to Educational Administration, with a graduate program and courses that are only taken by majors.
+Generating fewer credit hours doesn't make EDAD a poorly performing
+department -- it simply means it's a different type of program than
+English.
 
-Generating fewer credit hours doesn't make EDAD a poorly performing department -- it simply means it's a different type of program than English. 
-
-In reality, a university should have a fruit salad of departments -- some small, some large, some with service courses, some with majors-only courses, some with graduate programs only, and some with undergraduate programs only. 
-
+In reality, a university should have a fruit salad of departments --
+some small, some large, some with service courses, some with majors-only
+courses, some with graduate programs only, and some with undergraduate
+programs only.
 :::
 
 ## What's in a Distribution?
 
 Or this:
+
 ```{r}
 #| fig-width: 8
 #| fig-height: 3
@@ -769,21 +859,28 @@ theme_void()
 ```
 
 ::: notes
+But, it gets more ridiculous than the fruit salad image, because
+research norms differ too!
 
-But, it gets more ridiculous than the fruit salad image, because research norms differ too!
+Business school faculty often don't compete for federal research grants,
+but they may do consulting work or compete for private grants -- but
+even those grants will never be the size of physics grants that pay for
+time to rent a particle accelerator. In Classics or English, a grant may
+pay for travel to an archive for a week or two. In Statistics, we
+generally need to pay for a research assistant for a few semesters.
+Engineers need to buy equipment AND pay for research assistants, while
+some people in medicine-adjacent fields might need to pay for clinical
+trials, which are even more expensive than engineers toys!
 
-Business school faculty often don't compete for federal research grants, but they may do consulting work or compete for private grants -- but even those grants will never be the size of physics grants that pay for time to rent a particle accelerator. 
-In Classics or English, a grant may pay for travel to an archive for a week or two. 
-In Statistics, we generally need to pay for a research assistant for a few semesters. 
-Engineers need to buy equipment AND pay for research assistants, while some people in medicine-adjacent fields might need to pay for clinical trials, which are even more expensive than engineers toys!
-
-Ultimately, putting all of these departments into a single distribution only tells you what the norms are of a field relative to other fields -- it doesn't tell you whether the Statistics department is a good Statistics department. 
-
+Ultimately, putting all of these departments into a single distribution
+only tells you what the norms are of a field relative to other fields --
+it doesn't tell you whether the Statistics department is a good
+Statistics department.
 :::
 
 ## What's in a Distribution?
 
-Or this: 
+Or this:
 
 ```{r}
 #| fig-width: 8
@@ -803,37 +900,42 @@ theme_void()
 ```
 
 ::: notes
+Whenever you calculate an average, you have to ask yourself why. In most
+cases, it's pretty simple -- you want to know what a typical value might
+be. But when you're looking at university departments, it doesn't really
+help to identify that Music is the most "typical" department according
+to the overall average of research and instructional metrics. What does
+that even mean, when you're comparing to Engineering, English, and
+Agronomy?
 
-Whenever you calculate an average, you have to ask yourself why. 
-In most cases, it's pretty simple -- you want to know what a typical value might be. 
-But when you're looking at university departments, it doesn't really help to identify that Music is the most "typical" department according to the overall average of research and instructional metrics. 
-What does that even mean, when you're comparing to Engineering, English, and Agronomy? 
-
-And if the "average" department doesn't make sense, then it also doesn't make sense to try to pull out the departments with the worst overall average metric -- because ultimately, you're mostly just identifying departments with majors-only courses that tend to have lower enrollment caps that also have smaller research grants. 
-
+And if the "average" department doesn't make sense, then it also doesn't
+make sense to try to pull out the departments with the worst overall
+average metric -- because ultimately, you're mostly just identifying
+departments with majors-only courses that tend to have lower enrollment
+caps that also have smaller research grants.
 :::
 
 ## What's in a Distribution?
 
-If you *have* to work with a mixture distribution, you must account for **lurking variables**: 
+If you *have* to work with a mixture distribution, you must account for
+**lurking variables**:
 
-- instructional norms    
-(lab/classroom space, pedagogy, instruction method)
-- amount of grant funding that's available in the discipline
-- citation accumulation rate.... [and many, many more]{.green .emph .fragment}
+-   instructional norms\
+    (lab/classroom space, pedagogy, instruction method)
+-   amount of grant funding that's available in the discipline
+-   citation accumulation rate.... [and many, many more]{.green .emph
+    .fragment}
 
-[Statistics can be used to adjust for these factors, ]{.fragment}
-[but not accounting for structural differences [invalidates conclusions]{.emph .cerulean}]{.fragment}
-
+[Statistics can be used to adjust for these factors,]{.fragment} [but
+not accounting for structural differences]{.fragment}[invalidates
+conclusions]{.emph .cerulean}
 
 ## What is in a Z score?
 
 ::: incremental
-
 $Z$-scores can be used in two different ways:
 
-
-1. make metrics on different scales comparable 
+1.  make metrics on different scales comparable
 
 2.  make observations from different distributions (more) comparable
 
@@ -853,12 +955,11 @@ cdf <- ggplot() +
   theme_bw() 
 density + cdf
 ```
-
 :::
 
 ## What is in a Z score?
 
-- Standardization makes **metrics** on different scales comparable
+-   Standardization makes **metrics** on different scales comparable
 
 ```{r}
 set.seed(202510)
@@ -875,7 +976,7 @@ dframe |> ggplot(aes(x = X, y = metric, colour = metric)) +
 
 ## What is in a Z score?
 
-- Standardization makes **metrics** on different scales comparable
+-   Standardization makes **metrics** on different scales comparable
 
 ```{r}
 dframe |> 
@@ -889,8 +990,7 @@ dframe |>
 
 ## What is in a Z score?
 
-- Standardization helps with apples to pumpkins comparisons:
-
+-   Standardization helps with apples to pumpkins comparisons:
 
 ```{r}
 apples <- rnorm(50, mean=4, sd = 1)
@@ -910,8 +1010,7 @@ dframe |>
 
 ## What is in a Z score?
 
-- Standardization **within** different groups:
-
+-   Standardization **within** different groups:
 
 ```{r}
 p1 <- dframe |> group_by(type) |>
@@ -923,7 +1022,6 @@ p1 <- dframe |> group_by(type) |>
   scale_y_continuous(NULL, labels=NULL)
 p1
 ```
-
 
 ## What is in a Standardization?
 
@@ -941,56 +1039,67 @@ p1 <- p1 + ggtitle ("Standardization WITHIN groups")
 p2/p1
 ```
 
-
 # Inference
 
 ## Metrics Documentation {.smaller}
 
-[From Distributions of Instructional Metrics, May 17, 2025 by Jason Casey]{.smaller}
+[From Distributions of Instructional Metrics, May 17, 2025 by Jason
+Casey]{.smaller}
 
-> With all of these metrics, there is **no inferential interpretation being made: the values are known
-descriptives, rather than estimates of a parameter**. 
+> With all of these metrics, there is **no inferential interpretation
+> being made: the values are known descriptives, rather than estimates
+> of a parameter**.
 
-- OK, but... values don't come from the same distributions
-  - Grad-only (or grad-dominant) programs vs. undergrad programs
-  - Grant funding isn't similar across disciplines
-  - Department size matters - excess capacity -> maximize SCH
+-   OK, but... values don't come from the same distributions
+    -   Grad-only (or grad-dominant) programs vs. undergrad programs
+    -   Grant funding isn't similar across disciplines
+    -   Department size matters - excess capacity -\> maximize SCH
 
-[And we're back to 🍎 and 🎃. [The interpretation is important!]{.emph .red}]{.fragment}
-
+[And we're back to 🍎 and 🎃.]{.fragment}[The interpretation is
+important!]{.emph .red}
 
 ## Metrics Documentation {.smaller}
 
-[From Distributions of Instructional Metrics, May 17, 2025 by Jason Casey]{.smaller}
+[From Distributions of Instructional Metrics, May 17, 2025 by Jason
+Casey]{.smaller}
 
-> Our use of the z-score was as a simple scaling mechanism to aid in creating a centroid (i.e., the instructional averages).
+> Our use of the z-score was as a simple scaling mechanism to aid in
+> creating a centroid (i.e., the instructional averages).
 
-> [Neither]{.emph .larger .black} [positive]{.larger .emph .blue} nor [negative]{.larger .emph .red} z-scores carry [any interpretation]{.emph .larger .black} other than distance from the mean in standard deviations. 
+> [Neither]{.emph .larger .black} [positive]{.larger .emph .blue} nor
+> [negative]{.larger .emph .red} z-scores carry [any
+> interpretation]{.emph .larger .black} other than distance from the
+> mean in standard deviations.
 
-> A negative score does not imply that a unit does something poorly, nor does a positive imply the opposite interpretation. 
+> A negative score does not imply that a unit does something poorly, nor
+> does a positive imply the opposite interpretation.
 
 ## Justification {.incremental}
 
 ![](images/stat-z-scores.png)
 
-- Budget cuts based on metrics are fundamentally inferential.
-- Not all inference is directly about parameters. 
+-   Budget cuts based on metrics are fundamentally inferential.
+-   Not all inference is directly about parameters.
 
 ## Justification
 
-> Educational administration is one of the lower performing units by UNL metric analysis for instruction and research. 
-[The unit was negative on seven of nine instruction metrics and six of eight research metrics.]{.emph .red} 
+> Educational administration is one of the lower performing units by UNL
+> metric analysis for instruction and research. [The unit was negative
+> on seven of nine instruction metrics and six of eight research
+> metrics.]{.emph .red}
 
 -- Josh Davis, Vice Chancellor, EDAD APC Hearing, Oct 9 2025
 
-##
+## 
 
-![[[Image Source](https://practicalpie.com/lake-wobegon-effect/)]{.small}](images/wobegon-map.jpg){width="80%"}
-
+![[[Image
+Source](https://practicalpie.com/lake-wobegon-effect/)]{.small}](images/wobegon-map.jpg){width="80%"}
 
 <audio>
-  <source src="images/above-average.mp3" type="audio/mp3">
-</audio> 
+
+<source src="images/above-average.mp3" type="audio/mp3">
+
+</audio>
 
 ## Skewed Distributions
 
@@ -1043,21 +1152,23 @@ Normalized scores should have mean = 0 and variance = 1
 
 ![](images/stats-metrics.png)
 
-- Without $\mu_X$ and $\sigma_X$, there is no connection between an individual X and its Z-score. 
+-   Without $\mu_X$ and $\sigma_X$, there is no connection between an
+    individual X and its Z-score.
 
-- Alleged "Z-scores" provided to departments were [wrong]{.large .emph .blue}
+-   Alleged "Z-scores" provided to departments were [wrong]{.large .emph
+    .blue}
 
 . . .
 
 [It was not possible for departments to vet the data]{.emph .red .large}
 
-
-
 ## Skewed Distributions
 
-An exam where `r sprintf("%0.0f%%", mean(metrics$awards_normalized==0, na.rm =T)*100)` score zero is [a bad exam]{.emph .red}. 
+An exam where
+`r sprintf("%0.0f%%", mean(metrics$awards_normalized==0, na.rm =T)*100)`
+score zero is [a bad exam]{.emph .red}.
 
-. . . 
+. . .
 
 ```{r}
 #| fig-width: 7
@@ -1067,18 +1178,22 @@ ggplot(metrics, aes(x = awards_normalized)) + geom_histogram(breaks = seq(0, 0.5
 ```
 
 ::: notes
+Most of us are instructors as well as researchers -- if nearly 90% of
+the class gets a zero on an exam (assuming they showed up, etc.) then
+the exam is most likely the problem, not the students.
 
-Most of us are instructors as well as researchers -- if nearly 90% of the class gets a zero on an exam (assuming they showed up, etc.) then the exam is most likely the problem, not the students. 
+Similarly, if most of the class gets a 100% on the exam, the exam is
+also not useful for separating students out by what they know and don't
+know.
 
-Similarly, if most of the class gets a 100% on the exam, the exam is also not useful for separating students out by what they know and don't know. 
-
-The goal -- if your goal is to differentiate what students know and don't -- should be to have variability in the scores. 
-
+The goal -- if your goal is to differentiate what students know and
+don't -- should be to have variability in the scores.
 :::
 
 ## Skewed?? -- Better Metrics
 
-- Make the metric more inclusive: faculty with other awards are an indication of future potential for highly prestigious awards
+-   Make the metric more inclusive: faculty with other awards are an
+    indication of future potential for highly prestigious awards
 
 ```{r}
 #| fig-width: 8.5
@@ -1098,14 +1213,11 @@ metrics |> filter(!is.na(research_average), !is.na(awards_normalized)) |>
 
 ```
 
+## (Still) Skewed?? -- Better Statistics
 
-## (Still) Skewed?? -- Better Statistics 
+-   Use ranks, not raw values
 
-- Use ranks, not raw values
-
-- Ranks can be converted to Z-scores 
-
-
+-   Ranks can be converted to Z-scores
 
 ```{r}
 #| fig-width: 6
@@ -1121,84 +1233,124 @@ dframe |>
   ggtitle("Cumulative distribution function")
 ```
 
-- if **denominator** is known, Z-scores and percentiles can be converted into ranks
-
+-   if **denominator** is known, Z-scores and percentiles can be
+    converted into ranks
 
 # Ratios & Normalization
 
 ## Ranks and Percentiles
 
-> The research performance of the Statistics Department at UNL is ranked 39th best out of 158 Statistics Departments. 
+> The research performance of the Statistics Department at UNL is ranked
+> 39th best out of 158 Statistics Departments.
 
-- ranks and percentiles are essentially ratios, and therefore depend very much on the denominator $n$
+-   ranks and percentiles are essentially ratios, and therefore depend
+    very much on the denominator $n$
 
-- interpretation changes drastically depending on the denominator 
+-   interpretation changes drastically depending on the denominator
 
 ## `citations_2014_2023_avg`
 
-::: {.small}
-
-AcA for 2020 to 2023:  11 faculty,  123 articles with 2,157 citations
+::: small
+AcA for 2020 to 2023: 11 faculty, 123 articles with 2,157 citations
 <br><br>
 
-| Metric                        | Calculation         | Value  | Rank | Percentile |
-|-------------------------------|---------------------|--------|------------|----------|
-| Citation count **per article**    | 2,157 / 123         | 17.5   | 38         | 75.9%    |
-| Article count **per faculty**     | 123 / 11            | 11.2   | 27         | 82.9%    |
-| Citation count **per faculty**    | 2,157 / 11          | [196.1]{.red}  | 34         | 78.5%    |
++---------------+------------+------------+------------+------------+
+| Metric        | Ca         | Value      | Rank       | P          |
+|               | lculation  |            |            | ercentile  |
++===============+============+============+============+============+
+| Citation      | 2,157 /    | 17.5       | 38         | 75.9%      |
+| count **per   | 123        |            |            |            |
+| article**     |            |            |            |            |
++---------------+------------+------------+------------+------------+
+| Article count | 123 / 11   | 11.2       | 27         | 82.9%      |
+| **per         |            |            |            |            |
+| faculty**     |            |            |            |            |
++---------------+------------+------------+------------+------------+
+| Citation      | 2,157 / 11 | [196       | 34         | 78.5%      |
+| count **per   |            | .1]{.red}  |            |            |
+| faculty**     |            |            |            |            |
++---------------+------------+------------+------------+------------+
 
-<br>
-<br>
-`citations_2014_2023_avg` for Statistics: 311.6167  ...  ???
+<br> <br> `citations_2014_2023_avg` for Statistics: 311.6167 ... ???
 
 ... what *is* the denominator?
 :::
 
 ## `citations_2014_2023_avg`
 
-::: {.small}
+::: small
++---------------+------------+------------+------------+------------+
+| Metric        | Ca         | Value      | Rank       | P          |
+|               | lculation  |            |            | ercentile  |
++===============+============+============+============+============+
+| Citation      | 2,157 /    | 17.5       | 38         | 75.9%      |
+| count **per   | 123        |            |            |            |
+| article**     |            |            |            |            |
++---------------+------------+------------+------------+------------+
+| Article count | 123 / 11   | 11.2       | 27         | 82.9%      |
+| **per         |            |            |            |            |
+| faculty**     |            |            |            |            |
++---------------+------------+------------+------------+------------+
+| Citation      | 2,157 / 11 | [196       | 34         | 78.5%      |
+| count **per   |            | .1]{.red}  |            |            |
+| faculty**     |            |            |            |            |
++---------------+------------+------------+------------+------------+
 
-| Metric                        | Calculation         | Value  | Rank | Percentile |
-|-------------------------------|---------------------|--------|------------|----------|
-| Citation count **per article**    | 2,157 / 123         | 17.5   | 38         | 75.9%    |
-| Article count **per faculty**     | 123 / 11            | 11.2   | 27         | 82.9%    |
-| Citation count **per faculty**    | 2,157 / 11          | [196.1]{.red}  | 34         | 78.5%    |
+: AcA for 2020 to 2023: 11 faculty, 123 articles with 2,157 citations
 
-: AcA for 2020 to 2023:  11 faculty,  123 articles with 2,157 citations
++---------------+------------+------------+------------+------------+
+| Metric        | Ca         | Value      | Rank       | P          |
+|               | lculation  |            |            | ercentile  |
++===============+============+============+============+============+
+| Citation      | 4,670 /    | 16.2       | 68         | 57.0%      |
+| count **per   | 289        |            |            |            |
+| article**     |            |            |            |            |
++---------------+------------+------------+------------+------------+
+| Article count | 289 / 11   | 26.3       | 21         | 86.7 %     |
+| **per         |            |            |            |            |
+| faculty**     |            |            |            |            |
++---------------+------------+------------+------------+------------+
+| Citation      | 4,670 / 11 | [424       | 49         | 69.0%      |
+| count **per   |            | .5]{.red}  |            |            |
+| faculty**     |            |            |            |            |
++---------------+------------+------------+------------+------------+
 
-| Metric                        | Calculation         | Value  | Rank | Percentile |
-|-------------------------------|---------------------|--------|------------|----------|
-| Citation count **per article**    | 4,670 / 289         | 16.2   | 68         | 57.0%    |
-| Article count **per faculty**     | 289 / 11            | 26.3   | 21         | 86.7 %    |
-| Citation count **per faculty**    | 4,670 / 11          | [424.5]{.red}  | 49         | 69.0%    |
+: AcA for 2014 to 2023: 11 faculty, 289 articles with 4,670 citations
 
-: AcA for 2014 to 2023:  11 faculty,  289 articles with 4,670 citations
-
-
-`citations_2014_2023_avg` for Statistics: 311.6167 [  $\approx$  310.3 = (196.1 + 424.5)/2]{.fragment .red}[ ???]{.fragment .red}
+`citations_2014_2023_avg` for Statistics: 311.6167 [$\approx$ 310.3 =
+(196.1 + 424.5)/2???]{.fragment .red}
 :::
 
+## Different Disciplines:
 
-## Different Disciplines: 
-[different citation cultures `r emo::ji("apple")` `r emo::ji("halloween")`]{.large .emph}
+[different citation cultures `r emo::ji("apple")`
+`r emo::ji("halloween")`]{.large .emph}
 
-::: {.smaller}
-
- Dept | Citations | Faculty | Citations/Faculty | Rank | out of | Percentile
- --- | ---: | ---: | ---: | ---: | ---: | ---:
- Statistics | 2157 | 11 | 196.1 | 34 | 158 | 78.5%
- Physics | 15959 | 29 | 550.3 | 76 | 127 | 40.1%
-
+::: smaller
++--------+--------+--------+--------+--------+--------+--------+
+| Dept   | Ci     | F      | Cit    | Rank   | out of | Per    |
+|        | t      | aculty | a      |        |        | c      |
+|        | ations |        | tions/ |        |        | entile |
+|        |        |        | F      |        |        |        |
+|        |        |        | aculty |        |        |        |
++========+=======:+=======:+=======:+=======:+=======:+=======:+
+| Sta    | 2157   | 11     | 196.1  | 34     | 158    | 78.5%  |
+| t      |        |        |        |        |        |        |
+| istics |        |        |        |        |        |        |
++--------+--------+--------+--------+--------+--------+--------+
+| P      | 15959  | 29     | 550.3  | 76     | 127    | 40.1%  |
+| hysics |        |        |        |        |        |        |
++--------+--------+--------+--------+--------+--------+--------+
 :::
 
-<br/>
-<!-- - Statistics: <br> -->
+<br/> <!-- - Statistics: <br> -->
 <!--   citations per faculty: 2,157/11 = 196.1 <br>  -->
 <!--   $r_{158} = 34$, or 78.5% -->
 
-
 <!-- - Physics: <br> -->
+
 <!--   citation count per faculty  15,959/29 = 550.31 <br>  -->
+
 <!--   $r_{127} = 76$, or 40.1% -->
 
 ```{r}
@@ -1207,23 +1359,25 @@ metrics2 |> ggplot(aes(x = citations_normalized_z_score, fill = lowest_level_sho
   scale_fill_manual(values = c("darkgrey", "#d00000")) + theme(legend.position="none") 
 ```
 
-
 ## What is in an average?
 
-- Statisticians like averages: $X_1, X_2, ... X_n$ with the same mean $\mu$ and the same variance $\sigma^2$, 
+-   Statisticians like averages: $X_1, X_2, ... X_n$ with the same mean
+    $\mu$ and the same variance $\sigma^2$,
 
 $$
 \frac{X_1 + X_2 + ... + X_n}{n} = \bar{X} \  {\dot\sim} \ N\left(\mu, \frac{\sigma^2}{n}\right)
 $$
 
-- Averages allow more precision, better predictions, more confident conclusions
+-   Averages allow more precision, better predictions, more confident
+    conclusions
 
-- ... so why is dividing by `t_tt_headcount_2014_2023_avg` a problem?
+-   ... so why is dividing by `t_tt_headcount_2014_2023_avg` a problem?
 
 ## What is in a ratio?
 
-::: {.small}
-- If $X$ and $N$ are BOTH random variables, $\frac{X}{N}$ has ratio distribution:
+::: small
+-   If $X$ and $N$ are BOTH random variables, $\frac{X}{N}$ has ratio
+    distribution:
 
 ```{r}
 #| fig-height: 4
@@ -1257,36 +1411,39 @@ dframe |>
   theme(legend.position = "none")
 ```
 
-Any signal gets lost in the variability, metrics do not reflect actual performance
+Any signal gets lost in the variability, metrics do not reflect actual
+performance
 :::
+
 ## Ratios in the Metrics
 
-:::{.small}
-- `p1_expenditures_normalized`^[Variable names are taken from the documentation provided by the ELT. 😵‍💫 ] = 
-$$
-\frac{\text{p1_expenditures_2014_2023_avg}}{\text{t_tt_headcount_2014_2023_avg}}
-$$
+::: small
+-   `p1_expenditures_normalized`[^2] = $$
+    \frac{\text{p1_expenditures_2014_2023_avg}}{\text{t_tt_headcount_2014_2023_avg}}
+    $$
 
-- `total_sponsored_awards_inc_nuf_rsch_pub_serv_teach_avg_awards_budget` = 
-$$
-\frac{\text{Average_total_sponsored_awards_inc_nuf_rsch_pub_serv_teach_fy2020_fy2024}}{\text{budget_from_evc_file_state_appropriated_budget}}
-$$
-- `instructional_sch_4Y_share_growth` = 
+-   `total_sponsored_awards_inc_nuf_rsch_pub_serv_teach_avg_awards_budget`
+    = $$
+    \frac{\text{Average_total_sponsored_awards_inc_nuf_rsch_pub_serv_teach_fy2020_fy2024}}{\text{budget_from_evc_file_state_appropriated_budget}}
+    $$
 
-Change in share (percentage) of total instructional SCH from AY2020 to AY2024
+-   `instructional_sch_4Y_share_growth` =
 
-<br>
-- ... every metric was 'normalized', most are ratios of RVs rather than averages
+Change in share (percentage) of total instructional SCH from AY2020 to
+AY2024
+
+<br> - ... every metric was 'normalized', most are ratios of RVs rather
+than averages
 :::
 
-
+[^2]: Variable names are taken from the documentation provided by the
+    ELT. 😵‍💫
 
 ## What is in a Cauchy Distribution?
 
-::: {.small}
-- Cauchy: X/Y with E[Y] = 0. Division by zero, statistically speaking
-
-
+::: small
+-   Cauchy: X/Y with E\[Y\] = 0. Division by zero, statistically
+    speaking
 
 ```{r}
 #| fig-height: 5
@@ -1303,33 +1460,36 @@ lp_data |>
   ggtitle("Which of these plots looks different from the others?") 
 ```
 
-- `research_awards_growth_inc_nuf_fy20_fy24` [is in plot #`r lp_data$id[1]`]{.emph .fragment .red .large}
+-   `research_awards_growth_inc_nuf_fy20_fy24` [is in plot
+    \#`r lp_data$id[1]`]{.emph .fragment .red .large}
 :::
 
 ## What should have been done?
 
 Observational units
 
-- Research performance measures [products]{.emph .red} by faculty members, one at a time
+-   Research performance measures [products]{.emph .red} by faculty
+    members, one at a time
 
-- Teaching performance measures [classes]{.emph .blue}, one at a time
+-   Teaching performance measures [classes]{.emph .blue}, one at a time
 
-- Data based on single products and classes are auditable
-
+-   Data based on single products and classes are auditable
 
 But:
 
-- Internal record keeping seems inconsistent, full of errors
-- Rather than addressing errors in data and biases in metrics, told "nothing will change" 
+-   Internal record keeping seems inconsistent, full of errors
+-   Rather than addressing errors in data and biases in metrics, told
+    "nothing will change"
 
 # Comparisons
 
-
 ## Scholarly Research Index (SRI)
 
-- measure created by Academic Analytics to evaluate research performance
+-   measure created by Academic Analytics to evaluate research
+    performance
 
-- based on # awards, # books, # citations, # articles, # grants, grant dollars, (clinical) trials and patents
+-   based on \# awards, \# books, \# citations, \# articles, \# grants,
+    grant dollars, (clinical) trials and patents
 
 ```{r}
 #| fig-width: 6
@@ -1338,7 +1498,6 @@ But:
 metrics2 |> ggplot(aes(x = appointment_apportionment_percent_research_fte, y = sri_aau_public_peers)) + 
   theme_bw() + xlab("Research FTE") + geom_smooth(method="lm") + geom_point() 
 ```
-
 
 ```{r}
 #| fig-width: 10
@@ -1404,7 +1563,7 @@ combined <- combined |> left_join(unis, by=c("institutionid" = "Institution_id")
 
 ## SRI for all Statistics Departments
 
-::: {.small}
+::: small
 ```{r}
 #| fig-width: 6
 #| fig-height: 4.5
@@ -1421,7 +1580,8 @@ dots <- combined |> filter(Sector=="Public") |>
 dots 
 ```
 
-SRI allows -- under certain circumstances -- a comparison across fields, SRI percentiles by field would be better
+SRI allows -- under certain circumstances -- a comparison across fields,
+SRI percentiles by field would be better
 :::
 
 ## SRI for all Statistics Departments
@@ -1485,7 +1645,6 @@ combined |> filter(Sector=="Public") |>
                                                levels=levels(combined$aau_r1))))
 ```
 
-
 ## SRI Shift for other Departments
 
 ```{r}
@@ -1531,61 +1690,63 @@ sri_means |>
 
 "All departments are treated the same way" -- Definitely not!
 
-
-
 ## Checking the Claims
 
-::: columns
+::::: columns
 ::: column
+-   ~~Transparent Process~~
 
-- ~~Transparent Process~~
+-   ~~Departments were consulted before plan was announced~~ ???
 
-- ~~Departments were consulted before plan was announced~~ ???
-
-- All departments were treated equally 😬😱
+-   All departments were treated equally 😬😱
 :::
-::: column
 
+::: column
 ![](images/animal-farm-george-orwell-2.jpg)
 <!-- [Image from https://www.kobo.com/us/en/ebook/animal-farm-george-orwell-2]{.bottom} -->
 :::
-:::
+:::::
 
 ## Missed Opportunity
 
-- Rather than using Public AAU as a measuring stick to punish with
+-   Rather than using Public AAU as a measuring stick to punish with
 
-- Use difference strategically for investment: 
+-   Use difference strategically for investment:
 
-  SRI$_{\text{Public AAU}}$ - SRI$_{\text{Public}}$ 
+    SRI$_{\text{Public AAU}}$ - SRI$_{\text{Public}}$
 
-- Size of differences indicate AAU relevance
-
-
+-   Size of differences indicate AAU relevance
 
 # Conclusions
 
 ## Metrics
 
-- Statistical fundamentals matter! distributions, observational units, variance, and real-world interpretation
+-   Statistical fundamentals matter! distributions, observational units,
+    variance, and real-world interpretation
 
-- The general description of the metrics sounds good, but
-    - The implementation is incredibly problematic
+-   The general description of the metrics sounds good, but
 
-- Inferential **intent** - using metrics to make these choices 
-    - Disclaimers don't fix the results -- negative scores were used to infer poor performance
+    -   The implementation is incredibly problematic
 
-[- AAU metrics are like the hard, summative problems on exams -- it's important to measure the precursors]{.emph .red}
+-   Inferential **intent** - using metrics to make these choices
+
+    -   Disclaimers don't fix the results -- negative scores were used
+        to infer poor performance
+
+[- AAU metrics are like the hard, summative problems on exams -- it's
+important to measure the precursors]{.emph .red}
 
 ## Fixes
 
-- Use SRI percentile instead of the other research metrics (translate to a z-score if necessary)
+-   Use SRI percentile instead of the other research metrics (translate
+    to a z-score if necessary)
 
-- Don't take ratios of random quantities
+-   Don't take ratios of random quantities
 
-- Compare like to like -- graduate vs. undergraduate credit hours, service vs. major courses. 
+-   Compare like to like -- graduate vs. undergraduate credit hours,
+    service vs. major courses.
 
-- Only evaluate stable programs -- use a 5-year grace period (consistent with CCPE guidelines)
+-   Only evaluate stable programs -- use a 5-year grace period
+    (consistent with CCPE guidelines)
 
 [- Involve statisticians in the process!!]{.emph .fragment .red .large}
-
