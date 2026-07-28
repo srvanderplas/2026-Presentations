@@ -2,13 +2,13 @@
 format: 
   revealjs:
     navigation-mode: vertical
-    theme: ../libs/job/inverse.scss
+    theme: ../libs/usu/inverse.scss
     includes:
-      in_header: ../libs/job/header.html
+      in_header: ../libs/usu/header.html
     lib_dir: libs
-width: 1600
-height: 900
-bibliography: refs.bib
+    embed-resources: true
 ---
 
-## Outline
+
+# 🫤❓ Uncertainty 🫨📐
+
