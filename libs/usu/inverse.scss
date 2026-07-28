@@ -1,0 +1,232 @@
+/*-- scss:defaults --*/
+
+$pink-lt: #f692a1; /* 7.16 contrast with aggie blue */
+$pink: #f16278;
+$pink-dk: #B21028; /* 7 contrast with white */
+$orange-lt: #F9DCBE; /* 12.02 contrast with aggie blue */
+$orange: #f58220;
+$orange-dk: #8e4506; /* 6.99 contrast with white */
+$yellow-lt: #f9df90; /* 12.0 contrast with aggie blue */
+$yellow: #f6bd17;
+$yellow-dk: #6f5506; /* 7.05 contrast with white */
+$green-lt: #30c58e; /* 7.13 contrast with aggie blue */
+$green: #124734;
+$green-dk: #0f3e2c; /* 12.02 contrast with white */
+$sage-lt: #90b6a8; /* 7.09 contrast with aggie blue */
+$sage: #6b9e85;
+$sage-dk: #3e604c; /* 7.04 contrast with white */
+$cerulean-lt: #9febfe; /* 12.0 contrast with aggie blue */
+$cerulean: #01add8;
+$cerulean-dk: #016179; /* 7.02 contrast with white */
+$blue-lt: #6bb7e1; /* 7.12 contrast with aggie blue */
+$blue: #288dc2;
+$blue-dk: #1a5c7f; /* 7.28 contrast with white */
+$grey-lt: #a9afb2; /* 7.1 contrast with aggie blue */
+$grey: #a9afb2;
+$grey-dk: #4f5959; /* 7.22 contrast with white */
+$gray-lt: #a9afb2; /* 7.1 contrast with aggie blue */
+$gray: #a9afb2;
+$gray-dk: #4f5959; /* 7.22 contrast with white */
+$sand-lt: #e0e0d6; /* 11.86 contrast with aggie blue */
+$sand: #d1cbbd;
+$sand-dk: #5d5741; /* 7.22 contrast with white */
+
+@import 'https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap';
+
+$font-family: "Atkinson Hyperlegible", sans-serif;
+$font-family-cursive: 'Handlee', cursive;
+$web-font-path: "https://fonts.googleapis.com/css2?family=Handlee&family=Roboto:wght@400;700&display=swap" !default;
+
+@if $web-font-path {
+  @import url($web-font-path);
+}
+
+$font-family-sans-serif: Atkinson Hyperlegible, "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+$font-family-cursive: Handlee, cursive, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+
+
+$headings-font-weight: 400 !default;
+
+/* css styles */
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 500;
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+
+h1 {
+  color: $gray-lt;
+  font-size: 3.5em;
+  font-family: 'Atkinson Hyperlegible', sans-serif;
+  /*background: rgba(.9961, .9922, .9804, .3);*/
+  padding: 20px;
+}
+
+h2 {
+  color: $sage-lt;
+  font-size: 2.5em;
+  font-family: 'Atkinson Hyperlegible', sans-serif;
+}
+
+h3 {
+  color: $cerulean-lt;
+  font-size: 1.5em;
+  font-family: 'Atkinson Hyperlegible', sans-serif;
+}
+
+h4 {
+  font-size: 1.25em;
+  font-family: 'Atkinson Hyperlegible', sans-serif;
+}
+
+body {
+  font-size: 1em;
+  font-weight: 400;
+  font-family: 'Atkinson Hyperlegible', sans-serif;
+}
+
+/*-- scss:rules --*/
+
+a {
+  color: $yellow-lt;
+}
+
+/* Other font formatting stuff */
+.emph {
+  font-family: 'Handlee', cursive;
+}
+
+.reveal section .pink-lt { color: $pink-lt !important;} /* watermelon, lightened to 7.16 contrast with aggie blue */
+.reveal section .orange-lt { color: $orange-lt !important;} /* tangerine, lightened to 7.02 contrast with aggie blue */
+.reveal section .yellow-lt { color: $yellow-lt !important;} /* sunflower, lightened to 12.0 contrast with aggie blue */
+.reveal section .green-lt { color: $green-lt !important;} /* hunter green, lightened to 7.13 contrast with aggie blue */
+.reveal section .sage-lt { color: $sage-lt !important;} /* sage green, lightened to 7.09 contrast with aggie blue */
+.reveal section .cerulean-lt { color: $cerulean-lt !important; }  /* electric, lightened to 12.0 contrast with aggie blue */
+.reveal section .blue-lt { color: $blue-lt$ !important;} /* sky, lightened to 7.12 contrast with aggie blue */
+.reveal section .gray-lt { color: $grey-lt !important;} /* grey, lightened to 7.1 contrast with aggie blue */
+.reveal section .sand-lt { color: $sand-lt !important;} /* sand, lightened to 11.86 contrast with aggie blue */
+
+
+.reveal section .pink { color: $pink !important;} /* watermelon */
+.reveal section .orange { color: $orange !important;} /* tangerine */
+.reveal section .yellow { color: $yellow !important;} /* sunflower */
+.reveal section .green { color: $green !important;} /* hunter green */
+.reveal section .sage { color: $sage !important;} /* sage green */
+.reveal section .cerulean { color: $cerulean !important; }  /* electric */
+.reveal section .blue { color: $blue !important; } /* sky */
+.reveal section .gray { color: $grey !important;} /* grey */
+.reveal section .sand { color: $sand !important;} /* sand */
+
+
+.reveal section .pink-dk { color: $pink-dk !important;} /* watermelon, darkened to 7 contrast with white */
+.reveal section .orange-dk { color: $orange-dk !important;} /* tangerine, darkened to 6.99 contrast with white */
+.reveal section .yellow-dk { color: $yellow-dk !important;} /* sunflower, darkened to 7.05 contrast with white */
+.reveal section .green-dk { color: $green-dk !important;} /* hunter green, darkened to 12.02 contrast with white */
+.reveal section .sage-dk { color: $sage-dk !important;} /* sage green, darkened to 7.04 contrast with white */
+.reveal section .cerulean-dk { color: $cerulean-dk !important; } /* electric, darkened to 7.02 contrast with white */
+.reveal section .blue-dk { color: $blue-dk !important; }  /* sky, darkened to 7.28 contrast with white */
+.reveal section .gray-dk { color: $grey-dk !important;} /* grey, darkened to 7.22 contrast with white */
+.reveal section .sand-dk { color: $sand-dk !important;} /* sand, darkened to 7.22 contrast with white */
+
+
+/* other handy classes */
+.large {
+  font-size: 130% !important;
+}
+
+.largish {
+  font-size: 110% !important;
+}
+
+.reg {
+  font-size: 100% !important;
+}
+
+.slightly-small {
+  font-size: 80% !important;
+}
+
+.smaller {
+  font-size: 75% !important;
+}
+
+.small {
+  font-size: 70% !important;
+}
+
+.tiny {
+  font-size: 50% !important;
+}
+
+.microscopic {
+  font-size: 28% !important;
+}
+
+.underline {
+  border-bottom: 1px solid black;
+  display: inline-block;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+
+.inverse {
+  color: #ffffff;
+
+  .underline {
+    border-bottom: 1px solid #fefdfa;
+    display: inline-block;
+  }
+
+  h1,
+  h2,
+  h3 {
+    color: ;
+  }
+
+  a {
+    color: #ffd74f;
+  }
+
+  p code {
+    color: #ffd700;
+  }
+
+  .slide-background-content {
+    background-color: #0F2439;
+  }
+
+  .callout-caption {
+    color: $body-color;
+  }
+
+  pre {
+    background-color: #001226;
+  }
+
+}
+
+figure p img {
+  margin: 0px !important;
+}
+
+figure p {
+  margin-top: 5px !important;
+  margin-bottom: 5px !important;
+}
+
+.quarto-figure {
+  margin-bottom: 10px !important;
+  margin-left: 0px !important;
+}
+
+figure figcaption {
+  margin-top: 2px !important;
+  margin-bottom: 0px !important;
+}
