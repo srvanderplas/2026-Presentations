@@ -1,5 +1,8 @@
 /*-- scss:defaults --*/
 
+$aggie-blue: #0F2439;
+$white: #FFFFFF;
+$black: #000000;
 $pink-lt: #f692a1; /* 7.16 contrast with aggie blue */
 $pink: #f16278;
 $pink-dk: #B21028; /* 7 contrast with white */
@@ -106,7 +109,7 @@ a {
 .reveal section .green-lt { color: $green-lt !important;} /* hunter green, lightened to 7.13 contrast with aggie blue */
 .reveal section .sage-lt { color: $sage-lt !important;} /* sage green, lightened to 7.09 contrast with aggie blue */
 .reveal section .cerulean-lt { color: $cerulean-lt !important; }  /* electric, lightened to 12.0 contrast with aggie blue */
-.reveal section .blue-lt { color: $blue-lt$ !important;} /* sky, lightened to 7.12 contrast with aggie blue */
+.reveal section .blue-lt { color: $blue-lt !important;} /* sky, lightened to 7.12 contrast with aggie blue */
 .reveal section .gray-lt { color: $grey-lt !important;} /* grey, lightened to 7.1 contrast with aggie blue */
 .reveal section .sand-lt { color: $sand-lt !important;} /* sand, lightened to 11.86 contrast with aggie blue */
 
@@ -180,26 +183,26 @@ a {
   color: #ffffff;
 
   .underline {
-    border-bottom: 1px solid #fefdfa;
+    border-bottom: 1px solid $grey-lt;
     display: inline-block;
   }
 
   h1,
   h2,
   h3 {
-    color: ;
+    color: $cerulean-lt;
   }
 
   a {
-    color: #ffd74f;
+    color: $yellow-lt;
   }
 
   p code {
-    color: #ffd700;
+    color: $orange-lt;
   }
 
   .slide-background-content {
-    background-color: #0F2439;
+    background-color: $aggie-blue;
   }
 
   .callout-caption {
@@ -207,7 +210,7 @@ a {
   }
 
   pre {
-    background-color: #001226;
+    background-color: $aggie-blue;
   }
 
 }
