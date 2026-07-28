@@ -9,6 +9,215 @@ format:
     embed-resources: true
 ---
 
+```{r}
+library(ggplot2)
+library(dplyr)
+library(magrittr)
+set_theme(theme_bw())
+library(ggpop)
+library(distributional)
+library(ggdibbler)
+library(ragg)
+library(systemfonts)
+library(datasauRus)
+data("datasaurus_dozen")
 
-# 🫤❓ Uncertainty 🫨📐
+library(knitr)
 
+system_fonts() |>
+  filter(stringr::str_detect(name, "Awesome7Free-Solid")) |>
+  filter(row_number()==n()) |>
+  pull(path) |>
+  register_font("fa-solid", plain=_)
+
+
+library(showtext)
+# library(fontawesome)
+library(ggtext)
+# library(emojifont)
+# 
+# load.fontawesome()
+showtext_opts(dpi = 300)
+```
+
+
+```{r}
+#| include: false
+#| eval: false
+
+data.frame(x = rnorm(500)) |> ggplot(aes(x = x)) + geom_histogram()
+
+
+```
+```{r}
+#| include: false
+#| eval: false
+#| fig-width: 8
+#| fig-height: 5
+#| fig-dpi: 300
+#https://knowyourchances.cancer.gov/your_chances.html
+chances_of_death <- tibble(
+  outcome = c("Accident", "Breast Cancer", "Liver Disease", "Heart Disease/Blood Pressure", "Diabetes", "Stroke", "Colon Cancer","Cervical Cancer", "Other", "Survive"), 
+  prob = c(0.004618, 0.00981,  0.000905, 0.000870 + 0.000365, 0.000561, 0.000452, 0.000448, 0.000293, 0.007240 + 0.000912, 1-0.017645), 
+  facode = c("car-burst", "ribbon", "wine-glass", "heart-pulse", "candy-cane", "brain", "poop", "venus", "skull-crossbones", "person")) |>
+  arrange(desc(outcome))
+
+
+survival <- dist_categorical(prob = list(chances_of_death$prob), 
+                             outcomes = list(chances_of_death$outcome))
+set.seed(204493078)
+df <- tibble(outcome = unlist(generate(survival, 800))) |>
+  mutate(outcome = factor(outcome, levels = chances_of_death$outcome, ordered = T)) |>
+  arrange(desc(outcome)) |>
+  mutate(x = ((row_number() -1) %% 40), 
+         y = floor((row_number() - 1 - x)/40),
+         survive = outcome == "Survive") |>
+  left_join(select(chances_of_death, -prob))
+
+df |>
+ggplot() + 
+  geom_text(aes(x = x, y = y, label = facode, color = outcome), family = 'fa-solid', hjust = 0.5, vjust = 0.5, size = 3) + 
+  theme_void() +
+  scale_color_manual(
+    "Outcome", 
+    values = c(
+      "Accident" = "#f58220", 
+      "Breast Cancer" = "#f692a1", 
+      "Colon Cancer" = "#5d5741",
+      "Liver Disease" = "#f6bd17",
+      "Other" = "#6b9e85",
+      "Heart Disease" = "#288dc2",
+      "Blood Pressure" = "#01add8",
+      "Survive" = "black"), drop=F) +
+  guides(color = guide_legend(override.aes = list(label = c("car-burst", "ribbon", "poop", "wine-glass", "skull-crossbones", "person")), nrow =1)) + 
+  ggtitle("10-Year Outcomes, according to National Cancer Institute", subtitle = "38 year old white female, never smoked") + 
+  theme(legend.position = "bottom", legend.direction = "horizontal")
+```
+
+
+# Visualization
+
+## Data Visualization Goals
+
+- Communicate information about data 
+
+    - Doesn't (always) require statistics knowledge
+    
+    - Useful for communication with more people
+
+- Visualization uses *higher bandwidth channels*
+
+    - Parallel vs. Serial processing
+
+- Well designed graphics $\approx$ [external cognition]{.emph .large .cerulean-dk}
+
+
+## Higher Bandwidth {.scrollable}
+
+::: columns
+
+::: {.column width="40%" .small}
+
+```{r}
+datasaurus_dozen |>
+  filter(dataset=="dino") |>
+  arrange(x, y) |>
+  select(x, y) |>
+  DT::datatable(options = list(pageLength=6, dom='tp'), rownames = F)
+```
+
+:::
+
+
+::: {.column width="20%"}
+
+:::
+
+::: {.column width="40%"}
+```{r}
+#| fig-width: 4
+#| fig-height: 4
+#| fig-alt: "A scatterplot that shows the outline of a T-rex"
+#| out-extra: ".fragment"
+datasaurus_dozen |>
+  filter(dataset=="dino") |>
+ggplot(aes(x = x, y = y)) + geom_point() + coord_fixed() + theme(axis.title = element_blank())
+```
+
+:::
+
+:::
+
+
+
+## Visualization Design Principles
+
+- Important Variables in more accurate channels
+
+```{r}
+
+```
+
+
+
+# Uncertainty  Visualization ❓🫨 📐
+
+## {background-image="types-of-uncertainty.svg" background-size="100%" background-image-alt="A collage of different types of uncertainty and goals of uncertainty visualization. The top left shows a spaghetti plot of hurricane tracks based on different model starting conditions, with the label 'prediction uncertainty'. The top right shows a risk pictogram of 10-year outcomes for a 38 year old white female who has never smoked; the vast majority of the outcomes are survival, with accident, breast cancer, colon cancer, liver disease, and other causes of death represented. The plot has the label 'risk perception'. In the center, there is a sketch of a hand flipping a coin. On the center left, there is a cartoon depiction of the trolley problem with the label 'rational decision making', and in the bottom left there is a screenshot of the NY Times election needle in 2016, showing one representation of uncertainty from missing data. In the bottom center, there is a picture of calipers with the label 'measurement uncertainty', and on the bottom right there is a histogram with the label 'what do RVs even mean'."}
+
+
+
+
+
+
+## Goal(s) of Uncertainty Visualization
+
+Transparency
+
+In a survey of 90 "visualization authors" recruited from the InfoVis community, respondents mentioned the
+
+> importance of transparency in presentations of data, suggesting that omitting uncertainty was misleading or even lying. ^[Hullman, Jessica. 2020. “Why Authors Don’t Visualize Uncertainty.” IEEE Transactions on Visualization and Computer Graphics 26(1):130–39. doi:10.1109/TVCG.2019.2934287.]
+
+
+
+## Goal(s) of Uncertainty Visualization
+
+Communicate the Legitimacy of Conclusions
+
+```{r}
+#| fig-alt: A set of two distributional bar charts made up of 100 samples each. A black line at y=5 stretches across both charts. The first chart has red bars and is labeled 'amateurs' with a silly face emoji, and has extremely high variance, with most bars between 1 and 9. The second is labeled 'serious science' with a microscope emoji and has very low variance, with almost all bars between 4.5 and 5.5. 
+#| fig-width: 6
+#| fig-height: 3
+#| fig-dpi: 300
+set.seed(2049809823)
+tibble(x = dist_normal(5, c(.2, 2)), label = c("Serious science! 🔬", "Amateurs 🥸")) |>
+  ggplot() + geom_hline(yintercept=5) + 
+  geom_col_sample(aes(x = label, y = x, fill = label), times= 100) + guides(fill = 'none') + theme(axis.title = element_blank()) + scale_y_continuous_distribution(breaks=c(0:10))
+
+```
+
+
+## Goal(s) of Uncertainty Visualization
+
+Communicate the Legitimacy of Conclusions
+
+```{r}
+#| fig-alt: A set of two distributional bar charts made up of 100 samples each. A black line at y=5 stretches across both charts. The first chart has red bars and is labeled 'amateurs' with a silly face emoji, and has extremely high variance, with most bars between 1 and 9. The second is labeled 'serious science' with a microscope emoji and has very low variance, with almost all bars between 4.5 and 5.5. 
+#| fig-width: 6
+#| fig-height: 3
+#| fig-dpi: 300
+set.seed(2049809823)
+tibble(x = dist_normal(5, c(.2, 2)), label = c("Serious science! 🔬", "Amateurs 🥸")) |>
+  sample_expand(times=100) |>
+  group_by(label) |>
+  summarize(mean = mean(x), se = sd(x), lb = mean-se, ub = mean+se) |>
+  ggplot() + geom_hline(yintercept=5) + 
+  geom_col(aes(x = label, y = mean, fill = label)) + 
+  geom_errorbar(aes(x = label, ymin = lb, ymax = ub), width = .2) + 
+  guides(fill = 'none') + theme(axis.title = element_blank()) 
+
+```
+
+Requires understanding:
+
+- what error bars show (variance)
+- how that translates to real data  (most data within 2*bars)
