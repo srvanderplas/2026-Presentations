@@ -95,9 +95,40 @@ ggplot() +
 ```
 
 
-# Visualization
+# Introduction
 
-## Data Visualization Goals
+## Why Visualization?
+
+::: columns
+
+::: {.column width="10%"}
+::: fragment
+![](data-binary-small.svg){fig-alt="a rectangle of 0s and 1s representing binary data."}
+:::
+:::
+
+::: {.column width="20%"}
+::: fragment
+![](programmer.svg){fig-alt="a human seated at an old fashioned computer"}
+:::
+:::
+
+::: {.column width="60%" .small .r-fit-text}
+::: fragment
+$$ \begin{align*}
+L(\alpha_i, \beta_i | y_{i,\boldsymbol{n}_i}) = \prod_{j=1}^{n_i} \frac{\beta_i^{\alpha_i}}{\Gamma(\alpha_i)} y_{ij}^{\alpha_i - 1} \text{exp}(-\beta_i y_{ij})&\end{align*}
+$$
+:::
+::: fragment
+$$ \hat\alpha_i, \hat\beta_i $$
+:::
+::: fragment
+![](world.svg){width="30%" fig-alt="The globe"}
+:::
+
+:::
+
+:::
 
 - Communicate information about data 
 
