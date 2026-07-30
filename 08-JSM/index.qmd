@@ -7,11 +7,16 @@ format:
       in_header: ../libs/usu/header.html
     lib_dir: libs
     embed-resources: true
+lightbox: true
 ---
 
 ```{r}
+#| label: setup
+#| cache: false
+
 library(ggplot2)
 library(dplyr)
+library(tidyr)
 library(magrittr)
 set_theme(theme_bw())
 library(ggpop)
@@ -102,84 +107,161 @@ ggplot() +
 ::: columns
 
 ::: {.column width="10%"}
-::: fragment
-![](data-binary-small.svg){fig-alt="a rectangle of 0s and 1s representing binary data."}
+::: {.fragment fragment-index=1}
+![](data-binary-small.svg){fig-width="80%" fig-alt="a rectangle of 0s and 1s representing binary data."}
 :::
 :::
 
 ::: {.column width="20%"}
-::: fragment
-![](programmer.svg){fig-alt="a human seated at an old fashioned computer"}
+::: {.fragment fragment-index=2}
+![](programmer.svg){fig-width="90%" fig-alt="a human seated at an old fashioned computer"}
 :::
 :::
 
 ::: {.column width="60%" .small .r-fit-text}
-::: fragment
+::: {.fragment fragment-index=3}
 $$ \begin{align*}
 L(\alpha_i, \beta_i | y_{i,\boldsymbol{n}_i}) = \prod_{j=1}^{n_i} \frac{\beta_i^{\alpha_i}}{\Gamma(\alpha_i)} y_{ij}^{\alpha_i - 1} \text{exp}(-\beta_i y_{ij})&\end{align*}
 $$
 :::
-::: fragment
+
+<br/>
+
+::: {.fragment fragment-index=4}
 $$ \hat\alpha_i, \hat\beta_i $$
 :::
-::: fragment
-![](world.svg){width="30%" fig-alt="The globe"}
+
 :::
+:::
+
+
+
+::: columns
+::: {.column width="10%"}
+:::
+
+::: {.column width="60%"}
+::: {.fragment fragment-index=6}
+```{r}
+#| eval: false
+#| include: false
+source("model-res.R")
+
+ggsave("model-results.svg", width = 1200, height = 600, units = "px", dpi=300)
+```
+![](model-results.svg){fig-alt="A histogram with three densities overlaid. The data in the histogram is skewed right and has a peak between two and three. The densities are labeled 'combined', 'group 1 alone', and 'group 2 alone', and use both color and solid/dotted lines to indicate which line belongs to each label. The group 2 alone density has the highest peak, followed by the combined density, while the group 1 alone density has the lowest peak and the widest dispersion." fig-width="100%"}
+:::
+:::
+
+::: {.column width="5%"}
+:::
+
+::: {.column width="25%"}
+::: {.fragment fragment-index=5}
+![](world.svg){fig-alt="The globe" .move-way-up .move-way-left}
+:::
+:::
+:::
+
+::: {.notes}
+
+It's a familiar tale. You get some data. You sit down and read it into your program of choice, and then start building a statistical model. You get some pretty estimates, and then it's time to communicate those estimates to someone out there in the world -- the owner of the data, the public, the funding agency. Most of the time, our first step is to create some sort of chart that shows our data along with some model summaries - the model predictions, the posterior predictive distribution, the risk. 
+
+Why do visualizations help us so much?
 
 :::
 
-:::
+
+## Why Visualization? 
+
+::: {.incremental}
 
 - Communicate information about data 
 
-    - Doesn't (always) require statistics knowledge
-    
-    - Useful for communication with more people
+    - Doesn't (always) require statistics knowledge    
+    [$\Rightarrow$ helpful with the general public]{.fragment}
 
-- Visualization uses *higher bandwidth channels*
+- Visualization uses *higher bandwidth channels* than text
 
-    - Parallel vs. Serial processing
-
-- Well designed graphics $\approx$ [external cognition]{.emph .large .cerulean-dk}
+:::
 
 
 ## Higher Bandwidth {.scrollable}
+### What Helps More?
 
 ::: columns
 
-::: {.column width="40%" .small}
+::: {.column width="27%" .small}
+###### Full Data
 
 ```{r}
 datasaurus_dozen |>
   filter(dataset=="dino") |>
   arrange(x, y) |>
   select(x, y) |>
-  DT::datatable(options = list(pageLength=6, dom='tp'), rownames = F)
+  DT::datatable(options = list(pageLength=5, dom='tp', pagingType="simple", oLanguage=list(oPaginate=list(sNext=">", sPrevious="<"))), rownames = F) |>
+  DT::formatRound(1:2, digits=2)
 ```
-
 :::
 
 
-::: {.column width="20%"}
+::: {.column width="32%"}
+
+::: {.fragment fragment-index=1 .small}
+
+###### Summary Stats
+```{r}
+#| label: dino-summary
+#| out-extra: '.fragment fragment-index=1'
+datasaurus_dozen |>
+  filter(dataset=="dino") |>
+  select(x, y) |>
+  summarize(across(everything(), c(mean = mean, sd = sd))) |>
+  pivot_longer(everything()) |>
+  separate_wider_delim(name, delim = "_", names = c("var", "stat")) |>
+  pivot_wider(names_from = var, values_from=value) |>
+  rename(Stat = "stat") |>
+  knitr::kable(digits = 2, format = 'pipe')
+
+```
+:::
 
 :::
 
 ::: {.column width="40%"}
+
+::: {.fragment fragment-index=2 .smaller}
+###### A Plot
 ```{r}
 #| fig-width: 4
 #| fig-height: 4
 #| fig-alt: "A scatterplot that shows the outline of a T-rex"
-#| out-extra: ".fragment"
+
+
 datasaurus_dozen |>
   filter(dataset=="dino") |>
-ggplot(aes(x = x, y = y)) + geom_point() + coord_fixed() + theme(axis.title = element_blank())
+ggplot(aes(x = x, y = y)) + geom_point() +  
+  theme(axis.title = element_blank())
 ```
-
+:::
 :::
 
 :::
 
 
+
+## Why Visualization? 
+
+- Communicate information about data 
+
+    - Doesn't (always) require statistics knowledge    
+    $\Rightarrow$ helpful with the general public
+
+- Visualization uses *higher bandwidth channels* than e.g. tables
+
+::: fragment
+- Well designed graphics can be a form of [external cognition]{.emph .large .cerulean-dk}
+:::
 
 ## Visualization Design Principles
 
