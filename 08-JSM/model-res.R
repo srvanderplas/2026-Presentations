@@ -67,7 +67,7 @@ dens <- tibble(type = rep(c("Combined", "Group 1 alone", "Group 2 alone"),
 
 xlong <- x |> pivot_longer(a:b, names_to="sample") 
 
-ggplot() + 
+p <- ggplot() + 
   geom_histogram(data = xlong, aes(x = value, y = after_stat(density)), breaks=seq(0, 7, .25), fill = "grey90", color = "grey50") +
   geom_line(data = dens, aes(x = x, y = dens, color = type, linetype = type), inherit.aes=F, linewidth = 1) + 
   theme_bw() + 

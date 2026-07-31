@@ -147,7 +147,7 @@ $$ \hat\alpha_i, \hat\beta_i $$
 #| include: false
 source("model-res.R")
 
-ggsave("model-results.svg", width = 1200, height = 600, units = "px", dpi=300)
+ggsave("model-results.svg", p, width = 1200, height = 600, units = "px", dpi=300)
 ```
 ![](model-results.svg){fig-alt="A histogram with three densities overlaid. The data in the histogram is skewed right and has a peak between two and three. The densities are labeled 'combined', 'group 1 alone', and 'group 2 alone', and use both color and solid/dotted lines to indicate which line belongs to each label. The group 2 alone density has the highest peak, followed by the combined density, while the group 1 alone density has the lowest peak and the widest dispersion." fig-width="100%"}
 :::
@@ -260,16 +260,262 @@ ggplot(aes(x = x, y = y)) + geom_point() +
 - Visualization uses *higher bandwidth channels* than e.g. tables
 
 ::: fragment
-- Well designed graphics can be a form of [external cognition]{.emph .large .cerulean-dk}
+- Well designed graphics can be a form of    
+[external cognition]{.emph .large .cerulean-dk}
 :::
+
+
+## Grammar of Graphics 
+::: columns
+
+::: column
+Wilkinson (2005) created a *grammar* of *graphics*:
+
+- [Data]{.emph .large}
+
+::: 
+
+::: {.column}
+![](grammar-data.svg){fig-alt="A graphical representation of a spreadsheet with 4 variables in columns"}
+:::
+:::
+
+## Grammar of Graphics
+::: columns
+
+::: column
+Wilkinson (2005) created a *grammar* of *graphics*:
+
+- Data
+- [Aesthetics]{.emph .large}
+
+::: {.fragment fragment-index=1}
+Map variables in the **data** to aspects of the **chart**
+:::
+
+::: 
+
+::: {.column}
+::: { .r-stack}
+![](grammar-aesthetics.svg){fig-alt="A plot with the x- and y- axis highlighted, showing only a grid. A paint bucket, paintbrush, and set of dotted and dashed lines illustrate other aesthetics." .fragment fragment-index=1}
+
+![](grammar-aesthetics-mapping.svg){fig-alt="A plot with the x- and y- axis highlighted, showing only a grid. A paint bucket, paintbrush, and set of dotted and dashed lines illustrate other aesthetics. Below the plot, four columns of data in a table layout are shown, with arrows from each column to the x- and y- axis, dotted and dashed lines, and paintbrush." .fragment fragment-index=2}
+
+:::
+:::
+:::
+
+## Grammar of Graphics
+::: columns
+
+::: column
+Wilkinson (2005) created a *grammar* of *graphics*:
+
+- Data
+- Aesthetics
+- [Geoms]{.emph .large}
+
+**geom**etric objects drawn onto a chart    
+[(points, lines, rectangles, circles, ...)]{.fragment fragment-index=1}
+
+::: 
+
+::: {.column}
+::: { .r-stack}
+![](grammar-aesthetics-mapping.svg){fig-alt="A plot with the x- and y- axis highlighted, showing only a grid. A paint bucket, paintbrush, and set of dotted and dashed lines illustrate other aesthetics. Below the plot, four columns of data in a table layout are shown, with arrows from each column to the x- and y- axis, dotted and dashed lines, and paintbrush."}
+
+![](grammar-aesthetic-mapping-geom-line.svg){fig-alt="Geometric mappings for a line - x and y position. An additional variable could be mapped to line color or type, if there are multiple lines." .fragment fragment-index=1}
+
+![](grammar-aesthetic-mapping-geom-rect.svg){fig-alt="Geometric mappings for a rectangle - x, y, length, and width. An additional variable could be mapped to color." .fragment fragment-index=2}
+
+![](grammar-aesthetic-mapping-geom-circle.svg){fig-alt="Geometric mappings for a circle - x and y position (for the center), radius, and fill." .fragment fragment-index=3} 
+
+
+:::
+:::
+:::
+```{r}
+#| include: false
+set.seed(2034928)
+tbl <- tibble(x = 1:100 + rnorm(100, 0, .1), y = x + rnorm(100, sd=2))
+p <- ggplot(tbl, aes(x = x, y = y)) + geom_point()
+ggsave("grammar-transform-linear.svg",p,  width=1200, height=1200, units = "px", dpi = 300)
+p + scale_x_sqrt()
+ggsave("grammar-transform-xsqrt.svg", width=1200, height=1200, units = "px", dpi = 300)
+
+p + scale_x_log10()
+ggsave("grammar-transform-xlog10.svg", width=1200, height=1200, units = "px", dpi = 300)
+
+p + scale_x_reverse()
+ggsave("grammar-transform-reverse.svg", width=1200, height=1200, units = "px", dpi = 300)
+
+p + scale_x_continuous(transform = "reciprocal", breaks = c(50, 20, 10, 5, 2, 1))
+ggsave("grammmar-transform-xinv.svg", width=1200, height=1200, units = "px", dpi = 300)
+
+```
+
+
+## Grammar of Graphics
+::: columns
+
+::: column
+Wilkinson (2005) created a *grammar* of *graphics*:
+
+- Data
+- Aesthetics
+- Geoms
+- [Transformations]{.emph .large}
+
+[Apply a function to a variable mapping.]{.fragment fragment-index=1}
+
+[Most commonly applied to axes and color scales]{.fragment fragment-index=2}
+
+
+:::
+
+::: column
+::: {.r-stack}
+
+![](grammar-transform-linear.svg){fig-alt="A scatterplot with linear x and y transformed scales." .fragment fragment-index=1}
+
+
+![](grammar-transform-xsqrt.svg){fig-alt="A scatterplot with a square-root transformed x axis scale." .fragment fragment-index=2}
+
+
+![](grammar-transform-reverse.svg){fig-alt="A scatterplot with a reverse-transformed x-axis scale." .fragment fragment-index=3}
+
+
+![](grammar-transform-xlog10.svg){fig-alt="A scatterplot with a log-10 transformed x-axis scale." .fragment}
+
+
+![](grammmar-transform-xinv.svg){fig-alt="A scatterplot with an inverse (1/x) transformed x-axis scale." .fragment}
+
+
+:::
+:::
+
+:::
+
+## Grammar of Graphics
+::: columns
+
+::: column
+Wilkinson (2005) created a *grammar* of *graphics*:
+
+- Data
+- Aesthetics
+- Geoms
+- Transformations
+- [Layers]{.emph .large}
+
+::: 
+
+::: {.column}
+::: { .r-stack}
+![](grammar-layer-histogram.svg){fig-alt="A histogram of some data" .fragment}
+
+
+![](grammar-layer-density.svg){fig-alt="A density plot containing three density curves, which are indicated using color and line type." .fragment}
+
+
+![](grammar-layer-both.svg){fig-alt="A histogram with three densities overlaid. The data in the histogram is skewed right and has a peak between two and three. The densities are labeled 'combined', 'group 1 alone', and 'group 2 alone', and use both color and solid/dotted lines to indicate which line belongs to each label. The group 2 alone density has the highest peak, followed by the combined density, while the group 1 alone density has the lowest peak and the widest dispersion." .fragment}
+
+:::
+:::
+:::
+
+
+## Grammar of Graphics
+::: columns
+
+::: column
+Wilkinson (2005) created a *grammar* of *graphics*:
+
+- Data
+- Aesthetics
+- Geoms
+- Transformations
+- Layers
+- [Facets]{.emph .large}
+- Themes
+
+::: 
+
+::: {.column}
+::: { .r-stack}
+
+:::
+:::
+:::
+
+
+## Grammar of Graphics
+::: columns
+
+::: column
+Wilkinson (2005) created a *grammar* of *graphics*:
+
+- Data
+- Aesthetics
+- Geoms
+- Transformations
+- Layers
+- Facets
+- [Themes]{.emph .large}
+
+::: 
+
+::: {.column}
+::: { .r-stack}
+![](grammar-data.svg){fig-alt="A graphical representation of a spreadsheet with 4 variables in columns" .fragment}
+
+![](grammar-aesthetics.svg){fig-alt="A plot with the x- and y- axis highlighted, showing only a grid. A paint bucket, paintbrush, and set of dotted and dashed lines illustrate other aesthetics." .fragment}
+
+![](grammar-aesthetics-mapping.svg){fig-alt="A plot with the x- and y- axis highlighted, showing only a grid. A paint bucket, paintbrush, and set of dotted and dashed lines illustrate other aesthetics. Below the plot, four columns of data in a table layout are shown, with arrows from each column to the x- and y- axis, dotted and dashed lines, and paintbrush." .fragment}
+
+![](grammar-aesthetic-mapping-geom-line.svg){fig-alt="Geometric mappings for a line - x and y position. An additional variable could be mapped to line color or type, if there are multiple lines." .fragment}
+
+![](grammar-aesthetic-mapping-geom-rect.svg){fig-alt="Geometric mappings for a rectangle - x, y, length, and width. An additional variable could be mapped to color." .fragment}
+
+![](grammar-aesthetic-mapping-geom-circle.svg){fig-alt="Geometric mappings for a circle - x and y position (for the center), radius, and fill." .fragment} 
+
+![](grammar-layer-histogram.svg){fig-alt="A histogram of some data" .fragment}
+
+
+![](grammar-layer-density.svg){fig-alt="A density plot containing three density curves, which are indicated using color and line type." .fragment}
+
+
+![](grammar-layer-both.svg){fig-alt="A histogram with three densities overlaid. The data in the histogram is skewed right and has a peak between two and three. The densities are labeled 'combined', 'group 1 alone', and 'group 2 alone', and use both color and solid/dotted lines to indicate which line belongs to each label. The group 2 alone density has the highest peak, followed by the combined density, while the group 1 alone density has the lowest peak and the widest dispersion." .fragment}
+
+:::
+:::
+:::
+
 
 ## Visualization Design Principles
 
-- Important Variables in more accurate channels
+::: columns
+::: column
 
-```{r}
+Map your most important variables to more accurate channels
 
-```
+:::
+
+::: column
+
+1. Position - common scale (BEST)
+2. Position - nonaligned scale
+3. Length, direction, angle
+4. Area
+5. Volume, curvature
+6. Shading, color (WORST)
+
+[(Cleveland, 1984; Heer and Bostock, 2009)]{.smaller}
+
+:::
+
+:::
+
 
 
 
