@@ -100,7 +100,7 @@ ggplot() +
 ```
 
 
-# Introduction
+# Why Visualization?
 
 ## Why Visualization?
 
@@ -265,7 +265,9 @@ ggplot(aes(x = x, y = y)) + geom_point() +
 :::
 
 
-## Grammar of Graphics 
+# The Grammar of Graphics 
+
+## The Grammar of Graphics
 ::: columns
 
 ::: column
@@ -467,30 +469,14 @@ Wilkinson (2005) created a *grammar* of *graphics*:
 
 ::: {.column}
 ::: { .r-stack}
-![](grammar-data.svg){fig-alt="A graphical representation of a spreadsheet with 4 variables in columns" .fragment}
 
-![](grammar-aesthetics.svg){fig-alt="A plot with the x- and y- axis highlighted, showing only a grid. A paint bucket, paintbrush, and set of dotted and dashed lines illustrate other aesthetics." .fragment}
-
-![](grammar-aesthetics-mapping.svg){fig-alt="A plot with the x- and y- axis highlighted, showing only a grid. A paint bucket, paintbrush, and set of dotted and dashed lines illustrate other aesthetics. Below the plot, four columns of data in a table layout are shown, with arrows from each column to the x- and y- axis, dotted and dashed lines, and paintbrush." .fragment}
-
-![](grammar-aesthetic-mapping-geom-line.svg){fig-alt="Geometric mappings for a line - x and y position. An additional variable could be mapped to line color or type, if there are multiple lines." .fragment}
-
-![](grammar-aesthetic-mapping-geom-rect.svg){fig-alt="Geometric mappings for a rectangle - x, y, length, and width. An additional variable could be mapped to color." .fragment}
-
-![](grammar-aesthetic-mapping-geom-circle.svg){fig-alt="Geometric mappings for a circle - x and y position (for the center), radius, and fill." .fragment} 
-
-![](grammar-layer-histogram.svg){fig-alt="A histogram of some data" .fragment}
-
-
-![](grammar-layer-density.svg){fig-alt="A density plot containing three density curves, which are indicated using color and line type." .fragment}
-
-
-![](grammar-layer-both.svg){fig-alt="A histogram with three densities overlaid. The data in the histogram is skewed right and has a peak between two and three. The densities are labeled 'combined', 'group 1 alone', and 'group 2 alone', and use both color and solid/dotted lines to indicate which line belongs to each label. The group 2 alone density has the highest peak, followed by the combined density, while the group 1 alone density has the lowest peak and the widest dispersion." .fragment}
 
 :::
 :::
 :::
 
+
+# Making Good Graphics
 
 ## Visualization Design Principles
 
@@ -516,43 +502,57 @@ Map your most important variables to more accurate channels
 
 :::
 
+## Preattentive Perception
 
 
+## Short-Term Memory
+
+## Leveraging Associations
+
+<!-- Cold = blue, red = hot, and so on -->
+<!-- Using emoji and graphics to minimize legend reading reqs -->
+
+## Know Your Audience
+
+<!-- Association use requires knowing who you're making your chart **for** -->
+
+
+# What Do You See?
+
+## Graphics are Statistics
+
+## Visual Inference
+
+Demonstrating a Visual Hypothesis Test
+
+## Visual Inference
+
+Challenges with null models
+
+## Visual Inference
+
+Evaluating competing graphical forms
+
+## Visualizing Uncertainty
+
+Data -> Graphics -> Graphical Testing -> Graphical Significance 
+
+is all just one progression to realize that we need to visualize uncertainty as well as the data and models
+
+## Visualizing Uncertainty
+
+Uncertainty is an inherent part of data and statistics - it is not easily separated/contained.
 
 # Uncertainty  Visualization ❓🫨 📐
 
 ## {background-image="types-of-uncertainty.svg" background-size="100%" background-image-alt="A collage of different types of uncertainty and goals of uncertainty visualization. The top left shows a spaghetti plot of hurricane tracks based on different model starting conditions, with the label 'prediction uncertainty'. The top right shows a risk pictogram of 10-year outcomes for a 38 year old white female who has never smoked; the vast majority of the outcomes are survival, with accident, breast cancer, colon cancer, liver disease, and other causes of death represented. The plot has the label 'risk perception'. In the center, there is a sketch of a hand flipping a coin. On the center left, there is a cartoon depiction of the trolley problem with the label 'rational decision making', and in the bottom left there is a screenshot of the NY Times election needle in 2016, showing one representation of uncertainty from missing data. In the bottom center, there is a picture of calipers with the label 'measurement uncertainty', and on the bottom right there is a histogram with the label 'what do RVs even mean'."}
 
+::: notes
 
+Why uncertainty is a hard thing to pin down
 
+:::
 
-
-
-## Goal(s) of Uncertainty Visualization
-
-Transparency
-
-In a survey of 90 "visualization authors" recruited from the InfoVis community, respondents mentioned the
-
-> importance of transparency in presentations of data, suggesting that omitting uncertainty was misleading or even lying. ^[Hullman, Jessica. 2020. “Why Authors Don’t Visualize Uncertainty.” IEEE Transactions on Visualization and Computer Graphics 26(1):130–39. doi:10.1109/TVCG.2019.2934287.]
-
-
-
-## Goal(s) of Uncertainty Visualization
-
-Communicate the Legitimacy of Conclusions
-
-```{r}
-#| fig-alt: A set of two distributional bar charts made up of 100 samples each. A black line at y=5 stretches across both charts. The first chart has red bars and is labeled 'amateurs' with a silly face emoji, and has extremely high variance, with most bars between 1 and 9. The second is labeled 'serious science' with a microscope emoji and has very low variance, with almost all bars between 4.5 and 5.5. 
-#| fig-width: 6
-#| fig-height: 3
-#| fig-dpi: 300
-set.seed(2049809823)
-tibble(x = dist_normal(5, c(.2, 2)), label = c("Serious science! 🔬", "Amateurs 🥸")) |>
-  ggplot() + geom_hline(yintercept=5) + 
-  geom_col_sample(aes(x = label, y = x, fill = label), times= 100) + guides(fill = 'none') + theme(axis.title = element_blank()) + scale_y_continuous_distribution(breaks=c(0:10))
-
-```
 
 
 ## Goal(s) of Uncertainty Visualization
@@ -580,3 +580,40 @@ Requires understanding:
 
 - what error bars show (variance)
 - how that translates to real data  (most data within 2*bars)
+
+
+
+## Goal(s) of Uncertainty Visualization
+
+Communicate the Legitimacy of Conclusions
+
+```{r}
+#| fig-alt: A set of two distributional bar charts made up of 100 samples each. A black line at y=5 stretches across both charts. The first chart has red bars and is labeled 'amateurs' with a silly face emoji, and has extremely high variance, with most bars between 1 and 9. The second is labeled 'serious science' with a microscope emoji and has very low variance, with almost all bars between 4.5 and 5.5. 
+#| fig-width: 6
+#| fig-height: 3
+#| fig-dpi: 300
+set.seed(2049809823)
+tibble(x = dist_normal(5, c(.2, 2)), label = c("Serious science! 🔬", "Amateurs 🥸")) |>
+  ggplot() + geom_hline(yintercept=5) + 
+  geom_col_sample(aes(x = label, y = x, fill = label), times= 100) + guides(fill = 'none') + theme(axis.title = element_blank()) + scale_y_continuous_distribution(breaks=c(0:10))
+
+```
+
+
+
+## Goal(s) of Uncertainty Visualization
+
+Transparency
+
+In a survey of 90 "visualization authors" recruited from the InfoVis community, respondents mentioned the
+
+> importance of transparency in presentations of data, suggesting that omitting uncertainty was misleading or even lying. ^[Hullman, Jessica. 2020. “Why Authors Don’t Visualize Uncertainty.” IEEE Transactions on Visualization and Computer Graphics 26(1):130–39. doi:10.1109/TVCG.2019.2934287.]
+
+## Additional Challenges 
+
+- Color Suppression and perception
+
+- Visual Complexity
+
+- Interpretability
+
