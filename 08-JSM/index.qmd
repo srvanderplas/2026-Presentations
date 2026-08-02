@@ -337,6 +337,7 @@ Wilkinson (2005) created a *grammar* of *graphics*:
 :::
 :::
 ```{r}
+#| label: linear-data-grammar
 #| include: false
 set.seed(2034928)
 tbl <- tibble(x = 1:100 + rnorm(100, 0, .1), y = x + rnorm(100, sd=2))
@@ -439,13 +440,38 @@ Wilkinson (2005) created a *grammar* of *graphics*:
 - Transformations
 - Layers
 - [Facets]{.emph .large}
-- Themes
 
 ::: 
+
+```{r}
+#| include: false
+library(ggplot2)
+data(diamonds)
+
+ggplot(data = diamonds) + 
+  geom_point(aes(x = carat, y = price, color = color))
+ggsave("grammar-facets-none.svg", width= 1200, height = 1200, units = "px", dpi = 300)
+
+ggplot(data = diamonds) + 
+  geom_point(aes(x = carat, y = price, color = color)) + 
+  facet_wrap(~cut) 
+ggsave("grammar-facets-cut.svg", width= 1200, height = 1200, units = "px", dpi = 300)
+
+
+ggplot(data = diamonds) + 
+  geom_point(aes(x = carat, y = price, color = color)) + 
+  facet_wrap(~clarity) 
+ggsave("grammar-facets-clarity.svg", width= 1200, height = 1200, units = "px", dpi = 300)
+```
 
 ::: {.column}
 ::: { .r-stack}
 
+![](grammar-facets-none.svg){fig-alt="a scatterplot of diamond carat weight by price, with points colored by categorical diamond color from D (best) to J (worst)." .fragment}
+
+![](grammar-facets-cut.svg){fig-alt="a scatterplot of diamond carat weight by price, with points colored by categorical diamond color from D (best) to J (worst). There are subplots for each different cut rating (Fair, Good, Very Good, Premium, Ideal)." .fragment}
+
+![](grammar-facets-clarity.svg){fig-alt="a scatterplot of diamond carat weight by price, with points colored by categorical diamond color from D (best) to J (worst). There are subplots for each different clarity." .fragment}
 :::
 :::
 :::
@@ -467,8 +493,60 @@ Wilkinson (2005) created a *grammar* of *graphics*:
 
 ::: 
 
+```{r}
+#| dependson: linear-data-grammar
+#| include: false
+library(xkcd)
+library(ggplot2)
+
+
+ggplot(tbl, aes(x = x, y = y)) + geom_point() + geom_smooth()
+ggsave("grammar-theme-bw.png", width= 1200, height = 1200, units = "px", dpi = 300)
+
+
+ggplot(tbl, aes(x = x, y = y)) + geom_point() + geom_smooth() + theme_grey()
+ggsave("grammar-theme-grey.png", width= 1200, height = 1200, units = "px", dpi = 300)
+
+
+dataman <- data.frame(x = 90, 
+                      y = 40,
+                      scale = 10,
+                      ratioxy = 1,
+                      angleofspine = -pi / 2,
+                      anglerighthumerus = -pi / 6,
+                      anglelefthumerus =  7*pi / 6,
+                      anglerightradius =pi / 5,
+                      angleleftradius = -6*pi / 5,
+                      anglerightleg = 3 * pi / 2 - pi / 12,
+                      angleleftleg = 3 * pi / 2 + pi / 12,
+                      angleofneck = -pi / 2)
+mapping <- aes(x = x, y = y, scale = scale, ratioxy = ratioxy, 
+               angleofspine = angleofspine,
+               anglerighthumerus = anglerighthumerus, 
+               anglelefthumerus = anglelefthumerus,
+               anglerightradius = anglerightradius, 
+               angleleftradius = angleleftradius,
+               anglerightleg = anglerightleg, 
+               angleleftleg = angleleftleg, 
+               angleofneck = angleofneck)
+
+ggplot(tbl, aes(x = x, y = y)) + geom_point() + geom_smooth() + theme_xkcd() +   xkcdman(mapping, dataman) +
+  annotate(x = 10, y = 90, label = "Courtesy of the xkcd package", geom = "text", hjust=0, family = "xkcd")
+ggsave("grammar-theme-xkcd.png", width= 1200, height = 1200, units = "px", dpi = 300)
+
+
+
+```
+
 ::: {.column}
 ::: { .r-stack}
+
+![](grammar-theme-bw.png){fig-alt="A demonstration of theme_bw()" .fragment}
+
+![](grammar-theme-grey.png){fig-alt="A demonstration of theme_grey()" .fragment}
+
+
+![](grammar-theme-xkcd.png){fig-alt="A demonstration of theme_xkcd()" .fragment}
 
 
 :::
@@ -504,6 +582,167 @@ Map your most important variables to more accurate channels
 
 ## Preattentive Perception
 
+-   Combinations of preattentive features require attention
+
+    -   Double-encoding (using multiple features for the same variable) is ok
+
+```{r}
+#| echo: false
+#| fig-width: 4
+#| fig-height: 4
+#| label: fig-preattentive1
+#| fig-cap: "Two scatterplots with one point that is different. Can you easily spot the different point?"
+#| fig-subcap: 
+#|   - "Shape"
+#|   - "Color"
+#| layout-ncol: 2
+#| out-width: "45%"
+
+set.seed(153253)
+data <- data.frame(expand.grid(x=1:6, y=1:6), color=sample(c(1,2), 36, replace=TRUE))
+data$x <- data$x+rnorm(36, 0, .25)
+data$y <- data$y+rnorm(36, 0, .25)
+suppressWarnings(library(ggplot2))
+new_theme_empty <- theme_bw()
+new_theme_empty$line <- element_blank()
+# new_theme_empty$rect <- element_blank()
+new_theme_empty$strip.text <- element_blank()
+new_theme_empty$axis.text <- element_blank()
+new_theme_empty$plot.title <- element_blank()
+new_theme_empty$axis.title <- element_blank()
+# new_theme_empty$plot.margin <- structure(c(0, 0, -1, -1), unit = "lines", valid.unit = 3L, class = "unit")
+
+data$shape <- c(rep(2, 15), 1, rep(2,20))
+library(scales)
+ggplot(data=data, aes(x=x, y=y, color=factor(1, levels=c(1,2)), shape=factor(shape), size=I(5))) + 
+  geom_point() +
+  scale_shape_manual(guide="none", values=c(19, 15)) + 
+  scale_color_discrete(guide="none") + 
+  new_theme_empty
+
+data$shape <- c(rep(2, 25), 1, rep(2,10))
+ggplot(data=data, aes(x=x, y=y, color=factor(shape), shape=I(19), size=I(5)))+
+  geom_point() +  
+  scale_color_discrete(guide="none") + 
+  new_theme_empty
+```
+
+## Preattentive Perception 
+
+-   Combinations of preattentive features require attention
+
+    -   Double-encoding (using multiple features for the same variable) is ok
+    
+```{r}
+#| echo: false
+#| fig-width: 4
+#| fig-height: 4
+#| label: fig-preattentive2
+#| fig-cap: "Two scatterplots. Can you easily spot the different point(s)?"
+#| fig-subcap: 
+#|   - "Shape and Color (dual encoded)"
+#|   - "Shape and Color (different variables)"
+#| layout-ncol: 2
+#| out-width: "45%"
+set.seed(1532534)
+data <- data.frame(expand.grid(x=1:6, y=1:6), color=sample(c(1,2), 36, replace=TRUE))
+data$x <- data$x+rnorm(36, 0, .25)
+data$y <- data$y+rnorm(36, 0, .25)
+suppressWarnings(library(ggplot2))
+new_theme_empty <- theme_bw()
+new_theme_empty$line <- element_blank()
+# new_theme_empty$rect <- element_blank()
+new_theme_empty$strip.text <- element_blank()
+new_theme_empty$axis.text <- element_blank()
+new_theme_empty$plot.title <- element_blank()
+new_theme_empty$axis.title <- element_blank()
+# new_theme_empty$plot.margin <- structure(c(0, 0, -1, -1), unit = "lines", valid.unit = 3L, class = "unit")
+
+data$shape <- data$color
+ggplot(data=data, aes(x=x, y=y, 
+                      color=factor(color), 
+                      shape=factor(shape))) + 
+  geom_point(size = 5) +
+  scale_shape_manual(guide="none", values=c(19, 15)) +
+  scale_color_discrete(guide="none") + 
+  new_theme_empty
+
+data <- data %>%
+  mutate(sample = row_number() %in% sample(1:n(), 4)) %>%
+  mutate(shape = if_else(sample, if_else(shape == 1, 2, 1), shape))
+
+ggplot(data=data, aes(x=x, y=y, 
+                      color=factor(color), 
+                      shape=factor(shape))) + 
+  geom_point(size = 5) +
+  scale_shape_manual(guide="none", values=c(19, 15)) +
+  scale_color_discrete(guide="none") + 
+  new_theme_empty
+# qplot(data=data, x=x, y=y, color=factor(color), shape=factor(shape), size=I(5))+scale_shape_manual(guide="none", values=c(19, 15)) + scale_color_discrete(guide="none") + new_theme_empty
+```
+
+
+## Perceptual Grouping  {.smaller}
+
+::: {layout="[[55,-10,35]]"}
+![Is this a rabbit or a duck?](rabbitduck.png){#fig-rabbitduck fig-alt="A picture laid out on an x-y coordinate axis. The y-axis is labeled 'Rabbit' and the x-axis is labeled 'Duck'. When viewed with the rabbit axis at the bottom, the image looks like a rabbit with tall ears; when viewed with the duck axis at the bottom, the image looks like a duck, where the ears become the bill."}
+
+![What do you see in this image?](IllusoryContour.png){#fig-illusory fig-alt="A complex figure that appears to be made up of a black outline of a triangle, three circles laid out to form the points of an inverted triangle, and a white triangle overlaid on top of the three dots. In practice, what actually exists is a set of three angles at 0, 120, and 240 degrees, and a set of three pac-man shapes (circles with a pie slice taken out) at 60, 180, and 300 degrees." .fragment}
+
+:::
+
+## Perceptual Grouping {.smaller}
+
+![](gestalt.jpg){fig-alt="An image reading 'GESTALT', where each letter demonstrates a principle of gestalt grouping. G has a white stripe over it, demonstrating closure - the stripe and the G are perceived as separate objects. E is shown as a grid of black squares, with grey squares making up the background; this demonstrates proximity - small objects close together are perceived as being part of the same whole. A bar is woven through the S shape, showing good continuation - the S is perceived as a continuous object that is behind the bar in the middle portion. The two Ts are striped and indicate similarity - they are similarly shaped and patterned and can be perceived as a group. The AL are connected, and the inside of the A seems to have a white tree in the middle, demonstrating figure/ground. The final T is part of the similarity group." width="100%"}
+
+## Grouping in Charts
+
+```{r}
+#| label: fig-chart-emphasis-r
+#| fig-width: 6
+#| fig-height: 4
+#| layout-ncol: 3
+
+library(readr)
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+library(geomtextpath)
+library(stringr)
+theme_set(theme_bw())
+counties <- read_csv("https://raw.githubusercontent.com/evangambit/JsonOfCounties/master/counties.csv")
+
+popsubset <- counties |> select(name, fips, state, starts_with("population")) |>
+  pivot_longer(starts_with("population"), names_to = "year", values_to = "population") |>
+  mutate(year = parse_number(year))
+
+state_pop <- popsubset |> group_by(state, year) |>
+  summarize(population = sum(population))
+
+pal <- viridis::viridis(10)
+state_pop %>%
+  filter(state %in% c("NE", "IA", "CO", "MO", "KS")) %>%
+  ggplot(aes(x = state, y = population, fill = factor(year))) +
+  geom_col(position = "dodge", color = "black") +
+  scale_fill_manual("Year", values = pal) +
+  scale_x_discrete("State") + 
+  ylab("State Population, 2010-2019")
+
+state_pop |>
+  filter(state %in% c("NE", "IA", "CO", "MO", "KS")) |>
+  mutate(label = str_replace_all(state, c("NE" = "Nebraska", "IA" = "Iowa", "CO" = "Colorado", "MO" = "Missouri", "KS" = "Kansas"))) |>
+  ggplot(aes(x = year, y = population, color = state)) +
+  geom_textpath(aes(label = label), text_only = F) + 
+  scale_x_continuous("Year", breaks = (1005:1010)*2) + 
+  guides(color ="none") + 
+  ylab("Population")
+
+state_pop %>%
+  ggplot(aes(x = factor(year), y = population)) +
+  geom_boxplot() +
+  xlab("Year") + 
+  ylab("Population")
+```
 
 ## Short-Term Memory
 
