@@ -22,6 +22,8 @@ library(stringr)
 library(lubridate)
 library(magrittr)
 
+library(nullabor)
+
 set_theme(theme_bw())
 library(ggpop)
 library(distributional)
@@ -595,7 +597,6 @@ Map your most important variables to more accurate channels
 #| fig-width: 4
 #| fig-height: 4
 #| label: fig-preattentive1
-#| fig-cap: "Two scatterplots with one point that is different. Can you easily spot the different point?"
 #| fig-subcap: 
 #|   - "Shape"
 #|   - "Color"
@@ -642,7 +643,6 @@ ggplot(data=data, aes(x=x, y=y, color=factor(shape), shape=I(19), size=I(5)))+
 #| fig-width: 4
 #| fig-height: 4
 #| label: fig-preattentive2
-#| fig-cap: "Two scatterplots. Can you easily spot the different point(s)?"
 #| fig-subcap: 
 #|   - "Shape and Color (dual encoded)"
 #|   - "Shape and Color (different variables)"
@@ -686,70 +686,65 @@ ggplot(data=data, aes(x=x, y=y,
 ```
 
 
-## Perceptual Grouping  {.smaller}
-
-::: {layout="[[55,-10,35]]"}
-![Is this a rabbit or a duck?](rabbitduck.png){#fig-rabbitduck fig-alt="A picture laid out on an x-y coordinate axis. The y-axis is labeled 'Rabbit' and the x-axis is labeled 'Duck'. When viewed with the rabbit axis at the bottom, the image looks like a rabbit with tall ears; when viewed with the duck axis at the bottom, the image looks like a duck, where the ears become the bill."}
-
-![What do you see in this image?](IllusoryContour.png){#fig-illusory fig-alt="A complex figure that appears to be made up of a black outline of a triangle, three circles laid out to form the points of an inverted triangle, and a white triangle overlaid on top of the three dots. In practice, what actually exists is a set of three angles at 0, 120, and 240 degrees, and a set of three pac-man shapes (circles with a pie slice taken out) at 60, 180, and 300 degrees." .fragment}
-
-:::
-
-## Perceptual Grouping {.smaller}
-
-![](gestalt.jpg){fig-alt="An image reading 'GESTALT', where each letter demonstrates a principle of gestalt grouping. G has a white stripe over it, demonstrating closure - the stripe and the G are perceived as separate objects. E is shown as a grid of black squares, with grey squares making up the background; this demonstrates proximity - small objects close together are perceived as being part of the same whole. A bar is woven through the S shape, showing good continuation - the S is perceived as a continuous object that is behind the bar in the middle portion. The two Ts are striped and indicate similarity - they are similarly shaped and patterned and can be perceived as a group. The AL are connected, and the inside of the A seems to have a white tree in the middle, demonstrating figure/ground. The final T is part of the similarity group." width="100%"}
 
 ## Grouping in Charts
+::: columns
+::: column
 
 ```{r}
 #| fig-width: 6
 #| fig-height: 4
-#| layout-ncol: 3
+tb <- read_csv("TB_notifications_2026-07-20.csv")
 
-library(readr)
-library(dplyr)
-library(tidyr)
-library(ggplot2)
-library(geomtextpath)
-library(stringr)
-theme_set(theme_bw())
-counties <- read_csv("https://raw.githubusercontent.com/evangambit/JsonOfCounties/master/counties.csv")
+tb_long <- tb |> 
+  dplyr::select(country, iso3, year, new_sp_m04:new_sp_fu) |>
+  pivot_longer(cols=new_sp_m04:new_sp_fu, names_to="sexage", values_to="count") |>
+  mutate(sexage = str_replace(sexage, "new_sp_", "")) |>
+  mutate(sex=substr(sexage, 1, 1), 
+         age=substr(sexage, 2, length(sexage))) |>
+  dplyr::select(-sexage)
+tb_ky <- tb_long |> 
+  filter(country == "Kenya") |>
+  dplyr::select(country, year, sex, age, count) |>
+  mutate(age = factor(age, levels = c("04", "514", "014", "1524", "2534", "3544", "4554", "5564", "65", "u"), labels = c("0-4", "5-14", "0-14", "15-24", "25-34", "35-44", "45-54", "55-64", "65+", "Unk"))) |>
+  filter(!age%in% c("0-4", "5-14", "0-14", "Unk")) |>
+  filter(year == 2012)
+tb_ky |>
+  ggplot(aes(x=sex, y=count, fill=sex)) +
+  geom_bar(stat="identity", position="dodge") + 
+  facet_wrap(~age, ncol=6) +
+  scale_fill_manual("Sex", values = c("#DC3220", "#005AB5")) + guides(fill = "none") + scale_x_discrete("Sex") + scale_y_continuous("# TB Cases") + ggtitle("TB Indicdence, Kenya, 2012")
 
-popsubset <- counties |> select(name, fips, state, starts_with("population")) |>
-  pivot_longer(starts_with("population"), names_to = "year", values_to = "population") |>
-  mutate(year = parse_number(year))
-
-state_pop <- popsubset |> group_by(state, year) |>
-  summarize(population = sum(population))
-
-pal <- viridis::viridis(10)
-state_pop %>%
-  filter(state %in% c("NE", "IA", "CO", "MO", "KS")) %>%
-  ggplot(aes(x = state, y = population, fill = factor(year))) +
-  geom_col(position = "dodge", color = "black") +
-  scale_fill_manual("Year", values = pal) +
-  scale_x_discrete("State") + 
-  ylab("State Population, 2010-2019")
-
-state_pop |>
-  filter(state %in% c("NE", "IA", "CO", "MO", "KS")) |>
-  mutate(label = str_replace_all(state, c("NE" = "Nebraska", "IA" = "Iowa", "CO" = "Colorado", "MO" = "Missouri", "KS" = "Kansas"))) |>
-  ggplot(aes(x = year, y = population, color = state)) +
-  geom_textpath(aes(label = label), text_only = F) + 
-  scale_x_continuous("Year", breaks = (1005:1010)*2) + 
-  guides(color ="none") + 
-  ylab("Population")
-
-state_pop %>%
-  ggplot(aes(x = factor(year), y = population)) +
-  geom_boxplot() +
-  xlab("Year") + 
-  ylab("Population")
 ```
+- Compare TB diagnoses by gender for each age
+
+:::
+::: column
+
+```{r}
+
+#| fig-width: 6
+#| fig-height: 4
+tb_ky |>
+  ggplot(aes(x=age, y=count, fill=age)) +
+  geom_bar(stat="identity", position="dodge") + 
+  facet_wrap(~sex, ncol=2) +
+  scale_fill_brewer("", palette="Paired") +
+  guides(fill="none")+ scale_x_discrete("Age") + scale_y_continuous("# TB Cases") + ggtitle("TB Indicdence, Kenya, 2012")
+
+```
+- Compare TB diagnoses within ages for each gender
+
+:::
+:::
 
 ## Leveraging Associations
 
+[XKCD Color Survey](https://blog.xkcd.com/2010/05/03/color-survey-results/) - Fully saturated color names
+
 ::: r-stack
+
+![](satfaces_map_1024.png){fig-alt="Fully saturated color map from xkcd color survey." .fragment}
 
 ```{r}
 #| fig-width: 8
@@ -772,7 +767,7 @@ g0fix <- g0 |>
 b0fix <- b0 |>
   mutate(x = -R, y = G)
 
-cubefix <- bind_rows(r0fix, g0fix, b0fix)
+cubefix <- bind_rows(r0fix, g0fix, b0fix) |> unique()
 
 # cubefix |>
 # ggplot(aes(x =x, y = y, fill = color)) + geom_tile() +
@@ -828,6 +823,8 @@ ggplot(simplecolors, aes(x = simplename2, y = count, fill = color)) + scale_fill
 
 ## Leveraging Associations
 
+::: r-stack
+
 ```{r}
 #| echo: false
 # https://www.ers.usda.gov/data-products/fruit-and-tree-nuts-data/fruit-and-tree-nuts-yearbook-tables
@@ -863,16 +860,33 @@ citrus |>
   scale_y_continuous("Supply, Billions of Pounds")
 ```
 
+![](associations-temp.png){fig-alt="A map from the 1880 statistical atlas which shows the average January temperature across the continental US." .fragment width="100%"}
+
+![](association-map-of-1880-election.jpg){fig-alt="Map of 1880 election results showing the Republican party in blue and the Democratic party in red. The colors commonly used for each party were not consistently assigned until color TV became common." .fragment width="100%"}
+:::
 
 <!-- Cold = blue, red = hot, and so on -->
 <!-- Using emoji and graphics to minimize legend reading reqs -->
 
 ## Know Your Audience
 
-<!-- Association use requires knowing who you're making your chart **for** -->
+- Associations are audience and culture dependent
+- Rates of color deficiency - 10% of males
+- 🚦Stoplight color schemes can be industry standard 😭
 
 
 # What Do You See?
+
+```{r}
+#| fig.width: 8
+#| fig.height: 6
+#| out.extra: ".fragment"
+set.seed(2043908)
+tmp <- datasaurus_dozen |>
+  filter(dataset=="dino") 
+ggplot(lineup(null_permute("x"), tmp)) + geom_point(aes(x=x, y=y)) + facet_wrap(~.sample) + theme(axis.text=element_blank(), axis.title = element_blank())
+```
+
 
 ## Graphics are Statistics
 
