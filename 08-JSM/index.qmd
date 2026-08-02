@@ -17,7 +17,11 @@ lightbox: true
 library(ggplot2)
 library(dplyr)
 library(tidyr)
+library(readr)
+library(stringr)
+library(lubridate)
 library(magrittr)
+
 set_theme(theme_bw())
 library(ggpop)
 library(distributional)
@@ -698,7 +702,6 @@ ggplot(data=data, aes(x=x, y=y,
 ## Grouping in Charts
 
 ```{r}
-#| label: fig-chart-emphasis-r
 #| fig-width: 6
 #| fig-height: 4
 #| layout-ncol: 3
@@ -744,9 +747,122 @@ state_pop %>%
   ylab("Population")
 ```
 
-## Short-Term Memory
+## Leveraging Associations
+
+::: r-stack
+
+```{r}
+#| fig-width: 8
+#| fig-height: 6
+#| out-extra: '.fragment'
+xkcdcolors <- tibble(orig = readLines("https://xkcd.com/color/satfaces.txt")) |>
+  separate_wider_regex(orig, patterns = c("\\[", R = "\\d{1,3}", ", ", G="\\d{1,3}", ", ", B = "\\d{1,3}", "\\] ", colorname = ".*")) |>
+  mutate(across(R:B, as.numeric)) |>
+  mutate(across(R:B, \(x) x/255, .names = "d{.col}"),
+         color = rgb(dR, dG, dB)) 
+
+r0 <- filter(xkcdcolors, R==0)
+g0 <- filter(xkcdcolors, G==0)
+b0 <- filter(xkcdcolors, B==0)
+
+r0fix <- r0 |>
+  mutate(x = B, y = G)
+g0fix <- g0 |>
+  mutate(x = B, y = -R)
+b0fix <- b0 |>
+  mutate(x = -R, y = G)
+
+cubefix <- bind_rows(r0fix, g0fix, b0fix)
+
+# cubefix |>
+# ggplot(aes(x =x, y = y, fill = color)) + geom_tile() +
+#   scale_fill_identity() + 
+#   theme_void() + 
+#   coord_fixed()
+
+simplecolors <-
+cubefix |>
+  mutate(simplename1 = stringr::str_remove_all(colorname, "(dark|light|lime|sky|navy) ")) |>
+  mutate(simplename2 = stringr::str_replace_all(simplename1, c("maroon" = "red", "gold" = "yellow", "olive" = "yellow", "mustard" = "yellow", "magenta" = "pink"))) |>
+  group_by(simplename2, simplename1) |>
+  summarize(count = n(), dR=median(dR), dG = median(dG), dB = median(dB), color = rgb(dR, dG, dB), .groups = "drop_last") |>
+  mutate(count2 = sum(count)) |>
+  ungroup() |>
+  arrange(desc(count2)) |>
+  mutate(simplename2 = factor(simplename2, levels = unique(simplename2), ordered = T))
+
+
+simplecolors |>
+  mutate(color = sample(color, size = n())) |>
+  ggplot(aes(x = simplename2, y = count, fill = color)) + scale_fill_identity() + geom_col(position = "stack")  + 
+  xlab("Simplified Color Names") + ylab("# RGB Colors") + 
+  coord_flip()
+# ggsave(filename = "associations-color-non-matching.svg", width= 1200, height = 1200, units = "px", dpi = 300)
+```
+
+```{r}
+#| fig-width: 8
+#| fig-height: 6
+#| out-extra: '.fragment'
+simplecolors |>
+  ggplot(aes(x = simplename2, y = count, fill = simplename1)) + geom_col(position = "stack")  + 
+  guides(fill='none') +
+  xlab("Simplified Color Names") + ylab("# RGB Colors") + 
+  coord_flip()
+# ggsave(filename = "associations-color-default.svg", width= 1200, height = 1200, units = "px", dpi = 300)
+```
+
+```{r}
+#| fig-width: 8
+#| fig-height: 6
+#| out-extra: '.fragment'
+
+ggplot(simplecolors, aes(x = simplename2, y = count, fill = color)) + scale_fill_identity() + geom_col(position = "stack")  + 
+  xlab("Simplified Color Names") + ylab("# RGB Colors") + 
+  coord_flip()
+# ggsave(filename = "associations-color-matching.svg" , width= 1200, height = 1200, units = "px", dpi = 300)
+
+```
+
+:::
 
 ## Leveraging Associations
+
+```{r}
+#| echo: false
+# https://www.ers.usda.gov/data-products/fruit-and-tree-nuts-data/fruit-and-tree-nuts-yearbook-tables
+fruit <- read_csv("FruitYearbookSupplyandAvailability_GTables.csv") 
+# fruit_emo <- tibble(commodity_element = unique(fruit$commodity_element)) |>
+#   mutate(fruit = str_replace(commodity_element, pattern = " fruit", "")) |>
+#   mutate(fruit = str_split(fruit, pattern = " ", simplify = F)) |>
+#   unnest(cols = c(fruit)) |>
+#   mutate(fruit = stringr::str_replace_all(fruit, c("ies$" = "y", "Peaches" = "peach", "Mangoes" = "mango", " fruit$" = "", "s$"= "")) |> stringr::str_to_lower()) |>
+#   filter(fruit != "and") |>
+#   mutate(emoji = purrr::map(fruit, emojifont::search_emoji)) |>
+#   mutate(emoji = purrr::map(emoji, \(x) x[which.min(nchar(x))])) |>
+#   unnest(cols = emoji) |>
+#   group_by(commodity_element) |>
+#   slice_head(n=1) |>
+#   filter(!is.null(emoji)) |>
+#   filter(!emoji %in% c("firefighter", "sweet_potato", "palm_tree", "date")) |>
+#   group_by(emoji) |>
+#   arrange(nchar(commodity_element)) |>
+#   slice_head(n=1)
+
+
+citrus <- fruit |>
+  filter(variable%in% c("Supply", "Imports", "Exports"), commodity_element %in% c("Oranges", "Limes", "Lemons")) |>
+  mutate(year = as.numeric(stringr::str_extract(year_value, "\\d{4}")), month = if_else(is.na(month), year_start_month, month)) |>
+  mutate(date = lubridate::my(paste(month, " ", year))) |>
+  filter(!stringr::str_detect(table_name, "juice")) |>
+  pivot_wider(id_cols = c(table_name:month, commodity_element:geographic_extent, unit, date, year), names_from = variable, values_from = value)
+
+citrus |>
+  ggplot() + geom_line(aes(x = date, y=Supply/1000, color = commodity_element)) + 
+  scale_color_manual("Citrus", values = c("Oranges" = "orange", "Limes" = "limegreen", "Lemons" = "yellow3")) + 
+  scale_y_continuous("Supply, Billions of Pounds")
+```
+
 
 <!-- Cold = blue, red = hot, and so on -->
 <!-- Using emoji and graphics to minimize legend reading reqs -->
