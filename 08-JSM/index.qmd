@@ -752,9 +752,14 @@ tb_ky |>
 
 [XKCD Color Survey](https://blog.xkcd.com/2010/05/03/color-survey-results/) - Fully saturated color names
 
-::: r-stack
 
-![](satfaces_map_1024.png){fig-alt="Fully saturated color map from xkcd color survey." .fragment}
+![](satfaces_map_1024.png){fig-alt="Fully saturated color map from xkcd color survey." .fragment width="50%"}
+
+## Leveraging Associations
+
+[XKCD Color Survey](https://blog.xkcd.com/2010/05/03/color-survey-results/) - Fully saturated color names
+
+::: r-stack
 
 ```{r}
 #| fig-width: 8
@@ -886,9 +891,14 @@ citrus |>
   scale_y_continuous("Supply, Billions of Pounds")
 ```
 
-![](associations-temp.png){fig-alt="A map from the 1880 statistical atlas which shows the average January temperature across the continental US." .fragment width="100%"}
+:::
 
-![](association-map-of-1880-election.jpg){fig-alt="Map of 1880 election results showing the Republican party in blue and the Democratic party in red. The colors commonly used for each party were not consistently assigned until color TV became common." .fragment width="100%"}
+## Leveraging Associations
+
+::: r-stack
+![](associations-temp.png){fig-alt="A map from the 1880 statistical atlas which shows the average January temperature across the continental US." .fragment width="80%"}
+
+![](association-map-of-1880-election.jpg){fig-alt="Map of 1880 election results showing the Republican party in blue and the Democratic party in red. The colors commonly used for each party were not consistently assigned until color TV became common." .fragment width="80%"}
 :::
 
 <!-- Cold = blue, red = hot, and so on -->
@@ -1140,7 +1150,7 @@ of data and statistics -
 
 # Uncertainty  Visualization ❓🫨 📐
 
-## {background-image="types-of-uncertainty.svg" background-size="95%" background-image-alt="A collage of different types of uncertainty and goals of uncertainty visualization. The top left shows a spaghetti plot of hurricane tracks based on different model starting conditions, with the label 'prediction uncertainty'. The top right shows a risk pictogram of 10-year outcomes for a 38 year old white female who has never smoked; the vast majority of the outcomes are survival, with accident, breast cancer, colon cancer, liver disease, and other causes of death represented. The plot has the label 'risk perception'. In the center, there is a sketch of a hand flipping a coin. On the center left, there is a cartoon depiction of the trolley problem with the label 'rational decision making', and in the bottom left there is a screenshot of the NY Times election needle in 2016, showing one representation of uncertainty from missing data. In the bottom center, there is a picture of calipers with the label 'measurement uncertainty', and on the bottom right there is a histogram with the label 'what do RVs even mean'."}
+<!-- ## {background-image="types-of-uncertainty.svg" background-size="95%" background-image-alt="A collage of different types of uncertainty and goals of uncertainty visualization. The top left shows a spaghetti plot of hurricane tracks based on different model starting conditions, with the label 'prediction uncertainty'. The top right shows a risk pictogram of 10-year outcomes for a 38 year old white female who has never smoked; the vast majority of the outcomes are survival, with accident, breast cancer, colon cancer, liver disease, and other causes of death represented. The plot has the label 'risk perception'. In the center, there is a sketch of a hand flipping a coin. On the center left, there is a cartoon depiction of the trolley problem with the label 'rational decision making', and in the bottom left there is a screenshot of the NY Times election needle in 2016, showing one representation of uncertainty from missing data. In the bottom center, there is a picture of calipers with the label 'measurement uncertainty', and on the bottom right there is a histogram with the label 'what do RVs even mean'."} -->
 
 ::: notes
 

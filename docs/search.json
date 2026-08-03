@@ -67,7 +67,7 @@
     "href": "08-JSM/index.html#leveraging-associations-1",
     "title": "Visualizing Uncertainty",
     "section": "Leveraging Associations",
-    "text": "Leveraging Associations"
+    "text": "Leveraging Associations\nXKCD Color Survey - Fully saturated color names"
   },
   {
     "objectID": "08-JSM/index.html#know-your-audience",
@@ -180,5 +180,19 @@
     "title": "Visualizing Uncertainty",
     "section": "Goal(s) of Uncertainty Visualization",
     "text": "Goal(s) of Uncertainty Visualization\nMaking accurate decisions under uncertainty\n\nVisualizing uncertainty is just the first step\nUltimate goal: Use the uncertainty to\n\ncommunicate effectively\nsupport better decision-making\n\n\nRequires understanding how we perceive and use charts – whether deterministic or distributional"
+  },
+  {
+    "objectID": "08-JSM/index.html#leveraging-associations-2",
+    "href": "08-JSM/index.html#leveraging-associations-2",
+    "title": "Visualizing Uncertainty",
+    "section": "Leveraging Associations",
+    "text": "Leveraging Associations"
+  },
+  {
+    "objectID": "08-JSM/index.html#leveraging-associations-3",
+    "href": "08-JSM/index.html#leveraging-associations-3",
+    "title": "Visualizing Uncertainty",
+    "section": "Leveraging Associations",
+    "text": "Leveraging Associations"
   }
 ]
