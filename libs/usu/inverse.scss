@@ -309,3 +309,9 @@ figure figcaption {
   margin-bottom: 1rem;
 }
 
+
+.reveal section#title-slide {
+  data-background-image:  url(libs/usu/usu-sq.png);
+	data-background-position: right 10px 10px;
+	data-background-size: 10%;
+}

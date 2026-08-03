@@ -23,8 +23,11 @@ library(lubridate)
 library(magrittr)
 
 library(nullabor)
+library(vinference)
+library(palmerpenguins)
 
 set_theme(theme_bw())
+
 library(ggpop)
 library(distributional)
 library(ggdibbler)
@@ -32,6 +35,7 @@ library(ragg)
 library(systemfonts)
 library(datasauRus)
 data("datasaurus_dozen")
+data("penguins")
 
 library(knitr)
 
@@ -41,6 +45,10 @@ system_fonts() |>
   pull(path) |>
   register_font("fa-solid", plain=_)
 
+system_fonts() |>
+  filter(stringr::str_detect(name, "NotoColorEmoji")) |>
+  pull(path) |>
+  register_font("noto-color-emoji", plain=_)
 
 library(showtext)
 # library(fontawesome)
@@ -271,6 +279,73 @@ ggplot(aes(x = x, y = y)) + geom_point() +
 :::
 
 
+```{r}
+#| label: linear-data-grammar
+#| include: false
+set.seed(2034928)
+tbl <- tibble(x = 1:100 + rnorm(100, 0, .1), y = x + rnorm(100, sd=2))
+p <- ggplot(tbl, aes(x = x, y = y)) + geom_point()
+ggsave("grammar-transform-linear.svg",p,  width=1200, height=1200, units = "px", dpi = 300)
+p + scale_x_sqrt()
+ggsave("grammar-transform-xsqrt.svg", width=1200, height=1200, units = "px", dpi = 300)
+
+p + scale_x_log10()
+ggsave("grammar-transform-xlog10.svg", width=1200, height=1200, units = "px", dpi = 300)
+
+p + scale_x_reverse()
+ggsave("grammar-transform-reverse.svg", width=1200, height=1200, units = "px", dpi = 300)
+
+p + scale_x_continuous(transform = "reciprocal", breaks = c(50, 20, 10, 5, 2, 1))
+ggsave("grammmar-transform-xinv.svg", width=1200, height=1200, units = "px", dpi = 300)
+
+```
+
+```{r}
+#| dependson: linear-data-grammar
+#| include: false
+library(xkcd)
+library(ggplot2)
+
+
+ggplot(tbl, aes(x = x, y = y)) + geom_point() + geom_smooth()
+ggsave("grammar-theme-bw.png", width= 1200, height = 1200, units = "px", dpi = 300)
+
+
+ggplot(tbl, aes(x = x, y = y)) + geom_point() + geom_smooth() + theme_grey()
+ggsave("grammar-theme-grey.png", width= 1200, height = 1200, units = "px", dpi = 300)
+
+
+dataman <- data.frame(x = 90, 
+                      y = 40,
+                      scale = 10,
+                      ratioxy = 1,
+                      angleofspine = -pi / 2,
+                      anglerighthumerus = -pi / 6,
+                      anglelefthumerus =  7*pi / 6,
+                      anglerightradius =pi / 5,
+                      angleleftradius = -6*pi / 5,
+                      anglerightleg = 3 * pi / 2 - pi / 12,
+                      angleleftleg = 3 * pi / 2 + pi / 12,
+                      angleofneck = -pi / 2)
+mapping <- aes(x = x, y = y, scale = scale, ratioxy = ratioxy, 
+               angleofspine = angleofspine,
+               anglerighthumerus = anglerighthumerus, 
+               anglelefthumerus = anglelefthumerus,
+               anglerightradius = anglerightradius, 
+               angleleftradius = angleleftradius,
+               anglerightleg = anglerightleg, 
+               angleleftleg = angleleftleg, 
+               angleofneck = angleofneck)
+
+ggplot(tbl, aes(x = x, y = y)) + geom_point() + geom_smooth() + theme_xkcd() +   xkcdman(mapping, dataman) +
+  annotate(x = 10, y = 90, label = "Courtesy of the xkcd package", geom = "text", hjust=0, family = "xkcd")
+ggsave("grammar-theme-xkcd.png", width= 1200, height = 1200, units = "px", dpi = 300)
+
+
+
+```
+
+<!--
 # The Grammar of Graphics 
 
 ## The Grammar of Graphics
@@ -342,26 +417,6 @@ Wilkinson (2005) created a *grammar* of *graphics*:
 :::
 :::
 :::
-```{r}
-#| label: linear-data-grammar
-#| include: false
-set.seed(2034928)
-tbl <- tibble(x = 1:100 + rnorm(100, 0, .1), y = x + rnorm(100, sd=2))
-p <- ggplot(tbl, aes(x = x, y = y)) + geom_point()
-ggsave("grammar-transform-linear.svg",p,  width=1200, height=1200, units = "px", dpi = 300)
-p + scale_x_sqrt()
-ggsave("grammar-transform-xsqrt.svg", width=1200, height=1200, units = "px", dpi = 300)
-
-p + scale_x_log10()
-ggsave("grammar-transform-xlog10.svg", width=1200, height=1200, units = "px", dpi = 300)
-
-p + scale_x_reverse()
-ggsave("grammar-transform-reverse.svg", width=1200, height=1200, units = "px", dpi = 300)
-
-p + scale_x_continuous(transform = "reciprocal", breaks = c(50, 20, 10, 5, 2, 1))
-ggsave("grammmar-transform-xinv.svg", width=1200, height=1200, units = "px", dpi = 300)
-
-```
 
 
 ## Grammar of Graphics
@@ -375,9 +430,9 @@ Wilkinson (2005) created a *grammar* of *graphics*:
 - Geoms
 - [Transformations]{.emph .large}
 
-[Apply a function to a variable mapping.]{.fragment fragment-index=1}
+[Apply a function to a variable mapping.]{.smaller .fragment fragment-index=1}
 
-[Most commonly applied to axes and color scales]{.fragment fragment-index=2}
+[Most commonly applied to axes and color scales]{.smaller .fragment fragment-index=2}
 
 
 :::
@@ -499,51 +554,6 @@ Wilkinson (2005) created a *grammar* of *graphics*:
 
 ::: 
 
-```{r}
-#| dependson: linear-data-grammar
-#| include: false
-library(xkcd)
-library(ggplot2)
-
-
-ggplot(tbl, aes(x = x, y = y)) + geom_point() + geom_smooth()
-ggsave("grammar-theme-bw.png", width= 1200, height = 1200, units = "px", dpi = 300)
-
-
-ggplot(tbl, aes(x = x, y = y)) + geom_point() + geom_smooth() + theme_grey()
-ggsave("grammar-theme-grey.png", width= 1200, height = 1200, units = "px", dpi = 300)
-
-
-dataman <- data.frame(x = 90, 
-                      y = 40,
-                      scale = 10,
-                      ratioxy = 1,
-                      angleofspine = -pi / 2,
-                      anglerighthumerus = -pi / 6,
-                      anglelefthumerus =  7*pi / 6,
-                      anglerightradius =pi / 5,
-                      angleleftradius = -6*pi / 5,
-                      anglerightleg = 3 * pi / 2 - pi / 12,
-                      angleleftleg = 3 * pi / 2 + pi / 12,
-                      angleofneck = -pi / 2)
-mapping <- aes(x = x, y = y, scale = scale, ratioxy = ratioxy, 
-               angleofspine = angleofspine,
-               anglerighthumerus = anglerighthumerus, 
-               anglelefthumerus = anglelefthumerus,
-               anglerightradius = anglerightradius, 
-               angleleftradius = angleleftradius,
-               anglerightleg = anglerightleg, 
-               angleleftleg = angleleftleg, 
-               angleofneck = angleofneck)
-
-ggplot(tbl, aes(x = x, y = y)) + geom_point() + geom_smooth() + theme_xkcd() +   xkcdman(mapping, dataman) +
-  annotate(x = 10, y = 90, label = "Courtesy of the xkcd package", geom = "text", hjust=0, family = "xkcd")
-ggsave("grammar-theme-xkcd.png", width= 1200, height = 1200, units = "px", dpi = 300)
-
-
-
-```
-
 ::: {.column}
 ::: { .r-stack}
 
@@ -558,7 +568,7 @@ ggsave("grammar-theme-xkcd.png", width= 1200, height = 1200, units = "px", dpi =
 :::
 :::
 :::
-
+-->
 
 # Making Good Graphics
 
@@ -827,6 +837,7 @@ ggplot(simplecolors, aes(x = simplename2, y = count, fill = color)) + scale_fill
 
 ```{r}
 #| echo: false
+#| dev: ragg_png
 # https://www.ers.usda.gov/data-products/fruit-and-tree-nuts-data/fruit-and-tree-nuts-yearbook-tables
 fruit <- read_csv("FruitYearbookSupplyandAvailability_GTables.csv") 
 # fruit_emo <- tibble(commodity_element = unique(fruit$commodity_element)) |>
@@ -848,14 +859,29 @@ fruit <- read_csv("FruitYearbookSupplyandAvailability_GTables.csv")
 
 
 citrus <- fruit |>
-  filter(variable%in% c("Supply", "Imports", "Exports"), commodity_element %in% c("Oranges", "Limes", "Lemons")) |>
+  filter(variable%in% c("Supply", "Imports", "Exports"), commodity_element %in% c("Oranges", "Lemons")) |>
   mutate(year = as.numeric(stringr::str_extract(year_value, "\\d{4}")), month = if_else(is.na(month), year_start_month, month)) |>
   mutate(date = lubridate::my(paste(month, " ", year))) |>
   filter(!stringr::str_detect(table_name, "juice")) |>
-  pivot_wider(id_cols = c(table_name:month, commodity_element:geographic_extent, unit, date, year), names_from = variable, values_from = value)
+  pivot_wider(id_cols = c(table_name:month, commodity_element:geographic_extent, unit, date, year), names_from = variable, values_from = value) |>
+  mutate(emo = case_when(commodity_element=="Oranges" ~ "🍊", 
+                         commodity_element=="Limes" ~ "🍋‍🟩",
+                         commodity_element=="Lemons" ~ "🍋",
+                         TRUE ~ ""),
+         emo2 = case_when(commodity_element=="Oranges" ~ "1f34a", 
+                         commodity_element=="Limes" ~ "lime",
+                         commodity_element=="Lemons" ~ "1f34b",
+                         TRUE ~ ""),)
+last_citrus <- citrus |>
+  group_by(commodity_element, emo) |>
+  filter(date == max(date)) |>
+  ungroup()
+
+# library(emojifont)
 
 citrus |>
-  ggplot() + geom_line(aes(x = date, y=Supply/1000, color = commodity_element)) + 
+  ggplot() + geom_line(aes(x = date, y=Supply/1000, color = commodity_element), size = 2) + 
+  geom_point(data = last_citrus , aes(x = date, y=Supply/1000, shape = emo), size =3) + scale_shape_identity() +
   scale_color_manual("Citrus", values = c("Oranges" = "orange", "Limes" = "limegreen", "Lemons" = "yellow3")) + 
   scale_y_continuous("Supply, Billions of Pounds")
 ```
@@ -868,11 +894,15 @@ citrus |>
 <!-- Cold = blue, red = hot, and so on -->
 <!-- Using emoji and graphics to minimize legend reading reqs -->
 
-## Know Your Audience
+## Know Your Audience {.incremental}
 
 - Associations are audience and culture dependent
-- Rates of color deficiency - 10% of males
-- 🚦Stoplight color schemes can be industry standard 😭
+
+  - Victorian era colors: pink was for males, blue for females
+  
+- Rates of color deficiency - 10% of males, 0.2% of females
+
+- 🚦Stoplight color schemes are standard for some industries 😭
 
 
 # What Do You See?
@@ -880,41 +910,237 @@ citrus |>
 ```{r}
 #| fig.width: 8
 #| fig.height: 6
-#| out.extra: ".fragment"
+#| out.extra: ".fragment .center"
 set.seed(2043908)
 tmp <- datasaurus_dozen |>
   filter(dataset=="dino") 
 ggplot(lineup(null_permute("x"), tmp)) + geom_point(aes(x=x, y=y)) + facet_wrap(~.sample) + theme(axis.text=element_blank(), axis.title = element_blank())
 ```
 
+## Which One Is Not Like the Others?
+```{r}
+#| fig-width: 7
+#| fig-height: 7
+#| dpi: 300
+#| out-width: "60%"
+#| echo: false
+#| warning: false
 
-## Graphics are Statistics
+data(penguins)
 
-## Visual Inference
+set.seed(4209483)
+penguin_ranks <- penguins |>
+  filter(species == "Gentoo") |>
+  mutate(across(3:6, rank, .names="rank_{.col}")) 
 
-Demonstrating a Visual Hypothesis Test
+ggplot(lineup(null_permute('rank_bill_depth_mm'), penguin_ranks, pos = 4)) + geom_point(aes(x = rank_bill_depth_mm, y = rank_bill_length_mm)) + facet_wrap(~.sample) + theme(axis.text=element_blank(), axis.title=element_blank())
+```
 
-## Visual Inference
+## Statistics and Charts {.smaller}
 
-Challenges with null models
+::: columns
+::: column
+A **statistic** is a quantity    
+🔲computed from values in a sample    
+🔲used for a statistical purpose [[Wikipedia](https://en.wikipedia.org/wiki/Statistic)]{.small}
 
-## Visual Inference
+$$\overline{x} = \frac{1}{n}\sum_{i=1}^n x_i$$
 
-Evaluating competing graphical forms
+A **chart** is a graphical representation for data visualization, in which the data is represented by symbols [[Wikipedia](https://en.wikipedia.org/wiki/Chart)]{.small}
+
+:::
+
+::: column
+::: fragment
+Charts are    
+
+✅ computed from values in a sample 
+
+✅ used for a statistical purpose
+
+<br/><br/>
+:::
+
+::: fragment
+[So... charts **are** statistics!]{.huge .emph .cerulean}
+:::
+
+:::
+:::
+
+## Testing Statistics
+
+[Data from [Tidy Tuesday, 2020-09-01](https://github.com/rfordatascience/tidytuesday/blob/master/data/2020/2020-09-01/readme.md)]{.bottom}
+
+```{r}
+#| include: false
+#| cache: true
+
+key_crop_yields <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/main/data/2020/2020-09-01/key_crop_yields.csv')
+fertilizer <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/main/data/2020/2020-09-01/cereal_crop_yield_vs_fertilizer_application.csv')
+tractors <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/main/data/2020/2020-09-01/cereal_yields_vs_tractor_inputs_in_agriculture.csv')
+land_use <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/main/data/2020/2020-09-01/land_use_vs_yield_change_in_cereal_production.csv')
+arable_land <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/main/data/2020/2020-09-01/arable_land_pin.csv')
+```
+
+```{r}
+#| echo: false
+#| message: false
+#| fig-width: 8
+#| fig-height: 4
+#| out-width: "100%"
+
+
+df <- key_crop_yields %>%
+  filter(Entity == "Americas") %>%
+  rename(Corn = `Maize (tonnes per hectare)`)
+
+ggplot(df, aes(x = Year, y = Corn, group = Entity)) + 
+  geom_line() + 
+  ggtitle("Maize Production in the Americas") + 
+  scale_y_continuous("Tonnes per hectare")
+ggsave(filename = "maize-plot.png", units="px", width = 1200, height=1200, dpi = 300)
+```
+
+::: notes
+Suppose we have this data, and we want to determine whether there is a relationship between Maize production and time.
+
+If we were testing this statistically, we'd fit a linear regression to the data, and test to see whether the slope is equal to 0, right?
+
+We can do that graphically as well: if there is no relationship, then it doesn't matter which Y value is assigned to which X value - we can just shuffle the production values independently of time.
+:::
+
+## Testing Statistics
+
+-   If statistics are charts, then what is the reference distribution?
+
+-   What constitutes an "extreme" or "significant" chart?
+
+## Testing Statistics
+::: columns
+::: column
+Hypothesis testing:
+
+::: {.incremental}
+
+-   take a sample
+
+-   calculate a test statistic
+
+-   compare test statistic to reference distribution\
+    (formed by $H_0$)
+
+-   if it is unlikely, reject null hypothesis
+:::
+:::
+
+::: column
+Visual hypothesis testing:
+
+::: {.incremental}
+-   take a sample
+
+-   create a test chart
+
+-   compare chart to a reference distribution of others generated under $H_0$
+
+-   if test chart "stands out" then reject null hypothesis
+:::
+:::
+:::
+
+::: notes
+Using the hypothesis that there is no relationship between X and Y, we can create a reference distribution of other graphs generated by shuffling the Y values.
+
+Do you think you'll be able to pick out the reference chart?
+:::
+
+## Testing Statistics
+
+```{r}
+#| label: maize
+#| echo: false
+#| fig-align: "center"
+#| fig-width: 7
+#| fig-height: 5
+#| out-width: "90%"
+
+
+library(nullabor)
+fit <- lm(Corn ~ Year, data = df)
+fit.reg <- tibble(df, .resid = residuals(fit), .fitted = fitted(fit))
+coefs <- coefficients(summary(fit))
+lineup_coefs <- rnorm(19, 0.02, sd = 2*coefs[2,2])
+lineup_coefs <- c(lineup_coefs[1:14], coefs[2,1], lineup_coefs[15:19])
+intercept <- c(rnorm(14, coefs[1,1], 2*coefs[1,2]), coefs[1,1], rnorm(5, coefs[1,1], 2*coefs[1,2]))
+
+lineup_data <- tibble(.sample = 1:20, intercept = intercept, coef = lineup_coefs) %>%
+  mutate(data = list(tibble(Year = df$Year, Corn = df$Corn, resid = resid(fit)))) %>%
+  unnest(data) %>%
+  mutate(y = intercept + coef*Year + resid)
+
+ggplot(lineup(null_permute("Corn"), n = 20, pos = 15, df), aes(x = Year, y = Corn)) + geom_line() + facet_wrap(~.sample) + 
+  ggtitle("Maize Production in the Americas") + 
+  scale_y_continuous("Tonnes per hectare") + 
+  theme_bw() + theme(axis.text = element_blank())
+```
+
+::: notes
+Now, this is a very easy example, because we all know there's been a massive increase in crop yields over the last 50 years. But, you can see how this paradigm is powerful - you can easily tell which plot is "different", and if I ask 20 different people to evaluate it, I'd wager at least 19 would say "plot 15 is different".
+
+You'll also notice that we didn't have to ask anything statistical in nature - all of our hypotheses are embedded into the statistical lineup through the generation of the other 19 plots. We call these lineups because they're similar to the criminal procedure of the same name.
+
+The powerful part of this is that we can test for statistical significance of data even in cases where the effect is very subtle, or not easily mathematically quantified, as long as we can generate realistic "null" data through a reasonable mechanism.
+:::
+
+## Testing Statistics
+::: columns
+::: {.column .smaller}
+-   Plot: A **statistical lineup**
+
+-   Method: **visual inference**\
+    (graphical hypothesis test)
+
+-   Many factors influence the results
+
+    -   the data
+    -   the plot type
+    -   the plot aesthetics\
+        [(color, shape, etc.)]{.small}
+    -   extra statistical features\
+        [trend lines, error bars]{.small}
+:::
+
+::: column
+![](maize-plot.png) 
+:::
+:::
+
+<!-- class:middle,center,inverse -->
 
 ## Visualizing Uncertainty
 
-Data -> Graphics -> Graphical Testing -> Graphical Significance 
+Data -> 
 
-is all just one progression to realize that we need to visualize uncertainty as well as the data and models
+Graphics -> 
 
-## Visualizing Uncertainty
+[Graphical Testing]{.emph .sage-dk .fragment} -> 
 
-Uncertainty is an inherent part of data and statistics - it is not easily separated/contained.
+[Graphical Significance]{.emph .sage-dk .fragment}
+
+[One method for incorporating and assessing uncertainty with charts]{.fragment}
+
+## {.center}
+
+Uncertainty is an [inherent]{.emph .large .sage-dk} property     
+of data and statistics -     
+[it is not easily separated or contained.]{.fragment .emph .aggie-blue}
+
+
 
 # Uncertainty  Visualization ❓🫨 📐
 
-## {background-image="types-of-uncertainty.svg" background-size="100%" background-image-alt="A collage of different types of uncertainty and goals of uncertainty visualization. The top left shows a spaghetti plot of hurricane tracks based on different model starting conditions, with the label 'prediction uncertainty'. The top right shows a risk pictogram of 10-year outcomes for a 38 year old white female who has never smoked; the vast majority of the outcomes are survival, with accident, breast cancer, colon cancer, liver disease, and other causes of death represented. The plot has the label 'risk perception'. In the center, there is a sketch of a hand flipping a coin. On the center left, there is a cartoon depiction of the trolley problem with the label 'rational decision making', and in the bottom left there is a screenshot of the NY Times election needle in 2016, showing one representation of uncertainty from missing data. In the bottom center, there is a picture of calipers with the label 'measurement uncertainty', and on the bottom right there is a histogram with the label 'what do RVs even mean'."}
+## {background-image="types-of-uncertainty.svg" background-size="95%" background-image-alt="A collage of different types of uncertainty and goals of uncertainty visualization. The top left shows a spaghetti plot of hurricane tracks based on different model starting conditions, with the label 'prediction uncertainty'. The top right shows a risk pictogram of 10-year outcomes for a 38 year old white female who has never smoked; the vast majority of the outcomes are survival, with accident, breast cancer, colon cancer, liver disease, and other causes of death represented. The plot has the label 'risk perception'. In the center, there is a sketch of a hand flipping a coin. On the center left, there is a cartoon depiction of the trolley problem with the label 'rational decision making', and in the bottom left there is a screenshot of the NY Times election needle in 2016, showing one representation of uncertainty from missing data. In the bottom center, there is a picture of calipers with the label 'measurement uncertainty', and on the bottom right there is a histogram with the label 'what do RVs even mean'."}
 
 ::: notes
 
@@ -942,15 +1168,28 @@ tibble(x = dist_normal(5, c(.2, 2)), label = c("Serious science! 🔬", "Amateur
   geom_col(aes(x = label, y = mean, fill = label)) + 
   geom_errorbar(aes(x = label, ymin = lb, ymax = ub), width = .2) + 
   guides(fill = 'none') + theme(axis.title = element_blank()) 
+ggsave(filename = "uncertainty-bar-chart.png", width=6, height =3, dpi = 300, units = "in")
 
 ```
 
-Requires understanding:
+
+## Goal(s) of Uncertainty Visualization
+
+Communicate the Legitimacy of Conclusions
+
+::: columns
+::: column
+![](uncertainty-bar-chart.png){fig-alt="Bar chart showing two groups: amateurs and serious science. The amateurs bar has a much larger error bar than the serious science bar."}
+:::
+
+::: column
+Requires understanding
 
 - what error bars show (variance)
+- how the error bar is computed ($\pm 1 \sigma$)
 - how that translates to real data  (most data within 2*bars)
-
-
+:::
+:::
 
 ## Goal(s) of Uncertainty Visualization
 
@@ -978,11 +1217,16 @@ In a survey of 90 "visualization authors" recruited from the InfoVis community, 
 
 > importance of transparency in presentations of data, suggesting that omitting uncertainty was misleading or even lying. ^[Hullman, Jessica. 2020. “Why Authors Don’t Visualize Uncertainty.” IEEE Transactions on Visualization and Computer Graphics 26(1):130–39. doi:10.1109/TVCG.2019.2934287.]
 
-## Additional Challenges 
+## Goal(s) of Uncertainty Visualization
 
-- Color Suppression and perception
+Making accurate decisions under uncertainty
 
-- Visual Complexity
+- Visualizing uncertainty is just the first step
 
-- Interpretability
+- Ultimate goal: Use the uncertainty to 
 
+    - communicate effectively
+
+    - support better decision-making    
+    
+[Requires understanding how we perceive and use charts -- whether deterministic or distributional]{.fragment}
