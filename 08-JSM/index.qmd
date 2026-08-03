@@ -1134,7 +1134,7 @@ Data ->
 
 Graphics -> 
 
-[Graphical Testing]{.emph .sage-dk .fragment} -> 
+[Graphical Testing -> ]{.emph .sage-dk .fragment}
 
 [Graphical Significance]{.emph .sage-dk .fragment}
 
