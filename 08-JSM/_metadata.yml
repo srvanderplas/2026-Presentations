@@ -1,9 +1,8 @@
-title: "Visualizing Uncertainty"
-subtitle: "(Part 1)"
+title: "Visualization and Uncertainty"
 author: "Susan Vanderplas"
 date: 2025-08-03
 from: markdown+emoji
-location: 
+location: Boston, MA
 abstract: |
   Data visualizations are a primary tool for communicating statistical results, leveraging
   our extremely high visual bandwidth to make working with and thinking about data more efficient.

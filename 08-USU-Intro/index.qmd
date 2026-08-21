@@ -1,0 +1,87 @@
+---
+format: 
+  revealjs:
+    navigation-mode: vertical
+    theme: ../libs/usu/inverse.scss
+    includes:
+      in_header: ../libs/usu/header.html
+    lib_dir: libs
+    embed-resources: true
+    lightbox: true
+---
+
+## About Me 
+::: incremental
+
+- 2005 - 2009  - BS, Applied Math & Psychology, Texas A&M
+
+- 2009 - Started PhD in Bioinformatics at Iowa State
+- 2010 - Switched to Statistics 
+- 2011 - MS, Statistics
+- 2015 - PhD, Statistics
+
+- 2015-2018, Statistical Analyst, Nebraska Public Power District
+
+- 2018-2019, Center for Statistics and Applications in Forensic Evidence (CSAFE), Iowa State
+
+- 2020-2026, University of Nebraska Lincoln ☠️
+
+:::
+
+# Research
+
+## Statistical Graphics
+### Graphics Software
+
+![](ggpcp.png){fig-alt="A parallel coordinate plot of male and female penguin data, with penguins that have missing sex data highlighted in red."}
+
+## Statistical Graphics
+### Perception of Graphics
+
+![](sine-illusion.png)
+
+## Statistical Graphics
+### Visual Inference
+
+![](0d5d9ec39395e38e456279cd5217e116.svg)
+
+::: {.fragment}
+- How to measure graphics effectively
+    - NSF CAREER award last year
+:::
+
+::: {.tiny}
+VanderPlas, Susan, and Heike Hofmann. 2017. “Clusters Beat Trend⁉ Testing Feature Hierarchy in Statistical Graphics.” Journal of Computational and Graphical Statistics 26(2):231–42. doi:10.1080/10618600.2016.1209116.
+:::
+
+## Reproducibility
+
+::: {layout-ncol=2}
+![](31-Michigan.png)
+
+![](Michigan-spine_with_frame1.png)
+
+:::
+
+::: {.tiny}
+VanderPlas, Susan, Goluch C. Ryan, and Heike Hofmann. 2019. “Framed! Reproducing and Revisiting 150-Year-Old Charts.” Journal of Computational and Graphical Statistics 28(3):620–34. doi:10.1080/10618600.2018.1562937.
+:::
+
+## Forensics {.r-fit-text}
+
+- Forensic Pattern Evidence
+  - Algorithms for Matching
+  - Error Rates
+  - Perception of Court Testimony -- "Experimental Design is Important"
+
+::: {layout="[[1, 1, 3],[1]]"}
+
+![](Judge.jpg)
+
+![](Hazmat worker.jpg)
+
+![](FiredAmmo-v2.png)
+
+![](SignatureOverlay.png)
+
+:::

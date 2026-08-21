@@ -1,198 +1,1416 @@
 [
   {
+    "objectID": "02-utah-state/index.html#education",
+    "href": "02-utah-state/index.html#education",
+    "title": "Human Computer Data Interaction",
+    "section": "🏫 Education",
+    "text": "🏫 Education\n\n\n\n\n2009\nBS, Psychology & Applied Math \n\n\n2011\nMS, Statistics \n\n\n2015\nPh.D., StatisticsDissertation:Perception of Statistical Graphics"
+  },
+  {
+    "objectID": "02-utah-state/index.html#recent-work",
+    "href": "02-utah-state/index.html#recent-work",
+    "title": "Human Computer Data Interaction",
+    "section": "📊 Recent Work",
+    "text": "📊 Recent Work\n\n\nCan You See The Change? Visual Perception in Change Point Analysis (JCGS)\nFudolig, Robinson, and Vanderplas. 2025\nAutomated Residual Plot Assessment With the R Package autovi and the Shiny Application autovi.web (Aus & NZ Journal of Stats)\nLi, Cook, Tanaka, Vanderplas, and Ackermann. 2025\nPerception and Cognitive Implications of Logarithmic Scales for Exponentially Increasing Data: Perceptual Sensitivity Tested with Statistical Lineups (JCGS)\nRobinson, Howard, Vanderplas. 2025\nA Guide to Designing Experiments to Test Statistical Graphics (WIRE Computational Statistics)\nRobinson, Hofmann, Vanderplas. 2025"
+  },
+  {
+    "objectID": "02-utah-state/index.html#recent-work-1",
+    "href": "02-utah-state/index.html#recent-work-1",
+    "title": "Human Computer Data Interaction",
+    "section": "🔬 Recent Work",
+    "text": "🔬 Recent Work\n\n\nMethodological problems in every black-box study of forensic firearm comparisons (Law, Probability, and Risk)\nCuellar, Vanderplas, Luby, Rosenblum. 2024\nIncorrect statistical reasoning in Guyll et al. leads to biased claims about strength of forensic evidence (PNAS)\nRosenblum, Chin, Ogburn, Nishimura, Westreich, Datta, Vanderplas, Cuellar, Thompson. 2024\nHidden Multiple Comparisons Increase Forensic Error Rates (PNAS)\nVanderplas, Carriquiry, Hofmann. 2024\nAmicus Briefs or Testimony filed in cases in Oregon, Washington, Michigan, Colorado, California, Maryland, Illinois, Washington D.C., New Jersey, Federal (Northern District of Florida)"
+  },
+  {
+    "objectID": "02-utah-state/index.html#coming-soon",
+    "href": "02-utah-state/index.html#coming-soon",
+    "title": "Human Computer Data Interaction",
+    "section": "🐣 Coming Soon!",
+    "text": "🐣 Coming Soon!\n\nForensics:\n\ncourtR package for legal transcript studies\nhighlightR package for conserved text analysis\nAssessing Algorithm Use and Testimony for Firearms and Toolmark Analysis\nWhat Comes Next: A Constructive Vision for Forensic Firearms Analysis\n\nGraphics:\n\nggdibbler package and paper - uncertainty visualization\nExperiential Learning with Statistical Graphics: Writing, Reflection, and Suspense\nAssessing Computer Vision models for Gestalt Perception\nParallel Coordinate Plots with Mixed-Type Variables\nVisual Statistical Inference"
+  },
+  {
+    "objectID": "02-utah-state/index.html#funded-grants",
+    "href": "02-utah-state/index.html#funded-grants",
+    "title": "Human Computer Data Interaction",
+    "section": "💵 Funded Grants",
+    "text": "💵 Funded Grants\n\n\n2025-2030, NSF CAREER, What Do You See? Perception, Decisions, and Statistical Graphics\n($550,000)\n2020-2024, NIST, CSAFE Project lead: Footwear Class Characteristics and Human Factors\n($20 mil for CSAFE, $456,930 sub-award)\n2019/2021 - 2023, NIJ, Automatic Acquisition and Identification of Footwear Class Characteristics\n($380,650)\n2020-2023, USDA-NRCS, Improving the Economic and Ecological Sustainability of US Crop Production through On-Farm Precision Experimentation\n($4 mil total, $400,000 for 3 UNL PIs)\n2019-2022, NSF, Overcoming the Rural Data Deficit to Improve Quality of Life and Community Services in Smart & Connected Small Communities\n($1.5 mil total, $123,445 sub-award)"
+  },
+  {
+    "objectID": "02-utah-state/index.html#cognitive-psychology-for-charts",
+    "href": "02-utah-state/index.html#cognitive-psychology-for-charts",
+    "title": "Human Computer Data Interaction",
+    "section": "Cognitive Psychology for Charts",
+    "text": "Cognitive Psychology for Charts\n\nGraphics research has historically focused on\naccuracy and response time\n\nBut, that isn’t how we use graphics!"
+  },
+  {
+    "objectID": "02-utah-state/index.html#logscales",
+    "href": "02-utah-state/index.html#logscales",
+    "title": "Human Computer Data Interaction",
+    "section": "Multimodal Testing in Practice",
+    "text": "Multimodal Testing in Practice\nJoint work with Emily Robinson\n\n\n\n\n    \n2022: Eye Fitting Straight Lines in the Modern Era (JCGS)\n\n\n\n\n\n    \n2023: ‘You Draw It’: Implementation of Visually Fitted Trends with r2d3 (JDS)\n\n\n\n\n\n    \n2025: Perception and Cognitive Implications of Logarithmic Scales for Exponentially Increasing Data (JCGS)"
+  },
+  {
+    "objectID": "02-utah-state/index.html#exp.-growth-log-scales",
+    "href": "02-utah-state/index.html#exp.-growth-log-scales",
+    "title": "Human Computer Data Interaction",
+    "section": "Exp. Growth & Log Scales",
+    "text": "Exp. Growth & Log Scales\n\n3 different ways of engaging with the data\n\nCan we\n\nQ1: perceive differences in     … Perceptual\nQ2: forecast trends from     … Tactile\nQ3: estimate and use     … Numerical\n\ngraphs of exponential growth with log and linear scales?\n300 participants completed all 3 experiments\n\nI’m a huge fan of lineups, but one of the issues I had with the COVID graphs I was seeing was that I wasn’t convinced people were interpreting the data correctly.\nI started thinking about why lineups wouldn’t test things at the level I was hoping for, and eventually came up with this hierarchy - first, you have to be able to recognize that there is a difference between two things. Then, you have to be able to predict and forecast to map “data from the past” onto the future. Finally, you have to actually be able to read data off of the graph and act on it - doing numerical calculations and the like.\nThese are distinct psychological tasks, and they require different ways of interacting with a chart. So I’m going to describe 3 experiments that we’ve conducted relating to log scales.\nThese experiments were inspired by COVID, but we worked hard to not go anywhere near COVID data because while we were designing these experiments, it was a bit emotionally loaded. Even now that pandemic measures have ended, it’s still too politically sensitive to touch, so we’ll continue using non-covid data on follow-up studies."
+  },
+  {
+    "objectID": "02-utah-state/index.html#q1-perception-of-differences",
+    "href": "02-utah-state/index.html#q1-perception-of-differences",
+    "title": "Human Computer Data Interaction",
+    "section": "Q1: Perception of Differences",
+    "text": "Q1: Perception of Differences"
+  },
+  {
+    "objectID": "02-utah-state/index.html#q1-perception-of-differences-1",
+    "href": "02-utah-state/index.html#q1-perception-of-differences-1",
+    "title": "Human Computer Data Interaction",
+    "section": "Q1: Perception of Differences",
+    "text": "Q1: Perception of Differences\n\n\n\n\n\n\nLog Scale\n\n\n\n\n\n\n\nLinear Scale\n\n\n\n\n\n\nHere are a couple of example lineups from this experiment - the first is on a linear scale, the 2nd is on a log scale. While I generally tried throughout these experiments to make it clear that we were on a log scale, it is a very subtle difference in these lineups, and fixing that wasn’t necessarily relevant to the question at hand – since all sub-panels have the same axis breaks, we’re actually testing whether we can distinguish the data, not the scales."
+  },
+  {
+    "objectID": "02-utah-state/index.html#q1-perception-of-differences-2",
+    "href": "02-utah-state/index.html#q1-perception-of-differences-2",
+    "title": "Human Computer Data Interaction",
+    "section": "Q1: Perception of Differences",
+    "text": "Q1: Perception of Differences\n\nConclusion: It’s easier to spot a curve among lines than it is to spot a line among curves\n\nWe used a generalized linear mixed effects model to assess the probability of a correct target identification given factors like target and null plot type, participant skill level, and random effects due to the data generating process. The plot shown here is the resulting log odds ratio for log vs. linear scales, and we see that it is easier to detect curvature among a field of null lines than it is to detect linearity among a field of curved lines. In addition, we see that when there is a lot of contrast between the null and the target plot, that is, when the nulls are very curved and the target is very straight, there isn’t much difference between the two graphs. However, if there is less contrast, the log scale allows us to perceive the differences better than the linear scale.\n\nLog scales make us more sensitive to slight changes in curvature:\n\nLow Curvature Null vs. Medium Curvature Target on log scale is curve vs. line\n(it’s hard to see the straight-line target vs. the curved nulls)\nWith Medium or High curvature Null plots, it’s easier to spot the target on the log scale than on the linear scale"
+  },
+  {
+    "objectID": "02-utah-state/index.html#q2-forecasting-exponential-trends",
+    "href": "02-utah-state/index.html#q2-forecasting-exponential-trends",
+    "title": "Human Computer Data Interaction",
+    "section": "Q2: Forecasting Exponential Trends",
+    "text": "Q2: Forecasting Exponential Trends"
+  },
+  {
+    "objectID": "02-utah-state/index.html#q2-forecasting-you-draw-it-goals",
+    "href": "02-utah-state/index.html#q2-forecasting-you-draw-it-goals",
+    "title": "Human Computer Data Interaction",
+    "section": "Q2: Forecasting (You-Draw-It) Goals",
+    "text": "Q2: Forecasting (You-Draw-It) Goals\n\nReplicate Eye Fitting Straight Lines using the you-draw-it tool (4 charts)\nExplore exponential growth predictions on log and linear scale (8 charts)\n\nPoints end 50% or 75% of the way across x-axis\nRate of growth of \\(\\beta\\) = 0.1, 0.23\nLog or Linear scale\n\n\n12 total graphs to complete\n\nFirst, we wanted to validate the “Eye fitting straight lines” method using You Draw it, by using datasets from the 1981 study, on the original linear scale. This would serve as a validation of the method and also help us test out our analysis method on data that was a bit more straightforward.\nThen, the (main) goal is to see how terrible we are at predicting exponential growth when using a log scale and a linear scale.\nWe set things up with varying amounts of data – so you have data to base your regression line up to either halfway or 3/4 of the way through the graph, and you have to then extend beyond the data by 25% or 50%.\nWe used two different rates of growth, and then either had a graph with a log or linear scale.\nIf you’re keeping track, then there are 4 straight lines, and 8 sets of exponential data (generated on the fly from basic parameters). We saved both the data shown on the plot and the drawn smooth lines."
+  },
+  {
+    "objectID": "02-utah-state/index.html#q2-forecasting-you-draw-it",
+    "href": "02-utah-state/index.html#q2-forecasting-you-draw-it",
+    "title": "Human Computer Data Interaction",
+    "section": "Q2: Forecasting (You-Draw-It)",
+    "text": "Q2: Forecasting (You-Draw-It)\n\n\n\n\n\n\nData from Mosteller et al. (1981)\n\n\n\n\n\n\n\nExp data, linear scale, 50% complete"
+  },
+  {
+    "objectID": "02-utah-state/index.html#q2-forecasting-you-draw-it-1",
+    "href": "02-utah-state/index.html#q2-forecasting-you-draw-it-1",
+    "title": "Human Computer Data Interaction",
+    "section": "Q2: Forecasting (You-Draw-It)",
+    "text": "Q2: Forecasting (You-Draw-It)\n\n\nThis shows the residuals from an exponential regression on the data participants were shown. We made it even clearer by modeling the residuals using a generalized additive model, which has a flexible form and doesn’t require too many assumptions about model structure.\nIt’s clear that log scales and linear scales have very different outcomes – we slightly overpredict with log scales, and underpredict with linear scales."
+  },
+  {
+    "objectID": "02-utah-state/index.html#q3-numerical-estimation",
+    "href": "02-utah-state/index.html#q3-numerical-estimation",
+    "title": "Human Computer Data Interaction",
+    "section": "Q3: Numerical Estimation",
+    "text": "Q3: Numerical Estimation"
+  },
+  {
+    "objectID": "02-utah-state/index.html#q3-numerical-estimation-1",
+    "href": "02-utah-state/index.html#q3-numerical-estimation-1",
+    "title": "Human Computer Data Interaction",
+    "section": "Q3: Numerical Estimation",
+    "text": "Q3: Numerical Estimation\n\nNext level of engagement is estimating quantities from a graph\nThis is a much harder experiment to set up\n\nPhrasing matters a lot!\nData matters a lot!\n\n\nHow to make it generalizable?\n\nOne of my favorite parts of graphical inference is that it totally sidesteps this question of phrasing by encoding all of what would have been verbal questions into the graph itself.\nThis really is a huge improvement over past graphical methods – there were studies showing that pie charts sucked from the early 1900s, but they were hampered by the generalizability of the questions - if you asked for someone to estimate the percentage of a pie slice, you got different conclusions than if you asked someone to make a judgment between two pieces of the pie."
+  },
+  {
+    "objectID": "02-utah-state/index.html#q3-numerical-estimation-2",
+    "href": "02-utah-state/index.html#q3-numerical-estimation-2",
+    "title": "Human Computer Data Interaction",
+    "section": "Q3: Numerical Estimation",
+    "text": "Q3: Numerical Estimation\n\nUse Ewoks and Tribbles - creatures that might multiply exponentially\nOne set on the linear scale, one set on log scale\nUnderlying trend is the same (within transformed x axis)\nDifferent variability around the line\n\n\n\n\n\n\n\n\nEwoks and Tribbles (with apologies to Allison Horst)"
+  },
+  {
+    "objectID": "02-utah-state/index.html#q3-numerical-estimation-3",
+    "href": "02-utah-state/index.html#q3-numerical-estimation-3",
+    "title": "Human Computer Data Interaction",
+    "section": "Q3: Numerical Estimation",
+    "text": "Q3: Numerical Estimation\nFree response: Between \\(t_1\\) and \\(t_2\\), how does the population of \\(X\\) change?\n\n\n\n \n\n\n\n\n\nLinear Scale\n\n\n\n\n \n\n\n\n\n\nLog Scale"
+  },
+  {
+    "objectID": "02-utah-state/index.html#q3-numerical-estimation-4",
+    "href": "02-utah-state/index.html#q3-numerical-estimation-4",
+    "title": "Human Computer Data Interaction",
+    "section": "Q3: Numerical Estimation",
+    "text": "Q3: Numerical Estimation\nEstimating Population given a year\n\n\n\nDeviation from Closest Point\n\n\n\n\nMore variability in estimation on linear scale (which makes sense due to the fact that it’s compressed into a small area of the plot)\nParticipants anchor estimates to specific points, not to an overall fitted trend"
+  },
+  {
+    "objectID": "02-utah-state/index.html#q3-numerical-estimation-5",
+    "href": "02-utah-state/index.html#q3-numerical-estimation-5",
+    "title": "Human Computer Data Interaction",
+    "section": "Q3: Numerical Estimation",
+    "text": "Q3: Numerical Estimation\nFrom Year1 to Year2, the population increases by ____ individuals\n\n\n\nin dataset 1, both points were close to the underlying value, and the estimates bear that out.\nin dataset 2, one point was a bit of an outlier, and so we can see different estimation strategies appear: some participants answered using an overall trend/visual regression, while others answered using actual points."
+  },
+  {
+    "objectID": "02-utah-state/index.html#q3-numerical-estimation-6",
+    "href": "02-utah-state/index.html#q3-numerical-estimation-6",
+    "title": "Human Computer Data Interaction",
+    "section": "Q3: Numerical Estimation",
+    "text": "Q3: Numerical Estimation\nHow many times more creatures are there in Year2 than Year1?\n\n\n\nthe results show a fundamental lack of understanding on the part of many participants"
+  },
+  {
+    "objectID": "02-utah-state/index.html#q3-numerical-estimation-7",
+    "href": "02-utah-state/index.html#q3-numerical-estimation-7",
+    "title": "Human Computer Data Interaction",
+    "section": "Q3: Numerical Estimation",
+    "text": "Q3: Numerical Estimation\nHow many times more creatures are there in Year2 than Year1?\n\n\n\nAs the questions get more mathematically complex, we also see that participants start using model-based strategies for estimation - they don’t have the mental bandwidth to hold all of the estimates for specific points, arithmatic, etc. in their heads, so they take shortcuts like working off of a mental trendline.\nHere, for the first time, the true deviation (deviation from the underling model) is a better match to participant estimates than the closest point deviation."
+  },
+  {
+    "objectID": "02-utah-state/index.html#q3-numerical-estimation-8",
+    "href": "02-utah-state/index.html#q3-numerical-estimation-8",
+    "title": "Human Computer Data Interaction",
+    "section": "Q3: Numerical Estimation",
+    "text": "Q3: Numerical Estimation\nHow long does it take for the population in Year 1 to double?\n\n\n\nstrong anchoring effect at multiples of 5\nSome conflict between true and closest point value in dataset 1 (mediated by rounding tendencies); dataset 2 was clear enough that participants could estimate 6\na lot more variability on the linear scale than the log scale in both cases"
+  },
+  {
+    "objectID": "02-utah-state/index.html#challenges-benefits",
+    "href": "02-utah-state/index.html#challenges-benefits",
+    "title": "Human Computer Data Interaction",
+    "section": "Challenges & Benefits",
+    "text": "Challenges & Benefits\n\nConflicting results can be hard to reconcile\nConducting multiple studies is multiple times the work\n(multiple times the payoff?)\nGreater insight into the tradeoffs of design decisions"
+  },
+  {
+    "objectID": "02-utah-state/index.html#nas-report-2009",
+    "href": "02-utah-state/index.html#nas-report-2009",
+    "title": "Human Computer Data Interaction",
+    "section": "NAS Report (2009)",
+    "text": "NAS Report (2009)\n(National Academy of Science)\n\n\n\n\n\nSenate commissioned in 2005\nFocus areas:\n\nfundamentals of scientific method in forensics\nerror rates for collection and analysis of forensic data\nuse of forensic evidence in litigation\n\nImportant questions:\n\nAre disciplines scientifically reliable?\nHow subjective/biased are methods?\n\n\n\n\nThe NAS report focused on the use of science in forensics, how we know (or don’t know) what error rates are for forensic methods, and how forensic evidence is used in court.\nPrimary concerns included whether disciplines are based on reliable scientific foundations, and whether practitioner bias could affect the results of the forensic comparisons."
+  },
+  {
+    "objectID": "02-utah-state/index.html#pcast-report-2016",
+    "href": "02-utah-state/index.html#pcast-report-2016",
+    "title": "Human Computer Data Interaction",
+    "section": "PCAST Report (2016)",
+    "text": "PCAST Report (2016)\nPresident’s Council of Advisors on Science and Technology\n\n\n\n\n\n\nJudges’ decisions about the admissibility of scientific evidence rest solely on legal standards; they are exclusively the province of the courts and PCAST does not opine on them. But, these decisions require making determinations about scientific validity. It is the proper province of the scientific community to provide guidance concerning scientific standards for scientific validity.\n\n\n\n\nThe Executive Summary is an excellent read."
+  },
+  {
+    "objectID": "02-utah-state/index.html#pcast-report-2016-1",
+    "href": "02-utah-state/index.html#pcast-report-2016-1",
+    "title": "Human Computer Data Interaction",
+    "section": "PCAST Report (2016)",
+    "text": "PCAST Report (2016)\n\n\n\n\nRequirements for Scientific Validity\n\nEmpirical testing by\n\nmultiple lab groups\nunder casework like conditions,\ndemonstrating the method is repeatable and reproducible and\nestimating the method’s accuracy\n\nsubjective disciplines\n\nexaminer is a “black box”\nStudies designed with \\(n\\) examiners and \\(k\\) independent tests.\n\n\nWithout estimates of accuracy, an examiner’s decision is scientifically meaningless: it has no probative value, and considerable potential for prejudicial impact."
+  },
+  {
+    "objectID": "02-utah-state/index.html#status-of-forensic-disciplines",
+    "href": "02-utah-state/index.html#status-of-forensic-disciplines",
+    "title": "Human Computer Data Interaction",
+    "section": "Status of Forensic Disciplines",
+    "text": "Status of Forensic Disciplines\n\n\n\n\n\n\n\n\n\n\n\n\n\nDiscipline\nMethod\nValidity\nEvidence\n\n\n\n\n🧬\nDNA\n🧪\n✅\n📚\n\n\n🧬\nDNA (mix)\n🧪+🔎\n❓\n✅1\n📖📖\n📖\n\n\n🐾\nFingerprint\n🔎 💻\n✅2\n📚\n\n\n🔫\nFirearms\n🔎 💻3\n❓\n📖\n\n\n👟\nFootwear\n🔎\n❓\n❓\n\n\n🦱\nHair\n🔎\n🚩🚩\n📚\n\n\n😁\nBitemark\n🔎\n🚩🚩\n📚\n\n\n\n\n\n\n\n\n\n\n\n\nMeaning\n\n\n\n\n🧪\nLab\n\n\n🔎\nSubjective\n\n\n💻\nAlgorithm\n\n\n✅\nValid\n\n\n❓\nUnknown\n\n\n🚩\nInvalid\n\n\n📚\nMany Studies\n\n\n📖\nSome Studies\n\n\n\n\nIn some situationshigh error rateAlgorithms not used in lab practice"
+  },
+  {
+    "objectID": "02-utah-state/index.html#hidden-multiple-comparisons-increase-forensic-error-rates",
+    "href": "02-utah-state/index.html#hidden-multiple-comparisons-increase-forensic-error-rates",
+    "title": "Human Computer Data Interaction",
+    "section": "Hidden Multiple Comparisons Increase Forensic Error Rates",
+    "text": "Hidden Multiple Comparisons Increase Forensic Error Rates\nProceedings of the National Academy of Sciences, 2024\nJoint work with Heike Hofmann and Alicia Carriquiry\n\n\n\n\n    \nPNAS Paper Link\n\n\n\nThis work was partially funded by the Center for Statistics and Applications in Forensic Evidence (CSAFE) through Cooperative Agreements 70NANB15H176 and 70NANB20H019 between NIST and Iowa State University, which includes activities carried out at Carnegie Mellon University, Duke University, University of California Irvine, University of Virginia, West Virginia University, University of Pennsylvania, Swarthmore College and University of Nebraska, Lincoln."
+  },
+  {
+    "objectID": "02-utah-state/index.html#toolmark-examination-primer",
+    "href": "02-utah-state/index.html#toolmark-examination-primer",
+    "title": "Human Computer Data Interaction",
+    "section": "Toolmark Examination Primer",
+    "text": "Toolmark Examination Primer\n\n\n\nOur Crime Scene"
+  },
+  {
+    "objectID": "02-utah-state/index.html#toolmark-examination-primer-1",
+    "href": "02-utah-state/index.html#toolmark-examination-primer-1",
+    "title": "Human Computer Data Interaction",
+    "section": "Toolmark Examination Primer",
+    "text": "Toolmark Examination Primer\n\n\n\nIdentifying Marks"
+  },
+  {
+    "objectID": "02-utah-state/index.html#toolmark-examination-primer-2",
+    "href": "02-utah-state/index.html#toolmark-examination-primer-2",
+    "title": "Human Computer Data Interaction",
+    "section": "Toolmark Examination Primer",
+    "text": "Toolmark Examination Primer\n\n\n\n\n\nHow do we know this method is valid?"
+  },
+  {
+    "objectID": "02-utah-state/index.html#a-specific-case-jimmy-genrich",
+    "href": "02-utah-state/index.html#a-specific-case-jimmy-genrich",
+    "title": "Human Computer Data Interaction",
+    "section": "A Specific Case – Jimmy Genrich",
+    "text": "A Specific Case – Jimmy Genrich"
+  },
+  {
+    "objectID": "02-utah-state/index.html#motivation",
+    "href": "02-utah-state/index.html#motivation",
+    "title": "Human Computer Data Interaction",
+    "section": "Motivation",
+    "text": "Motivation\n\n\nAt trial, O’Neil testified that tools like the wire cutters found in Genrich’s residence were the only tools that could have been used to make the pipe bombs. “Agent O’Neil opined that the three of Mr. Genrich’s tools were the only tools in the world that could have made certain marks found on pieces from the four bombs,” Judge Gurley wrote in Monday’s opinion.\n\n\nO’Neil was asked specifically at trial what he meant by the phrase “to the exclusion of any other tool.” “That the individual jaw, the location within that jaw on that particular side, was identified as having cut the wire in question to a degree of certainty to exclude any other tool,” he said, according to court transcripts referenced in Gurley’s decision. O’Neil said this was true of needle-nosed pliers used on the bomb, slip-joint pliers, as well as the wire cutter.\n\n\nSource (emphasis added)"
+  },
+  {
+    "objectID": "02-utah-state/index.html#personal-motivation",
+    "href": "02-utah-state/index.html#personal-motivation",
+    "title": "Human Computer Data Interaction",
+    "section": "Personal Motivation",
+    "text": "Personal Motivation\n\n\n\nMy house has \\(\\approx\\) 982 cm of (easily accessible) blade surface which might be used to cut wires. My dad has \\(\\approx\\) 2243 cm of blade surface in his shop. No one in either location is a craftsperson."
+  },
+  {
+    "objectID": "02-utah-state/index.html#constructive-scientific-proof-from-first-principles",
+    "href": "02-utah-state/index.html#constructive-scientific-proof-from-first-principles",
+    "title": "Human Computer Data Interaction",
+    "section": "Constructive Scientific Prooffrom first principles",
+    "text": "Constructive Scientific Prooffrom first principles\n\n\n\nUnderstand\n\nhow tools make marks\ntool wear over time\ntool manufacturing processes\ntool/material interaction\nmark type/frequency distribution\n\nTrack\n\nFrequency of tools in a local population\n\n\n\n😓\n\n\nScientifically, we might boil this down to a series of engineering and materials science problems - understanding the types of marks which can occur on different types of tool materials through manufacture, wear, etc., and then understanding in turn how those tools transfer marks to other surfaces and how force, angle, and material hardness impact those marks.\nUnfortunately, though, the number of different characteristics gets very quickly out of control and you end up with an exponential number of interactions very quickly.\nEstablishing the discipline from first principles is … difficult, to say the least. You could probably do it with a combination of time, stubbornness, and statistical inference, but there is always a chance that a new manufacturing method will be developed that will produce new types/classes of markings.\nBut, there are other ways to handle this problem."
+  },
+  {
+    "objectID": "02-utah-state/index.html#a-different-angle-on-the-problem",
+    "href": "02-utah-state/index.html#a-different-angle-on-the-problem",
+    "title": "Human Computer Data Interaction",
+    "section": "📐 A Different Angle on the Problem",
+    "text": "📐 A Different Angle on the Problem\n\n\\(e^{(1)}\\): error rate for a single comparison\n\\(e^{(N)}\\): overall error rate, \\(N\\) comparisons\nCalculate \\(N\\): # comparisons between tool and evidence\nUltimate question:\nWhat does \\(e^{(1)}\\) need to be for \\(e^{(N)}\\) to be low1?\n\nLow enough will be determined by courts⚖️, not statisticians… 🫣"
+  },
+  {
+    "objectID": "02-utah-state/index.html#wire-cuts",
+    "href": "02-utah-state/index.html#wire-cuts",
+    "title": "Human Computer Data Interaction",
+    "section": "Wire Cuts",
+    "text": "Wire Cuts\n\n\n\n\n\n\nCAT5 crimper with wire cutter\n\n\n\n\n\n\n\nCut wires\n\n\n\n\n\n\n\n\n\nDigital scan of blade cut and wire cut"
+  },
+  {
+    "objectID": "02-utah-state/index.html#structural-parameters",
+    "href": "02-utah-state/index.html#structural-parameters",
+    "title": "Human Computer Data Interaction",
+    "section": "Structural Parameters",
+    "text": "Structural Parameters\n\n\nBladed Surfaces: \\(s \\in \\{2, 4\\}, 1 \\leq i \\leq s\\)\nCut Surfaces (on one wire): \\(w \\in \\{1, 2\\}, 1\\leq j\\leq w\\)"
+  },
+  {
+    "objectID": "02-utah-state/index.html#visual-examination",
+    "href": "02-utah-state/index.html#visual-examination",
+    "title": "Human Computer Data Interaction",
+    "section": "Visual Examination",
+    "text": "Visual Examination\n\n\n\nTest cuts made along the blade(s) of the tool\nAt least \\(N_{ij} = b_i/d_j\\) comparisons for each blade surface \\(i\\) and cut wire surface \\(j\\)\nManual alignment: estimate the minimum comparisons"
+  },
+  {
+    "objectID": "02-utah-state/index.html#visual-examination-1",
+    "href": "02-utah-state/index.html#visual-examination-1",
+    "title": "Human Computer Data Interaction",
+    "section": "Visual Examination",
+    "text": "Visual Examination\n\nAdj. comparisons are non-overlapping \\(\\Rightarrow\\) “independent”1\nThere are peak-valley dependence structures in profile data, but conditioning on tool/material/manufacturing, we would expect statistical independence between adjacent comparisons"
+  },
+  {
+    "objectID": "02-utah-state/index.html#algorithmic-comparison",
+    "href": "02-utah-state/index.html#algorithmic-comparison",
+    "title": "Human Computer Data Interaction",
+    "section": "Algorithmic Comparison",
+    "text": "Algorithmic Comparison\nScans -&gt; Cross Section -&gt; “Signature”\n(remove gross topology)\n\n\n\nCross-correlation is used to align signature from blade cut surface to signature from wire cut surface. Image credit: Heike Hofmann"
+  },
+  {
+    "objectID": "02-utah-state/index.html#number-of-comparisons",
+    "href": "02-utah-state/index.html#number-of-comparisons",
+    "title": "Human Computer Data Interaction",
+    "section": "Number of Comparisons",
+    "text": "Number of Comparisons\n\n\n\n \nMinimum (Manual)\nMaximum (Algorithm)\n\n\n\n\nblade size\n\\(b=15 \\text{mm}\\)\n\\(b=15000 \\mu \\text{m}\\)\n\n\ncutting surfaces\n\\(s=2\\)/blade\n\\(s=2\\)/blade\n\n\nwire size\n\\(d=2 \\text{mm}\\)\n\\(d=2000 \\mu \\text{m}\\)\n\n\nwire surface\n\\(w=1\\)\n\\(w=1\\)\n\n\nresolution\n\n\\(r=0.645 \\mu \\text{m/px}\\)\n\n\n# per side\n7.5\n20,156\n\n\n# total\n15\n40,312\n\n\n\nThis assumes a single wire and a single possible tool."
+  },
+  {
+    "objectID": "02-utah-state/index.html#so-how-bad-is-the-problem",
+    "href": "02-utah-state/index.html#so-how-bad-is-the-problem",
+    "title": "Human Computer Data Interaction",
+    "section": "So How Bad Is the Problem?",
+    "text": "So How Bad Is the Problem?\nFor error rate \\(e\\) and \\(n\\) comparisons\n\\[P(\\text{no false positive errors}) = 1 - \\left(1 - e\\right)^n\\]\n\nSimple probability 🎲 strikes again!"
+  },
+  {
+    "objectID": "02-utah-state/index.html#so-how-bad-is-the-problem-1",
+    "href": "02-utah-state/index.html#so-how-bad-is-the-problem-1",
+    "title": "Human Computer Data Interaction",
+    "section": "So How Bad Is the Problem?",
+    "text": "So How Bad Is the Problem?\n\nEstimated false positive error rate for striated comparisons from bullets and firing pins: 0.45 - 7.24%.\n\nPooled estimate: 2%\nNot enough error rate studies on wires\nBullets have additional structure to facilitate alignment\nWires have additional complexity\n\nshorter sequences\nmore dependence on angle\n\n\n\n\\(\\Rightarrow\\) 2% is a generous estimate…"
+  },
+  {
+    "objectID": "02-utah-state/index.html#so-how-bad-is-the-problem-2",
+    "href": "02-utah-state/index.html#so-how-bad-is-the-problem-2",
+    "title": "Human Computer Data Interaction",
+    "section": "So How Bad Is the Problem?",
+    "text": "So How Bad Is the Problem?\nTo keep the overall false positive rate under 10%…\n\n2% Error -&gt; 5 total comparisons.\nMinimum of 15 required to do even a simple wire-cut analysis."
+  },
+  {
+    "objectID": "02-utah-state/index.html#conclusions",
+    "href": "02-utah-state/index.html#conclusions",
+    "title": "Human Computer Data Interaction",
+    "section": "Conclusions",
+    "text": "Conclusions\n\nWire cut forensics are not scientifically sound using current analysis methods\n\n\nbut… this problem shows up in database searches, too!\n\nIAFIS (Integrated Automated Fingerprint ID System)\nNIBIN (Ballistics Database)\nNDIS (National DNA ID System) and CODIS (Combined DNA ID System)\nPDQ (Paint Data Query)\nFISH (Forensic ID System for Handwriting)"
+  },
+  {
+    "objectID": "02-utah-state/index.html#conclusions-1",
+    "href": "02-utah-state/index.html#conclusions-1",
+    "title": "Human Computer Data Interaction",
+    "section": "Conclusions",
+    "text": "Conclusions\n\nAutomatic intelligence algorithms are not a good substitute for investigative work\nExample: Oregon\n\n3 firearms examiners for the state\nMost firearms evidence run through NIBIN first\nPromising leads forwarded to examiners for manual assessment\n\n\nThis is a setup that could generate false-positives by design!\nOregon courts recently ruled that firearms and toolmark evidence are not admissible because the methods are not scientifically valid. (Oct 2025, 340 Or.App. 661, State v. Adams)"
+  },
+  {
+    "objectID": "02-utah-state/index.html#conclusions-2",
+    "href": "02-utah-state/index.html#conclusions-2",
+    "title": "Human Computer Data Interaction",
+    "section": "Conclusions",
+    "text": "Conclusions\n\nExaminers should report and the defense should require\n\noverall length/area of surfaces generated during the examination \\((b)\\)\ntotal consecutive length/area of recovered evidence \\((d)\\)\n\nStudies relating length/area of comparison surface to error rates are essential!\n\nNo available black-box error rate for wire cuts\nStudies should be difficult, like casework!\n\nAny database search used at any stage of the process should be disclosed along with\n\n\\(N\\) items in the database used for comparison\nNumber of results returned as ‘similar’ (top 20? top 5?)\nProtocols for confirmatory assessment"
+  },
+  {
+    "objectID": "02-utah-state/index.html#my-conclusions",
+    "href": "02-utah-state/index.html#my-conclusions",
+    "title": "Human Computer Data Interaction",
+    "section": "My Conclusions",
+    "text": "My Conclusions\n\nHow we communicate statistics (and data) matters! 💬\n\nGraphics are a vital tool 📊\n\nStatisticians have an ethical obligation to challenge faulty statistics\nFundamentals make a difference!\n\nsampling, measurement, experimental design, probability"
+  },
+  {
+    "objectID": "02-utah-state/index.html#questions",
+    "href": "02-utah-state/index.html#questions",
+    "title": "Human Computer Data Interaction",
+    "section": "Questions?",
+    "text": "Questions?"
+  },
+  {
+    "objectID": "02-madison/index.html#my-history",
+    "href": "02-madison/index.html#my-history",
+    "title": "Algorithms and AI for Statistical Forensics",
+    "section": "🏫 My History 🕰️",
+    "text": "🏫 My History 🕰️\n\n\n\n\n2009\nBS, Psychology & Applied Math \n\n\n2011\nMS, Statistics \n\n\n2015\nPh.D., StatisticsDissertation: Perception of Statistical Graphics\n\n\n2015-18\nStat. Analyst, NE Public Power District \n\n\n2018-19\nResearch Asst. Professor \n\n\n2020-24\nAssistant Professor \n\n\n2024-26\nAssociate Professor\n\n\n\n\n\nI started my academic journey in psychology and applied math, and got my PhD in statistics from Iowa State in 2015. I worked in industry for a couple of years before returning to academia, because there was some cool work going on at the Center for Statistics and Applications in Forensic Evidence (CSAFE). When the CSAFE funding came up for renewal, I transitioned to a tenure-track position at UNL and continued doing work with CSAFE remotely. In 2024, I applied for promotion and tenure early and was successful. And in 2025, UNL decided to eliminate their statistics department, and I started looking for universities that valued applied statistics and places where I could continue the cool research I’ve been doing."
+  },
+  {
+    "objectID": "02-madison/index.html#recent-work",
+    "href": "02-madison/index.html#recent-work",
+    "title": "Algorithms and AI for Statistical Forensics",
+    "section": "📊 Recent Work",
+    "text": "📊 Recent Work\n\n\nCan You See The Change? Visual Perception in Change Point Analysis (JCGS)\nFudolig, Robinson, and Vanderplas. 2025\nAutomated Residual Plot Assessment With the R Package autovi and the Shiny Application autovi.web (Aus & NZ Journal of Stats)\nLi, Cook, Tanaka, Vanderplas, and Ackermann. 2025\nPerception and Cognitive Implications of Logarithmic Scales for Exponentially Increasing Data: Perceptual Sensitivity Tested with Statistical Lineups (JCGS)\nRobinson, Howard, Vanderplas. 2025\nA Guide to Designing Experiments to Test Statistical Graphics (WIRE Computational Statistics)\nRobinson, Hofmann, Vanderplas. 2025\n\n\n\nLast year, I had several graphics papers: changepoint detection, using computer vision to evaluate residual plots, the use of log scales, and a how-to guide on testing graphics."
+  },
+  {
+    "objectID": "02-madison/index.html#recent-work-1",
+    "href": "02-madison/index.html#recent-work-1",
+    "title": "Algorithms and AI for Statistical Forensics",
+    "section": "🔬 Recent Work",
+    "text": "🔬 Recent Work\n\n\nMethodological problems in every black-box study of forensic firearm comparisons (Law, Probability, and Risk)\nCuellar, Vanderplas, Luby, Rosenblum. 2024\nIncorrect statistical reasoning in Guyll et al. leads to biased claims about strength of forensic evidence (PNAS)\nRosenblum, Chin, Ogburn, Nishimura, Westreich, Datta, Vanderplas, Cuellar, Thompson. 2024\nHidden Multiple Comparisons Increase Forensic Error Rates (PNAS)\nVanderplas, Carriquiry, Hofmann. 2024\nAmicus Briefs and Written Testimony filed in cases in Oregon, Washington, Michigan, Colorado, California, Maryland, Illinois, Washington D.C., New Jersey, Federal (Northern District of Florida)\n\n\n\nI’ve also been active in the forensics space, most recently, critiquing experimental design, examining the probability of false positive errors, and addressing some misconceptions. This year, I’ve submitted a bunch of written briefs in various cases – some collaborative, some single-author."
+  },
+  {
+    "objectID": "02-madison/index.html#coming-soon",
+    "href": "02-madison/index.html#coming-soon",
+    "title": "Algorithms and AI for Statistical Forensics",
+    "section": "Coming Soon! 🐣",
+    "text": "Coming Soon! 🐣\n\nForensics:\n\ncourtR package for legal transcript studies\nhighlightR package for conserved text analysis\nJuror Evaluation of Algorithms in Firearms and Toolmark Analysis\nWhat Comes Next: A Constructive Vision for Forensic Firearms Analysis\n\nGraphics:\n\nParallel Coordinate Plots with Mixed-Type Variables\nggdibbler - uncertainty visualization\nExperiential Learning with Statistical Graphics: Writing, Reflection, and Suspense\nAssessing Computer Vision models for Gestalt Perception\nVisual Statistical Inference: Design, Experiment, and Analysis\n\n\n\nAnd, of course, I have a lot of projects that are in various stages of “not officially published” yet – R packages that are on github but hopefully soon to be on CRAN, papers that are in progress, other papers that have been submitted, in both forensics and graphics."
+  },
+  {
+    "objectID": "02-madison/index.html#funded-grants",
+    "href": "02-madison/index.html#funded-grants",
+    "title": "Algorithms and AI for Statistical Forensics",
+    "section": "💵 Funded Grants",
+    "text": "💵 Funded Grants\n\n\n2025-2030, NSF CAREER, What Do You See? Perception, Decisions, and Statistical Graphics\n($550,000)\n2020-2024, NIST, CSAFE Project lead: Footwear Class Characteristics and Human Factors\n($20 mil for CSAFE, $456,930 sub-award)\n2019/2021 - 2023, NIJ, Automatic Acquisition and Identification of Footwear Class Characteristics\n($380,650)\n2020-2023, USDA-NRCS, Improving the Economic and Ecological Sustainability of US Crop Production through On-Farm Precision Experimentation\n($4 mil total, $400,000 for 3 UNL PIs)\n2019-2022, NSF, Overcoming the Rural Data Deficit to Improve Quality of Life and Community Services in Smart & Connected Small Communities\n($1.5 mil total, $123,445 sub-award)\n\n\n\nAnd, of course, I’ve had some success in getting funding to cover some of these research projects – most recently, I got an NSF CAREER award that started in October, but I’ve also gotten funding from NIJ and worked on a USDA collaborative multistate grant for farmers who want to design field trials to optimize profitability.\nSo, with that overview out of the way, I want to talk today about statistical forensics. The graphics research is interesting and fun, but I had to choose, and the forensics work is more AI connected and is also very cool."
+  },
+  {
+    "objectID": "02-madison/index.html#forensics-under-fire",
+    "href": "02-madison/index.html#forensics-under-fire",
+    "title": "Algorithms and AI for Statistical Forensics",
+    "section": "Forensics under Fire",
+    "text": "Forensics under Fire\n\n\n\n\n\n\n\n\nScientific underpinnings\nEmpirical error rates\n\nWell designed studies\nRepresentative of casework\nAccuracy, Repeatability, Reproducibility\n\nSubjective methods – special concerns\n\nTesting issues\nPotential for bias"
+  },
+  {
+    "objectID": "02-madison/index.html#current-status-of-forensic-disciplines",
+    "href": "02-madison/index.html#current-status-of-forensic-disciplines",
+    "title": "Algorithms and AI for Statistical Forensics",
+    "section": "Current Status of Forensic Disciplines",
+    "text": "Current Status of Forensic Disciplines\n\n\n\n\n\n\n\n\n\n\n\n\n\nDiscipline\nMethod\nValidity\nEvidence\n\n\n\n\n🧬\nDNA\n🧪\n✅\n📚\n\n\n🧬\nDNA mixture\n🧪+🔎\n❓\n📖📖\n\n\n🫆\nFingerprint\n🔎 💻\n✅1\n📚\n\n\n🔫\nFirearms\n🔎 💻2\n❓\n📖\n\n\n👟\nFootwear\n🔎\n❓\n\n\n\n🦱\nHair\n🔎\n🚩🚩\n📚\n\n\n😁\nBitemark\n🔎\n🚩🚩\n📚\n\n\n\n\n\n\n\n\n\n\n\n\nMeaning\n\n\n\n\n🧪\nLab\n\n\n🔎\nSubjective\n\n\n💻\nAlgorithm\n\n\n✅\nValid\n\n\n❓\nUnknown\n\n\n🚩\nInvalid\n\n\n\n\nhigh error rateAlgorithms not used in practice"
+  },
+  {
+    "objectID": "02-madison/index.html#hard-problems",
+    "href": "02-madison/index.html#hard-problems",
+    "title": "Algorithms and AI for Statistical Forensics",
+    "section": "Hard Problems",
+    "text": "Hard Problems\n\n\nFar better an approximate answer to the right question, which is often vague, than an exact answer to the wrong question, which can always be made precise. ― John Tukey\n\n\n\nThe math is (usually) not the hard part\n\nApproaching the problem in a way that is tractable\nGetting the (right) data\nEncouraging adoption of statistical solutions\n\nPractical data science and useful/ethical AI:\nfocus on the human element"
+  },
+  {
+    "objectID": "02-madison/index.html#shoe-problems",
+    "href": "02-madison/index.html#shoe-problems",
+    "title": "Algorithms and AI for Statistical Forensics",
+    "section": "Shoe Problems",
+    "text": "Shoe Problems\n\n\n\n\n\nGeographical Variation\n\n\n\n\n\n\n\n\nSimilar patterns, different shoes\n\n\n\n\n\n\n\n\nWhat is the evidentiary value?\n\n\n\n\nSo let me set the stage: shoe prints aren’t used in the US much in part because they are hard to work with and require collection training. They’re more commonly used in the UK and Israel.\nAnd shoes vary a lot geographically - y’all have boots for winter, Floridians have sneakers.\nIn addition, there’s not a database of shoes, and lots of different shoes have similar patterns.\nSo when there is something found at a crime scene, even if you can find a “match” for that evidence, you then are faced with “what does it mean?” – if it’s a rare shoe, then it might be important, but if it’s a print from Uggs in the winter in a college town, maybe not."
+  },
+  {
+    "objectID": "02-madison/index.html#local-shoe-features",
+    "href": "02-madison/index.html#local-shoe-features",
+    "title": "Algorithms and AI for Statistical Forensics",
+    "section": "Local Shoe Features",
+    "text": "Local Shoe Features\n\n\n\n\n\nIdentify relevant features within the scans\nDefine a similarity metric for shoe images based on shapes and locations\nAssess the frequency of similar shoes in the sampled data\n\n\n\nSo, we decided to attack this problem by collecting data – first, I worked with some engineers to design a shoe scanner that could be embedded in the sidewalk, but Iowa State wasn’t keen on us digging up sidewalks to test it, so we made ramps.\nThe goal was to take pictures of people’s shoe soles (just the bit in contact with the surface) and then parse that data using computer vision models."
+  },
+  {
+    "objectID": "02-madison/index.html#computer-vision-is-awesome",
+    "href": "02-madison/index.html#computer-vision-is-awesome",
+    "title": "Algorithms and AI for Statistical Forensics",
+    "section": "2018: Computer Vision is Awesome!",
+    "text": "2018: Computer Vision is Awesome!\n\n\n\n\n\n2010s - Computer Vision models start actually solving problems!\n~2018 - Birds, plant species are all ID-able using apps!\n\n\n\n\n\n\n\n\n\n\n\nComputer vision models can identify shapes, right?"
+  },
+  {
+    "objectID": "02-madison/index.html#complication-different-cv-models",
+    "href": "02-madison/index.html#complication-different-cv-models",
+    "title": "Algorithms and AI for Statistical Forensics",
+    "section": "Complication: Different CV Models",
+    "text": "Complication: Different CV Models\nWe can reasonably pose this problem in 3 different ways:\n\n\n\n\n\n\nClassification: same-size regions + labels\n\n\n\n\n\n\n\nObject Detection: bounding box + label\n\n\n\n\n\n\n\nImage segmentation: region + label\n\n\n\n\n\n\nEach method requires a different labeling schema, annotation method, and data format.\nSwitching between them is annoying."
+  },
+  {
+    "objectID": "02-madison/index.html#attempt-1-vgg16",
+    "href": "02-madison/index.html#attempt-1-vgg16",
+    "title": "Algorithms and AI for Statistical Forensics",
+    "section": "Attempt #1: VGG16",
+    "text": "Attempt #1: VGG16\n\n\n\n\nBowtie\n\n\nChevron\n\n\nCircle\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLine\n\n\nPolygon\n\n\nQuadrilateral\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nStar\n\n\nText\n\n\nTriangle"
+  },
+  {
+    "objectID": "02-madison/index.html#attempt-1-vgg16-1",
+    "href": "02-madison/index.html#attempt-1-vgg16-1",
+    "title": "Algorithms and AI for Statistical Forensics",
+    "section": "Attempt #1: VGG16",
+    "text": "Attempt #1: VGG16"
+  },
+  {
+    "objectID": "02-madison/index.html#attempt-1-vgg16-2",
+    "href": "02-madison/index.html#attempt-1-vgg16-2",
+    "title": "Algorithms and AI for Statistical Forensics",
+    "section": "Attempt #1: VGG16",
+    "text": "Attempt #1: VGG16"
+  },
+  {
+    "objectID": "02-madison/index.html#attempt-2-synthetic-data",
+    "href": "02-madison/index.html#attempt-2-synthetic-data",
+    "title": "Algorithms and AI for Statistical Forensics",
+    "section": "Attempt #2: Synthetic Data",
+    "text": "Attempt #2: Synthetic Data\nCan CNNs even distinguish between different shapes?\n\n\n\n\n\n\n\nClass Examples"
+  },
+  {
+    "objectID": "02-madison/index.html#attempt-2-synthetic-data-1",
+    "href": "02-madison/index.html#attempt-2-synthetic-data-1",
+    "title": "Algorithms and AI for Statistical Forensics",
+    "section": "Attempt #2: Synthetic Data",
+    "text": "Attempt #2: Synthetic Data"
+  },
+  {
+    "objectID": "02-madison/index.html#attempt-2-synthetic-data-2",
+    "href": "02-madison/index.html#attempt-2-synthetic-data-2",
+    "title": "Algorithms and AI for Statistical Forensics",
+    "section": "Attempt #2: Synthetic Data",
+    "text": "Attempt #2: Synthetic Data\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nImage\nCircle\n3\n4\n5\n6\n7\n8\n9\nStar\n\n\n\n\n\n.9999\n0\n0\n0\n0\n0\n0\n0\n0\n\n\n\n.9999\n0\n0\n0\n0\n0\n0\n0\n0\n\n\n\n\n\nShoe data is complicated to label\nPredictions made on ambiguous data don’t work as well as we’d like"
+  },
+  {
+    "objectID": "02-madison/index.html#why-doesnt-this-work",
+    "href": "02-madison/index.html#why-doesnt-this-work",
+    "title": "Algorithms and AI for Statistical Forensics",
+    "section": "Why Doesn’t This Work?",
+    "text": "Why Doesn’t This Work?\n\nMoravec’s Paradox:\n\n\nIt is comparatively easy to make computers exhibit adult level performance on intelligence tests or playing checkers, and difficult or impossible to give them the skills of a one-year-old when it comes to perception and mobility."
+  },
+  {
+    "objectID": "02-madison/index.html#why-doesnt-this-work-1",
+    "href": "02-madison/index.html#why-doesnt-this-work-1",
+    "title": "Algorithms and AI for Statistical Forensics",
+    "section": "Why Doesn’t This Work?",
+    "text": "Why Doesn’t This Work?\n\nComputer vision models don’t have Gestalt perception\nShapes are a great feature set for humans\nmaybe not a great feature base for computer vision models?\nIt’s important to understand the model’s limitations"
+  },
+  {
+    "objectID": "02-madison/index.html#section",
+    "href": "02-madison/index.html#section",
+    "title": "Algorithms and AI for Statistical Forensics",
+    "section": "",
+    "text": "Joint work with Heike Hofmann and Joe Zemmels, Kiegan Rice, Ganesh Krishnan, Will Ju, Nate Garton, Eric Hare\n\n\n\n\n    \nbulletxtrctr package\n\n\n\nThis work was partially funded by the Center for Statistics and Applications in Forensic Evidence (CSAFE) through Cooperative Agreements 70NANB15H176 and 70NANB20H019 between NIST and Iowa State University, which includes activities carried out at Carnegie Mellon University, Duke University, University of California Irvine, University of Virginia, West Virginia University, University of Pennsylvania, Swarthmore College and University of Nebraska, Lincoln."
+  },
+  {
+    "objectID": "02-madison/index.html#firearms-toolmark-examination",
+    "href": "02-madison/index.html#firearms-toolmark-examination",
+    "title": "Algorithms and AI for Statistical Forensics",
+    "section": "Firearms & Toolmark Examination",
+    "text": "Firearms & Toolmark Examination"
+  },
+  {
+    "objectID": "02-madison/index.html#firearms-toolmark-examination-1",
+    "href": "02-madison/index.html#firearms-toolmark-examination-1",
+    "title": "Algorithms and AI for Statistical Forensics",
+    "section": "Firearms & Toolmark Examination",
+    "text": "Firearms & Toolmark Examination"
+  },
+  {
+    "objectID": "02-madison/index.html#building-a-data-pipeline",
+    "href": "02-madison/index.html#building-a-data-pipeline",
+    "title": "Algorithms and AI for Statistical Forensics",
+    "section": "Building a Data Pipeline",
+    "text": "Building a Data Pipeline\n\nWrangle scans with x3ptools\n\nusually 6 land engraved area scans per bullet\norientation - (0,0) top or bottom left?\nscale - work in microns, not meters.\nnested tibbles to keep data organized"
+  },
+  {
+    "objectID": "02-madison/index.html#building-a-data-processing-pipeline",
+    "href": "02-madison/index.html#building-a-data-processing-pipeline",
+    "title": "Algorithms and AI for Statistical Forensics",
+    "section": "Building a Data Processing Pipeline",
+    "text": "Building a Data Processing Pipeline\n\nWrangle scans with x3ptools\nFind a good “crosscut” -&gt; reduce to 1 dimensional data"
+  },
+  {
+    "objectID": "02-madison/index.html#building-a-data-processing-pipeline-1",
+    "href": "02-madison/index.html#building-a-data-processing-pipeline-1",
+    "title": "Algorithms and AI for Statistical Forensics",
+    "section": "Building a Data Processing Pipeline",
+    "text": "Building a Data Processing Pipeline\n\nWrangle scans with x3ptools\nFind a good “crosscut” -&gt; reduce to 1 dimensional data"
+  },
+  {
+    "objectID": "02-madison/index.html#building-a-data-processing-pipeline-2",
+    "href": "02-madison/index.html#building-a-data-processing-pipeline-2",
+    "title": "Algorithms and AI for Statistical Forensics",
+    "section": "Building a Data Processing Pipeline",
+    "text": "Building a Data Processing Pipeline\n\nWrangle scans with x3ptools\nFind a good “crosscut”\nKeep only the land area – cut off grooves\nThis was surprisingly hard!"
+  },
+  {
+    "objectID": "02-madison/index.html#building-a-data-processing-pipeline-3",
+    "href": "02-madison/index.html#building-a-data-processing-pipeline-3",
+    "title": "Algorithms and AI for Statistical Forensics",
+    "section": "Building a Data Processing Pipeline",
+    "text": "Building a Data Processing Pipeline\n\nWrangle scans with x3ptools\nFind a good “crosscut”\nKeep only the land area – cut off grooves\nRemove surface curvature"
+  },
+  {
+    "objectID": "02-madison/index.html#building-a-data-processing-pipeline-4",
+    "href": "02-madison/index.html#building-a-data-processing-pipeline-4",
+    "title": "Algorithms and AI for Statistical Forensics",
+    "section": "Building a Data Processing Pipeline",
+    "text": "Building a Data Processing Pipeline\n\nWrangle scans with x3ptools\nFind a good “crosscut”\nKeep only the land area – cut off grooves\nRemove surface curvature\nAlign signatures"
+  },
+  {
+    "objectID": "02-madison/index.html#building-a-data-processing-pipeline-5",
+    "href": "02-madison/index.html#building-a-data-processing-pipeline-5",
+    "title": "Algorithms and AI for Statistical Forensics",
+    "section": "Building a Data Processing Pipeline",
+    "text": "Building a Data Processing Pipeline\n\nWrangle scans with x3ptools\nFind a good “crosscut”\nKeep only the land area – cut off grooves\nRemove surface curvature\nAlign signatures\nExtract features"
+  },
+  {
+    "objectID": "02-madison/index.html#building-a-data-processing-pipeline-6",
+    "href": "02-madison/index.html#building-a-data-processing-pipeline-6",
+    "title": "Algorithms and AI for Statistical Forensics",
+    "section": "Building a Data Processing Pipeline",
+    "text": "Building a Data Processing Pipeline\n\n\n\nWrangle scans with x3ptools\nFind a good “crosscut”\nKeep only the land area\nRemove surface curvature\nAlign signatures\nExtract features\nCompute similarity score"
+  },
+  {
+    "objectID": "02-madison/index.html#important-features",
+    "href": "02-madison/index.html#important-features",
+    "title": "Algorithms and AI for Statistical Forensics",
+    "section": "Important Features",
+    "text": "Important Features\n\nEvery part of the processing pipeline has diagnostics\n\nDesign for human-in-the-loop processing\nExplainability matters!\n\nNeed smart defaults + ability to override\nMost features engineered to correspond to visual signals used by examiners\n\nBoosts signal in random forest\nCross-correlation is usually “good enough”"
+  },
+  {
+    "objectID": "02-madison/index.html#hidden-multiple-comparisons-increase-forensic-error-rates",
+    "href": "02-madison/index.html#hidden-multiple-comparisons-increase-forensic-error-rates",
+    "title": "Algorithms and AI for Statistical Forensics",
+    "section": "Hidden Multiple Comparisons Increase Forensic Error Rates",
+    "text": "Hidden Multiple Comparisons Increase Forensic Error Rates\nProceedings of the National Academy of Sciences, 2024\nJoint work with Heike Hofmann and Alicia Carriquiry\n\n\n\n\n    \nPNAS Paper Link\n\n\n\nThis work was partially funded by the Center for Statistics and Applications in Forensic Evidence (CSAFE) through Cooperative Agreements 70NANB15H176 and 70NANB20H019 between NIST and Iowa State University, which includes activities carried out at Carnegie Mellon University, Duke University, University of California Irvine, University of Virginia, West Virginia University, University of Pennsylvania, Swarthmore College and University of Nebraska, Lincoln."
+  },
+  {
+    "objectID": "02-madison/index.html#toolmark-examination-primer",
+    "href": "02-madison/index.html#toolmark-examination-primer",
+    "title": "Algorithms and AI for Statistical Forensics",
+    "section": "Toolmark Examination Primer",
+    "text": "Toolmark Examination Primer\n\n\n\n\n\n\nCAT5 crimper with wire cutter\n\n\n\n\n \n\n\n\n\n\nCut wires\n\n\n\n\n\n\n\n\n\nDigital scan of blade cut and wire cut\n\n\n\n\n\n\nHow do we know wire comparison is valid?"
+  },
+  {
+    "objectID": "02-madison/index.html#a-specific-case-jimmy-genrich",
+    "href": "02-madison/index.html#a-specific-case-jimmy-genrich",
+    "title": "Algorithms and AI for Statistical Forensics",
+    "section": "A Specific Case – Jimmy Genrich",
+    "text": "A Specific Case – Jimmy Genrich"
+  },
+  {
+    "objectID": "02-madison/index.html#motivation",
+    "href": "02-madison/index.html#motivation",
+    "title": "Algorithms and AI for Statistical Forensics",
+    "section": "Motivation",
+    "text": "Motivation\n\n\nAt trial, O’Neil testified that tools like the wire cutters found in Genrich’s residence were the only tools that could have been used to make the pipe bombs. “Agent O’Neil opined that the three of Mr. Genrich’s tools were the only tools in the world that could have made certain marks found on pieces from the four bombs,” Judge Gurley wrote in Monday’s opinion.\n\n\nO’Neil was asked specifically at trial what he meant by the phrase “to the exclusion of any other tool.” “That the individual jaw, the location within that jaw on that particular side, was identified as having cut the wire in question to a degree of certainty to exclude any other tool,” he said, according to court transcripts referenced in Gurley’s decision. O’Neil said this was true of needle-nosed pliers used on the bomb, slip-joint pliers, as well as the wire cutter.\n\n\nSource (emphasis added)"
+  },
+  {
+    "objectID": "02-madison/index.html#personal-motivation",
+    "href": "02-madison/index.html#personal-motivation",
+    "title": "Algorithms and AI for Statistical Forensics",
+    "section": "Personal Motivation",
+    "text": "Personal Motivation\n\n\n\nMy house has \\(\\approx\\) 982 cm of (easily accessible) blade surface which might be used to cut wires. My dad has \\(\\approx\\) 2243 cm of blade surface in his shop. No one in either location is a craftsperson."
+  },
+  {
+    "objectID": "02-madison/index.html#constructive-scientific-proof-from-first-principles",
+    "href": "02-madison/index.html#constructive-scientific-proof-from-first-principles",
+    "title": "Algorithms and AI for Statistical Forensics",
+    "section": "Constructive Scientific Prooffrom first principles",
+    "text": "Constructive Scientific Prooffrom first principles\n\n\n\nUnderstand\n\nhow tools make marks\ntool wear over time\ntool manufacturing processes\ntool/material interaction\nmark type/frequency distribution\n\nTrack\n\nFrequency of tools in a local population\n\n\n\n😓\n\n\nScientifically, we might boil this down to a series of engineering and materials science problems - understanding the types of marks which can occur on different types of tool materials through manufacture, wear, etc., and then understanding in turn how those tools transfer marks to other surfaces and how force, angle, and material hardness impact those marks.\nUnfortunately, though, the number of different characteristics gets very quickly out of control and you end up with an exponential number of interactions very quickly.\nEstablishing the discipline from first principles is … difficult, to say the least. You could probably do it with a combination of time, stubbornness, and statistical inference, but there is always a chance that a new manufacturing method will be developed that will produce new types/classes of markings.\nBut, there are other ways to handle this problem."
+  },
+  {
+    "objectID": "02-madison/index.html#a-different-angle-on-the-problem",
+    "href": "02-madison/index.html#a-different-angle-on-the-problem",
+    "title": "Algorithms and AI for Statistical Forensics",
+    "section": "📐 A Different Angle on the Problem",
+    "text": "📐 A Different Angle on the Problem\n\n\\(e^{(1)}\\): error rate for a single comparison\n\\(e^{(N)}\\): overall error rate, \\(N\\) comparisons\nCalculate \\(N\\): # comparisons between tool and evidence\nUltimate question:\nWhat does \\(e^{(1)}\\) need to be for \\(e^{(N)}\\) to be low1?\n\nLow enough will be determined by courts⚖️, not statisticians… 🫣"
+  },
+  {
+    "objectID": "02-madison/index.html#structural-parameters",
+    "href": "02-madison/index.html#structural-parameters",
+    "title": "Algorithms and AI for Statistical Forensics",
+    "section": "Structural Parameters",
+    "text": "Structural Parameters\n\n\nBladed Surfaces: \\(s \\in \\{2, 4\\}, 1 \\leq i \\leq s\\)\nCut Surfaces (on one wire): \\(w \\in \\{1, 2\\}, 1\\leq j\\leq w\\)"
+  },
+  {
+    "objectID": "02-madison/index.html#visual-examination",
+    "href": "02-madison/index.html#visual-examination",
+    "title": "Algorithms and AI for Statistical Forensics",
+    "section": "Visual Examination",
+    "text": "Visual Examination\n\n\n\nTest cuts made along the blade(s) of the tool\nAt least \\(N_{ij} = b_i/d_j\\) comparisons for each blade surface \\(i\\) and cut wire surface \\(j\\)\nManual alignment: estimate the minimum comparisons"
+  },
+  {
+    "objectID": "02-madison/index.html#visual-examination-1",
+    "href": "02-madison/index.html#visual-examination-1",
+    "title": "Algorithms and AI for Statistical Forensics",
+    "section": "Visual Examination",
+    "text": "Visual Examination\n\nAdj. comparisons are non-overlapping \\(\\Rightarrow\\) “independent”1\nThere are peak-valley dependence structures in profile data, but conditioning on tool/material/manufacturing, we would expect statistical independence between adjacent comparisons"
+  },
+  {
+    "objectID": "02-madison/index.html#algorithmic-comparison",
+    "href": "02-madison/index.html#algorithmic-comparison",
+    "title": "Algorithms and AI for Statistical Forensics",
+    "section": "Algorithmic Comparison",
+    "text": "Algorithmic Comparison\nScans -&gt; Cross Section -&gt; “Signature”\n(remove gross topology)\n\n\n\nCross-correlation is used to align signature from blade cut surface to signature from wire cut surface. Image credit: Heike Hofmann"
+  },
+  {
+    "objectID": "02-madison/index.html#number-of-comparisons",
+    "href": "02-madison/index.html#number-of-comparisons",
+    "title": "Algorithms and AI for Statistical Forensics",
+    "section": "Number of Comparisons",
+    "text": "Number of Comparisons\n\n\n\n \nMinimum (Manual)\nMaximum (Algorithm)\n\n\n\n\nblade size\n\\(b=15 \\text{mm}\\)\n\\(b=15000 \\mu \\text{m}\\)\n\n\ncutting surfaces\n\\(s=2\\)/blade\n\\(s=2\\)/blade\n\n\nwire size\n\\(d=2 \\text{mm}\\)\n\\(d=2000 \\mu \\text{m}\\)\n\n\nwire surface\n\\(w=1\\)\n\\(w=1\\)\n\n\nresolution\n\n\\(r=0.645 \\mu \\text{m/px}\\)\n\n\n# per side\n7.5\n20,156\n\n\n# total\n15\n40,312\n\n\n\nThis assumes a single wire and a single possible tool."
+  },
+  {
+    "objectID": "02-madison/index.html#so-how-bad-is-the-problem",
+    "href": "02-madison/index.html#so-how-bad-is-the-problem",
+    "title": "Algorithms and AI for Statistical Forensics",
+    "section": "So How Bad Is the Problem?",
+    "text": "So How Bad Is the Problem?\nFor error rate \\(e\\) and \\(n\\) comparisons\n\\[P(\\text{no false positive errors}) = 1 - \\left(1 - e\\right)^n\\]\n\nSimple probability 🎲 strikes again!"
+  },
+  {
+    "objectID": "02-madison/index.html#so-how-bad-is-the-problem-1",
+    "href": "02-madison/index.html#so-how-bad-is-the-problem-1",
+    "title": "Algorithms and AI for Statistical Forensics",
+    "section": "So How Bad Is the Problem?",
+    "text": "So How Bad Is the Problem?\n\nEstimated false positive error rate for striated comparisons from bullets and firing pins: 0.45 - 7.24%.\n\nPooled estimate: 2%\nNot enough error rate studies on wires\nBullets have additional structure to facilitate alignment\nWires have additional complexity\n\nshorter sequences\nmore dependence on angle\n\n\n\n\\(\\Rightarrow\\) 2% is a generous estimate…"
+  },
+  {
+    "objectID": "02-madison/index.html#so-how-bad-is-the-problem-2",
+    "href": "02-madison/index.html#so-how-bad-is-the-problem-2",
+    "title": "Algorithms and AI for Statistical Forensics",
+    "section": "So How Bad Is the Problem?",
+    "text": "So How Bad Is the Problem?\nTo keep the overall false positive rate under 10%…\n\n2% Error -&gt; 5 total comparisons.\nMinimum of 15 required to do even a simple wire-cut analysis."
+  },
+  {
+    "objectID": "02-madison/index.html#wire-cuts-conclusions",
+    "href": "02-madison/index.html#wire-cuts-conclusions",
+    "title": "Algorithms and AI for Statistical Forensics",
+    "section": "Wire Cuts Conclusions",
+    "text": "Wire Cuts Conclusions\n\nWire cut forensics are not scientifically sound using current analysis methods\n\n\nbut… this problem shows up in database searches, too!\n\nIAFIS (Integrated Automated Fingerprint ID System)\nNIBIN (Ballistics Database)\nNDIS (National DNA ID System) and CODIS (Combined DNA ID System)\nPDQ (Paint Data Query)\nFISH (Forensic ID System for Handwriting)"
+  },
+  {
+    "objectID": "02-madison/index.html#wire-cuts-conclusions-1",
+    "href": "02-madison/index.html#wire-cuts-conclusions-1",
+    "title": "Algorithms and AI for Statistical Forensics",
+    "section": "Wire Cuts Conclusions",
+    "text": "Wire Cuts Conclusions\n\nAutomatic intelligence algorithms are not a good substitute for investigative work\nExample: Oregon\n\n3 firearms examiners for the state\nMost firearms evidence run through NIBIN first\nPromising leads forwarded to examiners for manual assessment\n\n\nThis is a setup that could generate false-positives by design!"
+  },
+  {
+    "objectID": "02-madison/index.html#wire-cuts-conclusions-2",
+    "href": "02-madison/index.html#wire-cuts-conclusions-2",
+    "title": "Algorithms and AI for Statistical Forensics",
+    "section": "Wire Cuts Conclusions",
+    "text": "Wire Cuts Conclusions\n\nExaminers should report and the defense should require\n\noverall length/area of surfaces generated during the examination \\((b)\\)\ntotal consecutive length/area of recovered evidence \\((d)\\)\n\nStudies relating length/area of comparison surface to error rates are essential!\n\nNo available black-box error rate for wire cuts\nStudies should be difficult, like casework!\n\nAny database search used at any stage of the process should be disclosed along with\n\n\\(N\\) items in the database used for comparison\nNumber of results returned as ‘similar’ (top 20? top 5?)\nProtocols for confirmatory assessment"
+  },
+  {
+    "objectID": "02-madison/index.html#a-happy-ending",
+    "href": "02-madison/index.html#a-happy-ending",
+    "title": "Algorithms and AI for Statistical Forensics",
+    "section": "A Happy Ending",
+    "text": "A Happy Ending"
+  },
+  {
+    "objectID": "02-madison/index.html#socially-responsible-ai",
+    "href": "02-madison/index.html#socially-responsible-ai",
+    "title": "Algorithms and AI for Statistical Forensics",
+    "section": "Socially Responsible AI",
+    "text": "Socially Responsible AI\n\nModel assumptions and capabilities are critical …\nand can be a problem\n\nIdentify critical model capabilities\nAssess whether the model(s) are fit for purpose\n\nDesign critical algorithms to\n\nbe explainable by design\nhave a human in the loop\n\nGet (and stay) involved in an applied domain"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Presentations in 2026",
+    "section": "",
+    "text": "Visualization and Uncertainty\n\n\n\nSusan Vanderplas\n\n\nAug 3, 2025\n\n\n\n\n\n\nLocation\n\n\nBoston, MA\n\n\n\n\n\nTopics\n\n\ngraphics\n\n\n\n\n\n\n\n\n\n\n\n\" class=\"thumbnail-image card-img\" style=\"height: 150px;\" &gt;\n\n\n\nHuman Computer Data Interaction\n\n\n\nSusan Vanderplas\n\n\nFeb 5, 2026\n\n\n\n\n\n\nLocation\n\n\nLogan, UT\n\n\n\n\n\nTopics\n\n\nstatistics,forensics,graphics,data science\n\n\n\n\n\n\n\n\n\n\n\n\" class=\"thumbnail-image card-img\" style=\"height: 150px;\" &gt;\n\n\n\nAlgorithms and AI for Statistical Forensics\n\n\n\nSusan Vanderplas\n\n\nFeb 26, 2026\n\n\n\n\n\n\nLocation\n\n\nMadison, WI\n\n\n\n\n\nTopics\n\n\nstatistics,forensics,graphics,data science\n\n\n\n\n\n\n\n\n\n\n\n\n\nHow NOT to Measure Academic Performance\n\n\n\n\n\n\nApr 2, 2026\n\n\n\n\n\n\nLocation\n\n\nZoom\n\n\n\n\n\nTopics\n\n\n \n\n\n\n\n\n\n\n\n\n\n\n\" class=\"thumbnail-image card-img\" style=\"height: 150px;\" &gt;\n\n\n\nIntroductions\n\n\n\nSusan Vanderplas\n\n\nAug 21, 2026\n\n\n\n\n\n\nLocation\n\n\nLogan, UT\n\n\n\n\n\nTopics\n\n\nintroduction\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "03-Penn-metrics/budget-timeline.html",
+    "href": "03-Penn-metrics/budget-timeline.html",
+    "title": "Budget Reduction Timeline",
+    "section": "",
+    "text": "Interim EVC Button reported that the rubric for informing budget reductions comes from the Coordinating Commission of Postsecondary Education which was an entity created by the Nebraska Legislature. The CCPE has guidelines to assess minimum performance standards for all academic programs across the state and this is done on a seven-year cycle. – March 11, 2025 Faculty Senate Exec Cmte Minutes\n\n\n\n\n\nWhat data is being collected that helps preserve academic programs? – April 22, 2025 FS Exec Minutes\n\nInterim EVC Button:\n\nTeaching\n\ntotal number of majors and degrees are awarded over a certain period of time,\nwhat the student credit hour production is, and\nhow many degrees are awarded over a five-year period.\nfirst-year retention rates,\nstudent credit hours generated per unit FTE\ngrowth over time as well\ntotal demand\n\nAAU phase one indicators\n\nexternal grants\nbooks\ncitation counts\nawards\nscholarly research index score\n\ncomposite measurement\ncompares units to peer units\nUnits compared to AAU public universities\n\n\nbroader story about engagement and extension\nAPC standards for reviewing academic programs in the case of significant budget reductions\n\nprogram is unique and the only one of its kind in Nebraska,\nprogram is the only PhD program in the state\nprogram meets an important unique workforce demand\n\n\n\n\n\nMay 13, 2025 FS Exec Minutes:\n\nTimeline: Proposal from ELT by June 30, but not planning to start reduction until fall\n\n\n\n\nJune 10, 2025 FS Exec Minutes:\n\nAre there any updates on the budget situation?\n\n\nDeficit around $20 million\nCuts to take place over &lt; 1 year\nSystem wants to see us take the full cut this year and not use other funding sources to cover it.\n\n\n“We will be able to survive the 20 million reduction but there will be a reduction in force and it is likely that we will not offer all the degrees we offer today.”\n\nJune 24, 2025 FS Exec Minutes\n\nInterim VC Heng-Moss:\n\n“holistic approach” using multiple factors – metrics, strengths, needs of the state, workforce alignment\n\nInterim EVC Button:\n\nCommitted to being transparent and inclusive with the reduction process.\nDraft metrics presented to APC, Deans, ELT, and Department exec officers\nStill no formalized budget reduction plan, nothing has been approved yet\nPreliminary plan to Chancellor June 30th\nPlan will need to be ready for the December Board of Regents meeting\n\n\n\nFaculty members want to help with trying to resolve the problem but there appears to be some gatekeeping on the part of chairs and deans to allow faculty participation.\n\n\n\n\nJuly 22, 2025 FS Exec Minutes\nWhen do you expect to consult with the Senate Exec Committee and APC about budget reductions?\n\nInterim EVC Button: Consultation begins with APC officers this week, full APC in early August, public hearings in Sept/Oct\nChancellor:\n&gt; Interim EVC Button has done an excellent job working with the deans to analyze data on metrics which will help us to make strategic budget reduction decisions. Interim EVC Button reported that priorities will look at academic excellence and student success, hands on experience for students, research excellence and engagement with Nebraska Extension.\n\n\n\n\nAugust 5, 2025 FS Exec Minutes\nTimeline:\n\nAug 4 - Chancellor invokes Procedures for Sig. Budget Reallocation and Reduction\nAPC considers and approves the framework\nAPC considers the budget reduction plan\nOct 24 - APC process concludes\nNov - Chancellor’s plan given to Acad Affairs and Business/Finance Cmtes of BoR\nDec - BOR considers plan\n\nInterim EVC Button: Actual reduction process will take a year after approval\nAugust 26, 2025 FS Exec Minutes\nChancellor: He asked Interim EVC Button and the Executive Leadership Team (ELT) to develop the framework and metrics for the proposed budget reductions.\nVC Davis: Plan and information on metrics will be made available, but data is proprietary.\nChancellor: Metrics based on both where we are and where we want to be"
+  },
+  {
+    "objectID": "03-Penn-metrics/budget-timeline.html#faculty-senate-executive-committee",
+    "href": "03-Penn-metrics/budget-timeline.html#faculty-senate-executive-committee",
+    "title": "Budget Reduction Timeline",
+    "section": "",
+    "text": "Interim EVC Button reported that the rubric for informing budget reductions comes from the Coordinating Commission of Postsecondary Education which was an entity created by the Nebraska Legislature. The CCPE has guidelines to assess minimum performance standards for all academic programs across the state and this is done on a seven-year cycle. – March 11, 2025 Faculty Senate Exec Cmte Minutes\n\n\n\n\n\nWhat data is being collected that helps preserve academic programs? – April 22, 2025 FS Exec Minutes\n\nInterim EVC Button:\n\nTeaching\n\ntotal number of majors and degrees are awarded over a certain period of time,\nwhat the student credit hour production is, and\nhow many degrees are awarded over a five-year period.\nfirst-year retention rates,\nstudent credit hours generated per unit FTE\ngrowth over time as well\ntotal demand\n\nAAU phase one indicators\n\nexternal grants\nbooks\ncitation counts\nawards\nscholarly research index score\n\ncomposite measurement\ncompares units to peer units\nUnits compared to AAU public universities\n\n\nbroader story about engagement and extension\nAPC standards for reviewing academic programs in the case of significant budget reductions\n\nprogram is unique and the only one of its kind in Nebraska,\nprogram is the only PhD program in the state\nprogram meets an important unique workforce demand\n\n\n\n\n\nMay 13, 2025 FS Exec Minutes:\n\nTimeline: Proposal from ELT by June 30, but not planning to start reduction until fall\n\n\n\n\nJune 10, 2025 FS Exec Minutes:\n\nAre there any updates on the budget situation?\n\n\nDeficit around $20 million\nCuts to take place over &lt; 1 year\nSystem wants to see us take the full cut this year and not use other funding sources to cover it.\n\n\n“We will be able to survive the 20 million reduction but there will be a reduction in force and it is likely that we will not offer all the degrees we offer today.”\n\nJune 24, 2025 FS Exec Minutes\n\nInterim VC Heng-Moss:\n\n“holistic approach” using multiple factors – metrics, strengths, needs of the state, workforce alignment\n\nInterim EVC Button:\n\nCommitted to being transparent and inclusive with the reduction process.\nDraft metrics presented to APC, Deans, ELT, and Department exec officers\nStill no formalized budget reduction plan, nothing has been approved yet\nPreliminary plan to Chancellor June 30th\nPlan will need to be ready for the December Board of Regents meeting\n\n\n\nFaculty members want to help with trying to resolve the problem but there appears to be some gatekeeping on the part of chairs and deans to allow faculty participation.\n\n\n\n\nJuly 22, 2025 FS Exec Minutes\nWhen do you expect to consult with the Senate Exec Committee and APC about budget reductions?\n\nInterim EVC Button: Consultation begins with APC officers this week, full APC in early August, public hearings in Sept/Oct\nChancellor:\n&gt; Interim EVC Button has done an excellent job working with the deans to analyze data on metrics which will help us to make strategic budget reduction decisions. Interim EVC Button reported that priorities will look at academic excellence and student success, hands on experience for students, research excellence and engagement with Nebraska Extension.\n\n\n\n\nAugust 5, 2025 FS Exec Minutes\nTimeline:\n\nAug 4 - Chancellor invokes Procedures for Sig. Budget Reallocation and Reduction\nAPC considers and approves the framework\nAPC considers the budget reduction plan\nOct 24 - APC process concludes\nNov - Chancellor’s plan given to Acad Affairs and Business/Finance Cmtes of BoR\nDec - BOR considers plan\n\nInterim EVC Button: Actual reduction process will take a year after approval\nAugust 26, 2025 FS Exec Minutes\nChancellor: He asked Interim EVC Button and the Executive Leadership Team (ELT) to develop the framework and metrics for the proposed budget reductions.\nVC Davis: Plan and information on metrics will be made available, but data is proprietary.\nChancellor: Metrics based on both where we are and where we want to be"
+  },
+  {
+    "objectID": "03-Penn-metrics/budget-timeline.html#department-pov",
+    "href": "03-Penn-metrics/budget-timeline.html#department-pov",
+    "title": "Budget Reduction Timeline",
+    "section": "Department POV",
+    "text": "Department POV\n\n\nAugust 15 - Metrics provided to Stat Chair\n\nStat department current research metrics\nMetrics spreadsheet\n\n\n\n\n\n\n\n\nFigure 1: Statistics metrics spreadsheet\n\n\n\n\nAugust 18 - Metric definitions provided to Stat Department Faculty\nSept 11 - Affected units notified by EVC Button or Interim VC Heng-Moss\nSept 26 - Full metrics spreadsheet begins circulating unofficially\nOct 1-10 - APC hearings"
+  },
+  {
+    "objectID": "03-Penn-metrics/outline.html",
+    "href": "03-Penn-metrics/outline.html",
+    "title": "Outline",
+    "section": "",
+    "text": "Outline for “The Metrics” seminar\nThis outline assumes the data analytics team does not participate. We also need to be cognizant of the statistical background of the audience.\n\nIntroduction\n\nSpeaker names, degrees, …\nDisclaimer about AA data, see Jackson letter on October 14\nBackground about the metrics\n\nFirst introduced to faculty on  (Susan: It was presented to Faculty Senate Executive Committee on May 14, 2024, but it was not suggested as a way for evaluating departments. Instead, it was meant to provide information to help UNL get back into the AAU. Concerns about the metrics were raised at that time.)\nAugust 2025: Administration discussions with department leaders prior to September 12th announcement\n\nSpreadsheet with a single row of metric values were provided\nNo context with these z-scores\nThis is not data, but rather statistics\n\nAPC guidelines: Required to provide access to data\nDepartment of Statistics involvement (timeline, requests for data, alerting ELT about problems, requests for external evaluation, …)\nFaulty data, faulty analyses, faulty conclusions\n\nPurpose: Provide a forum for discussion on\n\nThe data used in the metrics\nThe formulation of the metrics\nThe analyses performed with the metrics\n\nWhy is this important?\n\nFaculty and staff jobs and student degree programs depend on getting the metrics and corresponding analyses correct\nThe administration has indicated an intent to use these metrics for future evaluations of individuals and departments\n\n\nData flaws\n\nQuestion to ask audience: How many of you have actually seen your own data from AA? We may need to ask those who are unaffected departments only.\nExamples of research counts\n\nChris Bilder – list out, we may need to state the formal definitions; could use someone else from the department as an example. Table 1\nProvide a similar table summarizing this information for the entire Department of Statistics – Do we have this data? I think Heike got this from everyone.\nProvide an example of a faculty member from another department? Beth Niehaus has talked about some of her specific metrics in the past, so perhaps this is someone we can start with.\n\n\nELT only includes data from faculty who are with a department in 2024.\n\nFaculty omitted\n\nThose no longer in a department\nWalt Stroup example – Retired, books, still active in the department, …\nA department may replace a Full Professor with an Assistant Professor but it will take time for them to build up a comparable research record\nVSIPs – Effect on metrics; how will this affect departments during the next round of budget cuts if these metrics are used?\n\nFMLA not counted for properly – Susan example\nFaculty who have partial administrative appointments are not counted for properly – Erin example\n\n\nProfessors of Practice not counted – Kathy Hanford example\nNew faculty not counted for properly – Heike Hofmann example\n\nData for prior to arrival at UNL does not count, BUT faculty who depart are completely excluded\n\nFaculty with appointments in department are not included – Jennifer Clarke example\nTeaching data? Raw data is not easily available? Some data is available through Tableau\nQualitative assessments – This is still data, and it has not been released\nOther comments\n\nTwo UNL faculty who are joint authors of a paper are only given half credit. One UNL faculty and one non-UNL faculty who are joint authors of a paper are given full credit.\nDiscuss the difference between providing “data” and “statistics”? Data was required to be shared\nSee Appendix B of report for more ideas\nTo get back into the AAU, the reputation of the department is IMPORTANT. Therefore, we should include all people that were in it!\nWhy do departments need to assemble their own data? The ELT should provide a database for each department.\nNot all federal grant agencies are included, like NIJ\nMany awards not included in AA list, like COPSS Presidents’ Award\n\n\n\n\n\n\nTable 1: Academic Analytics vs. Correct metrics for Dr. Chris Bilder. The last three rows are important because they are important contributions not recognized by the metrics. Also, software and apps are more “modern” forms of contributions. Other examples like this are Susan’s online books. We need to be careful about the citations definition. This appears to be the number of times papers authored in 2014-23 have been cited in 2014-23.\n\n\n\n\n\n\n\n\n\n\nVariable\nAA\nCorrect\n\n\n\n\nPublications, 2020-2023\n10\n14\n\n\nAwards, no time limit\n3\n7\n\n\nBooks, 2014-2023\n0\n1\n\n\nChapters, 2020-2023\n0\n0\n\n\nCitations, 2019-2023 (2014-2023)\n353\n1264 (google scholar, I need to correct for new time frame)\n\n\n(Correct: 461)\n\n\n\n\nConference proceedings, 2020-2023\n0\n1\n\n\nGrants PI, 2019-2023\n1, $1.6M\n1, &lt;$1.6M\n\n\nGrants Co-I, 2019-2023\n?\n1\n\n\nSoftware, 2014-2023\n?\n3\n\n\nApps, 2014-2023\n?\n1\n\n\n\n\n\n\n\nIll-conceived metrics\n\nWhere does the data vs. the analysis start?\nWhat is a metric? Link its definition to a statistic, which helps give us credibility\nShould we give alternative metrics to the bad metrics here or wait until the conclusion?\nTop 3-5 examples!\n\nRatio metrics that can be 0/0\n“Completion majors” for statistics (additional information about it is currently in the incorrect analyses section); Button thinks SCH increase should cover the inaccuracies, but this will not be true for us because we did not get more faculty\n\n\n\n\nSRI focus and how other metrics used contain the same information; this represents a fundamental poor understanding of the metrics\nEffect on graduate-only departments\nEffect on small departments\n\nIncorrect analyses\n\nWhere does the data vs. the analysis start? (same comment as in the ill-conceived metric section)\nFaulty data immediately invalidates any analysis based upon them. But, if we continue to do the analysis, here’s our discussion\nZ-scores\n\nWhat are z-scores? STAT 218 or lower definition\nHow to interpret z-scores? STAT 218 or lower definition\nWhat does it mean for a z-score to be less than 0? Is it unusual to be less than 0?\n\nLake Wobegon effect\n“A sign is not everything”\nNormal distribution, STAT 218 (or less background) example\n\nWe would expect 50% to be less than 0!\nExamine this from a binomial perspective. If we had 100 departments, how many would we expect to have 7 of 9 metrics less than 0? 8 of 9 metrics less than 0? …\nHeike: too few depts are less than 0???\nDepends on null hypothesis – should we assume everyone is 0\n\nSkewed distribution; relate to probability less than 0\nThe effect of changing the mean in z-score equation (AAU mean was used in the z-score?)\n\nWe need to provide a definition of a population\nIf z-scores are used, everyone needs to be presented with mean and standard deviation used in its construction.\nInformation distributed by ELT – This is what was given to the UNL Graduate Council:\n\nCompletion Majors metric for Statistics\n\nThe reason for it being “low”\nNO CONTEXT GIVEN to committees who are voting whether to eliminate programs! Ethical violation?\n\nLast note about “may not align with a statistical definition”; go back to z-score definition of unusual; relate this to a “non-scientific poll”—Is this what we should base decisions on?\n\n\nApples vs. oranges comparison\n\nAA statement about how to use SRI and other metrics\nWould this type of plot be helpful? We could create another version of the plot with the apples and grapefruits all together.\n                  🍊    \n                🍊🍊    \n            🍊🍊🍊🍊🍊    \n        🍊🍊🍊🍊🍊🍊🍊🍊    \n    🍊🍊🍊🍊🍊🍊🍊🍊🍊🍊    \n\n                            🍑    \n                          🍑🍑🍑    \n                        🍑🍑🍑🍑    \n                      🍑🍑🍑🍑🍑🍑    \n\nNeed to show the departments ranked by percentile, but also give context that the correctness of the interpretation is dependent on the data being correct\nMany other examples…\n\nConclusion\n\nWe could include better metrics here (also could be included in the metrics section)\nA good metric should only do one thing\n\n\nWho presents?\n\nChris is the moderator and may present section 1\nSusan and Heike are the main presenters\n\nSeminar\n\nSwanson Auditorium in City Campus Union has been reserved for 12-2PM\n\n12:30 is the start time for the seminar\nChris plans to go to the room the day before to make sure all of the technical aspects work\n\nChris will record it and post to his YouTube channel\n\nWe could use his Surface Pro so that the screen can be recorded via Camtasia Studio; external webcam set up on a tripod for video of speakers\nWe may be able to use the computer and camera already in room instead.\n\n\nOther comments\n\nThe use of regression may have been better to use rather than normalizing.\n\nInclude quotes from the ELT data analytics team e-mail reply from October 7, 2025?\nSRI calculations looked at the wrong AAU group?\n“Every department is affected the same way” was used by ELT to justify various issues that we found\nWe need to include the AAUP in our advertisements of the seminar\nMarkdown will be used for the slides"
+  },
+  {
     "objectID": "08-JSM/index.html#why-visualization-1",
     "href": "08-JSM/index.html#why-visualization-1",
-    "title": "Visualizing Uncertainty",
+    "title": "Visualization and Uncertainty",
     "section": "Why Visualization?",
     "text": "Why Visualization?\n\n\n\n\n\n\n\n\n\n\n\n\\[ \\begin{align*}\nL(\\alpha_i, \\beta_i | y_{i,\\boldsymbol{n}_i}) = \\prod_{j=1}^{n_i} \\frac{\\beta_i^{\\alpha_i}}{\\Gamma(\\alpha_i)} y_{ij}^{\\alpha_i - 1} \\text{exp}(-\\beta_i y_{ij})&\\end{align*}\n\\]\n\n\n\n\\[ \\hat\\alpha_i, \\hat\\beta_i \\]\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIt’s a familiar tale. You get some data. You sit down and read it into your program of choice, and then start building a statistical model. You get some pretty estimates, and then it’s time to communicate those estimates to someone out there in the world – the owner of the data, the public, the funding agency. Most of the time, our first step is to create some sort of chart that shows our data along with some model summaries - the model predictions, the posterior predictive distribution, the risk.\nWhy do visualizations help us so much?"
   },
   {
     "objectID": "08-JSM/index.html#why-visualization-2",
     "href": "08-JSM/index.html#why-visualization-2",
-    "title": "Visualizing Uncertainty",
+    "title": "Visualization and Uncertainty",
     "section": "Why Visualization?",
     "text": "Why Visualization?\n\nCommunicate information about data\n\nDoesn’t (always) require statistics knowledge\n\\(\\Rightarrow\\) helpful with the general public\n\nVisualization uses higher bandwidth channels than text"
   },
   {
     "objectID": "08-JSM/index.html#higher-bandwidth",
     "href": "08-JSM/index.html#higher-bandwidth",
-    "title": "Visualizing Uncertainty",
+    "title": "Visualization and Uncertainty",
     "section": "Higher Bandwidth",
     "text": "Higher Bandwidth\nWhat Helps More?\n\n\nFull Data\n\n\n\n\n\n\n\n\nSummary Stats\n\n\n\n\n\nStat\nx\ny\n\n\n\n\nmean\n54.26\n47.83\n\n\nsd\n16.77\n26.94\n\n\n\n\n\n\n\n\nA Plot"
   },
   {
     "objectID": "08-JSM/index.html#why-visualization-3",
     "href": "08-JSM/index.html#why-visualization-3",
-    "title": "Visualizing Uncertainty",
+    "title": "Visualization and Uncertainty",
     "section": "Why Visualization?",
     "text": "Why Visualization?\n\nCommunicate information about data\n\nDoesn’t (always) require statistics knowledge\n\\(\\Rightarrow\\) helpful with the general public\n\nVisualization uses higher bandwidth channels than e.g. tables\n\n\n\nWell designed graphics can be a form of\nexternal cognition"
   },
   {
     "objectID": "08-JSM/index.html#visualization-design-principles",
     "href": "08-JSM/index.html#visualization-design-principles",
-    "title": "Visualizing Uncertainty",
+    "title": "Visualization and Uncertainty",
     "section": "Visualization Design Principles",
     "text": "Visualization Design Principles\n\n\nMap your most important variables to more accurate channels\n\n\nPosition - common scale (BEST)\nPosition - nonaligned scale\nLength, direction, angle\nArea\nVolume, curvature\nShading, color (WORST)\n\n(Cleveland, 1984; Heer and Bostock, 2009)"
   },
   {
     "objectID": "08-JSM/index.html#preattentive-perception",
     "href": "08-JSM/index.html#preattentive-perception",
-    "title": "Visualizing Uncertainty",
+    "title": "Visualization and Uncertainty",
     "section": "Preattentive Perception",
     "text": "Preattentive Perception\n\nCombinations of preattentive features require attention\n\nDouble-encoding (using multiple features for the same variable) is ok\n\n\n\n\n\n\n\n\n\n\n\nFigure 1: Shape\n\n\n\n\n\n\n\n\n\n\n\nFigure 2: Color"
   },
   {
     "objectID": "08-JSM/index.html#preattentive-perception-1",
     "href": "08-JSM/index.html#preattentive-perception-1",
-    "title": "Visualizing Uncertainty",
+    "title": "Visualization and Uncertainty",
     "section": "Preattentive Perception",
     "text": "Preattentive Perception\n\nCombinations of preattentive features require attention\n\nDouble-encoding (using multiple features for the same variable) is ok\n\n\n\n\n\n\n\n\n\n\n\nFigure 3: Shape and Color (dual encoded)\n\n\n\n\n\n\n\n\n\n\n\nFigure 4: Shape and Color (different variables)"
   },
   {
     "objectID": "08-JSM/index.html#grouping-in-charts",
     "href": "08-JSM/index.html#grouping-in-charts",
-    "title": "Visualizing Uncertainty",
+    "title": "Visualization and Uncertainty",
     "section": "Grouping in Charts",
     "text": "Grouping in Charts\n\n\n\n\n\n\n\n\n\n\n\n\nCompare TB diagnoses by gender for each age\n\n\n\n\n\n\n\n\n\n\n\n\nCompare TB diagnoses within ages for each gender"
   },
   {
     "objectID": "08-JSM/index.html#leveraging-associations",
     "href": "08-JSM/index.html#leveraging-associations",
-    "title": "Visualizing Uncertainty",
+    "title": "Visualization and Uncertainty",
     "section": "Leveraging Associations",
     "text": "Leveraging Associations\nXKCD Color Survey - Fully saturated color names"
   },
   {
     "objectID": "08-JSM/index.html#leveraging-associations-1",
     "href": "08-JSM/index.html#leveraging-associations-1",
-    "title": "Visualizing Uncertainty",
+    "title": "Visualization and Uncertainty",
     "section": "Leveraging Associations",
     "text": "Leveraging Associations\nXKCD Color Survey - Fully saturated color names"
   },
   {
-    "objectID": "08-JSM/index.html#know-your-audience",
-    "href": "08-JSM/index.html#know-your-audience",
-    "title": "Visualizing Uncertainty",
-    "section": "Know Your Audience",
-    "text": "Know Your Audience\n\nAssociations are audience and culture dependent\n\nVictorian era colors: pink was for males, blue for females\n\nRates of color deficiency - 10% of males, 0.2% of females\n🚦Stoplight color schemes are standard for some industries 😭"
-  },
-  {
-    "objectID": "08-JSM/index.html#which-one-is-not-like-the-others",
-    "href": "08-JSM/index.html#which-one-is-not-like-the-others",
-    "title": "Visualizing Uncertainty",
-    "section": "Which One Is Not Like the Others?",
-    "text": "Which One Is Not Like the Others?"
-  },
-  {
-    "objectID": "08-JSM/index.html#statistics-and-charts",
-    "href": "08-JSM/index.html#statistics-and-charts",
-    "title": "Visualizing Uncertainty",
-    "section": "Statistics and Charts",
-    "text": "Statistics and Charts\n\n\nA statistic is a quantity\n🔲computed from values in a sample\n🔲used for a statistical purpose Wikipedia\n\\[\\overline{x} = \\frac{1}{n}\\sum_{i=1}^n x_i\\]\nA chart is a graphical representation for data visualization, in which the data is represented by symbols Wikipedia\n\n\nCharts are\n✅ computed from values in a sample\n✅ used for a statistical purpose\n\n\n\nSo… charts are statistics!"
-  },
-  {
-    "objectID": "08-JSM/index.html#testing-statistics",
-    "href": "08-JSM/index.html#testing-statistics",
-    "title": "Visualizing Uncertainty",
-    "section": "Testing Statistics",
-    "text": "Testing Statistics\nData from Tidy Tuesday, 2020-09-01\n\n\n\n\n\n\n\n\n\n\nSuppose we have this data, and we want to determine whether there is a relationship between Maize production and time.\nIf we were testing this statistically, we’d fit a linear regression to the data, and test to see whether the slope is equal to 0, right?\nWe can do that graphically as well: if there is no relationship, then it doesn’t matter which Y value is assigned to which X value - we can just shuffle the production values independently of time."
-  },
-  {
-    "objectID": "08-JSM/index.html#testing-statistics-1",
-    "href": "08-JSM/index.html#testing-statistics-1",
-    "title": "Visualizing Uncertainty",
-    "section": "Testing Statistics",
-    "text": "Testing Statistics\n\nIf statistics are charts, then what is the reference distribution?\nWhat constitutes an “extreme” or “significant” chart?"
-  },
-  {
-    "objectID": "08-JSM/index.html#testing-statistics-2",
-    "href": "08-JSM/index.html#testing-statistics-2",
-    "title": "Visualizing Uncertainty",
-    "section": "Testing Statistics",
-    "text": "Testing Statistics\n\n\nHypothesis testing:\n\ntake a sample\ncalculate a test statistic\ncompare test statistic to reference distribution\n(formed by \\(H_0\\))\nif it is unlikely, reject null hypothesis\n\n\nVisual hypothesis testing:\n\ntake a sample\ncreate a test chart\ncompare chart to a reference distribution of others generated under \\(H_0\\)\nif test chart “stands out” then reject null hypothesis\n\n\n\nUsing the hypothesis that there is no relationship between X and Y, we can create a reference distribution of other graphs generated by shuffling the Y values.\nDo you think you’ll be able to pick out the reference chart?"
-  },
-  {
-    "objectID": "08-JSM/index.html#testing-statistics-3",
-    "href": "08-JSM/index.html#testing-statistics-3",
-    "title": "Visualizing Uncertainty",
-    "section": "Testing Statistics",
-    "text": "Testing Statistics\n\n\n\n\n\n\n\n\n\n\nNow, this is a very easy example, because we all know there’s been a massive increase in crop yields over the last 50 years. But, you can see how this paradigm is powerful - you can easily tell which plot is “different”, and if I ask 20 different people to evaluate it, I’d wager at least 19 would say “plot 15 is different”.\nYou’ll also notice that we didn’t have to ask anything statistical in nature - all of our hypotheses are embedded into the statistical lineup through the generation of the other 19 plots. We call these lineups because they’re similar to the criminal procedure of the same name.\nThe powerful part of this is that we can test for statistical significance of data even in cases where the effect is very subtle, or not easily mathematically quantified, as long as we can generate realistic “null” data through a reasonable mechanism."
-  },
-  {
-    "objectID": "08-JSM/index.html#testing-statistics-4",
-    "href": "08-JSM/index.html#testing-statistics-4",
-    "title": "Visualizing Uncertainty",
-    "section": "Testing Statistics",
-    "text": "Testing Statistics\n\n\n\nPlot: A statistical lineup\nMethod: visual inference\n(graphical hypothesis test)\nMany factors influence the results\n\nthe data\nthe plot type\nthe plot aesthetics\n(color, shape, etc.)\nextra statistical features\ntrend lines, error bars"
-  },
-  {
-    "objectID": "08-JSM/index.html#visualizing-uncertainty",
-    "href": "08-JSM/index.html#visualizing-uncertainty",
-    "title": "Visualizing Uncertainty",
-    "section": "Visualizing Uncertainty",
-    "text": "Visualizing Uncertainty\nData -&gt;\nGraphics -&gt;\nGraphical Testing -&gt;\nGraphical Significance\nOne method for incorporating and assessing uncertainty with charts"
-  },
-  {
-    "objectID": "08-JSM/index.html#section",
-    "href": "08-JSM/index.html#section",
-    "title": "Visualizing Uncertainty",
-    "section": "",
-    "text": "Uncertainty is an inherent property\nof data and statistics -\nit is not easily separated or contained."
-  },
-  {
-    "objectID": "08-JSM/index.html#section-1",
-    "href": "08-JSM/index.html#section-1",
-    "title": "Visualizing Uncertainty",
-    "section": "",
-    "text": "Why uncertainty is a hard thing to pin down"
-  },
-  {
-    "objectID": "08-JSM/index.html#goals-of-uncertainty-visualization",
-    "href": "08-JSM/index.html#goals-of-uncertainty-visualization",
-    "title": "Visualizing Uncertainty",
-    "section": "Goal(s) of Uncertainty Visualization",
-    "text": "Goal(s) of Uncertainty Visualization\nCommunicate the Legitimacy of Conclusions"
-  },
-  {
-    "objectID": "08-JSM/index.html#goals-of-uncertainty-visualization-1",
-    "href": "08-JSM/index.html#goals-of-uncertainty-visualization-1",
-    "title": "Visualizing Uncertainty",
-    "section": "Goal(s) of Uncertainty Visualization",
-    "text": "Goal(s) of Uncertainty Visualization\nCommunicate the Legitimacy of Conclusions\n\n\n\n\nRequires understanding\n\nwhat error bars show (variance)\nhow the error bar is computed (\\(\\pm 1 \\sigma\\))\nhow that translates to real data (most data within 2*bars)"
-  },
-  {
-    "objectID": "08-JSM/index.html#goals-of-uncertainty-visualization-2",
-    "href": "08-JSM/index.html#goals-of-uncertainty-visualization-2",
-    "title": "Visualizing Uncertainty",
-    "section": "Goal(s) of Uncertainty Visualization",
-    "text": "Goal(s) of Uncertainty Visualization\nCommunicate the Legitimacy of Conclusions"
-  },
-  {
-    "objectID": "08-JSM/index.html#goals-of-uncertainty-visualization-3",
-    "href": "08-JSM/index.html#goals-of-uncertainty-visualization-3",
-    "title": "Visualizing Uncertainty",
-    "section": "Goal(s) of Uncertainty Visualization",
-    "text": "Goal(s) of Uncertainty Visualization\nTransparency\nIn a survey of 90 “visualization authors” recruited from the InfoVis community, respondents mentioned the\n\nimportance of transparency in presentations of data, suggesting that omitting uncertainty was misleading or even lying. 1\n\nHullman, Jessica. 2020. “Why Authors Don’t Visualize Uncertainty.” IEEE Transactions on Visualization and Computer Graphics 26(1):130–39. doi:10.1109/TVCG.2019.2934287."
-  },
-  {
-    "objectID": "08-JSM/index.html#goals-of-uncertainty-visualization-4",
-    "href": "08-JSM/index.html#goals-of-uncertainty-visualization-4",
-    "title": "Visualizing Uncertainty",
-    "section": "Goal(s) of Uncertainty Visualization",
-    "text": "Goal(s) of Uncertainty Visualization\nMaking accurate decisions under uncertainty\n\nVisualizing uncertainty is just the first step\nUltimate goal: Use the uncertainty to\n\ncommunicate effectively\nsupport better decision-making\n\n\nRequires understanding how we perceive and use charts – whether deterministic or distributional"
-  },
-  {
     "objectID": "08-JSM/index.html#leveraging-associations-2",
     "href": "08-JSM/index.html#leveraging-associations-2",
-    "title": "Visualizing Uncertainty",
+    "title": "Visualization and Uncertainty",
     "section": "Leveraging Associations",
     "text": "Leveraging Associations"
   },
   {
     "objectID": "08-JSM/index.html#leveraging-associations-3",
     "href": "08-JSM/index.html#leveraging-associations-3",
-    "title": "Visualizing Uncertainty",
+    "title": "Visualization and Uncertainty",
     "section": "Leveraging Associations",
     "text": "Leveraging Associations"
+  },
+  {
+    "objectID": "08-JSM/index.html#know-your-audience",
+    "href": "08-JSM/index.html#know-your-audience",
+    "title": "Visualization and Uncertainty",
+    "section": "Know Your Audience",
+    "text": "Know Your Audience\n\nAssociations are audience and culture dependent\n\nVictorian era colors: pink was for males, blue for females\n\nRates of color deficiency - 10% of males, 0.2% of females\n🚦Stoplight color schemes are standard for some industries 😭"
+  },
+  {
+    "objectID": "08-JSM/index.html#which-one-is-not-like-the-others",
+    "href": "08-JSM/index.html#which-one-is-not-like-the-others",
+    "title": "Visualization and Uncertainty",
+    "section": "Which One Is Not Like the Others?",
+    "text": "Which One Is Not Like the Others?"
+  },
+  {
+    "objectID": "08-JSM/index.html#statistics-and-charts",
+    "href": "08-JSM/index.html#statistics-and-charts",
+    "title": "Visualization and Uncertainty",
+    "section": "Statistics and Charts",
+    "text": "Statistics and Charts\n\n\nA statistic is a quantity\n🔲computed from values in a sample\n🔲used for a statistical purpose Wikipedia\n\\[\\overline{x} = \\frac{1}{n}\\sum_{i=1}^n x_i\\]\nA chart is a graphical representation for data visualization, in which the data is represented by symbols Wikipedia\n\n\nCharts are\n✅ computed from values in a sample\n✅ used for a statistical purpose\n\n\n\nSo… charts are statistics!"
+  },
+  {
+    "objectID": "08-JSM/index.html#testing-statistics",
+    "href": "08-JSM/index.html#testing-statistics",
+    "title": "Visualization and Uncertainty",
+    "section": "Testing Statistics",
+    "text": "Testing Statistics\nData from Tidy Tuesday, 2020-09-01\n\n\n\n\n\n\n\n\n\n\nSuppose we have this data, and we want to determine whether there is a relationship between Maize production and time.\nIf we were testing this statistically, we’d fit a linear regression to the data, and test to see whether the slope is equal to 0, right?\nWe can do that graphically as well: if there is no relationship, then it doesn’t matter which Y value is assigned to which X value - we can just shuffle the production values independently of time."
+  },
+  {
+    "objectID": "08-JSM/index.html#testing-statistics-1",
+    "href": "08-JSM/index.html#testing-statistics-1",
+    "title": "Visualization and Uncertainty",
+    "section": "Testing Statistics",
+    "text": "Testing Statistics\n\nIf statistics are charts, then what is the reference distribution?\nWhat constitutes an “extreme” or “significant” chart?"
+  },
+  {
+    "objectID": "08-JSM/index.html#testing-statistics-2",
+    "href": "08-JSM/index.html#testing-statistics-2",
+    "title": "Visualization and Uncertainty",
+    "section": "Testing Statistics",
+    "text": "Testing Statistics\n\n\nHypothesis testing:\n\ntake a sample\ncalculate a test statistic\ncompare test statistic to reference distribution\n(formed by \\(H_0\\))\nif it is unlikely, reject null hypothesis\n\n\nVisual hypothesis testing:\n\ntake a sample\ncreate a test chart\ncompare chart to a reference distribution of others generated under \\(H_0\\)\nif test chart “stands out” then reject null hypothesis\n\n\n\nUsing the hypothesis that there is no relationship between X and Y, we can create a reference distribution of other graphs generated by shuffling the Y values.\nDo you think you’ll be able to pick out the reference chart?"
+  },
+  {
+    "objectID": "08-JSM/index.html#testing-statistics-3",
+    "href": "08-JSM/index.html#testing-statistics-3",
+    "title": "Visualization and Uncertainty",
+    "section": "Testing Statistics",
+    "text": "Testing Statistics\n\n\n\n\n\n\n\n\n\n\nNow, this is a very easy example, because we all know there’s been a massive increase in crop yields over the last 50 years. But, you can see how this paradigm is powerful - you can easily tell which plot is “different”, and if I ask 20 different people to evaluate it, I’d wager at least 19 would say “plot 15 is different”.\nYou’ll also notice that we didn’t have to ask anything statistical in nature - all of our hypotheses are embedded into the statistical lineup through the generation of the other 19 plots. We call these lineups because they’re similar to the criminal procedure of the same name.\nThe powerful part of this is that we can test for statistical significance of data even in cases where the effect is very subtle, or not easily mathematically quantified, as long as we can generate realistic “null” data through a reasonable mechanism."
+  },
+  {
+    "objectID": "08-JSM/index.html#testing-statistics-4",
+    "href": "08-JSM/index.html#testing-statistics-4",
+    "title": "Visualization and Uncertainty",
+    "section": "Testing Statistics",
+    "text": "Testing Statistics\n\n\n\nPlot: A statistical lineup\nMethod: visual inference\n(graphical hypothesis test)\nMany factors influence the results\n\nthe data\nthe plot type\nthe plot aesthetics\n(color, shape, etc.)\nextra statistical features\ntrend lines, error bars"
+  },
+  {
+    "objectID": "08-JSM/index.html#visualizing-uncertainty",
+    "href": "08-JSM/index.html#visualizing-uncertainty",
+    "title": "Visualization and Uncertainty",
+    "section": "Visualizing Uncertainty",
+    "text": "Visualizing Uncertainty\nData -&gt;\nGraphics -&gt;\nGraphical Testing -&gt;\nGraphical Significance\nOne method for incorporating and assessing uncertainty with charts"
+  },
+  {
+    "objectID": "08-JSM/index.html#section",
+    "href": "08-JSM/index.html#section",
+    "title": "Visualization and Uncertainty",
+    "section": "",
+    "text": "Uncertainty is an inherent property\nof data and statistics -\nit is not easily separated or contained."
+  },
+  {
+    "objectID": "08-JSM/index.html#goals-of-uncertainty-visualization",
+    "href": "08-JSM/index.html#goals-of-uncertainty-visualization",
+    "title": "Visualization and Uncertainty",
+    "section": "Goal(s) of Uncertainty Visualization",
+    "text": "Goal(s) of Uncertainty Visualization\nCommunicate the Legitimacy of Conclusions"
+  },
+  {
+    "objectID": "08-JSM/index.html#goals-of-uncertainty-visualization-1",
+    "href": "08-JSM/index.html#goals-of-uncertainty-visualization-1",
+    "title": "Visualization and Uncertainty",
+    "section": "Goal(s) of Uncertainty Visualization",
+    "text": "Goal(s) of Uncertainty Visualization\nCommunicate the Legitimacy of Conclusions\n\n\n\n\nRequires understanding\n\nwhat error bars show (variance)\nhow the error bar is computed (\\(\\pm 1 \\sigma\\))\nhow that translates to real data (most data within 2*bars)"
+  },
+  {
+    "objectID": "08-JSM/index.html#goals-of-uncertainty-visualization-2",
+    "href": "08-JSM/index.html#goals-of-uncertainty-visualization-2",
+    "title": "Visualization and Uncertainty",
+    "section": "Goal(s) of Uncertainty Visualization",
+    "text": "Goal(s) of Uncertainty Visualization\nCommunicate the Legitimacy of Conclusions"
+  },
+  {
+    "objectID": "08-JSM/index.html#goals-of-uncertainty-visualization-3",
+    "href": "08-JSM/index.html#goals-of-uncertainty-visualization-3",
+    "title": "Visualization and Uncertainty",
+    "section": "Goal(s) of Uncertainty Visualization",
+    "text": "Goal(s) of Uncertainty Visualization\nTransparency\nIn a survey of 90 “visualization authors” recruited from the InfoVis community, respondents mentioned the\n\nimportance of transparency in presentations of data, suggesting that omitting uncertainty was misleading or even lying. 1\n\nHullman, Jessica. 2020. “Why Authors Don’t Visualize Uncertainty.” IEEE Transactions on Visualization and Computer Graphics 26(1):130–39. doi:10.1109/TVCG.2019.2934287."
+  },
+  {
+    "objectID": "08-JSM/index.html#goals-of-uncertainty-visualization-4",
+    "href": "08-JSM/index.html#goals-of-uncertainty-visualization-4",
+    "title": "Visualization and Uncertainty",
+    "section": "Goal(s) of Uncertainty Visualization",
+    "text": "Goal(s) of Uncertainty Visualization\nMaking accurate decisions under uncertainty\n\nVisualizing uncertainty is just the first step\nUltimate goal: Use the uncertainty to\n\ncommunicate effectively\nsupport better decision-making\n\n\nRequires understanding how we perceive and use charts – whether deterministic or distributional"
+  },
+  {
+    "objectID": "03-Penn-metrics/index.html#setting-the-stage",
+    "href": "03-Penn-metrics/index.html#setting-the-stage",
+    "title": "How NOT to Measure Academic Performance",
+    "section": "Setting the Stage",
+    "text": "Setting the Stage\n\nStructural budget deficit since at least 2020\n\nCuts every year from 2020-2024: $75 million\n\n2025 cuts:\n\nEliminate the structural deficit: $21 million (estimated)\nExtra $6.5 million for “our share of UN system cuts”"
+  },
+  {
+    "objectID": "03-Penn-metrics/index.html#the-chancellors-executive-leadership-team-elt",
+    "href": "03-Penn-metrics/index.html#the-chancellors-executive-leadership-team-elt",
+    "title": "How NOT to Measure Academic Performance",
+    "section": "The Chancellor’s Executive Leadership Team (ELT)",
+    "text": "The Chancellor’s Executive Leadership Team (ELT)\nResponsible for assembling data, building metrics, and developing the budget cut proposal\n\n\n\n\n\n\nJosh DavisSenior Vice Provost & Chief of Staff\n\n\n\n\n\n\n\nMark Button(Interim) Exec Vice Chancellor\n\n\n\n\n\n\n\nTiffany Heng-Moss(Interim) Vice Chancellor of Ag & Nat. Resources\n\n\n\n\n\n\n\nJennifer Nelson(Interim) Vice Chancellor of Research & Innovation\n\n\n\n\n\n\nThe Chancellor was actually only the figurehead: the FS Exec committee was told by a reliable source that the Chancellor didn’t even have access to the shared drive for assembling the cuts.\nData was assembled by\n\nthe Institutional Effectiveneess and Analytics group (for tuition, enrollment, etc) under EVC Button\nthe Office of Research and Innovation (for research – grants, pubs, books, etc) under VC Nelson"
+  },
+  {
+    "objectID": "03-Penn-metrics/index.html#fac-senate-fs-exec-cmte",
+    "href": "03-Penn-metrics/index.html#fac-senate-fs-exec-cmte",
+    "title": "How NOT to Measure Academic Performance",
+    "section": "Fac Senate & FS Exec Cmte",
+    "text": "Fac Senate & FS Exec Cmte\n\n\nMarch - Prog Eval Rubric will be from Coordinating Commission on Postsecondary Education (CCPE)  \n\n\n\n\nApril - Broad outline of metrics (the devil is in the details!)\nMay - Timeline, draft metrics presented to DEOs/Deans\nJune - Degree cuts likely, ELT plan due June 30\n\nInterim EVC: Commitment to transparency, treating all depts equally\nFS Exec: “Why the gatekeeping? Get faculty input!!” -DEOs not able to share info w/ faculty\n\nJuly - APC officers notified that APC will handle cuts\nAugust - APC meets\n\nVC Davis - metric data is proprietary/confidential"
+  },
+  {
+    "objectID": "03-Penn-metrics/index.html#department-pov",
+    "href": "03-Penn-metrics/index.html#department-pov",
+    "title": "How NOT to Measure Academic Performance",
+    "section": "Department POV",
+    "text": "Department POV\n\n\nMay 15 - Academic Program Metrics discussion\n\nDept Exec Officers (DEOs), Deans, ELT\nMarked confidential – cannot be shared with faculty\n\nAugust 15 - Metric values provided to Stat DEO \nAugust 18 - Metric definitions provided to Stat Department Faculty\nSept 11 - Affected units notified by EVC Button or Interim VC Heng-Moss\nshortly afterward - Full metrics spreadsheet begins circulating unofficially\nOct 1-10 - APC hearings"
+  },
+  {
+    "objectID": "03-Penn-metrics/index.html#timeline-1",
+    "href": "03-Penn-metrics/index.html#timeline-1",
+    "title": "How NOT to Measure Academic Performance",
+    "section": "Timeline",
+    "text": "Timeline\n\n\n\n\n\n\n\\(\\approx 140\\) days where ELT could have talked to a Statistician\nWithin 29 days, we found a huge number of problems\nELT wanted us to have 0 days to examine the “full” metrics data1\n\nTechnically, full data would be individual-level, not department-level"
+  },
+  {
+    "objectID": "03-Penn-metrics/index.html#budget-cuts-with-quantitative-data",
+    "href": "03-Penn-metrics/index.html#budget-cuts-with-quantitative-data",
+    "title": "How NOT to Measure Academic Performance",
+    "section": "Budget Cuts with Quantitative Data",
+    "text": "Budget Cuts with Quantitative Data\nReasonable strategy … so where did things go wrong?\n\n\n\n\n\n\n\n\n\n\nEach additional FTE raises the average … significantly"
+  },
+  {
+    "objectID": "03-Penn-metrics/index.html#section",
+    "href": "03-Penn-metrics/index.html#section",
+    "title": "How NOT to Measure Academic Performance",
+    "section": "",
+    "text": "Highly ranked departments eliminated!!"
+  },
+  {
+    "objectID": "03-Penn-metrics/index.html#choice-of-metrics",
+    "href": "03-Penn-metrics/index.html#choice-of-metrics",
+    "title": "How NOT to Measure Academic Performance",
+    "section": "Choice of Metrics",
+    "text": "Choice of Metrics\n\nTeaching performance\nResearch performance\n\nOnly for tenure-track faculty\n\n\nRolled into metrics:\n\nAAU membership criteria\nSalaries\nExtension\nRevenue\nService"
+  },
+  {
+    "objectID": "03-Penn-metrics/index.html#claims",
+    "href": "03-Penn-metrics/index.html#claims",
+    "title": "How NOT to Measure Academic Performance",
+    "section": "Claims",
+    "text": "Claims\n\n\n\nTransparent Process\nDepartments were consulted before plan was announced\nAll departments were treated equally\n\n\nCan’t see/fix the data \\(\\Rightarrow\\) not transparent"
+  },
+  {
+    "objectID": "03-Penn-metrics/index.html#claims-1",
+    "href": "03-Penn-metrics/index.html#claims-1",
+    "title": "How NOT to Measure Academic Performance",
+    "section": "Claims",
+    "text": "Claims\n\n\n\nTransparent Process\nDepartments were consulted before plan was announced\nAll departments were treated equally\n\n\nCan’t see/fix the data \\(\\Rightarrow\\) not transparent\n…Informed, not consulted, one day before"
+  },
+  {
+    "objectID": "03-Penn-metrics/index.html#units",
+    "href": "03-Penn-metrics/index.html#units",
+    "title": "How NOT to Measure Academic Performance",
+    "section": "Units",
+    "text": "Units\nObservational unit:\nthe entity from which data is collected in a study   Analysis unit:\nthe entity from which data is analyzed in a study   Mapping between these can be tricky\nbut it is critical to get it right!!"
+  },
+  {
+    "objectID": "03-Penn-metrics/index.html#observation-vs.-analysis",
+    "href": "03-Penn-metrics/index.html#observation-vs.-analysis",
+    "title": "How NOT to Measure Academic Performance",
+    "section": "Observation vs. Analysis",
+    "text": "Observation vs. Analysis\n\nInstructional metrics: typically observed at the class or instructor level, analyzed by department\nResearch metrics: observed at the faculty level, analyzed by department\n\nComplicated process for how to map individuals to departments by apportionment\nBut, individuals in a department change over time!\n\nIn addition, even “over time” is a bit tricky here - some of the data uses academic year but reports the start year, some uses academic year but reports the end year, and some uses fiscal year, which is close but not quite the academic year.\nThere may even be a few calendar-year variables that snuck in, but it’s very hard to tell by the metric descriptions, which are not always precise.\nTo be conservative, we’ve included all of 2013-2024 here, but the basic idea holds regardless – you have to take into account the unit of observation and account for how that is measured."
+  },
+  {
+    "objectID": "03-Penn-metrics/index.html#department-composition",
+    "href": "03-Penn-metrics/index.html#department-composition",
+    "title": "How NOT to Measure Academic Performance",
+    "section": "Department Composition",
+    "text": "Department Composition\n\n\nFundamental flaw in the way metrics are calculated – only current faculty are included! – this is a mistake by the research office that they refused to correct because it seems they didn’t understand either the problem or the solution(s) available.\nOne solution would be to consider the full department composition during the 11-year interval."
+  },
+  {
+    "objectID": "03-Penn-metrics/index.html#department-composition-1",
+    "href": "03-Penn-metrics/index.html#department-composition-1",
+    "title": "How NOT to Measure Academic Performance",
+    "section": "Department Composition",
+    "text": "Department Composition"
+  },
+  {
+    "objectID": "03-Penn-metrics/index.html#department-composition-2",
+    "href": "03-Penn-metrics/index.html#department-composition-2",
+    "title": "How NOT to Measure Academic Performance",
+    "section": "Department Composition",
+    "text": "Department Composition\n\n\nIf we include the productivity of all faculty in the departments within this period, we get 118/132 faculty-years – pretty close, particularly given that if we include the 16 hours of administrators, we’re at just over 132 faculty-years. This corresponds to an observational unit of the department during the time period in question.\nThis would actually yield a reasonably close estimate of the department’s productivity over the interval. It just requires that we consider both retired faculty and faculty who have left for industry or academic positions at non-Academic Analytics universities. The data doesn’t necessarily support this, but it’s not terrible.\nHowever, it’s a retrospective look at the department’s productivity and reputation. The composition of the department has changed over the last 10 years."
+  },
+  {
+    "objectID": "03-Penn-metrics/index.html#department-composition-3",
+    "href": "03-Penn-metrics/index.html#department-composition-3",
+    "title": "How NOT to Measure Academic Performance",
+    "section": "Department Composition",
+    "text": "Department Composition"
+  },
+  {
+    "objectID": "03-Penn-metrics/index.html#department-composition-4",
+    "href": "03-Penn-metrics/index.html#department-composition-4",
+    "title": "How NOT to Measure Academic Performance",
+    "section": "Department Composition",
+    "text": "Department Composition\n\n\nStill need to adjust for time since degree\n\n\nIf we instead account for the productivity of current members of the department over the interval in question, then we get 89/132 person-years, or about 2/3 of the time. This forward-looking view corresponds to an observational unit of the current department, and an analytical unit of the faculty within the department.\nWe’d still want to correct for the missing years that faculty didn’t have degrees and were likely not publishing. Of course, there is a nonlinear effect in productivity - new professors take some time to get a research program going, but it’s still important to exclude the years before current faculty had doctorates, so as to not disadvantage younger departments.\nAfter all, metrics that don’t treat young departments well will waste the investment the university made when new faculty were hired and actions taken using those metrics may hurt departments that need such investments."
+  },
+  {
+    "objectID": "03-Penn-metrics/index.html#whats-in-a-distribution",
+    "href": "03-Penn-metrics/index.html#whats-in-a-distribution",
+    "title": "How NOT to Measure Academic Performance",
+    "section": "What’s in a Distribution?",
+    "text": "What’s in a Distribution?\n\n\n\nDistribution of heights in an all-female class. Image Source\n\n\n\nStatistical definition: A function that gives probabilities of occurrence for possible events\n\n\nDistributions make a lot of sense when we e.g. measure a group of similar things with the goal of learning something about the whole group of things - like the average, or the variability."
+  },
+  {
+    "objectID": "03-Penn-metrics/index.html#whats-in-a-distribution-1",
+    "href": "03-Penn-metrics/index.html#whats-in-a-distribution-1",
+    "title": "How NOT to Measure Academic Performance",
+    "section": "What’s in a Distribution?",
+    "text": "What’s in a Distribution?\nOperationally, to create distributions, we need:\n\nComparable observational units (individuals)\nConsistent measurement method\nReason to think evaluating the group of individuals makes sense\n\n\nBut, for a grouping of things to make sense, they have to be comparable, and measured consistently, and there needs to be a reason to treat all of these things the same.\nFor instance, a distribution of heights of a class makes sense. Creating a distribution of heights of objects in a house… makes less sense. You need a reason to group all of the objects in a house and treat them as similar."
+  },
+  {
+    "objectID": "03-Penn-metrics/index.html#whats-in-a-distribution-2",
+    "href": "03-Penn-metrics/index.html#whats-in-a-distribution-2",
+    "title": "How NOT to Measure Academic Performance",
+    "section": "What’s in a Distribution?",
+    "text": "What’s in a Distribution?\n\n\n\n\n\n\n\n\n\n\nWe used the metaphor of comparing apples and pumpkins in our APC hearing, because the biggest apple in the world is never going to be able to compete on size with pumpkins – they’re entirely different. But the apple might be tastier as a snack.\nThere are very large differences between our departments – how many students can reasonably take a single class, whether graduate students or faculty teach undergraduate classes, whether research is done in a lab, an archive, a field, or at a computer, … I can keep going.\nIn reality, any respectable R1 land-grant university has a whole fruit salad and then some."
+  },
+  {
+    "objectID": "03-Penn-metrics/index.html#whats-in-a-distribution-3",
+    "href": "03-Penn-metrics/index.html#whats-in-a-distribution-3",
+    "title": "How NOT to Measure Academic Performance",
+    "section": "What’s in a Distribution?",
+    "text": "What’s in a Distribution?\n\n\n\n\n\n\n\n\n\n\nMixture distributions can be useful in some situations… IF the goal is to understand the whole system\nThey’re less helpful if the goal is ranking groups\n🫐 &lt; 🍇 &lt; 🍓 &lt; 🍊 &lt; 🍑 &lt; 🍏 &lt; 🍆 &lt; 🍍 &lt; 🍉\n\n\nAnd while a good university will have a lot of variation on any metric across departments, grouping them into a single distribution for the purposes of identifying poorly-performing departments misses the structural differences between departments.\nUltimately, this is a misuse of statistics. We teach our intro stats students to start by identifying a question that makes sense to answer, and then determining whether the data is available to answer that question.\nWithout correcting for structural differences between departments, it is not possible to actually answer the question of interest – which departments are performing poorly?"
+  },
+  {
+    "objectID": "03-Penn-metrics/index.html#whats-in-a-distribution-4",
+    "href": "03-Penn-metrics/index.html#whats-in-a-distribution-4",
+    "title": "How NOT to Measure Academic Performance",
+    "section": "What’s in a Distribution?",
+    "text": "What’s in a Distribution?\nOur actual mixture distribution is more like this:\n\n\n\n\n\n\n\n\n\n\nWhen the administration puts all of the departments across the university into a single distribution, to assess e.g. teaching efficiency, they ignore the fact that English, with its service courses and programs at the grad and undergrad level, is simply not comparable to Educational Administration, with a graduate program and courses that are only taken by majors.\nGenerating fewer credit hours doesn’t make EDAD a poorly performing department – it simply means it’s a different type of program than English.\nIn reality, a university should have a fruit salad of departments – some small, some large, some with service courses, some with majors-only courses, some with graduate programs only, and some with undergraduate programs only."
+  },
+  {
+    "objectID": "03-Penn-metrics/index.html#whats-in-a-distribution-5",
+    "href": "03-Penn-metrics/index.html#whats-in-a-distribution-5",
+    "title": "How NOT to Measure Academic Performance",
+    "section": "What’s in a Distribution?",
+    "text": "What’s in a Distribution?\nOr this:\n\n\n\n\n\n\n\n\n\n\nBut, it gets more ridiculous than the fruit salad image, because research norms differ too!\nBusiness school faculty often don’t compete for federal research grants, but they may do consulting work or compete for private grants – but even those grants will never be the size of physics grants that pay for time to rent a particle accelerator. In Classics or English, a grant may pay for travel to an archive for a week or two. In Statistics, we generally need to pay for a research assistant for a few semesters. Engineers need to buy equipment AND pay for research assistants, while some people in medicine-adjacent fields might need to pay for clinical trials, which are even more expensive than engineers toys!\nUltimately, putting all of these departments into a single distribution only tells you what the norms are of a field relative to other fields – it doesn’t tell you whether the Statistics department is a good Statistics department."
+  },
+  {
+    "objectID": "03-Penn-metrics/index.html#whats-in-a-distribution-6",
+    "href": "03-Penn-metrics/index.html#whats-in-a-distribution-6",
+    "title": "How NOT to Measure Academic Performance",
+    "section": "What’s in a Distribution?",
+    "text": "What’s in a Distribution?\nOr this:\n\n\n\n\n\n\n\n\n\n\nWhenever you calculate an average, you have to ask yourself why. In most cases, it’s pretty simple – you want to know what a typical value might be. But when you’re looking at university departments, it doesn’t really help to identify that Music is the most “typical” department according to the overall average of research and instructional metrics. What does that even mean, when you’re comparing to Engineering, English, and Agronomy?\nAnd if the “average” department doesn’t make sense, then it also doesn’t make sense to try to pull out the departments with the worst overall average metric – because ultimately, you’re mostly just identifying departments with majors-only courses that tend to have lower enrollment caps that also have smaller research grants."
+  },
+  {
+    "objectID": "03-Penn-metrics/index.html#whats-in-a-distribution-7",
+    "href": "03-Penn-metrics/index.html#whats-in-a-distribution-7",
+    "title": "How NOT to Measure Academic Performance",
+    "section": "What’s in a Distribution?",
+    "text": "What’s in a Distribution?\nIf you have to work with a mixture distribution, you must account for lurking variables:\n\ninstructional norms\n(lab/classroom space, pedagogy, instruction method)\namount of grant funding that’s available in the discipline\ncitation accumulation rate…. and many, many more\n\nStatistics can be used to adjust for these factors, but not accounting for structural differencesinvalidates conclusions"
+  },
+  {
+    "objectID": "03-Penn-metrics/index.html#what-is-in-a-z-score",
+    "href": "03-Penn-metrics/index.html#what-is-in-a-z-score",
+    "title": "How NOT to Measure Academic Performance",
+    "section": "What is in a Z score?",
+    "text": "What is in a Z score?\n\\(Z\\)-scores can be used in two different ways:\n\nmake metrics on different scales comparable\nmake observations from different distributions (more) comparable"
+  },
+  {
+    "objectID": "03-Penn-metrics/index.html#what-is-in-a-z-score-1",
+    "href": "03-Penn-metrics/index.html#what-is-in-a-z-score-1",
+    "title": "How NOT to Measure Academic Performance",
+    "section": "What is in a Z score?",
+    "text": "What is in a Z score?\n\nStandardization makes metrics on different scales comparable"
+  },
+  {
+    "objectID": "03-Penn-metrics/index.html#what-is-in-a-z-score-2",
+    "href": "03-Penn-metrics/index.html#what-is-in-a-z-score-2",
+    "title": "How NOT to Measure Academic Performance",
+    "section": "What is in a Z score?",
+    "text": "What is in a Z score?\n\nStandardization makes metrics on different scales comparable"
+  },
+  {
+    "objectID": "03-Penn-metrics/index.html#what-is-in-a-z-score-3",
+    "href": "03-Penn-metrics/index.html#what-is-in-a-z-score-3",
+    "title": "How NOT to Measure Academic Performance",
+    "section": "What is in a Z score?",
+    "text": "What is in a Z score?\n\nStandardization helps with apples to pumpkins comparisons:"
+  },
+  {
+    "objectID": "03-Penn-metrics/index.html#what-is-in-a-z-score-4",
+    "href": "03-Penn-metrics/index.html#what-is-in-a-z-score-4",
+    "title": "How NOT to Measure Academic Performance",
+    "section": "What is in a Z score?",
+    "text": "What is in a Z score?\n\nStandardization within different groups:"
+  },
+  {
+    "objectID": "03-Penn-metrics/index.html#what-is-in-a-standardization",
+    "href": "03-Penn-metrics/index.html#what-is-in-a-standardization",
+    "title": "How NOT to Measure Academic Performance",
+    "section": "What is in a Standardization?",
+    "text": "What is in a Standardization?"
+  },
+  {
+    "objectID": "03-Penn-metrics/index.html#metrics-documentation",
+    "href": "03-Penn-metrics/index.html#metrics-documentation",
+    "title": "How NOT to Measure Academic Performance",
+    "section": "Metrics Documentation",
+    "text": "Metrics Documentation\nFrom Distributions of Instructional Metrics, May 17, 2025 by Jason Casey\n\nWith all of these metrics, there is no inferential interpretation being made: the values are known descriptives, rather than estimates of a parameter.\n\n\nOK, but… values don’t come from the same distributions\n\nGrad-only (or grad-dominant) programs vs. undergrad programs\nGrant funding isn’t similar across disciplines\nDepartment size matters - excess capacity -&gt; maximize SCH\n\n\nAnd we’re back to 🍎 and 🎃.The interpretation is important!"
+  },
+  {
+    "objectID": "03-Penn-metrics/index.html#metrics-documentation-1",
+    "href": "03-Penn-metrics/index.html#metrics-documentation-1",
+    "title": "How NOT to Measure Academic Performance",
+    "section": "Metrics Documentation",
+    "text": "Metrics Documentation\nFrom Distributions of Instructional Metrics, May 17, 2025 by Jason Casey\n\nOur use of the z-score was as a simple scaling mechanism to aid in creating a centroid (i.e., the instructional averages).\n\n\nNeither positive nor negative z-scores carry any interpretation other than distance from the mean in standard deviations.\n\n\nA negative score does not imply that a unit does something poorly, nor does a positive imply the opposite interpretation."
+  },
+  {
+    "objectID": "03-Penn-metrics/index.html#justification",
+    "href": "03-Penn-metrics/index.html#justification",
+    "title": "How NOT to Measure Academic Performance",
+    "section": "Justification",
+    "text": "Justification\n\n\nBudget cuts based on metrics are fundamentally inferential.\nNot all inference is directly about parameters."
+  },
+  {
+    "objectID": "03-Penn-metrics/index.html#justification-1",
+    "href": "03-Penn-metrics/index.html#justification-1",
+    "title": "How NOT to Measure Academic Performance",
+    "section": "Justification",
+    "text": "Justification\n\nEducational administration is one of the lower performing units by UNL metric analysis for instruction and research. The unit was negative on seven of nine instruction metrics and six of eight research metrics.\n\n– Josh Davis, Vice Chancellor, EDAD APC Hearing, Oct 9 2025"
+  },
+  {
+    "objectID": "03-Penn-metrics/index.html#section-1",
+    "href": "03-Penn-metrics/index.html#section-1",
+    "title": "How NOT to Measure Academic Performance",
+    "section": "",
+    "text": "Image Source"
+  },
+  {
+    "objectID": "03-Penn-metrics/index.html#skewed-distributions",
+    "href": "03-Penn-metrics/index.html#skewed-distributions",
+    "title": "How NOT to Measure Academic Performance",
+    "section": "Skewed Distributions",
+    "text": "Skewed Distributions\n\n\n\n\n\n\n\n\n\n\nNormalized scores should have mean = 0 and variance = 1"
+  },
+  {
+    "objectID": "03-Penn-metrics/index.html#transparency",
+    "href": "03-Penn-metrics/index.html#transparency",
+    "title": "How NOT to Measure Academic Performance",
+    "section": "“Transparency”",
+    "text": "“Transparency”\n\n\nWithout \\(\\mu_X\\) and \\(\\sigma_X\\), there is no connection between an individual X and its Z-score.\nAlleged “Z-scores” provided to departments were wrong\n\n\nIt was not possible for departments to vet the data"
+  },
+  {
+    "objectID": "03-Penn-metrics/index.html#skewed-distributions-1",
+    "href": "03-Penn-metrics/index.html#skewed-distributions-1",
+    "title": "How NOT to Measure Academic Performance",
+    "section": "Skewed Distributions",
+    "text": "Skewed Distributions\nAn exam where 87% score zero is a bad exam.\n\n\n\n\n\n\n\n\n\n\n\nMost of us are instructors as well as researchers – if nearly 90% of the class gets a zero on an exam (assuming they showed up, etc.) then the exam is most likely the problem, not the students.\nSimilarly, if most of the class gets a 100% on the exam, the exam is also not useful for separating students out by what they know and don’t know.\nThe goal – if your goal is to differentiate what students know and don’t – should be to have variability in the scores."
+  },
+  {
+    "objectID": "03-Penn-metrics/index.html#skewed-better-metrics",
+    "href": "03-Penn-metrics/index.html#skewed-better-metrics",
+    "title": "How NOT to Measure Academic Performance",
+    "section": "Skewed?? – Better Metrics",
+    "text": "Skewed?? – Better Metrics\n\nMake the metric more inclusive: faculty with other awards are an indication of future potential for highly prestigious awards"
+  },
+  {
+    "objectID": "03-Penn-metrics/index.html#still-skewed-better-statistics",
+    "href": "03-Penn-metrics/index.html#still-skewed-better-statistics",
+    "title": "How NOT to Measure Academic Performance",
+    "section": "(Still) Skewed?? – Better Statistics",
+    "text": "(Still) Skewed?? – Better Statistics\n\nUse ranks, not raw values\nRanks can be converted to Z-scores\n\n\n\n\n\n\n\n\n\n\n\nif denominator is known, Z-scores and percentiles can be converted into ranks"
+  },
+  {
+    "objectID": "03-Penn-metrics/index.html#ranks-and-percentiles",
+    "href": "03-Penn-metrics/index.html#ranks-and-percentiles",
+    "title": "How NOT to Measure Academic Performance",
+    "section": "Ranks and Percentiles",
+    "text": "Ranks and Percentiles\n\nThe research performance of the Statistics Department at UNL is ranked 39th best out of 158 Statistics Departments.\n\n\nranks and percentiles are essentially ratios, and therefore depend very much on the denominator \\(n\\)\ninterpretation changes drastically depending on the denominator"
+  },
+  {
+    "objectID": "03-Penn-metrics/index.html#citations_2014_2023_avg",
+    "href": "03-Penn-metrics/index.html#citations_2014_2023_avg",
+    "title": "How NOT to Measure Academic Performance",
+    "section": "citations_2014_2023_avg",
+    "text": "citations_2014_2023_avg\n\nAcA for 2020 to 2023: 11 faculty, 123 articles with 2,157 citations \n\n\n\n\n\n\n\n\n\n\nMetric\nCa lculation\nValue\nRank\nP ercentile\n\n\n\n\nCitation count per article\n2,157 / 123\n17.5\n38\n75.9%\n\n\nArticle count per faculty\n123 / 11\n11.2\n27\n82.9%\n\n\nCitation count per faculty\n2,157 / 11\n196 .1\n34\n78.5%\n\n\n\n  citations_2014_2023_avg for Statistics: 311.6167 … ???\n… what is the denominator?"
+  },
+  {
+    "objectID": "03-Penn-metrics/index.html#citations_2014_2023_avg-1",
+    "href": "03-Penn-metrics/index.html#citations_2014_2023_avg-1",
+    "title": "How NOT to Measure Academic Performance",
+    "section": "citations_2014_2023_avg",
+    "text": "citations_2014_2023_avg\n\n\nAcA for 2020 to 2023: 11 faculty, 123 articles with 2,157 citations\n\n\n\n\n\n\n\n\n\nMetric\nCa lculation\nValue\nRank\nP ercentile\n\n\n\n\nCitation count per article\n2,157 / 123\n17.5\n38\n75.9%\n\n\nArticle count per faculty\n123 / 11\n11.2\n27\n82.9%\n\n\nCitation count per faculty\n2,157 / 11\n196 .1\n34\n78.5%\n\n\n\n\nAcA for 2014 to 2023: 11 faculty, 289 articles with 4,670 citations\n\n\n\n\n\n\n\n\n\nMetric\nCa lculation\nValue\nRank\nP ercentile\n\n\n\n\nCitation count per article\n4,670 / 289\n16.2\n68\n57.0%\n\n\nArticle count per faculty\n289 / 11\n26.3\n21\n86.7 %\n\n\nCitation count per faculty\n4,670 / 11\n424 .5\n49\n69.0%\n\n\n\ncitations_2014_2023_avg for Statistics: 311.6167 \\(\\approx\\) 310.3 = (196.1 + 424.5)/2???"
+  },
+  {
+    "objectID": "03-Penn-metrics/index.html#different-disciplines",
+    "href": "03-Penn-metrics/index.html#different-disciplines",
+    "title": "How NOT to Measure Academic Performance",
+    "section": "Different Disciplines:",
+    "text": "Different Disciplines:\ndifferent citation cultures 🍎 🎃\n\n\n\n\n\n\n\n\n\n\n\n\n\nDept\nCi t ations\nF aculty\nCit a tions/ F aculty\nRank\nout of\nPer c entile\n\n\n\n\nSta t istics\n2157\n11\n196.1\n34\n158\n78.5%\n\n\nP hysics\n15959\n29\n550.3\n76\n127\n40.1%"
+  },
+  {
+    "objectID": "03-Penn-metrics/index.html#what-is-in-an-average",
+    "href": "03-Penn-metrics/index.html#what-is-in-an-average",
+    "title": "How NOT to Measure Academic Performance",
+    "section": "What is in an average?",
+    "text": "What is in an average?\n\nStatisticians like averages: \\(X_1, X_2, ... X_n\\) with the same mean \\(\\mu\\) and the same variance \\(\\sigma^2\\),\n\n\\[\n\\frac{X_1 + X_2 + ... + X_n}{n} = \\bar{X} \\  {\\dot\\sim} \\ N\\left(\\mu, \\frac{\\sigma^2}{n}\\right)\n\\]\n\nAverages allow more precision, better predictions, more confident conclusions\n… so why is dividing by t_tt_headcount_2014_2023_avg a problem?"
+  },
+  {
+    "objectID": "03-Penn-metrics/index.html#what-is-in-a-ratio",
+    "href": "03-Penn-metrics/index.html#what-is-in-a-ratio",
+    "title": "How NOT to Measure Academic Performance",
+    "section": "What is in a ratio?",
+    "text": "What is in a ratio?\n\n\nIf \\(X\\) and \\(N\\) are BOTH random variables, \\(\\frac{X}{N}\\) has ratio distribution:\n\n\n\n\n\n\n\n\n\n\nAny signal gets lost in the variability, metrics do not reflect actual performance"
+  },
+  {
+    "objectID": "03-Penn-metrics/index.html#ratios-in-the-metrics",
+    "href": "03-Penn-metrics/index.html#ratios-in-the-metrics",
+    "title": "How NOT to Measure Academic Performance",
+    "section": "Ratios in the Metrics",
+    "text": "Ratios in the Metrics\n\n\np1_expenditures_normalized1 = \\[\n\\frac{\\text{p1_expenditures_2014_2023_avg}}{\\text{t_tt_headcount_2014_2023_avg}}\n\\]\ntotal_sponsored_awards_inc_nuf_rsch_pub_serv_teach_avg_awards_budget = \\[\n\\frac{\\text{Average_total_sponsored_awards_inc_nuf_rsch_pub_serv_teach_fy2020_fy2024}}{\\text{budget_from_evc_file_state_appropriated_budget}}\n\\]\ninstructional_sch_4Y_share_growth =\n\nChange in share (percentage) of total instructional SCH from AY2020 to AY2024\n - … every metric was ‘normalized’, most are ratios of RVs rather than averages\n\nVariable names are taken from the documentation provided by the ELT. 😵‍💫"
+  },
+  {
+    "objectID": "03-Penn-metrics/index.html#what-is-in-a-cauchy-distribution",
+    "href": "03-Penn-metrics/index.html#what-is-in-a-cauchy-distribution",
+    "title": "How NOT to Measure Academic Performance",
+    "section": "What is in a Cauchy Distribution?",
+    "text": "What is in a Cauchy Distribution?\n\n\nCauchy: X/Y with E[Y] = 0. Division by zero, statistically speaking\n\n\n\n\n\n\n\n\n\n\n\nresearch_awards_growth_inc_nuf_fy20_fy24 is in plot #6"
+  },
+  {
+    "objectID": "03-Penn-metrics/index.html#what-should-have-been-done",
+    "href": "03-Penn-metrics/index.html#what-should-have-been-done",
+    "title": "How NOT to Measure Academic Performance",
+    "section": "What should have been done?",
+    "text": "What should have been done?\nObservational units\n\nResearch performance measures products by faculty members, one at a time\nTeaching performance measures classes, one at a time\nData based on single products and classes are auditable\n\nBut:\n\nInternal record keeping seems inconsistent, full of errors\nRather than addressing errors in data and biases in metrics, told “nothing will change”"
+  },
+  {
+    "objectID": "03-Penn-metrics/index.html#scholarly-research-index-sri",
+    "href": "03-Penn-metrics/index.html#scholarly-research-index-sri",
+    "title": "How NOT to Measure Academic Performance",
+    "section": "Scholarly Research Index (SRI)",
+    "text": "Scholarly Research Index (SRI)\n\nmeasure created by Academic Analytics to evaluate research performance\nbased on # awards, # books, # citations, # articles, # grants, grant dollars, (clinical) trials and patents"
+  },
+  {
+    "objectID": "03-Penn-metrics/index.html#sri-for-all-statistics-departments",
+    "href": "03-Penn-metrics/index.html#sri-for-all-statistics-departments",
+    "title": "How NOT to Measure Academic Performance",
+    "section": "SRI for all Statistics Departments",
+    "text": "SRI for all Statistics Departments\n\n\n\n\n\n\n\n\n\n\nSRI allows – under certain circumstances – a comparison across fields, SRI percentiles by field would be better"
+  },
+  {
+    "objectID": "03-Penn-metrics/index.html#sri-for-all-statistics-departments-1",
+    "href": "03-Penn-metrics/index.html#sri-for-all-statistics-departments-1",
+    "title": "How NOT to Measure Academic Performance",
+    "section": "SRI for all Statistics Departments",
+    "text": "SRI for all Statistics Departments"
+  },
+  {
+    "objectID": "03-Penn-metrics/index.html#sri-for-all-statistics-departments-2",
+    "href": "03-Penn-metrics/index.html#sri-for-all-statistics-departments-2",
+    "title": "How NOT to Measure Academic Performance",
+    "section": "SRI for all Statistics Departments",
+    "text": "SRI for all Statistics Departments"
+  },
+  {
+    "objectID": "03-Penn-metrics/index.html#sri-shift-for-other-departments",
+    "href": "03-Penn-metrics/index.html#sri-shift-for-other-departments",
+    "title": "How NOT to Measure Academic Performance",
+    "section": "SRI Shift for other Departments",
+    "text": "SRI Shift for other Departments\n\n\n\n\n\n\n\n\n\n“All departments are treated the same way” – Definitely not!"
+  },
+  {
+    "objectID": "03-Penn-metrics/index.html#checking-the-claims",
+    "href": "03-Penn-metrics/index.html#checking-the-claims",
+    "title": "How NOT to Measure Academic Performance",
+    "section": "Checking the Claims",
+    "text": "Checking the Claims\n\n\n\nTransparent Process\nDepartments were consulted before plan was announced ???\nAll departments were treated equally 😬😱"
+  },
+  {
+    "objectID": "03-Penn-metrics/index.html#missed-opportunity",
+    "href": "03-Penn-metrics/index.html#missed-opportunity",
+    "title": "How NOT to Measure Academic Performance",
+    "section": "Missed Opportunity",
+    "text": "Missed Opportunity\n\nRather than using Public AAU as a measuring stick to punish with\nUse difference strategically for investment:\nSRI\\(_{\\text{Public AAU}}\\) - SRI\\(_{\\text{Public}}\\)\nSize of differences indicate AAU relevance"
+  },
+  {
+    "objectID": "03-Penn-metrics/index.html#metrics",
+    "href": "03-Penn-metrics/index.html#metrics",
+    "title": "How NOT to Measure Academic Performance",
+    "section": "Metrics",
+    "text": "Metrics\n\nStatistical fundamentals matter! distributions, observational units, variance, and real-world interpretation\nThe general description of the metrics sounds good, but\n\nThe implementation is incredibly problematic\n\nInferential intent - using metrics to make these choices\n\nDisclaimers don’t fix the results – negative scores were used to infer poor performance\n\n\n- AAU metrics are like the hard, summative problems on exams – it’s important to measure the precursors"
+  },
+  {
+    "objectID": "03-Penn-metrics/index.html#fixes",
+    "href": "03-Penn-metrics/index.html#fixes",
+    "title": "How NOT to Measure Academic Performance",
+    "section": "Fixes",
+    "text": "Fixes\n\nUse SRI percentile instead of the other research metrics (translate to a z-score if necessary)\nDon’t take ratios of random quantities\nCompare like to like – graduate vs. undergraduate credit hours, service vs. major courses.\nOnly evaluate stable programs – use a 5-year grace period (consistent with CCPE guidelines)\n\n- Involve statisticians in the process!!"
+  },
+  {
+    "objectID": "08-USU-Intro/index.html#about-me",
+    "href": "08-USU-Intro/index.html#about-me",
+    "title": "Introductions",
+    "section": "About Me",
+    "text": "About Me\n\n2005 - 2009 - BS, Applied Math & Psychology, Texas A&M\n2009 - Started PhD in Bioinformatics at Iowa State\n2010 - Switched to Statistics\n2011 - MS, Statistics\n2015 - PhD, Statistics\n2015-2018, Statistical Analyst, Nebraska Public Power District\n2018-2019, Center for Statistics and Applications in Forensic Evidence (CSAFE), Iowa State\n2020-2026, University of Nebraska Lincoln ☠️"
+  },
+  {
+    "objectID": "08-USU-Intro/index.html#research",
+    "href": "08-USU-Intro/index.html#research",
+    "title": "Introductions",
+    "section": "Research",
+    "text": "Research"
+  },
+  {
+    "objectID": "08-USU-Intro/index.html#statistical-graphics",
+    "href": "08-USU-Intro/index.html#statistical-graphics",
+    "title": "Introductions",
+    "section": "Statistical Graphics",
+    "text": "Statistical Graphics\nGraphics Software"
+  },
+  {
+    "objectID": "08-USU-Intro/index.html#statistical-graphics-1",
+    "href": "08-USU-Intro/index.html#statistical-graphics-1",
+    "title": "Introductions",
+    "section": "Statistical Graphics",
+    "text": "Statistical Graphics\nPerception of Graphics"
+  },
+  {
+    "objectID": "08-USU-Intro/index.html#reproducibility",
+    "href": "08-USU-Intro/index.html#reproducibility",
+    "title": "Introductions",
+    "section": "Reproducibility",
+    "text": "Reproducibility\n\n\n\n\n\n\n\n\n\n\n\nVanderPlas, Susan, Goluch C. Ryan, and Heike Hofmann. 2019. “Framed! Reproducing and Revisiting 150-Year-Old Charts.” Journal of Computational and Graphical Statistics 28(3):620–34. doi:10.1080/10618600.2018.1562937."
+  },
+  {
+    "objectID": "08-USU-Intro/index.html#forensics",
+    "href": "08-USU-Intro/index.html#forensics",
+    "title": "Introductions",
+    "section": "Forensics",
+    "text": "Forensics\n\nForensic Pattern Evidence\n\nAlgorithms for Matching\nError Rates\nPerception of Court Testimony – “Experimental Design is Important”"
+  },
+  {
+    "objectID": "08-USU-Intro/index.html#statistical-graphics-2",
+    "href": "08-USU-Intro/index.html#statistical-graphics-2",
+    "title": "Introductions",
+    "section": "Statistical Graphics",
+    "text": "Statistical Graphics\nVisual Inference\n\n\n\nHow to measure graphics effectively\n\nNSF CAREER award last year\n\n\n\n\nVanderPlas, Susan, and Heike Hofmann. 2017. “Clusters Beat Trend⁉ Testing Feature Hierarchy in Statistical Graphics.” Journal of Computational and Graphical Statistics 26(2):231–42. doi:10.1080/10618600.2016.1209116."
   }
 ]
