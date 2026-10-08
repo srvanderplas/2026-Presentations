@@ -136,6 +136,7 @@ a {
 .reveal section .sand-dk { color: $sand-dk !important;} /* sand, darkened to 7.22 contrast with white */
 
 
+
 /* other handy classes */
 .large {
   font-size: 130% !important;
@@ -145,24 +146,18 @@ a {
   font-size: 110% !important;
 }
 
-.reg {
-  font-size: 100% !important;
-}
-
-.slightly-small {
+.small {
   font-size: 80% !important;
+  line-height: 80% !important;
 }
 
 .smaller {
-  font-size: 75% !important;
+  font-size: 65% !important;
+  line-height: 65% !important;
 }
-
-.small {
-  font-size: 70% !important;
-}
-
 .tiny {
   font-size: 50% !important;
+  line-height: 50% !important;
 }
 
 .microscopic {

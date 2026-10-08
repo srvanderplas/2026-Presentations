@@ -1,4 +1,5 @@
-title: "Visualization, Inference, and Forensics"
+title: "Graphics & Cognition"
+subtitle: "How Do We Test Statistical Visualizations?"
 author: "Susan Vanderplas"
 date: 2026-10-12
 date-format: long
@@ -11,6 +12,6 @@ abstract: |
 talk-type: ['seminar']
 # One or more of seminar, web, invited, contributed, other
 
-image: <iframe class="slide-deck" src="./" width="100%" height="200px"></iframe>
+image: Chart-Perception-Process.png
 
 keywords: ['introduction', 'graphics', 'research']

@@ -732,7 +732,7 @@
     "href": "index.html",
     "title": "Presentations in 2026",
     "section": "",
-    "text": "Visualization and Uncertainty\n\n\n\nSusan Vanderplas\n\n\nAug 3, 2025\n\n\n\n\n\n\nLocation\n\n\nBoston, MA\n\n\n\n\n\nTopics\n\n\ngraphics\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHuman Computer Data Interaction\n\n\n\nSusan Vanderplas\n\n\nFeb 5, 2026\n\n\n\n\n\n\nLocation\n\n\nLogan, UT\n\n\n\n\n\nTopics\n\n\nstatistics,forensics,graphics,data science\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAlgorithms and AI for Statistical Forensics\n\n\n\nSusan Vanderplas\n\n\nFeb 26, 2026\n\n\n\n\n\n\nLocation\n\n\nMadison, WI\n\n\n\n\n\nTopics\n\n\nstatistics,forensics,graphics,data science\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHow NOT to Measure Academic Performance\n\n\n\n\n\n\nApr 2, 2026\n\n\n\n\n\n\nLocation\n\n\nZoom\n\n\n\n\n\nTopics\n\n\n \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIntroductions\n\n\n\nSusan Vanderplas\n\n\nAug 21, 2026\n\n\n\n\n\n\nLocation\n\n\nLogan, UT\n\n\n\n\n\nTopics\n\n\nintroduction\n\n\n\n\n\n\n\n\n\n\n\n\" class=\"thumbnail-image card-img\" style=\"height: 150px;\" &gt;\n\n\n\nVisualization, Inference, and Forensics\n\n\n\nSusan Vanderplas\n\n\nOct 12, 2026\n\n\n\n\n\n\nLocation\n\n\nMath 6910, Geol 310\n\n\n\n\n\nTopics\n\n\ngraphics,research,forensics,work-with-me\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Visualization and Uncertainty\n\n\n\nSusan Vanderplas\n\n\nAug 3, 2025\n\n\n\n\n\n\nLocation\n\n\nBoston, MA\n\n\n\n\n\nTopics\n\n\ngraphics\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHuman Computer Data Interaction\n\n\n\nSusan Vanderplas\n\n\nFeb 5, 2026\n\n\n\n\n\n\nLocation\n\n\nLogan, UT\n\n\n\n\n\nTopics\n\n\nstatistics,forensics,graphics,data science\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAlgorithms and AI for Statistical Forensics\n\n\n\nSusan Vanderplas\n\n\nFeb 26, 2026\n\n\n\n\n\n\nLocation\n\n\nMadison, WI\n\n\n\n\n\nTopics\n\n\nstatistics,forensics,graphics,data science\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHow NOT to Measure Academic Performance\n\n\n\n\n\n\nApr 2, 2026\n\n\n\n\n\n\nLocation\n\n\nZoom\n\n\n\n\n\nTopics\n\n\n \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIntroductions\n\n\n\nSusan Vanderplas\n\n\nAug 21, 2026\n\n\n\n\n\n\nLocation\n\n\nLogan, UT\n\n\n\n\n\nTopics\n\n\nintroduction\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGraphics & Cognition\n\n\n\nSusan Vanderplas\n\n\nOct 12, 2026\n\n\n\n\n\n\nLocation\n\n\nMath 6910, Geol 310\n\n\n\n\n\nTopics\n\n\nintroduction,graphics,research\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "03-Penn-metrics/budget-timeline.html",
@@ -1405,5 +1405,131 @@
     "title": "How NOT to Measure Academic Performance",
     "section": "Fixes",
     "text": "Fixes\n\nUse SRI percentile instead of the other research metrics (translate to a z-score if necessary)\nDon’t take ratios of random quantities\nCompare like to like – graduate vs. undergraduate credit hours, service vs. major courses.\nOnly evaluate stable programs – use a 5-year grace period (consistent with CCPE guidelines)\n\n- Involve statisticians in the process!!"
+  },
+  {
+    "objectID": "10-USU-grad-seminar/index.html#attention",
+    "href": "10-USU-grad-seminar/index.html#attention",
+    "title": "Graphics & Cognition",
+    "section": "Attention",
+    "text": "Attention\n\n\n\nFocused or Divided?\n\nDivided: multiple input streams \nFocused: single input stream \n\nAttention shifts with gaze\nExtra information may not be stored or remembered"
+  },
+  {
+    "objectID": "10-USU-grad-seminar/index.html#introspection",
+    "href": "10-USU-grad-seminar/index.html#introspection",
+    "title": "Graphics & Cognition",
+    "section": "Introspection",
+    "text": "Introspection\nWhen reading a chart, what do you focus on\n\nfirst?\nsecond?\nthird?"
+  },
+  {
+    "objectID": "10-USU-grad-seminar/index.html#introspection-1",
+    "href": "10-USU-grad-seminar/index.html#introspection-1",
+    "title": "Graphics & Cognition",
+    "section": "Introspection",
+    "text": "Introspection"
+  },
+  {
+    "objectID": "10-USU-grad-seminar/index.html#introspection-2",
+    "href": "10-USU-grad-seminar/index.html#introspection-2",
+    "title": "Graphics & Cognition",
+    "section": "Introspection",
+    "text": "Introspection\nWhen reading a chart, what do you focus on\n\nfirst?\nsecond?\nthird?\n\nMost features require attention\nWe can observe these features with introspection\nPreattentive features must be examined in other ways"
+  },
+  {
+    "objectID": "10-USU-grad-seminar/index.html#long-term-memory",
+    "href": "10-USU-grad-seminar/index.html#long-term-memory",
+    "title": "Graphics & Cognition",
+    "section": "Long Term Memory",
+    "text": "Long Term Memory\n\nLong Term Memory Information Retrieval"
+  },
+  {
+    "objectID": "10-USU-grad-seminar/index.html#long-term-memory-1",
+    "href": "10-USU-grad-seminar/index.html#long-term-memory-1",
+    "title": "Graphics & Cognition",
+    "section": "Long Term Memory",
+    "text": "Long Term Memory\n\nunlimited storage capacity (theoretically)\nmaintained for long periods\ntwo types:\n\ndeclarative/explicit - consciously accessed\nnon-declarative/implicit - procedural memories"
+  },
+  {
+    "objectID": "10-USU-grad-seminar/index.html#working-memory",
+    "href": "10-USU-grad-seminar/index.html#working-memory",
+    "title": "Graphics & Cognition",
+    "section": "Working Memory",
+    "text": "Working Memory\n\nImage Source\nProposed by Baddeley and Hitch (1974)\nLimited capacity\nComponents are thought to be mostly independent"
+  },
+  {
+    "objectID": "10-USU-grad-seminar/index.html#perception",
+    "href": "10-USU-grad-seminar/index.html#perception",
+    "title": "Graphics & Cognition",
+    "section": "Perception",
+    "text": "Perception\n\n\n\n\nSensory input\nRecognition of type of chart\nTakes place very quickly"
+  },
+  {
+    "objectID": "10-USU-grad-seminar/index.html#gestalt-grouping",
+    "href": "10-USU-grad-seminar/index.html#gestalt-grouping",
+    "title": "Graphics & Cognition",
+    "section": "Gestalt Grouping",
+    "text": "Gestalt Grouping\n\n\n\nGestalt heuristics used to group points into clusters/trends"
+  },
+  {
+    "objectID": "10-USU-grad-seminar/index.html#integration-with-domain-knowledge",
+    "href": "10-USU-grad-seminar/index.html#integration-with-domain-knowledge",
+    "title": "Graphics & Cognition",
+    "section": "Integration with Domain Knowledge",
+    "text": "Integration with Domain Knowledge\n\n\n\n\nBegin to assign meaning\nData + Axis titles + Chart title\nRetrieve info from long term memory \\(\\rightarrow\\) working memory"
+  },
+  {
+    "objectID": "10-USU-grad-seminar/index.html#integration-with-domain-knowledge-1",
+    "href": "10-USU-grad-seminar/index.html#integration-with-domain-knowledge-1",
+    "title": "Graphics & Cognition",
+    "section": "Integration with Domain Knowledge",
+    "text": "Integration with Domain Knowledge\n\n\nDomain knowledge includes:\n\nTypical chart structure\n(e.g. y-axis increases from bottom to top)\nChart conventions\nuse of filled vs. empty space\nKnowledge of relationships, events, etc.\n\n\n\nFigure from Padilla et al. Cognitive Research: Principles and Implications (2018) 3:29"
+  },
+  {
+    "objectID": "10-USU-grad-seminar/index.html#storytelling",
+    "href": "10-USU-grad-seminar/index.html#storytelling",
+    "title": "Graphics & Cognition",
+    "section": "Storytelling",
+    "text": "Storytelling\n\n\n\n\nRelationships \\(\\rightarrow\\) meaning\nFit visual statistics\nTest features against a working hypothesis"
+  },
+  {
+    "objectID": "10-USU-grad-seminar/index.html#inference",
+    "href": "10-USU-grad-seminar/index.html#inference",
+    "title": "Graphics & Cognition",
+    "section": "Inference",
+    "text": "Inference\n\n\n\nNumerical estimation\n(with uncertainty)\nVisual search, followed by estimation, calculation, and inference."
+  },
+  {
+    "objectID": "10-USU-grad-seminar/index.html#prediction-and-application",
+    "href": "10-USU-grad-seminar/index.html#prediction-and-application",
+    "title": "Graphics & Cognition",
+    "section": "Prediction and Application",
+    "text": "Prediction and Application\n\n\n\n\nMoving beyond the data to interpret and apply meaning\nDraw conclusions\nMake predictions for the future"
+  },
+  {
+    "objectID": "10-USU-grad-seminar/index.html#testing-accuracy",
+    "href": "10-USU-grad-seminar/index.html#testing-accuracy",
+    "title": "Graphics & Cognition",
+    "section": "Testing Accuracy",
+    "text": "Testing Accuracy\n\n\n\n\n\nWhat proportion of the plot is\n\nA? 48%\nB?  5.5%\nC? 16%\n\nThe most accurate chart\n(by this measure) is a … table???\n\n\n\nFrom VanderPlas, Susan, Goluch C. Ryan, and Heike Hofmann. 2019. “Framed! Reproducing and Revisiting 150-Year-Old Charts.” Journal of Computational and Graphical Statistics 28(3):620–34."
+  },
+  {
+    "objectID": "10-USU-grad-seminar/index.html#visual-hypothesis-testing",
+    "href": "10-USU-grad-seminar/index.html#visual-hypothesis-testing",
+    "title": "Graphics & Cognition",
+    "section": "Visual Hypothesis Testing",
+    "text": "Visual Hypothesis Testing\n\n\n\nWhich plot(s) are not like the others?\nInference: which feature(s) are relevant?\nHypothesis testing:\n1/20 = 0.05\n\n\n\n\n\nFrom VanderPlas, Susan, and Heike Hofmann. 2017. “Clusters Beat Trend⁉ Testing Feature Hierarchy in Statistical Graphics.” Journal of Computational and Graphical Statistics 26(2):231–42."
+  },
+  {
+    "objectID": "10-USU-grad-seminar/index.html#direct-annotation",
+    "href": "10-USU-grad-seminar/index.html#direct-annotation",
+    "title": "Graphics & Cognition",
+    "section": "Direct Annotation",
+    "text": "Direct Annotation\n\n\n\n\n\nRemoves numerical calculation issues\nLess intimidating?\nRequires motor control \n(or patience)\n\n\n\nFrom Robinson, Emily A., Reka Howard, and Susan VanderPlas. 2023. “‘You Draw It’: Implementation of Visually Fitted Trends with R2d3.” Journal of Data Science 21(2):281–94. and\nRobinson, Emily A., Reka Howard, and Susan VanderPlas. 2022. “Eye Fitting Straight Lines in the Modern Era.” Journal of Computational and Graphical Statistics 0(0):1–8."
+  },
+  {
+    "objectID": "10-USU-grad-seminar/index.html#can-we-test-graphics-better",
+    "href": "10-USU-grad-seminar/index.html#can-we-test-graphics-better",
+    "title": "Graphics & Cognition",
+    "section": "Can We Test Graphics Better?",
+    "text": "Can We Test Graphics Better?"
   }
 ]
