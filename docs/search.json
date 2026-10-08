@@ -732,7 +732,7 @@
     "href": "index.html",
     "title": "Presentations in 2026",
     "section": "",
-    "text": "Visualization and Uncertainty\n\n\n\nSusan Vanderplas\n\n\nAug 3, 2025\n\n\n\n\n\n\nLocation\n\n\nBoston, MA\n\n\n\n\n\nTopics\n\n\ngraphics\n\n\n\n\n\n\n\n\n\n\n\n\" class=\"thumbnail-image card-img\" style=\"height: 150px;\" &gt;\n\n\n\nHuman Computer Data Interaction\n\n\n\nSusan Vanderplas\n\n\nFeb 5, 2026\n\n\n\n\n\n\nLocation\n\n\nLogan, UT\n\n\n\n\n\nTopics\n\n\nstatistics,forensics,graphics,data science\n\n\n\n\n\n\n\n\n\n\n\n\" class=\"thumbnail-image card-img\" style=\"height: 150px;\" &gt;\n\n\n\nAlgorithms and AI for Statistical Forensics\n\n\n\nSusan Vanderplas\n\n\nFeb 26, 2026\n\n\n\n\n\n\nLocation\n\n\nMadison, WI\n\n\n\n\n\nTopics\n\n\nstatistics,forensics,graphics,data science\n\n\n\n\n\n\n\n\n\n\n\n\n\nHow NOT to Measure Academic Performance\n\n\n\n\n\n\nApr 2, 2026\n\n\n\n\n\n\nLocation\n\n\nZoom\n\n\n\n\n\nTopics\n\n\n \n\n\n\n\n\n\n\n\n\n\n\n\" class=\"thumbnail-image card-img\" style=\"height: 150px;\" &gt;\n\n\n\nIntroductions\n\n\n\nSusan Vanderplas\n\n\nAug 21, 2026\n\n\n\n\n\n\nLocation\n\n\nLogan, UT\n\n\n\n\n\nTopics\n\n\nintroduction\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Visualization and Uncertainty\n\n\n\nSusan Vanderplas\n\n\nAug 3, 2025\n\n\n\n\n\n\nLocation\n\n\nBoston, MA\n\n\n\n\n\nTopics\n\n\ngraphics\n\n\n\n\n\n\n\n\n\n\n\n\" class=\"thumbnail-image card-img\" style=\"height: 150px;\" &gt;\n\n\n\nHuman Computer Data Interaction\n\n\n\nSusan Vanderplas\n\n\nFeb 5, 2026\n\n\n\n\n\n\nLocation\n\n\nLogan, UT\n\n\n\n\n\nTopics\n\n\nstatistics,forensics,graphics,data science\n\n\n\n\n\n\n\n\n\n\n\n\" class=\"thumbnail-image card-img\" style=\"height: 150px;\" &gt;\n\n\n\nAlgorithms and AI for Statistical Forensics\n\n\n\nSusan Vanderplas\n\n\nFeb 26, 2026\n\n\n\n\n\n\nLocation\n\n\nMadison, WI\n\n\n\n\n\nTopics\n\n\nstatistics,forensics,graphics,data science\n\n\n\n\n\n\n\n\n\n\n\n\n\nHow NOT to Measure Academic Performance\n\n\n\n\n\n\nApr 2, 2026\n\n\n\n\n\n\nLocation\n\n\nZoom\n\n\n\n\n\nTopics\n\n\n \n\n\n\n\n\n\n\n\n\n\n\n\" class=\"thumbnail-image card-img\" style=\"height: 150px;\" &gt;\n\n\n\nIntroductions\n\n\n\nSusan Vanderplas\n\n\nAug 21, 2026\n\n\n\n\n\n\nLocation\n\n\nLogan, UT\n\n\n\n\n\nTopics\n\n\nintroduction\n\n\n\n\n\n\n\n\n\n\n\n\" class=\"thumbnail-image card-img\" style=\"height: 150px;\" &gt;\n\n\n\nVisualization, Inference, and Forensics\n\n\n\nSusan Vanderplas\n\n\nOct 12, 2026\n\n\n\n\n\n\nLocation\n\n\nMath 6910, Geol 310\n\n\n\n\n\nTopics\n\n\ngraphics,research,forensics,work-with-me\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "03-Penn-metrics/budget-timeline.html",
@@ -950,6 +950,48 @@
     "title": "Visualization and Uncertainty",
     "section": "Goal(s) of Uncertainty Visualization",
     "text": "Goal(s) of Uncertainty Visualization\nMaking accurate decisions under uncertainty\n\nVisualizing uncertainty is just the first step\nUltimate goal: Use the uncertainty to\n\ncommunicate effectively\nsupport better decision-making\n\n\nRequires understanding how we perceive and use charts – whether deterministic or distributional"
+  },
+  {
+    "objectID": "08-USU-Intro/index.html#about-me",
+    "href": "08-USU-Intro/index.html#about-me",
+    "title": "Introductions",
+    "section": "About Me",
+    "text": "About Me\n\n2005 - 2009 - BS, Applied Math & Psychology, Texas A&M\n2009 - Started PhD in Bioinformatics at Iowa State\n2010 - Switched to Statistics\n2011 - MS, Statistics\n2015 - PhD, Statistics\n2015-2018, Statistical Analyst, Nebraska Public Power District\n2018-2019, Center for Statistics and Applications in Forensic Evidence (CSAFE), Iowa State\n2020-2026, University of Nebraska Lincoln ☠️"
+  },
+  {
+    "objectID": "08-USU-Intro/index.html#statistical-graphics",
+    "href": "08-USU-Intro/index.html#statistical-graphics",
+    "title": "Introductions",
+    "section": "Statistical Graphics",
+    "text": "Statistical Graphics\nGraphics Software"
+  },
+  {
+    "objectID": "08-USU-Intro/index.html#statistical-graphics-1",
+    "href": "08-USU-Intro/index.html#statistical-graphics-1",
+    "title": "Introductions",
+    "section": "Statistical Graphics",
+    "text": "Statistical Graphics\nPerception of Graphics"
+  },
+  {
+    "objectID": "08-USU-Intro/index.html#statistical-graphics-2",
+    "href": "08-USU-Intro/index.html#statistical-graphics-2",
+    "title": "Introductions",
+    "section": "Statistical Graphics",
+    "text": "Statistical Graphics\nVisual Inference\n\n\n\nHow to measure graphics effectively\n\nNSF CAREER award last year\n\n\n\n\nVanderPlas, Susan, and Heike Hofmann. 2017. “Clusters Beat Trend⁉ Testing Feature Hierarchy in Statistical Graphics.” Journal of Computational and Graphical Statistics 26(2):231–42. doi:10.1080/10618600.2016.1209116."
+  },
+  {
+    "objectID": "08-USU-Intro/index.html#reproducibility",
+    "href": "08-USU-Intro/index.html#reproducibility",
+    "title": "Introductions",
+    "section": "Reproducibility",
+    "text": "Reproducibility\n\n\n\n\n\n\n\n\n\n\n\nVanderPlas, Susan, Goluch C. Ryan, and Heike Hofmann. 2019. “Framed! Reproducing and Revisiting 150-Year-Old Charts.” Journal of Computational and Graphical Statistics 28(3):620–34. doi:10.1080/10618600.2018.1562937."
+  },
+  {
+    "objectID": "08-USU-Intro/index.html#forensics",
+    "href": "08-USU-Intro/index.html#forensics",
+    "title": "Introductions",
+    "section": "Forensics",
+    "text": "Forensics\n\nForensic Pattern Evidence\n\nAlgorithms for Matching\nError Rates\nPerception of Court Testimony – “Experimental Design is Important”"
   },
   {
     "objectID": "03-Penn-metrics/index.html#setting-the-stage",
@@ -1363,54 +1405,5 @@
     "title": "How NOT to Measure Academic Performance",
     "section": "Fixes",
     "text": "Fixes\n\nUse SRI percentile instead of the other research metrics (translate to a z-score if necessary)\nDon’t take ratios of random quantities\nCompare like to like – graduate vs. undergraduate credit hours, service vs. major courses.\nOnly evaluate stable programs – use a 5-year grace period (consistent with CCPE guidelines)\n\n- Involve statisticians in the process!!"
-  },
-  {
-    "objectID": "08-USU-Intro/index.html#about-me",
-    "href": "08-USU-Intro/index.html#about-me",
-    "title": "Introductions",
-    "section": "About Me",
-    "text": "About Me\n\n2005 - 2009 - BS, Applied Math & Psychology, Texas A&M\n2009 - Started PhD in Bioinformatics at Iowa State\n2010 - Switched to Statistics\n2011 - MS, Statistics\n2015 - PhD, Statistics\n2015-2018, Statistical Analyst, Nebraska Public Power District\n2018-2019, Center for Statistics and Applications in Forensic Evidence (CSAFE), Iowa State\n2020-2026, University of Nebraska Lincoln ☠️"
-  },
-  {
-    "objectID": "08-USU-Intro/index.html#research",
-    "href": "08-USU-Intro/index.html#research",
-    "title": "Introductions",
-    "section": "Research",
-    "text": "Research"
-  },
-  {
-    "objectID": "08-USU-Intro/index.html#statistical-graphics",
-    "href": "08-USU-Intro/index.html#statistical-graphics",
-    "title": "Introductions",
-    "section": "Statistical Graphics",
-    "text": "Statistical Graphics\nGraphics Software"
-  },
-  {
-    "objectID": "08-USU-Intro/index.html#statistical-graphics-1",
-    "href": "08-USU-Intro/index.html#statistical-graphics-1",
-    "title": "Introductions",
-    "section": "Statistical Graphics",
-    "text": "Statistical Graphics\nPerception of Graphics"
-  },
-  {
-    "objectID": "08-USU-Intro/index.html#reproducibility",
-    "href": "08-USU-Intro/index.html#reproducibility",
-    "title": "Introductions",
-    "section": "Reproducibility",
-    "text": "Reproducibility\n\n\n\n\n\n\n\n\n\n\n\nVanderPlas, Susan, Goluch C. Ryan, and Heike Hofmann. 2019. “Framed! Reproducing and Revisiting 150-Year-Old Charts.” Journal of Computational and Graphical Statistics 28(3):620–34. doi:10.1080/10618600.2018.1562937."
-  },
-  {
-    "objectID": "08-USU-Intro/index.html#forensics",
-    "href": "08-USU-Intro/index.html#forensics",
-    "title": "Introductions",
-    "section": "Forensics",
-    "text": "Forensics\n\nForensic Pattern Evidence\n\nAlgorithms for Matching\nError Rates\nPerception of Court Testimony – “Experimental Design is Important”"
-  },
-  {
-    "objectID": "08-USU-Intro/index.html#statistical-graphics-2",
-    "href": "08-USU-Intro/index.html#statistical-graphics-2",
-    "title": "Introductions",
-    "section": "Statistical Graphics",
-    "text": "Statistical Graphics\nVisual Inference\n\n\n\nHow to measure graphics effectively\n\nNSF CAREER award last year\n\n\n\n\nVanderPlas, Susan, and Heike Hofmann. 2017. “Clusters Beat Trend⁉ Testing Feature Hierarchy in Statistical Graphics.” Journal of Computational and Graphical Statistics 26(2):231–42. doi:10.1080/10618600.2016.1209116."
   }
 ]
