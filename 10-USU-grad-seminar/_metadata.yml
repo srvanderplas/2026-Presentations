@@ -1,0 +1,16 @@
+title: "Visualization, Inference, and Forensics"
+author: "Susan Vanderplas"
+date: 2026-10-12
+date-format: long
+from: markdown+emoji
+location: Math 6910, Geol 310
+abstract: |
+  How do we test graphics to ensure they work? 
+  What types of factors are important in graphical construction?
+  And how does statistics connect to forensic science?
+talk-type: ['seminar']
+# One or more of seminar, web, invited, contributed, other
+
+image: <iframe class="slide-deck" src="./" width="100%" height="200px"></iframe>
+
+keywords: ['graphics', 'research', 'forensics', 'work-with-me']

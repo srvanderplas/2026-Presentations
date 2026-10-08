@@ -1,0 +1,10 @@
+---
+format: 
+  revealjs:
+    navigation-mode: vertical
+    theme: ../libs/job/inverse.scss
+    includes:
+      in_header: ../libs/job/header.html
+    lib_dir: libs
+    embed-resources: true
+---
