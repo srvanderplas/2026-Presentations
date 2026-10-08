@@ -17,6 +17,6 @@ abstract: |
 talk-type: ['invited']
 # One or more of seminar, web, invited, contributed, other
 
-# image: 
+image: "association-map-of-1880-election.jpg"
 
 keywords: ['graphics']
